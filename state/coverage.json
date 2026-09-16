@@ -56,6 +56,14 @@
         "https://en.wikipedia.org/wiki/Aerodynamics"
       ],
       "updated_at": "2026-09-16T20:15:23.438169+00:00"
+    },
+    "Palaeoptera": {
+      "depth": 2,
+      "created_at": "2026-09-16T20:17:46.556467+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Palaeoptera"
+      ],
+      "updated_at": "2026-09-16T20:17:46.556473+00:00"
     }
   },
   "edges": [
@@ -102,6 +110,14 @@
     {
       "from": "Wing",
       "to": "Aileron"
+    },
+    {
+      "from": "Palaeoptera",
+      "to": "Basal (evolution)"
+    },
+    {
+      "from": "Palaeoptera",
+      "to": "Caddisfly"
     }
   ],
   "frontier": [
@@ -112,7 +128,9 @@
     "Insecticide",
     "Bird wing",
     "Bat wing development",
-    "Aileron"
+    "Aileron",
+    "Basal (evolution)",
+    "Caddisfly"
   ],
   "max_depth": 2
 }

@@ -131,5 +131,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:15:23.437739+00:00"
+  },
+  "Palaeoptera": {
+    "score": 10.0,
+    "metrics": {
+      "words": 337,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Fly",
+        "Evolution",
+        "Insect flight",
+        "Devonian",
+        "Aerodynamics",
+        "Wing",
+        "Halteres"
+      ],
+      "diversity": 0.689,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:17:46.556031+00:00"
   }
 }

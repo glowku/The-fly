@@ -66,7 +66,7 @@
     "last_reinforced": "2026-09-16T14:04:50.391693+00:00"
   },
   "evolution": {
-    "level": 0.59,
+    "level": 0.69,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -78,9 +78,10 @@
     "articles": [
       "Fly",
       "Computer security",
-      "Devonian"
+      "Devonian",
+      "Palaeoptera"
     ],
-    "last_reinforced": "2026-09-16T16:49:14.575360+00:00"
+    "last_reinforced": "2026-09-16T20:17:46.716472+00:00"
   },
   "comportement": {
     "level": 0.6,
