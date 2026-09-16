@@ -1,0 +1,6 @@
+{
+  "objective": "maximize coverage × average_quality",
+  "target_nodes": 200,
+  "target_avg_quality": 7.5,
+  "started_at": "2026-09-16T00:00:00+00:00"
+}
