@@ -5,7 +5,7 @@ import requests
 from .memory import load_coverage
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "llama-3.3-70b-versatile"  # fort et gratuit sur Groq
+MODEL = "openai/gpt-oss-20b"  # fort et gratuit sur Groq
 
 
 def _get_existing_titles(limit: int = 40) -> list[str]:
