@@ -1,0 +1,47 @@
+name: evaluate
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: evaluate
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "fly-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Render dashboard
+        run: python -m agent.evaluate_dashboard
+
+      - name: Commit dashboard
+        run: |
+          git add DASHBOARD.md state/ || true
+          git commit -m "dashboard: periodic refresh" || echo "Nothing to commit"
+          git pull --rebase origin main || true
+          git push origin HEAD:main || echo "Push failed"
