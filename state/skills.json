@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.0,
+    "level": 1.1,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -10,7 +10,10 @@
       "mouche",
       "entomology"
     ],
-    "articles": []
+    "articles": [
+      "Arthropod leg"
+    ],
+    "last_reinforced": "2026-09-16T22:43:28.400304+00:00"
   },
   "anatomie_insecte": {
     "level": 1.08,
