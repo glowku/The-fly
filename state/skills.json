@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.5,
+    "level": 1.6,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -15,9 +15,10 @@
       "Housefly",
       "Mosquito",
       "Tachinidae",
-      "Entomology"
+      "Entomology",
+      "Applied ecology"
     ],
-    "last_reinforced": "2026-09-16T23:20:27.684837+00:00"
+    "last_reinforced": "2026-09-16T23:30:03.144119+00:00"
   },
   "anatomie_insecte": {
     "level": 1.58,

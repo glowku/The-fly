@@ -456,6 +456,14 @@
         "https://en.wikipedia.org/wiki/Arthropod_exoskeleton"
       ],
       "updated_at": "2026-09-16T23:28:27.481527+00:00"
+    },
+    "Applied ecology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:30:02.949438+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Applied_ecology"
+      ],
+      "updated_at": "2026-09-16T23:30:02.949443+00:00"
     }
   },
   "edges": [
@@ -678,11 +686,26 @@
     {
       "from": "Arthropod exoskeleton",
       "to": "Aquatic insects"
+    },
+    {
+      "from": "Arthropod leg",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Arctic ecology"
     }
   ],
   "frontier": [
     "Basal (evolution)",
-    "Applied ecology",
     "Larva",
     "Maggot",
     "Ailerons",
@@ -695,7 +718,9 @@
     "Alderfly",
     "Adaptive Compliant Wing",
     "Agroecology",
-    "Chemical communication in insects"
+    "Chemical communication in insects",
+    "Behavioral ecology",
+    "Arctic ecology"
   ],
   "max_depth": 4
 }
