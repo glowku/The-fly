@@ -202,3 +202,6 @@
 {"ts": "2026-09-16T23:25:16.175504+00:00", "type": "auto_learn_expand", "title": "Anthecology", "skill": "evolution", "score": 10.0, "objective": 10.742, "parent": "Apterygota"}
 {"ts": "2026-09-16T23:25:16.176139+00:00", "type": "auto_learn", "skill": "evolution", "learned": true, "frontier_added": 0, "fresh": ["Anthecology"], "parent": "Apterygota"}
 {"ts": "2026-09-16T23:26:51.421457+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 1.55, "article": "Windhover"}
+{"ts": "2026-09-16T23:26:53.436640+00:00", "type": "auto_learn_expand", "title": "Windhover", "skill": "vol_et_aerodynamique", "score": 8.7, "objective": 10.916, "parent": "Hover"}
+{"ts": "2026-09-16T23:26:53.450482+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 5, "fresh": ["Windhover", "Hover Chamber Choir", "Hover (EP)", "Hovercraft", "Helicopter flight controls", "Hover (behaviour)"], "parent": "Hover"}
+{"ts": "2026-09-16T23:28:27.692147+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 1.58, "article": "Arthropod exoskeleton"}
