@@ -388,5 +388,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:45:39.629715+00:00"
+  },
+  "Mating": {
+    "score": 10.0,
+    "metrics": {
+      "words": 378,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect behaviour",
+        "Wing",
+        "Evolution",
+        "Insect ecology",
+        "Fly",
+        "Aerodynamics"
+      ],
+      "diversity": 0.724,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:45:58.575731+00:00"
   }
 }

@@ -152,6 +152,14 @@
         "https://en.wikipedia.org/wiki/Parasitoid"
       ],
       "updated_at": "2026-09-16T21:45:39.630184+00:00"
+    },
+    "Mating": {
+      "depth": 3,
+      "created_at": "2026-09-16T21:45:58.576195+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mating"
+      ],
+      "updated_at": "2026-09-16T21:45:58.576202+00:00"
     }
   },
   "edges": [
@@ -250,6 +258,10 @@
     {
       "from": "Parasitoid",
       "to": "Aquatic insects"
+    },
+    {
+      "from": "Mating",
+      "to": "Blue-tailed damselfly"
     }
   ],
   "frontier": [
@@ -270,7 +282,8 @@
     "Larva",
     "Maggot",
     "Ailerons",
-    "Aquatic insects"
+    "Aquatic insects",
+    "Blue-tailed damselfly"
   ],
   "max_depth": 3
 }
