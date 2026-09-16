@@ -110,7 +110,7 @@
     "last_reinforced": "2026-09-16T22:50:06.899392+00:00"
   },
   "comportement": {
-    "level": 1.1,
+    "level": 1.2,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -127,8 +127,9 @@
       "Swarm behaviour",
       "Mating",
       "Mimicry",
-      "Behavioral Ecology and Sociobiology"
+      "Behavioral Ecology and Sociobiology",
+      "Insect morphology"
     ],
-    "last_reinforced": "2026-09-16T22:46:55.634313+00:00"
+    "last_reinforced": "2026-09-16T22:54:55.457031+00:00"
   }
 }
