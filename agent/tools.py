@@ -4,8 +4,6 @@ from pathlib import Path
 
 
 def write_article(title: str, content: str) -> str:
-    """Écrit un article Markdown dans wiki/."""
-    # Sécuriser le nom de fichier
     safe = title.replace("/", "-").replace("\\", "-").strip()
     path = Path(f"wiki/{safe}.md")
     path.parent.mkdir(exist_ok=True)
@@ -13,37 +11,46 @@ def write_article(title: str, content: str) -> str:
     return str(path)
 
 
+def _run(cmd, check=False):
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode != 0:
+        err = (r.stderr or r.stdout or "").strip()
+        print(f"[git] cmd failed ({r.returncode}): {' '.join(cmd)}\n{err}", flush=True)
+    if check and r.returncode != 0:
+        raise subprocess.CalledProcessError(r.returncode, cmd, r.stdout, r.stderr)
+    return r
+
+
 def git_commit_push(files: list[str], message: str) -> bool:
-    """Add + commit + pull --rebase + push. Retourne True si commit effectué."""
+    """Add + commit + pull --rebase + push. True si commit+push OK."""
     try:
-        # Filtrer les fichiers existants
-        existing = [f for f in files if Path(f).exists() or f.endswith("/")]
+        existing = [f for f in files if Path(f).exists() or str(f).endswith("/")]
         if not existing:
             existing = files
 
-        subprocess.run(["git", "add"] + existing, check=True, capture_output=True)
+        _run(["git", "add"] + existing, check=True)
 
-        r = subprocess.run(
-            ["git", "commit", "-m", message],
-            capture_output=True,
-            text=True,
-        )
+        r = _run(["git", "commit", "-m", message])
         if r.returncode != 0:
-            # Rien à committer
+            # nothing to commit
             return False
 
-        # Rebase pour éviter les conflits sur CI
-        subprocess.run(
-            ["git", "pull", "--rebase", "origin", "main"],
-            check=False,
-            capture_output=True,
-        )
-        subprocess.run(
-            ["git", "push", "origin", "HEAD:main"],
-            check=True,
-            capture_output=True,
-        )
-        return True
+        # Sync remote first
+        _run(["git", "fetch", "origin", "main"])
+        rb = _run(["git", "pull", "--rebase", "origin", "main"])
+        if rb.returncode != 0:
+            print("[git] rebase conflict — abort & force push not used", flush=True)
+            _run(["git", "rebase", "--abort"])
+
+        # Push with retry
+        for attempt in range(3):
+            p = _run(["git", "push", "origin", "HEAD:main"])
+            if p.returncode == 0:
+                return True
+            print(f"[git] push attempt {attempt+1} failed, retry…", flush=True)
+            _run(["git", "pull", "--rebase", "origin", "main"])
+
+        return False
     except subprocess.CalledProcessError as e:
         print(f"[git] error: {e}", flush=True)
         return False
