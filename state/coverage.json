@@ -414,6 +414,14 @@
     {
       "from": "Annual Review of Entomology",
       "to": "Housefly"
+    },
+    {
+      "from": "Annual Review of Entomology",
+      "to": "Hoverfly"
+    },
+    {
+      "from": "Annual Review of Entomology",
+      "to": "Blowfly"
     }
   ],
   "frontier": [
@@ -435,7 +443,9 @@
     "Aquatic insects",
     "Blue-tailed damselfly",
     "Amphibious insect",
-    "Abdomen (insect anatomy)"
+    "Abdomen (insect anatomy)",
+    "Hoverfly",
+    "Blowfly"
   ],
   "max_depth": 4
 }
