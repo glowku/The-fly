@@ -15,40 +15,52 @@ def _run(cmd, check=False):
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         err = (r.stderr or r.stdout or "").strip()
-        print(f"[git] cmd failed ({r.returncode}): {' '.join(cmd)}\n{err}", flush=True)
+        print(f"[git] cmd failed ({r.returncode}): {' '.join(cmd)}\n{err[:500]}", flush=True)
     if check and r.returncode != 0:
         raise subprocess.CalledProcessError(r.returncode, cmd, r.stdout, r.stderr)
     return r
 
 
-def git_commit_push(files: list[str], message: str) -> bool:
-    """Add + commit + pull --rebase + push. True si commit+push OK."""
+def git_commit_push(files: list[str] | None, message: str) -> bool:
+    """Add + commit + rebase propre + push. True si push OK."""
     try:
-        existing = [f for f in files if Path(f).exists() or str(f).endswith("/")]
-        if not existing:
-            existing = files
+        # Toujours tout prendre (évite unstaged qui bloque rebase)
+        _run(["git", "add", "-A"])
 
-        _run(["git", "add"] + existing, check=True)
+        st = _run(["git", "status", "--porcelain"])
+        if not (st.stdout or "").strip():
+            print("[git] nothing to commit", flush=True)
+            return False
 
         r = _run(["git", "commit", "-m", message])
         if r.returncode != 0:
-            # nothing to commit
             return False
 
-        # Sync remote first
         _run(["git", "fetch", "origin", "main"])
+
+        # rebase: si unstaged résiduels → stash
+        dirty = _run(["git", "status", "--porcelain"])
+        stashed = False
+        if (dirty.stdout or "").strip():
+            _run(["git", "stash", "push", "-u", "-m", "fly-agent-temp"])
+            stashed = True
+
         rb = _run(["git", "pull", "--rebase", "origin", "main"])
         if rb.returncode != 0:
-            print("[git] rebase conflict — abort & force push not used", flush=True)
+            print("[git] rebase failed → abort, try merge", flush=True)
             _run(["git", "rebase", "--abort"])
+            _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
 
-        # Push with retry
+        if stashed:
+            _run(["git", "stash", "pop"])
+
         for attempt in range(3):
             p = _run(["git", "push", "origin", "HEAD:main"])
             if p.returncode == 0:
+                print("[git] push OK", flush=True)
                 return True
-            print(f"[git] push attempt {attempt+1} failed, retry…", flush=True)
-            _run(["git", "pull", "--rebase", "origin", "main"])
+            print(f"[git] push attempt {attempt+1} failed", flush=True)
+            _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
 
         return False
     except subprocess.CalledProcessError as e:
