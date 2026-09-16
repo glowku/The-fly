@@ -112,6 +112,14 @@
         "https://en.wikipedia.org/wiki/Exoskeleton"
       ],
       "updated_at": "2026-09-16T21:18:17.346000+00:00"
+    },
+    "Pollination": {
+      "depth": 2,
+      "created_at": "2026-09-16T21:18:37.818953+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pollination"
+      ],
+      "updated_at": "2026-09-16T21:18:37.818959+00:00"
     }
   },
   "edges": [

@@ -282,5 +282,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:18:17.345465+00:00"
+  },
+  "Pollination": {
+    "score": 10.0,
+    "metrics": {
+      "words": 326,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Insect behaviour",
+        "Insect ecology",
+        "Hover",
+        "Insect flight",
+        "Compound eye",
+        "Evolution"
+      ],
+      "diversity": 0.747,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:18:37.818490+00:00"
   }
 }

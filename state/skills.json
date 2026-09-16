@@ -52,7 +52,7 @@
     "last_reinforced": "2026-09-16T20:45:07.947246+00:00"
   },
   "ecologie": {
-    "level": 0.7,
+    "level": 0.8,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -65,9 +65,10 @@
     "articles": [
       "Ecology",
       "Fly",
-      "Insect ecology"
+      "Insect ecology",
+      "Pollination"
     ],
-    "last_reinforced": "2026-09-16T20:43:14.972055+00:00"
+    "last_reinforced": "2026-09-16T21:18:38.077030+00:00"
   },
   "evolution": {
     "level": 0.79,
