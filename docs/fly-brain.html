@@ -290,34 +290,46 @@ function buildGraph(){
   });
 
   const placed=new Set();
-  function placeArt(a,parent,depth,index,total){
-    if(placed.has(a.title))return;
-    placed.add(a.title);
+function placeArt(a, parent, depth, index, total){
+  if(placed.has(a.title)) return;
+  placed.add(a.title);
 
-    // ★ règle : plus il y a de sous-parents (depth), plus l’edge s’allonge
-    const baseDist = 55 + depth * 48;          // 55, 103, 151, 199…
-    const fan = Math.min(2.5, 0.5 + total * 0.25);
-    const baseAng = parent.ang != null ? parent.ang : Math.atan2(parent.y, parent.x);
-    const ang = baseAng + (index - (total-1)/2) * (fan / Math.max(total,1));
+  // ★ plus il y a d’enfants accrochés → edge plus long + éventail plus large
+  const crowded = Math.max(0, total - 4);                 // à partir de 5 enfants
+  const baseDist = 52 + depth * 42 + crowded * 14;        // s’allonge avec la foule
+  const fan = Math.min(3.1, 0.55 + total * 0.32);         // éventail plus ouvert
 
-    const x = parent.x + Math.cos(ang) * baseDist;
-    const y = parent.y + Math.sin(ang) * baseDist;
+  const baseAng = parent.ang != null ? parent.ang : Math.atan2(parent.y, parent.x);
+  const ang = baseAng + (index - (total - 1) / 2) * (fan / Math.max(total, 1));
 
-    const id="art:"+a.title;
-    const isNew=!known.has(id);if(isNew)known.add(id);
-    const n={id,
-      x: isNew ? parent.x : x,
-      y: isNew ? parent.y : y,
-      tx: x, ty: y,
-      r:3.6+(a.score||5)*.26,
-      kind:"article",label:a.title,level:a.score||5,
-      phase:rnd(0,6),title:a.title,file:a.file||(a.title+".md"),
-      parent:parent.id,depth,ang,
-      skill:parent.skill||assignSkill(a.title),
-      appear:isNew?0:1
-    };
-    nodes.push(n);map[id]=n;
-  }
+  const x = parent.x + Math.cos(ang) * baseDist;
+  const y = parent.y + Math.sin(ang) * baseDist;
+
+  const id = "art:" + a.title;
+  const isNew = !known.has(id);
+  if (isNew) known.add(id);
+
+  const n = {
+    id,
+    x: isNew ? parent.x : x,
+    y: isNew ? parent.y : y,
+    tx: x, ty: y,
+    r: 3.6 + (a.score || 5) * 0.26,
+    kind: "article",
+    label: a.title,
+    level: a.score || 5,
+    phase: rnd(0, 6),
+    title: a.title,
+    file: a.file || (a.title + ".md"),
+    parent: parent.id,
+    depth,
+    ang,
+    skill: parent.skill || assignSkill(a.title),
+    appear: isNew ? 0 : 1
+  };
+  nodes.push(n);
+  map[id] = n;
+}
 
   skillNames.forEach(sk=>{
     const parent=map["sk:"+sk];if(!parent)return;
