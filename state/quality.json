@@ -825,5 +825,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:01:16.954079+00:00"
+  },
+  "Insecticide": {
+    "score": 10.0,
+    "metrics": {
+      "words": 338,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Fly",
+        "Insect behaviour",
+        "Wing",
+        "Pollination",
+        "Insect ecology",
+        "Evolution"
+      ],
+      "diversity": 0.785,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:02:50.937531+00:00"
   }
 }

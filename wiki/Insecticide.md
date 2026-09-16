@@ -1,19 +1,24 @@
 # Insecticide
 
-Les insecticides sont des pesticides spécifiquement conçus pour éliminer les insectes. Ils comprennent des ovicides, destinés aux œufs, et des larvicides, ciblant les larves. Bien que leur usage principal soit l’agriculture, ils sont également déployés dans les foyers, les jardins, les bâtiments industriels, le contrôle des vecteurs et la lutte contre les parasites d’animaux et d’humains.
+Les insecticides sont des pesticides destinés à éliminer les insectes. Ils se déclinent en ovicides, qui ciblent les œufs, et en larvicides, qui agissent sur les larves. Bien que leur utilisation principale soit dans l’agriculture, ils interviennent également dans les foyers, les jardins, les bâtiments industriels, le contrôle des vecteurs et la lutte contre les parasites d’animaux et d’humains. Leur efficacité repose sur des principes chimiques ou biologiques qui perturbent les systèmes physiologiques des insectes.
 
-## Définition et classification
+## Mécanismes d’action et classification
 
-Un insecticide est un produit chimique ou biologique qui tue ou rend inactifs les insectes. Les ovicides et larvicides constituent deux catégories majeures, chacune adaptée à une étape particulière du cycle de vie d’un insecte. Les formulations peuvent être synthétiques (pesticides organiques ou inorganiques) ou naturelles (extraits végétaux, bactéries, champignons). La classification se base sur le mode d’action (inhibition de la respiration, perturbation du système nerveux, etc.) et sur la cible (œufs, larves, adultes).
+Les insecticides peuvent être classés selon leur mode d’action : neurotoxiques, disrupteurs endocriniens, inhibiteurs de la synthèse protéique ou encore agents de dérèglement de la respiration. Les ovicides et larvicides, par exemple, sont souvent des substances qui interfèrent avec la maturation des œufs ou la croissance des larves, réduisant ainsi la population future. La sélection du produit dépend du stade de vie ciblé, de la spécificité de l’insecte et du contexte d’utilisation (agriculture, santé publique, etc.).
 
-## Applications et domaines d’utilisation
+## Applications et enjeux environnementaux
 
-En agriculture, les insecticides protègent les cultures contre les ravageurs qui compromettent le rendement. Dans les foyers et les jardins, ils sont utilisés pour contrôler les nuisibles domestiques comme les moustiques, les fourmis ou les cafards. Les bâtiments industriels emploient des insecticides pour prévenir les infestations qui peuvent endommager les matériaux ou compromettre la santé des occupants. Le contrôle des vecteurs, notamment les moustiques porteurs de maladies, constitue une application publique cruciale. Enfin, les insecticides servent à éliminer les parasites d’animaux domestiques et de la faune, contribuant à la santé publique.
+Dans l’agriculture, les insecticides permettent de protéger les cultures contre les ravageurs, garantissant ainsi la sécurité alimentaire. Cependant, leur usage intensif peut entraîner des résistances chez les populations d’insectes, la contamination des sols et des eaux, ainsi qu’une perte de biodiversité, notamment des pollinisateurs essentiels à la reproduction des plantes. En milieu domestique ou industriel, ils sont employés pour prévenir les infestations nuisibles, mais leur application doit être maîtrisée afin de limiter les risques pour la santé humaine et l’environnement.
 
-## Impact environnemental et évolution
+## Contrôle des vecteurs et santé publique
 
-L’usage intensif d’insecticides a des répercussions sur l’écologie des insectes. La sélection naturelle favorise les populations résistantes, modifiant la dynamique des espèces et parfois entraînant des déséquilibres écologiques. Les effets secondaires peuvent toucher les pollinisateurs, les prédateurs naturels et d’autres organismes non ciblés, perturbant les réseaux trophiques. De plus, la persistance chimique dans les sols et les eaux peut affecter la faune aquatique et terrestre. La compréhension de ces interactions est essentielle pour développer des stratégies de gestion intégrée et minimiser les impacts négatifs.
+Les insecticides jouent un rôle crucial dans la lutte contre les vecteurs de maladies, tels que les moustiques porteurs du paludisme ou du virus Zika. En ciblant les œufs, les larves et les adultes, ils contribuent à réduire la transmission des pathogènes. Cette utilisation est souvent intégrée à des programmes de santé publique, combinée à d’autres mesures de prévention, comme l’élimination des sites de reproduction et l’usage de moustiquaires.
 
 ## Voir aussi
 
-[[Evolution]], [[Insect ecology]], [[Insect behaviour]], [[Insect flight]], [[Compound eye]]
+* [[Evolution]]
+* [[Insect ecology]]
+* [[Insect behaviour]]
+* [[Pollination]]
+* [[Fly]]
+* [[Wing]]

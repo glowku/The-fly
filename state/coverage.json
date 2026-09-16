@@ -320,6 +320,14 @@
         "https://en.wikipedia.org/wiki/Mosquito"
       ],
       "updated_at": "2026-09-16T23:01:16.954551+00:00"
+    },
+    "Insecticide": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:02:50.938039+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insecticide"
+      ],
+      "updated_at": "2026-09-16T23:02:50.938043+00:00"
     }
   },
   "edges": [
@@ -478,10 +486,13 @@
     {
       "from": "Insect wing",
       "to": "Amphibious insect"
+    },
+    {
+      "from": "Pollination",
+      "to": "Insecticide"
     }
   ],
   "frontier": [
-    "Insecticide",
     "Bird wing",
     "Bat wing development",
     "Aileron",
