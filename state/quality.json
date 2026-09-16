@@ -690,5 +690,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:49:30.377362+00:00"
+  },
+  "Housefly": {
+    "score": 8.7,
+    "metrics": {
+      "words": 145,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Diptera",
+        "Annual Review of Entomology",
+        "Insect",
+        "Fly"
+      ],
+      "diversity": 0.912,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:49:43.753284+00:00"
   }
 }
