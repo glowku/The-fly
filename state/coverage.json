@@ -264,6 +264,14 @@
         "https://en.wikipedia.org/wiki/Insect"
       ],
       "updated_at": "2026-09-16T22:48:36.546453+00:00"
+    },
+    "Automotive aerodynamics": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:49:30.377912+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Automotive_aerodynamics"
+      ],
+      "updated_at": "2026-09-16T22:49:30.377918+00:00"
     }
   },
   "edges": [

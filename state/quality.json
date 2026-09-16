@@ -671,5 +671,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:48:36.545988+00:00"
+  },
+  "Automotive aerodynamics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 332,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Hover",
+        "Aerodynamics",
+        "Wing",
+        "Insect flight",
+        "Fly"
+      ],
+      "diversity": 0.783,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:49:30.377362+00:00"
   }
 }
