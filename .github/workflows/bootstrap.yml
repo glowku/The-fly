@@ -1,0 +1,56 @@
+name: bootstrap
+
+on:
+  workflow_dispatch:
+    inputs:
+      root_topic:
+        description: 'Sujet racine (ex: Fly, Artificial intelligence, Cybersecurity)'
+        required: false
+        default: 'Fly'
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "fly-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Set root topic
+        run: |
+          echo "${{ github.event.inputs.root_topic || 'Fly' }}" > ROOT.txt
+          cat ROOT.txt
+
+      - name: First expand cycle
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python run.py
+
+      - name: Dashboard
+        run: python -m agent.evaluate_dashboard
+
+      - name: Commit bootstrap
+        run: |
+          git add -A
+          git commit -m "bootstrap: init knowledge graph for $(cat ROOT.txt)" || echo "Nothing"
+          git pull --rebase origin main || true
+          git push origin HEAD:main || echo "Push failed"
