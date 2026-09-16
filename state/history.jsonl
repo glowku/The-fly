@@ -50,3 +50,4 @@
 {"ts": "2026-09-16T18:19:33.164083+00:00", "type": "plan", "title": "Wing", "action": "expand", "priority": 68.0, "reason": "frontier_gap", "skill": "comportement"}
 {"ts": "2026-09-16T18:19:34.896117+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 0.6, "article": "Wing"}
 {"ts": "2026-09-16T18:19:36.900720+00:00", "type": "expand", "title": "Wing", "score": 10.0, "depth": 2, "discovered": 22, "objective": 1.154, "skill": "comportement"}
+{"ts": "2026-09-16T20:15:23.604776+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 0.69, "article": "Aerodynamics"}

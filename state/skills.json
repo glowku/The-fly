@@ -30,7 +30,7 @@
     "last_reinforced": "2026-09-16T13:23:44.797656+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 0.59,
+    "level": 0.69,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -43,9 +43,10 @@
     "articles": [
       "Fly",
       "Artificial fly",
-      "Insect flight"
+      "Insect flight",
+      "Aerodynamics"
     ],
-    "last_reinforced": "2026-09-16T13:55:50.453115+00:00"
+    "last_reinforced": "2026-09-16T20:15:23.604566+00:00"
   },
   "ecologie": {
     "level": 0.6,

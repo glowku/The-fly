@@ -111,5 +111,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T18:19:34.651793+00:00"
+  },
+  "Aerodynamics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 340,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Wing",
+        "Fly",
+        "Evolution",
+        "Devonian",
+        "Insect flight",
+        "Halteres"
+      ],
+      "diversity": 0.789,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:15:23.437739+00:00"
   }
 }
