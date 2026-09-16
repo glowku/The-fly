@@ -30,6 +30,10 @@
     {
       "from": "Evolution",
       "to": "Insecticide"
+    },
+    {
+      "from": "Evolution",
+      "to": "Fly"
     }
   ],
   "frontier": [
@@ -37,7 +41,8 @@
     "Insect",
     "Insect morphology",
     "Insect wing",
-    "Insecticide"
+    "Insecticide",
+    "Fly"
   ],
   "max_depth": 1
 }

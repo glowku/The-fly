@@ -32,3 +32,4 @@
 {"ts": "2026-09-16T11:06:14.037702+00:00", "type": "reset_root", "root": "mouche evolution"}
 {"ts": "2026-09-16T11:06:18.678024+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 0.5, "article": "Evolution"}
 {"ts": "2026-09-16T11:06:19.995648+00:00", "type": "expand", "title": "Evolution", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.2, "skill": "comportement"}
+{"ts": "2026-09-16T11:23:47.939792+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "suggested": 8, "added": 8, "titles": ["Fly", "Insect wing", "Halteres", "Compound eye", "Exoskeleton", "Thorax (arthropod anatomy)", "Antenna (zoology)", "Insect morphology"]}
