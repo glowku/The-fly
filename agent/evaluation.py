@@ -77,7 +77,7 @@ def score_article(content: str) -> dict:
     }
 
 
-def is_acceptable(score_result: dict, threshold: float = 5.8) -> bool:
+def is_acceptable(score_result: dict, threshold: float = 5.0) -> bool:
     """Critère d'acceptation pour commit."""
     return score_result.get("score", 0) >= threshold
 
