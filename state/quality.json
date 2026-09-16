@@ -1064,5 +1064,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:20:27.431928+00:00"
+  },
+  "Insect mouthparts": {
+    "score": 10.0,
+    "metrics": {
+      "words": 332,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Exoskeleton",
+        "Pollination",
+        "Parasitoid",
+        "Mating",
+        "Neoptera",
+        "Adaptive radiation"
+      ],
+      "diversity": 0.741,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:22:03.646670+00:00"
   }
 }

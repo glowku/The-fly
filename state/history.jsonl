@@ -190,3 +190,6 @@
 {"ts": "2026-09-16T23:18:54.550901+00:00", "type": "auto_learn_expand", "title": "Caddisfly", "skill": "anatomie_insecte", "score": 10.0, "objective": 9.942, "parent": "Compound eye"}
 {"ts": "2026-09-16T23:18:54.551551+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Caddisfly"], "parent": "Compound eye"}
 {"ts": "2026-09-16T23:20:27.685045+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 1.5, "article": "Entomology"}
+{"ts": "2026-09-16T23:20:31.081771+00:00", "type": "auto_learn_expand", "title": "Entomology", "skill": "entomologie", "score": 10.0, "objective": 10.142, "parent": "Arthropod leg"}
+{"ts": "2026-09-16T23:20:31.082451+00:00", "type": "auto_learn", "skill": "entomologie", "learned": true, "frontier_added": 0, "fresh": ["Entomology"], "parent": "Arthropod leg"}
+{"ts": "2026-09-16T23:22:03.855792+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.5, "article": "Insect mouthparts"}
