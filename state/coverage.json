@@ -1,58 +1,16 @@
 {
-  "root": "ecology fly",
+  "root": "Cybersecurity AI",
   "nodes": {
-    "Ecology": {
+    "Computer security": {
       "depth": 1,
-      "created_at": "2026-09-16T11:04:09.888541+00:00",
+      "created_at": "2026-09-16T11:04:41.143930+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Ecology"
+        "https://en.wikipedia.org/wiki/Computer_security"
       ],
-      "updated_at": "2026-09-16T11:04:09.888557+00:00"
+      "updated_at": "2026-09-16T11:04:41.143954+00:00"
     }
   },
-  "edges": [
-    {
-      "from": "Ecology",
-      "to": "Insect"
-    },
-    {
-      "from": "Ecology",
-      "to": "Insect morphology"
-    },
-    {
-      "from": "Ecology",
-      "to": "Insect wing"
-    },
-    {
-      "from": "Ecology",
-      "to": "Insecticide"
-    },
-    {
-      "from": "Ecology",
-      "to": "Wing"
-    },
-    {
-      "from": "Ecology",
-      "to": "Wing Chun"
-    },
-    {
-      "from": "Ecology",
-      "to": "Wings (1990 TV series)"
-    },
-    {
-      "from": "Ecology",
-      "to": "Wings (BTS album)"
-    }
-  ],
-  "frontier": [
-    "Insect",
-    "Insect morphology",
-    "Insect wing",
-    "Insecticide",
-    "Wing",
-    "Wing Chun",
-    "Wings (1990 TV series)",
-    "Wings (BTS album)"
-  ],
+  "edges": [],
+  "frontier": [],
   "max_depth": 1
 }

@@ -1,22 +1,22 @@
 {
-  "Ecology": {
+  "Computer security": {
     "score": 10.0,
     "metrics": {
-      "words": 281,
-      "sections": 4,
+      "words": 257,
+      "sections": 3,
       "links": 6,
       "link_list": [
-        "Histoire naturelle",
-        "Génétique",
-        "Évolution",
-        "Éthologie",
-        "Biologie",
-        "Biogéographie"
+        "Network security",
+        "Malware",
+        "Cybersecurity",
+        "Data protection",
+        "Information security",
+        "Computer virus"
       ],
-      "diversity": 0.701,
+      "diversity": 0.74,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-16T11:04:08.585820+00:00"
+    "updated_at": "2026-09-16T11:04:40.107195+00:00"
   }
 }
