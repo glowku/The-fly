@@ -86,7 +86,7 @@ def run_cycle(dry_run: bool = False):
         # Même rejeté, on peut découvrir des liens pour enrichir la frontière
         links = get_links(title, limit=20)
         related = get_related(title, limit=8)
-        for child in set(links + related)[:12]:
+        for child in list(set(links + related))[:12]:
             register_discovered(child, depth + 1, parent=title)
         return False
 
