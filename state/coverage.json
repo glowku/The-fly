@@ -272,6 +272,14 @@
         "https://en.wikipedia.org/wiki/Aerodynamic_(disambiguation)"
       ],
       "updated_at": "2026-09-16T22:51:43.155912+00:00"
+    },
+    "Housefly": {
+      "depth": 4,
+      "created_at": "2026-09-16T22:53:20.689112+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Housefly"
+      ],
+      "updated_at": "2026-09-16T22:53:20.689117+00:00"
     }
   },
   "edges": [
@@ -402,6 +410,10 @@
     {
       "from": "Insect",
       "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Annual Review of Entomology",
+      "to": "Housefly"
     }
   ],
   "frontier": [
@@ -425,5 +437,5 @@
     "Amphibious insect",
     "Abdomen (insect anatomy)"
   ],
-  "max_depth": 3
+  "max_depth": 4
 }

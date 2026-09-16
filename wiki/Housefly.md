@@ -1,19 +1,19 @@
 # Housefly
 
-La *housefly* (*Musca domestica*) est une mouche appartenant à la sous‑ordre Cyclorrhapha. Originaire, on suppose, du Moyen‑Orient, elle s’est répandue dans le monde entier en tant que commensale des humains. Les adultes présentent un corps gris à noir, légèrement poilu, avec quatre lignes longitudinales sombres sur le thorax. Ils possèdent une paire d’ailes membranées et des yeux composés rouges, plus espacés chez la femelle, qui est légèrement plus grande que le mâle.
+La mouche domestique (*Musca domestica*) est un insecte de l’ordre des Diptères, sous‑ordre Cyclorrhapha. Originaire, selon les hypothèses, du Moyen‑Orient, elle s’est répandue dans le monde entier en tant que commensale de l’homme. Les adultes présentent un corps gris à noir, légèrement poilu, avec quatre lignes longitudinales sombres sur le thorax, une paire d’ailes membranées et des yeux composés rouges. La femelle est légèrement plus grande que le mâle, ses yeux étant plus espacés.
 
 ## Biologie et morphologie
 
-La morphologie de la *housefly* est typique des Cyclorrhapha. Le thorax arbore quatre lignes sombres qui aident à l’identification. Les ailes, simples et membranées, sont accompagnées de halteres, petites structures rétractiles qui assurent la stabilité lors du vol, illustrant le principe de [[Insect flight]] et d’[[Aerodynamics]]. Les yeux composés rouges, disposés plus largement chez la femelle, sont un exemple de l’évolution des sens chez les insectes [[Evolution]].
+Les mouches domestiques possèdent des [[Halteres]], des structures réduites qui servent de stabilisateurs pendant le vol, typiques des Cyclorrhapha. Leur vol est caractérisé par une grande maniabilité, permettant des mouvements de [[Hover]] et d’[[Insect flight]] précis. Les ailes, constituées d’une seule paire, sont membranées et dotées de nervures complexes qui favorisent l’[[Aerodynamics]]. Le corps est recouvert de poils fins qui aident à la perception de l’environnement et à la protection contre les agents pathogènes.
 
-## Distribution et écologie
+## Écologie et distribution
 
-Originaire du Moyen‑Orient, la *housefly* s’est étendue à l’échelle mondiale grâce à son association étroite avec les activités humaines. Elle est un exemple de [[Insect ecology]] et de comportement commensal, se nourrissant de matières organiques et se reproduisant dans les environnements urbains. Sa présence est souvent liée à la disponibilité de matières organiques et à la proximité des humains, ce qui en fait un vecteur de maladies et un indicateur de la qualité sanitaire.
+En tant que [[Insect ecology]] et [[Insect behaviour]] adaptatif, la mouche domestique se nourrit de matières organiques en décomposition, ce qui la rend omniprésente dans les zones urbaines et rurales. Son cycle de vie rapide lui permet de coloniser de nouveaux habitats rapidement. La couleur du corps et la disposition des yeux rouges sont des adaptations à la vie en milieu humain, où la détection de sources de nourriture et de reproduction est cruciale.
 
-## Comportement et interaction avec l’homme
+## Relation avec l’homme
 
-Les *houseflies* sont connues pour leur vol erratique et leur capacité à « hover » près des sources de nourriture. Elles jouent un rôle important dans la décomposition des matières organiques, mais sont également considérées comme nuisibles en raison de leur capacité à transmettre des agents pathogènes. Leur comportement de vol et de recherche de nourriture est étudié dans le cadre de la [[Insect behaviour]] et de la gestion des populations urbaines.
+La mouche domestique est un vecteur de maladies, transportant des bactéries et des parasites sur ses pattes et son corps. Son rôle de commensale a conduit à de nombreuses études, notamment dans des revues spécialisées telles que l’[[Annual Review of Entomology]] qui synthétise les avancées récentes sur son comportement et son impact sanitaire. La compréhension de son comportement et de son adaptation continue d’être essentielle pour la gestion des populations et la prévention des maladies.
 
 ## Voir aussi
 
-[[Fly]], [[Halteres]], [[Insect flight]], [[Compound eye]], [[Insect ecology]], [[Insect behaviour]]
+[[Evolution]], [[Compound eye]], [[Insect flight]], [[Fly]], [[Wing]], [[Insect ecology]]
