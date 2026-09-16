@@ -1,3 +1,7 @@
+[![GitHub All Releases](https://img.shields.io/github/downloads/glowku/The-fly/total?style=flat-square&logo=github)](https://github.com/glowku/The-fly/releases)
+[![GitHub stars](https://img.shields.io/github/stars/glowku/The-fly?style=flat-square&logo=github)](https://github.com/glowku/The-fly/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/glowku/The-fly?style=flat-square&logo=github)](https://github.com/glowku/The-fly/network/members)[![GitHub forks](https://img.shields.io/github/forks/glowku/The-fly?style=flat-square&logo=github)](https://github.com/glowku/The-fly/network/members)
+
 # 🪰 The Fly — Autonomous Knowledge Agent
 
 > **Status : BETA** → passage en **ALPHA** prévu quand le graphe tient 50+ articles stables sans dérive hors-sujet.
