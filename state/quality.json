@@ -74,5 +74,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T14:04:50.240944+00:00"
+  },
+  "Devonian": {
+    "score": 8.7,
+    "metrics": {
+      "words": 149,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Insect",
+        "Diptera",
+        "Evolution",
+        "Fly"
+      ],
+      "diversity": 0.839,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T16:49:14.504857+00:00"
   }
 }
