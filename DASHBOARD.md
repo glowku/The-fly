@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 14:39:17 UTC
+**Dernière mise à jour** : 2026-09-16 19:23:37 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **0.78** |
-| Concepts traités | 200 | **4** |
-| Qualité moyenne | ≥ 7.5 | **9.75/10** |
+| Score global | maximiser | **1.154** |
+| Concepts traités | 200 | **6** |
+| Qualité moyenne | ≥ 7.5 | **9.62/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **4** |
-| Arêtes du graphe | 8 |
-| Frontière (à explorer) | 6 |
+| Concepts traités (nœuds) | **6** |
+| Arêtes du graphe | 11 |
+| Frontière (à explorer) | 8 |
 | Profondeur max | 2 |
-| Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **0.78** |
-| Actions dernières 24 h | 45 |
+| Score qualité moyen | **9.62/10** |
+| Score objectif (coverage × quality) | **1.154** |
+| Actions dernières 24 h | 51 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 4 |
+| Excellent (≥ 8) | 6 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -42,17 +42,13 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | [[Evolution]] | 10.00 | 298 | 6 |
 | [[Halteres]] | 10.00 | 360 | 6 |
 | [[Fly]] | 10.00 | 357 | 6 |
+| [[Wing]] | 10.00 | 378 | 5 |
 | [[Insect flight]] | 9.00 | 331 | 2 |
+| [[Devonian]] | 8.70 | 149 | 4 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T11:06:14  reset_root      
-2026-09-16T11:06:18  skill_reinforc  
-2026-09-16T11:06:19  expand          Evolution score=10.0
-2026-09-16T11:23:47  auto_learn      
-2026-09-16T12:25:39  auto_learn      
-2026-09-16T13:11:42  auto_learn      
 2026-09-16T13:23:44  skill_reinforc  
 2026-09-16T13:23:46  auto_learn_exp  Halteres score=10.0
 2026-09-16T13:23:46  auto_learn      
@@ -62,6 +58,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T14:04:49  plan            Fly
 2026-09-16T14:04:50  skill_reinforc  
 2026-09-16T14:04:52  expand          Fly score=10.0
+2026-09-16T16:49:14  skill_reinforc  
+2026-09-16T16:49:16  auto_learn_exp  Devonian score=8.7
+2026-09-16T16:49:16  auto_learn      
+2026-09-16T18:19:33  plan            Wing
+2026-09-16T18:19:34  skill_reinforc  
+2026-09-16T18:19:36  expand          Wing score=10.0
 ```
 
 ## Architecture de l'agent
