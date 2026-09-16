@@ -1,1 +1,22 @@
-{}
+{
+  "Ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 281,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Histoire naturelle",
+        "Génétique",
+        "Évolution",
+        "Éthologie",
+        "Biologie",
+        "Biogéographie"
+      ],
+      "diversity": 0.701,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T11:04:08.585820+00:00"
+  }
+}

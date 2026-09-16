@@ -44,7 +44,7 @@
     "last_reinforced": "2026-09-16T09:54:02.322960+00:00"
   },
   "ecologie": {
-    "level": 0.4,
+    "level": 0.5,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -54,7 +54,10 @@
       "parasite",
       "larva"
     ],
-    "articles": []
+    "articles": [
+      "Ecology"
+    ],
+    "last_reinforced": "2026-09-16T11:04:09.889165+00:00"
   },
   "evolution": {
     "level": 0.4,
