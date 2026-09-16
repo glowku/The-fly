@@ -1,29 +1,25 @@
 # Ecology
 
-L’écologie est la science naturelle qui étudie les relations entre les organismes vivants et leur environnement. Elle aborde ces interactions à plusieurs échelles, depuis l’individu jusqu’à la biosphère. L’écologie se situe à l’intersection de plusieurs disciplines, notamment la biogéographie, la biologie évolutive, la génétique, l’éthologie et l’histoire naturelle.
+L'écologie est la science naturelle qui étudie les relations entre les organismes vivants et leur environnement. Elle analyse les interactions à plusieurs échelles, de l’individu à la biosphère, afin de comprendre comment les espèces s’adaptent, se reproduisent et coexistent. L’écologie se situe à l’intersection de plusieurs disciplines, notamment la biogéographie, la biologie évolutive, la génétique, l’éthologie et l’histoire naturelle. Elle est étroitement liée à la [[Behavioral Ecology and Sociobiology]], qui examine les comportements adaptatifs et leurs implications sociales.
 
 ## Niveaux d’étude
 
-L’écologie considère les organismes à cinq niveaux hiérarchiques distincts : l’individu, la population, la communauté, l’écosystème et la biosphère.  
-- **Individu** : l’étude des caractéristiques et des comportements d’une espèce.  
-- **Population** : l’analyse des dynamiques de groupes d’individus d’une même espèce.  
-- **Communauté** : l’examen des interactions entre plusieurs populations cohabitant dans un même habitat.  
-- **Écosystème** : l’étude des flux d’énergie et de matière entre organismes et leur milieu abiotique.  
-- **Biosphère** : la perspective globale qui intègre toutes les interactions terrestres, aquatiques et atmosphériques.
+L’écologie considère les organismes à cinq niveaux hiérarchiques :
 
-## Domaines connexes
+1. **Individu** – Les caractéristiques physiologiques et comportementales d’une espèce.
+2. **Population** – La dynamique des groupes d’individus d’une même espèce, incluant la reproduction et la mortalité.
+3. **Communauté** – Les interactions entre plusieurs populations d’espèces différentes, telles que la compétition, la prédation ou la symbiose.
+4. **Écosystème** – L’ensemble des organismes et de leur milieu physique, où les flux d’énergie et de matière sont étudiés.
+5. **Biosphère** – Le niveau le plus global, englobant tous les écosystèmes terrestres, aquatiques et atmosphériques.
 
-L’écologie partage des concepts et des méthodes avec d’autres sciences naturelles.  
-- **Biogéographie** : l’étude de la répartition spatiale des espèces.  
-- **Biologie évolutive** : l’analyse des changements génétiques au fil du temps.  
-- **Génétique** : l’examen des variations génétiques qui influencent les interactions écologiques.  
-- **Éthologie** : l’étude du comportement des animaux dans leur contexte naturel.  
-- **Histoire naturelle** : la documentation des espèces et de leurs environnements.
+Chaque niveau révèle des mécanismes distincts, mais ils sont interconnectés : les changements à l’échelle de l’individu peuvent influencer la dynamique de la population, qui à son tour affecte la structure de la communauté et l’équilibre de l’écosystème.
 
-## Perspectives interdisciplinaires
+## Interdisciplinarité et domaines connexes
 
-En raison de son champ d’application large, l’écologie sert de cadre de référence pour de nombreuses recherches appliquées, telles que la conservation, la gestion des ressources naturelles et l’évaluation des impacts environnementaux. Les approches interdisciplinaires permettent de combiner des données biologiques, géographiques et génétiques pour comprendre les processus qui régissent la vie sur Terre.
+L’écologie partage des concepts et des méthodes avec plusieurs sciences. La biogéographie, par exemple, analyse la répartition spatiale des espèces, tandis que la biologie évolutive examine comment les pressions environnementales façonnent les traits génétiques. La génétique fournit des outils pour étudier la variation génétique au sein des populations, et l’éthologie éclaire les comportements qui influencent les interactions écologiques. L’histoire naturelle, quant à elle, offre une perspective historique sur les changements de la faune et de la flore.
+
+Les applications pratiques de l’écologie sont vastes : la gestion des ressources naturelles, la conservation de la biodiversité, la restauration des habitats et la compréhension des impacts du changement climatique. Dans le domaine de l’entomologie, l’[[Insect ecology]] et le rôle des insectes dans la [[Pollination]] ou le [[Swarm behaviour]] sont des exemples concrets de la façon dont les principes écologiques guident la recherche et la conservation.
 
 ## Voir aussi
 
-[[Biologie]] [[Biogéographie]] [[Évolution]] [[Génétique]] [[Éthologie]] [[Histoire naturelle]]
+[[Aerodynamics]] [[Palaeoptera]] [[Compound eye]] [[Insect ecology]] [[Insect behaviour]] [[Hover]] [[Neoptera]] [[Exoskeleton]] [[Pollination]] [[Swarm behaviour]] [[Flight]] [[Antenna (zoology)]]

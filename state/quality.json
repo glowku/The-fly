@@ -946,5 +946,32 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:10:51.133205+00:00"
+  },
+  "Ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 393,
+      "sections": 3,
+      "links": 13,
+      "link_list": [
+        "Aerodynamics",
+        "Compound eye",
+        "Insect behaviour",
+        "Antenna (zoology)",
+        "Hover",
+        "Exoskeleton",
+        "Pollination",
+        "Swarm behaviour",
+        "Insect ecology",
+        "Flight",
+        "Palaeoptera",
+        "Neoptera",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.753,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:12:25.594973+00:00"
   }
 }
