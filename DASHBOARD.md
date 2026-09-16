@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 08:57:00 UTC
+**Dernière mise à jour** : 2026-09-16 08:59:43 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **0.2** |
-| Concepts traités | 200 | **1** |
+| Score global | maximiser | **0.4** |
+| Concepts traités | 200 | **2** |
 | Qualité moyenne | ≥ 7.5 | **10.0/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **1** |
-| Arêtes du graphe | 22 |
-| Frontière (à explorer) | 22 |
-| Profondeur max | 1 |
+| Concepts traités (nœuds) | **2** |
+| Arêtes du graphe | 44 |
+| Frontière (à explorer) | 42 |
+| Profondeur max | 2 |
 | Score qualité moyen | **10.0/10** |
-| Score objectif (coverage × quality) | **0.2** |
-| Actions dernières 24 h | 1 |
+| Score objectif (coverage × quality) | **0.4** |
+| Actions dernières 24 h | 3 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 1 |
+| Excellent (≥ 8) | 2 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -40,11 +40,14 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
 | [[Fly]] | 10.00 | 208 | 5 |
+| [[Anus]] | 10.00 | 292 | 5 |
 
 ## Derniers événements de l'agent
 
 ```
 2026-09-16T08:57:00  expand          Fly score=10.0
+2026-09-16T08:59:40  plan            Anus
+2026-09-16T08:59:43  expand          Anus score=10.0
 ```
 
 ## Architecture de l'agent
