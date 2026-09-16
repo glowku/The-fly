@@ -67,28 +67,56 @@ def multi_search(query: str, limit_per: int = 5) -> list:
 
 
 def get_summary(title: str):
+    """Résumé Wikipedia — REST puis fallback query extracts."""
     try:
         r = requests.get(
             WIKI_SUMMARY.format(quote(title, safe="")),
             timeout=20,
             headers=HEADERS,
         )
-        if r.status_code != 200:
-            return None
-        data = r.json()
-        if data.get("type") in ("disambiguation", "https://mediawiki.org/wiki/Special:Redirect/new"):
-            return None
-        extract = data.get("extract") or ""
-        if not extract.strip():
-            return None
-        return {
-            "title": data.get("title") or title,
-            "extract": extract,
-            "description": data.get("description") or "",
-            "url": data.get("content_urls", {}).get("desktop", {}).get("page"),
-            "thumbnail": (data.get("thumbnail") or {}).get("source"),
-            "lang": data.get("lang", "en"),
+        if r.status_code == 200:
+            data = r.json()
+            if data.get("type") not in ("disambiguation",):
+                extract = data.get("extract") or ""
+                if extract.strip():
+                    return {
+                        "title": data.get("title") or title,
+                        "extract": extract,
+                        "description": data.get("description") or "",
+                        "url": data.get("content_urls", {}).get("desktop", {}).get("page"),
+                        "thumbnail": (data.get("thumbnail") or {}).get("source"),
+                        "lang": data.get("lang", "en"),
+                    }
+        # Fallback: MediaWiki extracts API (plus tolérant)
+        params = {
+            "action": "query",
+            "titles": title,
+            "prop": "extracts|description|info",
+            "exintro": 1,
+            "explaintext": 1,
+            "redirects": 1,
+            "inprop": "url",
+            "format": "json",
         }
+        r2 = requests.get(WIKI_API, params=params, timeout=20, headers=HEADERS)
+        if r2.status_code != 200:
+            return None
+        pages = r2.json().get("query", {}).get("pages", {})
+        for pid, page in pages.items():
+            if pid == "-1":
+                continue
+            extract = page.get("extract") or ""
+            if not extract.strip():
+                continue
+            return {
+                "title": page.get("title") or title,
+                "extract": extract[:2000],
+                "description": page.get("description") or "",
+                "url": page.get("fullurl"),
+                "thumbnail": None,
+                "lang": "en",
+            }
+        return None
     except Exception as e:
         print(f"[perceive] summary error for {title}: {e}", flush=True)
         return None

@@ -1,10 +1,10 @@
 """
-Auto-learning intelligent :
-1. Choisit la skill la plus faible
-2. Groq propose des concepts
-3. Déduplique (nodes + frontier + similarité)
-4. ÉCRIT un vrai article (wiki + quality + coverage) pour 1 concept
-5. Ajoute les autres à la frontier
+Auto-learning :
+- priorise la frontier déjà pertinente
+- Groq si dispo
+- seeds curés par skill (insectes) en fallback
+- dédup + filtre anti-bruit
+- écrit 1 vrai article par cycle
 """
 import os
 import re
@@ -15,7 +15,7 @@ from difflib import SequenceMatcher
 from .memory import (
     load_coverage, load_quality, save_quality, log_event, compute_objective_score,
 )
-from .skills import load_skills, pick_skill_to_develop, reinforce_skill
+from .skills import load_skills, pick_skill_to_develop, reinforce_skill, score_relevance
 from .perception import multi_search, get_summary, search_titles, get_links, get_related
 from .planning import register_discovered, register_processed
 from .synthesis import synthesize_article
@@ -24,6 +24,41 @@ from .tools import write_article, git_commit_push
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "openai/gpt-oss-20b"
+
+# Seeds solides par skill (pages Wikipedia réelles, domaine insectes / fly)
+SKILL_SEEDS = {
+    "entomologie": [
+        "Diptera", "Insect", "Fly", "Housefly", "Fruit fly", "Mosquito",
+        "Hoverfly", "Blowfly", "Tachinidae", "Entomology",
+    ],
+    "anatomie_insecte": [
+        "Insect morphology", "Insect wing", "Haltere", "Compound eye",
+        "Exoskeleton", "Antenna (biology)", "Thorax", "Arthropod leg",
+        "Spiracle", "Insect mouthparts",
+    ],
+    "vol_et_aerodynamique": [
+        "Insect flight", "Haltere", "Insect wing", "Aerodynamics",
+        "Hovering", "Wing", "Flight", "Diptera",
+    ],
+    "ecologie": [
+        "Insect ecology", "Pollination", "Larva", "Maggot",
+        "Parasitoid", "Decomposer", "Insecticide", "Biological pest control",
+    ],
+    "evolution": [
+        "Evolution of insects", "Insect evolution", "Devonian",
+        "Paleoptera", "Neoptera", "Adaptive radiation", "Coevolution",
+    ],
+    "comportement": [
+        "Insect behavior", "Swarm behaviour", "Mating", "Courtship",
+        "Foraging", "Eusociality", "Mimicry",
+    ],
+}
+
+JUNK_RE = re.compile(
+    r"(tv series|album|film|song|band|airline|aircraft|institute|"
+    r"wuornos|chun|password|malware|software|episode|novel|game)",
+    re.I,
+)
 
 
 def _norm(s: str) -> str:
@@ -34,35 +69,58 @@ def _similar(a: str, b: str) -> float:
     return SequenceMatcher(None, _norm(a), _norm(b)).ratio()
 
 
+def _is_junk(title: str) -> bool:
+    if not title or len(title) < 2:
+        return True
+    if JUNK_RE.search(title):
+        return True
+    # pure person names often have 2-3 capitalized words without biology context
+    return False
+
+
 def _already_known(title: str, nodes: dict, frontier: list, quality: dict) -> bool:
-    """True si le concept existe déjà ou est trop proche d'un existant."""
     n = _norm(title)
     if not n:
         return True
     for t in list(nodes.keys()) + list(quality.keys()) + list(frontier):
-        if _norm(t) == n:
-            return True
-        if _similar(title, t) >= 0.88:
+        if _norm(t) == n or _similar(title, t) >= 0.88:
             return True
     return False
+
+
+def _resolve_page(title: str):
+    """Retourne (canonical_title, summary) ou (None, None)."""
+    if _is_junk(title):
+        return None, None
+    s = get_summary(title)
+    if s and len(s.get("extract") or "") > 60:
+        return s.get("title") or title, s
+    # try search
+    for h in search_titles(title, limit=5):
+        if _is_junk(h):
+            continue
+        s = get_summary(h)
+        if s and len(s.get("extract") or "") > 60:
+            return s.get("title") or h, s
+    return None, None
 
 
 def _groq_suggest(skill_name: str, skill_info: dict, root: str, existing: list) -> list:
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
+        print("[auto_learn] GROQ_API_KEY missing", flush=True)
         return []
 
     kws = ", ".join(skill_info.get("keywords", [])[:8])
-    existing_s = ", ".join(existing[:25]) if existing else "(aucun)"
-    prompt = f"""Tu construis un graphe encyclopédique sur: {root}
-Compétence: {skill_name} — {skill_info.get('description','')}
+    existing_s = ", ".join(existing[:30]) if existing else "(none)"
+    prompt = f"""You expand a knowledge graph about: {root}
+Skill to grow: {skill_name} ({skill_info.get('description', '')})
 Keywords: {kws}
-Déjà dans le wiki (NE PAS resuggestionner): {existing_s}
+Already in wiki — DO NOT suggest these: {existing_s}
 
-Propose 8 titres Wikipedia EN ANGLAIS, précis, NON présents dans la liste,
-pertinents pour cette compétence ET le sujet racine.
-Réponds UNIQUEMENT un JSON array de strings.
-Exemple: ["Haltere", "Insect wing", "Compound eye"]"""
+Return ONLY a JSON array of 8 real English Wikipedia article titles
+about insects / flies / this skill. No markdown, no comments.
+Example: ["Haltere", "Insect wing", "Compound eye"]"""
 
     try:
         r = requests.post(
@@ -71,46 +129,52 @@ Exemple: ["Haltere", "Insect wing", "Compound eye"]"""
             json={
                 "model": MODEL,
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.35,
+                "temperature": 0.3,
                 "max_tokens": 400,
             },
             timeout=60,
         )
         if r.status_code != 200:
-            print(f"[auto_learn] Groq HTTP {r.status_code}: {r.text[:200]}", flush=True)
+            print(f"[auto_learn] Groq HTTP {r.status_code}: {r.text[:250]}", flush=True)
             return []
         text = r.json()["choices"][0]["message"]["content"].strip()
         text = re.sub(r"^```(?:json)?\s*", "", text)
         text = re.sub(r"\s*```$", "", text)
         m = re.search(r"\[.*\]", text, re.S)
         if not m:
+            print(f"[auto_learn] Groq bad JSON: {text[:200]}", flush=True)
             return []
-        return [str(x).strip() for x in json.loads(m.group(0)) if str(x).strip()][:10]
+        items = [str(x).strip() for x in json.loads(m.group(0)) if str(x).strip()]
+        print(f"[auto_learn] Groq OK → {items}", flush=True)
+        return items[:10]
     except Exception as e:
-        print(f"[auto_learn] groq error: {e}", flush=True)
+        print(f"[auto_learn] Groq error: {e}", flush=True)
         return []
 
 
-def _fallback(skill_info: dict, root: str) -> list:
-    out = []
-    for kw in (skill_info.get("keywords") or [])[:4]:
-        out += multi_search(f"{root} {kw}", limit_per=3)[:3]
-        out += search_titles(kw, limit=3)
-    seen = set()
-    res = []
-    for x in out:
-        if x not in seen:
-            seen.add(x)
-            res.append(x)
-    return res[:12]
+def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
+    """Frontier items that match the skill keywords / relevance."""
+    scored = []
+    for t in frontier:
+        if _is_junk(t):
+            continue
+        rel = score_relevance(t)
+        # boost if skill keyword in title
+        skills = load_skills()
+        kws = skills.get(skill_name, {}).get("keywords") or []
+        bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.2
+        scored.append((rel + bonus, t))
+    scored.sort(reverse=True)
+    return [t for _, t in scored if _ >= 0.15][:8]
 
 
 def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
-    """Écrit un vrai article wiki pour title. Retourne True si OK."""
-    summary = get_summary(title)
+    canon, summary = _resolve_page(title)
     if not summary:
+        print(f"[auto_learn] cannot resolve: {title}", flush=True)
         return False
-    title = summary.get("title") or title
+    title = canon
+
     content = synthesize_article(
         title=title,
         summary=summary.get("extract") or "",
@@ -119,9 +183,9 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
         sources=[summary["url"]] if summary.get("url") else None,
     )
     score = score_article(content)
-    print(f"[auto_learn] evaluate {title}: {explain_score(score)}", flush=True)
+    print(f"[auto_learn] {explain_score(score)} — {title}", flush=True)
     if not is_acceptable(score):
-        print(f"[auto_learn] reject {title} score={score['score']}", flush=True)
+        print(f"[auto_learn] reject score={score['score']}", flush=True)
         return False
 
     write_article(title, content)
@@ -133,18 +197,15 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     quality[title] = score
     save_quality(quality)
 
-    # discover children links
-    for child in list(set(get_links(title, 20) + get_related(title, 8)))[:10]:
-        register_discovered(child, depth=3, parent=title)
+    for child in list(set(get_links(title, 15) + get_related(title, 6)))[:8]:
+        if not _is_junk(child):
+            register_discovered(child, depth=3, parent=title)
 
     reinforce_skill(skill_name, title, score["score"])
-    obj, n_nodes, avg_q = compute_objective_score()
+    obj, n_nodes, _ = compute_objective_score()
     msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes})"
     git_commit_push([f"wiki/{title}.md", "state/", "DASHBOARD.md"], msg)
-    log_event("auto_learn_expand", {
-        "title": title, "skill": skill_name,
-        "score": score["score"], "objective": obj,
-    })
+    log_event("auto_learn_expand", {"title": title, "skill": skill_name, "score": score["score"], "objective": obj})
     print(f"[auto_learn] ✅ article créé: {title}", flush=True)
     return True
 
@@ -159,62 +220,70 @@ def run_auto_learn():
     nodes = cov.get("nodes") or {}
     frontier = list(cov.get("frontier") or [])
 
-    skills = load_skills()
     skill_name = pick_skill_to_develop()
+    skills = load_skills()
     skill_info = skills.get(skill_name, {})
     print(f"[auto_learn] skill={skill_name} level={skill_info.get('level', 0)}", flush=True)
 
     existing = list(nodes.keys()) + list(quality.keys())
-    suggestions = _groq_suggest(skill_name, skill_info, root, existing)
-    if not suggestions:
-        suggestions = _fallback(skill_info, root)
-        print(f"[auto_learn] fallback → {suggestions[:5]}", flush=True)
-    else:
-        print(f"[auto_learn] Groq → {suggestions}", flush=True)
-
     parent = root if root in nodes else (existing[0] if existing else None)
 
-    # validate + dedupe
+    # 1) frontier matching skill
+    # 2) Groq
+    # 3) curated seeds
+    pool = []
+    pool += _candidates_from_frontier(skill_name, frontier)
+    pool += _groq_suggest(skill_name, skill_info, root, existing)
+    pool += SKILL_SEEDS.get(skill_name, SKILL_SEEDS["entomologie"])
+
+    # unique preserve order
+    seen = set()
+    ordered = []
+    for t in pool:
+        k = _norm(t)
+        if k in seen:
+            continue
+        seen.add(k)
+        ordered.append(t)
+
     fresh = []
-    for title in suggestions:
-        s = get_summary(title)
-        if not s:
-            for h in multi_search(title, limit_per=3)[:2]:
-                s = get_summary(h)
-                if s:
-                    title = s.get("title") or h
-                    break
-        if not s:
-            print(f"[auto_learn] no wiki page: {title}", flush=True)
-            continue
-        title = s.get("title") or title
+    for title in ordered:
         if _already_known(title, nodes, frontier, quality):
-            print(f"[auto_learn] skip duplicate/similar: {title}", flush=True)
+            print(f"[auto_learn] skip known: {title}", flush=True)
             continue
-        fresh.append(title)
+        if _is_junk(title):
+            print(f"[auto_learn] skip junk: {title}", flush=True)
+            continue
+        canon, s = _resolve_page(title)
+        if not s:
+            print(f"[auto_learn] skip no-page: {title}", flush=True)
+            continue
+        if _already_known(canon, nodes, frontier, quality):
+            print(f"[auto_learn] skip known canon: {canon}", flush=True)
+            continue
+        fresh.append(canon)
 
-    print(f"[auto_learn] {len(fresh)} concepts nouveaux après dédup", flush=True)
+    print(f"[auto_learn] {len(fresh)} candidats valides: {fresh[:8]}", flush=True)
 
-    # 1) expand the first fresh concept into a REAL node
     learned = False
-    for title in fresh[:3]:
+    for title in fresh[:4]:
         if _expand_one(title, parent, skill_name):
             learned = True
-            # refresh state after write
             cov = load_coverage()
             nodes = cov.get("nodes") or {}
             quality = load_quality()
             frontier = list(cov.get("frontier") or [])
             break
 
-    # 2) rest → frontier only (not already known)
     added_f = 0
-    for title in fresh:
+    for title in fresh[(1 if learned else 0):]:
         if _already_known(title, nodes, frontier, quality):
             continue
         register_discovered(title, depth=2, parent=parent)
         frontier.append(title)
         added_f += 1
+        if added_f >= 6:
+            break
 
     log_event("auto_learn", {
         "skill": skill_name,
@@ -222,8 +291,5 @@ def run_auto_learn():
         "frontier_added": added_f,
         "fresh": fresh[:10],
     })
-    print(
-        f"[auto_learn] done — article_écrit={learned} frontier+={added_f}",
-        flush=True,
-    )
+    print(f"[auto_learn] done — article_écrit={learned} frontier+={added_f}", flush=True)
     return learned or added_f > 0
