@@ -1125,5 +1125,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:25:13.971055+00:00"
+  },
+  "Windhover": {
+    "score": 8.7,
+    "metrics": {
+      "words": 121,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Diptera",
+        "Hover",
+        "Insect"
+      ],
+      "diversity": 0.861,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:26:51.264902+00:00"
   }
 }

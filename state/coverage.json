@@ -440,6 +440,14 @@
         "https://en.wikipedia.org/wiki/Anthecology"
       ],
       "updated_at": "2026-09-16T23:25:13.971579+00:00"
+    },
+    "Windhover": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:26:51.265421+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Windhover"
+      ],
+      "updated_at": "2026-09-16T23:26:51.265426+00:00"
     }
   },
   "edges": [
