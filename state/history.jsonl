@@ -28,3 +28,4 @@
 {"ts": "2026-09-16T11:04:11.267629+00:00", "type": "expand", "title": "Ecology", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.2, "skill": "ecologie"}
 {"ts": "2026-09-16T11:04:33.165111+00:00", "type": "reset_root", "root": "Cybersecurity AI"}
 {"ts": "2026-09-16T11:04:41.144357+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 0.5, "article": "Computer security"}
+{"ts": "2026-09-16T11:04:42.520153+00:00", "type": "expand", "title": "Computer security", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.2, "skill": "evolution"}

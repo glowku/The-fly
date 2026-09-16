@@ -1,10 +1,10 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 11:04:11 UTC
+**Dernière mise à jour** : 2026-09-16 11:04:42 UTC
 
 ## Objectif de l'agent
 
-Construire un **graphe de connaissance vivant** sur le sujet racine **« ecology fly »**.
+Construire un **graphe de connaissance vivant** sur le sujet racine **« Cybersecurity AI »**.
 
 Formule d'optimisation : `coverage_factor × average_quality`
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **1** |
-| Arêtes du graphe | 8 |
-| Frontière (à explorer) | 8 |
+| Arêtes du graphe | 0 |
+| Frontière (à explorer) | 0 |
 | Profondeur max | 1 |
 | Score qualité moyen | **10.0/10** |
 | Score objectif (coverage × quality) | **0.2** |
-| Actions dernières 24 h | 27 |
+| Actions dernières 24 h | 30 |
 
 ## Répartition de la qualité
 
@@ -39,14 +39,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
-| [[Ecology]] | 10.00 | 281 | 6 |
+| [[Computer security]] | 10.00 | 257 | 6 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T09:53:06  skip            Fly away
-2026-09-16T09:54:00  reset_root      
-2026-09-16T09:54:02  skill_reinforc  
 2026-09-16T09:54:03  expand          Artificial fly score=10.0
 2026-09-16T10:06:18  reset_root      
 2026-09-16T10:06:19  skip            ecology fly
@@ -59,6 +56,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T11:04:05  reset_root      
 2026-09-16T11:04:09  skill_reinforc  
 2026-09-16T11:04:11  expand          Ecology score=10.0
+2026-09-16T11:04:33  reset_root      
+2026-09-16T11:04:41  skill_reinforc  
+2026-09-16T11:04:42  expand          Computer security score=10.0
 ```
 
 ## Architecture de l'agent
