@@ -66,3 +66,5 @@
 {"ts": "2026-09-16T20:44:34.937135+00:00", "type": "auto_learn_expand", "title": "Insect behaviour", "skill": "comportement", "score": 10.0, "objective": 2.154}
 {"ts": "2026-09-16T20:44:34.942867+00:00", "type": "auto_learn", "skill": "comportement", "learned": true, "frontier_added": 6, "fresh": ["Insect behaviour", "Swarm behaviour", "Mating", "Courtship", "Foraging", "Eusociality", "Mimicry"]}
 {"ts": "2026-09-16T20:45:07.947477+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 0.79, "article": "Hover"}
+{"ts": "2026-09-16T20:45:09.808065+00:00", "type": "auto_learn_expand", "title": "Hover", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 2.354}
+{"ts": "2026-09-16T20:45:09.809428+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 1, "fresh": ["Hover", "Flight"]}
