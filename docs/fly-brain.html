@@ -350,19 +350,32 @@ function placeArt(a, parent, depth, index, total){
     if(!frBySk[sk])frBySk[sk]=[];
     frBySk[sk].push(title);
   });
-  Object.entries(frBySk).forEach(([sk,list])=>{
-    const parent=map["sk:"+sk]||core;
-    list.forEach((title,i)=>{
-      const fan=Math.min(2.2,0.45+list.length*0.22);
-      const ang=(parent.ang||0)+(i-(list.length-1)/2)*(fan/Math.max(list.length,1));
-      const dist=70; // shallow
-      nodes.push({id:"fr:"+title,
-        x:parent.x+Math.cos(ang)*dist,
-        y:parent.y+Math.sin(ang)*dist,
-        r:3.2,kind:"frontier",label:title,level:0,phase:rnd(0,6),
-        parent:parent.id,ghost:true,title,skill:sk,ang,depth:1});
+Object.entries(frBySk).forEach(([sk, list]) => {
+  const parent = map["sk:" + sk] || core;
+  list.forEach((title, i) => {
+    const crowded = Math.max(0, list.length - 5);
+    const fan = Math.min(2.6, 0.5 + list.length * 0.28);
+    const ang = (parent.ang || 0) + (i - (list.length - 1) / 2) * (fan / Math.max(list.length, 1));
+    const dist = 65 + crowded * 12;   // s’allonge si beaucoup de frontier
+
+    nodes.push({
+      id: "fr:" + title,
+      x: parent.x + Math.cos(ang) * dist,
+      y: parent.y + Math.sin(ang) * dist,
+      r: 3.2,
+      kind: "frontier",
+      label: title,
+      level: 0,
+      phase: rnd(0, 6),
+      parent: parent.id,
+      ghost: true,
+      title,
+      skill: sk,
+      ang,
+      depth: 1
     });
   });
+});
 
   if(particles.length<35)
     for(let i=particles.length;i<45;i++)
