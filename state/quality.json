@@ -671,5 +671,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:48:36.545988+00:00"
+  },
+  "Aerodynamic (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 191,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Evolution",
+        "Wing",
+        "Insect flight",
+        "Aerodynamics",
+        "Halteres"
+      ],
+      "diversity": 0.843,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:49:38.518960+00:00"
   }
 }
