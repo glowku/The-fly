@@ -304,6 +304,14 @@
         "https://en.wikipedia.org/wiki/Insect_wing"
       ],
       "updated_at": "2026-09-16T22:58:04.976540+00:00"
+    },
+    "Insecticide": {
+      "depth": 2,
+      "created_at": "2026-09-16T22:58:33.397957+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insecticide"
+      ],
+      "updated_at": "2026-09-16T22:58:33.397961+00:00"
     }
   },
   "edges": [
@@ -465,7 +473,6 @@
     }
   ],
   "frontier": [
-    "Insecticide",
     "Bird wing",
     "Bat wing development",
     "Aileron",

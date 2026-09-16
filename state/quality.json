@@ -787,5 +787,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:58:04.976098+00:00"
+  },
+  "Insecticide": {
+    "score": 10.0,
+    "metrics": {
+      "words": 339,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Insect ecology",
+        "Evolution",
+        "Insect behaviour",
+        "Insect flight",
+        "Compound eye"
+      ],
+      "diversity": 0.797,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:58:33.397507+00:00"
   }
 }
