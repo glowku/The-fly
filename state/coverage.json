@@ -1,7 +1,128 @@
 {
   "root": "Fly",
-  "nodes": {},
-  "edges": [],
-  "frontier": [],
-  "max_depth": 0
+  "nodes": {
+    "Fly": {
+      "depth": 1,
+      "created_at": "2026-09-16T08:56:59.440147+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fly"
+      ],
+      "updated_at": "2026-09-16T08:56:59.440161+00:00"
+    }
+  },
+  "edges": [
+    {
+      "from": "Fly",
+      "to": "Abdomen"
+    },
+    {
+      "from": "Fly",
+      "to": "Angling"
+    },
+    {
+      "from": "Fly",
+      "to": "Antenna (biology)"
+    },
+    {
+      "from": "Fly",
+      "to": "Anthomyzidae"
+    },
+    {
+      "from": "Fly",
+      "to": "Anus"
+    },
+    {
+      "from": "Fly",
+      "to": "Amphibian"
+    },
+    {
+      "from": "Fly",
+      "to": "Anisopodidae"
+    },
+    {
+      "from": "Fly",
+      "to": "Antliophora"
+    },
+    {
+      "from": "Fly",
+      "to": "Acartophthalmus"
+    },
+    {
+      "from": "Fly",
+      "to": "Anti-predator adaptation"
+    },
+    {
+      "from": "Fly",
+      "to": "Acroceridae"
+    },
+    {
+      "from": "Fly",
+      "to": "Annual Review of Entomology"
+    },
+    {
+      "from": "Fly",
+      "to": "Antibacterial"
+    },
+    {
+      "from": "Fly",
+      "to": "Amphiesmenoptera"
+    },
+    {
+      "from": "Fly",
+      "to": "Animal Diversity Web"
+    },
+    {
+      "from": "Fly",
+      "to": "Anthomyia"
+    },
+    {
+      "from": "Fly",
+      "to": "10th edition of Systema Naturae"
+    },
+    {
+      "from": "Fly",
+      "to": "Anthomyiidae"
+    },
+    {
+      "from": "Fly",
+      "to": "Ancient Egypt"
+    },
+    {
+      "from": "Fly",
+      "to": "Amber"
+    },
+    {
+      "from": "Fly",
+      "to": "Animal"
+    },
+    {
+      "from": "Fly",
+      "to": "Aeschylus"
+    }
+  ],
+  "frontier": [
+    "Abdomen",
+    "Angling",
+    "Antenna (biology)",
+    "Anthomyzidae",
+    "Anus",
+    "Amphibian",
+    "Anisopodidae",
+    "Antliophora",
+    "Acartophthalmus",
+    "Anti-predator adaptation",
+    "Acroceridae",
+    "Annual Review of Entomology",
+    "Antibacterial",
+    "Amphiesmenoptera",
+    "Animal Diversity Web",
+    "Anthomyia",
+    "10th edition of Systema Naturae",
+    "Anthomyiidae",
+    "Ancient Egypt",
+    "Amber",
+    "Animal",
+    "Aeschylus"
+  ],
+  "max_depth": 1
 }
