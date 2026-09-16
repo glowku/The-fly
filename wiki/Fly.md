@@ -1,19 +1,24 @@
 # Fly
 
-Les mouches appartiennent à l’ordre Diptera, dont le nom signifie « deux ailes » en référence à leur paire unique d’ailes. Elles se distinguent par la présence d’haltères, des organes dérivés des ailes arrière qui permettent de détecter la rotation et d’assurer un contrôle précis du vol. Le groupe compte plus de 150 000 espèces, dont les mouches à cheval, les libellules, les syrphes, les moustiques et d’autres encore.
+Les mouches appartiennent à l’ordre Diptera, nommé ainsi en raison de leur paire unique d’ailes. Les ailes arrière ont évolué en halteres, de petits organes sensoriels qui détectent la rotation et permettent un contrôle précis du vol. Cet ordre est l’un des plus diversifiés d’insectes, comptant plus de 150 000 espèces. Parmi ces espèces figurent les mouches à cheval, les libellules, les syrphes, les moustiques et d’autres encore.
 
-## Morphologie et adaptations
+## Morphologie
 
-Les mouches possèdent une seule paire d’ailes actives, tandis que leurs ailes postérieures ont évolué en haltères. Ces petits appendices vibrants servent de gyroscopes, détectant les mouvements de rotation et contribuant à la stabilité et à la maniabilité pendant le vol. Cette configuration unique est la caractéristique principale qui distingue l’ordre Diptera des autres groupes d’insectes.
+Les mouches possèdent une seule paire d’ailes fonctionnelles, tandis que les ailes postérieures sont réduites en halteres. Ces halteres agissent comme des gyroscopes, fournissant des informations rapides sur la rotation et l’orientation de l’insecte. La structure de l’aile principale est adaptée à un vol agile et à une grande maniabilité, ce qui explique la capacité des mouches à effectuer des virages serrés et à maintenir un vol stable.
 
-## Diversité et répartition
+## Évolution et adaptation
 
-Diptera est l’un des plus grands ordres d’insectes, avec plus de 150 000 espèces décrites. Parmi ces espèces figurent les mouches à cheval, les libellules, les syrphes, les moustiques et d’autres encore. Cette diversité reflète une large gamme d’habitats et de comportements, allant des environnements terrestres aux milieux aquatiques, et montre l’adaptabilité remarquable de ce groupe.
+L’évolution des halteres représente une adaptation majeure qui a permis aux dipteres de développer un vol très précis. Cette innovation a favorisé l’émergence d’une grande variété de niches écologiques, allant des pollinisateurs aux vecteurs de maladies. Les halteres, en tant que mécanismes de stabilisation, ont joué un rôle crucial dans l’expansion de l’ordre Diptera à travers divers environnements terrestres.
+
+## Diversité et importance
+
+Avec plus de 150 000 espèces, l’ordre Diptera comprend des insectes qui occupent des fonctions écologiques variées. Les mouches à cheval sont souvent associées aux grands mammifères, les libellules (crane flies) se trouvent dans les zones humides, les syrphes (hoverflies) sont reconnues pour leur rôle pollinisateur, et les moustiques (mosquitoes) sont connus pour leur capacité à transmettre des agents pathogènes. Cette diversité souligne l’importance des dipteres dans les écosystèmes terrestres et leur impact sur la santé humaine et animale.
 
 ## Voir aussi
 
-[[Insecte]]  
-[[Ordre d'insectes]]  
-[[Halteres]]  
-[[Moustique]]  
-[[Sauterelle]]
+[[Fly]]  
+[[Anus]]  
+[[Horse-fly]]  
+[[Mosquito]]  
+[[Hoverfly]]  
+[[Crane fly]]

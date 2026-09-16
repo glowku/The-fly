@@ -2,21 +2,22 @@
   "Fly": {
     "score": 10.0,
     "metrics": {
-      "words": 208,
-      "sections": 3,
-      "links": 5,
+      "words": 308,
+      "sections": 4,
+      "links": 6,
       "link_list": [
-        "Ordre d'insectes",
-        "Sauterelle",
-        "Insecte",
-        "Halteres",
-        "Moustique"
+        "Anus",
+        "Hoverfly",
+        "Horse-fly",
+        "Fly",
+        "Crane fly",
+        "Mosquito"
       ],
-      "diversity": 0.736,
+      "diversity": 0.731,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-16T08:56:59.300368+00:00"
+    "updated_at": "2026-09-16T09:25:46.103113+00:00"
   },
   "Anus": {
     "score": 10.0,
