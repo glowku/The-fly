@@ -39,7 +39,7 @@
     "last_reinforced": "2026-09-16T22:48:30.662748+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 1.09,
+    "level": 1.19,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -57,9 +57,10 @@
       "Hover",
       "Flight",
       "Angular velocity",
-      "Alate"
+      "Alate",
+      "Aerodynamic (disambiguation)"
     ],
-    "last_reinforced": "2026-09-16T22:41:50.889455+00:00"
+    "last_reinforced": "2026-09-16T22:51:43.358940+00:00"
   },
   "ecologie": {
     "level": 1.1,

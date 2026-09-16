@@ -1,26 +1,24 @@
 # Aerodynamic (disambiguation)
 
-Aerodynamic est un adjectif dérivé de l’aérodynamique, la science qui étudie le mouvement de l’air. En dehors de son usage scientifique, le terme apparaît dans divers contextes culturels, techniques et institutionnels. Cet article présente les références les plus courantes associées à « Aerodynamic ».
+Aerodynamic est un adjectif décrivant la capacité d’un objet à se déplacer dans l’air avec un minimum de résistance. En dehors de son usage courant en mécanique des fluides, le terme apparaît dans divers domaines culturels et techniques. Cet article répertorie les principales références portant le même nom.
 
-## Références musicales
+## Musique
 
-- **« Aerodynamic » (instrumental)**, une pièce instrumentale de 2001 réalisée par le duo électronique Daft Punk.  
-- **« Aerodynamic »**, un morceau de 2025 issu de l’album *Phantom Island* du groupe australien King Gizzard & the Lizard Wizard.  
+- **"Aerodynamic" (instrumental)** – Un morceau instrumental de 2001 produit par le duo français Daft Punk. Il se distingue par ses synthétiseurs atmosphériques et son rythme hypnotique, souvent utilisé dans les compilations de musique électronique.
+- **"Aerodynamic"** – Un titre de 2025 de l’album *Phantom Island* du groupe australien King Gizzard & the Lizard Wizard. Cette chanson mélange des sonorités psychédéliques et des structures rythmiques complexes, typiques de l’œuvre du groupe.
 
-Ces titres illustrent l’usage du mot pour évoquer la fluidité et la rapidité, qualités associées à la science du mouvement de l’air.
+## Termes techniques et organisations
 
-## Termes techniques et institutions
+- **Aerodynamic center** – Point théorique sur un profil aérodynamique où le moment de portance est nul. Ce concept est fondamental dans l’analyse de la stabilité des ailes et des fuselages.
+- **Aerodynamics Inc.** – Compagnie américaine de transport aérien de fret et de passagers, spécialisée dans les vols charters. Elle exploite une flotte de jets privés et de petits avions.
+- **Aerodynamics Research Institute** – Institution de recherche dédiée à l’étude de la dynamique des fluides et au développement de technologies aérodynamiques avancées. L’institut collabore avec des universités et des industries aéronautiques.
 
-- **Centre aérodynamique** (*aerodynamic center*), point théorique d’un profil aérodynamique où le moment d’inertie est nul.  
-- **Aerodynamics Inc.**, une compagnie américaine de transport aérien par charters.  
-- **Aerodynamics Research Institute**, un institut de recherche dédié aux études sur le flux d’air et la propulsion.  
-
-Ces entités portent le nom pour souligner leur lien avec les principes de l’aérodynamique, bien que leurs domaines d’activité varient de l’ingénierie à la recherche fondamentale.
+Ces usages illustrent la polyvalence du terme, qui traverse la musique, l’ingénierie et les organisations spécialisées.
 
 ## Voir aussi
 
-- [[Aerodynamics]]  
-- [[Insect flight]]  
-- [[Wing]]  
-- [[Halteres]]  
+- [[Aerodynamics]]
 - [[Evolution]]
+- [[Insect flight]]
+- [[Wing]]
+- [[Hover]]

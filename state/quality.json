@@ -681,5 +681,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:50:06.692335+00:00"
+  },
+  "Aerodynamic (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 240,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Aerodynamics",
+        "Hover",
+        "Wing",
+        "Insect flight",
+        "Evolution"
+      ],
+      "diversity": 0.87,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:51:43.155428+00:00"
   }
 }
