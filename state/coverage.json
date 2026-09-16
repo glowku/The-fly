@@ -392,6 +392,14 @@
         "https://en.wikipedia.org/wiki/Hovertrain"
       ],
       "updated_at": "2026-09-16T23:15:40.443707+00:00"
+    },
+    "Applications of evolution": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:17:16.162370+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Applications_of_evolution"
+      ],
+      "updated_at": "2026-09-16T23:17:16.162375+00:00"
     }
   },
   "edges": [
@@ -582,6 +590,10 @@
     {
       "from": "Ecology",
       "to": "Agroecology"
+    },
+    {
+      "from": "Adaptive radiation",
+      "to": "Applications of evolution"
     }
   ],
   "frontier": [

@@ -181,3 +181,6 @@
 {"ts": "2026-09-16T23:14:03.023779+00:00", "type": "auto_learn_expand", "title": "Ant mimicry", "skill": "comportement", "score": 10.0, "objective": 9.435, "parent": "Mimicry"}
 {"ts": "2026-09-16T23:14:03.024401+00:00", "type": "auto_learn", "skill": "comportement", "learned": true, "frontier_added": 0, "fresh": ["Ant mimicry"], "parent": "Mimicry"}
 {"ts": "2026-09-16T23:15:40.602169+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 1.46, "article": "Hovertrain"}
+{"ts": "2026-09-16T23:15:42.712668+00:00", "type": "auto_learn_expand", "title": "Hovertrain", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 9.635, "parent": "Hover"}
+{"ts": "2026-09-16T23:15:42.723739+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 4, "fresh": ["Windhover", "Hover Chamber Choir", "Hovertrain", "Hover (EP)", "Hovercraft", "Helicopter flight controls"], "parent": "Hover"}
+{"ts": "2026-09-16T23:17:16.360993+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 1.42, "article": "Applications of evolution"}
