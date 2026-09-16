@@ -160,6 +160,14 @@
         "https://en.wikipedia.org/wiki/Mating"
       ],
       "updated_at": "2026-09-16T21:45:58.576202+00:00"
+    },
+    "Adaptive radiation": {
+      "depth": 3,
+      "created_at": "2026-09-16T21:46:16.920811+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_radiation"
+      ],
+      "updated_at": "2026-09-16T21:46:16.920817+00:00"
     }
   },
   "edges": [

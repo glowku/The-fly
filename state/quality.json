@@ -408,5 +408,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:45:58.575731+00:00"
+  },
+  "Adaptive radiation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 361,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect flight",
+        "Insect behaviour",
+        "Wing",
+        "Evolution",
+        "Insect ecology",
+        "Aerodynamics"
+      ],
+      "diversity": 0.806,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:46:16.920261+00:00"
   }
 }
