@@ -1104,5 +1104,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:23:38.603277+00:00"
+  },
+  "Anthecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 406,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Antenna (zoology)",
+        "Arthropod eye",
+        "Pollination",
+        "Swarm behaviour",
+        "Annual Review of Entomology",
+        "Mimicry",
+        "Flight"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:25:13.971055+00:00"
   }
 }

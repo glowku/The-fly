@@ -432,6 +432,14 @@
         "https://en.wikipedia.org/wiki/Annual_Review_of_Ecology%2C_Evolution%2C_and_Systematics"
       ],
       "updated_at": "2026-09-16T23:23:38.603857+00:00"
+    },
+    "Anthecology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:25:13.971574+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anthecology"
+      ],
+      "updated_at": "2026-09-16T23:25:13.971579+00:00"
     }
   },
   "edges": [
@@ -646,11 +654,14 @@
     {
       "from": "Mimicry",
       "to": "Annual Review of Ecology, Evolution, and Systematics"
+    },
+    {
+      "from": "Apterygota",
+      "to": "Anthecology"
     }
   ],
   "frontier": [
     "Basal (evolution)",
-    "Anthecology",
     "Applied ecology",
     "Larva",
     "Maggot",
