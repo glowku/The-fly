@@ -187,3 +187,6 @@
 {"ts": "2026-09-16T23:17:18.518460+00:00", "type": "auto_learn_expand", "title": "Applications of evolution", "skill": "evolution", "score": 5.37, "objective": 9.742, "parent": "Adaptive radiation"}
 {"ts": "2026-09-16T23:17:18.519080+00:00", "type": "auto_learn", "skill": "evolution", "learned": true, "frontier_added": 0, "fresh": ["Applications of evolution"], "parent": "Adaptive radiation"}
 {"ts": "2026-09-16T23:18:52.371992+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 1.48, "article": "Caddisfly"}
+{"ts": "2026-09-16T23:18:54.550901+00:00", "type": "auto_learn_expand", "title": "Caddisfly", "skill": "anatomie_insecte", "score": 10.0, "objective": 9.942, "parent": "Compound eye"}
+{"ts": "2026-09-16T23:18:54.551551+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Caddisfly"], "parent": "Compound eye"}
+{"ts": "2026-09-16T23:20:27.685045+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 1.5, "article": "Entomology"}

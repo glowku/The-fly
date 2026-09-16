@@ -408,6 +408,14 @@
         "https://en.wikipedia.org/wiki/Caddisfly"
       ],
       "updated_at": "2026-09-16T23:18:52.154678+00:00"
+    },
+    "Entomology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:20:27.432483+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Entomology"
+      ],
+      "updated_at": "2026-09-16T23:20:27.432488+00:00"
     }
   },
   "edges": [
