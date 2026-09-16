@@ -59,12 +59,15 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)
 .empty{color:var(--mute);padding:8px 0}
 .hint{color:var(--mute);font-size:10px;margin-top:8px;line-height:1.4}
 
-.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20;height:64px;border-top:1px solid var(--line);
-  background:rgba(0,0,0,.9);display:grid;grid-template-columns:1fr 200px}
-#wave{width:100%;height:64px;display:block}
-.sig{padding:8px 12px;border-left:1px solid var(--line);color:var(--mute);font-size:10px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+/* ── Bottom graph panel (redesigned) ── */
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20;height:140px;border-top:1px solid var(--line);
+  background:rgba(0,0,0,.92);display:grid;grid-template-columns:1fr 240px;grid-template-rows:1fr 1fr}
+#wave{width:100%;height:100%;display:block;grid-column:1/2;grid-row:1/2}
+#radar{width:100%;height:100%;display:block;grid-column:1/2;grid-row:2/2}
+.sig{padding:8px 12px;border-left:1px solid var(--line);color:var(--mute);font-size:10px;
+  display:flex;flex-direction:column;justify-content:center;gap:3px;grid-column:2/3;grid-row:1/3}
 .sig b{color:var(--g);font-weight:500}
-.tools{position:fixed;bottom:76px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:6px}
+.tools{position:fixed;bottom:156px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:6px}
 .tools button{min-width:32px}
 
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
@@ -136,10 +139,12 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)
 
 <div class="bottom">
   <canvas id="wave"></canvas>
+  <canvas id="radar"></canvas>
   <div class="sig">
     <div>activity <b id="sigA">—</b></div>
     <div>last <b id="sigL">—</b></div>
     <div>filter <b id="sigF">all</b></div>
+    <div>skills <b id="sigS">—</b></div>
   </div>
 </div>
 
@@ -156,6 +161,8 @@ const canvas=document.getElementById("brain");
 const ctx=canvas.getContext("2d");
 const wave=document.getElementById("wave");
 const wctx=wave.getContext("2d");
+const radar=document.getElementById("radar");
+const rctx=radar.getContext("2d");
 
 let W=0,H=0, nodes=[], pulses=[], particles=[], waveBuf=[];
 let hover=null, skillsData={}, articles=[], frontier=[], coverage={nodes:{},edges:[],frontier:[]};
@@ -172,10 +179,17 @@ const SK={
   comportement:["behavior","behaviour","mating","feeding","swarm","courtship"]
 };
 
+/* ── Encodage robuste pour les titres de fichiers ── */
+function encodeTitle(t){
+  return encodeURIComponent(t).replace(/'/g, '%27').replace(/!/g, '%21')
+    .replace(/\*/g, '%2A').replace(/\(/g, '%28').replace(/\)/g, '%29');
+}
+
 function resize(){
   W=canvas.width=innerWidth; H=canvas.height=innerHeight;
-  const bw=document.querySelector(".bottom").clientWidth-200;
-  wave.width=Math.max(200,bw); wave.height=64;
+  const bw=document.querySelector(".bottom").clientWidth-240;
+  wave.width=Math.max(200,bw); wave.height=70;
+  radar.width=Math.max(200,bw); radar.height=70;
   buildGraph();
 }
 addEventListener("resize",resize);
@@ -199,7 +213,6 @@ function buildGraph(){
   const map={};
   const cx=0, cy=0;
 
-  // CORE
   const core={id:"core",x:cx,y:cy,r:14,kind:"core",label:"CORE",level:10,phase:0};
   nodes.push(core); map.core=core;
 
@@ -214,11 +227,9 @@ function buildGraph(){
     nodes.push(n); map[n.id]=n;
   });
 
-  // parents from edges
   const parentOf={};
   (coverage.edges||[]).forEach(e=>{ if(e.from&&e.to) parentOf[e.to]=e.from; });
 
-  // articles under skill or parent article
   const placed=new Set();
   function placeArt(a, parentNode, depth, index, total){
     if(placed.has(a.title)) return;
@@ -228,7 +239,7 @@ function buildGraph(){
     const ang=base+(index-(total-1)/2)*(spread/Math.max(total,1));
     const dist=55+depth*50;
     const x=parentNode.x+Math.cos(ang)*dist;
-    const y=parentNode.y+Math.sin(a.y)*0+parentNode.y+Math.sin(ang)*dist;
+    const y=parentNode.y+Math.sin(ang)*dist;
     const id="art:"+a.title;
     const isNew=!known.has(id);
     if(isNew) known.add(id);
@@ -242,7 +253,6 @@ function buildGraph(){
     nodes.push(n); map[id]=n;
   }
 
-  // group articles by skill
   const bySk={};
   articles.forEach(a=>{
     const sk=assignSkill(a.title);
@@ -254,13 +264,11 @@ function buildGraph(){
     const parent=map["sk:"+sk];
     if(!parent) return;
     const list=bySk[sk]||[];
-    // roots first (no parent in article set)
     const roots=list.filter(a=>{
       const p=parentOf[a.title];
       return !p || !list.find(x=>x.title===p);
     });
     roots.forEach((a,i)=>placeArt(a,parent,1,i,roots.length));
-    // children of placed articles
     list.forEach(a=>{
       if(placed.has(a.title)) return;
       const pTitle=parentOf[a.title];
@@ -270,7 +278,6 @@ function buildGraph(){
     });
   });
 
-  // frontier as ghost nodes under skills
   frontier.slice(0,24).forEach((title,i)=>{
     if(placed.has(title)||map["art:"+title]) return;
     const sk=assignSkill(title);
@@ -306,9 +313,10 @@ function applyFilter(){
     }
     n.hidden=!ok;
   });
-  // always show core
   const core=nodes.find(n=>n.kind==="core");
   if(core) core.hidden=false;
+  // Mise à jour du panneau droit en temps réel
+  renderArtsFromArticles();
 }
 
 function draw(){
@@ -321,7 +329,6 @@ function draw(){
   ctx.scale(cam.s,cam.s);
   ctx.translate(cam.x,cam.y);
 
-  // grid in world
   ctx.strokeStyle="rgba(93,186,74,0.04)";
   ctx.lineWidth=1/cam.s;
   for(let x=-800;x<=800;x+=40){ctx.beginPath();ctx.moveTo(x,-600);ctx.lineTo(x,600);ctx.stroke()}
@@ -333,7 +340,6 @@ function draw(){
     ctx.beginPath();ctx.fillStyle=`rgba(93,186,74,${p.a})`;ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
   });
 
-  // ease toward targets + appear
   nodes.forEach(n=>{
     if(n.tx!=null){n.x+=(n.tx-n.x)*0.1;n.y+=(n.ty-n.y)*0.1}
     if(n.appear!=null && n.appear<1) n.appear=Math.min(1,n.appear+0.04);
@@ -349,7 +355,6 @@ function draw(){
     ctx.beginPath();ctx.strokeStyle=g;ctx.lineWidth=w;ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
   }
 
-  // parent edges
   nodes.forEach(n=>{
     if(!n.parent||!byId[n.parent]) return;
     const p=byId[n.parent];
@@ -358,11 +363,9 @@ function draw(){
     if(!n.ghost && !n.hidden && Math.random()<0.015) pulses.push({a:p,b:n,t:0,sp:rnd(0.012,0.025)});
   });
 
-  // skill ring
   const skills=nodes.filter(n=>n.kind==="skill"&&!n.hidden);
   for(let i=0;i<skills.length;i++) edge(skills[i],skills[(i+1)%skills.length],0.08,0.7);
 
-  // pulses
   for(let i=pulses.length-1;i>=0;i--){
     const p=pulses[i]; p.t+=p.sp;
     if(p.t>=1){pulses.splice(i,1);continue}
@@ -375,7 +378,6 @@ function draw(){
     ctx.beginPath();ctx.fillStyle=grd;ctx.arc(x,y,10,0,Math.PI*2);ctx.fill();
   }
 
-  // nodes
   nodes.forEach(n=>{
     if(n.hidden) return;
     const ap=n.appear!=null?n.appear:1;
@@ -411,7 +413,6 @@ function draw(){
       ctx.globalAlpha=1;
     }
 
-    // labels
     const showLabel=n.kind!=="article"||(hover&&hover.id===n.id)||cam.s>1.1||search;
     if(showLabel && ap>0.5){
       ctx.fillStyle=n.ghost?"#456":n.kind==="article"?"#9dff7a":"#888";
@@ -432,7 +433,6 @@ function draw(){
 
   ctx.restore();
 
-  // empty state message
   const arts=nodes.filter(n=>n.kind==="article");
   if(arts.length===0){
     ctx.fillStyle="rgba(100,100,100,0.7)";
@@ -441,23 +441,110 @@ function draw(){
     ctx.fillText("graph empty — run workflow expand to grow branches", W/2, H/2+100);
   }
 
-  // wave
+  drawWave();
+  drawRadar();
+
+  requestAnimationFrame(draw);
+}
+
+/* ── Spectrogramme de qualité (wave) ── */
+function drawWave(){
   const w=wave.width,h=wave.height;
   wctx.fillStyle="rgba(5,5,5,0.4)";
   wctx.fillRect(0,0,w,h);
+
+  const arts=nodes.filter(n=>n.kind==="article"&&!n.hidden);
+  const skills=nodes.filter(n=>n.kind==="skill"&&!n.hidden);
+
+  // Barres de qualité par article
+  const barW=Math.max(3,(w-20)/Math.max(arts.length,1));
+  arts.forEach((a,i)=>{
+    const q=Math.min(1,(a.level||0)/10);
+    const bh=q*h*0.7;
+    const x=10+i*barW;
+    const grd=wctx.createLinearGradient(0,h-bh,0,h);
+    grd.addColorStop(0,`rgba(157,255,122,${0.4+q*0.5})`);
+    grd.addColorStop(1,`rgba(93,186,74,${0.15+q*0.2})`);
+    wctx.fillStyle=grd;
+    wctx.fillRect(x,h-bh-4,barW-1,bh);
+  });
+
+  // Courbe d'objectif
   const lvl=Math.min(1,0.12+pulses.length*0.03+arts.length*0.02);
   waveBuf.push(lvl+rnd(-0.04,0.04));
   if(waveBuf.length>w) waveBuf.shift();
   wctx.beginPath();
-  wctx.strokeStyle="rgba(93,186,74,0.75)";
-  wctx.lineWidth=1.4;
+  wctx.strokeStyle="rgba(200,150,100,0.8)";
+  wctx.lineWidth=1.2;
   for(let i=0;i<waveBuf.length;i++){
     const y=h/2-waveBuf[i]*h*0.38;
     if(i===0)wctx.moveTo(i,y);else wctx.lineTo(i,y);
   }
   wctx.stroke();
 
-  requestAnimationFrame(draw);
+  // Ligne de qualité moyenne
+  if(arts.length){
+    const avg=arts.reduce((s,a)=>s+(a.level||0),0)/arts.length/10;
+    const y=h-4-avg*h*0.7;
+    wctx.beginPath();
+    wctx.strokeStyle="rgba(255,200,100,0.6)";
+    wctx.lineWidth=1;
+    wctx.setLineDash([4,4]);
+    wctx.moveTo(0,y); wctx.lineTo(w,y);
+    wctx.stroke();
+    wctx.setLineDash([]);
+  }
+}
+
+/* ── Radar des skills ── */
+function drawRadar(){
+  const w=radar.width,h=radar.height;
+  rctx.fillStyle="rgba(5,5,5,0.4)";
+  rctx.fillRect(0,0,w,h);
+
+  const skills=nodes.filter(n=>n.kind==="skill"&&!n.hidden);
+  if(!skills.length) return;
+
+  const cx=w/2, cy=h-8;
+  const R=Math.min(w*0.35,h*0.8);
+
+  // Axes
+  const nS=skills.length;
+  for(let i=0;i<nS;i++){
+    const a=(i/nS)*Math.PI*2-Math.PI/2;
+    const ex=cx+Math.cos(a)*R, ey=cy+Math.sin(a)*R*0.9;
+    rctx.beginPath();
+    rctx.strokeStyle="rgba(93,186,74,0.12)";
+    rctx.lineWidth=0.8;
+    rctx.moveTo(cx,cy); rctx.lineTo(ex,ey);
+    rctx.stroke();
+  }
+
+  // Polygone
+  rctx.beginPath();
+  skills.forEach((s,i)=>{
+    const a=(i/nS)*Math.PI*2-Math.PI/2;
+    const v=Math.min(1,(s.level||0)/2);
+    const x=cx+Math.cos(a)*R*v, y=cy+Math.sin(a)*R*0.9*v;
+    if(i===0)rctx.moveTo(x,y);else rctx.lineTo(x,y);
+  });
+  rctx.closePath();
+  rctx.fillStyle="rgba(93,186,74,0.15)";
+  rctx.fill();
+  rctx.strokeStyle="rgba(157,255,122,0.6)";
+  rctx.lineWidth=1.2;
+  rctx.stroke();
+
+  // Points
+  skills.forEach((s,i)=>{
+    const a=(i/nS)*Math.PI*2-Math.PI/2;
+    const v=Math.min(1,(s.level||0)/2);
+    const x=cx+Math.cos(a)*R*v, y=cy+Math.sin(a)*R*0.9*v;
+    rctx.beginPath();
+    rctx.fillStyle=s.skill===filterSkill?"#f0fff0":"#5dba4a";
+    rctx.arc(x,y,2.5,0,Math.PI*2);
+    rctx.fill();
+  });
 }
 
 function hitTest(mx,my){
@@ -504,6 +591,7 @@ canvas.addEventListener("click",e=>{
       el.classList.toggle("on", el.dataset.sk===filterSkill);
     });
     applyFilter();
+    renderSkills(skillsData);
   }
 });
 
@@ -525,7 +613,7 @@ function renderSkills(sk){
   if(!sk||!Object.keys(sk).length){el.innerHTML='<div class="empty">—</div>';return}
   el.innerHTML=Object.entries(sk).sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,info])=>{
     const lv=info.level||0;
-    return `<div class="skill ${filterSkill===n?"on":""}" data-sk="${n}"><div class="r"><span>${n}</span><span>${lv.toFixed(1)}</span></div><div class="bar"><i style="width:${Math.min(100,lv*10)}%"></i></div></div>`;
+    return `<div class="skill ${filterSkill===n?"on":""}" data-sk="${n}"><div class="r"><span>${n}</span><span>${lv.toFixed(1)}</span></div><div class="bar"><i style="width:${Math.min(100,lv*50)}%"></i></div></div>`;
   }).join("");
   el.querySelectorAll(".skill").forEach(el=>{
     el.onclick=()=>{
@@ -538,12 +626,11 @@ function renderSkills(sk){
   });
 }
 
-function renderArts(q){
+function renderArtsFromArticles(){
   const el=document.getElementById("arts");
-  articles=Object.entries(q||{}).map(([title,info])=>({title,score:info.score||0})).sort((a,b)=>b.score-a.score);
-  if(!articles.length){el.innerHTML='<div class="empty">empty — lance expand</div>';return}
   let list=articles;
   if(filterSkill) list=list.filter(a=>assignSkill(a.title)===filterSkill);
+  if(!list.length){el.innerHTML='<div class="empty">empty — lance expand</div>';return}
   el.innerHTML=list.slice(0,25).map(a=>
     `<div class="item" data-t="${a.title.replace(/"/g,"&quot;")}"><span>${a.title}</span><span class="sc">${a.score.toFixed(1)}</span></div>`
   ).join("")||'<div class="empty">no match</div>';
@@ -576,12 +663,13 @@ function md(s){
     .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
     .replace(/\n\n/g,"</p><p>").replace(/\n/g,"<br>");
 }
+
 async function openArt(title){
   document.getElementById("mt").textContent=title;
   document.getElementById("mb").textContent="loading…";
   document.getElementById("ov").classList.add("open");
   try{
-    const text=await getText("wiki/"+encodeURIComponent(title)+".md");
+    const text=await getText("wiki/"+encodeTitle(title)+".md");
     const box=document.getElementById("mb");
     box.innerHTML="<p>"+md(text)+"</p>";
     box.querySelectorAll("a[data-l]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();openArt(a.getAttribute("data-l"));}));
@@ -618,10 +706,12 @@ async function loadAll(){
     document.getElementById("m3").textContent=nEdges;
     document.getElementById("m4").textContent=avg.toFixed(1);
     document.getElementById("sigA").textContent=nEdges+" edges · "+nNodes+" nodes";
+    document.getElementById("sigS").textContent=Object.keys(skillsData).length;
 
     skillsData=skills||{entomologie:{level:1},anatomie_insecte:{level:0.5},vol_et_aerodynamique:{level:0.3},ecologie:{level:0.4},evolution:{level:0.2},comportement:{level:0.3}};
     renderSkills(skillsData);
-    renderArts(qual);
+    articles=Object.entries(qual||{}).map(([title,info])=>({title,score:info.score||0})).sort((a,b)=>b.score-a.score);
+    renderArtsFromArticles();
     renderFront(coverage.frontier);
     renderFeed(hist);
     buildGraph();
