@@ -302,5 +302,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:18:37.818490+00:00"
+  },
+  "Swarm behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 280,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Insect ecology",
+        "Evolution",
+        "Compound eye",
+        "Hover",
+        "Aerodynamics",
+        "Insect behaviour"
+      ],
+      "diversity": 0.867,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:19:03.038985+00:00"
   }
 }
