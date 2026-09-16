@@ -149,3 +149,5 @@
 {"ts": "2026-09-16T22:56:32.713357+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Spiracle"], "parent": "Halteres"}
 {"ts": "2026-09-16T22:58:05.190540+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 1.28, "article": "Insect wing"}
 {"ts": "2026-09-16T22:58:33.510377+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 1.29, "article": "Insecticide"}
+{"ts": "2026-09-16T22:58:35.215977+00:00", "type": "auto_learn_expand", "title": "Insecticide", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 7.714, "parent": "Evolution"}
+{"ts": "2026-09-16T22:58:35.216485+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 0, "fresh": ["Insecticide"], "parent": "Aerodynamics", "recent": ["Insect wing", "Spiracle", "Insect morphology", "Housefly", "Aerodynamic (disambiguation)", "Insect", "Thorax", "Behavioral Ecology and Sociobiology"]}
