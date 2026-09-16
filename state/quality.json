@@ -215,5 +215,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:44:32.718295+00:00"
+  },
+  "Hover": {
+    "score": 10.0,
+    "metrics": {
+      "words": 306,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Aerodynamics",
+        "Fly",
+        "Insect flight",
+        "Halteres",
+        "Evolution",
+        "Wing"
+      ],
+      "diversity": 0.747,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:45:07.826226+00:00"
   }
 }
