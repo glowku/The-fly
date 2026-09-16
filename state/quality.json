@@ -1182,5 +1182,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:30:02.948886+00:00"
+  },
+  "Autecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 423,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Mating",
+        "Evolution of insects",
+        "Angular velocity",
+        "Apterygota",
+        "Arthropod eye",
+        "Arthropod leg",
+        "Arthropod",
+        "Mimicry",
+        "Alate",
+        "Parasitoid",
+        "Annual Review of Entomology",
+        "Adaptive radiation"
+      ],
+      "diversity": 0.741,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:39:25.934454+00:00"
   }
 }

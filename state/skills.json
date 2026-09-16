@@ -76,7 +76,7 @@
     "last_reinforced": "2026-09-16T23:26:51.421219+00:00"
   },
   "ecologie": {
-    "level": 1.5,
+    "level": 1.6,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -96,9 +96,10 @@
       "Evolution of insects",
       "Insect morphology",
       "Drafting (aerodynamics)",
-      "Insect mouthparts"
+      "Insect mouthparts",
+      "Autecology"
     ],
-    "last_reinforced": "2026-09-16T23:22:03.855647+00:00"
+    "last_reinforced": "2026-09-16T23:39:26.008064+00:00"
   },
   "evolution": {
     "level": 1.52,

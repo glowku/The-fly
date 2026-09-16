@@ -464,6 +464,14 @@
         "https://en.wikipedia.org/wiki/Applied_ecology"
       ],
       "updated_at": "2026-09-16T23:30:02.949443+00:00"
+    },
+    "Autecology": {
+      "depth": 5,
+      "created_at": "2026-09-16T23:39:25.935177+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Autecology"
+      ],
+      "updated_at": "2026-09-16T23:39:25.935183+00:00"
     }
   },
   "edges": [
@@ -702,6 +710,10 @@
     {
       "from": "Applied ecology",
       "to": "Arctic ecology"
+    },
+    {
+      "from": "Annual Review of Ecology, Evolution, and Systematics",
+      "to": "Autecology"
     }
   ],
   "frontier": [
@@ -722,5 +734,5 @@
     "Behavioral ecology",
     "Arctic ecology"
   ],
-  "max_depth": 4
+  "max_depth": 5
 }

@@ -210,3 +210,4 @@
 {"ts": "2026-09-16T23:30:03.144263+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 1.6, "article": "Applied ecology"}
 {"ts": "2026-09-16T23:30:05.312365+00:00", "type": "auto_learn_expand", "title": "Applied ecology", "skill": "entomologie", "score": 10.0, "objective": 11.316, "parent": "Arthropod leg"}
 {"ts": "2026-09-16T23:30:05.312988+00:00", "type": "auto_learn", "skill": "entomologie", "learned": true, "frontier_added": 0, "fresh": ["Applied ecology"], "parent": "Arthropod leg"}
+{"ts": "2026-09-16T23:39:26.008326+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.6, "article": "Autecology"}
