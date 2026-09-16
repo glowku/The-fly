@@ -1,11 +1,11 @@
 """
-Auto-learning :
-- priorise la frontier déjà pertinente
-- Groq si dispo
-- seeds curés par skill (insectes) en fallback
-- dédup + filtre anti-bruit
-- écrit 1 vrai article par cycle
-- CHOISIT un sous-parent (feuille / peu d'enfants) de la skill pour ramifier en profondeur
+Auto-learning corrigé :
+- priorise les liens / related du sous-parent choisi (vrai branchement)
+- Groq guidé par le parent + skill
+- seeds en fallback uniquement
+- depth correct (plus de hardcode à 2)
+- si fresh vide → force un item de frontier sous le parent
+- un seul vrai article par cycle, rattaché au sous-parent
 """
 import os
 import re
@@ -23,9 +23,9 @@ from .evaluation import score_article, is_acceptable, explain_score
 from .tools import write_article, git_commit_push
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "openai/gpt-oss-20b"
+# Modèle stable sur le free tier Groq (gpt-oss-20b peut être instable)
+MODEL = "llama-3.3-70b-versatile"
 
-# Seeds solides par skill (pages Wikipedia réelles, domaine insectes / fly)
 SKILL_SEEDS = {
     "entomologie": [
         "Diptera", "Insect", "Fly", "Housefly", "Fruit fly", "Mosquito",
@@ -56,18 +56,16 @@ SKILL_SEEDS = {
 
 JUNK_RE = re.compile(
     r"(tv series|album|film|song|band|airline|aircraft|institute|"
-    r"wuornos|chun|password|malware|software|episode|novel|game)",
+    r"wuornos|chun|password|malware|software|episode|novel|game|"
+    r"computer security|cybersecurity)",
     re.I,
 )
-
 
 def _norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
 
-
 def _similar(a: str, b: str) -> float:
     return SequenceMatcher(None, _norm(a), _norm(b)).ratio()
-
 
 def _is_junk(title: str) -> bool:
     if not title or len(title) < 2:
@@ -75,7 +73,6 @@ def _is_junk(title: str) -> bool:
     if JUNK_RE.search(title):
         return True
     return False
-
 
 def _already_known(title: str, nodes: dict, frontier: list, quality: dict) -> bool:
     n = _norm(title)
@@ -86,9 +83,7 @@ def _already_known(title: str, nodes: dict, frontier: list, quality: dict) -> bo
             return True
     return False
 
-
 def _resolve_page(title: str):
-    """Retourne (canonical_title, summary) ou (None, None)."""
     if _is_junk(title):
         return None, None
     s = get_summary(title)
@@ -102,20 +97,23 @@ def _resolve_page(title: str):
             return s.get("title") or h, s
     return None, None
 
-
-def _groq_suggest(skill_name: str, skill_info: dict, root: str, existing: list) -> list:
+def _groq_suggest(skill_name: str, skill_info: dict, root: str, parent: str | None, existing: list) -> list:
+    """Suggestions guidées par le sous-parent choisi → vrais enfants."""
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
         print("[auto_learn] GROQ_API_KEY missing", flush=True)
         return []
     kws = ", ".join(skill_info.get("keywords", [])[:8])
-    existing_s = ", ".join(existing[:30]) if existing else "(none)"
+    existing_s = ", ".join(existing[:25]) if existing else "(none)"
+    parent_line = f"Parent node to expand under: « {parent} ». Suggest real sub-topics of this parent." if parent else ""
     prompt = f"""You expand a knowledge graph about: {root}
 Skill to grow: {skill_name} ({skill_info.get('description', '')})
 Keywords: {kws}
+{parent_line}
 Already in wiki — DO NOT suggest these: {existing_s}
 Return ONLY a JSON array of 8 real English Wikipedia article titles
-about insects / flies / this skill. No markdown, no comments.
+that are direct sub-concepts of the parent (or of the skill if no parent).
+Focus on insects / flies / diptera. No markdown, no comments.
 Example: ["Haltere", "Insect wing", "Compound eye"]"""
     try:
         r = requests.post(
@@ -124,7 +122,7 @@ Example: ["Haltere", "Insect wing", "Compound eye"]"""
             json={
                 "model": MODEL,
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.3,
+                "temperature": 0.4,
                 "max_tokens": 400,
             },
             timeout=60,
@@ -146,28 +144,31 @@ Example: ["Haltere", "Insect wing", "Compound eye"]"""
         print(f"[auto_learn] Groq error: {e}", flush=True)
         return []
 
+def _candidates_from_parent(parent: str | None) -> list:
+    """Vrais enfants potentiels = liens + related du parent choisi."""
+    if not parent:
+        return []
+    kids = list(set(get_links(parent, 20) + get_related(parent, 10)))
+    return [t for t in kids if not _is_junk(t)][:12]
 
 def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
-    """Frontier items that match the skill keywords / relevance."""
     scored = []
+    skills = load_skills()
+    kws = skills.get(skill_name, {}).get("keywords") or []
     for t in frontier:
         if _is_junk(t):
             continue
         rel = score_relevance(t)
-        skills = load_skills()
-        kws = skills.get(skill_name, {}).get("keywords") or []
-        bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.2
+        bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.25
         scored.append((rel + bonus, t))
     scored.sort(reverse=True)
-    return [t for _, t in scored if _ >= 0.15][:8]
-
+    return [t for s, t in scored if s >= 0.12][:8]
 
 def _best_parent_for_skill(skill_name: str, nodes: dict, cov: dict) -> str | None:
     """
-    Choisit le meilleur sous-parent pour ramifier :
     1. Feuille (0 enfant) déjà liée à la skill
     2. Nœud de la skill avec < 3 enfants
-    3. N'importe quelle feuille du graphe
+    3. N'importe quelle feuille
     4. Fallback → root
     """
     skills = load_skills()
@@ -190,20 +191,18 @@ def _best_parent_for_skill(skill_name: str, nodes: dict, cov: dict) -> str | Non
             or any(kw in title.lower() for kw in keywords)
         )
         score = 0.0
-        # gros bonus feuille
         if n_kids == 0:
             score += 100
         elif n_kids < 3:
             score += 50 - n_kids * 12
         else:
-            score -= 20  # déjà bien branché → on évite
+            score -= 25
 
         if is_skill:
-            score += 60
+            score += 70
 
-        # légère préférence pour profondeur intermédiaire (pas trop profond, pas racine)
         depth = info.get("depth", 1)
-        score += max(0, 8 - abs(depth - 2) * 2)
+        score += max(0, 10 - abs(depth - 2) * 2)
 
         candidates.append((score, title, n_kids, is_skill))
 
@@ -219,13 +218,13 @@ def _best_parent_for_skill(skill_name: str, nodes: dict, cov: dict) -> str | Non
     )
     return best_title
 
-
 def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     canon, summary = _resolve_page(title)
     if not summary:
         print(f"[auto_learn] cannot resolve: {title}", flush=True)
         return False
     title = canon
+
     content = synthesize_article(
         title=title,
         summary=summary.get("extract") or "",
@@ -238,21 +237,34 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     if not is_acceptable(score):
         print(f"[auto_learn] reject score={score['score']}", flush=True)
         return False
+
     write_article(title, content)
-    # profondeur = parent.depth + 1
+
+    # profondeur réelle = parent.depth + 1
     parent_depth = 1
     if parent:
         cov = load_coverage()
-        parent_depth = (cov.get("nodes") or {}).get(parent, {}).get("depth", 1) + 1
+        parent_info = (cov.get("nodes") or {}).get(parent)
+        if parent_info:
+            parent_depth = parent_info.get("depth", 1) + 1
+        else:
+            parent_depth = 2
+
+    # 1. marquer traité
     register_processed(title, depth=parent_depth, sources=[summary["url"]] if summary.get("url") else [])
+    # 2. créer l’arête parent → title (sous-parent)
     if parent:
         register_discovered(title, depth=parent_depth, parent=parent)
+
     quality = load_quality()
     quality[title] = score
     save_quality(quality)
-    for child in list(set(get_links(title, 15) + get_related(title, 6)))[:8]:
+
+    # 3. découvrir les enfants du NOUVEL article (profondeur +1)
+    for child in list(set(get_links(title, 15) + get_related(title, 6)))[:10]:
         if not _is_junk(child):
             register_discovered(child, depth=parent_depth + 1, parent=title)
+
     reinforce_skill(skill_name, title, score["score"])
     obj, n_nodes, _ = compute_objective_score()
     msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes} parent={parent})"
@@ -263,7 +275,6 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     })
     print(f"[auto_learn] ✅ article créé: {title} ← parent={parent}", flush=True)
     return True
-
 
 def run_auto_learn():
     print("=" * 60, flush=True)
@@ -285,12 +296,14 @@ def run_auto_learn():
     if not parent:
         parent = root if root in nodes else (existing[0] if existing else None)
 
-    # 1) frontier matching skill
-    # 2) Groq
-    # 3) curated seeds
+    # Priorité 1 : vrais enfants du parent (liens + related)
+    # Priorité 2 : frontier matching skill
+    # Priorité 3 : Groq guidé par le parent
+    # Priorité 4 : seeds
     pool = []
+    pool += _candidates_from_parent(parent)
     pool += _candidates_from_frontier(skill_name, frontier)
-    pool += _groq_suggest(skill_name, skill_info, root, existing)
+    pool += _groq_suggest(skill_name, skill_info, root, parent, existing)
     pool += SKILL_SEEDS.get(skill_name, SKILL_SEEDS["entomologie"])
 
     # unique preserve order
@@ -306,21 +319,28 @@ def run_auto_learn():
     fresh = []
     for title in ordered:
         if _already_known(title, nodes, frontier, quality):
-            print(f"[auto_learn] skip known: {title}", flush=True)
             continue
         if _is_junk(title):
-            print(f"[auto_learn] skip junk: {title}", flush=True)
             continue
         canon, s = _resolve_page(title)
         if not s:
-            print(f"[auto_learn] skip no-page: {title}", flush=True)
             continue
         if _already_known(canon, nodes, frontier, quality):
-            print(f"[auto_learn] skip known canon: {canon}", flush=True)
             continue
         fresh.append(canon)
 
     print(f"[auto_learn] {len(fresh)} candidats valides: {fresh[:8]}", flush=True)
+
+    # ★ Fallback : si aucun fresh, prendre un item de frontier et le forcer sous le parent
+    if not fresh and frontier:
+        for t in frontier:
+            if _is_junk(t) or t in nodes:
+                continue
+            canon, s = _resolve_page(t)
+            if s and not _already_known(canon, nodes, [], quality):
+                fresh.append(canon)
+                print(f"[auto_learn] fallback frontier → {canon}", flush=True)
+                break
 
     learned = False
     for title in fresh[:4]:
@@ -332,11 +352,16 @@ def run_auto_learn():
             frontier = list(cov.get("frontier") or [])
             break
 
+    # Ajouter le reste en frontier AVEC la bonne profondeur
+    parent_depth = 1
+    if parent and parent in nodes:
+        parent_depth = nodes[parent].get("depth", 1) + 1
+
     added_f = 0
     for title in fresh[(1 if learned else 0):]:
         if _already_known(title, nodes, frontier, quality):
             continue
-        register_discovered(title, depth=2, parent=parent)
+        register_discovered(title, depth=parent_depth, parent=parent)
         frontier.append(title)
         added_f += 1
         if added_f >= 6:
