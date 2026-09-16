@@ -5,13 +5,13 @@ Auto-learning :
 - seeds curés par skill (insectes) en fallback
 - dédup + filtre anti-bruit
 - écrit 1 vrai article par cycle
+- CHOISIT un sous-parent (feuille / peu d'enfants) de la skill pour ramifier en profondeur
 """
 import os
 import re
 import json
 import requests
 from difflib import SequenceMatcher
-
 from .memory import (
     load_coverage, load_quality, save_quality, log_event, compute_objective_score,
 )
@@ -74,7 +74,6 @@ def _is_junk(title: str) -> bool:
         return True
     if JUNK_RE.search(title):
         return True
-    # pure person names often have 2-3 capitalized words without biology context
     return False
 
 
@@ -95,7 +94,6 @@ def _resolve_page(title: str):
     s = get_summary(title)
     if s and len(s.get("extract") or "") > 60:
         return s.get("title") or title, s
-    # try search
     for h in search_titles(title, limit=5):
         if _is_junk(h):
             continue
@@ -110,18 +108,15 @@ def _groq_suggest(skill_name: str, skill_info: dict, root: str, existing: list) 
     if not api_key:
         print("[auto_learn] GROQ_API_KEY missing", flush=True)
         return []
-
     kws = ", ".join(skill_info.get("keywords", [])[:8])
     existing_s = ", ".join(existing[:30]) if existing else "(none)"
     prompt = f"""You expand a knowledge graph about: {root}
 Skill to grow: {skill_name} ({skill_info.get('description', '')})
 Keywords: {kws}
 Already in wiki — DO NOT suggest these: {existing_s}
-
 Return ONLY a JSON array of 8 real English Wikipedia article titles
 about insects / flies / this skill. No markdown, no comments.
 Example: ["Haltere", "Insect wing", "Compound eye"]"""
-
     try:
         r = requests.post(
             GROQ_URL,
@@ -159,7 +154,6 @@ def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
         if _is_junk(t):
             continue
         rel = score_relevance(t)
-        # boost if skill keyword in title
         skills = load_skills()
         kws = skills.get(skill_name, {}).get("keywords") or []
         bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.2
@@ -168,13 +162,70 @@ def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
     return [t for _, t in scored if _ >= 0.15][:8]
 
 
+def _best_parent_for_skill(skill_name: str, nodes: dict, cov: dict) -> str | None:
+    """
+    Choisit le meilleur sous-parent pour ramifier :
+    1. Feuille (0 enfant) déjà liée à la skill
+    2. Nœud de la skill avec < 3 enfants
+    3. N'importe quelle feuille du graphe
+    4. Fallback → root
+    """
+    skills = load_skills()
+    skill = skills.get(skill_name, {})
+    skill_articles = set(skill.get("articles", []))
+    keywords = [k.lower() for k in skill.get("keywords", [])]
+
+    edges = cov.get("edges", [])
+    children_count = {}
+    for e in edges:
+        fr = e.get("from")
+        if fr:
+            children_count[fr] = children_count.get(fr, 0) + 1
+
+    candidates = []
+    for title, info in nodes.items():
+        n_kids = children_count.get(title, 0)
+        is_skill = (
+            title in skill_articles
+            or any(kw in title.lower() for kw in keywords)
+        )
+        score = 0.0
+        # gros bonus feuille
+        if n_kids == 0:
+            score += 100
+        elif n_kids < 3:
+            score += 50 - n_kids * 12
+        else:
+            score -= 20  # déjà bien branché → on évite
+
+        if is_skill:
+            score += 60
+
+        # légère préférence pour profondeur intermédiaire (pas trop profond, pas racine)
+        depth = info.get("depth", 1)
+        score += max(0, 8 - abs(depth - 2) * 2)
+
+        candidates.append((score, title, n_kids, is_skill))
+
+    if not candidates:
+        return cov.get("root") or "Fly"
+
+    candidates.sort(key=lambda x: x[0], reverse=True)
+    best_score, best_title, n_kids, is_skill = candidates[0]
+    print(
+        f"[auto_learn] parent choisi: {best_title} "
+        f"(score={best_score:.0f} kids={n_kids} skill={is_skill})",
+        flush=True,
+    )
+    return best_title
+
+
 def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     canon, summary = _resolve_page(title)
     if not summary:
         print(f"[auto_learn] cannot resolve: {title}", flush=True)
         return False
     title = canon
-
     content = synthesize_article(
         title=title,
         summary=summary.get("extract") or "",
@@ -187,46 +238,52 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
     if not is_acceptable(score):
         print(f"[auto_learn] reject score={score['score']}", flush=True)
         return False
-
     write_article(title, content)
-    register_processed(title, depth=2, sources=[summary["url"]] if summary.get("url") else [])
+    # profondeur = parent.depth + 1
+    parent_depth = 1
     if parent:
-        register_discovered(title, depth=2, parent=parent)
-
+        cov = load_coverage()
+        parent_depth = (cov.get("nodes") or {}).get(parent, {}).get("depth", 1) + 1
+    register_processed(title, depth=parent_depth, sources=[summary["url"]] if summary.get("url") else [])
+    if parent:
+        register_discovered(title, depth=parent_depth, parent=parent)
     quality = load_quality()
     quality[title] = score
     save_quality(quality)
-
     for child in list(set(get_links(title, 15) + get_related(title, 6)))[:8]:
         if not _is_junk(child):
-            register_discovered(child, depth=3, parent=title)
-
+            register_discovered(child, depth=parent_depth + 1, parent=title)
     reinforce_skill(skill_name, title, score["score"])
     obj, n_nodes, _ = compute_objective_score()
-    msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes})"
+    msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes} parent={parent})"
     git_commit_push([f"wiki/{title}.md", "state/", "DASHBOARD.md"], msg)
-    log_event("auto_learn_expand", {"title": title, "skill": skill_name, "score": score["score"], "objective": obj})
-    print(f"[auto_learn] ✅ article créé: {title}", flush=True)
+    log_event("auto_learn_expand", {
+        "title": title, "skill": skill_name, "score": score["score"],
+        "objective": obj, "parent": parent,
+    })
+    print(f"[auto_learn] ✅ article créé: {title} ← parent={parent}", flush=True)
     return True
 
 
 def run_auto_learn():
     print("=" * 60, flush=True)
-    print("[auto_learn] cycle intelligent", flush=True)
-
+    print("[auto_learn] cycle intelligent (sous-parent)", flush=True)
     cov = load_coverage()
     quality = load_quality()
     root = cov.get("root") or "Fly"
     nodes = cov.get("nodes") or {}
     frontier = list(cov.get("frontier") or [])
-
     skill_name = pick_skill_to_develop()
     skills = load_skills()
     skill_info = skills.get(skill_name, {})
     print(f"[auto_learn] skill={skill_name} level={skill_info.get('level', 0)}", flush=True)
 
     existing = list(nodes.keys()) + list(quality.keys())
-    parent = root if root in nodes else (existing[0] if existing else None)
+
+    # ★★★ CHOIX DU SOUS-PARENT ★★★
+    parent = _best_parent_for_skill(skill_name, nodes, cov)
+    if not parent:
+        parent = root if root in nodes else (existing[0] if existing else None)
 
     # 1) frontier matching skill
     # 2) Groq
@@ -290,6 +347,7 @@ def run_auto_learn():
         "learned": learned,
         "frontier_added": added_f,
         "fresh": fresh[:10],
+        "parent": parent,
     })
-    print(f"[auto_learn] done — article_écrit={learned} frontier+={added_f}", flush=True)
+    print(f"[auto_learn] done — article_écrit={learned} frontier+={added_f} parent={parent}", flush=True)
     return learned or added_f > 0
