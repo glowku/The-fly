@@ -184,3 +184,6 @@
 {"ts": "2026-09-16T23:15:42.712668+00:00", "type": "auto_learn_expand", "title": "Hovertrain", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 9.635, "parent": "Hover"}
 {"ts": "2026-09-16T23:15:42.723739+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 4, "fresh": ["Windhover", "Hover Chamber Choir", "Hovertrain", "Hover (EP)", "Hovercraft", "Helicopter flight controls"], "parent": "Hover"}
 {"ts": "2026-09-16T23:17:16.360993+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 1.42, "article": "Applications of evolution"}
+{"ts": "2026-09-16T23:17:18.518460+00:00", "type": "auto_learn_expand", "title": "Applications of evolution", "skill": "evolution", "score": 5.37, "objective": 9.742, "parent": "Adaptive radiation"}
+{"ts": "2026-09-16T23:17:18.519080+00:00", "type": "auto_learn", "skill": "evolution", "learned": true, "frontier_added": 0, "fresh": ["Applications of evolution"], "parent": "Adaptive radiation"}
+{"ts": "2026-09-16T23:18:52.371992+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 1.48, "article": "Caddisfly"}

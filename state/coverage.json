@@ -400,6 +400,14 @@
         "https://en.wikipedia.org/wiki/Applications_of_evolution"
       ],
       "updated_at": "2026-09-16T23:17:16.162375+00:00"
+    },
+    "Caddisfly": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:18:52.154673+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Caddisfly"
+      ],
+      "updated_at": "2026-09-16T23:18:52.154678+00:00"
     }
   },
   "edges": [
@@ -594,11 +602,14 @@
     {
       "from": "Adaptive radiation",
       "to": "Applications of evolution"
+    },
+    {
+      "from": "Compound eye",
+      "to": "Caddisfly"
     }
   ],
   "frontier": [
     "Basal (evolution)",
-    "Caddisfly",
     "Insect mouthparts",
     "Annual Review of Ecology, Evolution, and Systematics",
     "Anthecology",
