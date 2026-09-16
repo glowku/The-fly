@@ -98,7 +98,7 @@
     "last_reinforced": "2026-09-16T21:46:17.015914+00:00"
   },
   "comportement": {
-    "level": 0.9,
+    "level": 1.0,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -113,8 +113,9 @@
       "Wing",
       "Insect behaviour",
       "Swarm behaviour",
-      "Mating"
+      "Mating",
+      "Mimicry"
     ],
-    "last_reinforced": "2026-09-16T21:45:58.682653+00:00"
+    "last_reinforced": "2026-09-16T22:37:07.076419+00:00"
   }
 }

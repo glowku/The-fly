@@ -482,5 +482,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:34:47.098021+00:00"
+  },
+  "Mimicry": {
+    "score": 10.0,
+    "metrics": {
+      "words": 377,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Evolution",
+        "Insect ecology",
+        "Insect behaviour",
+        "Fly",
+        "Insect flight",
+        "Compound eye",
+        "Hover"
+      ],
+      "diversity": 0.797,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:37:06.947776+00:00"
   }
 }
