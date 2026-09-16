@@ -256,6 +256,14 @@
         "https://en.wikipedia.org/wiki/Thorax"
       ],
       "updated_at": "2026-09-16T22:48:30.447319+00:00"
+    },
+    "Insect": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:50:06.692733+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insect"
+      ],
+      "updated_at": "2026-09-16T22:50:06.692738+00:00"
     }
   },
   "edges": [
@@ -378,10 +386,17 @@
     {
       "from": "Insect behaviour",
       "to": "Behavioral Ecology and Sociobiology"
+    },
+    {
+      "from": "Insect flight",
+      "to": "Insect"
+    },
+    {
+      "from": "Insect",
+      "to": "Abdomen (insect anatomy)"
     }
   ],
   "frontier": [
-    "Insect",
     "Insect morphology",
     "Insect wing",
     "Insecticide",
@@ -399,7 +414,8 @@
     "Ailerons",
     "Aquatic insects",
     "Blue-tailed damselfly",
-    "Amphibious insect"
+    "Amphibious insect",
+    "Abdomen (insect anatomy)"
   ],
   "max_depth": 3
 }

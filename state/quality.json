@@ -658,5 +658,28 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:48:30.446843+00:00"
+  },
+  "Insect": {
+    "score": 10.0,
+    "metrics": {
+      "words": 373,
+      "sections": 4,
+      "links": 9,
+      "link_list": [
+        "Fly",
+        "Compound eye",
+        "Insect behaviour",
+        "Aerodynamics",
+        "Halteres",
+        "Wing",
+        "Insect ecology",
+        "Palaeoptera",
+        "Evolution"
+      ],
+      "diversity": 0.804,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:50:06.692335+00:00"
   }
 }
