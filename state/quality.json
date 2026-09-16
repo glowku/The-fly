@@ -92,5 +92,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T16:49:14.504857+00:00"
+  },
+  "Wing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 378,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Devonian",
+        "Insect flight",
+        "Evolution",
+        "Fly",
+        "Halteres"
+      ],
+      "diversity": 0.673,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T18:19:34.651793+00:00"
   }
 }

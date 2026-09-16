@@ -40,6 +40,14 @@
         "https://en.wikipedia.org/wiki/Devonian"
       ],
       "updated_at": "2026-09-16T16:49:14.505239+00:00"
+    },
+    "Wing": {
+      "depth": 2,
+      "created_at": "2026-09-16T18:19:34.895605+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wing"
+      ],
+      "updated_at": "2026-09-16T18:19:34.895615+00:00"
     }
   },
   "edges": [
@@ -74,6 +82,18 @@
     {
       "from": "Evolution",
       "to": "Wing"
+    },
+    {
+      "from": "Wing",
+      "to": "Bird wing"
+    },
+    {
+      "from": "Wing",
+      "to": "Bat wing development"
+    },
+    {
+      "from": "Wing",
+      "to": "Aileron"
     }
   ],
   "frontier": [
@@ -82,7 +102,9 @@
     "Insect morphology",
     "Insect wing",
     "Insecticide",
-    "Wing"
+    "Bird wing",
+    "Bat wing development",
+    "Aileron"
   ],
   "max_depth": 2
 }
