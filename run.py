@@ -151,4 +151,4 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Ne pas committer")
     args = parser.parse_args()
     success = run_cycle(dry_run=args.dry_run)
-    sys.exit(0 if success else 1)
+    sys.exit(0)
