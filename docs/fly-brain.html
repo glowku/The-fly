@@ -148,12 +148,15 @@ let filterSkill=null,search="";
 const known=new Set();
 
 const SK={
-  entomologie:["insect","insecte","diptera","fly","mouche","species","entomolog"],
-  anatomie_insecte:["wing","aile","halter","thorax","antenne","eye","body","morph"],
-  vol_et_aerodynamique:["flight","vol","aero","hover","artificial","wingbeat"],
-  ecologie:["ecology","habitat","pollinat","predator","parasite","larva","environment"],
-  evolution:["evolution","fossil","phylogen","adaptation","origin"],
-  comportement:["behavior","behaviour","mating","feeding","swarm","courtship"]
+  // order matters for ties — more specific first in scoring
+  anatomie_insecte:["wing","aile","halter","haltere","thorax","antenne","antenna","compound eye","exoskeleton","morphology","insect morphology"],
+  vol_et_aerodynamique:["flight","vol","aero","hover","wingbeat","aerodynamic","artificial fly"],
+  evolution:["evolution","fossil","phylogen","adaptation","origin","evolution of insects"],
+  ecologie:["ecology","habitat","pollinat","predator","parasite","larva","environment","insecticide"],
+  comportement:["behavior","behaviour","mating","feeding","swarm","courtship"],
+  entomologie:["insect","insecte","diptera","entomolog","species of insect"],
+  // catch-all tech noise away from insects
+  _noise:["computer security","cyber","security","software","network","encryption","password"]
 };
 
 function resize(){
@@ -172,9 +175,15 @@ function world(mx,my){return{x:(mx-W/2)/cam.s-cam.x,y:(my-H/2)/cam.s-cam.y}}
 
 function assignSkill(title){
   const t=(title||"").toLowerCase();
+  // noise / off-topic → force away from insect skills
+  if(SK._noise && SK._noise.some(w=>t.includes(w))) return "comportement";
   let best="entomologie",sc=0;
   for(const [k,ws] of Object.entries(SK)){
-    let s=0;for(const w of ws)if(t.includes(w))s++;
+    if(k==="_noise") continue;
+    let s=0;
+    for(const w of ws){
+      if(t.includes(w)) s += (w.length>6?2:1); // longer phrases weigh more
+    }
     if(s>sc){sc=s;best=k}
   }
   return best;
