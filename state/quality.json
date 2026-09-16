@@ -448,5 +448,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:23:32.650885+00:00"
+  },
+  "Arthropod": {
+    "score": 8.0,
+    "metrics": {
+      "words": 258,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.77,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:28:22.359850+00:00"
   }
 }
