@@ -614,5 +614,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:45:19.716406+00:00"
+  },
+  "Behavioral Ecology and Sociobiology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 364,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Aerodynamics",
+        "Insect behaviour",
+        "Wing",
+        "Insect ecology",
+        "Evolution"
+      ],
+      "diversity": 0.772,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:46:55.417030+00:00"
   }
 }
