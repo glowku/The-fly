@@ -157,3 +157,6 @@
 {"ts": "2026-09-16T23:01:19.094748+00:00", "type": "auto_learn_expand", "title": "Mosquito", "skill": "entomologie", "score": 10.0, "objective": 7.861, "parent": "Arthropod leg"}
 {"ts": "2026-09-16T23:01:19.098744+00:00", "type": "auto_learn", "skill": "entomologie", "learned": true, "frontier_added": 2, "fresh": ["Mosquito", "Tachinidae", "Entomology"], "parent": "Arthropod leg"}
 {"ts": "2026-09-16T23:02:51.162156+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.3, "article": "Insecticide"}
+{"ts": "2026-09-16T23:02:54.456970+00:00", "type": "auto_learn_expand", "title": "Insecticide", "skill": "ecologie", "score": 10.0, "objective": 8.061, "parent": "Pollination"}
+{"ts": "2026-09-16T23:02:54.457572+00:00", "type": "auto_learn", "skill": "ecologie", "learned": true, "frontier_added": 0, "fresh": ["Insecticide"], "parent": "Pollination"}
+{"ts": "2026-09-16T23:04:28.937179+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 1.3, "article": "Aggressive mimicry"}
