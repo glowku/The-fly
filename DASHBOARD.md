@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 19:23:37 UTC
+**Dernière mise à jour** : 2026-09-16 22:40:42 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **1.154** |
-| Concepts traités | 200 | **6** |
-| Qualité moyenne | ≥ 7.5 | **9.62/10** |
+| Score global | maximiser | **5.314** |
+| Concepts traités | 200 | **27** |
+| Qualité moyenne | ≥ 7.5 | **9.84/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **6** |
-| Arêtes du graphe | 11 |
-| Frontière (à explorer) | 8 |
-| Profondeur max | 2 |
-| Score qualité moyen | **9.62/10** |
-| Score objectif (coverage × quality) | **1.154** |
-| Actions dernières 24 h | 51 |
+| Concepts traités (nœuds) | **27** |
+| Arêtes du graphe | 26 |
+| Frontière (à explorer) | 19 |
+| Profondeur max | 3 |
+| Score qualité moyen | **9.84/10** |
+| Score objectif (coverage × quality) | **5.314** |
+| Actions dernières 24 h | 118 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 6 |
+| Excellent (≥ 8) | 27 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -43,27 +43,33 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | [[Halteres]] | 10.00 | 360 | 6 |
 | [[Fly]] | 10.00 | 357 | 6 |
 | [[Wing]] | 10.00 | 378 | 5 |
-| [[Insect flight]] | 9.00 | 331 | 2 |
-| [[Devonian]] | 8.70 | 149 | 4 |
+| [[Aerodynamics]] | 10.00 | 340 | 6 |
+| [[Palaeoptera]] | 10.00 | 337 | 7 |
+| [[Compound eye]] | 10.00 | 394 | 6 |
+| [[Insect ecology]] | 10.00 | 383 | 9 |
+| [[Insect behaviour]] | 10.00 | 381 | 6 |
+| [[Hover]] | 10.00 | 306 | 6 |
+| [[Neoptera]] | 10.00 | 397 | 7 |
+| [[Exoskeleton]] | 10.00 | 360 | 12 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T13:23:44  skill_reinforc  
-2026-09-16T13:23:46  auto_learn_exp  Halteres score=10.0
-2026-09-16T13:23:46  auto_learn      
-2026-09-16T13:55:50  skill_reinforc  
-2026-09-16T13:55:52  auto_learn_exp  Insect flight score=9.0
-2026-09-16T13:55:52  auto_learn      
-2026-09-16T14:04:49  plan            Fly
-2026-09-16T14:04:50  skill_reinforc  
-2026-09-16T14:04:52  expand          Fly score=10.0
-2026-09-16T16:49:14  skill_reinforc  
-2026-09-16T16:49:16  auto_learn_exp  Devonian score=8.7
-2026-09-16T16:49:16  auto_learn      
-2026-09-16T18:19:33  plan            Wing
-2026-09-16T18:19:34  skill_reinforc  
-2026-09-16T18:19:36  expand          Wing score=10.0
+2026-09-16T22:23:35  auto_learn_exp  Angular velocity score=10.0
+2026-09-16T22:23:35  auto_learn      
+2026-09-16T22:28:22  skill_reinforc  
+2026-09-16T22:28:24  auto_learn_exp  Arthropod score=8.0
+2026-09-16T22:28:24  auto_learn      
+2026-09-16T22:34:47  skill_reinforc  
+2026-09-16T22:34:48  auto_learn_exp  Annual Review of Entomology score=10.0
+2026-09-16T22:34:48  auto_learn      
+2026-09-16T22:37:07  skill_reinforc  
+2026-09-16T22:37:09  auto_learn_exp  Mimicry score=10.0
+2026-09-16T22:37:09  auto_learn      
+2026-09-16T22:38:42  skill_reinforc  
+2026-09-16T22:38:44  auto_learn_exp  Arthropod eye score=10.0
+2026-09-16T22:38:44  auto_learn      
+2026-09-16T22:40:16  skill_reinforc  
 ```
 
 ## Architecture de l'agent
