@@ -633,5 +633,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:46:55.417030+00:00"
+  },
+  "Thorax": {
+    "score": 10.0,
+    "metrics": {
+      "words": 415,
+      "sections": 4,
+      "links": 11,
+      "link_list": [
+        "Fly",
+        "Aerodynamics",
+        "Compound eye",
+        "Insect behaviour",
+        "Hover",
+        "Wing",
+        "Halteres",
+        "Insect ecology",
+        "Insect flight",
+        "Palaeoptera",
+        "Evolution"
+      ],
+      "diversity": 0.697,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:48:30.446843+00:00"
   }
 }
