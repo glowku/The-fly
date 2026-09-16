@@ -2,56 +2,51 @@ name: repair
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: repair
-  cancel-in-progress: false
-
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Configure git
         run: |
           git config user.name "fly-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Repair pass
+      - name: Repair cycle
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: |
-          python -c "
-          from agent.repair import full_repair_pass
-          result = full_repair_pass(max_repairs=5)
-          print(result)
-          "
+        run: python -c "from agent.repair import run_repair; run_repair()" || true
 
-      - name: Update dashboard
-        run: python -m agent.evaluate_dashboard
 
-      - name: Commit repairs
+      - name: Commit and push
         run: |
-          git add wiki/ state/ DASHBOARD.md || true
-          git commit -m "repair: auto-correction pass" || echo "Nothing to commit"
-          git pull --rebase origin main || true
-          git push origin HEAD:main || echo "Push failed"
+          set -e
+          git add -A
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "repair: fix weak articles"
+          git fetch origin main
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          fi
+          git push origin HEAD:main

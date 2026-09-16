@@ -4,35 +4,28 @@ on:
   workflow_dispatch:
     inputs:
       root_topic:
-        description: 'Sujet racine (ex: Fly, Artificial intelligence, Cybersecurity)'
+        description: "Sujet racine Wikipedia (ex: Fly)"
         required: false
-        default: 'Fly'
-      reset_graph:
-        description: 'Effacer le graphe existant et repartir de zéro'
-        required: false
-        default: 'true'
+        default: "Fly"
 
 permissions:
   contents: write
 
 jobs:
-  bootstrap:
+  run:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Configure git
         run: |
@@ -41,32 +34,35 @@ jobs:
 
       - name: Set root topic
         run: |
-          ROOT="${{ github.event.inputs.root_topic || 'Fly' }}"
-          echo "$ROOT" > ROOT.txt
-          echo "ROOT=$ROOT"
-          cat ROOT.txt
-
-      - name: Reset graph if requested
-        if: ${{ github.event.inputs.reset_graph != 'false' }}
-        run: |
+          TOPIC="${{ github.event.inputs.root_topic || 'Fly' }}"
+          echo "$TOPIC" > ROOT.txt
+          echo "Root=$TOPIC"
           python -c "
-          from agent.memory import reset_for_new_root
-          root = open('ROOT.txt').read().strip()
-          reset_for_new_root(root)
-          print('graph reset for', root)
-          "
-
-      - name: First expand cycle
+from agent.memory import save_coverage, log_event
+save_coverage({'root': open('ROOT.txt').read().strip(), 'nodes': {}, 'edges': [], 'frontier': [], 'max_depth': 0})
+log_event('reset_root', {'root': open('ROOT.txt').read().strip()})
+print('graph reset for', open('ROOT.txt').read().strip())
+"
+      - name: First expand
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python run.py || true
-
       - name: Dashboard
         run: python -m agent.evaluate_dashboard || true
 
-      - name: Commit bootstrap
+
+      - name: Commit and push
         run: |
+          set -e
           git add -A
-          git commit -m "bootstrap: init knowledge graph for $(cat ROOT.txt)" || echo "Nothing"
-          git pull --rebase origin main || true
-          git push origin HEAD:main || echo "Push failed"
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "bootstrap: init knowledge graph"
+          git fetch origin main
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          fi
+          git push origin HEAD:main

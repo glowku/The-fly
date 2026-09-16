@@ -2,16 +2,16 @@ name: auto_learn
 
 on:
   schedule:
-    - cron: "15 */3 * * *"   # toutes les 3 h
+    - cron: "15 */3 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  learn:
+  run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,9 +34,19 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python -c "from agent.auto_learn import run_auto_learn; run_auto_learn()"
 
-      - name: Commit state
+
+      - name: Commit and push
         run: |
-          git add state/
-          git commit -m "auto_learn: seed frontier from skill branch" || echo "nothing"
-          git pull --rebase origin main || true
-          git push origin HEAD:main || echo "push failed"
+          set -e
+          git add -A
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "auto_learn: expand skill branch"
+          git fetch origin main
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          fi
+          git push origin HEAD:main

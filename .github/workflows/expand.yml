@@ -2,53 +2,51 @@ name: expand
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: expand
-  cancel-in-progress: false
-
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt
 
       - name: Configure git
         run: |
           git config user.name "fly-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Run agent cycle
+      - name: Expand cycle
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python run.py
+        run: python run.py || true
 
-      - name: Update dashboard
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python -m agent.evaluate_dashboard
 
-      - name: Commit & push dashboard + state
+      - name: Commit and push
         run: |
-          git add DASHBOARD.md state/ wiki/ || true
-          git commit -m "dashboard: auto-update after expand" || echo "Nothing to commit"
-          git pull --rebase origin main || true
-          git push origin HEAD:main || echo "Push failed (non-blocking)"
+          set -e
+          git add -A
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "expand: knowledge cycle"
+          git fetch origin main
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          fi
+          git push origin HEAD:main
