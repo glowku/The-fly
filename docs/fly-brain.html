@@ -210,11 +210,13 @@ function buildGraph(){
   function placeArt(a,parent,depth,index,total){
     if(placed.has(a.title))return;
     placed.add(a.title);
+    // large fan-out so labels don't stack
     const base=parent.ang!=null?parent.ang:Math.atan2(parent.y,parent.x);
-    const ang=base+(index-(total-1)/2)*(0.85/Math.max(total,1));
-    const dist=55+depth*48;
-    const x=parent.x+Math.cos(ang)*dist;
-    const y=parent.y+Math.sin(ang)*dist;
+    const fan=Math.min(2.6, 0.55+total*0.28);
+    const ang=base+(index-(total-1)/2)*(fan/Math.max(total,1));
+    const ring=70+depth*62+Math.floor(index/6)*28;
+    const x=parent.x+Math.cos(ang)*ring;
+    const y=parent.y+Math.sin(ang)*ring;
     const id="art:"+a.title;
     const isNew=!known.has(id);if(isNew)known.add(id);
     const n={id,x:isNew?parent.x:x,y:isNew?parent.y:y,tx:x,ty:y,
@@ -235,14 +237,25 @@ function buildGraph(){
     });
   });
 
-  frontier.slice(0,20).forEach(title=>{
+  // frontier ghosts — fan out by skill groups
+  const frBySk={};
+  frontier.slice(0,24).forEach(title=>{
     if(placed.has(title))return;
     const sk=assignSkill(title);
+    if(!frBySk[sk])frBySk[sk]=[];
+    frBySk[sk].push(title);
+  });
+  Object.entries(frBySk).forEach(([sk,list])=>{
     const parent=map["sk:"+sk]||core;
-    const ang=(parent.ang||0)+rnd(-.4,.4);
-    const dist=85+rnd(0,35);
-    nodes.push({id:"fr:"+title,x:parent.x+Math.cos(ang)*dist,y:parent.y+Math.sin(ang)*dist,
-      r:3,kind:"frontier",label:title,level:0,phase:rnd(0,6),parent:parent.id,ghost:true,title,skill:sk});
+    list.forEach((title,i)=>{
+      const fan=Math.min(2.4,0.5+list.length*0.25);
+      const ang=(parent.ang||0)+(i-(list.length-1)/2)*(fan/Math.max(list.length,1));
+      const dist=95+Math.floor(i/5)*30;
+      nodes.push({id:"fr:"+title,
+        x:parent.x+Math.cos(ang)*dist,y:parent.y+Math.sin(ang)*dist,
+        r:3.2,kind:"frontier",label:title,level:0,phase:rnd(0,6),
+        parent:parent.id,ghost:true,title,skill:sk,ang});
+    });
   });
 
   if(particles.length<40)
@@ -333,12 +346,21 @@ function draw(){
       ctx.arc(n.x,n.y,n.r*(n.kind==="core"?pulse:1),0,Math.PI*2);ctx.fill();
       ctx.globalAlpha=1;
     }
-    const show=n.kind!=="article"||(hover&&hover.id===n.id)||cam.s>1.1||search;
+    const show=n.kind!=="article"||(hover&&hover.id===n.id)||cam.s>0.9||search||n.ghost;
     if(show&&ap>0.5){
-      ctx.fillStyle=n.ghost?"#456":n.kind==="article"?"#9dff7a":"#888";
-      ctx.font=(n.kind==="core"?12:10)+"px monospace";ctx.textAlign="center";
-      const lab=n.label.length>20?n.label.slice(0,18)+"…":n.label;
-      ctx.fillText(lab,n.x,n.y+n.r+11);
+      ctx.fillStyle=n.ghost?"#5a6a5a":n.kind==="article"?"#9dff7a":"#888";
+      ctx.font=(n.kind==="core"?12:n.ghost?9:10)+"px monospace";
+      ctx.textAlign="center";
+      let lab=n.label.length>22?n.label.slice(0,20)+"…":n.label;
+      // offset label along radial direction to reduce pile-up
+      const lx=n.x+Math.cos(n.ang||0)*8;
+      const ly=n.y+n.r+12+Math.sin(n.ang||0)*4;
+      // subtle background for readability
+      const tw=ctx.measureText(lab).width;
+      ctx.fillStyle="rgba(0,0,0,0.55)";
+      ctx.fillRect(lx-tw/2-2, ly-9, tw+4, 12);
+      ctx.fillStyle=n.ghost?"#7a8a7a":n.kind==="article"?"#9dff7a":"#aaa";
+      ctx.fillText(lab,lx,ly);
     }
   });
   if(hover&&!hover.hidden){
