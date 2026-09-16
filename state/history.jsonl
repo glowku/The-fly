@@ -178,3 +178,6 @@
 {"ts": "2026-09-16T23:12:27.955461+00:00", "type": "auto_learn_expand", "title": "Ecology", "skill": "ecologie", "score": 10.0, "objective": 9.235, "parent": "Behavioral Ecology and Sociobiology"}
 {"ts": "2026-09-16T23:12:27.956096+00:00", "type": "auto_learn", "skill": "ecologie", "learned": true, "frontier_added": 0, "fresh": ["Ecology"], "parent": "Behavioral Ecology and Sociobiology"}
 {"ts": "2026-09-16T23:14:00.690017+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 1.4, "article": "Ant mimicry"}
+{"ts": "2026-09-16T23:14:03.023779+00:00", "type": "auto_learn_expand", "title": "Ant mimicry", "skill": "comportement", "score": 10.0, "objective": 9.435, "parent": "Mimicry"}
+{"ts": "2026-09-16T23:14:03.024401+00:00", "type": "auto_learn", "skill": "comportement", "learned": true, "frontier_added": 0, "fresh": ["Ant mimicry"], "parent": "Mimicry"}
+{"ts": "2026-09-16T23:15:40.602169+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 1.46, "article": "Hovertrain"}
