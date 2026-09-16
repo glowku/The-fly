@@ -1,15 +1,15 @@
-"""Perception : Wikipedia REST API (gratuit, sans clé) + recherche de titres."""
+"""Perception : Wikipedia + recherche multi-mots intelligente."""
 import requests
 from urllib.parse import quote
+from itertools import combinations
 
-HEADERS = {"User-Agent": "the-fly-agent/1.2 (knowledge-graph-builder; educational)"}
+HEADERS = {"User-Agent": "the-fly-agent/1.3 (knowledge-graph-builder; educational)"}
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{}"
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 WIKI_RELATED = "https://en.wikipedia.org/api/rest_v1/page/related/{}"
 
 
 def search_titles(query: str, limit: int = 8) -> list:
-    """Recherche Wikipedia (opensearch) → titres réels."""
     try:
         params = {
             "action": "opensearch",
@@ -28,8 +28,45 @@ def search_titles(query: str, limit: int = 8) -> list:
         return []
 
 
+def multi_search(query: str, limit_per: int = 5) -> list:
+    """
+    Recherche intelligente multi-mots.
+    Ex: "la mouche evolution" → queries:
+      - full phrase
+      - bigrams: "mouche evolution", "la mouche"
+      - unigrams significatifs
+    """
+    stop = {"la", "le", "les", "de", "des", "du", "un", "une", "the", "a", "an", "of", "and", "et", "or", "sur", "pour"}
+    raw = query.replace("-", " ").strip()
+    words = [w for w in raw.split() if w.lower() not in stop and len(w) > 1]
+    queries = []
+    if raw:
+        queries.append(raw)
+    # bigrams / trigrams
+    for n in (3, 2):
+        if len(words) >= n:
+            for i in range(len(words) - n + 1):
+                queries.append(" ".join(words[i:i+n]))
+    # single words (longest first)
+    for w in sorted(words, key=len, reverse=True):
+        queries.append(w)
+
+    seen = set()
+    results = []
+    for q in queries:
+        ql = q.lower()
+        if ql in seen:
+            continue
+        seen.add(ql)
+        for h in search_titles(q, limit=limit_per):
+            if h not in results:
+                results.append(h)
+        if len(results) >= 20:
+            break
+    return results
+
+
 def get_summary(title: str):
-    """Résumé + métadonnées d\'un article Wikipedia."""
     try:
         r = requests.get(
             WIKI_SUMMARY.format(quote(title, safe="")),
@@ -58,23 +95,19 @@ def get_summary(title: str):
 
 
 def _score_hit(query: str, hit: str) -> float:
-    """Score un hit Wikipedia vs la requête (plus haut = mieux)."""
     q = [w for w in query.lower().replace("-", " ").split() if len(w) > 1]
     h = hit.lower()
     if not q:
         return 0.0
     hits_w = sum(1 for w in q if w in h)
     ratio = hits_w / len(q)
-    # bonus si le titre EST un des mots (ex: Fly)
     word_exact = 2.5 if h in q else 0.0
-    # pénalité titres longs / composés bizarres
     pen = max(0, len(hit.split()) - 2) * 0.6
     exact = 4.0 if h == query.lower() else 0.0
     return ratio * 4.0 + hits_w + word_exact + exact - pen
 
 
 def resolve_title(title: str):
-    """Résout un titre flou vers une page Wikipedia réelle."""
     if not title or not title.strip():
         return None
     title = title.strip()
@@ -83,41 +116,27 @@ def resolve_title(title: str):
     if s and (s.get("extract") or ""):
         return s.get("title") or title
 
-    candidates = []
-    # recherche full + par mot
-    for q in [title] + [w for w in title.replace("-", " ").split() if len(w) > 2]:
-        for h in search_titles(q, limit=6):
-            candidates.append(h)
-
-    # dédoublonne en gardant le meilleur score
+    candidates = multi_search(title, limit_per=6)
     best_title = None
     best_score = -1.0
-    seen = set()
     for h in candidates:
-        if h in seen:
-            continue
-        seen.add(h)
         sc = _score_hit(title, h)
-        if sc > best_score:
-            # vérifier qu'un résumé existe
-            s = get_summary(h)
-            if s and len(s.get("extract") or "") > 80:
-                best_score = sc
-                best_title = s.get("title") or h
+        if sc <= best_score:
+            continue
+        s = get_summary(h)
+        if s and len(s.get("extract") or "") > 80:
+            best_score = sc
+            best_title = s.get("title") or h
 
     if best_title and best_score >= 1.0:
         print(f"[perceive] resolve « {title} » → « {best_title} » (score={best_score:.1f})", flush=True)
         return best_title
 
     FALLBACKS = [
-        ("fly", "Fly"),
-        ("mouche", "Fly"),
-        ("ecology", "Ecology"),
-        ("ecologie", "Ecology"),
-        ("insect", "Insect"),
+        ("fly", "Fly"), ("mouche", "Fly"), ("ecology", "Ecology"),
+        ("ecologie", "Ecology"), ("insect", "Insect"),
         ("ai", "Artificial intelligence"),
-        ("cybersecurity", "Computer security"),
-        ("cyber", "Computer security"),
+        ("cybersecurity", "Computer security"), ("cyber", "Computer security"),
     ]
     low = title.lower()
     for k, v in FALLBACKS:
@@ -132,13 +151,9 @@ def resolve_title(title: str):
 def get_links(title: str, limit: int = 40):
     try:
         params = {
-            "action": "query",
-            "titles": title,
-            "prop": "links",
-            "plnamespace": 0,
-            "pllimit": min(limit, 50),
-            "format": "json",
-            "redirects": 1,
+            "action": "query", "titles": title, "prop": "links",
+            "plnamespace": 0, "pllimit": min(limit, 50),
+            "format": "json", "redirects": 1,
         }
         r = requests.get(WIKI_API, params=params, timeout=20, headers=HEADERS)
         if r.status_code != 200:
@@ -158,11 +173,7 @@ def get_links(title: str, limit: int = 40):
 
 def get_related(title: str, limit: int = 15):
     try:
-        r = requests.get(
-            WIKI_RELATED.format(quote(title, safe="")),
-            timeout=20,
-            headers=HEADERS,
-        )
+        r = requests.get(WIKI_RELATED.format(quote(title, safe="")), timeout=20, headers=HEADERS)
         if r.status_code != 200:
             return []
         return [p.get("title") for p in r.json().get("pages", []) if p.get("title")][:limit]
@@ -174,13 +185,8 @@ def get_related(title: str, limit: int = 15):
 def get_categories(title: str, limit: int = 10):
     try:
         params = {
-            "action": "query",
-            "titles": title,
-            "prop": "categories",
-            "cllimit": limit,
-            "clshow": "!hidden",
-            "format": "json",
-            "redirects": 1,
+            "action": "query", "titles": title, "prop": "categories",
+            "cllimit": limit, "clshow": "!hidden", "format": "json", "redirects": 1,
         }
         r = requests.get(WIKI_API, params=params, timeout=15, headers=HEADERS)
         if r.status_code != 200:
