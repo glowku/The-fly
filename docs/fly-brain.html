@@ -3,304 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>the-fly — brain</title>
+<title>the-fly · brain</title>
 <style>
   :root {
-    --bg: #0c0c0c;
-    --panel: #121212;
-    --border: #2a2a2a;
-    --text: #d0d0d0;
-    --dim: #666;
-    --accent: #6a9955;
-    --warn: #ce9178;
-    --link: #569cd6;
+    --bg: #050505;
+    --panel: rgba(12,12,12,0.92);
+    --line: #1c1c1c;
+    --text: #c8c8c8;
+    --mute: #555;
+    --g: #5dba4a;
+    --g2: #8dff6a;
+    --dimg: rgba(93,186,74,0.15);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font: 13px/1.5 "SF Mono", "Consolas", "Liberation Mono", monospace;
-    min-height: 100vh;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-    border-bottom: 1px solid var(--border);
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  header .title { color: var(--accent); font-weight: 600; letter-spacing: 0.04em; }
-  header .meta { color: var(--dim); display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-  header .meta b { color: var(--text); font-weight: 500; }
-  button {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text);
-    font: inherit;
-    padding: 4px 10px;
-    cursor: pointer;
-  }
-  button:hover { border-color: var(--accent); color: var(--accent); }
+  html, body { height: 100%; background: var(--bg); color: var(--text); font: 12px/1.45 ui-monospace, "SF Mono", Consolas, monospace; overflow: hidden; }
+  #stage { position: fixed; inset: 0; }
+  canvas#brain { width: 100%; height: 100%; display: block; }
 
-  main {
+  .hud {
+    position: fixed; z-index: 10; pointer-events: none;
+    inset: 0;
     display: grid;
-    grid-template-columns: 260px 1fr 300px;
-    gap: 1px;
-    background: var(--border);
-    min-height: calc(100vh - 48px);
+    grid-template-columns: 240px 1fr 280px;
+    grid-template-rows: auto 1fr auto;
+    gap: 0;
   }
-  section {
-    background: var(--bg);
-    padding: 16px;
+  .hud > * { pointer-events: auto; }
+
+  .top {
+    grid-column: 1 / -1;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 16px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.85), transparent);
+    border-bottom: 1px solid var(--line);
+  }
+  .top .brand { color: var(--g); letter-spacing: 0.12em; font-size: 11px; text-transform: uppercase; }
+  .top .meta { display: flex; gap: 14px; color: var(--mute); align-items: center; flex-wrap: wrap; }
+  .top .meta b { color: var(--text); font-weight: 500; }
+  .top button {
+    pointer-events: auto;
+    background: transparent; border: 1px solid var(--line); color: var(--mute);
+    font: inherit; padding: 3px 8px; cursor: pointer;
+  }
+  .top button:hover { border-color: var(--g); color: var(--g); }
+
+  .side {
+    margin: 12px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 12px;
+    max-height: calc(100vh - 120px);
     overflow: auto;
+    backdrop-filter: blur(6px);
   }
-  h2 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--dim);
-    margin-bottom: 12px;
-    font-weight: 500;
+  .side h2 {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--mute); margin-bottom: 10px; font-weight: 500;
   }
+  .side.left { grid-column: 1; grid-row: 2; align-self: start; }
+  .side.right { grid-column: 3; grid-row: 2; align-self: start; }
 
-  /* fly — minimal */
-  .fly-box {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--border);
-    margin-bottom: 12px;
-    background: #0a0a0a;
-  }
-  .fly {
-    position: relative;
-    width: 72px;
-    height: 44px;
-    animation: float 3s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-  }
-  .fly-body {
-    position: absolute; left: 24px; top: 14px;
-    width: 32px; height: 16px;
-    background: #333;
-    border-radius: 40%;
-  }
-  .fly-head {
-    position: absolute; left: 8px; top: 12px;
-    width: 18px; height: 16px;
-    background: #2a2a2a;
-    border-radius: 50%;
-  }
-  .fly-eye {
-    position: absolute; width: 5px; height: 5px;
-    background: #c44; border-radius: 50%; top: 4px;
-  }
-  .fly-eye.l { left: 2px; }
-  .fly-eye.r { right: 2px; }
-  .fly-prob {
-    position: absolute; left: 50%; bottom: -5px;
-    transform: translateX(-50%);
-    width: 2px; height: 8px; background: #444;
-  }
-  .fly-wing {
-    position: absolute; width: 28px; height: 14px;
-    border: 1px solid #444;
-    background: rgba(255,255,255,0.04);
-    border-radius: 50%;
-    top: 4px; left: 28px;
-    transform-origin: left center;
-  }
-  .fly-wing.l { animation: w1 0.09s infinite alternate; }
-  .fly-wing.r { animation: w2 0.09s infinite alternate; }
-  @keyframes w1 { from { transform: rotateZ(-15deg) rotateX(10deg); } to { transform: rotateZ(-40deg) rotateX(40deg); } }
-  @keyframes w2 { from { transform: rotateZ(15deg) rotateX(-10deg); } to { transform: rotateZ(40deg) rotateX(-40deg); } }
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 14px; }
+  .stat { border: 1px solid var(--line); padding: 8px; background: rgba(0,0,0,0.3); }
+  .stat .k { color: var(--mute); font-size: 10px; }
+  .stat .v { font-size: 16px; color: var(--g); margin-top: 2px; }
 
-  .caption { color: var(--dim); font-size: 12px; text-align: center; min-height: 1.4em; }
+  .skill { margin-bottom: 8px; }
+  .skill .r { display: flex; justify-content: space-between; color: var(--mute); margin-bottom: 2px; }
+  .skill .r span:last-child { color: var(--text); }
+  .bar { height: 2px; background: #1a1a1a; }
+  .bar i { display: block; height: 100%; background: var(--g); transition: width 0.5s; }
 
-  /* neural */
-  .neural-box {
-    height: 200px;
-    border: 1px solid var(--border);
-    background: #0a0a0a;
+  .list .item {
+    display: flex; justify-content: space-between; gap: 8px;
+    padding: 6px 0; border-bottom: 1px solid #151515; cursor: pointer; color: var(--text);
   }
-  #nc { width: 100%; height: 100%; display: block; }
+  .list .item:hover { color: var(--g2); }
+  .list .sc { color: var(--g); flex-shrink: 0; }
 
-  /* stats */
-  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
-  .stat {
-    border: 1px solid var(--border);
-    padding: 10px;
-  }
-  .stat .k { color: var(--dim); font-size: 11px; }
-  .stat .v { font-size: 18px; color: var(--text); margin-top: 2px; }
-
-  /* skills */
-  .skill { margin-bottom: 10px; }
-  .skill .row { display: flex; justify-content: space-between; margin-bottom: 3px; color: var(--dim); font-size: 12px; }
-  .skill .row span:last-child { color: var(--text); }
-  .bar { height: 3px; background: #1a1a1a; }
-  .bar > i { display: block; height: 100%; background: var(--accent); transition: width 0.6s; }
-
-  /* list */
-  .list { max-height: 280px; overflow-y: auto; }
-  .item {
-    display: flex;
-    justify-content: space-between;
-    padding: 7px 0;
-    border-bottom: 1px solid #1a1a1a;
-    cursor: pointer;
-    gap: 8px;
-  }
-  .item:hover { color: var(--link); }
-  .item .sc { color: var(--accent); flex-shrink: 0; }
-
-  .feed { max-height: 360px; overflow-y: auto; font-size: 12px; }
-  .feed .row { padding: 5px 0; border-bottom: 1px solid #1a1a1a; color: var(--dim); }
-  .feed .t { color: var(--warn); margin-right: 8px; }
+  .feed .row { padding: 4px 0; border-bottom: 1px solid #151515; color: var(--mute); font-size: 11px; }
+  .feed .t { color: #a67; margin-right: 6px; }
   .feed .n { color: var(--text); }
 
-  .log {
+  .bottom {
+    grid-column: 1 / -1;
+    padding: 8px 16px;
+    color: var(--mute);
     font-size: 11px;
-    color: var(--dim);
-    max-height: 120px;
-    overflow-y: auto;
-    margin-top: 12px;
-    border-top: 1px solid var(--border);
-    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    background: rgba(0,0,0,0.7);
   }
 
-  /* modal */
   .overlay {
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    padding: 24px;
+    position: fixed; inset: 0; background: rgba(0,0,0,0.82);
+    display: none; align-items: center; justify-content: center;
+    z-index: 50; padding: 20px;
   }
   .overlay.open { display: flex; }
   .modal {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    width: 100%;
-    max-width: 640px;
-    max-height: 80vh;
-    display: flex;
-    flex-direction: column;
+    background: #0c0c0c; border: 1px solid var(--line);
+    width: min(640px, 100%); max-height: 80vh;
+    display: flex; flex-direction: column;
   }
-  .modal-h {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-  }
-  .modal-h h3 { font-size: 13px; color: var(--accent); font-weight: 500; }
-  .modal-h button { border: none; color: var(--dim); font-size: 18px; line-height: 1; }
-  .modal-b {
-    padding: 16px;
-    overflow-y: auto;
-    font-size: 13px;
-    line-height: 1.65;
-  }
-  .modal-b h1 { font-size: 15px; color: var(--text); margin: 0 0 12px; }
-  .modal-b h2 { font-size: 12px; color: var(--accent); margin: 16px 0 8px; text-transform: none; letter-spacing: 0; }
-  .modal-b p { margin-bottom: 10px; }
-  .modal-b a { color: var(--link); cursor: pointer; text-decoration: none; }
-  .modal-b a:hover { text-decoration: underline; }
+  .modal-h { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .modal-h h3 { color: var(--g); font-size: 12px; font-weight: 500; }
+  .modal-h button { background: none; border: none; color: var(--mute); font-size: 18px; cursor: pointer; }
+  .modal-b { padding: 14px; overflow: auto; font-size: 12px; line-height: 1.65; }
+  .modal-b h1 { font-size: 14px; margin-bottom: 10px; color: var(--text); }
+  .modal-b h2 { font-size: 11px; color: var(--g); margin: 14px 0 6px; text-transform: none; letter-spacing: 0; }
+  .modal-b a { color: #6af; cursor: pointer; }
+  .empty { color: var(--mute); padding: 8px 0; }
 
-  .empty { color: var(--dim); padding: 12px 0; }
-
-  @media (max-width: 900px) {
-    main { grid-template-columns: 1fr; }
+  @media (max-width: 800px) {
+    .hud { grid-template-columns: 1fr; }
+    .side.left, .side.right { max-height: 30vh; }
   }
 </style>
 </head>
 <body>
-<header>
-  <div class="title">the-fly / brain</div>
-  <div class="meta">
-    <span>status <b id="st">…</b></span>
-    <span>nodes <b id="n">—</b></span>
-    <span>obj <b id="o">—</b></span>
-    <span>avg <b id="q">—</b></span>
-    <button type="button" onclick="loadAll()">refresh</button>
+<canvas id="brain"></canvas>
+
+<div class="hud">
+  <div class="top">
+    <div class="brand">the-fly · neural graph</div>
+    <div class="meta">
+      <span>status <b id="st">…</b></span>
+      <span>nodes <b id="nn">—</b></span>
+      <span>obj <b id="ob">—</b></span>
+      <span>avg <b id="aq">—</b></span>
+      <button type="button" id="btnRefresh">refresh</button>
+    </div>
   </div>
-</header>
 
-<main>
-  <section>
-    <h2>unit</h2>
-    <div class="fly-box">
-      <div class="fly">
-        <div class="fly-wing l"></div>
-        <div class="fly-wing r"></div>
-        <div class="fly-body"></div>
-        <div class="fly-head">
-          <div class="fly-eye l"></div>
-          <div class="fly-eye r"></div>
-          <div class="fly-prob"></div>
-        </div>
-      </div>
-    </div>
-    <div class="caption" id="cap">idle</div>
-
-    <h2 style="margin-top:20px">neural</h2>
-    <div class="neural-box"><canvas id="nc"></canvas></div>
-  </section>
-
-  <section>
+  <div class="side left">
     <h2>metrics</h2>
-    <div class="stats">
-      <div class="stat"><div class="k">concepts</div><div class="v" id="s1">—</div></div>
-      <div class="stat"><div class="k">frontier</div><div class="v" id="s2">—</div></div>
-      <div class="stat"><div class="k">edges</div><div class="v" id="s3">—</div></div>
-      <div class="stat"><div class="k">quality</div><div class="v" id="s4">—</div></div>
+    <div class="stat-row">
+      <div class="stat"><div class="k">concepts</div><div class="v" id="m1">—</div></div>
+      <div class="stat"><div class="k">frontier</div><div class="v" id="m2">—</div></div>
+      <div class="stat"><div class="k">edges</div><div class="v" id="m3">—</div></div>
+      <div class="stat"><div class="k">quality</div><div class="v" id="m4">—</div></div>
     </div>
-
     <h2>skills</h2>
     <div id="skills"><div class="empty">—</div></div>
+  </div>
 
-    <h2 style="margin-top:20px">articles · click to read</h2>
+  <div class="side right">
+    <h2>articles</h2>
     <div class="list" id="arts"><div class="empty">—</div></div>
-  </section>
-
-  <section>
-    <h2>activity</h2>
+    <h2 style="margin-top:14px">activity</h2>
     <div class="feed" id="feed"><div class="empty">—</div></div>
-    <div class="log" id="log">> ready<br></div>
-  </section>
-</main>
+  </div>
 
-<div class="overlay" id="ov" onclick="if(event.target===this)closeM()">
+  <div class="bottom" id="log">ready · fetching live json from repo</div>
+</div>
+
+<div class="overlay" id="ov">
   <div class="modal">
-    <div class="modal-h">
-      <h3 id="mt">—</h3>
-      <button type="button" onclick="closeM()">×</button>
-    </div>
+    <div class="modal-h"><h3 id="mt">—</h3><button type="button" id="btnClose">×</button></div>
     <div class="modal-b" id="mb">…</div>
   </div>
 </div>
 
 <script>
 const RAW = "https://raw.githubusercontent.com/glowku/The-fly/main";
-const CAPS = [
-  "learning", "expanding graph", "scoring output",
-  "reinforcing skill", "filtering noise", "idle",
-  "commit cycle", "frontier scan"
-];
+const canvas = document.getElementById("brain");
+const ctx = canvas.getContext("2d");
+let W = 0, H = 0, nodes = [], pulses = [], articles = [], skillsData = {};
+let hover = null, raf = 0;
+
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", () => { resize(); layout(); });
+resize();
 
 function log(m) {
-  const el = document.getElementById("log");
-  el.innerHTML += "> " + m + "<br>";
-  el.scrollTop = el.scrollHeight;
+  document.getElementById("log").textContent = m;
 }
 
 async function getJSON(p) {
@@ -314,166 +193,241 @@ async function getText(p) {
   return r.text();
 }
 
-/* neural canvas — sober */
-let anim = null;
-function neural(skills) {
-  const c = document.getElementById("nc");
-  const box = c.parentElement;
-  c.width = box.clientWidth;
-  c.height = box.clientHeight;
-  const ctx = c.getContext("2d");
-  const W = c.width, H = c.height;
-  const names = Object.keys(skills || {});
-  const nodes = [{ x: W/2, y: H/2, r: 5, fixed: true, l: 10 }];
+function layout() {
+  const names = Object.keys(skillsData);
+  const cx = W * 0.5, cy = H * 0.5;
+  nodes = [];
 
-  names.forEach((n, i) => {
+  // core
+  nodes.push({ id: "core", x: cx, y: cy, r: 10, kind: "core", label: "CORE", level: 10 });
+
+  // skill ring
+  names.forEach((name, i) => {
     const a = (i / Math.max(names.length, 1)) * Math.PI * 2 - Math.PI / 2;
-    const d = 55;
+    const d = Math.min(W, H) * 0.18;
+    const lv = skillsData[name].level || 0;
     nodes.push({
-      x: W/2 + Math.cos(a) * d,
-      y: H/2 + Math.sin(a) * d,
-      r: 3 + Math.min(4, (skills[n].level || 0) * 0.4),
-      fixed: false,
-      l: skills[n].level || 0,
-      label: n.slice(0, 6),
-      vx: (Math.random() - 0.5) * 0.2,
-      vy: (Math.random() - 0.5) * 0.2
+      id: name, x: cx + Math.cos(a) * d, y: cy + Math.sin(a) * d,
+      r: 5 + Math.min(8, lv * 0.7), kind: "skill", label: name, level: lv,
+      phase: Math.random() * Math.PI * 2
     });
   });
-  for (let i = 0; i < 8; i++) {
+
+  // article nodes (outer ring / cloud)
+  const arts = articles.slice(0, 24);
+  arts.forEach((a, i) => {
+    const a0 = (i / Math.max(arts.length, 1)) * Math.PI * 2;
+    const d = Math.min(W, H) * (0.28 + (i % 5) * 0.03);
     nodes.push({
-      x: Math.random() * W, y: Math.random() * H,
-      r: 1, fixed: false, particle: true,
-      vx: (Math.random() - 0.5) * 0.4,
-      vy: (Math.random() - 0.5) * 0.4
+      id: "a:" + a.title, x: cx + Math.cos(a0) * d, y: cy + Math.sin(a0) * d,
+      r: 2.5 + (a.score || 0) * 0.25, kind: "article", label: a.title, level: a.score || 0,
+      phase: Math.random() * Math.PI * 2, title: a.title
+    });
+  });
+}
+
+function spawnPulse(from, to) {
+  pulses.push({ from, to, t: 0, speed: 0.008 + Math.random() * 0.012 });
+}
+
+function draw() {
+  ctx.fillStyle = "rgba(5,5,5,0.22)";
+  ctx.fillRect(0, 0, W, H);
+
+  const t = performance.now() * 0.001;
+
+  // soft vignette grid
+  ctx.strokeStyle = "rgba(93,186,74,0.03)";
+  ctx.lineWidth = 1;
+  const step = 48;
+  for (let x = 0; x < W; x += step) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+  }
+  for (let y = 0; y < H; y += step) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  }
+
+  // edges: skills ↔ core
+  const core = nodes.find(n => n.kind === "core");
+  const skills = nodes.filter(n => n.kind === "skill");
+  const arts = nodes.filter(n => n.kind === "article");
+
+  function edge(a, b, alpha, width) {
+    const g = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+    g.addColorStop(0, "rgba(93,186,74," + alpha + ")");
+    g.addColorStop(0.5, "rgba(141,255,106," + (alpha * 0.9) + ")");
+    g.addColorStop(1, "rgba(93,186,74," + alpha + ")");
+    ctx.beginPath();
+    ctx.strokeStyle = g;
+    ctx.lineWidth = width;
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(b.x, b.y);
+    ctx.stroke();
+  }
+
+  if (core) {
+    skills.forEach(s => {
+      const pulse = 0.25 + 0.15 * Math.sin(t * 2 + s.phase);
+      edge(core, s, pulse, 1.2);
+      if (Math.random() < 0.02) spawnPulse(core, s);
     });
   }
 
-  if (anim) cancelAnimationFrame(anim);
-  function frame() {
-    ctx.clearRect(0, 0, W, H);
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const a = nodes[i], b = nodes[j];
-        const dx = b.x - a.x, dy = b.y - a.y;
-        const d = Math.hypot(dx, dy);
-        const max = (a.particle || b.particle) ? 40 : 80;
-        if (d < max) {
-          ctx.beginPath();
-          ctx.strokeStyle = "rgba(106,153,85," + ((1 - d / max) * 0.35) + ")";
-          ctx.lineWidth = 1;
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(b.x, b.y);
-          ctx.stroke();
-        }
-      }
-    }
-    nodes.forEach(n => {
-      if (!n.fixed) {
-        n.x += n.vx || 0;
-        n.y += n.vy || 0;
-        if (n.x < 8 || n.x > W - 8) n.vx *= -1;
-        if (n.y < 8 || n.y > H - 8) n.vy *= -1;
-        if (!n.particle) {
-          n.vx = (n.vx || 0) + (W / 2 - n.x) * 0.0003;
-          n.vy = (n.vy || 0) + (H / 2 - n.y) * 0.0003;
-          n.vx *= 0.99;
-          n.vy *= 0.99;
-        }
-      }
-      ctx.beginPath();
-      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fillStyle = n.fixed ? "#d0d0d0" : n.particle ? "#333" : "#6a9955";
-      ctx.fill();
-      if (n.label) {
-        ctx.fillStyle = "#555";
-        ctx.font = "10px monospace";
-        ctx.textAlign = "center";
-        ctx.fillText(n.label, n.x, n.y + n.r + 10);
-      }
-    });
-    anim = requestAnimationFrame(frame);
+  // skill–skill neighbors
+  for (let i = 0; i < skills.length; i++) {
+    const a = skills[i], b = skills[(i + 1) % skills.length];
+    edge(a, b, 0.12, 0.8);
   }
-  frame();
+
+  // articles linked to nearest skill
+  arts.forEach(a => {
+    let best = null, bestD = Infinity;
+    skills.forEach(s => {
+      const d = Math.hypot(s.x - a.x, s.y - a.y);
+      if (d < bestD) { bestD = d; best = s; }
+    });
+    if (best) {
+      edge(best, a, 0.08 + (a.level / 10) * 0.1, 0.6);
+      if (Math.random() < 0.008) spawnPulse(best, a);
+    }
+  });
+
+  // traveling pulses on synapses
+  for (let i = pulses.length - 1; i >= 0; i--) {
+    const p = pulses[i];
+    p.t += p.speed;
+    if (p.t >= 1) { pulses.splice(i, 1); continue; }
+    const x = p.from.x + (p.to.x - p.from.x) * p.t;
+    const y = p.from.y + (p.to.y - p.from.y) * p.t;
+    const grd = ctx.createRadialGradient(x, y, 0, x, y, 10);
+    grd.addColorStop(0, "rgba(200,255,180,0.95)");
+    grd.addColorStop(0.4, "rgba(93,186,74,0.5)");
+    grd.addColorStop(1, "transparent");
+    ctx.beginPath();
+    ctx.fillStyle = grd;
+    ctx.arc(x, y, 10, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.fillStyle = "#e8ffe0";
+    ctx.arc(x, y, 1.8, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // nodes
+  nodes.forEach(n => {
+    const glow = n.kind === "core" ? 18 : n.kind === "skill" ? 10 + n.level : 4;
+    const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r + glow);
+    if (n.kind === "core") {
+      grd.addColorStop(0, "rgba(230,255,220,0.95)");
+      grd.addColorStop(0.3, "rgba(93,186,74,0.5)");
+      grd.addColorStop(1, "transparent");
+    } else if (n.kind === "skill") {
+      grd.addColorStop(0, "rgba(141,255,106,0.7)");
+      grd.addColorStop(0.4, "rgba(93,186,74,0.25)");
+      grd.addColorStop(1, "transparent");
+    } else {
+      grd.addColorStop(0, "rgba(93,186,74,0.35)");
+      grd.addColorStop(1, "transparent");
+    }
+    ctx.beginPath();
+    ctx.fillStyle = grd;
+    ctx.arc(n.x, n.y, n.r + glow, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.fillStyle = n.kind === "core" ? "#f0fff0" : n.kind === "skill" ? "#5dba4a" : "#3a6a32";
+    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    ctx.fill();
+
+    if (n.kind !== "article" || (hover && hover.id === n.id)) {
+      ctx.fillStyle = n.kind === "article" ? "#8dff6a" : "#888";
+      ctx.font = n.kind === "core" ? "11px monospace" : "10px monospace";
+      ctx.textAlign = "center";
+      ctx.fillText(n.label.length > 14 ? n.label.slice(0, 12) + "…" : n.label, n.x, n.y + n.r + 12);
+    }
+  });
+
+  // hover ring
+  if (hover) {
+    ctx.beginPath();
+    ctx.strokeStyle = "rgba(141,255,106,0.6)";
+    ctx.lineWidth = 1;
+    ctx.arc(hover.x, hover.y, hover.r + 6, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  raf = requestAnimationFrame(draw);
 }
+
+canvas.addEventListener("mousemove", e => {
+  const x = e.clientX, y = e.clientY;
+  hover = null;
+  for (let i = nodes.length - 1; i >= 0; i--) {
+    const n = nodes[i];
+    if (Math.hypot(n.x - x, n.y - y) < n.r + 8) { hover = n; break; }
+  }
+  canvas.style.cursor = hover && hover.kind === "article" ? "pointer" : "default";
+});
+canvas.addEventListener("click", () => {
+  if (hover && hover.kind === "article" && hover.title) openArt(hover.title);
+});
 
 function renderSkills(sk) {
   const el = document.getElementById("skills");
-  if (!sk || !Object.keys(sk).length) {
-    el.innerHTML = '<div class="empty">no skills yet</div>';
-    return;
-  }
-  el.innerHTML = Object.entries(sk)
-    .sort((a, b) => (b[1].level || 0) - (a[1].level || 0))
-    .map(([name, info]) => {
-      const lv = info.level || 0;
-      const pct = Math.min(100, (lv / 10) * 100);
-      return '<div class="skill"><div class="row"><span>' + name + '</span><span>' + lv.toFixed(1) + '</span></div><div class="bar"><i style="width:' + pct + '%"></i></div></div>';
-    }).join("");
+  if (!sk || !Object.keys(sk).length) { el.innerHTML = '<div class="empty">—</div>'; return; }
+  el.innerHTML = Object.entries(sk).sort((a,b) => (b[1].level||0)-(a[1].level||0)).map(([n, info]) => {
+    const lv = info.level || 0;
+    return '<div class="skill"><div class="r"><span>'+n+'</span><span>'+lv.toFixed(1)+'</span></div><div class="bar"><i style="width:'+Math.min(100,lv*10)+'%"></i></div></div>';
+  }).join("");
 }
 
 function renderArts(q) {
   const el = document.getElementById("arts");
-  const list = Object.entries(q || {}).sort((a, b) => (b[1].score || 0) - (a[1].score || 0)).slice(0, 20);
-  if (!list.length) {
-    el.innerHTML = '<div class="empty">empty wiki</div>';
-    return;
-  }
-  el.innerHTML = list.map(([t, info]) =>
-    '<div class="item" data-t="' + t.replace(/"/g, "&quot;") + '"><span>' + t + '</span><span class="sc">' + (info.score || 0).toFixed(1) + "</span></div>"
+  articles = Object.entries(q || {}).map(([title, info]) => ({ title, score: info.score || 0 }))
+    .sort((a,b) => b.score - a.score);
+  if (!articles.length) { el.innerHTML = '<div class="empty">empty</div>'; return; }
+  el.innerHTML = articles.slice(0, 18).map(a =>
+    '<div class="item" data-t="'+a.title.replace(/"/g,'&quot;')+'"><span>'+a.title+'</span><span class="sc">'+a.score.toFixed(1)+'</span></div>'
   ).join("");
-  el.querySelectorAll(".item").forEach(node => {
-    node.addEventListener("click", () => openArt(node.getAttribute("data-t")));
-  });
+  el.querySelectorAll(".item").forEach(n => n.addEventListener("click", () => openArt(n.getAttribute("data-t"))));
 }
 
 function renderFeed(hist) {
   const el = document.getElementById("feed");
-  const items = (hist || []).slice(-30).reverse();
-  if (!items.length) {
-    el.innerHTML = '<div class="empty">no activity</div>';
-    return;
-  }
+  const items = (hist || []).slice(-20).reverse();
+  if (!items.length) { el.innerHTML = '<div class="empty">—</div>'; return; }
   el.innerHTML = items.map(h => {
     const ts = (h.ts || "").slice(11, 19);
-    return '<div class="row"><span class="t">' + (h.type || "") + "</span><span class=\"n\">" + (h.title || h.skill || "") + (h.score != null ? " " + h.score : "") + "</span> <span>" + ts + "</span></div>";
+    return '<div class="row"><span class="t">'+(h.type||"")+'</span><span class="n">'+(h.title||h.skill||"")+(h.score!=null?" "+h.score:"")+'</span> '+ts+"</div>";
   }).join("");
 }
 
 function md(s) {
-  return s
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/^# (.+)$/gm, "<h1>$1</h1>")
-    .replace(/^## (.+)$/gm, "<h2>$1</h2>")
-    .replace(/\[\[([^\]]+)\]\]/g, '<a data-link="$1">$1</a>')
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\n\n/g, "</p><p>")
-    .replace(/\n/g, "<br>");
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/^# (.+)$/gm,"<h1>$1</h1>").replace(/^## (.+)$/gm,"<h2>$1</h2>")
+    .replace(/\[\[([^\]]+)\]\]/g,'<a data-l="$1">$1</a>')
+    .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
+    .replace(/\n\n/g,"</p><p>").replace(/\n/g,"<br>");
 }
 
 async function openArt(title) {
   document.getElementById("mt").textContent = title;
-  document.getElementById("mb").innerHTML = "loading…";
+  document.getElementById("mb").textContent = "loading…";
   document.getElementById("ov").classList.add("open");
   try {
     const text = await getText("wiki/" + encodeURIComponent(title) + ".md");
     const box = document.getElementById("mb");
     box.innerHTML = "<p>" + md(text) + "</p>";
-    box.querySelectorAll("a[data-link]").forEach(a => {
-      a.addEventListener("click", e => {
-        e.preventDefault();
-        openArt(a.getAttribute("data-link"));
-      });
-    });
+    box.querySelectorAll("a[data-l]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); openArt(a.getAttribute("data-l")); }));
   } catch (e) {
-    document.getElementById("mb").innerHTML = "<p style=\"color:var(--warn)\">" + e.message + "</p>";
+    document.getElementById("mb").innerHTML = "<p style='color:#a67'>"+e.message+"</p>";
   }
 }
 function closeM() { document.getElementById("ov").classList.remove("open"); }
 
 async function loadAll() {
   document.getElementById("st").textContent = "sync";
-  log("fetch json");
+  log("fetching json…");
   try {
     const [cov, qual, skills] = await Promise.all([
       getJSON("state/coverage.json"),
@@ -490,41 +444,42 @@ async function loadAll() {
     const nEdges = (cov.edges || []).length;
     const nFront = (cov.frontier || []).length;
     const scores = Object.values(qual || {}).map(x => x.score || 0);
-    const avg = scores.length ? scores.reduce((a, b) => a + b, 0) / scores.length : 0;
-    const obj = Math.min(nNodes / 50, 4) * avg;
+    const avg = scores.length ? scores.reduce((a,b)=>a+b,0)/scores.length : 0;
+    const obj = Math.min(nNodes/50, 4) * avg;
 
-    document.getElementById("n").textContent = nNodes;
-    document.getElementById("o").textContent = obj.toFixed(2);
-    document.getElementById("q").textContent = avg.toFixed(1);
-    document.getElementById("s1").textContent = nNodes;
-    document.getElementById("s2").textContent = nFront;
-    document.getElementById("s3").textContent = nEdges;
-    document.getElementById("s4").textContent = avg.toFixed(1);
+    document.getElementById("nn").textContent = nNodes;
+    document.getElementById("ob").textContent = obj.toFixed(2);
+    document.getElementById("aq").textContent = avg.toFixed(1);
+    document.getElementById("m1").textContent = nNodes;
+    document.getElementById("m2").textContent = nFront;
+    document.getElementById("m3").textContent = nEdges;
+    document.getElementById("m4").textContent = avg.toFixed(1);
 
-    const sk = skills || {
-      entomologie: { level: 1 }, anatomie_insecte: { level: 0.5 },
-      vol_et_aerodynamique: { level: 0.3 }, ecologie: { level: 0.4 },
-      evolution: { level: 0.2 }, comportement: { level: 0.3 }
+    skillsData = skills || {
+      entomologie:{level:1}, anatomie_insecte:{level:0.5}, vol_et_aerodynamique:{level:0.3},
+      ecologie:{level:0.4}, evolution:{level:0.2}, comportement:{level:0.3}
     };
-    renderSkills(sk);
-    neural(sk);
+    renderSkills(skillsData);
     renderArts(qual);
     renderFeed(hist);
+    layout();
     document.getElementById("st").textContent = "online";
-    log("ok " + nNodes + " nodes");
+    log("online · " + nNodes + " concepts · graph live");
   } catch (e) {
     document.getElementById("st").textContent = "error";
     log(String(e.message || e));
   }
 }
 
-setInterval(() => {
-  document.getElementById("cap").textContent = CAPS[Math.floor(Math.random() * CAPS.length)];
-}, 5000);
-
+document.getElementById("btnRefresh").onclick = loadAll;
+document.getElementById("btnClose").onclick = closeM;
+document.getElementById("ov").onclick = e => { if (e.target.id === "ov") closeM(); };
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeM(); });
+
 loadAll();
 setInterval(loadAll, 45000);
+cancelAnimationFrame(raf);
+draw();
 </script>
 </body>
 </html>
