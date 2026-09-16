@@ -376,6 +376,14 @@
         "https://en.wikipedia.org/wiki/Ecology"
       ],
       "updated_at": "2026-09-16T23:12:25.595513+00:00"
+    },
+    "Ant mimicry": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:14:00.461008+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ant_mimicry"
+      ],
+      "updated_at": "2026-09-16T23:14:00.461012+00:00"
     }
   },
   "edges": [

@@ -973,5 +973,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:12:25.594973+00:00"
+  },
+  "Ant mimicry": {
+    "score": 10.0,
+    "metrics": {
+      "words": 395,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect behaviour",
+        "Swarm behaviour",
+        "Parasitoid",
+        "Insect ecology",
+        "Palaeoptera",
+        "Neoptera"
+      ],
+      "diversity": 0.717,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:14:00.460553+00:00"
   }
 }
