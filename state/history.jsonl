@@ -17,3 +17,5 @@
 {"ts": "2026-09-16T09:54:03.447586+00:00", "type": "expand", "title": "Artificial fly", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.2}
 {"ts": "2026-09-16T10:06:18.006809+00:00", "type": "reset_root", "root": "ecology fly"}
 {"ts": "2026-09-16T10:06:19.442756+00:00", "type": "skip", "title": "ecology fly", "reason": "no_summary"}
+{"ts": "2026-09-16T10:34:40.936345+00:00", "type": "reset_root", "root": "Fly intelligence"}
+{"ts": "2026-09-16T10:34:41.959583+00:00", "type": "skip", "title": "Fly intelligence", "reason": "no_summary"}

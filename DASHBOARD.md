@@ -1,10 +1,10 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 10:06:19 UTC
+**Dernière mise à jour** : 2026-09-16 10:34:42 UTC
 
 ## Objectif de l'agent
 
-Construire un **graphe de connaissance vivant** sur le sujet racine **« ecology fly »**.
+Construire un **graphe de connaissance vivant** sur le sujet racine **« Fly intelligence »**.
 
 Formule d'optimisation : `coverage_factor × average_quality`
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 0 |
 | Score qualité moyen | **0.0/10** |
 | Score objectif (coverage × quality) | **0.0** |
-| Actions dernières 24 h | 18 |
+| Actions dernières 24 h | 20 |
 
 ## Répartition de la qualité
 
@@ -43,8 +43,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T09:25:46  skill_reinforc  
-2026-09-16T09:25:47  expand          Fly score=10.0
 2026-09-16T09:40:57  skill_reinforc  
 2026-09-16T09:40:58  expand          Fly score=10.0
 2026-09-16T09:42:59  skill_reinforc  
@@ -58,6 +56,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T09:54:03  expand          Artificial fly score=10.0
 2026-09-16T10:06:18  reset_root      
 2026-09-16T10:06:19  skip            ecology fly
+2026-09-16T10:34:40  reset_root      
+2026-09-16T10:34:41  skip            Fly intelligence
 ```
 
 ## Architecture de l'agent
