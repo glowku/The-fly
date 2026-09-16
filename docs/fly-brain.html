@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🪰 THE FLY BRAIN — Neural Interface</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500;700&display=swap');
+
+  :root {
+    --bg: #0a0e14;
+    --panel: #111820;
+    --border: #1e2a38;
+    --accent: #00ff9d;
+    --accent2: #ff2a6d;
+    --text: #c8d6e5;
+    --dim: #5a6a7a;
+    --fly: #7dffa3;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.12) 0px,
+      rgba(0,0,0,0.12) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #0d131c 0%, var(--bg) 100%);
+  }
+
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--accent);
+    letter-spacing: 3px;
+    text-shadow: 0 0 12px var(--accent);
+  }
+
+  .status {
+    display: flex;
+    gap: 18px;
+    font-size: 0.85rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .status span { color: var(--dim); }
+  .status b { color: var(--accent); }
+
+  .blink { animation: blink 1.2s infinite; }
+  @keyframes blink { 50% { opacity: 0.3; } }
+
+  main {
+    display: grid;
+    grid-template-columns: 280px 1fr 320px;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px;
+  }
+
+  .panel h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  /* ===== FLY 3D CSS (très grossier + drôle) ===== */
+  .fly-stage {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 600px;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #132018 0%, var(--panel) 70%);
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+
+  .fly {
+    width: 80px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: buzz 0.15s infinite alternate, float 3s ease-in-out infinite;
+  }
+
+  @keyframes buzz {
+    from { transform: rotateY(-8deg) rotateZ(-3deg); }
+    to   { transform: rotateY(8deg) rotateZ(3deg); }
+  }
+  @keyframes float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -12px; }
+  }
+
+  .fly-body {
+    width: 40px; height: 22px;
+    background: #2a2a2a;
+    border-radius: 50% 50% 40% 40%;
+    position: absolute; left: 20px; top: 14px;
+    box-shadow: inset -4px -2px 0 #111;
+  }
+  .fly-head {
+    width: 18px; height: 16px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    position: absolute; left: 4px; top: 16px;
+  }
+  .fly-eye {
+    width: 7px; height: 7px;
+    background: #ff2244;
+    border-radius: 50%;
+    position: absolute; top: 3px;
+    box-shadow: 0 0 6px #ff2244;
+  }
+  .fly-eye.l { left: 1px; }
+  .fly-eye.r { right: 1px; }
+
+  .fly-wing {
+    width: 38px; height: 18px;
+    background: rgba(180, 220, 255, 0.25);
+    border: 1px solid rgba(180, 220, 255, 0.5);
+    border-radius: 50% 50% 40% 40%;
+    position: absolute; top: 6px;
+    transform-origin: left center;
+  }
+  .fly-wing.l { left: 28px; animation: flapL 0.08s infinite alternate; }
+  .fly-wing.r { left: 28px; animation: flapR 0.08s infinite alternate; }
+
+  @keyframes flapL {
+    from { transform: rotateX(10deg) rotateZ(-25deg); }
+    to   { transform: rotateX(50deg) rotateZ(-40deg); }
+  }
+  @keyframes flapR {
+    from { transform: rotateX(-10deg) rotateZ(25deg); }
+    to   { transform: rotateX(-50deg) rotateZ(40deg); }
+  }
+
+  .fly-leg {
+    width: 2px; height: 12px;
+    background: #444;
+    position: absolute; top: 32px;
+  }
+  .fly-leg:nth-child(1) { left: 28px; transform: rotate(20deg); }
+  .fly-leg:nth-child(2) { left: 34px; }
+  .fly-leg:nth-child(3) { left: 40px; transform: rotate(-20deg); }
+
+  .meme-caption {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--accent2);
+    margin-top: 6px;
+    min-height: 1.2em;
+  }
+
+  /* ===== Neural net ===== */
+  .neural {
+    height: 180px;
+    position: relative;
+    background: #0c1218;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .node {
+    position: absolute;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+  }
+  .node.weak { background: var(--dim); box-shadow: none; }
+  .node.strong { background: #fff; box-shadow: 0 0 16px #fff; }
+
+  /* ===== Stats ===== */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .stat {
+    background: #0c1218;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+  }
+  .stat .label { font-size: 0.7rem; color: var(--dim); }
+  .stat .value { font-size: 1.3rem; color: var(--accent); font-family: 'Orbitron'; }
+
+  /* ===== Skills ===== */
+  .skill { margin-bottom: 10px; }
+  .skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+  }
+  .skill-bar {
+    height: 8px;
+    background: #0c1218;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #00ccff);
+    border-radius: 4px;
+    transition: width 0.8s ease;
+  }
+
+  /* ===== Feed & articles ===== */
+  .feed { max-height: 340px; overflow-y: auto; font-size: 0.78rem; }
+  .feed-item {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 10px;
+  }
+  .feed-item .ts { color: var(--dim); white-space: nowrap; }
+  .feed-item .type { color: var(--accent2); min-width: 70px; }
+  .feed-item .title { color: var(--text); }
+
+  .article-list { max-height: 280px; overflow-y: auto; }
+  .article {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+  .article a { color: var(--text); text-decoration: none; }
+  .article a:hover { color: var(--accent); }
+  .score { color: var(--accent); font-weight: bold; }
+
+  .loading {
+    color: var(--dim);
+    font-size: 0.85rem;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--dim);
+    font-size: 0.75rem;
+  }
+
+  .refresh-btn {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 6px 14px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  .refresh-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  @media (max-width: 1000px) {
+    main { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">🪰 THE FLY BRAIN</div>
+    <div class="status">
+      <span>STATUS: <b id="status" class="blink">CONNECTING...</b></span>
+      <span>NODES: <b id="nodes">—</b></span>
+      <span>OBJ: <b id="obj">—</b></span>
+      <span>AVG Q: <b id="avgq">—</b></span>
+      <button class="refresh-btn" onclick="loadAll()">↻ REFRESH</button>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <div class="panel">
+        <h2>// SUBJECT UNIT</h2>
+        <div class="fly-stage">
+          <div class="fly" id="fly">
+            <div class="fly-wing l"></div>
+            <div class="fly-wing r"></div>
+            <div class="fly-body"></div>
+            <div class="fly-head">
+              <div class="fly-eye l"></div>
+              <div class="fly-eye r"></div>
+            </div>
+            <div class="fly-leg"></div>
+            <div class="fly-leg"></div>
+            <div class="fly-leg"></div>
+          </div>
+        </div>
+        <div class="meme-caption" id="meme">"je suis une mouche intelligente mdr"</div>
+      </div>
+
+      <div class="panel" style="margin-top:16px">
+        <h2>// NEURAL CORE</h2>
+        <div class="neural" id="neural"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h2>// LIVE METRICS</h2>
+        <div class="stat-grid">
+          <div class="stat"><div class="label">CONCEPTS</div><div class="value" id="s-nodes">—</div></div>
+          <div class="stat"><div class="label">FRONTIER</div><div class="value" id="s-frontier">—</div></div>
+          <div class="stat"><div class="label">EDGES</div><div class="value" id="s-edges">—</div></div>
+          <div class="stat"><div class="label">QUALITY</div><div class="value" id="s-quality">—</div></div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:16px">
+        <h2>// SKILL NODES (compétences)</h2>
+        <div id="skills"><div class="loading">chargement des synapses...</div></div>
+      </div>
+
+      <div class="panel" style="margin-top:16px">
+        <h2>// TOP ARTICLES</h2>
+        <div class="article-list" id="articles"><div class="loading">scan du wiki...</div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h2>// ACTIVITY FEED</h2>
+        <div class="feed" id="feed"><div class="loading">écoute du flux neuronal...</div></div>
+      </div>
+
+      <div class="panel" style="margin-top:16px">
+        <h2>// SYSTEM LOG</h2>
+        <div id="log" style="font-size:0.75rem;color:var(--dim);max-height:160px;overflow-y:auto">
+          > boot sequence initiated...<br>
+          > linking to GitHub raw data...<br>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    THE FLY AUTONOMOUS AGENT — neural interface v0.4 — data live from github.com/glowku/The-fly
+  </footer>
+
+<script>
+const REPO = "glowku/The-fly";
+const BRANCH = "main";
+const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+
+const MEMES = [
+  "je suis une mouche intelligente mdr",
+  "j'ai appris un truc sur les ailes bzzz",
+  "pourquoi j'ai écrit un article sur l'anus wtf",
+  "mon score objectif monte... lentement",
+  "je construis un wiki pendant que tu scrolles",
+  "niveau entomologie : still noob",
+  "prochaine étape : devenir sentient",
+  "bzzz... processing knowledge...",
+  "je préfère les syrphes aux moustiques",
+  "mon cerveau a 6 compétences et des rêves",
+  "si je deviens trop intelligente je m'envole",
+  "article rejecté = skill issue",
+];
+
+function log(msg) {
+  const el = document.getElementById("log");
+  el.innerHTML += `> ${msg}<br>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+async function fetchJSON(path) {
+  const r = await fetch(`${RAW}/${path}?t=${Date.now()}`);
+  if (!r.ok) throw new Error(path + " " + r.status);
+  return r.json();
+}
+
+async function fetchText(path) {
+  const r = await fetch(`${RAW}/${path}?t=${Date.now()}`);
+  if (!r.ok) throw new Error(path + " " + r.status);
+  return r.text();
+}
+
+function renderNeural(skills) {
+  const container = document.getElementById("neural");
+  container.innerHTML = "";
+  const names = Object.keys(skills);
+  const cx = container.clientWidth / 2 || 140;
+  const cy = 90;
+  const radius = 60;
+
+  const center = document.createElement("div");
+  center.className = "node strong";
+  center.style.left = cx + "px";
+  center.style.top = cy + "px";
+  center.title = "FLY CORE";
+  container.appendChild(center);
+
+  names.forEach((name, i) => {
+    const angle = (i / names.length) * Math.PI * 2 - Math.PI / 2;
+    const x = cx + Math.cos(angle) * radius;
+    const y = cy + Math.sin(angle) * radius;
+    const level = skills[name].level || 0;
+
+    const node = document.createElement("div");
+    node.className = "node" + (level < 1 ? " weak" : level > 3 ? " strong" : "");
+    node.style.left = x + "px";
+    node.style.top = y + "px";
+    node.style.width = (10 + level * 1.5) + "px";
+    node.style.height = (10 + level * 1.5) + "px";
+    node.title = `${name}: ${level}`;
+    container.appendChild(node);
+  });
+}
+
+function renderSkills(skills) {
+  const el = document.getElementById("skills");
+  if (!skills || !Object.keys(skills).length) {
+    el.innerHTML = "<div class='loading'>aucune compétence encore</div>";
+    return;
+  }
+  el.innerHTML = Object.entries(skills)
+    .sort((a, b) => b[1].level - a[1].level)
+    .map(([name, info]) => {
+      const pct = Math.min(100, (info.level / 10) * 100);
+      return `
+        <div class="skill">
+          <div class="skill-name">
+            <span>${name}</span>
+            <span>${info.level.toFixed(1)} / 10</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="width:${pct}%"></div>
+          </div>
+        </div>`;
+    }).join("");
+}
+
+function renderArticles(quality) {
+  const el = document.getElementById("articles");
+  const sorted = Object.entries(quality || {})
+    .sort((a, b) => b[1].score - a[1].score)
+    .slice(0, 12);
+
+  if (!sorted.length) {
+    el.innerHTML = "<div class='loading'>wiki vide pour l'instant</div>";
+    return;
+  }
+
+  el.innerHTML = sorted.map(([title, info]) => `
+    <div class="article">
+      <a href="https://github.com/${REPO}/blob/${BRANCH}/wiki/${encodeURIComponent(title)}.md" target="_blank">${title}</a>
+      <span class="score">${info.score.toFixed(1)}</span>
+    </div>
+  `).join("");
+}
+
+function renderFeed(history) {
+  const el = document.getElementById("feed");
+  const items = (history || []).slice(-20).reverse();
+  if (!items.length) {
+    el.innerHTML = "<div class='loading'>pas encore d'activité</div>";
+    return;
+  }
+  el.innerHTML = items.map(h => {
+    const ts = (h.ts || "").slice(11, 19);
+    return `
+      <div class="feed-item">
+        <span class="ts">${ts}</span>
+        <span class="type">${h.type}</span>
+        <span class="title">${h.title || h.skill || ""} ${h.score ? "("+h.score+")" : ""}</span>
+      </div>`;
+  }).join("");
+}
+
+async function loadAll() {
+  document.getElementById("status").textContent = "SYNCING...";
+  log("fetching coverage.json...");
+  try {
+    const [coverage, quality, skillsRaw] = await Promise.all([
+      fetchJSON("state/coverage.json"),
+      fetchJSON("state/quality.json"),
+      fetchJSON("state/skills.json").catch(() => null),
+    ]);
+
+    let history = [];
+    try {
+      const histText = await fetchText("state/history.jsonl");
+      history = histText.trim().split("\n").filter(Boolean).map(l => JSON.parse(l));
+    } catch(e) {}
+
+    const nNodes = Object.keys(coverage.nodes || {}).length;
+    const nEdges = (coverage.edges || []).length;
+    const nFrontier = (coverage.frontier || []).length;
+    const scores = Object.values(quality || {}).map(q => q.score || 0);
+    const avgQ = scores.length ? (scores.reduce((a,b)=>a+b,0) / scores.length) : 0;
+    const obj = Math.min(nNodes / 50, 4) * avgQ;
+
+    document.getElementById("nodes").textContent = nNodes;
+    document.getElementById("obj").textContent = obj.toFixed(2);
+    document.getElementById("avgq").textContent = avgQ.toFixed(1);
+    document.getElementById("s-nodes").textContent = nNodes;
+    document.getElementById("s-frontier").textContent = nFrontier;
+    document.getElementById("s-edges").textContent = nEdges;
+    document.getElementById("s-quality").textContent = avgQ.toFixed(1);
+
+    const skills = skillsRaw || {
+      entomologie: {level: 1},
+      anatomie_insecte: {level: 0.5},
+      vol_et_aerodynamique: {level: 0.3},
+      ecologie: {level: 0.4},
+      evolution: {level: 0.2},
+      comportement: {level: 0.3},
+    };
+
+    renderSkills(skills);
+    renderNeural(skills);
+    renderArticles(quality);
+    renderFeed(history);
+
+    document.getElementById("status").textContent = "ONLINE";
+    document.getElementById("status").classList.remove("blink");
+    log(`sync ok — ${nNodes} nodes, avg quality ${avgQ.toFixed(1)}`);
+  } catch (e) {
+    document.getElementById("status").textContent = "ERROR";
+    log("error: " + e.message);
+    console.error(e);
+  }
+}
+
+setInterval(() => {
+  document.getElementById("meme").textContent =
+    '"' + MEMES[Math.floor(Math.random() * MEMES.length)] + '"';
+}, 4000);
+
+loadAll();
+setInterval(loadAll, 60000);
+</script>
+</body>
+</html>
