@@ -336,6 +336,14 @@
         "https://en.wikipedia.org/wiki/Aggressive_mimicry"
       ],
       "updated_at": "2026-09-16T23:04:28.716689+00:00"
+    },
+    "Bird wing": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:06:05.178345+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bird_wing"
+      ],
+      "updated_at": "2026-09-16T23:06:05.178351+00:00"
     }
   },
   "edges": [
@@ -498,10 +506,17 @@
     {
       "from": "Pollination",
       "to": "Insecticide"
+    },
+    {
+      "from": "Aerodynamics",
+      "to": "Bird wing"
+    },
+    {
+      "from": "Bird wing",
+      "to": "Bat wing development"
     }
   ],
   "frontier": [
-    "Bird wing",
     "Bat wing development",
     "Aileron",
     "Basal (evolution)",

@@ -42,7 +42,7 @@
     "last_reinforced": "2026-09-16T22:56:30.746137+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 1.26,
+    "level": 1.36,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -62,9 +62,10 @@
       "Angular velocity",
       "Alate",
       "Aerodynamic (disambiguation)",
-      "Automotive aerodynamics"
+      "Automotive aerodynamics",
+      "Bird wing"
     ],
-    "last_reinforced": "2026-09-16T22:59:40.449220+00:00"
+    "last_reinforced": "2026-09-16T23:06:05.398932+00:00"
   },
   "ecologie": {
     "level": 1.3,
