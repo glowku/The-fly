@@ -79,11 +79,21 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
 .r-sec h2{display:flex;justify-content:space-between;align-items:center}
 .badge{background:rgba(93,186,74,.15);color:var(--g);padding:1px 6px;border-radius:8px;font-size:10px}
 .run-box{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+/* Tooltip */
+#tip{
+  position:fixed;z-index:40;pointer-events:none;
+  background:rgba(6,10,6,.94);border:1px solid var(--g);
+  padding:8px 11px;border-radius:6px;font-size:11px;line-height:1.45;
+  max-width:260px;opacity:0;transition:opacity .15s;box-shadow:0 4px 18px rgba(0,0,0,.55);
+}
+#tip.show{opacity:1}
+#tip .tt{color:var(--g2);font-weight:500;margin-bottom:3px}
+#tip .tm{color:var(--mute);font-size:10px}
 </style>
 </head>
 <body>
 <canvas id="brain"></canvas>
-
+<div id="tip"></div>
 <div class="top">
   <div class="brand">the-fly · neural graph</div>
   <div class="meta">
@@ -95,7 +105,6 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
     <button type="button" id="btnR">refresh</button>
   </div>
 </div>
-
 <div class="panel left">
   <h2>subject unit</h2>
   <div class="fly-box">
@@ -111,7 +120,6 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
     <div class="bubble" id="bubble">…</div>
   </div>
   <div class="cap" id="cap">waiting for learning…</div>
-
   <h2>metrics</h2>
   <div class="stat-row">
     <div class="stat"><div class="k">wiki md</div><div class="v" id="m1">0</div></div>
@@ -119,19 +127,21 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
     <div class="stat"><div class="k">edges</div><div class="v" id="m3">0</div></div>
     <div class="stat"><div class="k">quality</div><div class="v" id="m4">0</div></div>
   </div>
-
   <h2>skills · filter</h2>
   <div id="skills"><div class="empty">—</div></div>
-
   <div class="run-box">
     <h2>launch</h2>
     <button class="run" id="btnLearn">▶ auto_learn (1 cycle)</button>
     <button class="run" id="btnLoop">▶ auto_loop (15s × 45min)</button>
   </div>
-
-  <p class="hint">Depth = edge length.<br>Click article = open.<br>Buttons open Actions page.</p>
+  <p class="hint">
+    • Survol = info<br>
+    • Clic = ouvrir / filtrer<br>
+    • Drag nœud = déplacer<br>
+    • Double-clic = centrer<br>
+    • Molette = zoom · drag fond = pan
+  </p>
 </div>
-
 <div class="panel right">
   <div class="r-sec">
     <h2>articles <span class="badge" id="badgeA">0</span></h2>
@@ -146,14 +156,12 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
     <div class="feed" id="feed"><div class="empty">—</div></div>
   </div>
 </div>
-
 <div class="tools">
   <button type="button" id="zIn">+</button>
   <button type="button" id="zOut">−</button>
   <button type="button" id="zRst">reset cam</button>
   <button type="button" id="btnCenter">center</button>
 </div>
-
 <div class="bottom">
   <div class="pie-box"><h3>skills wheel</h3><canvas id="pie"></canvas></div>
   <div class="chart-box"><h3>skill levels</h3><canvas id="bars"></canvas></div>
@@ -164,14 +172,12 @@ h2{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute
     <div>filter <b id="sigF">all</b></div>
   </div>
 </div>
-
 <div class="overlay" id="ov">
   <div class="modal">
     <div class="modal-h"><h3 id="mt">—</h3><button type="button" id="btnX">×</button></div>
     <div class="modal-b" id="mb">…</div>
   </div>
 </div>
-
 <script>
 const REPO="glowku/The-fly";
 const BRANCH="main";
@@ -179,7 +185,6 @@ const RAW=`https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
 const API=`https://api.github.com/repos/${REPO}/contents`;
 const ACTIONS_LEARN=`https://github.com/${REPO}/actions/workflows/auto_learn.yml`;
 const ACTIONS_LOOP=`https://github.com/${REPO}/actions/workflows/auto_learn_loop.yml`;
-
 const canvas=document.getElementById("brain");
 const ctx=canvas.getContext("2d");
 const wave=document.getElementById("wave");
@@ -188,14 +193,14 @@ const pie=document.getElementById("pie");
 const wctx=wave.getContext("2d");
 const bctx=bars.getContext("2d");
 const pctx=pie.getContext("2d");
-
+const tip=document.getElementById("tip");
 let W=0,H=0,nodes=[],pulses=[],particles=[],waveBuf=[];
 let hover=null,skillsData={},articles=[],frontier=[],coverage={nodes:{},edges:[]};
 let cam={x:0,y:0,s:1},dragging=false,lx=0,ly=0;
+let dragNode=null; // nœud en cours de drag
 let filterSkill=null,search="";
 let lastArticleCount=0, learnEvents=[];
 const known=new Set();
-
 const FUNNY = [
   "buzz… new knowledge!",
   "wings go brrr",
@@ -210,7 +215,6 @@ const FUNNY = [
   "evolution says yes",
   "swarm is pleased"
 ];
-
 const SKILL_COLORS={
   entomologie:"#5dba4a",
   anatomie_insecte:"#4ac9ba",
@@ -219,7 +223,6 @@ const SKILL_COLORS={
   evolution:"#ba4ac9",
   comportement:"#ff9d7a"
 };
-
 const SK={
   anatomie_insecte:["wing","aile","halter","haltere","thorax","antenne","antenna","compound eye","exoskeleton","morphology","insect morphology"],
   vol_et_aerodynamique:["flight","vol","aero","hover","wingbeat","aerodynamic","artificial fly"],
@@ -229,7 +232,6 @@ const SK={
   entomologie:["insect","insecte","diptera","entomolog","species of insect"],
   _noise:["computer security","cyber","security","software","network","encryption","password"]
 };
-
 function resize(){
   W=canvas.width=innerWidth;H=canvas.height=innerHeight;
   document.querySelectorAll(".chart-box,.pie-box").forEach(el=>{
@@ -239,10 +241,8 @@ function resize(){
   buildGraph();
 }
 addEventListener("resize",resize);
-
 function rnd(a,b){return a+Math.random()*(b-a)}
 function world(mx,my){return{x:(mx-W/2)/cam.s-cam.x,y:(my-H/2)/cam.s-cam.y}}
-
 function assignSkill(title){
   const t=(title||"").toLowerCase();
   if(SK._noise&&SK._noise.some(w=>t.includes(w)))return"comportement";
@@ -255,81 +255,71 @@ function assignSkill(title){
   }
   return best;
 }
-
 function relevance(title){
   const sk=assignSkill(title);
   const base=skillsData[sk]?Math.min(9,(skillsData[sk].level||0)+3):4;
   return Math.min(9.5, base + (title.length>12?0.5:0));
 }
 
-/* ========== LAYOUT : depth → longer edge ========== */
+/* ========== LAYOUT : profondeur + crowding + répulsion ========== */
 function buildGraph(){
   nodes=[];const map={};
   const core={id:"core",x:0,y:0,r:14,kind:"core",label:"CORE",level:10,phase:0};
   nodes.push(core);map.core=core;
-
   const skillNames=Object.keys(skillsData);
   const nS=Math.max(skillNames.length,1);
   skillNames.forEach((name,i)=>{
     const ang=(i/nS)*Math.PI*2-Math.PI/2;
-    const dist=120; // fixed skill ring
+    const dist=145; // anneau skills un peu plus large
     const lv=skillsData[name].level||0;
-    const n={id:"sk:"+name,x:Math.cos(ang)*dist,y:Math.sin(ang)*dist,r:7.5+Math.min(6,lv*.5),
+    const n={id:"sk:"+name,x:Math.cos(ang)*dist,y:Math.sin(ang)*dist,r:8+Math.min(7,lv*.55),
       kind:"skill",label:name,level:lv,phase:rnd(0,6),ang,skill:name};
     nodes.push(n);map[n.id]=n;
   });
-
   const parentOf={};
   (coverage.edges||[]).forEach(e=>{if(e.from&&e.to)parentOf[e.to]=e.from});
-
   const bySk={};
   articles.forEach(a=>{
     const sk=assignSkill(a.title);
     if(!bySk[sk])bySk[sk]=[];
     bySk[sk].push(a);
   });
-
   const placed=new Set();
-function placeArt(a, parent, depth, index, total){
-  if(placed.has(a.title)) return;
-  placed.add(a.title);
 
-  // ★ plus il y a d’enfants accrochés → edge plus long + éventail plus large
-  const crowded = Math.max(0, total - 4);                 // à partir de 5 enfants
-  const baseDist = 52 + depth * 42 + crowded * 14;        // s’allonge avec la foule
-  const fan = Math.min(3.1, 0.55 + total * 0.32);         // éventail plus ouvert
+  function placeArt(a, parent, depth, index, total){
+    if(placed.has(a.title)) return;
+    placed.add(a.title);
 
-  const baseAng = parent.ang != null ? parent.ang : Math.atan2(parent.y, parent.x);
-  const ang = baseAng + (index - (total - 1) / 2) * (fan / Math.max(total, 1));
-
-  const x = parent.x + Math.cos(ang) * baseDist;
-  const y = parent.y + Math.sin(ang) * baseDist;
-
-  const id = "art:" + a.title;
-  const isNew = !known.has(id);
-  if (isNew) known.add(id);
-
-  const n = {
-    id,
-    x: isNew ? parent.x : x,
-    y: isNew ? parent.y : y,
-    tx: x, ty: y,
-    r: 3.6 + (a.score || 5) * 0.26,
-    kind: "article",
-    label: a.title,
-    level: a.score || 5,
-    phase: rnd(0, 6),
-    title: a.title,
-    file: a.file || (a.title + ".md"),
-    parent: parent.id,
-    depth,
-    ang,
-    skill: parent.skill || assignSkill(a.title),
-    appear: isNew ? 0 : 1
-  };
-  nodes.push(n);
-  map[id] = n;
-}
+    // ★ Espacement agressif quand il y a beaucoup d’enfants
+    const crowded = Math.max(0, total - 3);
+    const baseDist = 78 + depth * 58 + crowded * 22;   // beaucoup plus long
+    const fan = Math.min(3.6, 0.65 + total * 0.38);     // éventail très ouvert
+    const baseAng = parent.ang != null ? parent.ang : Math.atan2(parent.y, parent.x);
+    const ang = baseAng + (index - (total - 1) / 2) * (fan / Math.max(total, 1));
+    const x = parent.x + Math.cos(ang) * baseDist;
+    const y = parent.y + Math.sin(ang) * baseDist;
+    const id = "art:" + a.title;
+    const isNew = !known.has(id);
+    if (isNew) known.add(id);
+    const n = {
+      id, x: isNew ? parent.x : x, y: isNew ? parent.y : y,
+      tx: x, ty: y,
+      r: 3.8 + (a.score || 5) * 0.28,
+      kind: "article",
+      label: a.title,
+      level: a.score || 5,
+      phase: rnd(0, 6),
+      title: a.title,
+      file: a.file || (a.title + ".md"),
+      parent: parent.id,
+      depth,
+      ang,
+      skill: parent.skill || assignSkill(a.title),
+      appear: isNew ? 0 : 1
+    };
+    nodes.push(n);
+    map[id] = n;
+  }
 
   skillNames.forEach(sk=>{
     const parent=map["sk:"+sk];if(!parent)return;
@@ -342,46 +332,74 @@ function placeArt(a, parent, depth, index, total){
     });
   });
 
-  // frontier ghosts – also respect depth rule (depth=1 from skill)
+  // frontier
   const frBySk={};
-  frontier.slice(0,22).forEach(title=>{
+  frontier.slice(0,28).forEach(title=>{
     if(placed.has(title))return;
     const sk=assignSkill(title);
     if(!frBySk[sk])frBySk[sk]=[];
     frBySk[sk].push(title);
   });
-Object.entries(frBySk).forEach(([sk, list]) => {
-  const parent = map["sk:" + sk] || core;
-  list.forEach((title, i) => {
-    const crowded = Math.max(0, list.length - 5);
-    const fan = Math.min(2.6, 0.5 + list.length * 0.28);
-    const ang = (parent.ang || 0) + (i - (list.length - 1) / 2) * (fan / Math.max(list.length, 1));
-    const dist = 65 + crowded * 12;   // s’allonge si beaucoup de frontier
-
-    nodes.push({
-      id: "fr:" + title,
-      x: parent.x + Math.cos(ang) * dist,
-      y: parent.y + Math.sin(ang) * dist,
-      r: 3.2,
-      kind: "frontier",
-      label: title,
-      level: 0,
-      phase: rnd(0, 6),
-      parent: parent.id,
-      ghost: true,
-      title,
-      skill: sk,
-      ang,
-      depth: 1
+  Object.entries(frBySk).forEach(([sk, list]) => {
+    const parent = map["sk:" + sk] || core;
+    list.forEach((title, i) => {
+      const crowded = Math.max(0, list.length - 4);
+      const fan = Math.min(3.0, 0.55 + list.length * 0.32);
+      const ang = (parent.ang || 0) + (i - (list.length - 1) / 2) * (fan / Math.max(list.length, 1));
+      const dist = 88 + crowded * 18;
+      nodes.push({
+        id: "fr:" + title,
+        x: parent.x + Math.cos(ang) * dist,
+        y: parent.y + Math.sin(ang) * dist,
+        r: 3.3,
+        kind: "frontier",
+        label: title,
+        level: 0,
+        phase: rnd(0, 6),
+        parent: parent.id,
+        ghost: true,
+        title,
+        skill: sk,
+        ang,
+        depth: 1
+      });
     });
   });
-});
 
+  // particules
   if(particles.length<35)
     for(let i=particles.length;i<45;i++)
-      particles.push({x:rnd(-380,380),y:rnd(-280,280),vx:rnd(-.1,.1),vy:rnd(-.1,.1),r:rnd(.25,1),a:rnd(.04,.14)});
+      particles.push({x:rnd(-420,420),y:rnd(-320,320),vx:rnd(-.1,.1),vy:rnd(-.1,.1),r:rnd(.25,1),a:rnd(.04,.14)});
+
+  // ★ Répulsion post-placement pour éviter les chevauchements
+  spaceOutNodes(22);
 
   applyFilter();
+}
+
+function spaceOutNodes(iters){
+  const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier");
+  const minDist = 28; // distance minimale souhaitée
+  for(let it=0; it<iters; it++){
+    for(let i=0; i<movable.length; i++){
+      for(let j=i+1; j<movable.length; j++){
+        const a = movable[i], b = movable[j];
+        const dx = b.x - a.x, dy = b.y - a.y;
+        const d = Math.hypot(dx, dy) || 0.01;
+        if(d < minDist){
+          const force = (minDist - d) * 0.42;
+          const nx = dx / d, ny = dy / d;
+          a.x -= nx * force * 0.5;
+          a.y -= ny * force * 0.5;
+          b.x += nx * force * 0.5;
+          b.y += ny * force * 0.5;
+          // synchroniser les cibles si présentes
+          if(a.tx != null){ a.tx = a.x; a.ty = a.y; }
+          if(b.tx != null){ b.tx = b.x; b.ty = b.y; }
+        }
+      }
+    }
+  }
 }
 
 function applyFilter(){
@@ -419,12 +437,24 @@ function triggerLearn(title){
   if(learnEvents.length>40)learnEvents.shift();
 }
 
+function showTip(n, mx, my){
+  if(!n || n.kind==="core"){ tip.classList.remove("show"); return; }
+  let html = `<div class="tt">${n.label}</div>`;
+  html += `<div class="tm">${n.kind}`;
+  if(n.skill) html += ` · ${n.skill}`;
+  if(n.level != null && n.kind !== "frontier") html += ` · score ${n.level.toFixed?.(1) ?? n.level}`;
+  if(n.depth != null) html += ` · depth ${n.depth}`;
+  html += `</div>`;
+  tip.innerHTML = html;
+  tip.style.left = (mx + 14) + "px";
+  tip.style.top  = (my + 14) + "px";
+  tip.classList.add("show");
+}
+
 function draw(){
   const t=performance.now()*0.001;
-
   ctx.fillStyle="rgba(4,6,4,0.28)";
   ctx.fillRect(0,0,W,H);
-
   ctx.save();
   ctx.translate(W/2,H/2);
   ctx.scale(cam.s,cam.s);
@@ -433,26 +463,26 @@ function draw(){
   // soft grid
   ctx.strokeStyle="rgba(93,186,74,0.022)";
   ctx.lineWidth=1/cam.s;
-  for(let x=-900;x<=900;x+=50){ctx.beginPath();ctx.moveTo(x,-700);ctx.lineTo(x,700);ctx.stroke()}
-  for(let y=-700;y<=700;y+=50){ctx.beginPath();ctx.moveTo(-900,y);ctx.lineTo(900,y);ctx.stroke()}
-  const rg=ctx.createRadialGradient(0,0,30,0,0,400);
+  for(let x=-1000;x<=1000;x+=55){ctx.beginPath();ctx.moveTo(x,-800);ctx.lineTo(x,800);ctx.stroke()}
+  for(let y=-800;y<=800;y+=55){ctx.beginPath();ctx.moveTo(-1000,y);ctx.lineTo(1000,y);ctx.stroke()}
+  const rg=ctx.createRadialGradient(0,0,30,0,0,460);
   rg.addColorStop(0,"rgba(93,186,74,0.028)");
   rg.addColorStop(1,"transparent");
   ctx.fillStyle=rg;
-  ctx.beginPath();ctx.arc(0,0,400,0,Math.PI*2);ctx.fill();
+  ctx.beginPath();ctx.arc(0,0,460,0,Math.PI*2);ctx.fill();
 
   particles.forEach(p=>{
     p.x+=p.vx;p.y+=p.vy;
-    if(Math.abs(p.x)>460)p.vx*=-1;
-    if(Math.abs(p.y)>360)p.vy*=-1;
+    if(Math.abs(p.x)>500)p.vx*=-1;
+    if(Math.abs(p.y)>400)p.vy*=-1;
     ctx.beginPath();
     ctx.fillStyle=`rgba(93,186,74,${p.a})`;
     ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
   });
 
-  // smooth lerp toward target positions
+  // lerp
   nodes.forEach(n=>{
-    if(n.tx!=null){
+    if(n.tx!=null && !dragNode){
       n.x += (n.tx - n.x) * 0.09;
       n.y += (n.ty - n.y) * 0.09;
     }
@@ -461,15 +491,17 @@ function draw(){
 
   const byId={};nodes.forEach(n=>byId[n.id]=n);
 
-  // edges
+  // edges (avec highlight si hover)
   nodes.forEach(n=>{
     if(!n.parent||!byId[n.parent])return;
     const p=byId[n.parent];
     if(p.hidden||n.hidden)return;
-    const alpha=n.ghost?0.09:0.28+0.05*Math.sin(t*1.6+(n.phase||0));
+    const isHot = hover && (hover.id===n.id || hover.id===p.id ||
+      (hover.parent===n.id) || (n.parent===hover.id));
+    const alpha = n.ghost ? 0.09 : (isHot ? 0.75 : 0.28 + 0.05*Math.sin(t*1.6+(n.phase||0)));
     ctx.beginPath();
     ctx.strokeStyle=`rgba(93,186,74,${alpha})`;
-    ctx.lineWidth=n.kind==="skill"?1.5:0.95;
+    ctx.lineWidth = isHot ? 2.2 : (n.kind==="skill"?1.5:0.95);
     ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke();
     if(!n.ghost&&Math.random()<0.008)pulses.push({a:p,b:n,t:0,sp:rnd(0.012,0.02)});
   });
@@ -506,36 +538,37 @@ function draw(){
     const glow=n.r+(n.kind==="core"?18:n.kind==="skill"?11:6);
     const pulse=1+0.045*Math.sin(t*2+(n.phase||0));
     const col=SKILL_COLORS[n.skill]||"#5dba4a";
+    const isHot = hover && hover.id === n.id;
 
     if(n.ghost){
       ctx.beginPath();
-      ctx.strokeStyle=`rgba(93,186,74,${0.18*ap})`;
-      ctx.lineWidth=1;ctx.setLineDash([3,3]);
+      ctx.strokeStyle=`rgba(93,186,74,${(isHot?0.45:0.18)*ap})`;
+      ctx.lineWidth=isHot?1.8:1;ctx.setLineDash([3,3]);
       ctx.arc(n.x,n.y,n.r+2,0,Math.PI*2);ctx.stroke();ctx.setLineDash([]);
-      ctx.fillStyle=`rgba(93,186,74,${0.09*ap})`;
+      ctx.fillStyle=`rgba(93,186,74,${(isHot?0.22:0.09)*ap})`;
       ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);ctx.fill();
     }else{
-      const grd=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,glow*pulse);
+      const grd=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,glow*pulse*(isHot?1.25:1));
       if(n.kind==="core"){
         grd.addColorStop(0,"rgba(240,255,230,0.9)");
         grd.addColorStop(0.3,"rgba(93,186,74,0.35)");
         grd.addColorStop(1,"transparent");
       }else if(n.kind==="skill"){
-        grd.addColorStop(0,col+"77");
+        grd.addColorStop(0,col+"99");
         grd.addColorStop(1,"transparent");
       }else{
-        grd.addColorStop(0,`rgba(93,186,74,${0.18+heat*0.25})`);
+        grd.addColorStop(0,`rgba(93,186,74,${0.18+heat*0.25+(isHot?0.25:0)})`);
         grd.addColorStop(1,"transparent");
       }
       ctx.globalAlpha=ap;
-      ctx.beginPath();ctx.fillStyle=grd;ctx.arc(n.x,n.y,glow*pulse,0,Math.PI*2);ctx.fill();
+      ctx.beginPath();ctx.fillStyle=grd;ctx.arc(n.x,n.y,glow*pulse*(isHot?1.2:1),0,Math.PI*2);ctx.fill();
       ctx.beginPath();
       ctx.fillStyle=n.kind==="core"?"#f0fff0":n.kind==="skill"?col:`rgb(${48+heat*38},${95+heat*55},${42})`;
-      ctx.arc(n.x,n.y,n.r*(n.kind==="core"?pulse:1),0,Math.PI*2);ctx.fill();
+      ctx.arc(n.x,n.y,n.r*(n.kind==="core"?pulse:1)*(isHot?1.15:1),0,Math.PI*2);ctx.fill();
       ctx.globalAlpha=1;
     }
 
-    const show=n.kind!=="article"||(hover&&hover.id===n.id)||cam.s>0.85||search||n.ghost;
+    const show=n.kind!=="article"||(hover&&hover.id===n.id)||cam.s>0.85||search||n.ghost||isHot;
     if(show&&ap>0.5){
       ctx.font=(n.kind==="core"?12:n.ghost?9:10)+"px monospace";
       ctx.textAlign="center";
@@ -552,12 +585,11 @@ function draw(){
 
   if(hover&&!hover.hidden){
     ctx.beginPath();
-    ctx.strokeStyle="rgba(157,255,122,0.8)";
-    ctx.lineWidth=1.5;
-    ctx.arc(hover.x,hover.y,hover.r+8+Math.sin(t*4),0,Math.PI*2);ctx.stroke();
+    ctx.strokeStyle="rgba(157,255,122,0.9)";
+    ctx.lineWidth=2;
+    ctx.arc(hover.x,hover.y,hover.r+10+Math.sin(t*5)*2,0,Math.PI*2);ctx.stroke();
   }
   ctx.restore();
-
   drawWave();drawBars();drawPie();
   requestAnimationFrame(draw);
 }
@@ -588,7 +620,6 @@ function drawWave(){
   wctx.font="8px monospace";
   wctx.fillText("articles / 2 min",6,12);
 }
-
 function drawBars(){
   const w=bars.width,h=bars.height;
   bctx.fillStyle="rgba(4,6,4,0.45)";bctx.fillRect(0,0,w,h);
@@ -608,7 +639,6 @@ function drawBars(){
     bctx.fillText(name.slice(0,6),x+bw/2,h-2);
   });
 }
-
 function drawPie(){
   const w=pie.width,h=pie.height;
   pctx.clearRect(0,0,w,h);
@@ -636,24 +666,65 @@ function hitTest(mx,my){
   const w=world(mx,my);
   for(let i=nodes.length-1;i>=0;i--){
     const n=nodes[i];if(n.hidden)continue;
-    if(Math.hypot(n.x-w.x,n.y-w.y)<(n.r+11)/Math.max(cam.s,0.45))return n;
+    if(Math.hypot(n.x-w.x,n.y-w.y)<(n.r+12)/Math.max(cam.s,0.4))return n;
   }
   return null;
 }
 
+// ========== INTERACTIONS SOURIS ==========
 canvas.addEventListener("mousemove",e=>{
-  if(dragging){cam.x+=(e.clientX-lx)/cam.s;cam.y+=(e.clientY-ly)/cam.s;lx=e.clientX;ly=e.clientY;return}
+  if(dragNode){
+    const w = world(e.clientX, e.clientY);
+    dragNode.x = w.x;
+    dragNode.y = w.y;
+    if(dragNode.tx != null){ dragNode.tx = w.x; dragNode.ty = w.y; }
+    showTip(dragNode, e.clientX, e.clientY);
+    return;
+  }
+  if(dragging){
+    cam.x+=(e.clientX-lx)/cam.s;
+    cam.y+=(e.clientY-ly)/cam.s;
+    lx=e.clientX; ly=e.clientY;
+    return;
+  }
   hover=hitTest(e.clientX,e.clientY);
-  canvas.style.cursor=hover?(hover.kind==="article"||hover.kind==="skill"?"pointer":"grab"):"grab";
-});
-canvas.addEventListener("mousedown",e=>{
-  if(e.button===0&&!hitTest(e.clientX,e.clientY)){
-    dragging=true;lx=e.clientX;ly=e.clientY;canvas.classList.add("drag");
+  if(hover){
+    canvas.style.cursor = (hover.kind==="article"||hover.kind==="skill") ? "pointer" : "grab";
+    showTip(hover, e.clientX, e.clientY);
+  } else {
+    canvas.style.cursor = "grab";
+    tip.classList.remove("show");
   }
 });
-addEventListener("mouseup",()=>{dragging=false;canvas.classList.remove("drag")});
-canvas.addEventListener("wheel",e=>{e.preventDefault();cam.s=Math.min(3,Math.max(0.3,cam.s*(e.deltaY>0?0.9:1.11)))},{passive:false});
+
+canvas.addEventListener("mousedown",e=>{
+  if(e.button !== 0) return;
+  const n = hitTest(e.clientX, e.clientY);
+  if(n && n.kind !== "core"){
+    dragNode = n;
+    canvas.classList.add("drag");
+    canvas.style.cursor = "grabbing";
+  } else {
+    dragging = true;
+    lx = e.clientX; ly = e.clientY;
+    canvas.classList.add("drag");
+  }
+});
+
+addEventListener("mouseup",()=>{
+  dragging=false;
+  dragNode=null;
+  canvas.classList.remove("drag");
+});
+
+canvas.addEventListener("wheel",e=>{
+  e.preventDefault();
+  cam.s=Math.min(3.2,Math.max(0.25,cam.s*(e.deltaY>0?0.88:1.13)));
+},{passive:false});
+
 canvas.addEventListener("click",e=>{
+  // ignore si on vient de draguer un nœud
+  if(dragNode) return;
   const n=hitTest(e.clientX,e.clientY);if(!n)return;
   if(n.kind==="article"&&n.title)openArt(n.title,n.file);
   if(n.kind==="skill"){
@@ -663,13 +734,20 @@ canvas.addEventListener("click",e=>{
   }
 });
 
-document.getElementById("zIn").onclick=()=>{cam.s=Math.min(3,cam.s*1.2)};
-document.getElementById("zOut").onclick=()=>{cam.s=Math.max(0.3,cam.s/1.2)};
+canvas.addEventListener("dblclick",e=>{
+  const n = hitTest(e.clientX, e.clientY);
+  if(!n) return;
+  // centre la caméra sur le nœud + léger zoom
+  cam.x = -n.x;
+  cam.y = -n.y;
+  cam.s = Math.min(2.4, Math.max(1.1, cam.s * 1.35));
+});
+
+document.getElementById("zIn").onclick=()=>{cam.s=Math.min(3.2,cam.s*1.22)};
+document.getElementById("zOut").onclick=()=>{cam.s=Math.max(0.25,cam.s/1.22)};
 document.getElementById("zRst").onclick=()=>{cam={x:0,y:0,s:1}};
 document.getElementById("btnCenter").onclick=()=>{cam.x=0;cam.y=0};
 document.getElementById("q").addEventListener("input",e=>{search=e.target.value||"";applyFilter()});
-
-// Launch buttons → open Actions page
 document.getElementById("btnLearn").onclick=()=>window.open(ACTIONS_LEARN,"_blank");
 document.getElementById("btnLoop").onclick=()=>window.open(ACTIONS_LOOP,"_blank");
 
@@ -682,7 +760,6 @@ async function listWiki(){
   if(!Array.isArray(data))return[];
   return data.filter(f=>f.name&&f.name.endsWith(".md")).map(f=>({title:f.name.replace(/\.md$/,""),file:f.name,size:f.size||0}));
 }
-
 function renderSkills(sk){
   const el=document.getElementById("skills");
   if(!sk||!Object.keys(sk).length){el.innerHTML='<div class="empty">—</div>';return}
@@ -703,7 +780,6 @@ function renderSkills(sk){
     };
   });
 }
-
 function renderArts(){
   const el=document.getElementById("arts");
   let list=articles.slice();
@@ -717,7 +793,6 @@ function renderArts(){
   ).join("");
   el.querySelectorAll(".item").forEach(n=>n.addEventListener("click",()=>openArt(n.getAttribute("data-t"),n.getAttribute("data-f"))));
 }
-
 function renderFront(fr){
   const el=document.getElementById("front");
   frontier=(fr||[]).slice(0,16);
@@ -732,7 +807,6 @@ function renderFront(fr){
     </div>`;
   }).join("");
 }
-
 function renderFeed(hist){
   const el=document.getElementById("feed");
   const items=(hist||[]).slice(-12).reverse();
@@ -744,7 +818,6 @@ function renderFeed(hist){
   const last=items.find(h=>h.title);
   document.getElementById("sigL").textContent=last?last.title:"—";
 }
-
 function md(s){
   return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
     .replace(/^# (.+)$/gm,"<h1>$1</h1>").replace(/^## (.+)$/gm,"<h2>$1</h2>")
@@ -752,7 +825,6 @@ function md(s){
     .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
     .replace(/\n\n/g,"</p><p>").replace(/\n/g,"<br>");
 }
-
 async function openArt(title,file){
   document.getElementById("mt").textContent=title;
   document.getElementById("mb").textContent="loading…";
@@ -773,7 +845,6 @@ async function openArt(title,file){
   }
 }
 function closeM(){document.getElementById("ov").classList.remove("open")}
-
 async function loadAll(){
   document.getElementById("st").textContent="sync";
   try{
@@ -785,23 +856,19 @@ async function loadAll(){
     ]);
     let hist=[];
     try{const t=await getText("state/history.jsonl");hist=t.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l))}catch(_){}
-
     coverage=cov||{nodes:{},edges:[],frontier:[]};
     articles=wikiFiles.map(f=>{
       const q=qual[f.title];
       return {title:f.title,file:f.file,score:q?q.score:5.0};
     }).sort((a,b)=>b.score-a.score);
-
     Object.keys(qual||{}).forEach(t=>{
       if(!articles.find(a=>a.title===t))
         articles.push({title:t,file:t+".md",score:qual[t].score||0});
     });
-
     if(articles.length>lastArticleCount && lastArticleCount>0){
       triggerLearn(articles[0].title);
     }
     lastArticleCount=articles.length;
-
     const nWiki=wikiFiles.length;
     const nNodes=Object.keys(coverage.nodes||{}).length||nWiki;
     const nEdges=(coverage.edges||[]).length;
@@ -809,7 +876,6 @@ async function loadAll(){
     const scores=articles.map(a=>a.score);
     const avg=scores.length?scores.reduce((a,b)=>a+b,0)/scores.length:0;
     const obj=Math.min(nNodes/50,4)*avg;
-
     document.getElementById("nw").textContent=nWiki;
     document.getElementById("nn").textContent=nNodes;
     document.getElementById("ob").textContent=obj.toFixed(2);
@@ -818,13 +884,11 @@ async function loadAll(){
     document.getElementById("m3").textContent=nEdges;
     document.getElementById("m4").textContent=avg.toFixed(1);
     document.getElementById("sigW").textContent=nWiki;
-
     skillsData=skills||{entomologie:{level:1},anatomie_insecte:{level:0.5},vol_et_aerodynamique:{level:0.3},ecologie:{level:0.4},evolution:{level:0.2},comportement:{level:0.3}};
     articles.forEach(a=>{
       const sk=assignSkill(a.title);
       if(skillsData[sk])skillsData[sk].level=Math.min(10,(skillsData[sk].level||0)+0.03);
     });
-
     renderSkills(skillsData);
     renderArts();
     renderFront(coverage.frontier);
@@ -836,12 +900,10 @@ async function loadAll(){
     console.error(e);
   }
 }
-
 document.getElementById("btnR").onclick=loadAll;
 document.getElementById("btnX").onclick=closeM;
 document.getElementById("ov").onclick=e=>{if(e.target.id==="ov")closeM()};
 addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
-
 resize();loadAll();setInterval(loadAll,30000);draw();
 </script>
 </body>
