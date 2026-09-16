@@ -72,6 +72,14 @@
         "https://en.wikipedia.org/wiki/Compound_eye"
       ],
       "updated_at": "2026-09-16T20:18:31.297130+00:00"
+    },
+    "Insect ecology": {
+      "depth": 2,
+      "created_at": "2026-09-16T20:43:14.880653+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insect_ecology"
+      ],
+      "updated_at": "2026-09-16T20:43:14.880660+00:00"
     }
   },
   "edges": [
@@ -130,6 +138,22 @@
     {
       "from": "Evolution",
       "to": "Insect mouthparts"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect ecology"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Annual Review of Ecology, Evolution, and Systematics"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Anthecology"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Applied ecology"
     }
   ],
   "frontier": [
@@ -143,7 +167,10 @@
     "Aileron",
     "Basal (evolution)",
     "Caddisfly",
-    "Insect mouthparts"
+    "Insect mouthparts",
+    "Annual Review of Ecology, Evolution, and Systematics",
+    "Anthecology",
+    "Applied ecology"
   ],
   "max_depth": 2
 }

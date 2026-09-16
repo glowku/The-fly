@@ -172,5 +172,28 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:18:31.296687+00:00"
+  },
+  "Insect ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 383,
+      "sections": 3,
+      "links": 9,
+      "link_list": [
+        "Compound eye",
+        "Fly",
+        "Aerodynamics",
+        "Devonian",
+        "Wing",
+        "Palaeoptera",
+        "Evolution",
+        "Insect flight",
+        "Halteres"
+      ],
+      "diversity": 0.703,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:43:14.880163+00:00"
   }
 }
