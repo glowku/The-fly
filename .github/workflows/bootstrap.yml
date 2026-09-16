@@ -33,23 +33,33 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Set root topic
+        env:
+          ROOT_TOPIC: ${{ github.event.inputs.root_topic }}
         run: |
-          TOPIC="${{ github.event.inputs.root_topic || 'Fly' }}"
+          TOPIC="${ROOT_TOPIC:-Fly}"
           echo "$TOPIC" > ROOT.txt
           echo "Root=$TOPIC"
-          python -c "
-from agent.memory import save_coverage, log_event
-save_coverage({'root': open('ROOT.txt').read().strip(), 'nodes': {}, 'edges': [], 'frontier': [], 'max_depth': 0})
-log_event('reset_root', {'root': open('ROOT.txt').read().strip()})
-print('graph reset for', open('ROOT.txt').read().strip())
-"
+          python << 'PY'
+          from agent.memory import save_coverage, log_event
+          root = open("ROOT.txt").read().strip()
+          save_coverage({
+              "root": root,
+              "nodes": {},
+              "edges": [],
+              "frontier": [],
+              "max_depth": 0,
+          })
+          log_event("reset_root", {"root": root})
+          print("graph reset for", root)
+          PY
+
       - name: First expand
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python run.py || true
+
       - name: Dashboard
         run: python -m agent.evaluate_dashboard || true
-
 
       - name: Commit and push
         run: |
