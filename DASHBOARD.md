@@ -1,36 +1,36 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 09:49:02 UTC
+**Dernière mise à jour** : 2026-09-16 09:53:06 UTC
 
 ## Objectif de l'agent
 
-Construire un **graphe de connaissance vivant** sur le sujet racine **« Fly »**.
+Construire un **graphe de connaissance vivant** sur le sujet racine **« Fly away »**.
 
 Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **0.4** |
-| Concepts traités | 200 | **2** |
-| Qualité moyenne | ≥ 7.5 | **10.0/10** |
+| Score global | maximiser | **0.0** |
+| Concepts traités | 200 | **0** |
+| Qualité moyenne | ≥ 7.5 | **0.0/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **2** |
-| Arêtes du graphe | 44 |
-| Frontière (à explorer) | 42 |
-| Profondeur max | 2 |
-| Score qualité moyen | **10.0/10** |
-| Score objectif (coverage × quality) | **0.4** |
-| Actions dernières 24 h | 11 |
+| Concepts traités (nœuds) | **0** |
+| Arêtes du graphe | 0 |
+| Frontière (à explorer) | 0 |
+| Profondeur max | 0 |
+| Score qualité moyen | **0.0/10** |
+| Score objectif (coverage × quality) | **0.0** |
+| Actions dernières 24 h | 13 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 2 |
+| Excellent (≥ 8) | 0 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -39,8 +39,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
-| [[Fly]] | 10.00 | 274 | 5 |
-| [[Anus]] | 10.00 | 292 | 5 |
 
 ## Derniers événements de l'agent
 
@@ -56,6 +54,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T09:43:00  expand          Fly score=10.0
 2026-09-16T09:49:00  skill_reinforc  
 2026-09-16T09:49:02  expand          Fly score=10.0
+2026-09-16T09:53:04  reset_root      
+2026-09-16T09:53:06  skip            Fly away
 ```
 
 ## Architecture de l'agent
