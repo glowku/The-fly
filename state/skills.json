@@ -78,7 +78,7 @@
     "last_reinforced": "2026-09-16T22:34:47.288366+00:00"
   },
   "evolution": {
-    "level": 0.98,
+    "level": 1.08,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -94,9 +94,10 @@
       "Palaeoptera",
       "Neoptera",
       "Insect flight",
-      "Adaptive radiation"
+      "Adaptive radiation",
+      "Apterygota"
     ],
-    "last_reinforced": "2026-09-16T21:46:17.015914+00:00"
+    "last_reinforced": "2026-09-16T22:40:16.655044+00:00"
   },
   "comportement": {
     "level": 1.0,

@@ -525,5 +525,29 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:38:41.999088+00:00"
+  },
+  "Apterygota": {
+    "score": 10.0,
+    "metrics": {
+      "words": 389,
+      "sections": 4,
+      "links": 10,
+      "link_list": [
+        "Evolution",
+        "Insect ecology",
+        "Insect behaviour",
+        "Wing",
+        "Devonian",
+        "Insect flight",
+        "Compound eye",
+        "Halteres",
+        "Hover",
+        "Palaeoptera"
+      ],
+      "diversity": 0.656,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:40:16.549850+00:00"
   }
 }
