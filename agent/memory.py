@@ -16,22 +16,28 @@ def _now():
     return datetime.now(timezone.utc).isoformat()
 
 
+def _read_root_file():
+    root_file = Path("ROOT.txt")
+    if root_file.exists():
+        return root_file.read_text(encoding="utf-8").strip() or "Fly"
+    return "Fly"
+
+
 def load_coverage():
     if COVERAGE.exists():
         data = json.loads(COVERAGE.read_text(encoding="utf-8"))
-        # Ensure required keys
         data.setdefault("root", "Fly")
         data.setdefault("nodes", {})
         data.setdefault("edges", [])
         data.setdefault("frontier", [])
         data.setdefault("max_depth", 0)
+        # Si ROOT.txt a changé et graphe encore vide → adopter la nouvelle racine
+        file_root = _read_root_file()
+        if not data["nodes"] and file_root and file_root != data.get("root"):
+            data["root"] = file_root
         return data
-    root = "Fly"
-    root_file = Path("ROOT.txt")
-    if root_file.exists():
-        root = root_file.read_text(encoding="utf-8").strip() or "Fly"
     return {
-        "root": root,
+        "root": _read_root_file(),
         "nodes": {},
         "edges": [],
         "frontier": [],
@@ -69,12 +75,7 @@ def save_goal(g):
 
 
 def log_event(event_type, payload):
-    """Append-only log de toutes les actions."""
-    entry = {
-        "ts": _now(),
-        "type": event_type,
-        **payload,
-    }
+    entry = {"ts": _now(), "type": event_type, **payload}
     with HISTORY.open("a", encoding="utf-8") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
@@ -89,11 +90,25 @@ def read_history(limit=None):
 
 
 def compute_objective_score():
-    """Score global = coverage_factor × avg_quality (normalisé)."""
     cov = load_coverage()
     qual = load_quality()
     n_nodes = len(cov.get("nodes", {}))
     avg_q = sum(q.get("score", 0) for q in qual.values()) / max(len(qual), 1)
-    # Coverage factor: log-scale to avoid explosion, target ~200 nodes
-    coverage_factor = min(n_nodes / 50.0, 4.0)  # saturates around 200
+    coverage_factor = min(n_nodes / 50.0, 4.0)
     return round(coverage_factor * avg_q, 3), n_nodes, round(avg_q, 2)
+
+
+def reset_for_new_root(root: str):
+    """Réinitialise le graphe pour un nouveau sujet racine."""
+    cov = {
+        "root": root,
+        "nodes": {},
+        "edges": [],
+        "frontier": [],
+        "max_depth": 0,
+    }
+    save_coverage(cov)
+    save_quality({})
+    Path("ROOT.txt").write_text(root + "\n", encoding="utf-8")
+    log_event("reset_root", {"root": root})
+    return cov
