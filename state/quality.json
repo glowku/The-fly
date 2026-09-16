@@ -690,5 +690,27 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:49:30.377362+00:00"
+  },
+  "Housefly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 318,
+      "sections": 4,
+      "links": 8,
+      "link_list": [
+        "Compound eye",
+        "Aerodynamics",
+        "Insect ecology",
+        "Insect behaviour",
+        "Insect flight",
+        "Evolution",
+        "Fly",
+        "Halteres"
+      ],
+      "diversity": 0.722,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:49:51.388521+00:00"
   }
 }
