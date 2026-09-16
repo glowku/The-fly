@@ -6,6 +6,7 @@ from .memory import STATE_DIR, log_event
 
 SKILLS_FILE = STATE_DIR / "skills.json"
 
+# Compétences de base pour le domaine "Fly" / entomologie
 DEFAULT_SKILLS = {
     "entomologie": {
         "level": 1.0,
@@ -57,15 +58,19 @@ def save_skills(skills):
 
 
 def pick_skill_to_develop():
+    """Choisit la compétence la plus faible à renforcer."""
     skills = load_skills()
+    # Priorité aux plus faibles
     sorted_skills = sorted(skills.items(), key=lambda kv: kv[1]["level"])
     return sorted_skills[0][0] if sorted_skills else "entomologie"
 
 
 def reinforce_skill(skill_name: str, article_title: str, score: float):
+    """Renforce une compétence après un article réussi."""
     skills = load_skills()
     if skill_name not in skills:
         return
+    # Gain proportionnel au score de l'article
     gain = min(0.15, score / 100.0)
     skills[skill_name]["level"] = round(min(10.0, skills[skill_name]["level"] + gain), 2)
     if article_title not in skills[skill_name]["articles"]:
@@ -82,13 +87,16 @@ def reinforce_skill(skill_name: str, article_title: str, score: float):
 def score_relevance(title: str, extract: str = "") -> float:
     skills = load_skills()
     text = (title + " " + extract).lower()
+    noise = ["computer security", "cybersecurity", "encryption", "password", "malware", "firewall"]
+    if any(n in text for n in noise) and not any(x in text for x in ("insect", "fly", "diptera")):
+        return 0.0
     best = 0.0
     for skill in skills.values():
         hits = sum(1 for kw in skill["keywords"] if kw.lower() in text)
         if hits:
             rel = min(1.0, hits / 3.0) * (0.5 + skill["level"] / 20)
             best = max(best, rel)
-    strong = ["fly", "mouche", "diptera", "insect", "insecte", "wing", "aile", "larva", "maggot"]
+    strong = ["fly", "mouche", "diptera", "insect", "insecte", "wing", "aile", "larva", "maggot", "ecology", "evolution"]
     if any(s in title.lower() for s in strong):
         best = max(best, 0.7)
     return round(best, 3)
