@@ -256,5 +256,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:15:02.463537+00:00"
+  },
+  "Exoskeleton": {
+    "score": 10.0,
+    "metrics": {
+      "words": 360,
+      "sections": 3,
+      "links": 12,
+      "link_list": [
+        "Insect flight",
+        "Hover",
+        "Aerodynamics",
+        "Insect behaviour",
+        "Devonian",
+        "Halteres",
+        "Fly",
+        "Evolution",
+        "Palaeoptera",
+        "Wing",
+        "Compound eye",
+        "Insect ecology"
+      ],
+      "diversity": 0.813,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:18:17.345465+00:00"
   }
 }

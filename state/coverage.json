@@ -104,6 +104,14 @@
         "https://en.wikipedia.org/wiki/Neoptera"
       ],
       "updated_at": "2026-09-16T21:15:02.463896+00:00"
+    },
+    "Exoskeleton": {
+      "depth": 2,
+      "created_at": "2026-09-16T21:18:17.345992+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Exoskeleton"
+      ],
+      "updated_at": "2026-09-16T21:18:17.346000+00:00"
     }
   },
   "edges": [
