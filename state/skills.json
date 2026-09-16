@@ -27,7 +27,7 @@
     "articles": []
   },
   "vol_et_aerodynamique": {
-    "level": 0.4,
+    "level": 0.5,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -38,9 +38,10 @@
       "maneuver"
     ],
     "articles": [
-      "Fly"
+      "Fly",
+      "Artificial fly"
     ],
-    "last_reinforced": "2026-09-16T09:40:57.279628+00:00"
+    "last_reinforced": "2026-09-16T09:54:02.322960+00:00"
   },
   "ecologie": {
     "level": 0.4,
