@@ -47,7 +47,9 @@ def load_coverage():
 
 
 def save_coverage(cov):
-    COVERAGE.write_text(json.dumps(cov, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp = COVERAGE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cov, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(COVERAGE)
 
 
 def load_quality():
