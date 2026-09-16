@@ -21,10 +21,29 @@ def _run(cmd, check=False):
     return r
 
 
+def _clean_git_state():
+    """Nettoie tout état conflictuel avant de tenter un pull/rebase."""
+    # Abort rebase / merge en cours
+    _run(["git", "rebase", "--abort"])
+    _run(["git", "merge", "--abort"])
+    # Reset des index unmerged
+    _run(["git", "reset", "--merge"])
+    # Si encore des fichiers unmerged → on les force en "ours"
+    status = _run(["git", "status", "--porcelain"])
+    if status.stdout and ("UU" in status.stdout or "AA" in status.stdout or "DD" in status.stdout):
+        print("[git] unmerged files detected → force resolve with ours", flush=True)
+        _run(["git", "checkout", "--ours", "."])
+        _run(["git", "add", "-A"])
+
+
 def git_commit_push(files: list[str] | None, message: str) -> bool:
-    """Add + commit + rebase propre + push. True si push OK."""
+    """
+    Add + commit + rebase/merge propre + push.
+    Gère les conflits unmerged et les non-fast-forward.
+    Retourne True si le push a réussi.
+    """
     try:
-        # Toujours tout prendre (évite unstaged qui bloque rebase)
+        # 1. Toujours tout prendre
         _run(["git", "add", "-A"])
 
         st = _run(["git", "status", "--porcelain"])
@@ -32,37 +51,66 @@ def git_commit_push(files: list[str] | None, message: str) -> bool:
             print("[git] nothing to commit", flush=True)
             return False
 
+        # 2. Commit
         r = _run(["git", "commit", "-m", message])
         if r.returncode != 0:
+            print("[git] commit failed", flush=True)
             return False
 
+        # 3. Fetch
         _run(["git", "fetch", "origin", "main"])
 
-        # rebase: si unstaged résiduels → stash
+        # 4. Nettoyage préventif
+        _clean_git_state()
+
+        # 5. Stash si dirty résiduel
         dirty = _run(["git", "status", "--porcelain"])
         stashed = False
         if (dirty.stdout or "").strip():
             _run(["git", "stash", "push", "-u", "-m", "fly-agent-temp"])
             stashed = True
 
+        # 6. Tentative rebase
         rb = _run(["git", "pull", "--rebase", "origin", "main"])
         if rb.returncode != 0:
-            print("[git] rebase failed → abort, try merge", flush=True)
+            print("[git] rebase failed → abort + merge", flush=True)
             _run(["git", "rebase", "--abort"])
-            _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
+            _clean_git_state()
+            # Merge à la place
+            merge = _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
+            if merge.returncode != 0:
+                print("[git] merge also failed → force resolve", flush=True)
+                _clean_git_state()
+                _run(["git", "add", "-A"])
+                _run(["git", "commit", "-m", "resolve: auto after conflict"])
 
         if stashed:
-            _run(["git", "stash", "pop"])
+            pop = _run(["git", "stash", "pop"])
+            if pop.returncode != 0:
+                print("[git] stash pop conflict → resolve with ours", flush=True)
+                _clean_git_state()
+                _run(["git", "add", "-A"])
 
-        for attempt in range(3):
+        # 7. Push avec retries
+        for attempt in range(4):
             p = _run(["git", "push", "origin", "HEAD:main"])
             if p.returncode == 0:
                 print("[git] push OK", flush=True)
                 return True
-            print(f"[git] push attempt {attempt+1} failed", flush=True)
-            _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
 
+            print(f"[git] push attempt {attempt + 1} failed → pull + retry", flush=True)
+            _clean_git_state()
+            _run(["git", "pull", "origin", "main", "--no-rebase", "--no-edit"])
+            # Si encore unmerged après le pull
+            st2 = _run(["git", "status", "--porcelain"])
+            if st2.stdout and ("UU" in st2.stdout or "AA" in st2.stdout):
+                _run(["git", "checkout", "--ours", "."])
+                _run(["git", "add", "-A"])
+                _run(["git", "commit", "-m", "resolve: unmerged after pull"])
+
+        print("[git] all push attempts failed", flush=True)
         return False
+
     except subprocess.CalledProcessError as e:
         print(f"[git] error: {e}", flush=True)
         return False
