@@ -24,6 +24,14 @@
         "https://en.wikipedia.org/wiki/Insect_flight"
       ],
       "updated_at": "2026-09-16T13:55:50.280215+00:00"
+    },
+    "Fly": {
+      "depth": 2,
+      "created_at": "2026-09-16T14:04:50.391121+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fly"
+      ],
+      "updated_at": "2026-09-16T14:04:50.391129+00:00"
     }
   },
   "edges": [
@@ -66,7 +74,6 @@
     "Insect morphology",
     "Insect wing",
     "Insecticide",
-    "Fly",
     "Wing"
   ],
   "max_depth": 2
