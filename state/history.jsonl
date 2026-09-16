@@ -211,3 +211,5 @@
 {"ts": "2026-09-16T23:30:05.312365+00:00", "type": "auto_learn_expand", "title": "Applied ecology", "skill": "entomologie", "score": 10.0, "objective": 11.316, "parent": "Arthropod leg"}
 {"ts": "2026-09-16T23:30:05.312988+00:00", "type": "auto_learn", "skill": "entomologie", "learned": true, "frontier_added": 0, "fresh": ["Applied ecology"], "parent": "Arthropod leg"}
 {"ts": "2026-09-16T23:39:26.008326+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.6, "article": "Autecology"}
+{"ts": "2026-09-16T23:39:27.997837+00:00", "type": "auto_learn_expand", "title": "Autecology", "skill": "ecologie", "score": 10.0, "objective": 11.516, "parent": "Annual Review of Ecology, Evolution, and Systematics"}
+{"ts": "2026-09-16T23:39:27.998827+00:00", "type": "auto_learn", "skill": "ecologie", "learned": true, "frontier_added": 0, "fresh": ["Autecology"], "parent": "Annual Review of Ecology, Evolution, and Systematics", "recent": ["Applied ecology", "Arthropod exoskeleton", "Windhover", "Anthecology", "Annual Review of Ecology, Evolution, and Systematics", "Insect mouthparts", "Entomology", "Caddisfly"]}
