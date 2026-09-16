@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 08:59:43 UTC
+**Dernière mise à jour** : 2026-09-16 09:25:47 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 2 |
 | Score qualité moyen | **10.0/10** |
 | Score objectif (coverage × quality) | **0.4** |
-| Actions dernières 24 h | 3 |
+| Actions dernières 24 h | 5 |
 
 ## Répartition de la qualité
 
@@ -39,7 +39,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
-| [[Fly]] | 10.00 | 208 | 5 |
+| [[Fly]] | 10.00 | 308 | 6 |
 | [[Anus]] | 10.00 | 292 | 5 |
 
 ## Derniers événements de l'agent
@@ -48,6 +48,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T08:57:00  expand          Fly score=10.0
 2026-09-16T08:59:40  plan            Anus
 2026-09-16T08:59:43  expand          Anus score=10.0
+2026-09-16T09:25:46  skill_reinforc  
+2026-09-16T09:25:47  expand          Fly score=10.0
 ```
 
 ## Architecture de l'agent

@@ -3,3 +3,4 @@
 {"ts": "2026-09-16T08:59:40.554055+00:00", "type": "plan", "title": "Anus", "action": "expand", "priority": 61.4, "reason": "frontier_gap"}
 {"ts": "2026-09-16T08:59:43.857213+00:00", "type": "expand", "title": "Anus", "score": 10.0, "depth": 2, "discovered": 22, "objective": 0.4}
 {"ts": "2026-09-16T09:25:46.232979+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 0.3, "article": "Fly"}
+{"ts": "2026-09-16T09:25:47.392686+00:00", "type": "expand", "title": "Fly", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.4, "skill": "evolution"}
