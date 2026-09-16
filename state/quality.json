@@ -152,5 +152,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:17:46.556031+00:00"
+  },
+  "Compound eye": {
+    "score": 10.0,
+    "metrics": {
+      "words": 394,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Halteres",
+        "Wing",
+        "Fly",
+        "Aerodynamics",
+        "Insect flight",
+        "Evolution"
+      ],
+      "diversity": 0.752,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:18:31.296687+00:00"
   }
 }
