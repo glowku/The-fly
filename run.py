@@ -100,6 +100,30 @@ def run_cycle(dry_run: bool = False):
             parent = cov.get("root")
             depth = 1
 
+    # Si action=branch et article déjà bon → on ramifie seulement (pas de réécriture)
+    quality = load_quality()
+    existing_score = (quality.get(title) or {}).get("score", 0)
+    if action in ("branch", "re-expand") and existing_score >= 7.0 and Path(f"wiki/{title}.md").exists():
+        print(f"[branch] « {title} » déjà solide (score={existing_score}) → découverte d'enfants seulement", flush=True)
+        links = get_links(title, limit=30)
+        related = get_related(title, limit=10)
+        kids = list(set(links + related))[:18]
+        added = 0
+        for child in kids:
+            before = len(load_coverage().get("frontier", []))
+            register_discovered(child, depth + 1, parent=title)
+            after = len(load_coverage().get("frontier", []))
+            if after > before:
+                added += 1
+        skill_name = target.get("skill")
+        if skill_name:
+            reinforce_skill(skill_name, title, existing_score)
+        log_event("branch", {"title": title, "children_discovered": added, "skill": skill_name})
+        print(f"[branch] {added} nouveaux concepts en frontier sous « {title} »", flush=True)
+        if not dry_run:
+            git_commit_push(["state/", "DASHBOARD.md"], f"branch: {title} (+{added} frontier)")
+        return True
+
     content = synthesize_article(
         title=title,
         summary=summary.get("extract") or "",
