@@ -24,7 +24,7 @@ from .tools import write_article, git_commit_push
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 # Modèle stable sur le free tier Groq (gpt-oss-20b peut être instable)
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-20b"
 
 SKILL_SEEDS = {
     "entomologie": [
@@ -57,9 +57,33 @@ SKILL_SEEDS = {
 JUNK_RE = re.compile(
     r"(tv series|album|film|song|band|airline|aircraft|institute|"
     r"wuornos|chun|password|malware|software|episode|novel|game|"
-    r"computer security|cybersecurity)",
+    r"arxiv|academic press|publisher|isbn|doi|journal|"
+    r"computer security|cybersecurity|encryption|"
+    r"angular velocity|angular momentum|"   # physique pure hors contexte insecte
+    r"adrian thomas|zoologist\)?$)",
     re.I,
 )
+
+def _is_insect_relevant(title: str) -> bool:
+    """Refuse tout ce qui n'a rien à voir avec insectes / vol / diptera."""
+    t = (title or "").lower()
+    if _is_junk(title):
+        return False
+    # mots forts
+    strong = (
+        "insect", "fly", "flies", "diptera", "mosquito", "larva", "maggot",
+        "wing", "halter", "flight", "hover", "swarm", "pollinat",
+        "entomolog", "arthropod", "thorax", "antenna", "exoskeleton",
+        "parasitoid", "mimicry", "neoptera", "paleoptera", "devonian",
+        "compound eye", "spiracle", "mouthpart", "blowfly", "hoverfly",
+        "tachinid", "apterygota", "alate", "wingbeat", "aerodynamic",
+    )
+    if any(s in t for s in strong):
+        return True
+    # score skills
+    if score_relevance(title) >= 0.35:
+        return True
+    return False
 
 def _norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
@@ -145,11 +169,12 @@ Example: ["Haltere", "Insect wing", "Compound eye"]"""
         return []
 
 def _candidates_from_parent(parent: str | None) -> list:
-    """Vrais enfants potentiels = liens + related du parent choisi."""
     if not parent:
         return []
-    kids = list(set(get_links(parent, 20) + get_related(parent, 10)))
-    return [t for t in kids if not _is_junk(t)][:12]
+    kids = list(set(get_links(parent, 25) + get_related(parent, 12)))
+    good = [t for t in kids if _is_insect_relevant(t)]
+    print(f"[auto_learn] liens parent « {parent} » → {len(good)} pertinents", flush=True)
+    return good[:12]
 
 def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
     scored = []
