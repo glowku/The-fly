@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.2,
+    "level": 1.1,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -11,10 +11,9 @@
       "entomology"
     ],
     "articles": [
-      "Arthropod leg",
-      "Housefly"
+      "Arthropod leg"
     ],
-    "last_reinforced": "2026-09-16T22:49:51.417093+00:00"
+    "last_reinforced": "2026-09-16T22:43:28.400304+00:00"
   },
   "anatomie_insecte": {
     "level": 1.18,
@@ -40,7 +39,7 @@
     "last_reinforced": "2026-09-16T22:48:30.662748+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 1.19,
+    "level": 1.09,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -58,10 +57,9 @@
       "Hover",
       "Flight",
       "Angular velocity",
-      "Alate",
-      "Automotive aerodynamics"
+      "Alate"
     ],
-    "last_reinforced": "2026-09-16T22:49:30.497182+00:00"
+    "last_reinforced": "2026-09-16T22:41:50.889455+00:00"
   },
   "ecologie": {
     "level": 1.2,
@@ -87,7 +85,7 @@
     "last_reinforced": "2026-09-16T22:50:09.139200+00:00"
   },
   "evolution": {
-    "level": 1.17,
+    "level": 1.18,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -107,7 +105,7 @@
       "Apterygota",
       "Insect"
     ],
-    "last_reinforced": "2026-09-16T22:48:36.624770+00:00"
+    "last_reinforced": "2026-09-16T22:50:06.899392+00:00"
   },
   "comportement": {
     "level": 1.1,
