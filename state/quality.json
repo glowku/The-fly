@@ -920,5 +920,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:09:15.651607+00:00"
+  },
+  "Tachinidae": {
+    "score": 10.0,
+    "metrics": {
+      "words": 377,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Aerodynamics",
+        "Compound eye",
+        "Insect behaviour",
+        "Hover",
+        "Wing",
+        "Exoskeleton",
+        "Pollination",
+        "Swarm behaviour",
+        "Insect ecology",
+        "Flight",
+        "Palaeoptera",
+        "Neoptera"
+      ],
+      "diversity": 0.77,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:10:51.133205+00:00"
   }
 }
