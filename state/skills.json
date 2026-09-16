@@ -1,0 +1,8 @@
+{
+  "entomologie": { "level": 1.0, "description": "Connaissance générale des insectes", "keywords": ["insect", "insecte", "diptera", "fly", "mouche", "entomology"], "articles": [] },
+  "anatomie_insecte": { "level": 0.5, "description": "Morphologie et organes des insectes", "keywords": ["wing", "aile", "halter", "thorax", "antenne", "compound eye", "exoskeleton"], "articles": [] },
+  "vol_et_aerodynamique": { "level": 0.3, "description": "Mécanismes du vol des diptères", "keywords": ["flight", "vol", "aerodynamic", "wingbeat", "hover", "maneuver"], "articles": [] },
+  "ecologie": { "level": 0.4, "description": "Rôle écologique, habitats, interactions", "keywords": ["ecology", "habitat", "pollinat", "predator", "parasite", "larva"], "articles": [] },
+  "evolution": { "level": 0.2, "description": "Histoire évolutive des diptères", "keywords": ["evolution", "fossil", "phylogen", "adaptation", "speciation"], "articles": [] },
+  "comportement": { "level": 0.3, "description": "Comportements", "keywords": ["behavior", "mating", "feeding", "swarm", "courtship"], "articles": [] }
+}
