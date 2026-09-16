@@ -348,5 +348,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:19:26.351071+00:00"
+  },
+  "Antenna (zoology)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 297,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect flight",
+        "Halteres",
+        "Insect behaviour",
+        "Insect ecology",
+        "Evolution",
+        "Compound eye"
+      ],
+      "diversity": 0.717,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:39:44.873484+00:00"
   }
 }

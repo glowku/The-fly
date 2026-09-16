@@ -86,3 +86,4 @@
 {"ts": "2026-09-16T21:33:03.080720+00:00", "type": "plan", "title": "Insect flight", "action": "branch", "priority": 128.0, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-16T21:33:03.603671+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 0.88, "article": "Insect flight"}
 {"ts": "2026-09-16T21:33:03.603721+00:00", "type": "branch", "title": "Insect flight", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-09-16T21:39:45.042863+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 0.9, "article": "Antenna (zoology)"}
