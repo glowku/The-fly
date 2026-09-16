@@ -126,6 +126,10 @@
     {
       "from": "Palaeoptera",
       "to": "Caddisfly"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect mouthparts"
     }
   ],
   "frontier": [
@@ -138,7 +142,8 @@
     "Bat wing development",
     "Aileron",
     "Basal (evolution)",
-    "Caddisfly"
+    "Caddisfly",
+    "Insect mouthparts"
   ],
   "max_depth": 2
 }
