@@ -13,7 +13,7 @@ from agent.memory import (
     log_event,
     compute_objective_score,
 )
-from agent.perception import get_summary, get_links, get_related, resolve_title, search_titles
+from agent.perception import get_summary, get_links, get_related, resolve_title, search_titles, multi_search
 from agent.planning import pick_next_target, register_discovered, register_processed
 from agent.synthesis import synthesize_article
 from agent.evaluation import score_article, is_acceptable, explain_score
@@ -22,21 +22,23 @@ from agent.skills import reinforce_skill, load_skills
 
 
 def _seed_skill_branches(root_title: str):
-    """Sème la frontière avec des concepts par skill pour démarrer les sous-branches."""
+    """Sème la frontière avec des concepts multi-mots par skill."""
     skills = load_skills()
     seeded = 0
     for skill_name, info in skills.items():
         kws = info.get("keywords") or []
-        queries = []
+        queries = [root_title]
         if kws:
             queries.append(f"{root_title} {kws[0]}")
+            if len(kws) > 1:
+                queries.append(f"{kws[0]} {kws[1]}")
             queries.append(kws[0])
-        for q in queries[:2]:
-            hits = search_titles(q, limit=4)
-            for h in hits:
+        for q in queries[:4]:
+            hits = multi_search(q, limit_per=3)
+            for h in hits[:3]:
                 register_discovered(h, depth=2, parent=root_title)
                 seeded += 1
-                if seeded >= 18:
+                if seeded >= 24:
                     return seeded
     return seeded
 
