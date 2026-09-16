@@ -1,10 +1,10 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 11:04:42 UTC
+**Dernière mise à jour** : 2026-09-16 11:06:20 UTC
 
 ## Objectif de l'agent
 
-Construire un **graphe de connaissance vivant** sur le sujet racine **« Cybersecurity AI »**.
+Construire un **graphe de connaissance vivant** sur le sujet racine **« mouche evolution »**.
 
 Formule d'optimisation : `coverage_factor × average_quality`
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **1** |
-| Arêtes du graphe | 0 |
-| Frontière (à explorer) | 0 |
+| Arêtes du graphe | 5 |
+| Frontière (à explorer) | 5 |
 | Profondeur max | 1 |
 | Score qualité moyen | **10.0/10** |
 | Score objectif (coverage × quality) | **0.2** |
-| Actions dernières 24 h | 30 |
+| Actions dernières 24 h | 33 |
 
 ## Répartition de la qualité
 
@@ -39,14 +39,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
-| [[Computer security]] | 10.00 | 257 | 6 |
+| [[Evolution]] | 10.00 | 298 | 6 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T09:54:03  expand          Artificial fly score=10.0
-2026-09-16T10:06:18  reset_root      
-2026-09-16T10:06:19  skip            ecology fly
 2026-09-16T10:34:40  reset_root      
 2026-09-16T10:34:41  skip            Fly intelligence
 2026-09-16T10:35:17  reset_root      
@@ -59,6 +56,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T11:04:33  reset_root      
 2026-09-16T11:04:41  skill_reinforc  
 2026-09-16T11:04:42  expand          Computer security score=10.0
+2026-09-16T11:06:14  reset_root      
+2026-09-16T11:06:18  skill_reinforc  
+2026-09-16T11:06:19  expand          Evolution score=10.0
 ```
 
 ## Architecture de l'agent
