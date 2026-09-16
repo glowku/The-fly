@@ -2,22 +2,22 @@
   "Fly": {
     "score": 10.0,
     "metrics": {
-      "words": 269,
+      "words": 259,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Halteres",
-        "Aile",
         "Anus",
-        "Insecte",
-        "Ordre",
+        "Halteres",
+        "Moustique",
+        "Hoverfly",
+        "Horse-fly",
         "Fly"
       ],
-      "diversity": 0.729,
+      "diversity": 0.762,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-16T09:40:57.154338+00:00"
+    "updated_at": "2026-09-16T09:42:59.511380+00:00"
   },
   "Anus": {
     "score": 10.0,
