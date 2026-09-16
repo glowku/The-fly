@@ -25,16 +25,17 @@ def _read_root_file():
 
 def load_coverage():
     if COVERAGE.exists():
-        data = json.loads(COVERAGE.read_text(encoding="utf-8"))
+        try:
+            data = json.loads(COVERAGE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            print(f"[memory] coverage.json corrompu → backup + reset minimal: {e}", flush=True)
+            COVERAGE.rename(COVERAGE.with_suffix(".json.bak"))
+            data = {"root": _read_root_file(), "nodes": {}, "edges": [], "frontier": [], "max_depth": 0}
         data.setdefault("root", "Fly")
         data.setdefault("nodes", {})
         data.setdefault("edges", [])
         data.setdefault("frontier", [])
         data.setdefault("max_depth", 0)
-        # Si ROOT.txt a changé et graphe encore vide → adopter la nouvelle racine
-        file_root = _read_root_file()
-        if not data["nodes"] and file_root and file_root != data.get("root"):
-            data["root"] = file_root
         return data
     return {
         "root": _read_root_file(),
