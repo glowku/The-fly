@@ -216,6 +216,14 @@
         "https://en.wikipedia.org/wiki/Apterygota"
       ],
       "updated_at": "2026-09-16T22:40:16.550327+00:00"
+    },
+    "Alate": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:41:50.779985+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alate"
+      ],
+      "updated_at": "2026-09-16T22:41:50.779991+00:00"
     }
   },
   "edges": [
@@ -322,6 +330,10 @@
     {
       "from": "Arthropod eye",
       "to": "Aquatic insects"
+    },
+    {
+      "from": "Alate",
+      "to": "Insect"
     }
   ],
   "frontier": [

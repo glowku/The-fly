@@ -549,5 +549,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:40:16.549850+00:00"
+  },
+  "Alate": {
+    "score": 10.0,
+    "metrics": {
+      "words": 386,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect behaviour",
+        "Wing",
+        "Compound eye",
+        "Insect flight",
+        "Halteres",
+        "Aerodynamics"
+      ],
+      "diversity": 0.703,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:41:50.779522+00:00"
   }
 }
