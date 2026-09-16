@@ -17,7 +17,7 @@
     "last_reinforced": "2026-09-16T22:53:20.844955+00:00"
   },
   "anatomie_insecte": {
-    "level": 1.18,
+    "level": 1.28,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -35,9 +35,10 @@
       "Antenna (zoology)",
       "Arthropod",
       "Arthropod eye",
-      "Thorax"
+      "Thorax",
+      "Spiracle"
     ],
-    "last_reinforced": "2026-09-16T22:48:30.662748+00:00"
+    "last_reinforced": "2026-09-16T22:56:30.746137+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 1.19,

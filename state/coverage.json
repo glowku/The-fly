@@ -288,6 +288,14 @@
         "https://en.wikipedia.org/wiki/Insect_morphology"
       ],
       "updated_at": "2026-09-16T22:54:55.242722+00:00"
+    },
+    "Spiracle": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:56:30.533325+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Spiracle"
+      ],
+      "updated_at": "2026-09-16T22:56:30.533330+00:00"
     }
   },
   "edges": [
