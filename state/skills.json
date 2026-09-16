@@ -76,7 +76,7 @@
     "last_reinforced": "2026-09-16T11:04:41.144241+00:00"
   },
   "comportement": {
-    "level": 0.4,
+    "level": 0.5,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -86,8 +86,9 @@
       "courtship"
     ],
     "articles": [
-      "Fly"
+      "Fly",
+      "Evolution"
     ],
-    "last_reinforced": "2026-09-16T09:49:00.861404+00:00"
+    "last_reinforced": "2026-09-16T11:06:18.677870+00:00"
   }
 }
