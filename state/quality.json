@@ -1044,5 +1044,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:18:52.154178+00:00"
+  },
+  "Adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 348,
+      "sections": 4,
+      "links": 11,
+      "link_list": [
+        "Adaptive radiation",
+        "Swarm behaviour",
+        "Exoskeleton",
+        "Mating",
+        "Antenna (zoology)",
+        "Arthropod",
+        "Pollination",
+        "Neoptera",
+        "Flight",
+        "Parasitoid",
+        "Angular velocity"
+      ],
+      "diversity": 0.716,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:19:11.089985+00:00"
   }
 }

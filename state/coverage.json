@@ -408,6 +408,14 @@
         "https://en.wikipedia.org/wiki/Caddisfly"
       ],
       "updated_at": "2026-09-16T23:18:52.154678+00:00"
+    },
+    "Adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:19:11.090578+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation"
+      ],
+      "updated_at": "2026-09-16T23:19:11.090584+00:00"
     }
   },
   "edges": [
