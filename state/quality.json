@@ -765,5 +765,27 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:56:30.532886+00:00"
+  },
+  "Insect wing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 357,
+      "sections": 4,
+      "links": 8,
+      "link_list": [
+        "Fly",
+        "Aerodynamics",
+        "Halteres",
+        "Wing",
+        "Devonian",
+        "Insect flight",
+        "Palaeoptera",
+        "Evolution"
+      ],
+      "diversity": 0.726,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:58:04.976098+00:00"
   }
 }
