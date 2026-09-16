@@ -154,6 +154,14 @@
     {
       "from": "Insect ecology",
       "to": "Applied ecology"
+    },
+    {
+      "from": "Evolution",
+      "to": "Larva"
+    },
+    {
+      "from": "Evolution",
+      "to": "Maggot"
     }
   ],
   "frontier": [
@@ -170,7 +178,9 @@
     "Insect mouthparts",
     "Annual Review of Ecology, Evolution, and Systematics",
     "Anthecology",
-    "Applied ecology"
+    "Applied ecology",
+    "Larva",
+    "Maggot"
   ],
   "max_depth": 2
 }
