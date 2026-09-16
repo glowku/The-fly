@@ -124,7 +124,7 @@
     "last_reinforced": "2026-09-16T23:17:16.360752+00:00"
   },
   "comportement": {
-    "level": 1.4,
+    "level": 1.5,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -144,8 +144,9 @@
       "Behavioral Ecology and Sociobiology",
       "Insect morphology",
       "Aggressive mimicry",
-      "Ant mimicry"
+      "Ant mimicry",
+      "Annual Review of Ecology, Evolution, and Systematics"
     ],
-    "last_reinforced": "2026-09-16T23:14:00.689807+00:00"
+    "last_reinforced": "2026-09-16T23:23:38.824078+00:00"
   }
 }

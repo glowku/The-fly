@@ -424,6 +424,14 @@
         "https://en.wikipedia.org/wiki/Insect_mouthparts"
       ],
       "updated_at": "2026-09-16T23:22:03.647154+00:00"
+    },
+    "Annual Review of Ecology, Evolution, and Systematics": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:23:38.603852+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Annual_Review_of_Ecology%2C_Evolution%2C_and_Systematics"
+      ],
+      "updated_at": "2026-09-16T23:23:38.603857+00:00"
     }
   },
   "edges": [
@@ -634,11 +642,14 @@
     {
       "from": "Insect mouthparts",
       "to": "Chemical communication in insects"
+    },
+    {
+      "from": "Mimicry",
+      "to": "Annual Review of Ecology, Evolution, and Systematics"
     }
   ],
   "frontier": [
     "Basal (evolution)",
-    "Annual Review of Ecology, Evolution, and Systematics",
     "Anthecology",
     "Applied ecology",
     "Larva",
