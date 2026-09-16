@@ -1,15 +1,35 @@
-"""Perception : Wikipedia REST API (gratuit, sans clé) + enrichissement."""
+"""Perception : Wikipedia REST API (gratuit, sans clé) + recherche de titres."""
 import requests
 from urllib.parse import quote
 
-HEADERS = {"User-Agent": "the-fly-agent/1.1 (knowledge-graph-builder; educational)"}
+HEADERS = {"User-Agent": "the-fly-agent/1.2 (knowledge-graph-builder; educational)"}
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{}"
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 WIKI_RELATED = "https://en.wikipedia.org/api/rest_v1/page/related/{}"
 
 
+def search_titles(query: str, limit: int = 8) -> list:
+    """Recherche Wikipedia (opensearch) → titres réels."""
+    try:
+        params = {
+            "action": "opensearch",
+            "search": query,
+            "limit": limit,
+            "namespace": 0,
+            "format": "json",
+        }
+        r = requests.get(WIKI_API, params=params, timeout=15, headers=HEADERS)
+        if r.status_code != 200:
+            return []
+        data = r.json()
+        return list(data[1]) if len(data) > 1 else []
+    except Exception as e:
+        print(f"[perceive] search error: {e}", flush=True)
+        return []
+
+
 def get_summary(title: str):
-    """Résumé + métadonnées d'un article Wikipedia."""
+    """Résumé + métadonnées d\'un article Wikipedia."""
     try:
         r = requests.get(
             WIKI_SUMMARY.format(quote(title, safe="")),
@@ -21,9 +41,12 @@ def get_summary(title: str):
         data = r.json()
         if data.get("type") in ("disambiguation", "https://mediawiki.org/wiki/Special:Redirect/new"):
             return None
+        extract = data.get("extract") or ""
+        if not extract.strip():
+            return None
         return {
             "title": data.get("title") or title,
-            "extract": data.get("extract") or "",
+            "extract": extract,
             "description": data.get("description") or "",
             "url": data.get("content_urls", {}).get("desktop", {}).get("page"),
             "thumbnail": (data.get("thumbnail") or {}).get("source"),
@@ -34,8 +57,79 @@ def get_summary(title: str):
         return None
 
 
+def _score_hit(query: str, hit: str) -> float:
+    """Score un hit Wikipedia vs la requête (plus haut = mieux)."""
+    q = [w for w in query.lower().replace("-", " ").split() if len(w) > 1]
+    h = hit.lower()
+    if not q:
+        return 0.0
+    hits_w = sum(1 for w in q if w in h)
+    ratio = hits_w / len(q)
+    # bonus si le titre EST un des mots (ex: Fly)
+    word_exact = 2.5 if h in q else 0.0
+    # pénalité titres longs / composés bizarres
+    pen = max(0, len(hit.split()) - 2) * 0.6
+    exact = 4.0 if h == query.lower() else 0.0
+    return ratio * 4.0 + hits_w + word_exact + exact - pen
+
+
+def resolve_title(title: str):
+    """Résout un titre flou vers une page Wikipedia réelle."""
+    if not title or not title.strip():
+        return None
+    title = title.strip()
+
+    s = get_summary(title)
+    if s and (s.get("extract") or ""):
+        return s.get("title") or title
+
+    candidates = []
+    # recherche full + par mot
+    for q in [title] + [w for w in title.replace("-", " ").split() if len(w) > 2]:
+        for h in search_titles(q, limit=6):
+            candidates.append(h)
+
+    # dédoublonne en gardant le meilleur score
+    best_title = None
+    best_score = -1.0
+    seen = set()
+    for h in candidates:
+        if h in seen:
+            continue
+        seen.add(h)
+        sc = _score_hit(title, h)
+        if sc > best_score:
+            # vérifier qu'un résumé existe
+            s = get_summary(h)
+            if s and len(s.get("extract") or "") > 80:
+                best_score = sc
+                best_title = s.get("title") or h
+
+    if best_title and best_score >= 1.0:
+        print(f"[perceive] resolve « {title} » → « {best_title} » (score={best_score:.1f})", flush=True)
+        return best_title
+
+    FALLBACKS = [
+        ("fly", "Fly"),
+        ("mouche", "Fly"),
+        ("ecology", "Ecology"),
+        ("ecologie", "Ecology"),
+        ("insect", "Insect"),
+        ("ai", "Artificial intelligence"),
+        ("cybersecurity", "Computer security"),
+        ("cyber", "Computer security"),
+    ]
+    low = title.lower()
+    for k, v in FALLBACKS:
+        if k in low:
+            s = get_summary(v)
+            if s:
+                print(f"[perceive] fallback « {title} » → « {v} »", flush=True)
+                return v
+    return best_title
+
+
 def get_links(title: str, limit: int = 40):
-    """Liens sortants d'un article Wikipedia (namespace 0)."""
     try:
         params = {
             "action": "query",
@@ -63,7 +157,6 @@ def get_links(title: str, limit: int = 40):
 
 
 def get_related(title: str, limit: int = 15):
-    """Pages liées sémantiquement (REST related)."""
     try:
         r = requests.get(
             WIKI_RELATED.format(quote(title, safe="")),
@@ -79,7 +172,6 @@ def get_related(title: str, limit: int = 15):
 
 
 def get_categories(title: str, limit: int = 10):
-    """Catégories pour enrichir le contexte de planification."""
     try:
         params = {
             "action": "query",
