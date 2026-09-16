@@ -3,7 +3,6 @@
 import sys
 from pathlib import Path
 
-# Assurer que le package agent est importable
 sys.path.insert(0, str(Path(__file__).parent))
 
 from agent.memory import (
@@ -14,39 +13,76 @@ from agent.memory import (
     log_event,
     compute_objective_score,
 )
-from agent.perception import get_summary, get_links, get_related
+from agent.perception import get_summary, get_links, get_related, resolve_title, search_titles
 from agent.planning import pick_next_target, register_discovered, register_processed
 from agent.synthesis import synthesize_article
 from agent.evaluation import score_article, is_acceptable, explain_score
 from agent.tools import write_article, git_commit_push
-from agent.skills import reinforce_skill
+from agent.skills import reinforce_skill, load_skills
+
+
+def _seed_skill_branches(root_title: str):
+    """Sème la frontière avec des concepts par skill pour démarrer les sous-branches."""
+    skills = load_skills()
+    seeded = 0
+    for skill_name, info in skills.items():
+        kws = info.get("keywords") or []
+        queries = []
+        if kws:
+            queries.append(f"{root_title} {kws[0]}")
+            queries.append(kws[0])
+        for q in queries[:2]:
+            hits = search_titles(q, limit=4)
+            for h in hits:
+                register_discovered(h, depth=2, parent=root_title)
+                seeded += 1
+                if seeded >= 18:
+                    return seeded
+    return seeded
 
 
 def run_cycle(dry_run: bool = False):
-    """Exécute un cycle complet de l'agent."""
     print("=" * 60, flush=True)
     print("[agent] Démarrage du cycle autonome", flush=True)
 
-    # 1. PLAN
     target = pick_next_target()
     title = target["title"]
     action = target["action"]
-    print(f"[plan] {target['reason']} → « {title} » (action={action}, prio={target.get('priority')})", flush=True)
+    print(
+        f"[plan] {target['reason']} → « {title} » "
+        f"(action={action}, prio={target.get('priority')}, skill={target.get('skill')})",
+        flush=True,
+    )
 
-    # 2. PERCEIVE
+    resolved = resolve_title(title)
+    if resolved and resolved != title:
+        print(f"[perceive] titre résolu: « {title} » → « {resolved} »", flush=True)
+        cov = load_coverage()
+        if not cov.get("nodes") and cov.get("root") == title:
+            cov["root"] = resolved
+            save_coverage(cov)
+        title = resolved
+
     summary = get_summary(title)
     if not summary:
         print(f"[perceive] Aucun résumé utilisable pour « {title} » → skip", flush=True)
         cov = load_coverage()
-        cov["frontier"] = [t for t in cov.get("frontier", []) if t != title]
-        save_coverage(cov)
+        cov["frontier"] = [t for t in cov.get("frontier", []) if t != title and t != target["title"]]
+        if not cov.get("nodes"):
+            for w in (cov.get("root") or title).replace("-", " ").split():
+                if len(w) < 3:
+                    continue
+                for h in search_titles(w, limit=5):
+                    register_discovered(h, depth=1, parent=None)
+            print("[perceive] frontière seedée depuis recherche", flush=True)
+        save_coverage(load_coverage())
         log_event("skip", {"title": title, "reason": "no_summary"})
         return False
 
     extract_len = len(summary.get("extract") or "")
     print(f"[perceive] Résumé OK ({extract_len} chars) — {summary.get('description', '')[:80]}", flush=True)
+    title = summary.get("title") or title
 
-    # Déterminer profondeur et parent
     cov = load_coverage()
     parent = None
     depth = 1
@@ -59,11 +95,9 @@ def run_cycle(dry_run: bool = False):
                 parent = edge["from"]
                 break
         if parent is None and cov.get("nodes"):
-            # Fallback : rattacher à la racine
             parent = cov.get("root")
             depth = 1
 
-    # 3. ACT — Synthèse
     content = synthesize_article(
         title=title,
         summary=summary.get("extract") or "",
@@ -73,34 +107,31 @@ def run_cycle(dry_run: bool = False):
     )
     print(f"[act] Article généré ({len(content)} chars)", flush=True)
 
-    # 4. EVALUATE
     score = score_article(content)
     print(f"[evaluate] {explain_score(score)}", flush=True)
 
     if not is_acceptable(score):
-        print(f"[reflect] Score trop bas ({score['score']}) → rejet, pas de commit", flush=True)
-        log_event("reject", {
-            "title": title,
-            "score": score["score"],
-            "metrics": score.get("metrics"),
-        })
-        # Même rejeté, on peut découvrir des liens pour enrichir la frontière
+        print(f"[reflect] Score trop bas ({score['score']}) → rejet", flush=True)
+        log_event("reject", {"title": title, "score": score["score"], "metrics": score.get("metrics")})
         links = get_links(title, limit=20)
         related = get_related(title, limit=8)
         for child in list(set(links + related))[:12]:
             register_discovered(child, depth + 1, parent=title)
         return False
 
-    # 5. WRITE + DISCOVER
     path = write_article(title, content)
     print(f"[act] Écrit → {path}", flush=True)
 
-    # Découvrir de nouveaux concepts
     links = get_links(title, limit=35)
     related = get_related(title, limit=12)
     discovered = list(set(links + related))[:22]
     for child in discovered:
         register_discovered(child, depth + 1, parent=title)
+
+    cov_now = load_coverage()
+    if len(cov_now.get("nodes", {})) <= 1:
+        nseed = _seed_skill_branches(title)
+        print(f"[skill-seed] {nseed} concepts ajoutés à la frontière (branches)", flush=True)
 
     register_processed(
         title,
@@ -112,13 +143,11 @@ def run_cycle(dry_run: bool = False):
     quality[title] = score
     save_quality(quality)
 
-    # Renforcer la compétence ciblée
     skill_name = target.get("skill")
     if skill_name:
         reinforce_skill(skill_name, title, score["score"])
         print(f"[skill] {skill_name} renforcée grâce à « {title} »", flush=True)
 
-    # 6. REFLECT / COMMIT
     obj, n_nodes, avg_q = compute_objective_score()
     msg = f"wiki: {title} (score {score['score']}/10 | nodes={n_nodes} obj={obj})"
     print(f"[reflect] Objectif actuel = {obj} (nodes={n_nodes}, avg_q={avg_q})", flush=True)
@@ -132,7 +161,7 @@ def run_cycle(dry_run: bool = False):
         [f"wiki/{title}.md", "state/", "DASHBOARD.md"],
         msg,
     )
-    print(f"[commit] {'✅' if ok else '❌ (rien ou erreur)'} {msg}", flush=True)
+    print(f"[commit] {'✅' if ok else '❌'} {msg}", flush=True)
 
     log_event("expand", {
         "title": title,
@@ -140,15 +169,15 @@ def run_cycle(dry_run: bool = False):
         "depth": depth,
         "discovered": len(discovered),
         "objective": obj,
+        "skill": skill_name,
     })
-    # Article déjà écrit même si push échoue — ne pas faire planter le workflow
     return True
 
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="The Fly Autonomous Knowledge Agent")
-    parser.add_argument("--dry-run", action="store_true", help="Ne pas committer")
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    success = run_cycle(dry_run=args.dry_run)
+    run_cycle(dry_run=args.dry_run)
     sys.exit(0)
