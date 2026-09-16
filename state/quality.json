@@ -712,5 +712,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:49:51.388521+00:00"
+  },
+  "Insect morphology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 352,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect flight",
+        "Wing",
+        "Compound eye",
+        "Insect ecology",
+        "Evolution",
+        "Halteres"
+      ],
+      "diversity": 0.703,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:50:09.063602+00:00"
   }
 }

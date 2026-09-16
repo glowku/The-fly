@@ -64,7 +64,7 @@
     "last_reinforced": "2026-09-16T22:49:30.497182+00:00"
   },
   "ecologie": {
-    "level": 1.1,
+    "level": 1.2,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -81,9 +81,10 @@
       "Pollination",
       "Parasitoid",
       "Annual Review of Entomology",
-      "Evolution of insects"
+      "Evolution of insects",
+      "Insect morphology"
     ],
-    "last_reinforced": "2026-09-16T22:45:20.070477+00:00"
+    "last_reinforced": "2026-09-16T22:50:09.139200+00:00"
   },
   "evolution": {
     "level": 1.17,
