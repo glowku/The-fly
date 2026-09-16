@@ -235,5 +235,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:45:07.826226+00:00"
+  },
+  "Neoptera": {
+    "score": 10.0,
+    "metrics": {
+      "words": 397,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Hover",
+        "Palaeoptera",
+        "Aerodynamics",
+        "Insect flight",
+        "Insect ecology",
+        "Compound eye",
+        "Evolution"
+      ],
+      "diversity": 0.729,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:15:02.463537+00:00"
   }
 }
