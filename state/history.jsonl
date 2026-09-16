@@ -5,3 +5,4 @@
 {"ts": "2026-09-16T09:25:46.232979+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 0.3, "article": "Fly"}
 {"ts": "2026-09-16T09:25:47.392686+00:00", "type": "expand", "title": "Fly", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.4, "skill": "evolution"}
 {"ts": "2026-09-16T09:40:57.279827+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 0.4, "article": "Fly"}
+{"ts": "2026-09-16T09:40:58.451751+00:00", "type": "expand", "title": "Fly", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.4, "skill": "vol_et_aerodynamique"}
