@@ -825,5 +825,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:01:16.954079+00:00"
+  },
+  "Drafting (aerodynamics)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 140,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Pollination",
+        "Insect",
+        "Diptera"
+      ],
+      "diversity": 0.878,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:02:38.402855+00:00"
   }
 }
