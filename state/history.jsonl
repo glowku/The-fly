@@ -148,3 +148,6 @@
 {"ts": "2026-09-16T22:56:32.712788+00:00", "type": "auto_learn_expand", "title": "Spiracle", "skill": "anatomie_insecte", "score": 10.0, "objective": 7.314, "parent": "Halteres"}
 {"ts": "2026-09-16T22:56:32.713357+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Spiracle"], "parent": "Halteres"}
 {"ts": "2026-09-16T22:58:05.190540+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 1.28, "article": "Insect wing"}
+{"ts": "2026-09-16T22:58:07.217948+00:00", "type": "auto_learn_expand", "title": "Insect wing", "skill": "evolution", "score": 10.0, "objective": 7.514, "parent": "Devonian"}
+{"ts": "2026-09-16T22:58:07.218482+00:00", "type": "auto_learn", "skill": "evolution", "learned": true, "frontier_added": 0, "fresh": ["Insect wing"], "parent": "Devonian"}
+{"ts": "2026-09-16T22:59:40.449443+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 1.26, "article": "Automotive aerodynamics"}

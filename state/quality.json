@@ -787,5 +787,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:58:04.976098+00:00"
+  },
+  "Automotive aerodynamics": {
+    "score": 7.33,
+    "metrics": {
+      "words": 197,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.835,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:59:40.241533+00:00"
   }
 }

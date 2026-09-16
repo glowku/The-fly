@@ -1,15 +1,11 @@
 # Automotive aerodynamics
 
-L’aérodynamique automobile étudie le comportement de l’air autour des véhicules routiers. Elle vise à réduire la traînée et le bruit émanant du vent, à limiter les émissions sonores et à empêcher les forces de portance indésirables qui peuvent provoquer une instabilité aérodynamique à haute vitesse. Le fluide considéré est l’air, et pour certains types de véhicules de course, la génération de portance descendante (downforce) est essentielle pour améliorer la traction et la capacité de virage.
+L’aérodynamique automobile est l’étude des interactions entre un véhicule routier et l’air qui l’entoure. Son objectif principal est de réduire la traînée et le bruit aérodynamique, tout en limitant les émissions sonores et en évitant les forces de portance indésirables qui peuvent compromettre la stabilité à grande vitesse. Pour certains types de véhicules de course, la génération de downforce est également cruciale afin d’améliorer l’adhérence et les performances de virage.
 
-## Principes de base
-Les ingénieurs aérodynamiques utilisent des modèles de flux et des essais en soufflerie pour analyser la pression et la vitesse de l’air sur la carrosserie. La traînée, résultat d’une résistance proportionnelle à la vitesse, est minimisée par des formes profilées et des surfaces lisses. Le bruit aérodynamique, produit par les turbulences et les frottements, est réduit grâce à des revêtements et des dispositifs de contrôle du flux. La portance, quant à elle, est surveillée afin d’éviter les effets de soulèvement qui peuvent compromettre la stabilité du véhicule.
+## Objectifs et principes fondamentaux
 
-## Applications en course
-Dans le domaine de la compétition, la création de downforce devient un objectif majeur. Les ailerons, spoilers et autres dispositifs aérodynamiques génèrent une force descendante qui augmente la pression sur les pneus, améliorant ainsi l’adhérence en virage. Cette approche, bien qu’optimisée pour la performance, doit rester conforme aux réglementations qui limitent les dimensions et la puissance des éléments aérodynamiques.
+Les ingénieurs aérodynamiques cherchent à optimiser la forme du véhicule pour minimiser la résistance à l’air. La traînée est composée de deux composantes principales : la traînée parasite, liée à la forme et à la surface, et la traînée induite, liée à la portance. En réduisant ces forces, on augmente l’efficacité énergétique et on diminue la consommation de carburant. Le bruit aérodynamique, quant à lui, est généré par les turbulences et les frottements de l’air sur les surfaces du véhicule; des revêtements aérodynamiques et des formes lisses contribuent à le limiter.
 
-## Défis et solutions
-À haute vitesse, la stabilité aérodynamique dépend de la gestion fine des flux d’air. Les ingénieurs doivent équilibrer traînée, bruit et portance tout en garantissant la sécurité. Les essais en soufflerie, couplés à la simulation numérique, permettent d’identifier les zones de turbulence et de les corriger par des ajustements de forme ou l’ajout de dispositifs de contrôle du flux. La recherche continue d’explorer de nouvelles formes inspirées par la nature, comme les ailes d’insectes, pour optimiser l’efficacité aérodynamique.
+## Downforce et applications de course
 
-## Voir aussi
-[[Aerodynamics]] [[Wing]] [[Insect flight]] [[Fly]] [[Hover]]
+Dans les sports automobiles, la création de downforce est indispensable. En augmentant la pression sur la carrosserie,
