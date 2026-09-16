@@ -184,6 +184,14 @@
         "https://en.wikipedia.org/wiki/Arthropod"
       ],
       "updated_at": "2026-09-16T22:28:22.360331+00:00"
+    },
+    "Annual Review of Entomology": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:34:47.098535+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Annual_Review_of_Entomology"
+      ],
+      "updated_at": "2026-09-16T22:34:47.098543+00:00"
     }
   },
   "edges": [

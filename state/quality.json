@@ -461,5 +461,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:28:22.359850+00:00"
+  },
+  "Annual Review of Entomology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 379,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Insect ecology",
+        "Insect flight",
+        "Aerodynamics",
+        "Evolution",
+        "Fly",
+        "Insect behaviour",
+        "Wing"
+      ],
+      "diversity": 0.752,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:34:47.098021+00:00"
   }
 }
