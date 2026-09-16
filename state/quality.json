@@ -902,5 +902,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T23:07:40.402560+00:00"
+  },
+  "Aileron": {
+    "score": 8.7,
+    "metrics": {
+      "words": 133,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Neoptera",
+        "Diptera",
+        "Insect"
+      ],
+      "diversity": 0.894,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:09:15.651607+00:00"
   }
 }

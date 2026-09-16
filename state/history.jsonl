@@ -166,3 +166,6 @@
 {"ts": "2026-09-16T23:06:07.490430+00:00", "type": "auto_learn_expand", "title": "Bird wing", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 8.461, "parent": "Aerodynamics"}
 {"ts": "2026-09-16T23:06:07.491011+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 0, "fresh": ["Bird wing"], "parent": "Aerodynamics"}
 {"ts": "2026-09-16T23:07:40.628764+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 1.38, "article": "Bat wing development"}
+{"ts": "2026-09-16T23:07:42.590821+00:00", "type": "auto_learn_expand", "title": "Bat wing development", "skill": "anatomie_insecte", "score": 10.0, "objective": 8.661, "parent": "Halteres"}
+{"ts": "2026-09-16T23:07:42.591427+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Bat wing development"], "parent": "Halteres"}
+{"ts": "2026-09-16T23:09:15.846849+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 1.37, "article": "Aileron"}
