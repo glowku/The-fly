@@ -2,22 +2,21 @@
   "Fly": {
     "score": 10.0,
     "metrics": {
-      "words": 259,
+      "words": 274,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
         "Anus",
-        "Halteres",
+        "Diptera",
+        "Fly",
         "Moustique",
-        "Hoverfly",
-        "Horse-fly",
-        "Fly"
+        "Insecte"
       ],
-      "diversity": 0.762,
+      "diversity": 0.73,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-16T09:42:59.511380+00:00"
+    "updated_at": "2026-09-16T09:49:00.685499+00:00"
   },
   "Anus": {
     "score": 10.0,

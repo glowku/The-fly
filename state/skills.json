@@ -71,7 +71,7 @@
     "last_reinforced": "2026-09-16T09:42:59.640558+00:00"
   },
   "comportement": {
-    "level": 0.3,
+    "level": 0.4,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -80,6 +80,9 @@
       "swarm",
       "courtship"
     ],
-    "articles": []
+    "articles": [
+      "Fly"
+    ],
+    "last_reinforced": "2026-09-16T09:49:00.861404+00:00"
   }
 }
