@@ -62,3 +62,4 @@
 {"ts": "2026-09-16T20:43:14.972221+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 0.7, "article": "Insect ecology"}
 {"ts": "2026-09-16T20:43:16.754520+00:00", "type": "auto_learn_expand", "title": "Insect ecology", "skill": "ecologie", "score": 10.0, "objective": 1.954}
 {"ts": "2026-09-16T20:43:16.760883+00:00", "type": "auto_learn", "skill": "ecologie", "learned": true, "frontier_added": 6, "fresh": ["Insect ecology", "Pollination", "Larva", "Maggot", "Parasitoid", "Decomposer", "Biological pest control"]}
+{"ts": "2026-09-16T20:44:32.983998+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 0.7, "article": "Insect behaviour"}

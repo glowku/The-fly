@@ -86,7 +86,7 @@
     "last_reinforced": "2026-09-16T20:17:46.716472+00:00"
   },
   "comportement": {
-    "level": 0.6,
+    "level": 0.7,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -98,8 +98,9 @@
     "articles": [
       "Fly",
       "Evolution",
-      "Wing"
+      "Wing",
+      "Insect behaviour"
     ],
-    "last_reinforced": "2026-09-16T18:19:34.895990+00:00"
+    "last_reinforced": "2026-09-16T20:44:32.983747+00:00"
   }
 }

@@ -195,5 +195,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T20:43:14.880163+00:00"
+  },
+  "Insect behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 381,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Aerodynamics",
+        "Evolution",
+        "Insect ecology",
+        "Halteres",
+        "Insect flight",
+        "Compound eye"
+      ],
+      "diversity": 0.736,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T20:44:32.718295+00:00"
   }
 }
