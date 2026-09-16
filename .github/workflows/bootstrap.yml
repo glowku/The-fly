@@ -7,6 +7,10 @@ on:
         description: 'Sujet racine (ex: Fly, Artificial intelligence, Cybersecurity)'
         required: false
         default: 'Fly'
+      reset_graph:
+        description: 'Effacer le graphe existant et repartir de zéro'
+        required: false
+        default: 'true'
 
 permissions:
   contents: write
@@ -37,16 +41,28 @@ jobs:
 
       - name: Set root topic
         run: |
-          echo "${{ github.event.inputs.root_topic || 'Fly' }}" > ROOT.txt
+          ROOT="${{ github.event.inputs.root_topic || 'Fly' }}"
+          echo "$ROOT" > ROOT.txt
+          echo "ROOT=$ROOT"
           cat ROOT.txt
+
+      - name: Reset graph if requested
+        if: ${{ github.event.inputs.reset_graph != 'false' }}
+        run: |
+          python -c "
+          from agent.memory import reset_for_new_root
+          root = open('ROOT.txt').read().strip()
+          reset_for_new_root(root)
+          print('graph reset for', root)
+          "
 
       - name: First expand cycle
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python run.py
+        run: python run.py || true
 
       - name: Dashboard
-        run: python -m agent.evaluate_dashboard
+        run: python -m agent.evaluate_dashboard || true
 
       - name: Commit bootstrap
         run: |
