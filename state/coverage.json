@@ -200,6 +200,14 @@
         "https://en.wikipedia.org/wiki/Mimicry"
       ],
       "updated_at": "2026-09-16T22:37:06.948308+00:00"
+    },
+    "Arthropod eye": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:38:41.999577+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arthropod_eye"
+      ],
+      "updated_at": "2026-09-16T22:38:41.999582+00:00"
     }
   },
   "edges": [
@@ -302,6 +310,10 @@
     {
       "from": "Mating",
       "to": "Blue-tailed damselfly"
+    },
+    {
+      "from": "Arthropod eye",
+      "to": "Aquatic insects"
     }
   ],
   "frontier": [

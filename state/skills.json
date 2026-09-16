@@ -13,7 +13,7 @@
     "articles": []
   },
   "anatomie_insecte": {
-    "level": 0.98,
+    "level": 1.08,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -29,9 +29,10 @@
       "Compound eye",
       "Exoskeleton",
       "Antenna (zoology)",
-      "Arthropod"
+      "Arthropod",
+      "Arthropod eye"
     ],
-    "last_reinforced": "2026-09-16T22:28:22.618413+00:00"
+    "last_reinforced": "2026-09-16T22:38:42.134372+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 0.99,

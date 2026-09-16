@@ -503,5 +503,27 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:37:06.947776+00:00"
+  },
+  "Arthropod eye": {
+    "score": 10.0,
+    "metrics": {
+      "words": 350,
+      "sections": 4,
+      "links": 8,
+      "link_list": [
+        "Evolution",
+        "Insect behaviour",
+        "Fly",
+        "Compound eye",
+        "Insect flight",
+        "Halteres",
+        "Hover",
+        "Aerodynamics"
+      ],
+      "diversity": 0.721,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:38:41.999088+00:00"
   }
 }
