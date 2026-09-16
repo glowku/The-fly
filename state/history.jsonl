@@ -87,3 +87,5 @@
 {"ts": "2026-09-16T21:33:03.603671+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 0.88, "article": "Insect flight"}
 {"ts": "2026-09-16T21:33:03.603721+00:00", "type": "branch", "title": "Insect flight", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-09-16T21:39:45.042863+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 0.9, "article": "Antenna (zoology)"}
+{"ts": "2026-09-16T21:39:46.920160+00:00", "type": "auto_learn_expand", "title": "Antenna (zoology)", "skill": "anatomie_insecte", "score": 10.0, "objective": 3.554, "parent": "Halteres"}
+{"ts": "2026-09-16T21:39:46.924661+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 3, "fresh": ["Antenna (zoology)", "Thorax", "Arthropod leg", "Spiracle"], "parent": "Halteres"}
