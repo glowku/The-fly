@@ -3,7 +3,6 @@
 import sys
 from pathlib import Path
 
-# Assurer que le package agent est importable
 sys.path.insert(0, str(Path(__file__).parent))
 
 from agent.memory import (
@@ -58,7 +57,6 @@ def run_cycle(dry_run: bool = False):
                 parent = edge["from"]
                 break
         if parent is None and cov.get("nodes"):
-            # Fallback : rattacher à la racine
             parent = cov.get("root")
             depth = 1
 
@@ -83,7 +81,7 @@ def run_cycle(dry_run: bool = False):
             "score": score["score"],
             "metrics": score.get("metrics"),
         })
-        # Même rejeté, on peut découvrir des liens pour enrichir la frontière
+        # Même rejeté, on découvre des liens
         links = get_links(title, limit=20)
         related = get_related(title, limit=8)
         for child in list(set(links + related))[:12]:
@@ -94,7 +92,6 @@ def run_cycle(dry_run: bool = False):
     path = write_article(title, content)
     print(f"[act] Écrit → {path}", flush=True)
 
-    # Découvrir de nouveaux concepts
     links = get_links(title, limit=35)
     related = get_related(title, limit=12)
     discovered = list(set(links + related))[:22]
