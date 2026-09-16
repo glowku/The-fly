@@ -33,7 +33,7 @@
     "last_reinforced": "2026-09-16T21:39:45.042675+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 0.89,
+    "level": 0.99,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -49,9 +49,10 @@
       "Insect flight",
       "Aerodynamics",
       "Hover",
-      "Flight"
+      "Flight",
+      "Angular velocity"
     ],
-    "last_reinforced": "2026-09-16T21:19:26.579614+00:00"
+    "last_reinforced": "2026-09-16T22:23:32.856229+00:00"
   },
   "ecologie": {
     "level": 0.9,
