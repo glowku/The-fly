@@ -123,3 +123,6 @@
 {"ts": "2026-09-16T22:41:52.937681+00:00", "type": "auto_learn_expand", "title": "Alate", "skill": "vol_et_aerodynamique", "score": 10.0, "objective": 5.514, "parent": "Insect flight"}
 {"ts": "2026-09-16T22:41:52.940738+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": true, "frontier_added": 1, "fresh": ["Alate", "Arthropod leg"], "parent": "Insect flight"}
 {"ts": "2026-09-16T22:43:28.400555+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 1.1, "article": "Arthropod leg"}
+{"ts": "2026-09-16T22:43:30.397835+00:00", "type": "auto_learn_expand", "title": "Arthropod leg", "skill": "entomologie", "score": 10.0, "objective": 5.714, "parent": "Insect flight"}
+{"ts": "2026-09-16T22:43:30.407364+00:00", "type": "auto_learn", "skill": "entomologie", "learned": true, "frontier_added": 4, "fresh": ["Arthropod leg", "Housefly", "Mosquito", "Hoverfly", "Blowfly"], "parent": "Insect flight"}
+{"ts": "2026-09-16T22:45:03.473597+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.1, "article": "Evolution of insects"}

@@ -232,6 +232,14 @@
         "https://en.wikipedia.org/wiki/Arthropod_leg"
       ],
       "updated_at": "2026-09-16T22:43:28.328318+00:00"
+    },
+    "Evolution of insects": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:45:03.281942+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolution_of_insects"
+      ],
+      "updated_at": "2026-09-16T22:45:03.281948+00:00"
     }
   },
   "edges": [
@@ -342,10 +350,33 @@
     {
       "from": "Alate",
       "to": "Insect"
+    },
+    {
+      "from": "Insect flight",
+      "to": "Housefly"
+    },
+    {
+      "from": "Insect flight",
+      "to": "Hoverfly"
+    },
+    {
+      "from": "Insect flight",
+      "to": "Blowfly"
+    },
+    {
+      "from": "Fly",
+      "to": "Evolution of insects"
+    },
+    {
+      "from": "Evolution of insects",
+      "to": "Alternatives to Darwinian evolution"
+    },
+    {
+      "from": "Evolution of insects",
+      "to": "Amphibious insect"
     }
   ],
   "frontier": [
-    "Evolution of insects",
     "Insect",
     "Insect morphology",
     "Insect wing",
@@ -363,7 +394,12 @@
     "Maggot",
     "Ailerons",
     "Aquatic insects",
-    "Blue-tailed damselfly"
+    "Blue-tailed damselfly",
+    "Housefly",
+    "Hoverfly",
+    "Blowfly",
+    "Alternatives to Darwinian evolution",
+    "Amphibious insect"
   ],
   "max_depth": 3
 }
