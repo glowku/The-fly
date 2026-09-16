@@ -7,116 +7,144 @@
 <style>
   :root {
     --bg: #050505;
-    --panel: rgba(12,12,12,0.92);
-    --line: #1c1c1c;
+    --panel: rgba(10,10,10,0.9);
+    --line: #1a1a1a;
     --text: #c8c8c8;
     --mute: #555;
     --g: #5dba4a;
-    --g2: #8dff6a;
-    --dimg: rgba(93,186,74,0.15);
+    --g2: #9dff7a;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; background: var(--bg); color: var(--text); font: 12px/1.45 ui-monospace, "SF Mono", Consolas, monospace; overflow: hidden; }
-  #stage { position: fixed; inset: 0; }
-  canvas#brain { width: 100%; height: 100%; display: block; }
+  html, body { height: 100%; background: var(--bg); color: var(--text); font: 12px/1.45 ui-monospace, Consolas, monospace; overflow: hidden; }
+  canvas#brain { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
 
-  .hud {
-    position: fixed; z-index: 10; pointer-events: none;
-    inset: 0;
-    display: grid;
-    grid-template-columns: 240px 1fr 280px;
-    grid-template-rows: auto 1fr auto;
-    gap: 0;
-  }
+  .hud { position: fixed; inset: 0; z-index: 5; pointer-events: none; display: grid; grid-template-columns: 230px 1fr 270px; grid-template-rows: auto 1fr auto; }
   .hud > * { pointer-events: auto; }
 
   .top {
     grid-column: 1 / -1;
     display: flex; justify-content: space-between; align-items: center;
-    padding: 10px 16px;
-    background: linear-gradient(180deg, rgba(0,0,0,0.85), transparent);
-    border-bottom: 1px solid var(--line);
+    padding: 10px 14px; border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(0,0,0,.9), transparent);
   }
-  .top .brand { color: var(--g); letter-spacing: 0.12em; font-size: 11px; text-transform: uppercase; }
-  .top .meta { display: flex; gap: 14px; color: var(--mute); align-items: center; flex-wrap: wrap; }
-  .top .meta b { color: var(--text); font-weight: 500; }
-  .top button {
-    pointer-events: auto;
-    background: transparent; border: 1px solid var(--line); color: var(--mute);
-    font: inherit; padding: 3px 8px; cursor: pointer;
-  }
-  .top button:hover { border-color: var(--g); color: var(--g); }
+  .brand { color: var(--g); letter-spacing: .12em; font-size: 11px; text-transform: uppercase; }
+  .meta { display: flex; gap: 12px; color: var(--mute); flex-wrap: wrap; align-items: center; }
+  .meta b { color: var(--text); font-weight: 500; }
+  button { background: transparent; border: 1px solid var(--line); color: var(--mute); font: inherit; padding: 3px 8px; cursor: pointer; }
+  button:hover { border-color: var(--g); color: var(--g); }
 
   .side {
-    margin: 12px;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    padding: 12px;
-    max-height: calc(100vh - 120px);
-    overflow: auto;
-    backdrop-filter: blur(6px);
-  }
-  .side h2 {
-    font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--mute); margin-bottom: 10px; font-weight: 500;
+    margin: 10px; background: var(--panel); border: 1px solid var(--line);
+    padding: 12px; max-height: calc(100vh - 110px); overflow: auto; backdrop-filter: blur(8px);
   }
   .side.left { grid-column: 1; grid-row: 2; align-self: start; }
   .side.right { grid-column: 3; grid-row: 2; align-self: start; }
+  h2 { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--mute); margin: 0 0 10px; font-weight: 500; }
 
-  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 14px; }
-  .stat { border: 1px solid var(--line); padding: 8px; background: rgba(0,0,0,0.3); }
+  /* fly unit */
+  .fly-box {
+    height: 120px; border: 1px solid var(--line); background: #080808;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 10px;
+    position: relative; overflow: hidden;
+  }
+  .fly {
+    position: relative; width: 90px; height: 54px;
+    animation: flyFloat 2.6s ease-in-out infinite;
+  }
+  @keyframes flyFloat {
+    0%, 100% { transform: translate(0,0) rotate(-1deg); }
+    50% { transform: translate(4px,-10px) rotate(2deg); }
+  }
+  .fly-body {
+    position: absolute; left: 32px; top: 18px; width: 36px; height: 18px;
+    background: linear-gradient(180deg,#3a3a3a,#1c1c1c); border-radius: 50% 45% 45% 50%;
+    box-shadow: inset -4px -2px 0 #0a0a0a; z-index: 2;
+  }
+  .fly-head {
+    position: absolute; left: 12px; top: 16px; width: 22px; height: 18px;
+    background: #222; border-radius: 50%; z-index: 3;
+  }
+  .fly-eye {
+    position: absolute; width: 6px; height: 6px; background: #e33; border-radius: 50%;
+    top: 4px; box-shadow: 0 0 8px #f44; animation: eye 1.2s ease-in-out infinite alternate;
+  }
+  .fly-eye.l { left: 2px; } .fly-eye.r { right: 2px; }
+  @keyframes eye { from { box-shadow: 0 0 4px #f44; } to { box-shadow: 0 0 12px #ff6666; } }
+  .fly-prob {
+    position: absolute; left: 50%; bottom: -5px; transform: translateX(-50%);
+    width: 2px; height: 9px; background: #444;
+  }
+  .fly-prob::after {
+    content: ""; position: absolute; left: -2px; bottom: -3px;
+    width: 6px; height: 4px; background: #333; border-radius: 0 0 3px 3px;
+  }
+  .fly-wing {
+    position: absolute; width: 34px; height: 16px; top: 6px; left: 36px;
+    border: 1px solid rgba(160,200,255,.35); background: rgba(160,200,255,.08);
+    border-radius: 60% 40% 50% 40%; transform-origin: left center; z-index: 1;
+  }
+  .fly-wing.l { animation: flapL .08s infinite alternate; }
+  .fly-wing.r { animation: flapR .08s infinite alternate; }
+  @keyframes flapL { from { transform: rotateX(10deg) rotateZ(-18deg); } to { transform: rotateX(50deg) rotateZ(-38deg); } }
+  @keyframes flapR { from { transform: rotateX(-10deg) rotateZ(18deg); } to { transform: rotateX(-50deg) rotateZ(38deg); } }
+  .fly-leg { position: absolute; width: 1px; height: 11px; background: #444; top: 34px; z-index: 1; }
+  .fly-leg:nth-of-type(1) { left: 38px; transform: rotate(22deg); }
+  .fly-leg:nth-of-type(2) { left: 46px; }
+  .fly-leg:nth-of-type(3) { left: 54px; transform: rotate(-18deg); }
+  .cap { text-align: center; color: var(--mute); font-size: 11px; min-height: 1.3em; margin-bottom: 12px; }
+
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
+  .stat { border: 1px solid var(--line); padding: 8px; background: rgba(0,0,0,.35); }
   .stat .k { color: var(--mute); font-size: 10px; }
-  .stat .v { font-size: 16px; color: var(--g); margin-top: 2px; }
+  .stat .v { font-size: 15px; color: var(--g); margin-top: 2px; }
 
   .skill { margin-bottom: 8px; }
   .skill .r { display: flex; justify-content: space-between; color: var(--mute); margin-bottom: 2px; }
   .skill .r span:last-child { color: var(--text); }
   .bar { height: 2px; background: #1a1a1a; }
-  .bar i { display: block; height: 100%; background: var(--g); transition: width 0.5s; }
+  .bar i { display: block; height: 100%; background: var(--g); transition: width .5s; }
 
   .list .item {
     display: flex; justify-content: space-between; gap: 8px;
-    padding: 6px 0; border-bottom: 1px solid #151515; cursor: pointer; color: var(--text);
+    padding: 6px 0; border-bottom: 1px solid #141414; cursor: pointer;
   }
   .list .item:hover { color: var(--g2); }
   .list .sc { color: var(--g); flex-shrink: 0; }
 
-  .feed .row { padding: 4px 0; border-bottom: 1px solid #151515; color: var(--mute); font-size: 11px; }
+  .feed .row { padding: 4px 0; border-bottom: 1px solid #141414; color: var(--mute); font-size: 11px; }
   .feed .t { color: #a67; margin-right: 6px; }
   .feed .n { color: var(--text); }
 
   .bottom {
-    grid-column: 1 / -1;
-    padding: 8px 16px;
-    color: var(--mute);
-    font-size: 11px;
-    border-top: 1px solid var(--line);
-    background: rgba(0,0,0,0.7);
+    grid-column: 1 / -1; padding: 8px 14px; color: var(--mute); font-size: 11px;
+    border-top: 1px solid var(--line); background: rgba(0,0,0,.75);
+  }
+  .fx-tag {
+    display: inline-block; margin-right: 8px; padding: 1px 6px;
+    border: 1px solid #222; color: var(--g); font-size: 10px;
   }
 
   .overlay {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.82);
-    display: none; align-items: center; justify-content: center;
-    z-index: 50; padding: 20px;
+    position: fixed; inset: 0; background: rgba(0,0,0,.85);
+    display: none; align-items: center; justify-content: center; z-index: 40; padding: 20px;
   }
   .overlay.open { display: flex; }
   .modal {
-    background: #0c0c0c; border: 1px solid var(--line);
-    width: min(640px, 100%); max-height: 80vh;
-    display: flex; flex-direction: column;
+    background: #0a0a0a; border: 1px solid var(--line);
+    width: min(640px,100%); max-height: 80vh; display: flex; flex-direction: column;
   }
   .modal-h { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--line); }
   .modal-h h3 { color: var(--g); font-size: 12px; font-weight: 500; }
   .modal-h button { background: none; border: none; color: var(--mute); font-size: 18px; cursor: pointer; }
   .modal-b { padding: 14px; overflow: auto; font-size: 12px; line-height: 1.65; }
-  .modal-b h1 { font-size: 14px; margin-bottom: 10px; color: var(--text); }
+  .modal-b h1 { font-size: 14px; margin-bottom: 10px; }
   .modal-b h2 { font-size: 11px; color: var(--g); margin: 14px 0 6px; text-transform: none; letter-spacing: 0; }
   .modal-b a { color: #6af; cursor: pointer; }
   .empty { color: var(--mute); padding: 8px 0; }
 
   @media (max-width: 800px) {
     .hud { grid-template-columns: 1fr; }
-    .side.left, .side.right { max-height: 30vh; }
+    .side { max-height: 28vh; }
   }
 </style>
 </head>
@@ -131,11 +159,29 @@
       <span>nodes <b id="nn">—</b></span>
       <span>obj <b id="ob">—</b></span>
       <span>avg <b id="aq">—</b></span>
-      <button type="button" id="btnRefresh">refresh</button>
+      <button type="button" id="btnR">refresh</button>
     </div>
   </div>
 
   <div class="side left">
+    <h2>subject unit</h2>
+    <div class="fly-box">
+      <div class="fly">
+        <div class="fly-wing l"></div>
+        <div class="fly-wing r"></div>
+        <div class="fly-body"></div>
+        <div class="fly-head">
+          <div class="fly-eye l"></div>
+          <div class="fly-eye r"></div>
+          <div class="fly-prob"></div>
+        </div>
+        <div class="fly-leg"></div>
+        <div class="fly-leg"></div>
+        <div class="fly-leg"></div>
+      </div>
+    </div>
+    <div class="cap" id="cap">learning</div>
+
     <h2>metrics</h2>
     <div class="stat-row">
       <div class="stat"><div class="k">concepts</div><div class="v" id="m1">—</div></div>
@@ -143,6 +189,7 @@
       <div class="stat"><div class="k">edges</div><div class="v" id="m3">—</div></div>
       <div class="stat"><div class="k">quality</div><div class="v" id="m4">—</div></div>
     </div>
+
     <h2>skills</h2>
     <div id="skills"><div class="empty">—</div></div>
   </div>
@@ -154,12 +201,20 @@
     <div class="feed" id="feed"><div class="empty">—</div></div>
   </div>
 
-  <div class="bottom" id="log">ready · fetching live json from repo</div>
+  <div class="bottom" id="log">
+    <span class="fx-tag">pulses</span>
+    <span class="fx-tag">arcs</span>
+    <span class="fx-tag">breath</span>
+    <span class="fx-tag">particles</span>
+    <span class="fx-tag">ripple</span>
+    <span class="fx-tag">heat</span>
+    · ready
+  </div>
 </div>
 
 <div class="overlay" id="ov">
   <div class="modal">
-    <div class="modal-h"><h3 id="mt">—</h3><button type="button" id="btnClose">×</button></div>
+    <div class="modal-h"><h3 id="mt">—</h3><button type="button" id="btnX">×</button></div>
     <div class="modal-b" id="mb">…</div>
   </div>
 </div>
@@ -168,317 +223,362 @@
 const RAW = "https://raw.githubusercontent.com/glowku/The-fly/main";
 const canvas = document.getElementById("brain");
 const ctx = canvas.getContext("2d");
-let W = 0, H = 0, nodes = [], pulses = [], articles = [], skillsData = {};
-let hover = null, raf = 0;
+let W, H, nodes = [], pulses = [], arcs = [], particles = [], ripples = [];
+let hover = null, skillsData = {}, articles = [], lastSync = 0;
+
+const CAPS = ["learning","expanding graph","scoring","reinforcing skill","frontier scan","synapse fire","commit cycle"];
 
 function resize() {
-  W = canvas.width = window.innerWidth;
-  H = canvas.height = window.innerHeight;
+  W = canvas.width = innerWidth;
+  H = canvas.height = innerHeight;
+  layout();
 }
-window.addEventListener("resize", () => { resize(); layout(); });
-resize();
+addEventListener("resize", resize);
 
-function log(m) {
-  document.getElementById("log").textContent = m;
-}
-
-async function getJSON(p) {
-  const r = await fetch(RAW + "/" + p + "?t=" + Date.now());
-  if (!r.ok) throw new Error(p + " " + r.status);
-  return r.json();
-}
-async function getText(p) {
-  const r = await fetch(RAW + "/" + p + "?t=" + Date.now());
-  if (!r.ok) throw new Error(p + " " + r.status);
-  return r.text();
-}
+function rnd(a,b){ return a + Math.random()*(b-a); }
 
 function layout() {
+  const cx = W*0.5, cy = H*0.52;
   const names = Object.keys(skillsData);
-  const cx = W * 0.5, cy = H * 0.5;
   nodes = [];
 
-  // core
-  nodes.push({ id: "core", x: cx, y: cy, r: 10, kind: "core", label: "CORE", level: 10 });
+  nodes.push({ id:"core", x:cx, y:cy, r:11, kind:"core", label:"CORE", level:10, phase:0 });
 
-  // skill ring
-  names.forEach((name, i) => {
-    const a = (i / Math.max(names.length, 1)) * Math.PI * 2 - Math.PI / 2;
-    const d = Math.min(W, H) * 0.18;
+  names.forEach((name,i) => {
+    const a = (i / Math.max(names.length,1)) * Math.PI*2 - Math.PI/2;
+    const d = Math.min(W,H) * 0.16;
     const lv = skillsData[name].level || 0;
     nodes.push({
-      id: name, x: cx + Math.cos(a) * d, y: cy + Math.sin(a) * d,
-      r: 5 + Math.min(8, lv * 0.7), kind: "skill", label: name, level: lv,
-      phase: Math.random() * Math.PI * 2
+      id:name, x: cx+Math.cos(a)*d, y: cy+Math.sin(a)*d,
+      r: 5+Math.min(9, lv*0.75), kind:"skill", label:name, level:lv,
+      phase: rnd(0, Math.PI*2), ox: cx+Math.cos(a)*d, oy: cy+Math.sin(a)*d, ang:a, dist:d
     });
   });
 
-  // article nodes (outer ring / cloud)
-  const arts = articles.slice(0, 24);
-  arts.forEach((a, i) => {
-    const a0 = (i / Math.max(arts.length, 1)) * Math.PI * 2;
-    const d = Math.min(W, H) * (0.28 + (i % 5) * 0.03);
+  articles.slice(0,28).forEach((a,i) => {
+    const a0 = (i / Math.max(articles.length,1)) * Math.PI*2 + 0.4;
+    const d = Math.min(W,H) * (0.26 + (i%6)*0.025);
     nodes.push({
-      id: "a:" + a.title, x: cx + Math.cos(a0) * d, y: cy + Math.sin(a0) * d,
-      r: 2.5 + (a.score || 0) * 0.25, kind: "article", label: a.title, level: a.score || 0,
-      phase: Math.random() * Math.PI * 2, title: a.title
+      id:"a:"+a.title, x:cx+Math.cos(a0)*d, y:cy+Math.sin(a0)*d,
+      r: 2.2+(a.score||0)*0.28, kind:"article", label:a.title, level:a.score||0,
+      phase: rnd(0,6), title:a.title, ox:cx+Math.cos(a0)*d, oy:cy+Math.sin(a0)*d
     });
   });
+
+  // ambient particles
+  if (particles.length < 40) {
+    for (let i=particles.length; i<60; i++) {
+      particles.push({
+        x: rnd(0,W), y: rnd(0,H),
+        vx: rnd(-0.25,0.25), vy: rnd(-0.25,0.25),
+        r: rnd(0.4,1.6), a: rnd(0.05,0.25)
+      });
+    }
+  }
 }
 
-function spawnPulse(from, to) {
-  pulses.push({ from, to, t: 0, speed: 0.008 + Math.random() * 0.012 });
+function spawnPulse(a,b) {
+  pulses.push({ a, b, t:0, sp: rnd(0.01,0.022) });
+}
+function spawnArc(a,b) {
+  arcs.push({ a, b, life:1, w: rnd(1,2.5) });
+}
+function spawnRipple(x,y) {
+  ripples.push({ x, y, r:0, max: 80+rnd(0,60), life:1 });
 }
 
 function draw() {
-  ctx.fillStyle = "rgba(5,5,5,0.22)";
-  ctx.fillRect(0, 0, W, H);
+  const t = performance.now()*0.001;
 
-  const t = performance.now() * 0.001;
+  // trail fade
+  ctx.fillStyle = "rgba(5,5,5,0.2)";
+  ctx.fillRect(0,0,W,H);
 
-  // soft vignette grid
-  ctx.strokeStyle = "rgba(93,186,74,0.03)";
+  // --- EFFECT 1: subtle grid drift ---
+  ctx.strokeStyle = "rgba(93,186,74,0.035)";
   ctx.lineWidth = 1;
-  const step = 48;
-  for (let x = 0; x < W; x += step) {
-    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
+  const off = (t*12) % 40;
+  for (let x=-40; x<W+40; x+=40) {
+    ctx.beginPath(); ctx.moveTo(x+off,0); ctx.lineTo(x+off,H); ctx.stroke();
   }
-  for (let y = 0; y < H; y += step) {
-    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+  for (let y=-40; y<H+40; y+=40) {
+    ctx.beginPath(); ctx.moveTo(0,y+off*0.5); ctx.lineTo(W,y+off*0.5); ctx.stroke();
   }
 
-  // edges: skills ↔ core
-  const core = nodes.find(n => n.kind === "core");
-  const skills = nodes.filter(n => n.kind === "skill");
-  const arts = nodes.filter(n => n.kind === "article");
+  // --- EFFECT 2: floating dust particles ---
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x<0||p.x>W) p.vx*=-1;
+    if (p.y<0||p.y>H) p.vy*=-1;
+    ctx.beginPath();
+    ctx.fillStyle = `rgba(93,186,74,${p.a})`;
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fill();
+  });
 
-  function edge(a, b, alpha, width) {
-    const g = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
-    g.addColorStop(0, "rgba(93,186,74," + alpha + ")");
-    g.addColorStop(0.5, "rgba(141,255,106," + (alpha * 0.9) + ")");
-    g.addColorStop(1, "rgba(93,186,74," + alpha + ")");
+  const core = nodes.find(n=>n.kind==="core");
+  const skills = nodes.filter(n=>n.kind==="skill");
+  const arts = nodes.filter(n=>n.kind==="article");
+
+  // skill orbit micro-motion
+  skills.forEach(s => {
+    const wob = Math.sin(t*0.8 + s.phase)*4;
+    s.x = s.ox + Math.cos(s.ang)*wob*0.15;
+    s.y = s.oy + Math.sin(s.ang)*wob*0.15;
+  });
+
+  function edge(a,b,alpha,width) {
+    const g = ctx.createLinearGradient(a.x,a.y,b.x,b.y);
+    g.addColorStop(0, `rgba(93,186,74,${alpha})`);
+    g.addColorStop(0.5, `rgba(157,255,122,${alpha*0.95})`);
+    g.addColorStop(1, `rgba(93,186,74,${alpha})`);
     ctx.beginPath();
     ctx.strokeStyle = g;
     ctx.lineWidth = width;
-    ctx.moveTo(a.x, a.y);
-    ctx.lineTo(b.x, b.y);
+    ctx.moveTo(a.x,a.y);
+    ctx.lineTo(b.x,b.y);
     ctx.stroke();
   }
 
+  // --- EFFECT 3: breathing synapses (core↔skills) ---
   if (core) {
     skills.forEach(s => {
-      const pulse = 0.25 + 0.15 * Math.sin(t * 2 + s.phase);
-      edge(core, s, pulse, 1.2);
-      if (Math.random() < 0.02) spawnPulse(core, s);
+      const breath = 0.2 + 0.18*Math.sin(t*2.2 + s.phase);
+      edge(core, s, breath, 1.3);
+      if (Math.random() < 0.025) spawnPulse(core, s);
+      if (Math.random() < 0.004) spawnArc(core, s);
     });
   }
 
-  // skill–skill neighbors
-  for (let i = 0; i < skills.length; i++) {
-    const a = skills[i], b = skills[(i + 1) % skills.length];
-    edge(a, b, 0.12, 0.8);
+  // skill ring links
+  for (let i=0;i<skills.length;i++) {
+    const a=skills[i], b=skills[(i+1)%skills.length];
+    edge(a,b, 0.1+0.05*Math.sin(t+i), 0.9);
   }
 
-  // articles linked to nearest skill
+  // articles to nearest skill
   arts.forEach(a => {
-    let best = null, bestD = Infinity;
+    let best=null, bd=1e9;
     skills.forEach(s => {
-      const d = Math.hypot(s.x - a.x, s.y - a.y);
-      if (d < bestD) { bestD = d; best = s; }
+      const d=Math.hypot(s.x-a.x,s.y-a.y);
+      if (d<bd){ bd=d; best=s; }
     });
     if (best) {
-      edge(best, a, 0.08 + (a.level / 10) * 0.1, 0.6);
-      if (Math.random() < 0.008) spawnPulse(best, a);
+      edge(best, a, 0.07+(a.level/12)*0.12, 0.7);
+      if (Math.random()<0.01) spawnPulse(best,a);
     }
   });
 
-  // traveling pulses on synapses
-  for (let i = pulses.length - 1; i >= 0; i--) {
-    const p = pulses[i];
-    p.t += p.speed;
-    if (p.t >= 1) { pulses.splice(i, 1); continue; }
-    const x = p.from.x + (p.to.x - p.from.x) * p.t;
-    const y = p.from.y + (p.to.y - p.from.y) * p.t;
-    const grd = ctx.createRadialGradient(x, y, 0, x, y, 10);
-    grd.addColorStop(0, "rgba(200,255,180,0.95)");
-    grd.addColorStop(0.4, "rgba(93,186,74,0.5)");
-    grd.addColorStop(1, "transparent");
-    ctx.beginPath();
-    ctx.fillStyle = grd;
-    ctx.arc(x, y, 10, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.fillStyle = "#e8ffe0";
-    ctx.arc(x, y, 1.8, 0, Math.PI * 2);
-    ctx.fill();
+  // --- EFFECT 4: traveling energy pulses on synapses ---
+  for (let i=pulses.length-1;i>=0;i--) {
+    const p=pulses[i];
+    p.t += p.sp;
+    if (p.t>=1){ pulses.splice(i,1); continue; }
+    const x=p.a.x+(p.b.x-p.a.x)*p.t;
+    const y=p.a.y+(p.b.y-p.a.y)*p.t;
+    const grd=ctx.createRadialGradient(x,y,0,x,y,12);
+    grd.addColorStop(0,"rgba(220,255,200,0.95)");
+    grd.addColorStop(0.35,"rgba(93,186,74,0.45)");
+    grd.addColorStop(1,"transparent");
+    ctx.beginPath(); ctx.fillStyle=grd; ctx.arc(x,y,12,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.fillStyle="#f2ffe8"; ctx.arc(x,y,1.6,0,Math.PI*2); ctx.fill();
   }
 
-  // nodes
-  nodes.forEach(n => {
-    const glow = n.kind === "core" ? 18 : n.kind === "skill" ? 10 + n.level : 4;
-    const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r + glow);
-    if (n.kind === "core") {
-      grd.addColorStop(0, "rgba(230,255,220,0.95)");
-      grd.addColorStop(0.3, "rgba(93,186,74,0.5)");
-      grd.addColorStop(1, "transparent");
-    } else if (n.kind === "skill") {
-      grd.addColorStop(0, "rgba(141,255,106,0.7)");
-      grd.addColorStop(0.4, "rgba(93,186,74,0.25)");
-      grd.addColorStop(1, "transparent");
-    } else {
-      grd.addColorStop(0, "rgba(93,186,74,0.35)");
-      grd.addColorStop(1, "transparent");
-    }
+  // --- EFFECT 5: electric arcs (brief flashes) ---
+  for (let i=arcs.length-1;i>=0;i--) {
+    const arc=arcs[i];
+    arc.life -= 0.04;
+    if (arc.life<=0){ arcs.splice(i,1); continue; }
+    const a=arc.a, b=arc.b;
     ctx.beginPath();
-    ctx.fillStyle = grd;
-    ctx.arc(n.x, n.y, n.r + glow, 0, Math.PI * 2);
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.fillStyle = n.kind === "core" ? "#f0fff0" : n.kind === "skill" ? "#5dba4a" : "#3a6a32";
-    ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-    ctx.fill();
-
-    if (n.kind !== "article" || (hover && hover.id === n.id)) {
-      ctx.fillStyle = n.kind === "article" ? "#8dff6a" : "#888";
-      ctx.font = n.kind === "core" ? "11px monospace" : "10px monospace";
-      ctx.textAlign = "center";
-      ctx.fillText(n.label.length > 14 ? n.label.slice(0, 12) + "…" : n.label, n.x, n.y + n.r + 12);
-    }
-  });
-
-  // hover ring
-  if (hover) {
-    ctx.beginPath();
-    ctx.strokeStyle = "rgba(141,255,106,0.6)";
-    ctx.lineWidth = 1;
-    ctx.arc(hover.x, hover.y, hover.r + 6, 0, Math.PI * 2);
+    ctx.strokeStyle = `rgba(180,255,140,${arc.life})`;
+    ctx.lineWidth = arc.w * arc.life;
+    ctx.moveTo(a.x,a.y);
+    const mx=(a.x+b.x)/2 + rnd(-12,12);
+    const my=(a.y+b.y)/2 + rnd(-12,12);
+    ctx.quadraticCurveTo(mx,my,b.x,b.y);
     ctx.stroke();
   }
 
-  raf = requestAnimationFrame(draw);
+  // --- EFFECT 6: expand ripples on data refresh ---
+  for (let i=ripples.length-1;i>=0;i--) {
+    const r=ripples[i];
+    r.r += 2.5;
+    r.life -= 0.012;
+    if (r.life<=0 || r.r>r.max){ ripples.splice(i,1); continue; }
+    ctx.beginPath();
+    ctx.strokeStyle = `rgba(93,186,74,${r.life*0.45})`;
+    ctx.lineWidth = 1.5;
+    ctx.arc(r.x,r.y,r.r,0,Math.PI*2);
+    ctx.stroke();
+  }
+
+  // nodes + heat glow
+  nodes.forEach(n => {
+    // --- heat / level intensity ---
+    const heat = n.kind==="core" ? 1 : Math.min(1, (n.level||0)/8);
+    const glowR = n.r + (n.kind==="core" ? 20 : n.kind==="skill" ? 10+heat*10 : 4+heat*4);
+    const pulse = n.kind==="core" ? 1+0.12*Math.sin(t*3) : 1+0.08*Math.sin(t*2+n.phase);
+
+    const grd = ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,glowR*pulse);
+    if (n.kind==="core") {
+      grd.addColorStop(0,"rgba(240,255,230,0.9)");
+      grd.addColorStop(0.25,"rgba(93,186,74,0.45)");
+      grd.addColorStop(1,"transparent");
+    } else if (n.kind==="skill") {
+      grd.addColorStop(0,`rgba(157,255,122,${0.35+heat*0.4})`);
+      grd.addColorStop(0.4,`rgba(93,186,74,${0.15+heat*0.2})`);
+      grd.addColorStop(1,"transparent");
+    } else {
+      grd.addColorStop(0,`rgba(93,186,74,${0.2+heat*0.25})`);
+      grd.addColorStop(1,"transparent");
+    }
+    ctx.beginPath(); ctx.fillStyle=grd; ctx.arc(n.x,n.y,glowR*pulse,0,Math.PI*2); ctx.fill();
+
+    ctx.beginPath();
+    ctx.fillStyle = n.kind==="core" ? "#f0fff0" : n.kind==="skill" ? "#5dba4a" : `rgb(${40+heat*40},${90+heat*60},${40+heat*20})`;
+    ctx.arc(n.x,n.y,n.r*(n.kind==="core"?pulse:1),0,Math.PI*2);
+    ctx.fill();
+
+    if (n.kind!=="article" || (hover&&hover.id===n.id)) {
+      ctx.fillStyle = n.kind==="article" ? "#9dff7a" : "#777";
+      ctx.font = n.kind==="core" ? "11px monospace" : "10px monospace";
+      ctx.textAlign = "center";
+      const lab = n.label.length>16 ? n.label.slice(0,14)+"…" : n.label;
+      ctx.fillText(lab, n.x, n.y + n.r + 12);
+    }
+  });
+
+  if (hover) {
+    ctx.beginPath();
+    ctx.strokeStyle = "rgba(157,255,122,0.7)";
+    ctx.lineWidth = 1.5;
+    ctx.arc(hover.x, hover.y, hover.r+7+Math.sin(t*5)*2, 0, Math.PI*2);
+    ctx.stroke();
+  }
+
+  requestAnimationFrame(draw);
 }
 
 canvas.addEventListener("mousemove", e => {
-  const x = e.clientX, y = e.clientY;
   hover = null;
-  for (let i = nodes.length - 1; i >= 0; i--) {
-    const n = nodes[i];
-    if (Math.hypot(n.x - x, n.y - y) < n.r + 8) { hover = n; break; }
+  for (let i=nodes.length-1;i>=0;i--) {
+    const n=nodes[i];
+    if (Math.hypot(n.x-e.clientX,n.y-e.clientY) < n.r+10) { hover=n; break; }
   }
-  canvas.style.cursor = hover && hover.kind === "article" ? "pointer" : "default";
+  canvas.style.cursor = (hover&&hover.kind==="article") ? "pointer" : "default";
 });
 canvas.addEventListener("click", () => {
-  if (hover && hover.kind === "article" && hover.title) openArt(hover.title);
+  if (hover&&hover.kind==="article"&&hover.title) openArt(hover.title);
 });
 
-function renderSkills(sk) {
-  const el = document.getElementById("skills");
-  if (!sk || !Object.keys(sk).length) { el.innerHTML = '<div class="empty">—</div>'; return; }
-  el.innerHTML = Object.entries(sk).sort((a,b) => (b[1].level||0)-(a[1].level||0)).map(([n, info]) => {
-    const lv = info.level || 0;
-    return '<div class="skill"><div class="r"><span>'+n+'</span><span>'+lv.toFixed(1)+'</span></div><div class="bar"><i style="width:'+Math.min(100,lv*10)+'%"></i></div></div>';
-  }).join("");
+async function getJSON(p){ const r=await fetch(RAW+"/"+p+"?t="+Date.now()); if(!r.ok) throw new Error(p+" "+r.status); return r.json(); }
+async function getText(p){ const r=await fetch(RAW+"/"+p+"?t="+Date.now()); if(!r.ok) throw new Error(p+" "+r.status); return r.text(); }
+
+function setLog(m){ document.getElementById("log").innerHTML =
+  '<span class="fx-tag">pulses</span><span class="fx-tag">arcs</span><span class="fx-tag">breath</span><span class="fx-tag">particles</span><span class="fx-tag">ripple</span><span class="fx-tag">heat</span> · '+m;
 }
 
-function renderArts(q) {
-  const el = document.getElementById("arts");
-  articles = Object.entries(q || {}).map(([title, info]) => ({ title, score: info.score || 0 }))
-    .sort((a,b) => b.score - a.score);
-  if (!articles.length) { el.innerHTML = '<div class="empty">empty</div>'; return; }
-  el.innerHTML = articles.slice(0, 18).map(a =>
-    '<div class="item" data-t="'+a.title.replace(/"/g,'&quot;')+'"><span>'+a.title+'</span><span class="sc">'+a.score.toFixed(1)+'</span></div>'
+function renderSkills(sk){
+  const el=document.getElementById("skills");
+  if(!sk||!Object.keys(sk).length){ el.innerHTML='<div class="empty">—</div>'; return; }
+  el.innerHTML=Object.entries(sk).sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,info])=>{
+    const lv=info.level||0;
+    return `<div class="skill"><div class="r"><span>${n}</span><span>${lv.toFixed(1)}</span></div><div class="bar"><i style="width:${Math.min(100,lv*10)}%"></i></div></div>`;
+  }).join("");
+}
+function renderArts(q){
+  const el=document.getElementById("arts");
+  articles=Object.entries(q||{}).map(([title,info])=>({title,score:info.score||0})).sort((a,b)=>b.score-a.score);
+  if(!articles.length){ el.innerHTML='<div class="empty">empty</div>'; return; }
+  el.innerHTML=articles.slice(0,18).map(a=>
+    `<div class="item" data-t="${a.title.replace(/"/g,"&quot;")}"><span>${a.title}</span><span class="sc">${a.score.toFixed(1)}</span></div>`
   ).join("");
-  el.querySelectorAll(".item").forEach(n => n.addEventListener("click", () => openArt(n.getAttribute("data-t"))));
+  el.querySelectorAll(".item").forEach(n=>n.addEventListener("click",()=>openArt(n.getAttribute("data-t"))));
 }
-
-function renderFeed(hist) {
-  const el = document.getElementById("feed");
-  const items = (hist || []).slice(-20).reverse();
-  if (!items.length) { el.innerHTML = '<div class="empty">—</div>'; return; }
-  el.innerHTML = items.map(h => {
-    const ts = (h.ts || "").slice(11, 19);
-    return '<div class="row"><span class="t">'+(h.type||"")+'</span><span class="n">'+(h.title||h.skill||"")+(h.score!=null?" "+h.score:"")+'</span> '+ts+"</div>";
+function renderFeed(hist){
+  const el=document.getElementById("feed");
+  const items=(hist||[]).slice(-18).reverse();
+  if(!items.length){ el.innerHTML='<div class="empty">—</div>'; return; }
+  el.innerHTML=items.map(h=>{
+    const ts=(h.ts||"").slice(11,19);
+    return `<div class="row"><span class="t">${h.type||""}</span><span class="n">${h.title||h.skill||""}${h.score!=null?" "+h.score:""}</span> ${ts}</div>`;
   }).join("");
 }
 
-function md(s) {
+function md(s){
   return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
     .replace(/^# (.+)$/gm,"<h1>$1</h1>").replace(/^## (.+)$/gm,"<h2>$1</h2>")
     .replace(/\[\[([^\]]+)\]\]/g,'<a data-l="$1">$1</a>')
     .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
     .replace(/\n\n/g,"</p><p>").replace(/\n/g,"<br>");
 }
-
-async function openArt(title) {
-  document.getElementById("mt").textContent = title;
-  document.getElementById("mb").textContent = "loading…";
+async function openArt(title){
+  document.getElementById("mt").textContent=title;
+  document.getElementById("mb").textContent="loading…";
   document.getElementById("ov").classList.add("open");
-  try {
-    const text = await getText("wiki/" + encodeURIComponent(title) + ".md");
-    const box = document.getElementById("mb");
-    box.innerHTML = "<p>" + md(text) + "</p>";
-    box.querySelectorAll("a[data-l]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); openArt(a.getAttribute("data-l")); }));
-  } catch (e) {
-    document.getElementById("mb").innerHTML = "<p style='color:#a67'>"+e.message+"</p>";
-  }
+  try{
+    const text=await getText("wiki/"+encodeURIComponent(title)+".md");
+    const box=document.getElementById("mb");
+    box.innerHTML="<p>"+md(text)+"</p>";
+    box.querySelectorAll("a[data-l]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();openArt(a.getAttribute("data-l"));}));
+  }catch(e){ document.getElementById("mb").innerHTML="<p style='color:#a67'>"+e.message+"</p>"; }
 }
-function closeM() { document.getElementById("ov").classList.remove("open"); }
+function closeM(){ document.getElementById("ov").classList.remove("open"); }
 
-async function loadAll() {
-  document.getElementById("st").textContent = "sync";
-  log("fetching json…");
-  try {
-    const [cov, qual, skills] = await Promise.all([
+async function loadAll(){
+  document.getElementById("st").textContent="sync";
+  setLog("fetching json…");
+  try{
+    const [cov,qual,skills]=await Promise.all([
       getJSON("state/coverage.json"),
       getJSON("state/quality.json"),
-      getJSON("state/skills.json").catch(() => null)
+      getJSON("state/skills.json").catch(()=>null)
     ]);
-    let hist = [];
-    try {
-      const t = await getText("state/history.jsonl");
-      hist = t.trim().split("\n").filter(Boolean).map(l => JSON.parse(l));
-    } catch (_) {}
+    let hist=[];
+    try{ const t=await getText("state/history.jsonl"); hist=t.trim().split("\n").filter(Boolean).map(l=>JSON.parse(l)); }catch(_){}
 
-    const nNodes = Object.keys(cov.nodes || {}).length;
-    const nEdges = (cov.edges || []).length;
-    const nFront = (cov.frontier || []).length;
-    const scores = Object.values(qual || {}).map(x => x.score || 0);
-    const avg = scores.length ? scores.reduce((a,b)=>a+b,0)/scores.length : 0;
-    const obj = Math.min(nNodes/50, 4) * avg;
+    const nNodes=Object.keys(cov.nodes||{}).length;
+    const nEdges=(cov.edges||[]).length;
+    const nFront=(cov.frontier||[]).length;
+    const scores=Object.values(qual||{}).map(x=>x.score||0);
+    const avg=scores.length?scores.reduce((a,b)=>a+b,0)/scores.length:0;
+    const obj=Math.min(nNodes/50,4)*avg;
 
-    document.getElementById("nn").textContent = nNodes;
-    document.getElementById("ob").textContent = obj.toFixed(2);
-    document.getElementById("aq").textContent = avg.toFixed(1);
-    document.getElementById("m1").textContent = nNodes;
-    document.getElementById("m2").textContent = nFront;
-    document.getElementById("m3").textContent = nEdges;
-    document.getElementById("m4").textContent = avg.toFixed(1);
+    document.getElementById("nn").textContent=nNodes;
+    document.getElementById("ob").textContent=obj.toFixed(2);
+    document.getElementById("aq").textContent=avg.toFixed(1);
+    document.getElementById("m1").textContent=nNodes;
+    document.getElementById("m2").textContent=nFront;
+    document.getElementById("m3").textContent=nEdges;
+    document.getElementById("m4").textContent=avg.toFixed(1);
 
-    skillsData = skills || {
-      entomologie:{level:1}, anatomie_insecte:{level:0.5}, vol_et_aerodynamique:{level:0.3},
-      ecologie:{level:0.4}, evolution:{level:0.2}, comportement:{level:0.3}
-    };
+    skillsData=skills||{entomologie:{level:1},anatomie_insecte:{level:0.5},vol_et_aerodynamique:{level:0.3},ecologie:{level:0.4},evolution:{level:0.2},comportement:{level:0.3}};
     renderSkills(skillsData);
     renderArts(qual);
     renderFeed(hist);
     layout();
-    document.getElementById("st").textContent = "online";
-    log("online · " + nNodes + " concepts · graph live");
-  } catch (e) {
-    document.getElementById("st").textContent = "error";
-    log(String(e.message || e));
+    // ripple on successful sync
+    spawnRipple(W*0.5, H*0.52);
+    spawnRipple(W*0.5+30, H*0.52-20);
+    document.getElementById("st").textContent="online";
+    setLog("online · "+nNodes+" concepts · 6 fx active");
+    lastSync=Date.now();
+  }catch(e){
+    document.getElementById("st").textContent="error";
+    setLog(String(e.message||e));
   }
 }
 
-document.getElementById("btnRefresh").onclick = loadAll;
-document.getElementById("btnClose").onclick = closeM;
-document.getElementById("ov").onclick = e => { if (e.target.id === "ov") closeM(); };
-document.addEventListener("keydown", e => { if (e.key === "Escape") closeM(); });
+document.getElementById("btnR").onclick=loadAll;
+document.getElementById("btnX").onclick=closeM;
+document.getElementById("ov").onclick=e=>{ if(e.target.id==="ov") closeM(); };
+addEventListener("keydown",e=>{ if(e.key==="Escape") closeM(); });
+setInterval(()=>{ document.getElementById("cap").textContent=CAPS[Math.floor(Math.random()*CAPS.length)]; },4000);
 
+resize();
 loadAll();
-setInterval(loadAll, 45000);
-cancelAnimationFrame(raf);
+setInterval(loadAll,45000);
 draw();
 </script>
 </body>
