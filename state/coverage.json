@@ -1,63 +1,7 @@
 {
-  "root": "Artificial fly",
-  "nodes": {
-    "Artificial fly": {
-      "depth": 1,
-      "created_at": "2026-09-16T09:54:02.322528+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Artificial_fly"
-      ],
-      "updated_at": "2026-09-16T09:54:02.322539+00:00"
-    }
-  },
-  "edges": [
-    {
-      "from": "Artificial fly",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "A History of Fly Fishing for Trout"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Alexandra (wet fly)"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Aquatic insect"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Bibliography of fly fishing (species related)"
-    }
-  ],
-  "frontier": [
-    "Bamboo fly rod",
-    "A History of Fly Fishing for Trout",
-    "Alexandra (wet fly)",
-    "American Museum of Fly Fishing",
-    "Bibliography of fly fishing",
-    "Blacker's Art of Fly Making",
-    "Aquatic insect",
-    "Blue-winged Olive flies",
-    "Bibliography of fly fishing (species related)"
-  ],
-  "max_depth": 1
+  "root": "ecology fly",
+  "nodes": {},
+  "edges": [],
+  "frontier": [],
+  "max_depth": 0
 }

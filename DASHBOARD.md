@@ -1,36 +1,36 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 09:54:03 UTC
+**Dernière mise à jour** : 2026-09-16 10:06:19 UTC
 
 ## Objectif de l'agent
 
-Construire un **graphe de connaissance vivant** sur le sujet racine **« Artificial fly »**.
+Construire un **graphe de connaissance vivant** sur le sujet racine **« ecology fly »**.
 
 Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **0.2** |
-| Concepts traités | 200 | **1** |
-| Qualité moyenne | ≥ 7.5 | **10.0/10** |
+| Score global | maximiser | **0.0** |
+| Concepts traités | 200 | **0** |
+| Qualité moyenne | ≥ 7.5 | **0.0/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **1** |
-| Arêtes du graphe | 9 |
-| Frontière (à explorer) | 9 |
-| Profondeur max | 1 |
-| Score qualité moyen | **10.0/10** |
-| Score objectif (coverage × quality) | **0.2** |
-| Actions dernières 24 h | 16 |
+| Concepts traités (nœuds) | **0** |
+| Arêtes du graphe | 0 |
+| Frontière (à explorer) | 0 |
+| Profondeur max | 0 |
+| Score qualité moyen | **0.0/10** |
+| Score objectif (coverage × quality) | **0.0** |
+| Actions dernières 24 h | 18 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 1 |
+| Excellent (≥ 8) | 0 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -39,13 +39,10 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
-| [[Artificial fly]] | 10.00 | 308 | 6 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T08:59:40  plan            Anus
-2026-09-16T08:59:43  expand          Anus score=10.0
 2026-09-16T09:25:46  skill_reinforc  
 2026-09-16T09:25:47  expand          Fly score=10.0
 2026-09-16T09:40:57  skill_reinforc  
@@ -59,6 +56,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T09:54:00  reset_root      
 2026-09-16T09:54:02  skill_reinforc  
 2026-09-16T09:54:03  expand          Artificial fly score=10.0
+2026-09-16T10:06:18  reset_root      
+2026-09-16T10:06:19  skip            ecology fly
 ```
 
 ## Architecture de l'agent
