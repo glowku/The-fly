@@ -800,5 +800,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:59:40.241533+00:00"
+  },
+  "Mosquito": {
+    "score": 10.0,
+    "metrics": {
+      "words": 281,
+      "sections": 3,
+      "links": 11,
+      "link_list": [
+        "Fly",
+        "Aerodynamics",
+        "Compound eye",
+        "Insect behaviour",
+        "Hover",
+        "Wing",
+        "Halteres",
+        "Insect ecology",
+        "Insect flight",
+        "Palaeoptera",
+        "Evolution"
+      ],
+      "diversity": 0.819,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T23:01:16.954079+00:00"
   }
 }
