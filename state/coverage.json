@@ -8,6 +8,14 @@
         "https://en.wikipedia.org/wiki/Evolution"
       ],
       "updated_at": "2026-09-16T11:06:18.677514+00:00"
+    },
+    "Halteres": {
+      "depth": 2,
+      "created_at": "2026-09-16T13:23:44.670641+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Halteres"
+      ],
+      "updated_at": "2026-09-16T13:23:44.670647+00:00"
     }
   },
   "edges": [
@@ -44,5 +52,5 @@
     "Insecticide",
     "Fly"
   ],
-  "max_depth": 1
+  "max_depth": 2
 }

@@ -35,3 +35,4 @@
 {"ts": "2026-09-16T11:23:47.939792+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "suggested": 8, "added": 8, "titles": ["Fly", "Insect wing", "Halteres", "Compound eye", "Exoskeleton", "Thorax (arthropod anatomy)", "Antenna (zoology)", "Insect morphology"]}
 {"ts": "2026-09-16T12:25:39.365843+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "suggested": 8, "added": 7, "titles": ["Fly", "Insect wing", "Halteres", "Exoskeleton", "Compound eye", "Antenna (zoology)", "Thorax (arthropod anatomy)"]}
 {"ts": "2026-09-16T13:11:42.598203+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 0, "fresh": []}
+{"ts": "2026-09-16T13:23:44.797860+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 0.6, "article": "Halteres"}

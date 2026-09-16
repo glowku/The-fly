@@ -18,5 +18,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T11:06:18.093351+00:00"
+  },
+  "Halteres": {
+    "score": 10.0,
+    "metrics": {
+      "words": 360,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Diptera",
+        "Antenne",
+        "Strepsiptera",
+        "Evolution",
+        "Insecte",
+        "Gyroscope"
+      ],
+      "diversity": 0.708,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T13:23:44.670276+00:00"
   }
 }

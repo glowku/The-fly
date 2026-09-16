@@ -13,7 +13,7 @@
     "articles": []
   },
   "anatomie_insecte": {
-    "level": 0.5,
+    "level": 0.6,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -24,7 +24,10 @@
       "compound eye",
       "exoskeleton"
     ],
-    "articles": []
+    "articles": [
+      "Halteres"
+    ],
+    "last_reinforced": "2026-09-16T13:23:44.797656+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 0.5,
