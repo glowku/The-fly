@@ -653,5 +653,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T22:47:32.487560+00:00"
+  },
+  "Insect": {
+    "score": 8.7,
+    "metrics": {
+      "words": 135,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Insect flight",
+        "Diptera",
+        "Insect"
+      ],
+      "diversity": 0.837,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T22:48:36.545988+00:00"
   }
 }
