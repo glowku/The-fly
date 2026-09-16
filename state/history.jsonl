@@ -25,3 +25,4 @@
 {"ts": "2026-09-16T10:58:42.321250+00:00", "type": "skip", "title": "ecology fly", "reason": "no_summary"}
 {"ts": "2026-09-16T11:04:05.238875+00:00", "type": "reset_root", "root": "ecology fly"}
 {"ts": "2026-09-16T11:04:09.889397+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 0.5, "article": "Ecology"}
+{"ts": "2026-09-16T11:04:11.267629+00:00", "type": "expand", "title": "Ecology", "score": 10.0, "depth": 1, "discovered": 22, "objective": 0.2, "skill": "ecologie"}

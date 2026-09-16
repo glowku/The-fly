@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 10:58:42 UTC
+**Dernière mise à jour** : 2026-09-16 11:04:11 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **0.0** |
-| Concepts traités | 200 | **0** |
-| Qualité moyenne | ≥ 7.5 | **0.0/10** |
+| Score global | maximiser | **0.2** |
+| Concepts traités | 200 | **1** |
+| Qualité moyenne | ≥ 7.5 | **10.0/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **0** |
-| Arêtes du graphe | 0 |
-| Frontière (à explorer) | 0 |
-| Profondeur max | 0 |
-| Score qualité moyen | **0.0/10** |
-| Score objectif (coverage × quality) | **0.0** |
-| Actions dernières 24 h | 24 |
+| Concepts traités (nœuds) | **1** |
+| Arêtes du graphe | 8 |
+| Frontière (à explorer) | 8 |
+| Profondeur max | 1 |
+| Score qualité moyen | **10.0/10** |
+| Score objectif (coverage × quality) | **0.2** |
+| Actions dernières 24 h | 27 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 0 |
+| Excellent (≥ 8) | 1 |
 | Bon (6 – 8) | 0 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -39,13 +39,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Titre | Score | Mots | Liens |
 |-------|-------|------|-------|
+| [[Ecology]] | 10.00 | 281 | 6 |
 
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T09:49:00  skill_reinforc  
-2026-09-16T09:49:02  expand          Fly score=10.0
-2026-09-16T09:53:04  reset_root      
 2026-09-16T09:53:06  skip            Fly away
 2026-09-16T09:54:00  reset_root      
 2026-09-16T09:54:02  skill_reinforc  
@@ -58,6 +56,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-16T10:35:18  skip            insect flying
 2026-09-16T10:58:37  reset_root      
 2026-09-16T10:58:42  skip            ecology fly
+2026-09-16T11:04:05  reset_root      
+2026-09-16T11:04:09  skill_reinforc  
+2026-09-16T11:04:11  expand          Ecology score=10.0
 ```
 
 ## Architecture de l'agent
