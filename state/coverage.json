@@ -144,6 +144,14 @@
         "https://en.wikipedia.org/wiki/Antenna_(zoology)"
       ],
       "updated_at": "2026-09-16T21:39:44.873946+00:00"
+    },
+    "Parasitoid": {
+      "depth": 3,
+      "created_at": "2026-09-16T21:45:39.630178+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Parasitoid"
+      ],
+      "updated_at": "2026-09-16T21:45:39.630184+00:00"
     }
   },
   "edges": [
@@ -237,6 +245,10 @@
     },
     {
       "from": "Antenna (zoology)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Parasitoid",
       "to": "Aquatic insects"
     }
   ],

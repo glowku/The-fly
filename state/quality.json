@@ -368,5 +368,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-16T21:39:44.873484+00:00"
+  },
+  "Parasitoid": {
+    "score": 10.0,
+    "metrics": {
+      "words": 357,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect behaviour",
+        "Wing",
+        "Evolution",
+        "Insect ecology",
+        "Fly",
+        "Aerodynamics"
+      ],
+      "diversity": 0.72,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-16T21:45:39.629715+00:00"
   }
 }
