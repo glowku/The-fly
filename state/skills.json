@@ -134,7 +134,7 @@
     "last_reinforced": "2026-09-17T13:34:42.153290+00:00"
   },
   "evolution": {
-    "level": 2.31,
+    "level": 2.41,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -164,9 +164,10 @@
       "Larva",
       "Allochronic speciation",
       "Apex predator",
-      "Chemical communication in insects"
+      "Chemical communication in insects",
+      "Community (ecology)"
     ],
-    "last_reinforced": "2026-09-17T13:20:02.880600+00:00"
+    "last_reinforced": "2026-09-17T13:36:20.229454+00:00"
   },
   "comportement": {
     "level": 2.39,

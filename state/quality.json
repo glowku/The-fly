@@ -2190,5 +2190,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:34:41.982745+00:00"
+  },
+  "Community (ecology)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 364,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Contingency (evolutionary biology)",
+        "Bayesian inference in phylogeny",
+        "Disease ecology",
+        "Computational phylogenetics",
+        "Convergent evolution",
+        "Agroecology"
+      ],
+      "diversity": 0.762,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:36:20.065982+00:00"
   }
 }
