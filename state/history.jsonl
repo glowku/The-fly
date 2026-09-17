@@ -495,3 +495,4 @@
 {"ts": "2026-09-17T22:21:27.319767+00:00", "type": "plan", "title": "Bat wing development", "action": "branch", "priority": 142.5, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-09-17T22:21:27.616193+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 2.66, "article": "Bat wing development"}
 {"ts": "2026-09-17T22:21:27.616225+00:00", "type": "branch", "title": "Bat wing development", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-09-17T22:32:42.069373+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Madama Butterfly"}
