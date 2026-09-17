@@ -856,6 +856,14 @@
         "https://en.wikipedia.org/wiki/Community_(ecology)"
       ],
       "updated_at": "2026-09-17T13:36:20.066635+00:00"
+    },
+    "Arthropod mouthparts": {
+      "depth": 4,
+      "created_at": "2026-09-17T18:19:02.722539+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arthropod_mouthparts"
+      ],
+      "updated_at": "2026-09-17T18:19:02.722545+00:00"
     }
   },
   "edges": [

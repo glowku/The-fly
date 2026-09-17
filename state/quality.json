@@ -2210,5 +2210,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:36:20.065982+00:00"
+  },
+  "Arthropod mouthparts": {
+    "score": 10.0,
+    "metrics": {
+      "words": 385,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Crustacean",
+        "Arthropod",
+        "Myriapod",
+        "Chelicerate",
+        "Mouthparts",
+        "Insect"
+      ],
+      "diversity": 0.681,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T18:19:02.721656+00:00"
   }
 }
