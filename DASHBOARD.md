@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-16 22:40:42 UTC
+**Dernière mise à jour** : 2026-09-17 03:45:15 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **5.314** |
-| Concepts traités | 200 | **27** |
-| Qualité moyenne | ≥ 7.5 | **9.84/10** |
+| Score global | maximiser | **14.627** |
+| Concepts traités | 200 | **75** |
+| Qualité moyenne | ≥ 7.5 | **9.75/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **27** |
-| Arêtes du graphe | 26 |
-| Frontière (à explorer) | 19 |
-| Profondeur max | 3 |
-| Score qualité moyen | **9.84/10** |
-| Score objectif (coverage × quality) | **5.314** |
-| Actions dernières 24 h | 118 |
+| Concepts traités (nœuds) | **75** |
+| Arêtes du graphe | 74 |
+| Frontière (à explorer) | 22 |
+| Profondeur max | 6 |
+| Score qualité moyen | **9.75/10** |
+| Score objectif (coverage × quality) | **14.627** |
+| Actions dernières 24 h | 276 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 27 |
-| Bon (6 – 8) | 0 |
+| Excellent (≥ 8) | 74 |
+| Bon (6 – 8) | 1 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-16T22:23:35  auto_learn_exp  Angular velocity score=10.0
-2026-09-16T22:23:35  auto_learn      
-2026-09-16T22:28:22  skill_reinforc  
-2026-09-16T22:28:24  auto_learn_exp  Arthropod score=8.0
-2026-09-16T22:28:24  auto_learn      
-2026-09-16T22:34:47  skill_reinforc  
-2026-09-16T22:34:48  auto_learn_exp  Annual Review of Entomology score=10.0
-2026-09-16T22:34:48  auto_learn      
-2026-09-16T22:37:07  skill_reinforc  
-2026-09-16T22:37:09  auto_learn_exp  Mimicry score=10.0
-2026-09-16T22:37:09  auto_learn      
-2026-09-16T22:38:42  skill_reinforc  
-2026-09-16T22:38:44  auto_learn_exp  Arthropod eye score=10.0
-2026-09-16T22:38:44  auto_learn      
-2026-09-16T22:40:16  skill_reinforc  
+2026-09-17T00:29:57  auto_learn      
+2026-09-17T00:31:30  auto_learn      
+2026-09-17T00:33:03  auto_learn      
+2026-09-17T00:34:36  auto_learn      
+2026-09-17T00:36:11  auto_learn      
+2026-09-17T00:37:43  auto_learn      
+2026-09-17T00:39:16  auto_learn      
+2026-09-17T00:40:49  auto_learn      
+2026-09-17T00:42:22  auto_learn      
+2026-09-17T00:43:55  auto_learn      
+2026-09-17T00:45:27  auto_learn      
+2026-09-17T00:47:01  skill_reinforc  
+2026-09-17T00:47:02  auto_learn_exp  Basal (phylogenetics) score=8.7
+2026-09-17T00:47:02  auto_learn      
+2026-09-17T02:32:56  parallel_learn  
 ```
 
 ## Architecture de l'agent
