@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-17 14:43:40 UTC
+**Dernière mise à jour** : 2026-09-17 19:34:51 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **20.971** |
-| Concepts traités | 200 | **107** |
-| Qualité moyenne | ≥ 7.5 | **9.8/10** |
+| Score global | maximiser | **21.971** |
+| Concepts traités | 200 | **112** |
+| Qualité moyenne | ≥ 7.5 | **9.81/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **107** |
-| Arêtes du graphe | 99 |
+| Concepts traités (nœuds) | **112** |
+| Arêtes du graphe | 102 |
 | Frontière (à explorer) | 27 |
 | Profondeur max | 6 |
-| Score qualité moyen | **9.8/10** |
-| Score objectif (coverage × quality) | **20.971** |
-| Actions dernières 24 h | 360 |
+| Score qualité moyen | **9.81/10** |
+| Score objectif (coverage × quality) | **21.971** |
+| Actions dernières 24 h | 401 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 106 |
+| Excellent (≥ 8) | 111 |
 | Bon (6 – 8) | 1 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-17T13:33:02  skill_reinforc  
-2026-09-17T13:33:04  auto_learn_exp  Automimicry score=10.0
-2026-09-17T13:33:05  auto_learn      
-2026-09-17T13:34:42  skill_reinforc  
-2026-09-17T13:34:44  auto_learn_exp  Chemical mimicry score=10.0
-2026-09-17T13:34:44  auto_learn      
-2026-09-17T13:36:20  skill_reinforc  
-2026-09-17T13:36:22  auto_learn_exp  Community (ecology) score=10.0
-2026-09-17T13:36:22  auto_learn      
-2026-09-17T13:37:58  auto_learn      
-2026-09-17T13:39:32  auto_learn      
-2026-09-17T13:41:06  auto_learn      
-2026-09-17T13:42:40  auto_learn      
-2026-09-17T13:44:14  auto_learn      
-2026-09-17T14:33:25  parallel_learn  
+2026-09-17T18:25:25  auto_learn      
+2026-09-17T18:26:59  auto_learn      
+2026-09-17T18:28:32  auto_learn      
+2026-09-17T18:30:06  skill_reinforc  
+2026-09-17T18:30:08  auto_learn_exp  Chewing score=10.0
+2026-09-17T18:30:08  auto_learn      
+2026-09-17T18:31:41  auto_learn      
+2026-09-17T18:33:15  auto_learn      
+2026-09-17T18:34:51  auto_learn      
+2026-09-17T18:36:30  auto_learn      
+2026-09-17T18:38:05  auto_learn      
+2026-09-17T19:10:28  plan            E. coli long-term evolution experiment
+2026-09-17T19:10:29  skill_reinforc  
+2026-09-17T19:10:29  branch          E. coli long-term evolution experiment
+2026-09-17T19:25:48  parallel_learn  
 ```
 
 ## Architecture de l'agent
