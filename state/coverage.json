@@ -800,6 +800,14 @@
         "https://en.wikipedia.org/wiki/Biological_pest_control"
       ],
       "updated_at": "2026-09-17T13:18:22.497771+00:00"
+    },
+    "Chemical communication in insects": {
+      "depth": 5,
+      "created_at": "2026-09-17T13:20:02.657582+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chemical_communication_in_insects"
+      ],
+      "updated_at": "2026-09-17T13:20:02.657585+00:00"
     }
   },
   "edges": [
@@ -1178,6 +1186,10 @@
     {
       "from": "Caddisfly",
       "to": "Apex Predator – Easy Meat"
+    },
+    {
+      "from": "Chemical communication in insects",
+      "to": "Aquatic insects"
     }
   ],
   "frontier": [
@@ -1190,7 +1202,6 @@
     "Blowfly",
     "Alderfly",
     "Adaptive Compliant Wing",
-    "Chemical communication in insects",
     "Behavioral ecology",
     "Arctic ecology",
     "Current research in evolutionary biology",

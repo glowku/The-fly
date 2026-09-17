@@ -2068,5 +2068,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:18:22.497148+00:00"
+  },
+  "Chemical communication in insects": {
+    "score": 10.0,
+    "metrics": {
+      "words": 337,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Butterfly",
+        "Disease ecology",
+        "Adaptation",
+        "Anti-predator adaptation",
+        "Insect mouthparts",
+        "Hoverfly",
+        "Hover (EP)"
+      ],
+      "diversity": 0.698,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:20:02.656935+00:00"
   }
 }
