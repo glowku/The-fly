@@ -407,3 +407,4 @@
 {"ts": "2026-09-17T15:11:26.372544+00:00", "type": "plan", "title": "Evolutionary biology", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-17T15:11:26.505833+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 2.42, "article": "Evolutionary biology"}
 {"ts": "2026-09-17T15:11:26.505897+00:00", "type": "branch", "title": "Evolutionary biology", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-17T16:56:37.182415+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 1, "fresh": ["Arthropod mouthparts"], "parent": "Arthropod", "recent": ["Community (ecology)", "Chemical mimicry", "Automimicry", "Batesian mimicry", "Behavioral ecology", "Aquatic feeding mechanisms", "Chemical communication in insects", "Biological pest control"]}
