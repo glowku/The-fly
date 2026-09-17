@@ -281,3 +281,4 @@
 {"ts": "2026-09-17T05:08:25.420211+00:00", "type": "plan", "title": "Caddisfly", "action": "branch", "priority": 142.5, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-17T05:08:25.755175+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 1.9, "article": "Caddisfly"}
 {"ts": "2026-09-17T05:08:25.755262+00:00", "type": "branch", "title": "Caddisfly", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-17T07:06:39.706256+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.9, "article": "Computational phylogenetics"}

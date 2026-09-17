@@ -85,7 +85,7 @@
     "last_reinforced": "2026-09-17T00:29:55.940389+00:00"
   },
   "ecologie": {
-    "level": 1.8,
+    "level": 1.9,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -108,9 +108,10 @@
       "Insect mouthparts",
       "Autecology",
       "Butterfly",
-      "Disease ecology"
+      "Disease ecology",
+      "Computational phylogenetics"
     ],
-    "last_reinforced": "2026-09-17T00:25:04.596090+00:00"
+    "last_reinforced": "2026-09-17T07:06:39.706021+00:00"
   },
   "evolution": {
     "level": 1.81,

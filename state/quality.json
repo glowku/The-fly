@@ -1559,5 +1559,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T04:47:39.457266+00:00"
+  },
+  "Computational phylogenetics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 317,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Ecology",
+        "Aileron",
+        "Tachinidae",
+        "Insect wing",
+        "Aggressive mimicry",
+        "Insecticide",
+        "Bird wing",
+        "Bat wing development",
+        "Automotive aerodynamics",
+        "Ant mimicry",
+        "Spiracle",
+        "Mosquito"
+      ],
+      "diversity": 0.728,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:06:39.588191+00:00"
   }
 }
