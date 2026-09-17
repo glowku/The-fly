@@ -231,3 +231,4 @@
 {"ts": "2026-09-17T00:10:28.347841+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 1.7, "article": "Butterfly"}
 {"ts": "2026-09-17T00:11:12.232653+00:00", "type": "plan", "title": "Applications of evolution", "action": "branch", "priority": 134.0, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-09-17T00:11:14.450076+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 1.69, "article": "Applications of evolution"}
+{"ts": "2026-09-17T00:11:16.048304+00:00", "type": "expand", "title": "Applications of evolution", "score": 8.7, "depth": 4, "discovered": 22, "objective": 12.757, "skill": "comportement"}
