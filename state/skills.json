@@ -147,7 +147,7 @@
     "last_reinforced": "2026-09-17T07:09:53.786485+00:00"
   },
   "comportement": {
-    "level": 1.89,
+    "level": 1.99,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -172,8 +172,9 @@
       "Allopatric speciation",
       "Ambush predator",
       "Anti-predator adaptation",
-      "Bayesian inference in phylogeny"
+      "Bayesian inference in phylogeny",
+      "Distance matrices in phylogeny"
     ],
-    "last_reinforced": "2026-09-17T04:47:39.530682+00:00"
+    "last_reinforced": "2026-09-17T07:21:07.919978+00:00"
   }
 }

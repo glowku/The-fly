@@ -1641,5 +1641,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:17:57.157702+00:00"
+  },
+  "Distance matrices in phylogeny": {
+    "score": 10.0,
+    "metrics": {
+      "words": 325,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Tachinidae",
+        "Aggressive mimicry",
+        "Insecticide",
+        "Ant mimicry",
+        "Applications of evolution",
+        "Ecology",
+        "Entomology"
+      ],
+      "diversity": 0.714,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:21:07.807608+00:00"
   }
 }
