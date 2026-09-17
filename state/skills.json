@@ -103,7 +103,7 @@
     "last_reinforced": "2026-09-17T15:11:26.505552+00:00"
   },
   "ecologie": {
-    "level": 2.4,
+    "level": 2.5,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -132,9 +132,10 @@
       "Alternative mating strategy",
       "Decomposer",
       "Biological pest control",
-      "Chemical mimicry"
+      "Chemical mimicry",
+      "Cephalothorax"
     ],
-    "last_reinforced": "2026-09-17T13:34:42.153290+00:00"
+    "last_reinforced": "2026-09-17T18:25:23.323571+00:00"
   },
   "evolution": {
     "level": 2.41,

@@ -880,6 +880,14 @@
         "https://en.wikipedia.org/wiki/Arthropod_head_problem"
       ],
       "updated_at": "2026-09-17T18:23:48.092446+00:00"
+    },
+    "Cephalothorax": {
+      "depth": 5,
+      "created_at": "2026-09-17T18:25:23.286568+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cephalothorax"
+      ],
+      "updated_at": "2026-09-17T18:25:23.286574+00:00"
     }
   },
   "edges": [
@@ -1282,6 +1290,10 @@
     {
       "from": "Evolutionary biology",
       "to": "Allopatric speciation"
+    },
+    {
+      "from": "Decomposer",
+      "to": "Cephalothorax"
     }
   ],
   "frontier": [

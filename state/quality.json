@@ -2270,5 +2270,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T18:23:48.091575+00:00"
+  },
+  "Cephalothorax": {
+    "score": 10.0,
+    "metrics": {
+      "words": 320,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Convergent evolution",
+        "Basal (phylogenetics)",
+        "Anti-predator adaptation",
+        "Distance matrices in phylogeny",
+        "Decomposer"
+      ],
+      "diversity": 0.749,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T18:25:23.285635+00:00"
   }
 }
