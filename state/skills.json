@@ -31,7 +31,7 @@
     "last_reinforced": "2026-09-17T21:03:52.439461+00:00"
   },
   "anatomie_insecte": {
-    "level": 2.56,
+    "level": 2.66,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -65,7 +65,7 @@
       "Arthropod mouthparts",
       "Aquatic insect"
     ],
-    "last_reinforced": "2026-09-17T20:56:01.380253+00:00"
+    "last_reinforced": "2026-09-17T22:21:27.616031+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 2.62,

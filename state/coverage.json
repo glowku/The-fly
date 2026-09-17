@@ -1394,6 +1394,18 @@
     {
       "from": "Gene-centered view of evolution",
       "to": "Adaptationism"
+    },
+    {
+      "from": "Bat wing development",
+      "to": "Bird wing"
+    },
+    {
+      "from": "Bat wing development",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Bat wing development",
+      "to": "Adaptation"
     }
   ],
   "frontier": [
