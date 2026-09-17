@@ -1741,5 +1741,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:35:40.159094+00:00"
+  },
+  "Maggot": {
+    "score": 10.0,
+    "metrics": {
+      "words": 293,
+      "sections": 3,
+      "links": 12,
+      "link_list": [
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Tachinidae",
+        "Insect mouthparts",
+        "Hovertrain",
+        "Windhover",
+        "Ant mimicry",
+        "Anthecology",
+        "Arthropod exoskeleton",
+        "Applications of evolution",
+        "Caddisfly",
+        "Ecology",
+        "Entomology"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:42:03.436111+00:00"
   }
 }

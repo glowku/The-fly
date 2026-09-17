@@ -25,7 +25,7 @@
     "last_reinforced": "2026-09-17T07:26:02.184490+00:00"
   },
   "anatomie_insecte": {
-    "level": 1.96,
+    "level": 2.06,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -51,9 +51,10 @@
       "Adaptationism",
       "Bird flight",
       "Basal (phylogenetics)",
-      "Madama Butterfly"
+      "Madama Butterfly",
+      "Maggot"
     ],
-    "last_reinforced": "2026-09-17T07:17:57.307080+00:00"
+    "last_reinforced": "2026-09-17T07:42:03.611573+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 2.02,
