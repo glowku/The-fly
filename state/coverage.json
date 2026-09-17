@@ -864,6 +864,14 @@
         "https://en.wikipedia.org/wiki/Arthropod_mouthparts"
       ],
       "updated_at": "2026-09-17T18:19:02.722545+00:00"
+    },
+    "Cephalon (arthropod head)": {
+      "depth": 4,
+      "created_at": "2026-09-17T18:22:11.443272+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cephalon_(arthropod_head)"
+      ],
+      "updated_at": "2026-09-17T18:22:11.443278+00:00"
     }
   },
   "edges": [

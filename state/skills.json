@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.39,
+    "level": 2.49,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -24,9 +24,10 @@
       "Animal sexual behaviour",
       "Comfort behaviour in animals",
       "Apex Predator – Easy Meat",
-      "Batesian mimicry"
+      "Batesian mimicry",
+      "Cephalon (arthropod head)"
     ],
-    "last_reinforced": "2026-09-17T13:31:25.018978+00:00"
+    "last_reinforced": "2026-09-17T18:22:11.481431+00:00"
   },
   "anatomie_insecte": {
     "level": 2.46,

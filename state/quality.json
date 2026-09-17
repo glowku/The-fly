@@ -2230,5 +2230,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T18:19:02.721656+00:00"
+  },
+  "Cephalon (arthropod head)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 282,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Convergent evolution",
+        "Alternatives to Darwinian evolution",
+        "Basal (phylogenetics)",
+        "Computational phylogenetics",
+        "Madama Butterfly",
+        "Bayesian inference in phylogeny"
+      ],
+      "diversity": 0.794,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T18:22:11.442422+00:00"
   }
 }
