@@ -2328,5 +2328,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T20:56:01.283456+00:00"
+  },
+  "Desert ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 408,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Evolutionary biology",
+        "Basal (phylogenetics)",
+        "Convergent evolution",
+        "Distance matrices in phylogeny",
+        "Computational phylogenetics",
+        "Bayesian inference in phylogeny"
+      ],
+      "diversity": 0.805,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T21:03:52.410979+00:00"
   }
 }
