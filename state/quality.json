@@ -1522,5 +1522,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:29:55.823387+00:00"
+  },
+  "Basal (phylogenetics)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 141,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Exoskeleton",
+        "Insect",
+        "Diptera"
+      ],
+      "diversity": 0.83,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:47:01.011814+00:00"
   }
 }

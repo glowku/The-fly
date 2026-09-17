@@ -23,7 +23,7 @@
     "last_reinforced": "2026-09-17T00:23:25.113113+00:00"
   },
   "anatomie_insecte": {
-    "level": 1.77,
+    "level": 1.86,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -47,9 +47,10 @@
       "Caddisfly",
       "Arthropod exoskeleton",
       "Adaptationism",
-      "Bird flight"
+      "Bird flight",
+      "Basal (phylogenetics)"
     ],
-    "last_reinforced": "2026-09-17T00:18:38.837277+00:00"
+    "last_reinforced": "2026-09-17T00:47:01.179354+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 1.83,
