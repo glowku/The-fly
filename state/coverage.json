@@ -584,6 +584,14 @@
         "https://en.wikipedia.org/wiki/Agroecology"
       ],
       "updated_at": "2026-09-17T00:28:17.498791+00:00"
+    },
+    "Convergent evolution": {
+      "depth": 6,
+      "created_at": "2026-09-17T00:29:55.824159+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Convergent_evolution"
+      ],
+      "updated_at": "2026-09-17T00:29:55.824166+00:00"
     }
   },
   "edges": [
@@ -899,7 +907,6 @@
     "Cooperation (evolution)",
     "Adaptive evolution in the human genome",
     "Desert ecology",
-    "Convergent evolution",
     "E. coli long-term evolution experiment",
     "Evolution of the horse",
     "Gene-centered view of evolution"
