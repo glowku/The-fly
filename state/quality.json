@@ -1680,5 +1680,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:26:02.000438+00:00"
+  },
+  "Evolutionary biology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 393,
+      "sections": 3,
+      "links": 12,
+      "link_list": [
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Aileron",
+        "Tachinidae",
+        "Insect mouthparts",
+        "Bird wing",
+        "Hovertrain",
+        "Bat wing development",
+        "Ant mimicry",
+        "Applications of evolution",
+        "Caddisfly",
+        "Ecology",
+        "Entomology"
+      ],
+      "diversity": 0.719,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:27:38.072944+00:00"
   }
 }
