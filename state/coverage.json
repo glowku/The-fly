@@ -928,6 +928,14 @@
         "https://en.wikipedia.org/wiki/Blue-tailed_damselfly"
       ],
       "updated_at": "2026-09-17T21:10:09.328758+00:00"
+    },
+    "Damselfly": {
+      "depth": 7,
+      "created_at": "2026-09-17T21:11:44.148862+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Damselfly"
+      ],
+      "updated_at": "2026-09-17T21:11:44.148868+00:00"
     }
   },
   "edges": [
@@ -1362,6 +1370,10 @@
     {
       "from": "Foraging",
       "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Convergent evolution",
+      "to": "Damselfly"
     }
   ],
   "frontier": [
@@ -1393,5 +1405,5 @@
     "Acoustic ecology",
     "Aquatic adaptation"
   ],
-  "max_depth": 6
+  "max_depth": 7
 }
