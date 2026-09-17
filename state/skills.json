@@ -106,7 +106,7 @@
     "last_reinforced": "2026-09-17T19:10:29.030869+00:00"
   },
   "ecologie": {
-    "level": 2.5,
+    "level": 2.6,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -136,9 +136,10 @@
       "Decomposer",
       "Biological pest control",
       "Chemical mimicry",
-      "Cephalothorax"
+      "Cephalothorax",
+      "Blue-tailed damselfly"
     ],
-    "last_reinforced": "2026-09-17T18:25:23.323571+00:00"
+    "last_reinforced": "2026-09-17T21:10:09.359190+00:00"
   },
   "evolution": {
     "level": 2.51,
