@@ -1706,5 +1706,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:27:38.072944+00:00"
+  },
+  "Larva": {
+    "score": 10.0,
+    "metrics": {
+      "words": 391,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Entomologie",
+        "Métamorphose",
+        "Cnidaires",
+        "Amphibien",
+        "Évolution",
+        "Écologie"
+      ],
+      "diversity": 0.716,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:34:02.680215+00:00"
   }
 }
