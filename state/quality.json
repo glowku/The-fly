@@ -1424,5 +1424,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:18:38.717411+00:00"
+  },
+  "Contingency (evolutionary biology)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 304,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Insecticide",
+        "Evolution of insects",
+        "Insect morphology",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.81,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:23:24.997729+00:00"
   }
 }

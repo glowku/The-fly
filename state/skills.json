@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.7,
+    "level": 1.8,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -17,9 +17,10 @@
       "Tachinidae",
       "Entomology",
       "Applied ecology",
-      "Adaptation and Natural Selection"
+      "Adaptation and Natural Selection",
+      "Contingency (evolutionary biology)"
     ],
-    "last_reinforced": "2026-09-17T00:08:49.390636+00:00"
+    "last_reinforced": "2026-09-17T00:23:25.113113+00:00"
   },
   "anatomie_insecte": {
     "level": 1.77,
