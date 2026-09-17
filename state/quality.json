@@ -1827,5 +1827,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:46:55.248261+00:00"
+  },
+  "Allochronic speciation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 335,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Autecology",
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Caddisfly",
+        "Entomology",
+        "Adaptation",
+        "Allopatric speciation",
+        "Applied ecology"
+      ],
+      "diversity": 0.716,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T09:02:16.886605+00:00"
   }
 }
