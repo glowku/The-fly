@@ -2006,5 +2006,29 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:13:24.816189+00:00"
+  },
+  "Apex Predator (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 236,
+      "sections": 3,
+      "links": 10,
+      "link_list": [
+        "Allopatric speciation",
+        "Butterfly",
+        "Autecology",
+        "Adaptation",
+        "Hoverfly",
+        "Bird flight",
+        "Applied ecology",
+        "Hover (behaviour)",
+        "Ambush predator",
+        "Adaptationism"
+      ],
+      "diversity": 0.836,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:15:05.006024+00:00"
   }
 }
