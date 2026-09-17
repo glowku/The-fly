@@ -1913,5 +1913,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:01:52.929184+00:00"
+  },
+  "Decomposer": {
+    "score": 10.0,
+    "metrics": {
+      "words": 298,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Allopatric speciation",
+        "Autecology",
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Adaptation",
+        "Anthecology",
+        "Applied ecology"
+      ],
+      "diversity": 0.773,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:03:33.618692+00:00"
   }
 }
