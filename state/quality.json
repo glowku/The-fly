@@ -2250,5 +2250,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T18:22:11.442422+00:00"
+  },
+  "Arthropod head problem": {
+    "score": 10.0,
+    "metrics": {
+      "words": 385,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Convergent evolution",
+        "Contingency (evolutionary biology)",
+        "Basal (phylogenetics)",
+        "Computational phylogenetics",
+        "Distance matrices in phylogeny",
+        "Bayesian inference in phylogeny"
+      ],
+      "diversity": 0.818,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T18:23:48.091575+00:00"
   }
 }
