@@ -2129,5 +2129,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:25:01.570210+00:00"
+  },
+  "Batesian mimicry": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Butterfly",
+        "Anti‑predator adaptation",
+        "Disease ecology",
+        "Adaptation and Natural Selection",
+        "Convergent evolution",
+        "Hoverfly",
+        "Madama Butterfly"
+      ],
+      "diversity": 0.754,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:31:24.859503+00:00"
   }
 }
