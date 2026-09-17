@@ -1623,5 +1623,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:16:21.318389+00:00"
+  },
+  "Madama Butterfly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 370,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Applications of evolution",
+        "Ecology",
+        "Insecticide",
+        "Aggressive mimicry"
+      ],
+      "diversity": 0.787,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:17:57.157702+00:00"
   }
 }
