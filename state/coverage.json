@@ -936,6 +936,14 @@
         "https://en.wikipedia.org/wiki/Damselfly"
       ],
       "updated_at": "2026-09-17T21:11:44.148868+00:00"
+    },
+    "Gene-centered view of evolution": {
+      "depth": 6,
+      "created_at": "2026-09-17T21:33:31.343286+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gene-centered_view_of_evolution"
+      ],
+      "updated_at": "2026-09-17T21:33:31.343292+00:00"
     }
   },
   "edges": [
@@ -1374,6 +1382,18 @@
     {
       "from": "Convergent evolution",
       "to": "Damselfly"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptation and Natural Selection"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptationism"
     }
   ],
   "frontier": [
@@ -1390,7 +1410,6 @@
     "Cooperation (evolution)",
     "Adaptive evolution in the human genome",
     "Evolution of the horse",
-    "Gene-centered view of evolution",
     "Austrobaileyales",
     "Common green bottle fly",
     "Evolution (journal)",
