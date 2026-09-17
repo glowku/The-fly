@@ -1585,5 +1585,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:06:39.588191+00:00"
+  },
+  "Alternatives to Darwinian evolution": {
+    "score": 10.0,
+    "metrics": {
+      "words": 327,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Insect wing",
+        "Aggressive mimicry",
+        "Bird wing",
+        "Bat wing development",
+        "Ecology"
+      ],
+      "diversity": 0.785,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:09:53.657076+00:00"
   }
 }
