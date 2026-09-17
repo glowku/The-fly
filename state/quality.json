@@ -1013,17 +1013,22 @@
     "updated_at": "2026-09-16T23:15:40.443176+00:00"
   },
   "Applications of evolution": {
-    "score": 5.37,
+    "score": 8.7,
     "metrics": {
-      "words": 107,
-      "sections": 1,
-      "links": 0,
-      "link_list": [],
-      "diversity": 0.828,
+      "words": 116,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Applications of evolution",
+        "Diptera",
+        "Fly",
+        "Insect"
+      ],
+      "diversity": 0.872,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-16T23:17:16.161864+00:00"
+    "updated_at": "2026-09-17T00:11:14.189729+00:00"
   },
   "Caddisfly": {
     "score": 10.0,

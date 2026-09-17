@@ -395,11 +395,11 @@
     },
     "Applications of evolution": {
       "depth": 4,
-      "created_at": "2026-09-16T23:17:16.162370+00:00",
+      "created_at": "2026-09-17T00:11:14.447821+00:00",
       "sources": [
         "https://en.wikipedia.org/wiki/Applications_of_evolution"
       ],
-      "updated_at": "2026-09-16T23:17:16.162375+00:00"
+      "updated_at": "2026-09-17T00:11:14.447830+00:00"
     },
     "Caddisfly": {
       "depth": 3,
@@ -774,6 +774,18 @@
     {
       "from": "Anthecology",
       "to": "Butterfly"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Current research in evolutionary biology"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Ecology"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Cooperation (evolution)"
     }
   ],
   "frontier": [
@@ -792,7 +804,9 @@
     "Agroecology",
     "Chemical communication in insects",
     "Behavioral ecology",
-    "Arctic ecology"
+    "Arctic ecology",
+    "Current research in evolutionary biology",
+    "Cooperation (evolution)"
   ],
   "max_depth": 5
 }
