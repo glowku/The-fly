@@ -528,6 +528,14 @@
         "https://en.wikipedia.org/wiki/Ambush_predator"
       ],
       "updated_at": "2026-09-17T00:12:06.972185+00:00"
+    },
+    "Hoverfly": {
+      "depth": 4,
+      "created_at": "2026-09-17T00:15:22.523355+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hoverfly"
+      ],
+      "updated_at": "2026-09-17T00:15:22.523361+00:00"
     }
   },
   "edges": [
@@ -786,6 +794,10 @@
     {
       "from": "Applications of evolution",
       "to": "Cooperation (evolution)"
+    },
+    {
+      "from": "Adaptationism",
+      "to": "Adaptive evolution in the human genome"
     }
   ],
   "frontier": [
@@ -797,7 +809,6 @@
     "Blue-tailed damselfly",
     "Amphibious insect",
     "Abdomen (insect anatomy)",
-    "Hoverfly",
     "Blowfly",
     "Alderfly",
     "Adaptive Compliant Wing",
@@ -806,7 +817,8 @@
     "Behavioral ecology",
     "Arctic ecology",
     "Current research in evolutionary biology",
-    "Cooperation (evolution)"
+    "Cooperation (evolution)",
+    "Adaptive evolution in the human genome"
   ],
   "max_depth": 5
 }
