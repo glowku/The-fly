@@ -1933,5 +1933,32 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:03:33.618692+00:00"
+  },
+  "Apex predator": {
+    "score": 10.0,
+    "metrics": {
+      "words": 288,
+      "sections": 3,
+      "links": 13,
+      "link_list": [
+        "Allopatric speciation",
+        "Arthropod exoskeleton",
+        "Butterfly",
+        "Autecology",
+        "Adaptation",
+        "Agroécologie",
+        "Adaptation and Natural Selection",
+        "Windhover",
+        "Anthecology",
+        "Hover (EP)",
+        "Applied ecology",
+        "Ambush predator",
+        "Adaptationism"
+      ],
+      "diversity": 0.757,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:10:05.876991+00:00"
   }
 }

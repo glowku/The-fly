@@ -752,6 +752,14 @@
         "https://en.wikipedia.org/wiki/Decomposer"
       ],
       "updated_at": "2026-09-17T13:03:33.619260+00:00"
+    },
+    "Apex predator": {
+      "depth": 6,
+      "created_at": "2026-09-17T13:10:05.877579+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Apex_predator"
+      ],
+      "updated_at": "2026-09-17T13:10:05.877583+00:00"
     }
   },
   "edges": [
@@ -1090,6 +1098,18 @@
     {
       "from": "Alternatives to Darwinian evolution",
       "to": "Adaptation"
+    },
+    {
+      "from": "Adaptation",
+      "to": "Adaptation (disambiguation)"
+    },
+    {
+      "from": "Anti-predator adaptation",
+      "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Apex predator"
     }
   ],
   "frontier": [
@@ -1114,7 +1134,9 @@
     "Austrobaileyales",
     "Common green bottle fly",
     "Evolution (journal)",
-    "Evolutionarily stable strategy"
+    "Evolutionarily stable strategy",
+    "Adaptation (disambiguation)",
+    "Abundance (ecology)"
   ],
   "max_depth": 6
 }
