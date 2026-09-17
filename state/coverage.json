@@ -512,6 +512,14 @@
         "https://en.wikipedia.org/wiki/Adaptation_and_Natural_Selection"
       ],
       "updated_at": "2026-09-17T00:08:49.258558+00:00"
+    },
+    "Butterfly": {
+      "depth": 5,
+      "created_at": "2026-09-17T00:10:28.229562+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Butterfly"
+      ],
+      "updated_at": "2026-09-17T00:10:28.229570+00:00"
     }
   },
   "edges": [
@@ -754,6 +762,10 @@
     {
       "from": "Annual Review of Ecology, Evolution, and Systematics",
       "to": "Autecology"
+    },
+    {
+      "from": "Anthecology",
+      "to": "Butterfly"
     }
   ],
   "frontier": [

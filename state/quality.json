@@ -1308,5 +1308,28 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:08:49.257909+00:00"
+  },
+  "Butterfly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 328,
+      "sections": 4,
+      "links": 9,
+      "link_list": [
+        "Housefly",
+        "Mimicry",
+        "Arthropod eye",
+        "Thorax",
+        "Arthropod leg",
+        "Aerodynamic (disambiguation)",
+        "Insect morphology",
+        "Insect",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.763,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:10:28.228828+00:00"
   }
 }
