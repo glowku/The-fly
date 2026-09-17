@@ -688,6 +688,14 @@
         "https://en.wikipedia.org/wiki/Maggot"
       ],
       "updated_at": "2026-09-17T07:42:03.436882+00:00"
+    },
+    "Courtship": {
+      "depth": 5,
+      "created_at": "2026-09-17T07:43:40.185108+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Courtship"
+      ],
+      "updated_at": "2026-09-17T07:43:40.185113+00:00"
     }
   },
   "edges": [
@@ -1002,6 +1010,10 @@
     {
       "from": "Maggot",
       "to": "Common green bottle fly"
+    },
+    {
+      "from": "Aggressive mimicry",
+      "to": "Courtship"
     }
   ],
   "frontier": [

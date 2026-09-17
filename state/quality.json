@@ -1767,5 +1767,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:42:03.436111+00:00"
+  },
+  "Courtship": {
+    "score": 10.0,
+    "metrics": {
+      "words": 312,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Applied ecology",
+        "Ant mimicry",
+        "Applications of evolution",
+        "Ecology",
+        "Entomology"
+      ],
+      "diversity": 0.805,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:43:40.184519+00:00"
   }
 }
