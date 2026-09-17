@@ -488,6 +488,14 @@
         "https://en.wikipedia.org/wiki/Adaptation"
       ],
       "updated_at": "2026-09-17T00:03:49.319199+00:00"
+    },
+    "Hover (EP)": {
+      "depth": 3,
+      "created_at": "2026-09-17T00:05:29.991210+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hover_(EP)"
+      ],
+      "updated_at": "2026-09-17T00:05:29.991217+00:00"
     }
   },
   "edges": [

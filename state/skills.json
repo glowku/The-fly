@@ -48,7 +48,7 @@
     "last_reinforced": "2026-09-16T23:28:27.692006+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 1.55,
+    "level": 1.64,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -71,9 +71,10 @@
       "Automotive aerodynamics",
       "Bird wing",
       "Hovertrain",
-      "Windhover"
+      "Windhover",
+      "Hover (EP)"
     ],
-    "last_reinforced": "2026-09-16T23:26:51.421219+00:00"
+    "last_reinforced": "2026-09-17T00:05:30.118189+00:00"
   },
   "ecologie": {
     "level": 1.6,

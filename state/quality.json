@@ -1248,5 +1248,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:03:49.318344+00:00"
+  },
+  "Hover (EP)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 108,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Hover",
+        "Insect",
+        "Diptera",
+        "Fly"
+      ],
+      "diversity": 0.912,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:05:29.990533+00:00"
   }
 }
