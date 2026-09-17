@@ -1960,5 +1960,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:10:05.876991+00:00"
+  },
+  "Deimatic behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 313,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Allopatric speciation",
+        "Arthropod exoskeleton",
+        "Butterfly",
+        "Autecology",
+        "Adaptation",
+        "Adaptation and Natural Selection",
+        "Windhover",
+        "Hoverfly",
+        "Hover (EP)",
+        "Applied ecology",
+        "Ambush predator",
+        "Adaptationism"
+      ],
+      "diversity": 0.811,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:11:45.061049+00:00"
   }
 }

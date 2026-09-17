@@ -60,7 +60,7 @@
     "last_reinforced": "2026-09-17T11:35:46.060837+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 2.12,
+    "level": 2.22,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -89,9 +89,10 @@
       "Convergent evolution",
       "Hover Chamber Choir",
       "Hovercraft",
-      "Alternatives to Darwinian evolution"
+      "Alternatives to Darwinian evolution",
+      "Deimatic behaviour"
     ],
-    "last_reinforced": "2026-09-17T10:17:15.027662+00:00"
+    "last_reinforced": "2026-09-17T13:11:45.219530+00:00"
   },
   "ecologie": {
     "level": 2.2,

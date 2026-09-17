@@ -760,6 +760,14 @@
         "https://en.wikipedia.org/wiki/Apex_predator"
       ],
       "updated_at": "2026-09-17T13:10:05.877583+00:00"
+    },
+    "Deimatic behaviour": {
+      "depth": 3,
+      "created_at": "2026-09-17T13:11:45.061671+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deimatic_behaviour"
+      ],
+      "updated_at": "2026-09-17T13:11:45.061675+00:00"
     }
   },
   "edges": [
@@ -1110,6 +1118,14 @@
     {
       "from": "Agroecology",
       "to": "Apex predator"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Aquatic feeding mechanisms"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Black fly"
     }
   ],
   "frontier": [
@@ -1136,7 +1152,9 @@
     "Evolution (journal)",
     "Evolutionarily stable strategy",
     "Adaptation (disambiguation)",
-    "Abundance (ecology)"
+    "Abundance (ecology)",
+    "Aquatic feeding mechanisms",
+    "Black fly"
   ],
   "max_depth": 6
 }
