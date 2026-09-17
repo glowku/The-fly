@@ -1442,5 +1442,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:23:24.997729+00:00"
+  },
+  "Disease ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 393,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Housefly",
+        "Insecticide",
+        "Autecology",
+        "Thorax",
+        "Aerodynamic (disambiguation)",
+        "Insect wing",
+        "Aggressive mimicry",
+        "Spiracle",
+        "Mosquito",
+        "Insect morphology",
+        "Insect",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.712,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:25:04.480408+00:00"
   }
 }

@@ -560,6 +560,14 @@
         "https://en.wikipedia.org/wiki/Contingency_(evolutionary_biology)"
       ],
       "updated_at": "2026-09-17T00:23:24.998587+00:00"
+    },
+    "Disease ecology": {
+      "depth": 6,
+      "created_at": "2026-09-17T00:25:04.481226+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disease_ecology"
+      ],
+      "updated_at": "2026-09-17T00:25:04.481232+00:00"
     }
   },
   "edges": [
@@ -830,6 +838,10 @@
     {
       "from": "Insecticide",
       "to": "Contingency (evolutionary biology)"
+    },
+    {
+      "from": "Autecology",
+      "to": "Disease ecology"
     }
   ],
   "frontier": [
@@ -852,5 +864,5 @@
     "Cooperation (evolution)",
     "Adaptive evolution in the human genome"
   ],
-  "max_depth": 5
+  "max_depth": 6
 }

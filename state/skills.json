@@ -82,7 +82,7 @@
     "last_reinforced": "2026-09-17T00:17:01.154322+00:00"
   },
   "ecologie": {
-    "level": 1.7,
+    "level": 1.8,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -104,9 +104,10 @@
       "Drafting (aerodynamics)",
       "Insect mouthparts",
       "Autecology",
-      "Butterfly"
+      "Butterfly",
+      "Disease ecology"
     ],
-    "last_reinforced": "2026-09-17T00:10:28.347573+00:00"
+    "last_reinforced": "2026-09-17T00:25:04.596090+00:00"
   },
   "evolution": {
     "level": 1.72,
