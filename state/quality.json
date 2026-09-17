@@ -1266,5 +1266,27 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:05:29.990533+00:00"
+  },
+  "Adaptationism": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 8,
+      "link_list": [
+        "Mimicry",
+        "Evolution of insects",
+        "Annual Review of Entomology",
+        "Thorax",
+        "Aerodynamic (disambiguation)",
+        "Arthropod",
+        "Insect",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.786,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:07:09.152511+00:00"
   }
 }

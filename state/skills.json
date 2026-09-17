@@ -21,7 +21,7 @@
     "last_reinforced": "2026-09-16T23:30:03.144119+00:00"
   },
   "anatomie_insecte": {
-    "level": 1.58,
+    "level": 1.68,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -43,9 +43,10 @@
       "Spiracle",
       "Bat wing development",
       "Caddisfly",
-      "Arthropod exoskeleton"
+      "Arthropod exoskeleton",
+      "Adaptationism"
     ],
-    "last_reinforced": "2026-09-16T23:28:27.692006+00:00"
+    "last_reinforced": "2026-09-17T00:07:09.286442+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 1.64,
