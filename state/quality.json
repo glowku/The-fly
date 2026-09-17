@@ -1288,5 +1288,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:07:09.152511+00:00"
+  },
+  "Adaptation and Natural Selection": {
+    "score": 10.0,
+    "metrics": {
+      "words": 339,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Housefly",
+        "Mimicry",
+        "Evolution of insects",
+        "Annual Review of Entomology",
+        "Insect",
+        "Behavioral Ecology and Sociobiology"
+      ],
+      "diversity": 0.788,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:08:49.257909+00:00"
   }
 }

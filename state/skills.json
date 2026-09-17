@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.6,
+    "level": 1.7,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -16,9 +16,10 @@
       "Mosquito",
       "Tachinidae",
       "Entomology",
-      "Applied ecology"
+      "Applied ecology",
+      "Adaptation and Natural Selection"
     ],
-    "last_reinforced": "2026-09-16T23:30:03.144119+00:00"
+    "last_reinforced": "2026-09-17T00:08:49.390636+00:00"
   },
   "anatomie_insecte": {
     "level": 1.68,
