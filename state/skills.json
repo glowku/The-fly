@@ -91,7 +91,7 @@
     "last_reinforced": "2026-09-17T07:35:40.277100+00:00"
   },
   "ecologie": {
-    "level": 2.0,
+    "level": 2.1,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -116,9 +116,10 @@
       "Butterfly",
       "Disease ecology",
       "Computational phylogenetics",
-      "Evolutionary biology"
+      "Evolutionary biology",
+      "Alternative mating strategy"
     ],
-    "last_reinforced": "2026-09-17T07:27:38.188426+00:00"
+    "last_reinforced": "2026-09-17T07:46:55.363517+00:00"
   },
   "evolution": {
     "level": 2.01,

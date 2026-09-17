@@ -1807,5 +1807,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:45:17.576069+00:00"
+  },
+  "Alternative mating strategy": {
+    "score": 10.0,
+    "metrics": {
+      "words": 337,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Autecology",
+        "Arthropod exoskeleton",
+        "Allopatric speciation",
+        "Caddisfly",
+        "Applied ecology",
+        "Entomology"
+      ],
+      "diversity": 0.785,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:46:55.248261+00:00"
   }
 }
