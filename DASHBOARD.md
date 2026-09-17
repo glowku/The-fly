@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-17 03:45:15 UTC
+**Dernière mise à jour** : 2026-09-17 09:15:21 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **14.627** |
-| Concepts traités | 200 | **75** |
-| Qualité moyenne | ≥ 7.5 | **9.75/10** |
+| Score global | maximiser | **17.597** |
+| Concepts traités | 200 | **90** |
+| Qualité moyenne | ≥ 7.5 | **9.78/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **75** |
-| Arêtes du graphe | 74 |
+| Concepts traités (nœuds) | **90** |
+| Arêtes du graphe | 83 |
 | Frontière (à explorer) | 22 |
 | Profondeur max | 6 |
-| Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **14.627** |
-| Actions dernières 24 h | 276 |
+| Score qualité moyen | **9.78/10** |
+| Score objectif (coverage × quality) | **17.597** |
+| Actions dernières 24 h | 335 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 74 |
+| Excellent (≥ 8) | 89 |
 | Bon (6 – 8) | 1 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-17T00:29:57  auto_learn      
-2026-09-17T00:31:30  auto_learn      
-2026-09-17T00:33:03  auto_learn      
-2026-09-17T00:34:36  auto_learn      
-2026-09-17T00:36:11  auto_learn      
-2026-09-17T00:37:43  auto_learn      
-2026-09-17T00:39:16  auto_learn      
-2026-09-17T00:40:49  auto_learn      
-2026-09-17T00:42:22  auto_learn      
-2026-09-17T00:43:55  auto_learn      
-2026-09-17T00:45:27  auto_learn      
-2026-09-17T00:47:01  skill_reinforc  
-2026-09-17T00:47:02  auto_learn_exp  Basal (phylogenetics) score=8.7
-2026-09-17T00:47:02  auto_learn      
-2026-09-17T02:32:56  parallel_learn  
+2026-09-17T07:42:05  auto_learn_exp  Maggot score=10.0
+2026-09-17T07:42:05  auto_learn      
+2026-09-17T07:43:40  skill_reinforc  
+2026-09-17T07:43:42  auto_learn_exp  Courtship score=10.0
+2026-09-17T07:43:42  auto_learn      
+2026-09-17T07:45:17  skill_reinforc  
+2026-09-17T07:45:19  auto_learn_exp  Animal sexual behaviour score=10.0
+2026-09-17T07:45:19  auto_learn      
+2026-09-17T07:46:55  skill_reinforc  
+2026-09-17T07:46:57  auto_learn_exp  Alternative mating strategy score=10.0
+2026-09-17T07:46:57  auto_learn      
+2026-09-17T07:48:31  auto_learn      
+2026-09-17T07:50:05  auto_learn      
+2026-09-17T09:02:16  skill_reinforc  
+2026-09-17T09:02:18  parallel_learn  
 ```
 
 ## Architecture de l'agent
