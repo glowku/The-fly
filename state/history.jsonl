@@ -341,3 +341,5 @@
 {"ts": "2026-09-17T10:17:15.027895+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 2.12, "article": "Alternatives to Darwinian evolution"}
 {"ts": "2026-09-17T10:17:15.027958+00:00", "type": "branch", "title": "Alternatives to Darwinian evolution", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-17T11:35:46.061050+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 2.16, "article": "Animal Behaviour (journal)"}
+{"ts": "2026-09-17T11:35:47.770426+00:00", "type": "auto_learn_expand", "title": "Animal Behaviour (journal)", "skill": "anatomie_insecte", "score": 10.0, "objective": 17.797, "parent": "Arthropod"}
+{"ts": "2026-09-17T11:35:47.771390+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Animal Behaviour (journal)"], "parent": "Arthropod", "recent": ["Allochronic speciation", "Alternative mating strategy", "Animal sexual behaviour", "Courtship", "Maggot", "Hovercraft", "Larva", "Evolutionary biology"]}
