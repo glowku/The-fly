@@ -100,7 +100,7 @@
     "last_reinforced": "2026-09-17T13:23:22.010334+00:00"
   },
   "ecologie": {
-    "level": 2.3,
+    "level": 2.4,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -128,9 +128,10 @@
       "Evolutionary biology",
       "Alternative mating strategy",
       "Decomposer",
-      "Biological pest control"
+      "Biological pest control",
+      "Chemical mimicry"
     ],
-    "last_reinforced": "2026-09-17T13:18:22.664897+00:00"
+    "last_reinforced": "2026-09-17T13:34:42.153290+00:00"
   },
   "evolution": {
     "level": 2.31,
