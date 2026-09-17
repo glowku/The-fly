@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.1,
+    "level": 2.2,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -21,9 +21,10 @@
       "Contingency (evolutionary biology)",
       "Caddisfly",
       "E. coli long-term evolution experiment",
-      "Animal sexual behaviour"
+      "Animal sexual behaviour",
+      "Comfort behaviour in animals"
     ],
-    "last_reinforced": "2026-09-17T07:45:17.686877+00:00"
+    "last_reinforced": "2026-09-17T13:01:53.086275+00:00"
   },
   "anatomie_insecte": {
     "level": 2.16,

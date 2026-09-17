@@ -1892,5 +1892,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T12:20:50.251625+00:00"
+  },
+  "Comfort behaviour in animals": {
+    "score": 10.0,
+    "metrics": {
+      "words": 347,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Arthropod exoskeleton",
+        "Autecology",
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Adaptation",
+        "Adaptation and Natural Selection",
+        "Insect mouthparts",
+        "Applied ecology"
+      ],
+      "diversity": 0.703,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:01:52.929184+00:00"
   }
 }

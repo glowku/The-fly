@@ -736,6 +736,14 @@
         "https://en.wikipedia.org/wiki/Animal_behaviour"
       ],
       "updated_at": "2026-09-17T12:20:50.252443+00:00"
+    },
+    "Comfort behaviour in animals": {
+      "depth": 4,
+      "created_at": "2026-09-17T13:01:52.929748+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Comfort_behaviour_in_animals"
+      ],
+      "updated_at": "2026-09-17T13:01:52.929752+00:00"
     }
   },
   "edges": [
