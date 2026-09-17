@@ -1726,5 +1726,20 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:34:02.680215+00:00"
+  },
+  "Hovercraft": {
+    "score": 8.5,
+    "metrics": {
+      "words": 292,
+      "sections": 3,
+      "links": 1,
+      "link_list": [
+        "Hovertrain"
+      ],
+      "diversity": 0.844,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:35:40.159094+00:00"
   }
 }

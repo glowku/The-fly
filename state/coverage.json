@@ -672,6 +672,14 @@
         "https://en.wikipedia.org/wiki/Larva"
       ],
       "updated_at": "2026-09-17T07:34:02.680916+00:00"
+    },
+    "Hovercraft": {
+      "depth": 3,
+      "created_at": "2026-09-17T07:35:40.159698+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hovercraft"
+      ],
+      "updated_at": "2026-09-17T07:35:40.159704+00:00"
     }
   },
   "edges": [

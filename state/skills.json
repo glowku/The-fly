@@ -56,7 +56,7 @@
     "last_reinforced": "2026-09-17T07:17:57.307080+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 1.93,
+    "level": 2.02,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -83,9 +83,10 @@
       "Hover (EP)",
       "Hover (behaviour)",
       "Convergent evolution",
-      "Hover Chamber Choir"
+      "Hover Chamber Choir",
+      "Hovercraft"
     ],
-    "last_reinforced": "2026-09-17T07:16:21.439366+00:00"
+    "last_reinforced": "2026-09-17T07:35:40.277100+00:00"
   },
   "ecologie": {
     "level": 2.0,
