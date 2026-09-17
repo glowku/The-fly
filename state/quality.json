@@ -1662,5 +1662,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T07:21:07.807608+00:00"
+  },
+  "E. coli long-term evolution experiment": {
+    "score": 10.0,
+    "metrics": {
+      "words": 359,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Applications of evolution",
+        "Insect mouthparts",
+        "Ecology",
+        "Entomology"
+      ],
+      "diversity": 0.79,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T07:26:02.000438+00:00"
   }
 }
