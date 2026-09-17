@@ -1,18 +1,24 @@
 # Adaptation
 
-En biologie, l’adaptation désigne trois concepts étroitement liés. D’une part, il s’agit du **processus évolutif dynamique** de sélection naturelle qui ajuste les organismes à leur environnement, améliorant ainsi leur fitness évolutif. D’autre part, l’adaptation est l’état atteint par une population lorsqu’elle a traversé ce processus. Enfin, elle se manifeste sous forme de trait phénotypique ou de caractéristique adaptative, fonctionnellement utile à chaque individu et conservé par sélection naturelle.
+En biologie, l’adaptation désigne trois concepts étroitement liés. Elle représente d’abord le processus évolutif dynamique de sélection naturelle qui ajuste les organismes à leur environnement, augmentant ainsi leur fitness évolutif. Ensuite, elle constitue l’état atteint par une population au cours de ce processus. Enfin, elle correspond à un trait phénotypique ou à un trait adaptatif, fonctionnel chez chaque individu, qui est conservé et a évolué grâce à la sélection naturelle. Ce concept est relié aux **Applications of evolution** dans le graphe.
 
-## Processus d’adaptation
+## Processus évolutif
 
-Le mécanisme de sélection naturelle repose sur la variation génétique, la reproduction et la survie différenciée. Les individus possédant des caractères favorables à leur milieu ont plus de chances de transmettre leurs gènes. Au fil des générations, ces caractères deviennent fréquents dans la population, créant un **adaptation** à l’environnement. Ce processus est illustré par l’évolution des ailes des [[Neoptera]] qui ont permis l’essor du vol, ou encore par la diversification des [[Exoskeleton]] chez les arthropodes, dont les pattes ont évolué pour des fonctions variées (marcher, grimper, nager).
+L’adaptation est le mécanisme par lequel la sélection naturelle favorise les variations génétiques qui améliorent la survie et la reproduction. Les populations qui développent des caractéristiques mieux adaptées à leur niche écologique gagnent en fitness, ce qui conduit à une augmentation de la fréquence de ces traits dans la génération suivante. Ce processus est illustré par des phénomènes tels que la radiation adaptative, où un groupe d’espèces diverge rapidement pour exploiter de nouvelles ressources ou habitats.
 
-## Manifestations adaptatives
+## État de la population
 
-Les adaptations se traduisent par des traits fonctionnels tels que la capacité de pollinisation chez les [[Pollination]] des plantes, le comportement de [[Swarm behaviour]] chez les insectes sociaux, ou encore la spécialisation des [[Antenna (zoology)]] pour la détection de signaux chimiques. Chez les parasites, l’adaptation se manifeste par la capacité des [[Parasitoid]] à infiltrer les hôtes, tandis que les stratégies de [[Mating]] (par exemple, les appels sonores ou les danses) favorisent la reproduction. La vitesse angulaire des ailes, mesurée en [[Angular velocity]], est un exemple de caractéristique adaptative qui optimise l’efficacité du vol.
+Au cours de l’évolution, une population peut atteindre un état d’adaptation lorsqu’elle possède un ensemble de traits qui maximisent son fitness dans un environnement donné. Cet état n’est pas nécessairement permanent ; il peut évoluer si les conditions environnementales changent. Les populations adaptatives sont souvent étudiées dans le cadre de la biologie comportementale et de la sociobiologie, où les interactions sociales et les stratégies de survie sont analysées.
 
-## Adaptation et diversification
+## Traits adaptatifs
 
-Lorsque de nouvelles niches écologiques apparaissent, les populations peuvent subir une **radiation adaptative**, générant une diversité de formes et de fonctions. Cette diversification est souvent observée chez les arthropodes, dont les pattes ont évolué pour des rôles spécifiques (capture, locomotion, défense). L’adaptation des pattes arthropodes illustre la façon dont un trait peut se spécialiser pour répondre à des pressions environnementales variées.
+Les traits adaptatifs sont des caractéristiques phénotypiques qui jouent un rôle fonctionnel dans la survie d’un individu. Parmi les exemples bien documentés, on trouve l’œil arthropode, la structure du thorax, ou encore les membres arthropodes, qui permettent des mouvements précis et une locomotion efficace. Des adaptations telles que le mimétisme ou la présence d’ailes (alate) chez les insectes témoignent de la diversité des stratégies évolutives. Les groupes d’insectes primitifs, comme les Apterygota, illustrent des adaptations plus anciennes, tandis que l’évolution des insectes dans son ensemble montre comment les traits adaptatifs se sont multipliés et raffinés.
 
 ## Voir aussi
-[[Neoptera]] [[Exoskeleton]] [[Pollination]] [[Swarm behaviour]] [[Flight]] [[Antenna (zoology)]] [[Parasitoid]] [[Mating]] [[Adaptive radiation]] [[Angular velocity]] [[Arthropod]]
+
+- [[Adaptive radiation]]
+- [[Mimicry]]
+- [[Arthropod eye]]
+- [[Arthropod leg]]
+- [[Evolution of insects]]
+- [[Behavioral Ecology and Sociobiology]]

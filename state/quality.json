@@ -1228,5 +1228,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:02:10.049161+00:00"
+  },
+  "Adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 358,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Mimicry",
+        "Adaptive radiation",
+        "Evolution of insects",
+        "Arthropod leg",
+        "Behavioral Ecology and Sociobiology",
+        "Arthropod eye"
+      ],
+      "diversity": 0.728,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:03:49.318344+00:00"
   }
 }
