@@ -1486,5 +1486,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:26:40.649266+00:00"
+  },
+  "Agroecology": {
+    "score": 8.7,
+    "metrics": {
+      "words": 152,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Ecology",
+        "Fly",
+        "Insect",
+        "Diptera"
+      ],
+      "diversity": 0.907,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:28:17.497962+00:00"
   }
 }
