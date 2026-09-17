@@ -2109,5 +2109,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:23:21.846302+00:00"
+  },
+  "Behavioral ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 354,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Disease ecology",
+        "Adaptationism",
+        "Adaptation and Natural Selection",
+        "Anti-predator adaptation",
+        "Convergent evolution",
+        "Agroecology"
+      ],
+      "diversity": 0.763,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:25:01.570210+00:00"
   }
 }

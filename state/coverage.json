@@ -816,6 +816,14 @@
         "https://en.wikipedia.org/wiki/Aquatic_feeding_mechanisms"
       ],
       "updated_at": "2026-09-17T13:23:21.846959+00:00"
+    },
+    "Behavioral ecology": {
+      "depth": 5,
+      "created_at": "2026-09-17T13:25:01.570856+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_ecology"
+      ],
+      "updated_at": "2026-09-17T13:25:01.570860+00:00"
     }
   },
   "edges": [
@@ -1202,6 +1210,10 @@
     {
       "from": "Hover",
       "to": "Helicopter flight controls"
+    },
+    {
+      "from": "Behavioral ecology",
+      "to": "Abundance (ecology)"
     }
   ],
   "frontier": [
@@ -1214,7 +1226,6 @@
     "Blowfly",
     "Alderfly",
     "Adaptive Compliant Wing",
-    "Behavioral ecology",
     "Arctic ecology",
     "Current research in evolutionary biology",
     "Cooperation (evolution)",
