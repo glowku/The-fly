@@ -168,7 +168,7 @@
     "last_reinforced": "2026-09-17T13:20:02.880600+00:00"
   },
   "comportement": {
-    "level": 2.29,
+    "level": 2.39,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -197,8 +197,9 @@
       "Distance matrices in phylogeny",
       "Courtship",
       "Animal behaviour",
-      "Apex Predator (disambiguation)"
+      "Apex Predator (disambiguation)",
+      "Automimicry"
     ],
-    "last_reinforced": "2026-09-17T13:15:05.235269+00:00"
+    "last_reinforced": "2026-09-17T13:33:02.533340+00:00"
   }
 }

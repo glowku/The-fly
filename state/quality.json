@@ -2150,5 +2150,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:31:24.859503+00:00"
+  },
+  "Automimicry": {
+    "score": 10.0,
+    "metrics": {
+      "words": 336,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Butterfly",
+        "Disease ecology",
+        "Anti-predator adaptation",
+        "Convergent evolution",
+        "Hoverfly",
+        "Bird flight"
+      ],
+      "diversity": 0.822,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:33:02.316566+00:00"
   }
 }
