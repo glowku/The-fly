@@ -1468,5 +1468,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:25:04.480408+00:00"
+  },
+  "Anti-predator adaptation": {
+    "score": 8.7,
+    "metrics": {
+      "words": 121,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Fly",
+        "Diptera",
+        "Insect",
+        "Aggressive mimicry"
+      ],
+      "diversity": 0.898,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:26:40.649266+00:00"
   }
 }
