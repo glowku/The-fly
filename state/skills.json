@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 1.8,
+    "level": 1.9,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -18,9 +18,10 @@
       "Entomology",
       "Applied ecology",
       "Adaptation and Natural Selection",
-      "Contingency (evolutionary biology)"
+      "Contingency (evolutionary biology)",
+      "Caddisfly"
     ],
-    "last_reinforced": "2026-09-17T00:23:25.113113+00:00"
+    "last_reinforced": "2026-09-17T05:08:25.754898+00:00"
   },
   "anatomie_insecte": {
     "level": 1.86,
