@@ -178,7 +178,7 @@
     "last_reinforced": "2026-09-17T18:30:06.798753+00:00"
   },
   "comportement": {
-    "level": 2.49,
+    "level": 2.59,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -209,8 +209,9 @@
       "Animal behaviour",
       "Apex Predator (disambiguation)",
       "Automimicry",
-      "Arthropod head problem"
+      "Arthropod head problem",
+      "Foraging"
     ],
-    "last_reinforced": "2026-09-17T18:23:48.147707+00:00"
+    "last_reinforced": "2026-09-17T21:07:00.761396+00:00"
   }
 }

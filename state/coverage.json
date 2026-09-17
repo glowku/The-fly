@@ -912,6 +912,14 @@
         "https://en.wikipedia.org/wiki/Desert_ecology"
       ],
       "updated_at": "2026-09-17T21:03:52.411911+00:00"
+    },
+    "Foraging": {
+      "depth": 5,
+      "created_at": "2026-09-17T21:07:00.556589+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Foraging"
+      ],
+      "updated_at": "2026-09-17T21:07:00.556595+00:00"
     }
   },
   "edges": [
@@ -1338,6 +1346,14 @@
     {
       "from": "Aquatic insect",
       "to": "Aquatic adaptation"
+    },
+    {
+      "from": "Foraging",
+      "to": "Anti-predator adaptation"
+    },
+    {
+      "from": "Foraging",
+      "to": "Abundance (ecology)"
     }
   ],
   "frontier": [
