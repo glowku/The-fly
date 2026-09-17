@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-17 09:15:21 UTC
+**Dernière mise à jour** : 2026-09-17 14:43:40 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **17.597** |
-| Concepts traités | 200 | **90** |
-| Qualité moyenne | ≥ 7.5 | **9.78/10** |
+| Score global | maximiser | **20.971** |
+| Concepts traités | 200 | **107** |
+| Qualité moyenne | ≥ 7.5 | **9.8/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **90** |
-| Arêtes du graphe | 83 |
-| Frontière (à explorer) | 22 |
+| Concepts traités (nœuds) | **107** |
+| Arêtes du graphe | 99 |
+| Frontière (à explorer) | 27 |
 | Profondeur max | 6 |
-| Score qualité moyen | **9.78/10** |
-| Score objectif (coverage × quality) | **17.597** |
-| Actions dernières 24 h | 335 |
+| Score qualité moyen | **9.8/10** |
+| Score objectif (coverage × quality) | **20.971** |
+| Actions dernières 24 h | 360 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 89 |
+| Excellent (≥ 8) | 106 |
 | Bon (6 – 8) | 1 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-17T07:42:05  auto_learn_exp  Maggot score=10.0
-2026-09-17T07:42:05  auto_learn      
-2026-09-17T07:43:40  skill_reinforc  
-2026-09-17T07:43:42  auto_learn_exp  Courtship score=10.0
-2026-09-17T07:43:42  auto_learn      
-2026-09-17T07:45:17  skill_reinforc  
-2026-09-17T07:45:19  auto_learn_exp  Animal sexual behaviour score=10.0
-2026-09-17T07:45:19  auto_learn      
-2026-09-17T07:46:55  skill_reinforc  
-2026-09-17T07:46:57  auto_learn_exp  Alternative mating strategy score=10.0
-2026-09-17T07:46:57  auto_learn      
-2026-09-17T07:48:31  auto_learn      
-2026-09-17T07:50:05  auto_learn      
-2026-09-17T09:02:16  skill_reinforc  
-2026-09-17T09:02:18  parallel_learn  
+2026-09-17T13:33:02  skill_reinforc  
+2026-09-17T13:33:04  auto_learn_exp  Automimicry score=10.0
+2026-09-17T13:33:05  auto_learn      
+2026-09-17T13:34:42  skill_reinforc  
+2026-09-17T13:34:44  auto_learn_exp  Chemical mimicry score=10.0
+2026-09-17T13:34:44  auto_learn      
+2026-09-17T13:36:20  skill_reinforc  
+2026-09-17T13:36:22  auto_learn_exp  Community (ecology) score=10.0
+2026-09-17T13:36:22  auto_learn      
+2026-09-17T13:37:58  auto_learn      
+2026-09-17T13:39:32  auto_learn      
+2026-09-17T13:41:06  auto_learn      
+2026-09-17T13:42:40  auto_learn      
+2026-09-17T13:44:14  auto_learn      
+2026-09-17T14:33:25  parallel_learn  
 ```
 
 ## Architecture de l'agent
