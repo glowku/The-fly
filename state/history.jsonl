@@ -340,3 +340,4 @@
 {"ts": "2026-09-17T10:17:14.853691+00:00", "type": "plan", "title": "Alternatives to Darwinian evolution", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-17T10:17:15.027895+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 2.12, "article": "Alternatives to Darwinian evolution"}
 {"ts": "2026-09-17T10:17:15.027958+00:00", "type": "branch", "title": "Alternatives to Darwinian evolution", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-17T11:35:46.061050+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 2.16, "article": "Animal Behaviour (journal)"}

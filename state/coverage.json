@@ -720,6 +720,14 @@
         "https://en.wikipedia.org/wiki/Allochronic_speciation"
       ],
       "updated_at": "2026-09-17T09:02:16.887522+00:00"
+    },
+    "Animal Behaviour (journal)": {
+      "depth": 4,
+      "created_at": "2026-09-17T11:35:46.011734+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Animal_Behaviour_(journal)"
+      ],
+      "updated_at": "2026-09-17T11:35:46.011741+00:00"
     }
   },
   "edges": [

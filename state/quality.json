@@ -1848,5 +1848,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T09:02:16.886605+00:00"
+  },
+  "Animal Behaviour (journal)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 350,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Allopatric speciation",
+        "Entomology",
+        "Adaptation",
+        "Autecology",
+        "Arthropod exoskeleton",
+        "Applied ecology"
+      ],
+      "diversity": 0.718,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T11:35:46.011014+00:00"
   }
 }
