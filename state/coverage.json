@@ -1034,6 +1034,14 @@
     {
       "from": "Larva",
       "to": "Alternative mating strategy"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Evolution (journal)"
+    },
+    {
+      "from": "Contingency (evolutionary biology)",
+      "to": "Evolutionarily stable strategy"
     }
   ],
   "frontier": [
@@ -1056,7 +1064,9 @@
     "Evolution of the horse",
     "Gene-centered view of evolution",
     "Austrobaileyales",
-    "Common green bottle fly"
+    "Common green bottle fly",
+    "Evolution (journal)",
+    "Evolutionarily stable strategy"
   ],
   "max_depth": 6
 }
