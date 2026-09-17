@@ -1868,5 +1868,29 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T11:35:46.011014+00:00"
+  },
+  "Animal behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 399,
+      "sections": 4,
+      "links": 10,
+      "link_list": [
+        "Anthecology",
+        "Adaptation",
+        "Autecology",
+        "Adaptationism",
+        "Windhover",
+        "Applied ecology",
+        "Allopatric speciation",
+        "Annual Review of Ecology, Evolution, and Systematics",
+        "Arthropod exoskeleton",
+        "Entomology"
+      ],
+      "diversity": 0.763,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T12:20:50.251625+00:00"
   }
 }

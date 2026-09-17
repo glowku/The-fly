@@ -157,7 +157,7 @@
     "last_reinforced": "2026-09-17T09:02:16.939480+00:00"
   },
   "comportement": {
-    "level": 2.09,
+    "level": 2.19,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -184,8 +184,9 @@
       "Anti-predator adaptation",
       "Bayesian inference in phylogeny",
       "Distance matrices in phylogeny",
-      "Courtship"
+      "Courtship",
+      "Animal behaviour"
     ],
-    "last_reinforced": "2026-09-17T07:43:40.394223+00:00"
+    "last_reinforced": "2026-09-17T12:20:50.416554+00:00"
   }
 }
