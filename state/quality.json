@@ -2048,5 +2048,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:16:44.597661+00:00"
+  },
+  "Biological pest control": {
+    "score": 10.0,
+    "metrics": {
+      "words": 381,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Allopatric speciation",
+        "Disease ecology",
+        "Adaptation",
+        "Hoverfly",
+        "Integrated pest management",
+        "Ambush predator"
+      ],
+      "diversity": 0.77,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:18:22.497148+00:00"
   }
 }

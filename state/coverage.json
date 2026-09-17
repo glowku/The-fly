@@ -792,6 +792,14 @@
         "https://en.wikipedia.org/wiki/Apex_Predator_%E2%80%93_Easy_Meat"
       ],
       "updated_at": "2026-09-17T13:16:44.598241+00:00"
+    },
+    "Biological pest control": {
+      "depth": 5,
+      "created_at": "2026-09-17T13:18:22.497768+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Biological_pest_control"
+      ],
+      "updated_at": "2026-09-17T13:18:22.497771+00:00"
     }
   },
   "edges": [
