@@ -624,6 +624,14 @@
         "https://en.wikipedia.org/wiki/Alternatives_to_Darwinian_evolution"
       ],
       "updated_at": "2026-09-17T07:09:53.657782+00:00"
+    },
+    "Hover Chamber Choir": {
+      "depth": 3,
+      "created_at": "2026-09-17T07:16:21.319215+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hover_Chamber_Choir"
+      ],
+      "updated_at": "2026-09-17T07:16:21.319223+00:00"
     }
   },
   "edges": [
