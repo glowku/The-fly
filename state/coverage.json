@@ -600,6 +600,14 @@
         "https://en.wikipedia.org/wiki/Basal_(phylogenetics)"
       ],
       "updated_at": "2026-09-17T00:47:01.012588+00:00"
+    },
+    "Bayesian inference in phylogeny": {
+      "depth": 5,
+      "created_at": "2026-09-17T04:47:39.458284+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny"
+      ],
+      "updated_at": "2026-09-17T04:47:39.458293+00:00"
     }
   },
   "edges": [

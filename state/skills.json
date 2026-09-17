@@ -142,7 +142,7 @@
     "last_reinforced": "2026-09-17T00:28:17.662314+00:00"
   },
   "comportement": {
-    "level": 1.79,
+    "level": 1.89,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -166,8 +166,9 @@
       "Annual Review of Ecology, Evolution, and Systematics",
       "Allopatric speciation",
       "Ambush predator",
-      "Anti-predator adaptation"
+      "Anti-predator adaptation",
+      "Bayesian inference in phylogeny"
     ],
-    "last_reinforced": "2026-09-17T00:26:40.764214+00:00"
+    "last_reinforced": "2026-09-17T04:47:39.530682+00:00"
   }
 }
