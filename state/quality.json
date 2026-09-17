@@ -2030,5 +2030,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:15:05.006024+00:00"
+  },
+  "Apex Predator – Easy Meat": {
+    "score": 8.7,
+    "metrics": {
+      "words": 168,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Caddisfly",
+        "Fly",
+        "Diptera",
+        "Insect"
+      ],
+      "diversity": 0.845,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:16:44.597661+00:00"
   }
 }

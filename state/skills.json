@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.2,
+    "level": 2.29,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -22,9 +22,10 @@
       "Caddisfly",
       "E. coli long-term evolution experiment",
       "Animal sexual behaviour",
-      "Comfort behaviour in animals"
+      "Comfort behaviour in animals",
+      "Apex Predator – Easy Meat"
     ],
-    "last_reinforced": "2026-09-17T13:01:53.086275+00:00"
+    "last_reinforced": "2026-09-17T13:16:44.760459+00:00"
   },
   "anatomie_insecte": {
     "level": 2.26,
