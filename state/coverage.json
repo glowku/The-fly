@@ -896,6 +896,14 @@
         "https://en.wikipedia.org/wiki/Chewing"
       ],
       "updated_at": "2026-09-17T18:30:06.758814+00:00"
+    },
+    "Aquatic insect": {
+      "depth": 4,
+      "created_at": "2026-09-17T20:56:01.284430+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aquatic_insect"
+      ],
+      "updated_at": "2026-09-17T20:56:01.284436+00:00"
     }
   },
   "edges": [
@@ -1306,6 +1314,22 @@
     {
       "from": "Distance matrices in phylogeny",
       "to": "Chewing"
+    },
+    {
+      "from": "Arthropod",
+      "to": "Aquatic insect"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Acoustic ecology"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Aquatic adaptation"
     }
   ],
   "frontier": [
@@ -1335,7 +1359,9 @@
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",
     "Off Color Brewing",
-    "Helicopter flight controls"
+    "Helicopter flight controls",
+    "Acoustic ecology",
+    "Aquatic adaptation"
   ],
   "max_depth": 6
 }

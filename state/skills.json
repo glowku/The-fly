@@ -30,7 +30,7 @@
     "last_reinforced": "2026-09-17T18:22:11.481431+00:00"
   },
   "anatomie_insecte": {
-    "level": 2.46,
+    "level": 2.56,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -61,9 +61,10 @@
       "Animal Behaviour (journal)",
       "Agonistic behaviour",
       "Behavioral ecology",
-      "Arthropod mouthparts"
+      "Arthropod mouthparts",
+      "Aquatic insect"
     ],
-    "last_reinforced": "2026-09-17T18:19:02.806807+00:00"
+    "last_reinforced": "2026-09-17T20:56:01.380253+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 2.52,
