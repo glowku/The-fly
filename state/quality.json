@@ -2446,5 +2446,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T23:54:02.061874+00:00"
+  },
+  "Society for the Study of Evolution": {
+    "score": 10.0,
+    "metrics": {
+      "words": 350,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Animal sexual behaviour",
+        "E. coli long-term evolution experiment",
+        "Allochronic speciation",
+        "Distance matrices in phylogeny",
+        "Animal Behaviour (journal)",
+        "Evolutionary biology"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T23:55:39.846994+00:00"
   }
 }

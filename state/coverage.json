@@ -952,6 +952,14 @@
         "https://en.wikipedia.org/wiki/Evolution_(journal)"
       ],
       "updated_at": "2026-09-17T23:54:02.063265+00:00"
+    },
+    "Society for the Study of Evolution": {
+      "depth": 5,
+      "created_at": "2026-09-17T23:55:39.848047+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Society_for_the_Study_of_Evolution"
+      ],
+      "updated_at": "2026-09-17T23:55:39.848054+00:00"
     }
   },
   "edges": [
@@ -1414,6 +1422,10 @@
     {
       "from": "Bat wing development",
       "to": "Adaptation"
+    },
+    {
+      "from": "Ant mimicry",
+      "to": "Society for the Study of Evolution"
     }
   ],
   "frontier": [

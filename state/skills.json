@@ -182,7 +182,7 @@
     "last_reinforced": "2026-09-17T21:11:44.177264+00:00"
   },
   "comportement": {
-    "level": 2.59,
+    "level": 2.69,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -214,8 +214,9 @@
       "Apex Predator (disambiguation)",
       "Automimicry",
       "Arthropod head problem",
-      "Foraging"
+      "Foraging",
+      "Society for the Study of Evolution"
     ],
-    "last_reinforced": "2026-09-17T21:07:00.761396+00:00"
+    "last_reinforced": "2026-09-17T23:55:39.975576+00:00"
   }
 }
