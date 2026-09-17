@@ -1986,5 +1986,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T13:11:45.061049+00:00"
+  },
+  "Agonistic behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 319,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Allopatric speciation",
+        "Arthropod exoskeleton",
+        "Autecology",
+        "Adaptation",
+        "Applied ecology",
+        "Hover (behaviour)"
+      ],
+      "diversity": 0.772,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T13:13:24.816189+00:00"
   }
 }
