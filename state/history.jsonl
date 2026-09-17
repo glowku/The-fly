@@ -450,3 +450,4 @@
 {"ts": "2026-09-17T19:10:28.707633+00:00", "type": "plan", "title": "E. coli long-term evolution experiment", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-17T19:10:29.031177+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 2.52, "article": "E. coli long-term evolution experiment"}
 {"ts": "2026-09-17T19:10:29.031236+00:00", "type": "branch", "title": "E. coli long-term evolution experiment", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-17T19:25:48.596376+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Arthropod"}
