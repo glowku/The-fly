@@ -888,6 +888,14 @@
         "https://en.wikipedia.org/wiki/Cephalothorax"
       ],
       "updated_at": "2026-09-17T18:25:23.286574+00:00"
+    },
+    "Chewing": {
+      "depth": 6,
+      "created_at": "2026-09-17T18:30:06.758808+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chewing"
+      ],
+      "updated_at": "2026-09-17T18:30:06.758814+00:00"
     }
   },
   "edges": [
@@ -1294,6 +1302,10 @@
     {
       "from": "Decomposer",
       "to": "Cephalothorax"
+    },
+    {
+      "from": "Distance matrices in phylogeny",
+      "to": "Chewing"
     }
   ],
   "frontier": [

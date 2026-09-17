@@ -2289,5 +2289,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T18:25:23.285635+00:00"
+  },
+  "Chewing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 337,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Convergent evolution",
+        "Basal (phylogenetics)",
+        "Evolutionary biology",
+        "Distance matrices in phylogeny",
+        "Bayesian inference in phylogeny"
+      ],
+      "diversity": 0.783,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T18:30:06.757914+00:00"
   }
 }
