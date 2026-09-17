@@ -134,7 +134,7 @@
     "last_reinforced": "2026-09-17T00:03:49.434834+00:00"
   },
   "comportement": {
-    "level": 1.6,
+    "level": 1.7,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -156,8 +156,9 @@
       "Aggressive mimicry",
       "Ant mimicry",
       "Annual Review of Ecology, Evolution, and Systematics",
-      "Allopatric speciation"
+      "Allopatric speciation",
+      "Ambush predator"
     ],
-    "last_reinforced": "2026-09-17T00:02:10.164810+00:00"
+    "last_reinforced": "2026-09-17T00:12:07.112534+00:00"
   }
 }

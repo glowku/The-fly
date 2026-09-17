@@ -1331,5 +1331,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T00:10:28.228828+00:00"
+  },
+  "Ambush predator": {
+    "score": 10.0,
+    "metrics": {
+      "words": 311,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Housefly",
+        "Evolution of insects",
+        "Apterygota",
+        "Behavioral Ecology and Sociobiology",
+        "Insect",
+        "Arthropod eye"
+      ],
+      "diversity": 0.808,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T00:12:06.971574+00:00"
   }
 }
