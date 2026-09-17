@@ -2428,5 +2428,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T21:33:31.342290+00:00"
+  },
+  "Evolution (journal)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 135,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Insect",
+        "Diptera",
+        "Fly",
+        "Hoverfly"
+      ],
+      "diversity": 0.886,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-17T23:54:02.061874+00:00"
   }
 }

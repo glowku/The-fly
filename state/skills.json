@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.59,
+    "level": 2.68,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -26,9 +26,10 @@
       "Apex Predator – Easy Meat",
       "Batesian mimicry",
       "Cephalon (arthropod head)",
-      "Desert ecology"
+      "Desert ecology",
+      "Evolution (journal)"
     ],
-    "last_reinforced": "2026-09-17T21:03:52.439461+00:00"
+    "last_reinforced": "2026-09-17T23:54:02.256525+00:00"
   },
   "anatomie_insecte": {
     "level": 2.66,
