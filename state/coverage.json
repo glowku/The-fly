@@ -1610,6 +1610,10 @@
     {
       "from": "Automotive aerodynamics",
       "to": "Drafting (aerodynamics)"
+    },
+    {
+      "from": "Housefly",
+      "to": "Artificial fly"
     }
   ],
   "frontier": [
@@ -1636,7 +1640,8 @@
     "Aquatic adaptation",
     "Adaptations",
     "Evolutionary biologists",
-    "Alcohol by volume"
+    "Alcohol by volume",
+    "Artificial fly"
   ],
   "max_depth": 7
 }

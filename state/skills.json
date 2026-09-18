@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.88,
+    "level": 2.98,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -31,7 +31,7 @@
       "Blowfly's Punk Rock Party",
       "Off Color Brewing"
     ],
-    "last_reinforced": "2026-09-18T03:31:03.284983+00:00"
+    "last_reinforced": "2026-09-18T05:36:45.669531+00:00"
   },
   "anatomie_insecte": {
     "level": 2.95,
