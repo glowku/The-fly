@@ -2746,5 +2746,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T03:39:09.861419+00:00"
+  },
+  "Adaptive compliant wing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 288,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Biological pest control",
+        "Apex Predator (disambiguation)",
+        "Aileron",
+        "Chemical communication in insects",
+        "Agonistic behaviour",
+        "Deimatic behaviour"
+      ],
+      "diversity": 0.806,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T09:12:03.227760+00:00"
   }
 }

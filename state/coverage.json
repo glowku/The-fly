@@ -1080,6 +1080,14 @@
         "https://en.wikipedia.org/wiki/Spiracle_(vertebrates)"
       ],
       "updated_at": "2026-09-18T03:39:09.862462+00:00"
+    },
+    "Adaptive compliant wing": {
+      "depth": 4,
+      "created_at": "2026-09-18T09:12:03.229001+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_compliant_wing"
+      ],
+      "updated_at": "2026-09-18T09:12:03.229009+00:00"
     }
   },
   "edges": [
@@ -1614,6 +1622,18 @@
     {
       "from": "Housefly",
       "to": "Artificial fly"
+    },
+    {
+      "from": "Aileron",
+      "to": "Adaptive compliant wing"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aileron"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aerodynamic drag"
     }
   ],
   "frontier": [
@@ -1641,7 +1661,8 @@
     "Adaptations",
     "Evolutionary biologists",
     "Alcohol by volume",
-    "Artificial fly"
+    "Artificial fly",
+    "Aerodynamic drag"
   ],
   "max_depth": 7
 }
