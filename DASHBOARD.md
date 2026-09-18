@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-17 22:41:46 UTC
+**Dernière mise à jour** : 2026-09-18 03:31:40 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **23.171** |
-| Concepts traités | 200 | **118** |
-| Qualité moyenne | ≥ 7.5 | **9.82/10** |
+| Score global | maximiser | **25.493** |
+| Concepts traités | 200 | **130** |
+| Qualité moyenne | ≥ 7.5 | **9.8/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **118** |
-| Arêtes du graphe | 115 |
-| Frontière (à explorer) | 26 |
+| Concepts traités (nœuds) | **130** |
+| Arêtes du graphe | 128 |
+| Frontière (à explorer) | 24 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.82/10** |
-| Score objectif (coverage × quality) | **23.171** |
-| Actions dernières 24 h | 377 |
+| Score qualité moyen | **9.8/10** |
+| Score objectif (coverage × quality) | **25.493** |
+| Actions dernières 24 h | 297 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 117 |
+| Excellent (≥ 8) | 129 |
 | Bon (6 – 8) | 1 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-17T21:25:44  auto_learn      
-2026-09-17T21:27:17  auto_learn      
-2026-09-17T21:28:51  auto_learn      
-2026-09-17T21:30:23  auto_learn      
-2026-09-17T21:31:57  auto_learn      
-2026-09-17T21:33:31  skill_reinforc  
-2026-09-17T21:33:33  auto_learn_exp  Gene-centered view of evolution score=10.0
-2026-09-17T21:33:33  auto_learn      
-2026-09-17T21:35:07  auto_learn      
-2026-09-17T21:36:40  auto_learn      
-2026-09-17T21:38:13  auto_learn      
-2026-09-17T22:21:27  plan            Bat wing development
-2026-09-17T22:21:27  skill_reinforc  
-2026-09-17T22:21:27  branch          Bat wing development
-2026-09-17T22:32:42  parallel_learn  
+2026-09-18T03:08:33  auto_learn      
+2026-09-18T03:10:09  auto_learn      
+2026-09-18T03:11:46  auto_learn      
+2026-09-18T03:13:22  auto_learn      
+2026-09-18T03:14:58  auto_learn      
+2026-09-18T03:16:35  auto_learn      
+2026-09-18T03:18:11  auto_learn      
+2026-09-18T03:19:47  auto_learn      
+2026-09-18T03:21:24  auto_learn      
+2026-09-18T03:23:00  auto_learn      
+2026-09-18T03:24:36  auto_learn      
+2026-09-18T03:26:12  auto_learn      
+2026-09-18T03:27:48  auto_learn      
+2026-09-18T03:29:24  auto_learn      
+2026-09-18T03:31:03  skill_reinforc  
 ```
 
 ## Architecture de l'agent
