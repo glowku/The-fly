@@ -1506,6 +1506,22 @@
     {
       "from": "Madama Butterfly",
       "to": "Blowfly's Punk Rock Party"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolution (journal)"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolutionary biologists"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolution"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolutionary biology"
     }
   ],
   "frontier": [
@@ -1531,7 +1547,8 @@
     "Helicopter flight controls",
     "Acoustic ecology",
     "Aquatic adaptation",
-    "Adaptations"
+    "Adaptations",
+    "Evolutionary biologists"
   ],
   "max_depth": 7
 }
