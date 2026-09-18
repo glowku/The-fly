@@ -69,7 +69,7 @@
     "last_reinforced": "2026-09-17T22:21:27.616031+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 2.62,
+    "level": 2.72,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -103,9 +103,10 @@
       "Aquatic feeding mechanisms",
       "Evolutionary biology",
       "E. coli long-term evolution experiment",
-      "Gene-centered view of evolution"
+      "Gene-centered view of evolution",
+      "Blowfly (musician)"
     ],
-    "last_reinforced": "2026-09-17T21:33:31.709464+00:00"
+    "last_reinforced": "2026-09-18T00:19:41.596791+00:00"
   },
   "ecologie": {
     "level": 2.7,

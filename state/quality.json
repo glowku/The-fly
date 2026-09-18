@@ -2510,5 +2510,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:18:04.725653+00:00"
+  },
+  "Blowfly (musician)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 329,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Animal behaviour",
+        "Alternative mating strategy",
+        "Animal sexual behaviour",
+        "Allochronic speciation",
+        "Animal Behaviour (journal)",
+        "Evolutionary biology"
+      ],
+      "diversity": 0.678,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:19:41.471994+00:00"
   }
 }
