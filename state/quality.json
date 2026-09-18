@@ -2644,5 +2644,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T02:57:16.793140+00:00"
+  },
+  "Off Color Brewing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 425,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Apex Predator (disambiguation)",
+        "Animal behaviour",
+        "Biological pest control",
+        "Chemical communication in insects",
+        "Decomposer",
+        "Apex predator"
+      ],
+      "diversity": 0.752,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T03:31:03.139054+00:00"
   }
 }

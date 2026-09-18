@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 2.78,
+    "level": 2.88,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -28,9 +28,10 @@
       "Cephalon (arthropod head)",
       "Desert ecology",
       "Evolution (journal)",
-      "Blowfly's Punk Rock Party"
+      "Blowfly's Punk Rock Party",
+      "Off Color Brewing"
     ],
-    "last_reinforced": "2026-09-18T00:22:56.292270+00:00"
+    "last_reinforced": "2026-09-18T03:31:03.284983+00:00"
   },
   "anatomie_insecte": {
     "level": 2.85,

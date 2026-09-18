@@ -1032,6 +1032,14 @@
         "https://en.wikipedia.org/wiki/Spiracle_(arthropods)"
       ],
       "updated_at": "2026-09-18T02:57:16.794205+00:00"
+    },
+    "Off Color Brewing": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:31:03.140244+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Off_Color_Brewing"
+      ],
+      "updated_at": "2026-09-18T03:31:03.140253+00:00"
     }
   },
   "edges": [
@@ -1542,6 +1550,10 @@
     {
       "from": "Aerodynamic (disambiguation)",
       "to": "Aerodynamic (instrumental)"
+    },
+    {
+      "from": "Off Color Brewing",
+      "to": "Alcohol by volume"
     }
   ],
   "frontier": [
@@ -1563,12 +1575,12 @@
     "Black fly",
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",
-    "Off Color Brewing",
     "Helicopter flight controls",
     "Acoustic ecology",
     "Aquatic adaptation",
     "Adaptations",
-    "Evolutionary biologists"
+    "Evolutionary biologists",
+    "Alcohol by volume"
   ],
   "max_depth": 7
 }
