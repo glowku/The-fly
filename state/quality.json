@@ -3091,5 +3091,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T22:34:02.783869+00:00"
+  },
+  "Black fly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 319,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Gene-centered view of evolution",
+        "Blue-tailed damselfly",
+        "Damselfly",
+        "Desert ecology",
+        "Aquatic insect",
+        "Foraging"
+      ],
+      "diversity": 0.776,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T22:38:44.255571+00:00"
   }
 }

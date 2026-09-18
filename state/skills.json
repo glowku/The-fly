@@ -214,7 +214,7 @@
     "last_reinforced": "2026-09-18T21:07:41.897415+00:00"
   },
   "comportement": {
-    "level": 3.19,
+    "level": 3.29,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -252,8 +252,9 @@
       "Allagash Brewing Company",
       "Adaptive evolution in the human genome",
       "Acoustic ecology",
-      "Adaptation (disambiguation)"
+      "Adaptation (disambiguation)",
+      "Black fly"
     ],
-    "last_reinforced": "2026-09-18T19:25:02.142138+00:00"
+    "last_reinforced": "2026-09-18T22:38:44.286549+00:00"
   }
 }
