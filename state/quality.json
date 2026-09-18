@@ -2996,5 +2996,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T19:25:01.943916+00:00"
+  },
+  "Cellular adaptation": {
+    "score": 5.37,
+    "metrics": {
+      "words": 92,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.867,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T19:29:52.807569+00:00"
   }
 }

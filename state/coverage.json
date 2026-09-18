@@ -1176,6 +1176,14 @@
         "https://en.wikipedia.org/wiki/Adaptation_(disambiguation)"
       ],
       "updated_at": "2026-09-18T19:25:01.945306+00:00"
+    },
+    "Cellular adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:29:52.808750+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cellular_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:29:52.808758+00:00"
     }
   },
   "edges": [
@@ -1802,6 +1810,18 @@
     {
       "from": "Adaptation (disambiguation)",
       "to": "Adaptation (The Walking Dead)"
+    },
+    {
+      "from": "Hovertrain",
+      "to": "Adaptation (eye)"
+    },
+    {
+      "from": "Windhover",
+      "to": "Saro Windhover"
+    },
+    {
+      "from": "Hover (EP)",
+      "to": "Cellular adaptation"
     }
   ],
   "frontier": [
@@ -1829,7 +1849,9 @@
     "Content adaptation",
     "Adaptation (computer science)",
     "Adaptive behavior",
-    "Adaptation (The Walking Dead)"
+    "Adaptation (The Walking Dead)",
+    "Adaptation (eye)",
+    "Saro Windhover"
   ],
   "max_depth": 7
 }
