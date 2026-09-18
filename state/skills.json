@@ -193,7 +193,7 @@
     "last_reinforced": "2026-09-18T00:39:32.258826+00:00"
   },
   "comportement": {
-    "level": 2.79,
+    "level": 2.89,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -227,8 +227,9 @@
       "Arthropod head problem",
       "Foraging",
       "Society for the Study of Evolution",
-      "Eusociality"
+      "Eusociality",
+      "Allagash Brewing Company"
     ],
-    "last_reinforced": "2026-09-18T00:24:32.593380+00:00"
+    "last_reinforced": "2026-09-18T03:34:15.914711+00:00"
   }
 }
