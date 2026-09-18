@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-18 03:31:40 UTC
+**Dernière mise à jour** : 2026-09-18 08:49:37 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **25.493** |
-| Concepts traités | 200 | **130** |
-| Qualité moyenne | ≥ 7.5 | **9.8/10** |
+| Score global | maximiser | **26.399** |
+| Concepts traités | 200 | **135** |
+| Qualité moyenne | ≥ 7.5 | **9.78/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **130** |
-| Arêtes du graphe | 128 |
-| Frontière (à explorer) | 24 |
+| Concepts traités (nœuds) | **135** |
+| Arêtes du graphe | 133 |
+| Frontière (à explorer) | 25 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.8/10** |
-| Score objectif (coverage × quality) | **25.493** |
-| Actions dernières 24 h | 297 |
+| Score qualité moyen | **9.78/10** |
+| Score objectif (coverage × quality) | **26.399** |
+| Actions dernières 24 h | 260 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 129 |
-| Bon (6 – 8) | 1 |
+| Excellent (≥ 8) | 133 |
+| Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-18T03:08:33  auto_learn      
-2026-09-18T03:10:09  auto_learn      
-2026-09-18T03:11:46  auto_learn      
-2026-09-18T03:13:22  auto_learn      
-2026-09-18T03:14:58  auto_learn      
-2026-09-18T03:16:35  auto_learn      
-2026-09-18T03:18:11  auto_learn      
-2026-09-18T03:19:47  auto_learn      
-2026-09-18T03:21:24  auto_learn      
-2026-09-18T03:23:00  auto_learn      
-2026-09-18T03:24:36  auto_learn      
-2026-09-18T03:26:12  auto_learn      
-2026-09-18T03:27:48  auto_learn      
-2026-09-18T03:29:24  auto_learn      
-2026-09-18T03:31:03  skill_reinforc  
+2026-09-18T03:35:55  skill_reinforc  
+2026-09-18T03:35:57  auto_learn_exp  Brewing score=7.33
+2026-09-18T03:35:57  auto_learn      
+2026-09-18T03:37:33  skill_reinforc  
+2026-09-18T03:37:35  auto_learn_exp  Drafting (aerodynamics) score=8.0
+2026-09-18T03:37:35  auto_learn      
+2026-09-18T03:39:09  skill_reinforc  
+2026-09-18T03:39:11  auto_learn_exp  Spiracle (vertebrates) score=10.0
+2026-09-18T03:39:11  auto_learn      
+2026-09-18T03:40:48  auto_learn      
+2026-09-18T04:37:39  auto_learn      
+2026-09-18T05:36:45  plan            Housefly
+2026-09-18T05:36:45  skill_reinforc  
+2026-09-18T05:36:45  branch          Housefly
+2026-09-18T08:36:54  parallel_learn  
 ```
 
 ## Architecture de l'agent
