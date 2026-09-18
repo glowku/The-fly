@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-18 08:49:37 UTC
+**Dernière mise à jour** : 2026-09-18 14:08:11 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **26.399** |
-| Concepts traités | 200 | **135** |
-| Qualité moyenne | ≥ 7.5 | **9.78/10** |
+| Score global | maximiser | **27.999** |
+| Concepts traités | 200 | **143** |
+| Qualité moyenne | ≥ 7.5 | **9.79/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **135** |
-| Arêtes du graphe | 133 |
-| Frontière (à explorer) | 25 |
+| Concepts traités (nœuds) | **143** |
+| Arêtes du graphe | 143 |
+| Frontière (à explorer) | 21 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.78/10** |
-| Score objectif (coverage × quality) | **26.399** |
-| Actions dernières 24 h | 260 |
+| Score qualité moyen | **9.79/10** |
+| Score objectif (coverage × quality) | **27.999** |
+| Actions dernières 24 h | 240 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 133 |
+| Excellent (≥ 8) | 141 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-18T03:35:55  skill_reinforc  
-2026-09-18T03:35:57  auto_learn_exp  Brewing score=7.33
-2026-09-18T03:35:57  auto_learn      
-2026-09-18T03:37:33  skill_reinforc  
-2026-09-18T03:37:35  auto_learn_exp  Drafting (aerodynamics) score=8.0
-2026-09-18T03:37:35  auto_learn      
-2026-09-18T03:39:09  skill_reinforc  
-2026-09-18T03:39:11  auto_learn_exp  Spiracle (vertebrates) score=10.0
-2026-09-18T03:39:11  auto_learn      
-2026-09-18T03:40:48  auto_learn      
-2026-09-18T04:37:39  auto_learn      
-2026-09-18T05:36:45  plan            Housefly
-2026-09-18T05:36:45  skill_reinforc  
-2026-09-18T05:36:45  branch          Housefly
-2026-09-18T08:36:54  parallel_learn  
+2026-09-18T09:22:04  auto_learn      
+2026-09-18T09:23:39  skill_reinforc  
+2026-09-18T09:23:41  auto_learn_exp  Evolutionary arms race score=10.0
+2026-09-18T09:23:41  auto_learn      
+2026-09-18T09:25:21  auto_learn      
+2026-09-18T09:26:57  auto_learn      
+2026-09-18T10:45:04  plan            Blue-tailed damselfly
+2026-09-18T10:45:05  skill_reinforc  
+2026-09-18T10:45:05  branch          Blue-tailed damselfly
+2026-09-18T11:08:34  skill_reinforc  
+2026-09-18T11:08:36  auto_learn_exp  Abundance (ecology) score=10.0
+2026-09-18T11:08:36  auto_learn      
+2026-09-18T13:59:02  skill_reinforc  
+2026-09-18T13:59:04  parallel_learn  
+2026-09-18T14:04:02  skill_reinforc  
 ```
 
 ## Architecture de l'agent
