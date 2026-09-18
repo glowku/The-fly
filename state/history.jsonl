@@ -548,3 +548,4 @@
 {"ts": "2026-09-18T00:39:32.259104+00:00", "type": "branch", "title": "Society for the Study of Evolution", "children_discovered": 1, "skill": "evolution"}
 {"ts": "2026-09-18T02:18:25.621263+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 2.82, "article": "Aerodynamic (instrumental)"}
 {"ts": "2026-09-18T02:18:26.999958+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 1, "titles": ["Aerodynamic (instrumental)"], "workers": 4, "cpu": 4, "frontier_added": 0, "parent": "Aerodynamic (disambiguation)", "recent": ["Alderfly", "Eusociality", "Blowfly's Punk Rock Party", "Blowfly's Party", "Blowfly (musician)", "Blowfly", "Arctic ecology", "Society for the Study of Evolution"]}
+{"ts": "2026-09-18T02:57:16.868125+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 2.85, "article": "Spiracle (arthropods)"}

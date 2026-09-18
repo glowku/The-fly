@@ -33,7 +33,7 @@
     "last_reinforced": "2026-09-18T00:22:56.292270+00:00"
   },
   "anatomie_insecte": {
-    "level": 2.76,
+    "level": 2.85,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -66,9 +66,10 @@
       "Behavioral ecology",
       "Arthropod mouthparts",
       "Aquatic insect",
-      "Blowfly's Party"
+      "Blowfly's Party",
+      "Spiracle (arthropods)"
     ],
-    "last_reinforced": "2026-09-18T00:21:18.753024+00:00"
+    "last_reinforced": "2026-09-18T02:57:16.867844+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 2.82,

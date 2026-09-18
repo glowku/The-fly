@@ -2626,5 +2626,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T02:18:25.589558+00:00"
+  },
+  "Spiracle (arthropods)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 145,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Diptera",
+        "Insect",
+        "Spiracle",
+        "Fly"
+      ],
+      "diversity": 0.884,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T02:57:16.793140+00:00"
   }
 }
