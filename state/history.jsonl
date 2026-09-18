@@ -763,3 +763,4 @@
 {"ts": "2026-09-18T23:29:32.155077+00:00", "type": "plan", "title": "E. coli long-term evolution experiment", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-18T23:29:32.295759+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 3.37, "article": "E. coli long-term evolution experiment"}
 {"ts": "2026-09-18T23:29:32.295822+00:00", "type": "branch", "title": "E. coli long-term evolution experiment", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-09-18T23:45:33.286493+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Tachinidae"}
