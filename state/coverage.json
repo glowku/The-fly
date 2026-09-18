@@ -1120,6 +1120,14 @@
         "https://en.wikipedia.org/wiki/Evolutionary_arms_race"
       ],
       "updated_at": "2026-09-18T09:23:38.915032+00:00"
+    },
+    "Abundance (ecology)": {
+      "depth": 6,
+      "created_at": "2026-09-18T11:08:34.351757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abundance_(ecology)"
+      ],
+      "updated_at": "2026-09-18T11:08:34.351767+00:00"
     }
   },
   "edges": [
@@ -1708,7 +1716,6 @@
     "Common green bottle fly",
     "Evolutionarily stable strategy",
     "Adaptation (disambiguation)",
-    "Abundance (ecology)",
     "Black fly",
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",

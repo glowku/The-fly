@@ -2844,5 +2844,28 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T09:23:38.913864+00:00"
+  },
+  "Abundance (ecology)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 385,
+      "sections": 4,
+      "links": 9,
+      "link_list": [
+        "Chemical communication in insects",
+        "Batesian mimicry",
+        "Arthropod mouthparts",
+        "Behavioral ecology",
+        "Automimicry",
+        "Chewing",
+        "Community (ecology)",
+        "Anti-predator adaptation",
+        "Aquatic feeding mechanisms"
+      ],
+      "diversity": 0.743,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T11:08:34.350589+00:00"
   }
 }
