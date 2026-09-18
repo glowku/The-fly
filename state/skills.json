@@ -116,7 +116,7 @@
     "last_reinforced": "2026-09-18T03:37:33.125888+00:00"
   },
   "ecologie": {
-    "level": 2.89,
+    "level": 2.99,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -150,9 +150,10 @@
       "Blue-tailed damselfly",
       "Arctic ecology",
       "Alderfly",
-      "Two Brothers Brewing"
+      "Two Brothers Brewing",
+      "Cooperation (evolution)"
     ],
-    "last_reinforced": "2026-09-18T03:32:40.237104+00:00"
+    "last_reinforced": "2026-09-18T09:17:04.056602+00:00"
   },
   "evolution": {
     "level": 2.98,

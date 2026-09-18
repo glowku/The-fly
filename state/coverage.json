@@ -1088,6 +1088,14 @@
         "https://en.wikipedia.org/wiki/Adaptive_compliant_wing"
       ],
       "updated_at": "2026-09-18T09:12:03.229009+00:00"
+    },
+    "Cooperation (evolution)": {
+      "depth": 5,
+      "created_at": "2026-09-18T09:17:03.794868+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cooperation_(evolution)"
+      ],
+      "updated_at": "2026-09-18T09:17:03.794877+00:00"
     }
   },
   "edges": [
@@ -1634,6 +1642,14 @@
     {
       "from": "Adaptive compliant wing",
       "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Cooperation (evolution)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Cooperation (evolution)",
+      "to": "Allopatric speciation"
     }
   ],
   "frontier": [
@@ -1644,7 +1660,6 @@
     "Abdomen (insect anatomy)",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
-    "Cooperation (evolution)",
     "Adaptive evolution in the human genome",
     "Evolution of the horse",
     "Austrobaileyales",

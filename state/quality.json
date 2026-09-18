@@ -2766,5 +2766,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T09:12:03.227760+00:00"
+  },
+  "Cooperation (evolution)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 349,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Biological pest control",
+        "Community (ecology)",
+        "Behavioral ecology",
+        "Chemical communication in insects",
+        "Batesian mimicry"
+      ],
+      "diversity": 0.791,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T09:17:03.793818+00:00"
   }
 }
