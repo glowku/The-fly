@@ -3111,5 +3111,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T22:38:44.255571+00:00"
+  },
+  "Association for the Study of Animal Behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 392,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Society for the Study of Evolution",
+        "Foraging",
+        "Evolution (journal)",
+        "Damselfly"
+      ],
+      "diversity": 0.683,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T22:40:19.693096+00:00"
   }
 }

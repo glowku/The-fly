@@ -1224,6 +1224,14 @@
         "https://en.wikipedia.org/wiki/Black_fly"
       ],
       "updated_at": "2026-09-18T22:38:44.256813+00:00"
+    },
+    "Association for the Study of Animal Behaviour": {
+      "depth": 5,
+      "created_at": "2026-09-18T22:40:19.694231+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_the_Study_of_Animal_Behaviour"
+      ],
+      "updated_at": "2026-09-18T22:40:19.694237+00:00"
     }
   },
   "edges": [

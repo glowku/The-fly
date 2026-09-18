@@ -37,7 +37,7 @@
     "last_reinforced": "2026-09-18T19:34:46.992214+00:00"
   },
   "anatomie_insecte": {
-    "level": 3.25,
+    "level": 3.35,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -75,9 +75,10 @@
       "Spiracle (vertebrates)",
       "Evolutionary arms race",
       "Common green bottle fly",
-      "Climate change adaptation"
+      "Climate change adaptation",
+      "Association for the Study of Animal Behaviour"
     ],
-    "last_reinforced": "2026-09-18T19:31:30.363487+00:00"
+    "last_reinforced": "2026-09-18T22:40:19.724280+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 3.25,
