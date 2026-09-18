@@ -1008,6 +1008,14 @@
         "https://en.wikipedia.org/wiki/Eusociality"
       ],
       "updated_at": "2026-09-18T00:24:32.465617+00:00"
+    },
+    "Alderfly": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:26:09.403789+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alderfly"
+      ],
+      "updated_at": "2026-09-18T00:26:09.403796+00:00"
     }
   },
   "edges": [
@@ -1506,7 +1514,6 @@
     "Aquatic insects",
     "Amphibious insect",
     "Abdomen (insect anatomy)",
-    "Alderfly",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
     "Cooperation (evolution)",
