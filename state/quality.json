@@ -2785,5 +2785,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T09:17:03.793818+00:00"
+  },
+  "Adaptive evolution in the human genome": {
+    "score": 10.0,
+    "metrics": {
+      "words": 318,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Molecular evolution",
+        "Natural selection",
+        "Adaptationism",
+        "Genome",
+        "Human evolution",
+        "Genetic drift"
+      ],
+      "diversity": 0.874,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T09:18:41.727719+00:00"
   }
 }
