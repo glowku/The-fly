@@ -1168,6 +1168,14 @@
         "https://en.wikipedia.org/wiki/Evolutionarily_stable_strategy"
       ],
       "updated_at": "2026-09-18T14:37:02.734649+00:00"
+    },
+    "Adaptation (disambiguation)": {
+      "depth": 6,
+      "created_at": "2026-09-18T19:25:01.945294+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(disambiguation)"
+      ],
+      "updated_at": "2026-09-18T19:25:01.945306+00:00"
     }
   },
   "edges": [
@@ -1762,6 +1770,38 @@
     {
       "from": "Evolutionary arms race",
       "to": "Evolutionary anachronism"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (arts)"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Chromatic adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "ATM adaptation layer"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Content adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (computer science)"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptive behavior"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (The Walking Dead)"
     }
   ],
   "frontier": [
@@ -1772,7 +1812,6 @@
     "Abdomen (insect anatomy)",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
-    "Adaptation (disambiguation)",
     "Black fly",
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",
@@ -1783,7 +1822,14 @@
     "Artificial fly",
     "Aerodynamic drag",
     "Sexual antagonistic coevolution",
-    "Evolutionary anachronism"
+    "Evolutionary anachronism",
+    "Adaptation (arts)",
+    "Chromatic adaptation",
+    "ATM adaptation layer",
+    "Content adaptation",
+    "Adaptation (computer science)",
+    "Adaptive behavior",
+    "Adaptation (The Walking Dead)"
   ],
   "max_depth": 7
 }

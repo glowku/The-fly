@@ -208,7 +208,7 @@
     "last_reinforced": "2026-09-18T14:48:57.103870+00:00"
   },
   "comportement": {
-    "level": 3.09,
+    "level": 3.19,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -245,8 +245,9 @@
       "Eusociality",
       "Allagash Brewing Company",
       "Adaptive evolution in the human genome",
-      "Acoustic ecology"
+      "Acoustic ecology",
+      "Adaptation (disambiguation)"
     ],
-    "last_reinforced": "2026-09-18T14:04:02.491590+00:00"
+    "last_reinforced": "2026-09-18T19:25:02.142138+00:00"
   }
 }

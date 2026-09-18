@@ -2971,5 +2971,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T14:37:02.733533+00:00"
+  },
+  "Adaptation (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 301,
+      "sections": 3,
+      "links": 11,
+      "link_list": [
+        "Aquatic insect",
+        "Cephalon (arthropod head)",
+        "Cephalothorax",
+        "Arthropod mouthparts",
+        "Desert ecology",
+        "Foraging",
+        "Gene-centered view of evolution",
+        "Arthropod head problem",
+        "Blue-tailed damselfly",
+        "Community (ecology)",
+        "Chewing"
+      ],
+      "diversity": 0.723,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T19:25:01.943916+00:00"
   }
 }
