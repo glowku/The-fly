@@ -3047,5 +3047,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T19:33:08.634308+00:00"
+  },
+  "Ecosystem-based adaptation": {
+    "score": 9.5,
+    "metrics": {
+      "words": 467,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Evolution (journal)",
+        "Aquatic insect",
+        "Arctic ecology",
+        "Damselfly",
+        "Cephalothorax",
+        "Blowfly",
+        "Desert ecology",
+        "Gene-centered view of evolution",
+        "Foraging",
+        "Blue-tailed damselfly",
+        "Society for the Study of Evolution",
+        "Chewing"
+      ],
+      "diversity": 0.77,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T19:34:46.868718+00:00"
   }
 }
