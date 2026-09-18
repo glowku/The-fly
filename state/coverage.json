@@ -1208,6 +1208,14 @@
         "https://en.wikipedia.org/wiki/Ecosystem-based_adaptation"
       ],
       "updated_at": "2026-09-18T19:34:46.870097+00:00"
+    },
+    "Content adaptation": {
+      "depth": 7,
+      "created_at": "2026-09-18T22:34:02.785127+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Content_adaptation"
+      ],
+      "updated_at": "2026-09-18T22:34:02.785133+00:00"
     }
   },
   "edges": [
@@ -1890,7 +1898,6 @@
     "Adaptation (arts)",
     "Chromatic adaptation",
     "ATM adaptation layer",
-    "Content adaptation",
     "Adaptation (computer science)",
     "Adaptive behavior",
     "Adaptation (The Walking Dead)",

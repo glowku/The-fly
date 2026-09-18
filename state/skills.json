@@ -126,7 +126,7 @@
     "last_reinforced": "2026-09-18T19:33:08.760463+00:00"
   },
   "ecologie": {
-    "level": 3.19,
+    "level": 3.28,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -163,9 +163,10 @@
       "Two Brothers Brewing",
       "Cooperation (evolution)",
       "Helicopter flight controls",
-      "Acoustic ecology"
+      "Acoustic ecology",
+      "Content adaptation"
     ],
-    "last_reinforced": "2026-09-18T18:07:18.036229+00:00"
+    "last_reinforced": "2026-09-18T22:34:02.873799+00:00"
   },
   "evolution": {
     "level": 3.27,
