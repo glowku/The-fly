@@ -1686,6 +1686,10 @@
     {
       "from": "Spiracle",
       "to": "Evolutionary arms race"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Sexual antagonistic coevolution"
     }
   ],
   "frontier": [
@@ -1711,7 +1715,8 @@
     "Evolutionary biologists",
     "Alcohol by volume",
     "Artificial fly",
-    "Aerodynamic drag"
+    "Aerodynamic drag",
+    "Sexual antagonistic coevolution"
   ],
   "max_depth": 7
 }
