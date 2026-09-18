@@ -594,3 +594,4 @@
 {"ts": "2026-09-18T05:36:45.446403+00:00", "type": "plan", "title": "Housefly", "action": "branch", "priority": 141.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-18T05:36:45.669789+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 2.98, "article": "Housefly"}
 {"ts": "2026-09-18T05:36:45.669850+00:00", "type": "branch", "title": "Housefly", "children_discovered": 1, "skill": "entomologie"}
+{"ts": "2026-09-18T08:36:54.663976+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Blowfly"}
