@@ -992,6 +992,14 @@
         "https://en.wikipedia.org/wiki/Blowfly's_Party"
       ],
       "updated_at": "2026-09-18T00:21:18.630127+00:00"
+    },
+    "Blowfly's Punk Rock Party": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:22:56.170321+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blowfly's_Punk_Rock_Party"
+      ],
+      "updated_at": "2026-09-18T00:22:56.170330+00:00"
     }
   },
   "edges": [
@@ -1478,6 +1486,10 @@
     {
       "from": "Thorax",
       "to": "Blowfly's Party"
+    },
+    {
+      "from": "Madama Butterfly",
+      "to": "Blowfly's Punk Rock Party"
     }
   ],
   "frontier": [

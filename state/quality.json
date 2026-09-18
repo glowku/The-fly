@@ -2550,5 +2550,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:21:18.629141+00:00"
+  },
+  "Blowfly's Punk Rock Party": {
+    "score": 10.0,
+    "metrics": {
+      "words": 320,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Courtship",
+        "Hovercraft",
+        "Alternative mating strategy",
+        "Animal sexual behaviour",
+        "Allochronic speciation",
+        "Maggot"
+      ],
+      "diversity": 0.732,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:22:56.169235+00:00"
   }
 }
