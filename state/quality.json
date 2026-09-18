@@ -3009,5 +3009,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T19:29:52.807569+00:00"
+  },
+  "Climate change adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 361,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Evolution (journal)",
+        "Aquatic insect",
+        "Damselfly",
+        "Desert ecology",
+        "Foraging"
+      ],
+      "diversity": 0.801,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T19:31:30.237862+00:00"
   }
 }
