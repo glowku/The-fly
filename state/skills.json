@@ -171,7 +171,7 @@
     "last_reinforced": "2026-09-18T22:34:02.873799+00:00"
   },
   "evolution": {
-    "level": 3.27,
+    "level": 3.37,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -211,9 +211,10 @@
       "Adaptive compliant wing",
       "Abundance (ecology)",
       "Evolutionary arms race",
-      "Evolution (journal)"
+      "Evolution (journal)",
+      "E. coli long-term evolution experiment"
     ],
-    "last_reinforced": "2026-09-18T21:07:41.897415+00:00"
+    "last_reinforced": "2026-09-18T23:29:32.295451+00:00"
   },
   "comportement": {
     "level": 3.29,
