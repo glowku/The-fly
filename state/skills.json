@@ -114,7 +114,7 @@
     "last_reinforced": "2026-09-18T02:18:25.620983+00:00"
   },
   "ecologie": {
-    "level": 2.79,
+    "level": 2.89,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -147,9 +147,10 @@
       "Cephalothorax",
       "Blue-tailed damselfly",
       "Arctic ecology",
-      "Alderfly"
+      "Alderfly",
+      "Two Brothers Brewing"
     ],
-    "last_reinforced": "2026-09-18T00:26:09.537947+00:00"
+    "last_reinforced": "2026-09-18T03:32:40.237104+00:00"
   },
   "evolution": {
     "level": 2.81,

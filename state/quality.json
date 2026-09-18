@@ -2664,5 +2664,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T03:31:03.139054+00:00"
+  },
+  "Two Brothers Brewing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 323,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Animal behaviour",
+        "Biological pest control",
+        "Apex Predator – Easy Meat",
+        "Decomposer",
+        "Apex predator"
+      ],
+      "diversity": 0.766,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T03:32:40.159010+00:00"
   }
 }
