@@ -2530,5 +2530,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:19:41.471994+00:00"
+  },
+  "Blowfly's Party": {
+    "score": 10.0,
+    "metrics": {
+      "words": 308,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Decomposer",
+        "Animal behaviour",
+        "Alternative mating strategy",
+        "Comfort behaviour in animals",
+        "Allochronic speciation",
+        "Animal Behaviour (journal)"
+      ],
+      "diversity": 0.716,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:21:18.629141+00:00"
   }
 }
