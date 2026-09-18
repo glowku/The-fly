@@ -1858,6 +1858,14 @@
     {
       "from": "Common green bottle fly",
       "to": "Ecosystem-based adaptation"
+    },
+    {
+      "from": "Evolution (journal)",
+      "to": "Society for the Study of Evolution"
+    },
+    {
+      "from": "Evolution (journal)",
+      "to": "Evolutionary Biology"
     }
   ],
   "frontier": [
@@ -1887,7 +1895,8 @@
     "Adaptive behavior",
     "Adaptation (The Walking Dead)",
     "Adaptation (eye)",
-    "Saro Windhover"
+    "Saro Windhover",
+    "Evolutionary Biology"
   ],
   "max_depth": 7
 }
