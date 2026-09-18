@@ -1128,6 +1128,14 @@
         "https://en.wikipedia.org/wiki/Abundance_(ecology)"
       ],
       "updated_at": "2026-09-18T11:08:34.351767+00:00"
+    },
+    "Helicopter flight controls": {
+      "depth": 3,
+      "created_at": "2026-09-18T13:59:02.443052+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Helicopter_flight_controls"
+      ],
+      "updated_at": "2026-09-18T13:59:02.443059+00:00"
     }
   },
   "edges": [
@@ -1719,7 +1727,6 @@
     "Black fly",
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",
-    "Helicopter flight controls",
     "Acoustic ecology",
     "Aquatic adaptation",
     "Adaptations",

@@ -2867,5 +2867,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T11:08:34.350589+00:00"
+  },
+  "Helicopter flight controls": {
+    "score": 10.0,
+    "metrics": {
+      "words": 379,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Angle d’attaque",
+        "Hover",
+        "Rotor",
+        "Portance",
+        "Vol stationnaire",
+        "Manœuvres aériennes"
+      ],
+      "diversity": 0.662,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T13:59:02.441823+00:00"
   }
 }
