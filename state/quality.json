@@ -3129,5 +3129,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T22:40:19.693096+00:00"
+  },
+  "Alcohol by volume": {
+    "score": 10.0,
+    "metrics": {
+      "words": 315,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Bouteille de vin",
+        "Blue-tailed damselfly",
+        "Ethanol",
+        "Distillation",
+        "Foraging",
+        "Alcool"
+      ],
+      "diversity": 0.785,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T22:45:03.340068+00:00"
   }
 }
