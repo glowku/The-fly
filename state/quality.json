@@ -2570,5 +2570,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:22:56.169235+00:00"
+  },
+  "Eusociality": {
+    "score": 10.0,
+    "metrics": {
+      "words": 341,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Courtship",
+        "Apex predator",
+        "Decomposer",
+        "Animal behaviour",
+        "Animal sexual behaviour"
+      ],
+      "diversity": 0.759,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:24:32.464448+00:00"
   }
 }

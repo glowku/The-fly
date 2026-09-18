@@ -1000,6 +1000,14 @@
         "https://en.wikipedia.org/wiki/Blowfly's_Punk_Rock_Party"
       ],
       "updated_at": "2026-09-18T00:22:56.170330+00:00"
+    },
+    "Eusociality": {
+      "depth": 5,
+      "created_at": "2026-09-18T00:24:32.465608+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eusociality"
+      ],
+      "updated_at": "2026-09-18T00:24:32.465617+00:00"
     }
   },
   "edges": [
