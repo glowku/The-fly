@@ -1192,6 +1192,14 @@
         "https://en.wikipedia.org/wiki/Climate_change_adaptation"
       ],
       "updated_at": "2026-09-18T19:31:30.239086+00:00"
+    },
+    "Domain adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:33:08.635526+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Domain_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:33:08.635535+00:00"
     }
   },
   "edges": [
@@ -1834,6 +1842,10 @@
     {
       "from": "Bird flight",
       "to": "Climate change adaptation"
+    },
+    {
+      "from": "Hover Chamber Choir",
+      "to": "Domain adaptation"
     }
   ],
   "frontier": [
