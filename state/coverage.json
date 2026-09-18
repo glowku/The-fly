@@ -1746,6 +1746,22 @@
     {
       "from": "Evolutionarily stable strategy",
       "to": "Adaptation"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Anti-predator adaptation"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolution"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolutionary anachronism"
     }
   ],
   "frontier": [
@@ -1766,7 +1782,8 @@
     "Alcohol by volume",
     "Artificial fly",
     "Aerodynamic drag",
-    "Sexual antagonistic coevolution"
+    "Sexual antagonistic coevolution",
+    "Evolutionary anachronism"
   ],
   "max_depth": 7
 }
