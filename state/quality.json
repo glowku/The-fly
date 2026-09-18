@@ -2485,5 +2485,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:07:02.769938+00:00"
+  },
+  "Blowfly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 11,
+      "link_list": [
+        "Courtship",
+        "Alternative mating strategy",
+        "Animal behaviour",
+        "Animal sexual behaviour",
+        "E. coli long-term evolution experiment",
+        "Comfort behaviour in animals",
+        "Larva",
+        "Allochronic speciation",
+        "Maggot",
+        "Animal Behaviour (journal)",
+        "Evolutionary biology"
+      ],
+      "diversity": 0.7,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:18:04.725653+00:00"
   }
 }

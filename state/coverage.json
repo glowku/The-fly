@@ -968,6 +968,14 @@
         "https://en.wikipedia.org/wiki/Arctic_ecology"
       ],
       "updated_at": "2026-09-18T00:07:02.771000+00:00"
+    },
+    "Blowfly": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:18:04.726619+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blowfly"
+      ],
+      "updated_at": "2026-09-18T00:18:04.726626+00:00"
     }
   },
   "edges": [
@@ -1454,7 +1462,6 @@
     "Aquatic insects",
     "Amphibious insect",
     "Abdomen (insect anatomy)",
-    "Blowfly",
     "Alderfly",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
