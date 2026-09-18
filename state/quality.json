@@ -2907,5 +2907,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T14:04:02.369570+00:00"
+  },
+  "Austrobaileyales": {
+    "score": 10.0,
+    "metrics": {
+      "words": 353,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Évolution des fleurs",
+        "Basal (phylogenetics)",
+        "Angiospermes",
+        "Phylogénie des plantes",
+        "Diversification des plantes à fleurs"
+      ],
+      "diversity": 0.718,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T14:15:03.517408+00:00"
   }
 }
