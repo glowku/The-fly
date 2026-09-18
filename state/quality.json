@@ -2805,5 +2805,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T09:18:41.727719+00:00"
+  },
+  "Evolution of the horse": {
+    "score": 10.0,
+    "metrics": {
+      "words": 340,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Biological pest control",
+        "Community (ecology)",
+        "Behavioral ecology",
+        "Chemical communication in insects",
+        "Apex Predator – Easy Meat"
+      ],
+      "diversity": 0.837,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T09:22:02.016622+00:00"
   }
 }
