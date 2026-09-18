@@ -2607,5 +2607,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T00:26:09.402787+00:00"
+  },
+  "Aerodynamic (instrumental)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 304,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Animal sexual behaviour",
+        "Animal Behaviour (journal)",
+        "Alternative mating strategy",
+        "Animal behaviour",
+        "Allochronic speciation"
+      ],
+      "diversity": 0.776,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T02:18:25.589558+00:00"
   }
 }

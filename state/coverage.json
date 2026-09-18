@@ -1016,6 +1016,14 @@
         "https://en.wikipedia.org/wiki/Alderfly"
       ],
       "updated_at": "2026-09-18T00:26:09.403796+00:00"
+    },
+    "Aerodynamic (instrumental)": {
+      "depth": 4,
+      "created_at": "2026-09-18T02:18:25.590716+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aerodynamic_(instrumental)"
+      ],
+      "updated_at": "2026-09-18T02:18:25.590723+00:00"
     }
   },
   "edges": [
@@ -1522,6 +1530,10 @@
     {
       "from": "Society for the Study of Evolution",
       "to": "Evolutionary biology"
+    },
+    {
+      "from": "Aerodynamic (disambiguation)",
+      "to": "Aerodynamic (instrumental)"
     }
   ],
   "frontier": [
