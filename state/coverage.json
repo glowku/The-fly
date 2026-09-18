@@ -1152,6 +1152,14 @@
         "https://en.wikipedia.org/wiki/Austrobaileyales"
       ],
       "updated_at": "2026-09-18T14:15:03.518636+00:00"
+    },
+    "Common green bottle fly": {
+      "depth": 3,
+      "created_at": "2026-09-18T14:24:27.978254+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Common_green_bottle_fly"
+      ],
+      "updated_at": "2026-09-18T14:24:27.978260+00:00"
     }
   },
   "edges": [
@@ -1736,7 +1744,6 @@
     "Abdomen (insect anatomy)",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
-    "Common green bottle fly",
     "Evolutionarily stable strategy",
     "Adaptation (disambiguation)",
     "Black fly",

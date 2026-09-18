@@ -35,7 +35,7 @@
     "last_reinforced": "2026-09-18T10:45:05.282935+00:00"
   },
   "anatomie_insecte": {
-    "level": 3.05,
+    "level": 3.15,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -71,9 +71,10 @@
       "Blowfly's Party",
       "Spiracle (arthropods)",
       "Spiracle (vertebrates)",
-      "Evolutionary arms race"
+      "Evolutionary arms race",
+      "Common green bottle fly"
     ],
-    "last_reinforced": "2026-09-18T09:23:39.123397+00:00"
+    "last_reinforced": "2026-09-18T14:24:28.030784+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 3.1,

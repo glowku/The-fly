@@ -2926,5 +2926,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T14:15:03.517408+00:00"
+  },
+  "Common green bottle fly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 364,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Maggot",
+        "Automimicry",
+        "Arthropod mouthparts",
+        "Community (ecology)",
+        "Foraging",
+        "Chemical mimicry"
+      ],
+      "diversity": 0.801,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T14:24:27.977107+00:00"
   }
 }
