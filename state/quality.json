@@ -2702,5 +2702,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T03:34:15.838824+00:00"
+  },
+  "Brewing": {
+    "score": 7.33,
+    "metrics": {
+      "words": 320,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.843,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T03:35:55.743528+00:00"
   }
 }

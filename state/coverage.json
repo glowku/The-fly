@@ -1056,6 +1056,14 @@
         "https://en.wikipedia.org/wiki/Allagash_Brewing_Company"
       ],
       "updated_at": "2026-09-18T03:34:15.839972+00:00"
+    },
+    "Brewing": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:35:55.744799+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brewing"
+      ],
+      "updated_at": "2026-09-18T03:35:55.744806+00:00"
     }
   },
   "edges": [
@@ -1578,6 +1586,10 @@
     {
       "from": "Animal behaviour",
       "to": "Allagash Brewing Company"
+    },
+    {
+      "from": "Animal behaviour",
+      "to": "Brewing"
     }
   ],
   "frontier": [
