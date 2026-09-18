@@ -2466,5 +2466,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-17T23:55:39.846994+00:00"
+  },
+  "Arctic ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 381,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Courtship",
+        "Hovercraft",
+        "Animal behaviour",
+        "Maggot",
+        "Evolutionary biology"
+      ],
+      "diversity": 0.782,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T00:07:02.769938+00:00"
   }
 }

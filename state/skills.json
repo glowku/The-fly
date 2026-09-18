@@ -108,7 +108,7 @@
     "last_reinforced": "2026-09-17T21:33:31.709464+00:00"
   },
   "ecologie": {
-    "level": 2.6,
+    "level": 2.7,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -139,9 +139,10 @@
       "Biological pest control",
       "Chemical mimicry",
       "Cephalothorax",
-      "Blue-tailed damselfly"
+      "Blue-tailed damselfly",
+      "Arctic ecology"
     ],
-    "last_reinforced": "2026-09-17T21:10:09.359190+00:00"
+    "last_reinforced": "2026-09-18T00:07:02.958069+00:00"
   },
   "evolution": {
     "level": 2.61,

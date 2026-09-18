@@ -960,6 +960,14 @@
         "https://en.wikipedia.org/wiki/Society_for_the_Study_of_Evolution"
       ],
       "updated_at": "2026-09-17T23:55:39.848054+00:00"
+    },
+    "Arctic ecology": {
+      "depth": 5,
+      "created_at": "2026-09-18T00:07:02.770993+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arctic_ecology"
+      ],
+      "updated_at": "2026-09-18T00:07:02.771000+00:00"
     }
   },
   "edges": [
@@ -1426,6 +1434,18 @@
     {
       "from": "Ant mimicry",
       "to": "Society for the Study of Evolution"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Adaptations"
     }
   ],
   "frontier": [
@@ -1437,7 +1457,6 @@
     "Blowfly",
     "Alderfly",
     "Adaptive Compliant Wing",
-    "Arctic ecology",
     "Current research in evolutionary biology",
     "Cooperation (evolution)",
     "Adaptive evolution in the human genome",
@@ -1453,7 +1472,8 @@
     "Off Color Brewing",
     "Helicopter flight controls",
     "Acoustic ecology",
-    "Aquatic adaptation"
+    "Aquatic adaptation",
+    "Adaptations"
   ],
   "max_depth": 7
 }
