@@ -122,7 +122,7 @@
     "last_reinforced": "2026-09-18T14:15:03.573544+00:00"
   },
   "ecologie": {
-    "level": 3.09,
+    "level": 3.19,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -158,9 +158,10 @@
       "Alderfly",
       "Two Brothers Brewing",
       "Cooperation (evolution)",
-      "Helicopter flight controls"
+      "Helicopter flight controls",
+      "Acoustic ecology"
     ],
-    "last_reinforced": "2026-09-18T13:59:02.563119+00:00"
+    "last_reinforced": "2026-09-18T18:07:18.036229+00:00"
   },
   "evolution": {
     "level": 3.18,
