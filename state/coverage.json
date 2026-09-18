@@ -1160,6 +1160,14 @@
         "https://en.wikipedia.org/wiki/Common_green_bottle_fly"
       ],
       "updated_at": "2026-09-18T14:24:27.978260+00:00"
+    },
+    "Evolutionarily stable strategy": {
+      "depth": 5,
+      "created_at": "2026-09-18T14:37:02.734643+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionarily_stable_strategy"
+      ],
+      "updated_at": "2026-09-18T14:37:02.734649+00:00"
     }
   },
   "edges": [
@@ -1734,6 +1742,10 @@
     {
       "from": "Blue-tailed damselfly",
       "to": "Insect"
+    },
+    {
+      "from": "Evolutionarily stable strategy",
+      "to": "Adaptation"
     }
   ],
   "frontier": [
@@ -1744,7 +1756,6 @@
     "Abdomen (insect anatomy)",
     "Adaptive Compliant Wing",
     "Current research in evolutionary biology",
-    "Evolutionarily stable strategy",
     "Adaptation (disambiguation)",
     "Black fly",
     "Predator (disambiguation)",

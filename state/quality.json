@@ -2946,5 +2946,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T14:24:27.977107+00:00"
+  },
+  "Evolutionarily stable strategy": {
+    "score": 10.0,
+    "metrics": {
+      "words": 350,
+      "sections": 4,
+      "links": 11,
+      "link_list": [
+        "Aquatic insect",
+        "Desert ecology",
+        "Arthropod head problem",
+        "Arthropod mouthparts",
+        "Community (ecology)",
+        "Cephalothorax",
+        "Damselfly",
+        "Blue-tailed damselfly",
+        "Foraging",
+        "Chemical mimicry",
+        "Chewing"
+      ],
+      "diversity": 0.836,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T14:37:02.733533+00:00"
   }
 }

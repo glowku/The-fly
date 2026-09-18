@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.08,
+    "level": 3.18,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -30,9 +30,10 @@
       "Evolution (journal)",
       "Blowfly's Punk Rock Party",
       "Off Color Brewing",
-      "Blue-tailed damselfly"
+      "Blue-tailed damselfly",
+      "Evolutionarily stable strategy"
     ],
-    "last_reinforced": "2026-09-18T10:45:05.282935+00:00"
+    "last_reinforced": "2026-09-18T14:37:02.943669+00:00"
   },
   "anatomie_insecte": {
     "level": 3.15,
