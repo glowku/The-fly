@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-18 14:08:11 UTC
+**Dernière mise à jour** : 2026-09-18 18:54:32 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **27.999** |
-| Concepts traités | 200 | **143** |
+| Score global | maximiser | **28.599** |
+| Concepts traités | 200 | **146** |
 | Qualité moyenne | ≥ 7.5 | **9.79/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **143** |
-| Arêtes du graphe | 143 |
-| Frontière (à explorer) | 21 |
+| Concepts traités (nœuds) | **146** |
+| Arêtes du graphe | 148 |
+| Frontière (à explorer) | 19 |
 | Profondeur max | 7 |
 | Score qualité moyen | **9.79/10** |
-| Score objectif (coverage × quality) | **27.999** |
-| Actions dernières 24 h | 240 |
+| Score objectif (coverage × quality) | **28.599** |
+| Actions dernières 24 h | 231 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 141 |
+| Excellent (≥ 8) | 144 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 0 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-18T09:22:04  auto_learn      
-2026-09-18T09:23:39  skill_reinforc  
-2026-09-18T09:23:41  auto_learn_exp  Evolutionary arms race score=10.0
-2026-09-18T09:23:41  auto_learn      
-2026-09-18T09:25:21  auto_learn      
-2026-09-18T09:26:57  auto_learn      
-2026-09-18T10:45:04  plan            Blue-tailed damselfly
-2026-09-18T10:45:05  skill_reinforc  
-2026-09-18T10:45:05  branch          Blue-tailed damselfly
-2026-09-18T11:08:34  skill_reinforc  
-2026-09-18T11:08:36  auto_learn_exp  Abundance (ecology) score=10.0
-2026-09-18T11:08:36  auto_learn      
-2026-09-18T13:59:02  skill_reinforc  
-2026-09-18T13:59:04  parallel_learn  
-2026-09-18T14:04:02  skill_reinforc  
+2026-09-18T14:27:38  auto_learn      
+2026-09-18T14:29:12  auto_learn      
+2026-09-18T14:30:46  auto_learn      
+2026-09-18T14:32:20  auto_learn      
+2026-09-18T14:33:54  auto_learn      
+2026-09-18T14:35:28  auto_learn      
+2026-09-18T14:37:02  skill_reinforc  
+2026-09-18T14:48:56  plan            Evolutionary arms race
+2026-09-18T14:48:57  skill_reinforc  
+2026-09-18T14:48:57  branch          Evolutionary arms race
+2026-09-18T16:21:06  auto_learn      
+2026-09-18T17:33:42  parallel_learn  
+2026-09-18T18:07:17  plan            Acoustic ecology
+2026-09-18T18:07:18  skill_reinforc  
+2026-09-18T18:07:18  branch          Acoustic ecology
 ```
 
 ## Architecture de l'agent
