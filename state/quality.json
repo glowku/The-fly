@@ -2728,5 +2728,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T03:37:33.048957+00:00"
+  },
+  "Spiracle (vertebrates)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 270,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Deimatic behaviour",
+        "Aquatic feeding mechanisms",
+        "Behavioral ecology",
+        "Apex predator"
+      ],
+      "diversity": 0.776,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T03:39:09.861419+00:00"
   }
 }
