@@ -2715,5 +2715,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-18T03:35:55.743528+00:00"
+  },
+  "Drafting (aerodynamics)": {
+    "score": 8.0,
+    "metrics": {
+      "words": 343,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.733,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-18T03:37:33.048957+00:00"
   }
 }

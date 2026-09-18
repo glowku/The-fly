@@ -1,19 +1,15 @@
 # Drafting (aerodynamics)
 
-Le drafting, ou slipstreaming, est une technique aérodynamique exploitant la traînée réduite créée par un objet en mouvement. En alignant deux véhicules ou deux corps en mouvement à courte distance, le second profite du flux d’air dégagé par le premier, diminuant ainsi la résistance globale. Cette méthode est particulièrement efficace à haute vitesse, comme dans les courses automobiles ou cyclistes, où elle permet de réduire significativement la dépense énergétique moyenne de la peloton. Le drafting peut même entraîner une légère diminution de la consommation d’énergie du véhicule en tête.
+Le drafting, ou slipstreaming, est une technique aérodynamique qui consiste à aligner deux objets en mouvement afin d’exploiter le flux d’air créé par l’objet en tête. En se positionnant dans la traînée de celui-ci, l’objet suivant subit une réduction significative de la résistance à l’air. Cette méthode est particulièrement utile à haute vitesse, comme dans les courses automobiles ou cyclistes, où la diminution du traînée peut se traduire par une économie d’énergie notable.
 
 ## Principe de base
 
-Lorsque deux objets se déplacent côte à côte, le premier perturbe l’air, créant un tunnel d’air à faible pression derrière lui. Le second, placé dans ce tunnel, subit une résistance moindre. Le phénomène repose sur la conservation de la masse d’air et la création d’une zone de basse pression, ce qui réduit la traînée. En pratique, la distance optimale entre les objets dépend de la vitesse et de la forme aérodynamique, mais elle se situe généralement entre quelques centimètres et une dizaine de centimètres.
+Lorsque deux véhicules se suivent de près, l’objet en tête perturbe l’air, créant une zone de basse pression et de faible turbulence derrière lui. Le véhicule suivant, placé dans cette zone, rencontre moins de résistance aérodynamique. Le phénomène repose sur la conservation de la masse d’air et sur la formation d’un flux d’air comprimé qui se déplace plus rapidement entre les deux corps. Le résultat est une réduction de la force de traînée proportionnelle à la proximité relative des véhicules.
 
-## Applications pratiques
+## Applications et effets
 
-Le drafting est couramment utilisé dans les sports motorisés et cyclistes. En cyclisme, les équipes forment des pacelines où chaque coureur profite du slipstream des précédents, ce qui permet de maintenir des vitesses plus élevées avec moins d’effort. Dans la course automobile, les pilotes alignent leurs voitures pour réduire la consommation de carburant et augmenter la vitesse de pointe. Au-delà du sport, le principe est exploité dans la conception de véhicules et de drones pour optimiser l’efficacité énergétique.
+Dans le cyclisme, le drafting permet aux coureurs de maintenir des vitesses plus élevées tout en consommant moins d’énergie, ce qui explique l’efficacité des pacelines. En course automobile, les pilotes utilisent le drafting pour gagner de la vitesse lors des dépassements ou pour maintenir un pack serré sur les circuits longs. Des études montrent que le drafting peut réduire la dépense énergétique moyenne d’une peloton de 10 % à 20 %, et même diminuer légèrement la consommation d’énergie du véhicule en tête grâce à la réduction de la charge aérodynamique globale du groupe.
 
-## Effets sur la consommation d’énergie
+## Relation à l'aérodynamique automobile
 
-Les études montrent que le drafting peut réduire la dépense énergétique moyenne d’un peloton de 10 à 20 %. Même le véhicule en tête bénéficie d’une légère diminution de la traînée, ce qui se traduit par une consommation moindre de carburant ou d’énergie électrique. Cette efficacité accrue est un facteur clé dans la stratégie de course et dans la conception de systèmes de transport à haute performance.
-
-## Voir aussi
-
-[[Aerodynamics]], [[Insect flight]], [[Fly]], [[Wing]], [[Compound eye]], [[Evolution]]
+Le drafting est un concept clé de l’aérodynamique automobile, où la conception des carrosseries vise à minimiser la traînée. Les équipes de course optimisent la forme et la disposition des véhicules pour maximiser l’efficacité du drafting, en ajustant notamment la distance de suivi et la configuration des ailerons. Cette interaction entre la physique du flux d’air et la stratégie de course illustre l’importance de l’aérodynamique
