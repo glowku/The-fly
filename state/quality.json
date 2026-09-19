@@ -3580,5 +3580,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T22:31:02.807708+00:00"
+  },
+  "Bibliography of fly fishing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 268,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Evolutionarily stable strategy",
+        "Abundance (ecology)",
+        "Common green bottle fly",
+        "Climate change adaptation",
+        "Adaptation (disambiguation)",
+        "Evolutionary arms race"
+      ],
+      "diversity": 0.859,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T22:51:16.507353+00:00"
   }
 }
