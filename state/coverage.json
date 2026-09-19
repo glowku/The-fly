@@ -1264,6 +1264,14 @@
         "https://en.wikipedia.org/wiki/American_Museum_of_Fly_Fishing"
       ],
       "updated_at": "2026-09-19T03:29:38.307539+00:00"
+    },
+    "Bamboo fly rod": {
+      "depth": 4,
+      "created_at": "2026-09-19T03:32:48.642864+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bamboo_fly_rod"
+      ],
+      "updated_at": "2026-09-19T03:32:48.642871+00:00"
     }
   },
   "edges": [
@@ -1938,6 +1946,10 @@
     {
       "from": "Animal Behaviour (journal)",
       "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Hovercraft",
+      "to": "Bamboo fly rod"
     }
   ],
   "frontier": [

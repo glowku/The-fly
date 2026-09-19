@@ -3210,5 +3210,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T03:29:38.306389+00:00"
+  },
+  "Bamboo fly rod": {
+    "score": 10.0,
+    "metrics": {
+      "words": 367,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Society for the Study of Evolution",
+        "Aerodynamic (instrumental)",
+        "Evolution (journal)",
+        "Blowfly",
+        "Alderfly",
+        "Arctic ecology"
+      ],
+      "diversity": 0.771,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T03:32:48.641684+00:00"
   }
 }

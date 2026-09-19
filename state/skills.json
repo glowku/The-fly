@@ -82,7 +82,7 @@
     "last_reinforced": "2026-09-19T03:29:38.362490+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 3.35,
+    "level": 3.45,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -124,9 +124,10 @@
       "Austrobaileyales",
       "Cellular adaptation",
       "Domain adaptation",
-      "Alcohol by volume"
+      "Alcohol by volume",
+      "Bamboo fly rod"
     ],
-    "last_reinforced": "2026-09-18T22:45:03.498476+00:00"
+    "last_reinforced": "2026-09-19T03:32:48.697118+00:00"
   },
   "ecologie": {
     "level": 3.38,
