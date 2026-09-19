@@ -37,7 +37,7 @@
     "last_reinforced": "2026-09-19T01:30:24.244851+00:00"
   },
   "anatomie_insecte": {
-    "level": 3.35,
+    "level": 3.45,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -76,9 +76,10 @@
       "Evolutionary arms race",
       "Common green bottle fly",
       "Climate change adaptation",
-      "Association for the Study of Animal Behaviour"
+      "Association for the Study of Animal Behaviour",
+      "American Museum of Fly Fishing"
     ],
-    "last_reinforced": "2026-09-18T22:40:19.724280+00:00"
+    "last_reinforced": "2026-09-19T03:29:38.362490+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 3.35,

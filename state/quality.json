@@ -3190,5 +3190,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T03:28:02.356342+00:00"
+  },
+  "American Museum of Fly Fishing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 374,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Society for the Study of Evolution",
+        "Blowfly",
+        "Evolution (journal)",
+        "Eusociality",
+        "Spiracle (arthropods)",
+        "Arctic ecology"
+      ],
+      "diversity": 0.724,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T03:29:38.306389+00:00"
   }
 }

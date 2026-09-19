@@ -1256,6 +1256,14 @@
         "https://en.wikipedia.org/wiki/Artificial_fly"
       ],
       "updated_at": "2026-09-19T03:28:02.357574+00:00"
+    },
+    "American Museum of Fly Fishing": {
+      "depth": 5,
+      "created_at": "2026-09-19T03:29:38.307533+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/American_Museum_of_Fly_Fishing"
+      ],
+      "updated_at": "2026-09-19T03:29:38.307539+00:00"
     }
   },
   "edges": [
@@ -1926,6 +1934,10 @@
     {
       "from": "Artificial fly",
       "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "Animal Behaviour (journal)",
+      "to": "American Museum of Fly Fishing"
     }
   ],
   "frontier": [
