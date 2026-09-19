@@ -3377,5 +3377,20 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T13:43:17.414079+00:00"
+  },
+  "Bibliography of fly fishing (fly tying, stories, fiction)": {
+    "score": 8.5,
+    "metrics": {
+      "words": 276,
+      "sections": 4,
+      "links": 1,
+      "link_list": [
+        "Bibliography of fly fishing"
+      ],
+      "diversity": 0.742,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T14:03:02.439949+00:00"
   }
 }

@@ -38,7 +38,7 @@
     "last_reinforced": "2026-09-19T13:41:39.640511+00:00"
   },
   "anatomie_insecte": {
-    "level": 3.5,
+    "level": 3.58,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -79,9 +79,10 @@
       "Climate change adaptation",
       "Association for the Study of Animal Behaviour",
       "American Museum of Fly Fishing",
-      "Adaptation (arts)"
+      "Adaptation (arts)",
+      "Bibliography of fly fishing (fly tying, stories, fiction)"
     ],
-    "last_reinforced": "2026-09-19T09:08:03.504182+00:00"
+    "last_reinforced": "2026-09-19T14:03:02.673190+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 3.55,

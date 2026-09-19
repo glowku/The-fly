@@ -1336,6 +1336,14 @@
         "https://en.wikipedia.org/wiki/AD_Flying_Boat"
       ],
       "updated_at": "2026-09-19T13:43:17.415278+00:00"
+    },
+    "Bibliography of fly fishing (fly tying, stories, fiction)": {
+      "depth": 5,
+      "created_at": "2026-09-19T14:03:02.440989+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(fly_tying%2C_stories%2C_fiction)"
+      ],
+      "updated_at": "2026-09-19T14:03:02.440995+00:00"
     }
   },
   "edges": [
@@ -2042,6 +2050,26 @@
     {
       "from": "Helicopter flight controls",
       "to": "AD Flying Boat"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "A History of Fly Fishing for Trout"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bibliography of fly fishing (species related)"
     }
   ],
   "frontier": [
@@ -2067,7 +2095,6 @@
     "Adams (dry fly)",
     "Alexandra (wet fly)",
     "Bibliography of fly fishing",
-    "Bibliography of fly fishing (fly tying, stories, fiction)",
     "Bibliography of fly fishing (species related)"
   ],
   "max_depth": 7
