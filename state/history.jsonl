@@ -949,3 +949,4 @@
 {"ts": "2026-09-19T21:20:06.600203+00:00", "type": "plan", "title": "Acoustic ecology", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-19T21:20:06.845977+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 3.78, "article": "Acoustic ecology"}
 {"ts": "2026-09-19T21:20:06.846036+00:00", "type": "branch", "title": "Acoustic ecology", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-19T21:57:26.264508+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Domain adaptation"}
