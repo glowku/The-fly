@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-19 08:35:43 UTC
+**Dernière mise à jour** : 2026-09-19 13:42:57 UTC
 
 ## Objectif de l'agent
 
@@ -10,29 +10,29 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **31.271** |
-| Concepts traités | 200 | **160** |
-| Qualité moyenne | ≥ 7.5 | **9.77/10** |
+| Score global | maximiser | **32.312** |
+| Concepts traités | 200 | **166** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **160** |
-| Arêtes du graphe | 173 |
-| Frontière (à explorer) | 28 |
+| Concepts traités (nœuds) | **166** |
+| Arêtes du graphe | 175 |
+| Frontière (à explorer) | 24 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.77/10** |
-| Score objectif (coverage × quality) | **31.271** |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **32.312** |
 | Actions dernières 24 h | 218 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 157 |
+| Excellent (≥ 8) | 162 |
 | Bon (6 – 8) | 2 |
-| Moyen (4 – 6) | 1 |
+| Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-19T03:31:14  auto_learn      
-2026-09-19T03:32:48  skill_reinforc  
-2026-09-19T03:32:50  auto_learn_exp  Bamboo fly rod score=10.0
-2026-09-19T03:32:50  auto_learn      
-2026-09-19T03:34:23  auto_learn      
-2026-09-19T03:35:56  auto_learn      
-2026-09-19T03:37:28  auto_learn      
-2026-09-19T03:39:03  skill_reinforc  
-2026-09-19T03:39:05  auto_learn_exp  Sexual antagonistic coevolution score=10.0
-2026-09-19T03:39:05  auto_learn      
-2026-09-19T04:32:57  auto_learn      
-2026-09-19T07:07:43  plan            Blowfly's Punk Rock Party
-2026-09-19T07:07:44  skill_reinforc  
-2026-09-19T07:07:44  branch          Blowfly's Punk Rock Party
-2026-09-19T08:24:09  parallel_learn  
+2026-09-19T09:08:05  auto_learn      
+2026-09-19T09:09:39  skill_reinforc  
+2026-09-19T09:09:41  auto_learn_exp  Literary adaptation score=10.0
+2026-09-19T09:09:41  auto_learn      
+2026-09-19T09:11:14  auto_learn      
+2026-09-19T09:12:46  auto_learn      
+2026-09-19T10:53:07  auto_learn      
+2026-09-19T12:00:16  plan            Sexual antagonistic coevolution
+2026-09-19T12:00:16  skill_reinforc  
+2026-09-19T12:00:16  branch          Sexual antagonistic coevolution
+2026-09-19T13:35:09  parallel_learn  
+2026-09-19T13:40:02  skill_reinforc  
+2026-09-19T13:40:04  auto_learn_exp  Saro Windhover score=8.7
+2026-09-19T13:40:04  auto_learn      
+2026-09-19T13:41:39  skill_reinforc  
 ```
 
 ## Architecture de l'agent
