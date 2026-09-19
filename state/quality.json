@@ -3170,5 +3170,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T03:03:01.463623+00:00"
+  },
+  "Artificial fly": {
+    "score": 10.0,
+    "metrics": {
+      "words": 403,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Damselfly",
+        "Society for the Study of Evolution",
+        "Aerodynamic (instrumental)",
+        "Blowfly",
+        "Evolution (journal)",
+        "Alderfly"
+      ],
+      "diversity": 0.719,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T03:28:02.356342+00:00"
   }
 }

@@ -1,24 +1,24 @@
 # Artificial fly
 
-L’« artificial fly » (ou mouche artificielle) est une hameçon ultra‑léger, conçu principalement pour la pêche à la mouche. Il s’agit d’une prise de pêche qui imite les insectes volants ou aquatiques, sources de nourriture naturelles des poissons ciblés. Bien qu’originellement destiné à la pêche à la mouche, il peut également être employé dans d’autres formes de pêche.
+L’« artificial fly » (ou mouche artificielle) est un appât ultraléger utilisé principalement dans la pêche à la mouche, bien qu’il puisse également être employé dans d’autres formes d’angling. Il est conçu pour imiter les insectes volants et aquatiques qui constituent la nourriture naturelle des poissons de jeu ciblés par les pêcheurs. La fabrication se fait par « fly tying », où des matériaux filamentaires – poils, plumes, fibres synthétiques ou fils – sont enroulés et attachés directement sur un hameçon simple, créant des touffes libres qui reproduisent visuellement les setae, la venation, les épines et autres appendices invertebrés. Le concept est étroitement lié aux mouches terrestres, notamment la Housefly, dont l’apparence inspire de nombreuses lures.
 
 ## Origine et conception
 
-Les mouches artificielles reproduisent les caractéristiques visuelles et parfois les mouvements des insectes. Le but est de créer un appât qui ressemble aux setae, venations, épines et autres appendices invertebrés que les poissons considèrent comme de la proie. Cette imitation repose sur la fidélité des formes, des couleurs et de la texture, afin de déclencher l’instinct de chasse du poisson.
+Les mouches artificielles trouvent leur origine dans la nécessité de reproduire fidèlement les proies naturelles des poissons. Les pêcheurs ont observé que les poissons réagissaient plus fortement à des appâts qui ressemblent visuellement et parfois même mécaniquement aux insectes qu’ils chassent. Ainsi, la conception d’une mouche artificielle repose sur l’étude de la morphologie et du comportement des insectes aquatiques et volants, tels que les damselfly ou les alderfly, afin de capturer les caractéristiques visuelles qui déclenchent l’instinct de prise du poisson.
 
 ## Techniques de fabrication
 
-La fabrication se fait par « fly tying » (tissage de mouches). Des matériaux filamentaires – fourrure, plumes, fibres synthétiques, fils – sont enroulés et attachés directement sur un hameçon simple. Le résultat est un amas de poils ou de fibres qui forme des touffes lâches, rappelant l’apparence des insectes. Le choix des matériaux et la disposition des fibres déterminent la taille, la couleur et la mobilité de la mouche, influençant ainsi son efficacité dans différentes conditions de pêche.
+La technique de « fly tying » consiste à choisir un hameçon de taille appropriée, puis à enrouler les matériaux sélectionnés autour de la tête de l’hameçon. Les filaments sont disposés de façon à former des touffes qui évoquent les poils, plumes ou fibres naturelles de l’insecte cible. Les artisans utilisent des fils de différentes textures et couleurs pour simuler la brillance, la transparence ou la couleur des insectes. La précision dans la disposition des fibres permet de reproduire les détails fins tels que les setae ou la venation, éléments essentiels pour une imitation réussie.
 
 ## Utilisation et applications
 
-Dans le sport de la pêche à la mouche, les mouches artificielles servent à cibler des espèces spécifiques, en imitant les insectes qu’elles consomment naturellement. Elles sont également utilisées dans d’autres formes d’angling, où la légèreté et la capacité d’imiter la proie naturelle restent des atouts majeurs. La polyvalence de ces lures permet aux pêcheurs d’adapter leur approche en fonction de la saison, du type d’eau et du comportement des poissons.
+Au-delà de la pêche à la mouche, les mouches artificielles sont parfois employées dans d’autres techniques de pêche où un appât léger et visuellement attractif est requis. Leur légèreté permet une présentation naturelle dans l’eau, tandis que leur apparence réaliste augmente les chances de déclencher une prise. Les pêcheurs adaptent souvent les modèles en fonction des espèces ciblées, des saisons et des conditions d’eau, créant ainsi une large gamme de lures, chacune optimisée pour imiter un insecte particulier.
 
 ## Voir aussi
 
-[[Pêche à la mouche]]  
-[[Technique de fly tying]]  
-[[Insectes aquatiques]]  
-[[Hameçons de pêche]]  
-[[Lures de pêche]]  
-[[Écologie des rivières]]
+- [[Damselfly]]
+- [[Blowfly]]
+- [[Alderfly]]
+- [[Aerodynamic (instrumental)]]
+- [[Evolution (journal)]]
+- [[Society for the Study of Evolution]]

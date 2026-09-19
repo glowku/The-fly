@@ -218,7 +218,7 @@
     "last_reinforced": "2026-09-18T23:29:32.295451+00:00"
   },
   "comportement": {
-    "level": 3.29,
+    "level": 3.39,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -257,8 +257,9 @@
       "Adaptive evolution in the human genome",
       "Acoustic ecology",
       "Adaptation (disambiguation)",
-      "Black fly"
+      "Black fly",
+      "Artificial fly"
     ],
-    "last_reinforced": "2026-09-18T22:38:44.286549+00:00"
+    "last_reinforced": "2026-09-19T03:28:02.530958+00:00"
   }
 }
