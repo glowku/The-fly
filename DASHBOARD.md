@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-18 22:20:50 UTC
+**Dernière mise à jour** : 2026-09-19 03:28:33 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **29.497** |
-| Concepts traités | 200 | **151** |
+| Score global | maximiser | **30.671** |
+| Concepts traités | 200 | **157** |
 | Qualité moyenne | ≥ 7.5 | **9.77/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **151** |
-| Arêtes du graphe | 164 |
-| Frontière (à explorer) | 28 |
+| Concepts traités (nœuds) | **157** |
+| Arêtes du graphe | 167 |
+| Frontière (à explorer) | 26 |
 | Profondeur max | 7 |
 | Score qualité moyen | **9.77/10** |
-| Score objectif (coverage × quality) | **29.497** |
-| Actions dernières 24 h | 230 |
+| Score objectif (coverage × quality) | **30.671** |
+| Actions dernières 24 h | 222 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 148 |
+| Excellent (≥ 8) | 154 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 1 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-18T19:29:55  auto_learn      
-2026-09-18T19:31:30  skill_reinforc  
-2026-09-18T19:31:32  auto_learn_exp  Climate change adaptation score=10.0
-2026-09-18T19:31:32  auto_learn      
-2026-09-18T19:33:08  skill_reinforc  
-2026-09-18T19:33:10  auto_learn_exp  Domain adaptation score=10.0
-2026-09-18T19:33:10  auto_learn      
-2026-09-18T19:34:46  skill_reinforc  
-2026-09-18T19:34:48  auto_learn_exp  Ecosystem-based adaptation score=9.5
-2026-09-18T19:34:48  auto_learn      
-2026-09-18T20:10:58  parallel_learn  
-2026-09-18T20:51:52  auto_learn      
-2026-09-18T21:07:41  plan            Evolution (journal)
-2026-09-18T21:07:41  skill_reinforc  
-2026-09-18T21:07:41  branch          Evolution (journal)
+2026-09-19T03:06:10  auto_learn      
+2026-09-19T03:07:44  auto_learn      
+2026-09-19T03:09:18  auto_learn      
+2026-09-19T03:10:51  auto_learn      
+2026-09-19T03:12:25  auto_learn      
+2026-09-19T03:13:58  auto_learn      
+2026-09-19T03:15:32  auto_learn      
+2026-09-19T03:17:06  auto_learn      
+2026-09-19T03:18:39  auto_learn      
+2026-09-19T03:20:13  auto_learn      
+2026-09-19T03:21:47  auto_learn      
+2026-09-19T03:23:20  auto_learn      
+2026-09-19T03:24:54  auto_learn      
+2026-09-19T03:26:27  auto_learn      
+2026-09-19T03:28:02  skill_reinforc  
 ```
 
 ## Architecture de l'agent
