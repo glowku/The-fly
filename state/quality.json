@@ -3268,5 +3268,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T08:40:02.615846+00:00"
+  },
+  "Evolutionary anachronism": {
+    "score": 8.0,
+    "metrics": {
+      "words": 291,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.799,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T08:54:03.087827+00:00"
   }
 }

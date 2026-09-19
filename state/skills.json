@@ -222,7 +222,7 @@
     "last_reinforced": "2026-09-19T03:39:03.356750+00:00"
   },
   "comportement": {
-    "level": 3.39,
+    "level": 3.47,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -262,8 +262,9 @@
       "Acoustic ecology",
       "Adaptation (disambiguation)",
       "Black fly",
-      "Artificial fly"
+      "Artificial fly",
+      "Evolutionary anachronism"
     ],
-    "last_reinforced": "2026-09-19T03:28:02.530958+00:00"
+    "last_reinforced": "2026-09-19T08:54:03.177725+00:00"
   }
 }
