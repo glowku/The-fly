@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-19 13:42:57 UTC
+**Dernière mise à jour** : 2026-09-19 17:01:29 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **32.312** |
-| Concepts traités | 200 | **166** |
-| Qualité moyenne | ≥ 7.5 | **9.73/10** |
+| Score global | maximiser | **33.804** |
+| Concepts traités | 200 | **174** |
+| Qualité moyenne | ≥ 7.5 | **9.71/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **166** |
-| Arêtes du graphe | 175 |
-| Frontière (à explorer) | 24 |
+| Concepts traités (nœuds) | **174** |
+| Arêtes du graphe | 196 |
+| Frontière (à explorer) | 27 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **32.312** |
-| Actions dernières 24 h | 218 |
+| Score qualité moyen | **9.71/10** |
+| Score objectif (coverage × quality) | **33.804** |
+| Actions dernières 24 h | 233 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 162 |
+| Excellent (≥ 8) | 170 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-19T09:08:05  auto_learn      
-2026-09-19T09:09:39  skill_reinforc  
-2026-09-19T09:09:41  auto_learn_exp  Literary adaptation score=10.0
-2026-09-19T09:09:41  auto_learn      
-2026-09-19T09:11:14  auto_learn      
-2026-09-19T09:12:46  auto_learn      
-2026-09-19T10:53:07  auto_learn      
-2026-09-19T12:00:16  plan            Sexual antagonistic coevolution
-2026-09-19T12:00:16  skill_reinforc  
-2026-09-19T12:00:16  branch          Sexual antagonistic coevolution
-2026-09-19T13:35:09  parallel_learn  
-2026-09-19T13:40:02  skill_reinforc  
-2026-09-19T13:40:04  auto_learn_exp  Saro Windhover score=8.7
-2026-09-19T13:40:04  auto_learn      
-2026-09-19T13:41:39  skill_reinforc  
+2026-09-19T14:21:05  auto_learn_exp  Adams (dry fly) score=8.7
+2026-09-19T14:21:05  auto_learn      
+2026-09-19T14:22:43  skill_reinforc  
+2026-09-19T14:22:45  auto_learn_exp  Amateur Entomologists' Society score=10.0
+2026-09-19T14:22:45  auto_learn      
+2026-09-19T14:24:24  auto_learn      
+2026-09-19T15:50:52  auto_learn      
+2026-09-19T15:59:57  plan            Austrobaileyales
+2026-09-19T15:59:58  skill_reinforc  
+2026-09-19T15:59:58  branch          Austrobaileyales
+2026-09-19T16:55:32  parallel_learn  
+2026-09-19T16:59:04  skill_reinforc  
+2026-09-19T16:59:06  auto_learn_exp  Insect Week score=10.0
+2026-09-19T16:59:06  auto_learn      
+2026-09-19T17:00:42  skill_reinforc  
 ```
 
 ## Architecture de l'agent
