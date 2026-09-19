@@ -1352,6 +1352,14 @@
         "https://en.wikipedia.org/wiki/Blacker's_Art_of_Fly_Making"
       ],
       "updated_at": "2026-09-19T14:09:33.123636+00:00"
+    },
+    "Catskill Fly Fishing Center and Museum": {
+      "depth": 5,
+      "created_at": "2026-09-19T14:11:11.322092+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Catskill_Fly_Fishing_Center_and_Museum"
+      ],
+      "updated_at": "2026-09-19T14:11:11.322097+00:00"
     }
   },
   "edges": [
@@ -2090,6 +2098,10 @@
     {
       "from": "Drafting (aerodynamics)",
       "to": "Bonefish fly patterns"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Catskill Fly Fishing Center and Museum"
     }
   ],
   "frontier": [

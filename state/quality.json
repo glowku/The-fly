@@ -3410,5 +3410,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T14:09:33.122533+00:00"
+  },
+  "Catskill Fly Fishing Center and Museum": {
+    "score": 8.7,
+    "metrics": {
+      "words": 136,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Insect",
+        "Saro Windhover",
+        "Diptera",
+        "Fly"
+      ],
+      "diversity": 0.857,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T14:11:11.321016+00:00"
   }
 }
