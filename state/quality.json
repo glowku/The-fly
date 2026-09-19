@@ -3446,5 +3446,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T14:21:03.667941+00:00"
+  },
+  "Amateur Entomologists' Society": {
+    "score": 10.0,
+    "metrics": {
+      "words": 334,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Abundance (ecology)",
+        "Adaptive evolution in the human genome",
+        "Acoustic ecology",
+        "Evolutionary arms race",
+        "Cooperation (evolution)"
+      ],
+      "diversity": 0.827,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T14:22:42.994080+00:00"
   }
 }

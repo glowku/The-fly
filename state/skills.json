@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.58,
+    "level": 3.68,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -33,9 +33,10 @@
       "Blue-tailed damselfly",
       "Evolutionarily stable strategy",
       "Ecosystem-based adaptation",
-      "List of flying boats and floatplanes"
+      "List of flying boats and floatplanes",
+      "Amateur Entomologists' Society"
     ],
-    "last_reinforced": "2026-09-19T13:41:39.640511+00:00"
+    "last_reinforced": "2026-09-19T14:22:43.155100+00:00"
   },
   "anatomie_insecte": {
     "level": 3.58,
