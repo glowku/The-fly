@@ -128,7 +128,7 @@
     "last_reinforced": "2026-09-18T22:45:03.498476+00:00"
   },
   "ecologie": {
-    "level": 3.28,
+    "level": 3.38,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -166,9 +166,10 @@
       "Cooperation (evolution)",
       "Helicopter flight controls",
       "Acoustic ecology",
-      "Content adaptation"
+      "Content adaptation",
+      "Adaptation (eye)"
     ],
-    "last_reinforced": "2026-09-18T22:34:02.873799+00:00"
+    "last_reinforced": "2026-09-19T03:03:01.613860+00:00"
   },
   "evolution": {
     "level": 3.37,
