@@ -3540,5 +3540,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T17:12:02.498207+00:00"
+  },
+  "Blue-winged Olive flies": {
+    "score": 10.0,
+    "metrics": {
+      "words": 365,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Cellular adaptation",
+        "Aerodynamic (instrumental)",
+        "Evolutionarily stable strategy",
+        "Adaptation (disambiguation)",
+        "Abundance (ecology)",
+        "Cooperation (evolution)",
+        "Evolutionary arms race"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T17:25:01.629490+00:00"
   }
 }
