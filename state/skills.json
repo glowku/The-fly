@@ -89,7 +89,7 @@
     "last_reinforced": "2026-09-19T18:33:34.615194+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 3.74,
+    "level": 3.84,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -135,9 +135,10 @@
       "Bamboo fly rod",
       "Literary adaptation",
       "Blacker's Art of Fly Making",
-      "Royal Entomological Society"
+      "Royal Entomological Society",
+      "Adaptation (The Walking Dead)"
     ],
-    "last_reinforced": "2026-09-19T17:00:42.242255+00:00"
+    "last_reinforced": "2026-09-19T22:31:02.901013+00:00"
   },
   "ecologie": {
     "level": 3.78,

@@ -1416,6 +1416,14 @@
         "https://en.wikipedia.org/wiki/Blue-winged_Olive_flies"
       ],
       "updated_at": "2026-09-19T17:25:01.630633+00:00"
+    },
+    "Adaptation (The Walking Dead)": {
+      "depth": 7,
+      "created_at": "2026-09-19T22:31:02.809052+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(The_Walking_Dead)"
+      ],
+      "updated_at": "2026-09-19T22:31:02.809058+00:00"
     }
   },
   "edges": [
@@ -2244,7 +2252,6 @@
     "Aerodynamic drag",
     "Chromatic adaptation",
     "Adaptive behavior",
-    "Adaptation (The Walking Dead)",
     "Evolutionary Biology",
     "A History of Fly Fishing for Trout",
     "Alexandra (wet fly)",

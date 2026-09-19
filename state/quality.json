@@ -3561,5 +3561,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T17:25:01.629490+00:00"
+  },
+  "Adaptation (The Walking Dead)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 303,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Cellular adaptation",
+        "Evolutionarily stable strategy",
+        "Climate change adaptation",
+        "Evolutionary arms race",
+        "Adaptation (disambiguation)"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T22:31:02.807708+00:00"
   }
 }
