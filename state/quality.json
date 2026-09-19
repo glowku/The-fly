@@ -3294,5 +3294,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T09:08:03.415779+00:00"
+  },
+  "Literary adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 285,
+      "sections": 3,
+      "links": 12,
+      "link_list": [
+        "Alderfly",
+        "Brewing",
+        "Spiracle (vertebrates)",
+        "Off Color Brewing",
+        "Two Brothers Brewing",
+        "Aerodynamic (instrumental)",
+        "Allagash Brewing Company",
+        "Drafting (aerodynamics)",
+        "Eusociality",
+        "Spiracle (arthropods)",
+        "Blowfly's Punk Rock Party",
+        "Blowfly's Party"
+      ],
+      "diversity": 0.836,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T09:09:39.701533+00:00"
   }
 }

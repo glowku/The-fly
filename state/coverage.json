@@ -1304,6 +1304,14 @@
         "https://en.wikipedia.org/wiki/Adaptation_(arts)"
       ],
       "updated_at": "2026-09-19T09:08:03.417055+00:00"
+    },
+    "Literary adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-19T09:09:39.703236+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Literary_adaptation"
+      ],
+      "updated_at": "2026-09-19T09:09:39.703244+00:00"
     }
   },
   "edges": [
@@ -1998,6 +2006,10 @@
     {
       "from": "Blowfly's Punk Rock Party",
       "to": "Blowfly (musician)"
+    },
+    {
+      "from": "Deimatic behaviour",
+      "to": "Literary adaptation"
     }
   ],
   "frontier": [
