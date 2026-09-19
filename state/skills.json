@@ -185,7 +185,7 @@
     "last_reinforced": "2026-09-19T16:59:04.086574+00:00"
   },
   "evolution": {
-    "level": 3.66,
+    "level": 3.76,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -228,9 +228,10 @@
       "Evolution (journal)",
       "E. coli long-term evolution experiment",
       "Sexual antagonistic coevolution",
-      "Adams (dry fly)"
+      "Adams (dry fly)",
+      "Adaptation (computer science)"
     ],
-    "last_reinforced": "2026-09-19T14:21:03.898150+00:00"
+    "last_reinforced": "2026-09-19T17:12:02.676333+00:00"
   },
   "comportement": {
     "level": 3.75,

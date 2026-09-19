@@ -3521,5 +3521,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T17:02:18.786833+00:00"
+  },
+  "Adaptation (computer science)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 288,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Adaptive evolution in the human genome",
+        "Evolutionarily stable strategy",
+        "Adaptation (disambiguation)",
+        "Acoustic ecology",
+        "Evolutionary arms race"
+      ],
+      "diversity": 0.809,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T17:12:02.498207+00:00"
   }
 }
