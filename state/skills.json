@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.38,
+    "level": 3.48,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -34,7 +34,7 @@
       "Evolutionarily stable strategy",
       "Ecosystem-based adaptation"
     ],
-    "last_reinforced": "2026-09-19T01:30:24.244851+00:00"
+    "last_reinforced": "2026-09-19T07:07:44.460043+00:00"
   },
   "anatomie_insecte": {
     "level": 3.45,
