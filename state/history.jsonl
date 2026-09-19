@@ -902,3 +902,4 @@
 {"ts": "2026-09-19T15:59:57.999499+00:00", "type": "plan", "title": "Austrobaileyales", "action": "branch", "priority": 141.0, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-09-19T15:59:58.421561+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 3.68, "article": "Austrobaileyales"}
 {"ts": "2026-09-19T15:59:58.421610+00:00", "type": "branch", "title": "Austrobaileyales", "children_discovered": 2, "skill": "anatomie_insecte"}
+{"ts": "2026-09-19T16:55:32.180131+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Alderfly"}
