@@ -3465,5 +3465,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T14:22:42.994080+00:00"
+  },
+  "Insect Week": {
+    "score": 10.0,
+    "metrics": {
+      "words": 345,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Abundance (ecology)",
+        "Cooperation (evolution)",
+        "Adaptive compliant wing",
+        "Acoustic ecology",
+        "Evolutionary arms race"
+      ],
+      "diversity": 0.803,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T16:59:03.875589+00:00"
   }
 }

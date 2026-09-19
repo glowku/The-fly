@@ -903,3 +903,4 @@
 {"ts": "2026-09-19T15:59:58.421561+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 3.68, "article": "Austrobaileyales"}
 {"ts": "2026-09-19T15:59:58.421610+00:00", "type": "branch", "title": "Austrobaileyales", "children_discovered": 2, "skill": "anatomie_insecte"}
 {"ts": "2026-09-19T16:55:32.180131+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Alderfly"}
+{"ts": "2026-09-19T16:59:04.086750+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 3.68, "article": "Insect Week"}

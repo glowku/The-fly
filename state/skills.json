@@ -137,7 +137,7 @@
     "last_reinforced": "2026-09-19T14:09:33.286692+00:00"
   },
   "ecologie": {
-    "level": 3.58,
+    "level": 3.68,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -178,9 +178,10 @@
       "Content adaptation",
       "Adaptation (eye)",
       "ATM adaptation layer",
-      "AD Flying Boat"
+      "AD Flying Boat",
+      "Insect Week"
     ],
-    "last_reinforced": "2026-09-19T13:43:17.577607+00:00"
+    "last_reinforced": "2026-09-19T16:59:04.086574+00:00"
   },
   "evolution": {
     "level": 3.66,
