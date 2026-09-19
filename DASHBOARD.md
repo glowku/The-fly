@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-19 17:01:29 UTC
+**Dernière mise à jour** : 2026-09-19 20:08:42 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **33.804** |
-| Concepts traités | 200 | **174** |
-| Qualité moyenne | ≥ 7.5 | **9.71/10** |
+| Score global | maximiser | **34.404** |
+| Concepts traités | 200 | **177** |
+| Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **174** |
-| Arêtes du graphe | 196 |
-| Frontière (à explorer) | 27 |
+| Concepts traités (nœuds) | **177** |
+| Arêtes du graphe | 202 |
+| Frontière (à explorer) | 25 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.71/10** |
-| Score objectif (coverage × quality) | **33.804** |
-| Actions dernières 24 h | 233 |
+| Score qualité moyen | **9.72/10** |
+| Score objectif (coverage × quality) | **34.404** |
+| Actions dernières 24 h | 228 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 170 |
+| Excellent (≥ 8) | 173 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-19T14:21:05  auto_learn_exp  Adams (dry fly) score=8.7
-2026-09-19T14:21:05  auto_learn      
-2026-09-19T14:22:43  skill_reinforc  
-2026-09-19T14:22:45  auto_learn_exp  Amateur Entomologists' Society score=10.0
-2026-09-19T14:22:45  auto_learn      
-2026-09-19T14:24:24  auto_learn      
-2026-09-19T15:50:52  auto_learn      
-2026-09-19T15:59:57  plan            Austrobaileyales
-2026-09-19T15:59:58  skill_reinforc  
-2026-09-19T15:59:58  branch          Austrobaileyales
-2026-09-19T16:55:32  parallel_learn  
-2026-09-19T16:59:04  skill_reinforc  
-2026-09-19T16:59:06  auto_learn_exp  Insect Week score=10.0
-2026-09-19T16:59:06  auto_learn      
-2026-09-19T17:00:42  skill_reinforc  
+2026-09-19T17:26:40  auto_learn      
+2026-09-19T17:28:16  auto_learn      
+2026-09-19T17:29:53  auto_learn      
+2026-09-19T17:31:29  auto_learn      
+2026-09-19T17:33:06  auto_learn      
+2026-09-19T17:34:42  auto_learn      
+2026-09-19T17:36:19  auto_learn      
+2026-09-19T17:37:55  auto_learn      
+2026-09-19T17:39:32  auto_learn      
+2026-09-19T17:41:08  auto_learn      
+2026-09-19T17:42:45  auto_learn      
+2026-09-19T18:33:34  plan            Two Brothers Brewing
+2026-09-19T18:33:34  skill_reinforc  
+2026-09-19T18:33:34  branch          Two Brothers Brewing
+2026-09-19T19:47:46  parallel_learn  
 ```
 
 ## Architecture de l'agent
