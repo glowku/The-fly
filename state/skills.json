@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.48,
+    "level": 3.58,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -32,9 +32,10 @@
       "Off Color Brewing",
       "Blue-tailed damselfly",
       "Evolutionarily stable strategy",
-      "Ecosystem-based adaptation"
+      "Ecosystem-based adaptation",
+      "List of flying boats and floatplanes"
     ],
-    "last_reinforced": "2026-09-19T07:07:44.460043+00:00"
+    "last_reinforced": "2026-09-19T13:41:39.640511+00:00"
   },
   "anatomie_insecte": {
     "level": 3.5,

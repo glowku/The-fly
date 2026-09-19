@@ -1320,6 +1320,14 @@
         "https://en.wikipedia.org/wiki/Saro_Windhover"
       ],
       "updated_at": "2026-09-19T13:40:02.585203+00:00"
+    },
+    "List of flying boats and floatplanes": {
+      "depth": 5,
+      "created_at": "2026-09-19T13:41:39.479811+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_flying_boats_and_floatplanes"
+      ],
+      "updated_at": "2026-09-19T13:41:39.479817+00:00"
     }
   },
   "edges": [
@@ -2018,6 +2026,10 @@
     {
       "from": "Deimatic behaviour",
       "to": "Literary adaptation"
+    },
+    {
+      "from": "Tachinidae",
+      "to": "List of flying boats and floatplanes"
     }
   ],
   "frontier": [

@@ -3338,5 +3338,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T13:40:02.584160+00:00"
+  },
+  "List of flying boats and floatplanes": {
+    "score": 10.0,
+    "metrics": {
+      "words": 262,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Aerodynamic (instrumental)",
+        "Spiracle (arthropods)",
+        "Adaptive compliant wing",
+        "Spiracle (vertebrates)",
+        "Drafting (aerodynamics)",
+        "Cooperation (evolution)"
+      ],
+      "diversity": 0.78,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T13:41:39.478731+00:00"
   }
 }
