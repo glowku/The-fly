@@ -3248,5 +3248,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T03:39:03.246266+00:00"
+  },
+  "ATM adaptation layer": {
+    "score": 10.0,
+    "metrics": {
+      "words": 332,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Protocol adaptation",
+        "Quality of Service",
+        "Adaptation (disambiguation)",
+        "ATM cell",
+        "Network layer",
+        "Asynchronous Transfer Mode"
+      ],
+      "diversity": 0.697,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T08:40:02.615846+00:00"
   }
 }

@@ -1280,6 +1280,14 @@
         "https://en.wikipedia.org/wiki/Sexual_antagonistic_coevolution"
       ],
       "updated_at": "2026-09-19T03:39:03.247406+00:00"
+    },
+    "ATM adaptation layer": {
+      "depth": 7,
+      "created_at": "2026-09-19T08:40:02.617188+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ATM_adaptation_layer"
+      ],
+      "updated_at": "2026-09-19T08:40:02.617195+00:00"
     }
   },
   "edges": [
@@ -1993,7 +2001,6 @@
     "Evolutionary anachronism",
     "Adaptation (arts)",
     "Chromatic adaptation",
-    "ATM adaptation layer",
     "Adaptation (computer science)",
     "Adaptive behavior",
     "Adaptation (The Walking Dead)",
