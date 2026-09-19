@@ -3392,5 +3392,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T14:03:02.439949+00:00"
+  },
+  "Blacker's Art of Fly Making": {
+    "score": 10.0,
+    "metrics": {
+      "words": 372,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Evolutionary arms race",
+        "Spiracle (arthropods)",
+        "Drafting (aerodynamics)",
+        "Brewing"
+      ],
+      "diversity": 0.748,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T14:09:33.122533+00:00"
   }
 }
