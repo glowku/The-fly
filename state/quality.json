@@ -3484,5 +3484,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T16:59:03.875589+00:00"
+  },
+  "Royal Entomological Society": {
+    "score": 8.7,
+    "metrics": {
+      "words": 104,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Domain adaptation",
+        "Fly",
+        "Insect",
+        "Diptera"
+      ],
+      "diversity": 0.855,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T17:00:42.119531+00:00"
   }
 }
