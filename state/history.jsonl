@@ -944,3 +944,4 @@
 {"ts": "2026-09-19T18:33:34.488564+00:00", "type": "plan", "title": "Two Brothers Brewing", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-09-19T18:33:34.615463+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 3.78, "article": "Two Brothers Brewing"}
 {"ts": "2026-09-19T18:33:34.615525+00:00", "type": "branch", "title": "Two Brothers Brewing", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-09-19T19:47:46.435963+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Adaptation (eye)"}
