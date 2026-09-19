@@ -1392,6 +1392,14 @@
         "https://en.wikipedia.org/wiki/Royal_Entomological_Society"
       ],
       "updated_at": "2026-09-19T17:00:42.120568+00:00"
+    },
+    "The Entomologist's Record and Journal of Variation": {
+      "depth": 6,
+      "created_at": "2026-09-19T17:02:18.788226+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Entomologist's_Record_and_Journal_of_Variation"
+      ],
+      "updated_at": "2026-09-19T17:02:18.788234+00:00"
     }
   },
   "edges": [

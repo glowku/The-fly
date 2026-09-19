@@ -3502,5 +3502,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T17:00:42.119531+00:00"
+  },
+  "The Entomologist's Record and Journal of Variation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 279,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Common green bottle fly",
+        "Evolutionarily stable strategy",
+        "Abundance (ecology)",
+        "Acoustic ecology",
+        "Evolutionary arms race"
+      ],
+      "diversity": 0.821,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T17:02:18.786833+00:00"
   }
 }
