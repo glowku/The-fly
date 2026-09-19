@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-19 03:28:33 UTC
+**Dernière mise à jour** : 2026-09-19 08:35:43 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **30.671** |
-| Concepts traités | 200 | **157** |
+| Score global | maximiser | **31.271** |
+| Concepts traités | 200 | **160** |
 | Qualité moyenne | ≥ 7.5 | **9.77/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **157** |
-| Arêtes du graphe | 167 |
-| Frontière (à explorer) | 26 |
+| Concepts traités (nœuds) | **160** |
+| Arêtes du graphe | 173 |
+| Frontière (à explorer) | 28 |
 | Profondeur max | 7 |
 | Score qualité moyen | **9.77/10** |
-| Score objectif (coverage × quality) | **30.671** |
-| Actions dernières 24 h | 222 |
+| Score objectif (coverage × quality) | **31.271** |
+| Actions dernières 24 h | 218 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 154 |
+| Excellent (≥ 8) | 157 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 1 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-19T03:06:10  auto_learn      
-2026-09-19T03:07:44  auto_learn      
-2026-09-19T03:09:18  auto_learn      
-2026-09-19T03:10:51  auto_learn      
-2026-09-19T03:12:25  auto_learn      
-2026-09-19T03:13:58  auto_learn      
-2026-09-19T03:15:32  auto_learn      
-2026-09-19T03:17:06  auto_learn      
-2026-09-19T03:18:39  auto_learn      
-2026-09-19T03:20:13  auto_learn      
-2026-09-19T03:21:47  auto_learn      
-2026-09-19T03:23:20  auto_learn      
-2026-09-19T03:24:54  auto_learn      
-2026-09-19T03:26:27  auto_learn      
-2026-09-19T03:28:02  skill_reinforc  
+2026-09-19T03:31:14  auto_learn      
+2026-09-19T03:32:48  skill_reinforc  
+2026-09-19T03:32:50  auto_learn_exp  Bamboo fly rod score=10.0
+2026-09-19T03:32:50  auto_learn      
+2026-09-19T03:34:23  auto_learn      
+2026-09-19T03:35:56  auto_learn      
+2026-09-19T03:37:28  auto_learn      
+2026-09-19T03:39:03  skill_reinforc  
+2026-09-19T03:39:05  auto_learn_exp  Sexual antagonistic coevolution score=10.0
+2026-09-19T03:39:05  auto_learn      
+2026-09-19T04:32:57  auto_learn      
+2026-09-19T07:07:43  plan            Blowfly's Punk Rock Party
+2026-09-19T07:07:44  skill_reinforc  
+2026-09-19T07:07:44  branch          Blowfly's Punk Rock Party
+2026-09-19T08:24:09  parallel_learn  
 ```
 
 ## Architecture de l'agent
