@@ -3230,5 +3230,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T03:32:48.641684+00:00"
+  },
+  "Sexual antagonistic coevolution": {
+    "score": 10.0,
+    "metrics": {
+      "words": 358,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Spiracle (arthropods)",
+        "Blowfly",
+        "Society for the Study of Evolution",
+        "Eusociality"
+      ],
+      "diversity": 0.786,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T03:39:03.246266+00:00"
   }
 }
