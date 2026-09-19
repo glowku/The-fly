@@ -946,3 +946,6 @@
 {"ts": "2026-09-19T18:33:34.615525+00:00", "type": "branch", "title": "Two Brothers Brewing", "children_discovered": 0, "skill": "anatomie_insecte"}
 {"ts": "2026-09-19T19:47:46.435963+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Adaptation (eye)"}
 {"ts": "2026-09-19T20:35:18.701824+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Adaptation (eye)", "recent": ["Blue-winged Olive flies", "Adaptation (computer science)", "The Entomologist's Record and Journal of Variation", "Royal Entomological Society", "Insect Week", "Amateur Entomologists' Society", "Adams (dry fly)", "Catskill Fly Fishing Center and Museum"]}
+{"ts": "2026-09-19T21:20:06.600203+00:00", "type": "plan", "title": "Acoustic ecology", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-09-19T21:20:06.845977+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 3.78, "article": "Acoustic ecology"}
+{"ts": "2026-09-19T21:20:06.846036+00:00", "type": "branch", "title": "Acoustic ecology", "children_discovered": 0, "skill": "ecologie"}
