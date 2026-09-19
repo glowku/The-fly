@@ -1296,6 +1296,14 @@
         "https://en.wikipedia.org/wiki/Evolutionary_anachronism"
       ],
       "updated_at": "2026-09-19T08:54:03.089116+00:00"
+    },
+    "Adaptation (arts)": {
+      "depth": 7,
+      "created_at": "2026-09-19T09:08:03.417048+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(arts)"
+      ],
+      "updated_at": "2026-09-19T09:08:03.417055+00:00"
     }
   },
   "edges": [
@@ -2006,7 +2014,6 @@
     "Adaptations",
     "Evolutionary biologists",
     "Aerodynamic drag",
-    "Adaptation (arts)",
     "Chromatic adaptation",
     "Adaptation (computer science)",
     "Adaptive behavior",

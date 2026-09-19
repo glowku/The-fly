@@ -3281,5 +3281,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-19T08:54:03.087827+00:00"
+  },
+  "Adaptation (arts)": {
+    "score": 5.37,
+    "metrics": {
+      "words": 153,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.867,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-19T09:08:03.415779+00:00"
   }
 }
