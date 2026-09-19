@@ -1312,6 +1312,14 @@
         "https://en.wikipedia.org/wiki/Literary_adaptation"
       ],
       "updated_at": "2026-09-19T09:09:39.703244+00:00"
+    },
+    "Saro Windhover": {
+      "depth": 4,
+      "created_at": "2026-09-19T13:40:02.585196+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saro_Windhover"
+      ],
+      "updated_at": "2026-09-19T13:40:02.585203+00:00"
     }
   },
   "edges": [
@@ -2030,7 +2038,6 @@
     "Adaptation (computer science)",
     "Adaptive behavior",
     "Adaptation (The Walking Dead)",
-    "Saro Windhover",
     "Evolutionary Biology",
     "A History of Fly Fishing for Trout",
     "Adams (dry fly)",

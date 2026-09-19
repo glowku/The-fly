@@ -224,7 +224,7 @@
     "last_reinforced": "2026-09-19T12:00:16.261162+00:00"
   },
   "comportement": {
-    "level": 3.47,
+    "level": 3.56,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -265,8 +265,9 @@
       "Adaptation (disambiguation)",
       "Black fly",
       "Artificial fly",
-      "Evolutionary anachronism"
+      "Evolutionary anachronism",
+      "Saro Windhover"
     ],
-    "last_reinforced": "2026-09-19T08:54:03.177725+00:00"
+    "last_reinforced": "2026-09-19T13:40:02.800369+00:00"
   }
 }
