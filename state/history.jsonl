@@ -767,3 +767,4 @@
 {"ts": "2026-09-19T01:30:23.928949+00:00", "type": "plan", "title": "Blowfly's Punk Rock Party", "action": "branch", "priority": 141.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-19T01:30:24.245042+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 3.38, "article": "Blowfly's Punk Rock Party"}
 {"ts": "2026-09-19T01:30:24.245073+00:00", "type": "branch", "title": "Blowfly's Punk Rock Party", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-19T02:20:45.222973+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Helicopter flight controls"}
