@@ -260,7 +260,7 @@
     "last_reinforced": "2026-09-20T14:19:37.637594+00:00"
   },
   "comportement": {
-    "level": 4.25,
+    "level": 4.34,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -309,8 +309,9 @@
       "Adaptive Behavior (journal)",
       "Behavior",
       "Behavioural genetics",
-      "Behavioral endocrinology"
+      "Behavioral endocrinology",
+      "Antecedent (behavioral psychology)"
     ],
-    "last_reinforced": "2026-09-20T14:18:02.187475+00:00"
+    "last_reinforced": "2026-09-20T20:55:02.307682+00:00"
   }
 }

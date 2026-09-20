@@ -4049,5 +4049,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T17:42:01.828698+00:00"
+  },
+  "Antecedent (behavioral psychology)": {
+    "score": 8.7,
+    "metrics": {
+      "words": 117,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Diptera",
+        "Fly",
+        "Entomology",
+        "Insect"
+      ],
+      "diversity": 0.87,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T20:55:02.221102+00:00"
   }
 }
