@@ -3803,5 +3803,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T09:33:14.096527+00:00"
+  },
+  "Behavior informatics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 379,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Domain adaptation",
+        "Ecosystem-based adaptation",
+        "Association for the Study of Animal Behaviour",
+        "Content adaptation"
+      ],
+      "diversity": 0.769,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T09:39:33.719598+00:00"
   }
 }
