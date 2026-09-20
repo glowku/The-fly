@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-20 09:06:54 UTC
+**Dernière mise à jour** : 2026-09-20 13:58:50 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **35.804** |
-| Concepts traités | 200 | **184** |
-| Qualité moyenne | ≥ 7.5 | **9.73/10** |
+| Score global | maximiser | **37.604** |
+| Concepts traités | 200 | **193** |
+| Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **184** |
-| Arêtes du graphe | 219 |
-| Frontière (à explorer) | 22 |
-| Profondeur max | 7 |
-| Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **35.804** |
-| Actions dernières 24 h | 187 |
+| Concepts traités (nœuds) | **193** |
+| Arêtes du graphe | 242 |
+| Frontière (à explorer) | 29 |
+| Profondeur max | 8 |
+| Score qualité moyen | **9.74/10** |
+| Score objectif (coverage × quality) | **37.604** |
+| Actions dernières 24 h | 207 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 180 |
+| Excellent (≥ 8) | 189 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-20T03:41:46  auto_learn      
-2026-09-20T03:43:23  auto_learn      
-2026-09-20T03:44:59  auto_learn      
-2026-09-20T03:46:35  auto_learn      
-2026-09-20T03:48:12  auto_learn      
-2026-09-20T03:49:48  auto_learn      
-2026-09-20T03:51:24  auto_learn      
-2026-09-20T03:53:01  skill_reinforc  
-2026-09-20T03:53:03  auto_learn_exp  Bibliography of fly fishing (species related) score=10.0
-2026-09-20T03:53:03  auto_learn      
-2026-09-20T04:49:36  auto_learn      
-2026-09-20T06:47:22  plan            Bamboo fly rod
-2026-09-20T06:47:24  skill_reinforc  
-2026-09-20T06:47:24  branch          Bamboo fly rod
-2026-09-20T08:55:32  parallel_learn  
+2026-09-20T09:39:35  auto_learn_exp  Behavior informatics score=10.0
+2026-09-20T09:39:35  auto_learn      
+2026-09-20T09:41:09  auto_learn      
+2026-09-20T09:42:43  skill_reinforc  
+2026-09-20T09:42:44  auto_learn_exp  Behavioural sciences score=10.0
+2026-09-20T09:42:44  auto_learn      
+2026-09-20T09:44:18  auto_learn      
+2026-09-20T11:16:50  skill_reinforc  
+2026-09-20T11:16:52  auto_learn_exp  Behavioral neuroscience score=10.0
+2026-09-20T11:16:52  auto_learn      
+2026-09-20T12:05:21  plan            Evolutionary anachronism
+2026-09-20T12:05:22  skill_reinforc  
+2026-09-20T12:05:22  branch          Evolutionary anachronism
+2026-09-20T13:49:57  skill_reinforc  
+2026-09-20T13:49:59  parallel_learn  
 ```
 
 ## Architecture de l'agent
