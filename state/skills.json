@@ -241,7 +241,7 @@
     "last_reinforced": "2026-09-19T23:22:07.161266+00:00"
   },
   "comportement": {
-    "level": 3.85,
+    "level": 3.95,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -286,8 +286,9 @@
       "Saro Windhover",
       "Catskill Fly Fishing Center and Museum",
       "The Entomologist's Record and Journal of Variation",
-      "Bibliography of fly fishing"
+      "Bibliography of fly fishing",
+      "Adaptive Behavior (journal)"
     ],
-    "last_reinforced": "2026-09-19T22:51:16.538779+00:00"
+    "last_reinforced": "2026-09-20T03:25:41.094315+00:00"
   }
 }

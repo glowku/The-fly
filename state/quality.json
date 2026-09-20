@@ -3659,5 +3659,28 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T03:24:04.776217+00:00"
+  },
+  "Adaptive Behavior (journal)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 389,
+      "sections": 4,
+      "links": 9,
+      "link_list": [
+        "Acoustic ecology",
+        "Ambush predator",
+        "Domain adaptation",
+        "Cellular adaptation",
+        "Content adaptation",
+        "Association for the Study of Animal Behaviour",
+        "Ecosystem-based adaptation",
+        "Evolutionarily stable strategy",
+        "Adaptation (disambiguation)"
+      ],
+      "diversity": 0.687,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T03:25:40.973145+00:00"
   }
 }
