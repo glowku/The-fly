@@ -1027,3 +1027,4 @@
 {"ts": "2026-09-20T06:47:22.443712+00:00", "type": "plan", "title": "Bamboo fly rod", "action": "branch", "priority": 141.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-20T06:47:24.156018+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 3.98, "article": "Bamboo fly rod"}
 {"ts": "2026-09-20T06:47:24.156083+00:00", "type": "branch", "title": "Bamboo fly rod", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-20T08:55:32.064469+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Agonistic behaviour"}
