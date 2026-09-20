@@ -1608,6 +1608,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_Ecology_(journal)"
       ],
       "updated_at": "2026-09-20T17:09:39.347645+00:00"
+    },
+    "Bonefish fly patterns": {
+      "depth": 5,
+      "created_at": "2026-09-20T17:42:01.830202+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bonefish_fly_patterns"
+      ],
+      "updated_at": "2026-09-20T17:42:01.830211+00:00"
     }
   },
   "edges": [
@@ -2610,6 +2618,30 @@
     {
       "from": "Evolutionary psychology",
       "to": "Adaptationism"
+    },
+    {
+      "from": "Spiracle (arthropods)",
+      "to": "Behavioral ecology (disambiguation)"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Bibliography of fly fishing (species related)"
     }
   ],
   "frontier": [
@@ -2628,7 +2660,6 @@
     "Aerodynamic drag",
     "Evolutionary Biology",
     "Alexandra (wet fly)",
-    "Bonefish fly patterns",
     "Austrobaileyaceae",
     "Austrobaileya scandens",
     "National Insect Week",
@@ -2640,7 +2671,8 @@
     "Behavior analysis (disambiguation)",
     "Behavioral pattern",
     "Behavioral cusp",
-    "Adaptationist"
+    "Adaptationist",
+    "Behavioral ecology (disambiguation)"
   ],
   "max_depth": 9
 }

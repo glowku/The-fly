@@ -45,7 +45,7 @@
     "last_reinforced": "2026-09-20T17:09:39.378463+00:00"
   },
   "anatomie_insecte": {
-    "level": 4.18,
+    "level": 4.28,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -93,9 +93,10 @@
       "Insect Festival",
       "Vineland Adaptive Behavior Scale",
       "Behavioural sciences",
-      "Behavioral economics"
+      "Behavioral economics",
+      "Bonefish fly patterns"
     ],
-    "last_reinforced": "2026-09-20T14:03:41.505381+00:00"
+    "last_reinforced": "2026-09-20T17:42:01.959498+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 4.27,

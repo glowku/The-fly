@@ -4029,5 +4029,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T17:09:39.346113+00:00"
+  },
+  "Bonefish fly patterns": {
+    "score": 10.0,
+    "metrics": {
+      "words": 393,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Amateur Entomologists' Society",
+        "Blacker's Art of Fly Making",
+        "Insect Week",
+        "Catskill Fly Fishing Center and Museum",
+        "Adams (dry fly)",
+        "Bibliography of fly fishing (fly tying, stories, fiction)"
+      ],
+      "diversity": 0.769,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T17:42:01.828698+00:00"
   }
 }
