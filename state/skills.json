@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.78,
+    "level": 3.88,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -35,9 +35,10 @@
       "Ecosystem-based adaptation",
       "List of flying boats and floatplanes",
       "Amateur Entomologists' Society",
-      "Blue-winged Olive flies"
+      "Blue-winged Olive flies",
+      "Blowfly's Party"
     ],
-    "last_reinforced": "2026-09-19T17:25:01.795247+00:00"
+    "last_reinforced": "2026-09-20T01:25:56.735811+00:00"
   },
   "anatomie_insecte": {
     "level": 3.78,
