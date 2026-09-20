@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 3.88,
+    "level": 3.98,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -36,9 +36,10 @@
       "List of flying boats and floatplanes",
       "Amateur Entomologists' Society",
       "Blue-winged Olive flies",
-      "Blowfly's Party"
+      "Blowfly's Party",
+      "Bamboo fly rod"
     ],
-    "last_reinforced": "2026-09-20T01:25:56.735811+00:00"
+    "last_reinforced": "2026-09-20T06:47:24.155763+00:00"
   },
   "anatomie_insecte": {
     "level": 3.88,
