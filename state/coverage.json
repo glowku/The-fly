@@ -2486,6 +2486,10 @@
     {
       "from": "Arthropod mouthparts",
       "to": "Behavior selection algorithm"
+    },
+    {
+      "from": "Adaptation (eye)",
+      "to": "Behavior analysis (disambiguation)"
     }
   ],
   "frontier": [
@@ -2515,7 +2519,8 @@
     "Antecedent (behavioral psychology)",
     "Association for Behavior Analysis International",
     "Behavior (disambiguation)",
-    "Behavior selection algorithm"
+    "Behavior selection algorithm",
+    "Behavior analysis (disambiguation)"
   ],
   "max_depth": 8
 }
