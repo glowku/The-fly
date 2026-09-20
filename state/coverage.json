@@ -2502,6 +2502,10 @@
     {
       "from": "AD Flying Boat",
       "to": "Behavioral neuroscience"
+    },
+    {
+      "from": "AD Flying Boat",
+      "to": "Behavioral pattern"
     }
   ],
   "frontier": [
@@ -2532,7 +2536,8 @@
     "Association for Behavior Analysis International",
     "Behavior (disambiguation)",
     "Behavior selection algorithm",
-    "Behavior analysis (disambiguation)"
+    "Behavior analysis (disambiguation)",
+    "Behavioral pattern"
   ],
   "max_depth": 8
 }
