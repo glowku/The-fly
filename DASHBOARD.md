@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-20 13:58:50 UTC
+**Dernière mise à jour** : 2026-09-20 17:23:59 UTC
 
 ## Objectif de l'agent
 
@@ -10,29 +10,29 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **37.604** |
-| Concepts traités | 200 | **193** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Score global | maximiser | **38.917** |
+| Concepts traités | 200 | **201** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **193** |
-| Arêtes du graphe | 242 |
-| Frontière (à explorer) | 29 |
-| Profondeur max | 8 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **37.604** |
-| Actions dernières 24 h | 207 |
+| Concepts traités (nœuds) | **201** |
+| Arêtes du graphe | 250 |
+| Frontière (à explorer) | 28 |
+| Profondeur max | 9 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **38.917** |
+| Actions dernières 24 h | 201 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 189 |
+| Excellent (≥ 8) | 196 |
 | Bon (6 – 8) | 2 |
-| Moyen (4 – 6) | 2 |
+| Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-20T09:39:35  auto_learn_exp  Behavior informatics score=10.0
-2026-09-20T09:39:35  auto_learn      
-2026-09-20T09:41:09  auto_learn      
-2026-09-20T09:42:43  skill_reinforc  
-2026-09-20T09:42:44  auto_learn_exp  Behavioural sciences score=10.0
-2026-09-20T09:42:44  auto_learn      
-2026-09-20T09:44:18  auto_learn      
-2026-09-20T11:16:50  skill_reinforc  
-2026-09-20T11:16:52  auto_learn_exp  Behavioral neuroscience score=10.0
-2026-09-20T11:16:52  auto_learn      
-2026-09-20T12:05:21  plan            Evolutionary anachronism
-2026-09-20T12:05:22  skill_reinforc  
-2026-09-20T12:05:22  branch          Evolutionary anachronism
-2026-09-20T13:49:57  skill_reinforc  
-2026-09-20T13:49:59  parallel_learn  
+2026-09-20T14:25:55  auto_learn      
+2026-09-20T14:27:30  auto_learn      
+2026-09-20T14:29:04  auto_learn      
+2026-09-20T14:30:38  auto_learn      
+2026-09-20T14:32:13  auto_learn      
+2026-09-20T14:33:47  auto_learn      
+2026-09-20T14:35:21  auto_learn      
+2026-09-20T14:36:55  auto_learn      
+2026-09-20T14:38:29  auto_learn      
+2026-09-20T16:00:23  auto_learn      
+2026-09-20T16:23:22  plan            Evolutionary psychology
+2026-09-20T16:23:23  skill_reinforc  
+2026-09-20T16:23:23  branch          Evolutionary psychology
+2026-09-20T17:09:39  skill_reinforc  
+2026-09-20T17:09:40  parallel_learn  
 ```
 
 ## Architecture de l'agent
