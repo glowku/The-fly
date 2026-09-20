@@ -1480,6 +1480,14 @@
         "https://en.wikipedia.org/wiki/Vineland_Adaptive_Behavior_Scale"
       ],
       "updated_at": "2026-09-20T09:08:04.837250+00:00"
+    },
+    "A History of Fly Fishing for Trout": {
+      "depth": 6,
+      "created_at": "2026-09-20T09:19:03.694753+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/A_History_of_Fly_Fishing_for_Trout"
+      ],
+      "updated_at": "2026-09-20T09:19:03.694761+00:00"
     }
   },
   "edges": [
@@ -2362,6 +2370,34 @@
     {
       "from": "Agonistic behaviour",
       "to": "Vineland Adaptive Behavior Scale"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Blue-winged Olive flies"
     }
   ],
   "frontier": [
@@ -2379,7 +2415,6 @@
     "Evolutionary biologists",
     "Aerodynamic drag",
     "Evolutionary Biology",
-    "A History of Fly Fishing for Trout",
     "Alexandra (wet fly)",
     "Bonefish fly patterns",
     "Austrobaileyaceae",

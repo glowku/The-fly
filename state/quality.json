@@ -3723,5 +3723,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T09:08:04.835799+00:00"
+  },
+  "A History of Fly Fishing for Trout": {
+    "score": 10.0,
+    "metrics": {
+      "words": 362,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Evolutionarily stable strategy",
+        "Adaptation (disambiguation)",
+        "Ecosystem-based adaptation",
+        "Artificial fly",
+        "Adaptation (eye)",
+        "Black fly",
+        "Association for the Study of Animal Behaviour"
+      ],
+      "diversity": 0.74,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T09:19:03.693378+00:00"
   }
 }

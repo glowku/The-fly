@@ -146,7 +146,7 @@
     "last_reinforced": "2026-09-20T03:24:04.951122+00:00"
   },
   "ecologie": {
-    "level": 3.88,
+    "level": 3.98,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -189,9 +189,10 @@
       "ATM adaptation layer",
       "AD Flying Boat",
       "Insect Week",
-      "Chromatic adaptation"
+      "Chromatic adaptation",
+      "A History of Fly Fishing for Trout"
     ],
-    "last_reinforced": "2026-09-20T03:16:03.534705+00:00"
+    "last_reinforced": "2026-09-20T09:19:03.849113+00:00"
   },
   "evolution": {
     "level": 3.96,
