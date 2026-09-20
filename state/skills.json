@@ -97,7 +97,7 @@
     "last_reinforced": "2026-09-20T14:03:41.505381+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 4.12,
+    "level": 4.17,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -147,9 +147,10 @@
       "Adaptation (The Walking Dead)",
       "Adaptive behavior",
       "Adaptive behavior (ecology)",
-      "Evolutionary anachronism"
+      "Evolutionary anachronism",
+      "Behaviorism"
     ],
-    "last_reinforced": "2026-09-20T12:05:22.203493+00:00"
+    "last_reinforced": "2026-09-20T14:10:05.830332+00:00"
   },
   "ecologie": {
     "level": 4.18,

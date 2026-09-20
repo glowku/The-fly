@@ -1576,6 +1576,14 @@
         "https://en.wikipedia.org/wiki/A_Behavioral_Theory_of_the_Firm"
       ],
       "updated_at": "2026-09-20T14:05:17.387442+00:00"
+    },
+    "Behaviorism": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:10:05.741396+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviorism"
+      ],
+      "updated_at": "2026-09-20T14:10:05.741404+00:00"
     }
   },
   "edges": [
@@ -2589,7 +2597,6 @@
     "Behavior selection algorithm",
     "Behavior analysis (disambiguation)",
     "Behavioral pattern",
-    "Behaviorism",
     "Behavioral cusp"
   ],
   "max_depth": 8

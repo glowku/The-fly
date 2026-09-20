@@ -3957,5 +3957,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T14:05:17.385934+00:00"
+  },
+  "Behaviorism": {
+    "score": 5.37,
+    "metrics": {
+      "words": 170,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.856,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T14:10:05.739914+00:00"
   }
 }
