@@ -4009,5 +4009,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T14:19:37.576578+00:00"
+  },
+  "Behavioral Ecology (journal)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 331,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Literary adaptation",
+        "Evolutionary anachronism",
+        "Saro Windhover",
+        "ATM adaptation layer",
+        "Courtship",
+        "Adaptation (arts)"
+      ],
+      "diversity": 0.773,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T17:09:39.346113+00:00"
   }
 }

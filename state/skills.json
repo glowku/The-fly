@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 4.18,
+    "level": 4.28,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -39,9 +39,10 @@
       "Blowfly's Party",
       "Bamboo fly rod",
       "Behavior informatics",
-      "Behaviour (journal)"
+      "Behaviour (journal)",
+      "Behavioral Ecology (journal)"
     ],
-    "last_reinforced": "2026-09-20T14:02:03.724381+00:00"
+    "last_reinforced": "2026-09-20T17:09:39.378463+00:00"
   },
   "anatomie_insecte": {
     "level": 4.18,

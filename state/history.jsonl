@@ -1126,3 +1126,4 @@
 {"ts": "2026-09-20T16:23:22.508643+00:00", "type": "plan", "title": "Evolutionary psychology", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-20T16:23:23.173231+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 4.27, "article": "Evolutionary psychology"}
 {"ts": "2026-09-20T16:23:23.173288+00:00", "type": "branch", "title": "Evolutionary psychology", "children_discovered": 1, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-20T17:09:39.378736+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 4.28, "article": "Behavioral Ecology (journal)"}
