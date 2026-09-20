@@ -1201,3 +1201,4 @@
 {"ts": "2026-09-20T23:22:15.479946+00:00", "type": "plan", "title": "Evolutionary anachronism", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-20T23:22:16.019665+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 4.35, "article": "Evolutionary anachronism"}
 {"ts": "2026-09-20T23:22:16.019724+00:00", "type": "branch", "title": "Evolutionary anachronism", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-20T23:43:31.095000+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Cephalon (arthropod head)"}
