@@ -984,3 +984,4 @@
 {"ts": "2026-09-20T01:25:56.337160+00:00", "type": "plan", "title": "Blowfly's Party", "action": "branch", "priority": 141.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-20T01:25:56.736066+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 3.88, "article": "Blowfly's Party"}
 {"ts": "2026-09-20T01:25:56.736129+00:00", "type": "branch", "title": "Blowfly's Party", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-20T02:30:01.420409+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 3.88, "article": "Insect Festival"}
