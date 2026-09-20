@@ -3682,5 +3682,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T03:25:40.973145+00:00"
+  },
+  "Bibliography of fly fishing (species related)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 353,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Cellular adaptation",
+        "Bibliography of fly fishing",
+        "Evolutionarily stable strategy",
+        "Austrobaileyales",
+        "Common green bottle fly",
+        "Climate change adaptation",
+        "Adaptation (disambiguation)"
+      ],
+      "diversity": 0.722,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T03:53:01.729094+00:00"
   }
 }

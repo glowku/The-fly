@@ -1464,6 +1464,14 @@
         "https://en.wikipedia.org/wiki/Adaptive_Behavior_(journal)"
       ],
       "updated_at": "2026-09-20T03:25:40.974457+00:00"
+    },
+    "Bibliography of fly fishing (species related)": {
+      "depth": 5,
+      "created_at": "2026-09-20T03:53:01.730452+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(species_related)"
+      ],
+      "updated_at": "2026-09-20T03:53:01.730459+00:00"
     }
   },
   "edges": [
@@ -2306,6 +2314,18 @@
     {
       "from": "Ambush predator",
       "to": "Adaptive Behavior (journal)"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "Artificial fly"
     }
   ],
   "frontier": [
@@ -2325,7 +2345,6 @@
     "Evolutionary Biology",
     "A History of Fly Fishing for Trout",
     "Alexandra (wet fly)",
-    "Bibliography of fly fishing (species related)",
     "Bonefish fly patterns",
     "Austrobaileyaceae",
     "Austrobaileya scandens",
