@@ -1162,3 +1162,4 @@
 {"ts": "2026-09-20T18:58:01.174914+00:00", "type": "plan", "title": "Acoustic ecology", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-20T18:58:01.512882+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.28, "article": "Acoustic ecology"}
 {"ts": "2026-09-20T18:58:01.512945+00:00", "type": "branch", "title": "Acoustic ecology", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-20T20:00:21.650450+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Arthropod head problem"}
