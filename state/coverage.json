@@ -2590,6 +2590,18 @@
     {
       "from": "Literary adaptation",
       "to": "Evolutionary psychology"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Adaptationist"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Adaptationism"
     }
   ],
   "frontier": [
@@ -2620,7 +2632,8 @@
     "Behavior selection algorithm",
     "Behavior analysis (disambiguation)",
     "Behavioral pattern",
-    "Behavioral cusp"
+    "Behavioral cusp",
+    "Adaptationist"
   ],
   "max_depth": 9
 }
