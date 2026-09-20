@@ -1078,3 +1078,4 @@
 {"ts": "2026-09-20T12:05:22.203835+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 4.12, "article": "Evolutionary anachronism"}
 {"ts": "2026-09-20T12:05:22.203898+00:00", "type": "branch", "title": "Evolutionary anachronism", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-20T13:49:57.734992+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 4.15, "article": "Behavioural genetics"}
+{"ts": "2026-09-20T13:49:59.324094+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 1, "titles": ["Behavioural genetics"], "workers": 4, "cpu": 4, "frontier_added": 0, "parent": "Arthropod head problem", "recent": ["Behavioral neuroscience", "Behavioural sciences", "Behavior informatics", "Applied behavior analysis", "Behavior", "Adaptive behavior (ecology)", "A History of Fly Fishing for Trout", "Vineland Adaptive Behavior Scale"]}
