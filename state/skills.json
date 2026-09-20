@@ -149,7 +149,7 @@
     "last_reinforced": "2026-09-20T09:30:01.861406+00:00"
   },
   "ecologie": {
-    "level": 3.98,
+    "level": 4.08,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -193,9 +193,10 @@
       "AD Flying Boat",
       "Insect Week",
       "Chromatic adaptation",
-      "A History of Fly Fishing for Trout"
+      "A History of Fly Fishing for Trout",
+      "Behavioral neuroscience"
     ],
-    "last_reinforced": "2026-09-20T09:19:03.849113+00:00"
+    "last_reinforced": "2026-09-20T11:16:50.103088+00:00"
   },
   "evolution": {
     "level": 4.06,
