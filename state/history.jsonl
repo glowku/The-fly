@@ -1197,3 +1197,4 @@
 {"ts": "2026-09-20T21:25:32.504210+00:00", "type": "plan", "title": "Evolutionary anachronism", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-20T21:25:32.647257+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 4.34, "article": "Evolutionary anachronism"}
 {"ts": "2026-09-20T21:25:32.647319+00:00", "type": "branch", "title": "Evolutionary anachronism", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-09-20T23:13:12.636204+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Evolutionary anachronism", "recent": ["Antecedent (behavioral psychology)", "Bonefish fly patterns", "Behavioral Ecology (journal)", "Evolutionary psychology", "Behavioral endocrinology", "Behaviorism", "A Behavioral Theory of the Firm", "Behavioral economics"]}
