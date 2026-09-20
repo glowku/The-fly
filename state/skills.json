@@ -246,7 +246,7 @@
     "last_reinforced": "2026-09-20T03:53:01.917205+00:00"
   },
   "comportement": {
-    "level": 3.95,
+    "level": 4.05,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -292,8 +292,9 @@
       "Catskill Fly Fishing Center and Museum",
       "The Entomologist's Record and Journal of Variation",
       "Bibliography of fly fishing",
-      "Adaptive Behavior (journal)"
+      "Adaptive Behavior (journal)",
+      "Behavior"
     ],
-    "last_reinforced": "2026-09-20T03:25:41.094315+00:00"
+    "last_reinforced": "2026-09-20T09:31:37.830881+00:00"
   }
 }
