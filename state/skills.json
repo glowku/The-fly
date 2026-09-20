@@ -256,7 +256,7 @@
     "last_reinforced": "2026-09-20T13:58:53.810186+00:00"
   },
   "comportement": {
-    "level": 4.15,
+    "level": 4.25,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -304,8 +304,9 @@
       "Bibliography of fly fishing",
       "Adaptive Behavior (journal)",
       "Behavior",
-      "Behavioural genetics"
+      "Behavioural genetics",
+      "Behavioral endocrinology"
     ],
-    "last_reinforced": "2026-09-20T13:49:57.734645+00:00"
+    "last_reinforced": "2026-09-20T14:18:02.187475+00:00"
   }
 }

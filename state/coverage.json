@@ -1584,6 +1584,14 @@
         "https://en.wikipedia.org/wiki/Behaviorism"
       ],
       "updated_at": "2026-09-20T14:10:05.741404+00:00"
+    },
+    "Behavioral endocrinology": {
+      "depth": 9,
+      "created_at": "2026-09-20T14:18:02.070285+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_endocrinology"
+      ],
+      "updated_at": "2026-09-20T14:18:02.070291+00:00"
     }
   },
   "edges": [
@@ -2566,6 +2574,10 @@
     {
       "from": "Biological pest control",
       "to": "A Behavioral Theory of the Firm"
+    },
+    {
+      "from": "Behavioral endocrinology",
+      "to": "Behavior"
     }
   ],
   "frontier": [
@@ -2589,7 +2601,6 @@
     "Austrobaileya scandens",
     "National Insect Week",
     "Insects",
-    "Behavioral endocrinology",
     "Behavioral Ecology (journal)",
     "Antecedent (behavioral psychology)",
     "Association for Behavior Analysis International",
@@ -2599,5 +2610,5 @@
     "Behavioral pattern",
     "Behavioral cusp"
   ],
-  "max_depth": 8
+  "max_depth": 9
 }
