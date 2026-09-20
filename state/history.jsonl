@@ -1163,3 +1163,4 @@
 {"ts": "2026-09-20T18:58:01.512882+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.28, "article": "Acoustic ecology"}
 {"ts": "2026-09-20T18:58:01.512945+00:00", "type": "branch", "title": "Acoustic ecology", "children_discovered": 0, "skill": "ecologie"}
 {"ts": "2026-09-20T20:00:21.650450+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Arthropod head problem"}
+{"ts": "2026-09-20T20:46:03.319553+00:00", "type": "auto_learn", "skill": "comportement", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Arthropod head problem", "recent": ["Bonefish fly patterns", "Behavioral Ecology (journal)", "Evolutionary psychology", "Behavioral endocrinology", "Behaviorism", "A Behavioral Theory of the Firm", "Behavioral economics", "Behaviour (journal)"]}
