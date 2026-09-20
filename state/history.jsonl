@@ -985,3 +985,4 @@
 {"ts": "2026-09-20T01:25:56.736066+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 3.88, "article": "Blowfly's Party"}
 {"ts": "2026-09-20T01:25:56.736129+00:00", "type": "branch", "title": "Blowfly's Party", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-09-20T02:30:01.420409+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 3.88, "article": "Insect Festival"}
+{"ts": "2026-09-20T02:30:02.903392+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 1, "titles": ["Insect Festival"], "workers": 4, "cpu": 4, "frontier_added": 0, "parent": "Agonistic behaviour", "recent": ["Bibliography of fly fishing", "Adaptation (The Walking Dead)", "Blue-winged Olive flies", "Adaptation (computer science)", "The Entomologist's Record and Journal of Variation", "Royal Entomological Society", "Insect Week", "Amateur Entomologists' Society"]}
