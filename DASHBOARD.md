@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-20 03:52:49 UTC
+**Dernière mise à jour** : 2026-09-20 09:06:54 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **35.604** |
-| Concepts traités | 200 | **183** |
+| Score global | maximiser | **35.804** |
+| Concepts traités | 200 | **184** |
 | Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **183** |
-| Arêtes du graphe | 210 |
-| Frontière (à explorer) | 23 |
+| Concepts traités (nœuds) | **184** |
+| Arêtes du graphe | 219 |
+| Frontière (à explorer) | 22 |
 | Profondeur max | 7 |
 | Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **35.604** |
-| Actions dernières 24 h | 195 |
+| Score objectif (coverage × quality) | **35.804** |
+| Actions dernières 24 h | 187 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 179 |
+| Excellent (≥ 8) | 180 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-20T03:09:39  auto_learn      
-2026-09-20T03:11:15  auto_learn      
-2026-09-20T03:12:51  auto_learn      
-2026-09-20T03:14:27  auto_learn      
-2026-09-20T03:16:03  skill_reinforc  
-2026-09-20T03:16:05  auto_learn_exp  Chromatic adaptation score=10.0
-2026-09-20T03:16:05  auto_learn      
-2026-09-20T03:17:41  auto_learn      
-2026-09-20T03:19:17  auto_learn      
-2026-09-20T03:20:53  auto_learn      
-2026-09-20T03:22:28  auto_learn      
-2026-09-20T03:24:04  skill_reinforc  
-2026-09-20T03:24:06  auto_learn_exp  Adaptive behavior score=10.0
-2026-09-20T03:24:06  auto_learn      
-2026-09-20T03:25:41  skill_reinforc  
+2026-09-20T03:41:46  auto_learn      
+2026-09-20T03:43:23  auto_learn      
+2026-09-20T03:44:59  auto_learn      
+2026-09-20T03:46:35  auto_learn      
+2026-09-20T03:48:12  auto_learn      
+2026-09-20T03:49:48  auto_learn      
+2026-09-20T03:51:24  auto_learn      
+2026-09-20T03:53:01  skill_reinforc  
+2026-09-20T03:53:03  auto_learn_exp  Bibliography of fly fishing (species related) score=10.0
+2026-09-20T03:53:03  auto_learn      
+2026-09-20T04:49:36  auto_learn      
+2026-09-20T06:47:22  plan            Bamboo fly rod
+2026-09-20T06:47:24  skill_reinforc  
+2026-09-20T06:47:24  branch          Bamboo fly rod
+2026-09-20T08:55:32  parallel_learn  
 ```
 
 ## Architecture de l'agent
