@@ -1127,3 +1127,4 @@
 {"ts": "2026-09-20T16:23:23.173231+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 4.27, "article": "Evolutionary psychology"}
 {"ts": "2026-09-20T16:23:23.173288+00:00", "type": "branch", "title": "Evolutionary psychology", "children_discovered": 1, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-20T17:09:39.378736+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 4.28, "article": "Behavioral Ecology (journal)"}
+{"ts": "2026-09-20T17:09:40.891441+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 1, "titles": ["Behavioral Ecology (journal)"], "workers": 4, "cpu": 4, "frontier_added": 0, "parent": "Cephalon (arthropod head)", "recent": ["Evolutionary psychology", "Behavioral endocrinology", "Behaviorism", "A Behavioral Theory of the Firm", "Behavioral economics", "Behaviour (journal)", "Consumer behaviour", "Behavioural genetics"]}
