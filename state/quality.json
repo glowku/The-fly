@@ -3990,5 +3990,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T14:18:02.068806+00:00"
+  },
+  "Evolutionary psychology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 347,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "ATM adaptation layer",
+        "Sexual antagonistic coevolution",
+        "Adaptation (arts)",
+        "Literary adaptation",
+        "Evolutionary anachronism"
+      ],
+      "diversity": 0.811,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T14:19:37.576578+00:00"
   }
 }
