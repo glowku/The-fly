@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-19 23:55:34 UTC
+**Dernière mise à jour** : 2026-09-20 03:52:49 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **34.804** |
-| Concepts traités | 200 | **179** |
-| Qualité moyenne | ≥ 7.5 | **9.72/10** |
+| Score global | maximiser | **35.604** |
+| Concepts traités | 200 | **183** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **179** |
-| Arêtes du graphe | 203 |
+| Concepts traités (nœuds) | **183** |
+| Arêtes du graphe | 210 |
 | Frontière (à explorer) | 23 |
 | Profondeur max | 7 |
-| Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **34.804** |
-| Actions dernières 24 h | 217 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **35.604** |
+| Actions dernières 24 h | 195 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 175 |
+| Excellent (≥ 8) | 179 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-19T22:37:17  auto_learn      
-2026-09-19T22:38:49  auto_learn      
-2026-09-19T22:40:22  auto_learn      
-2026-09-19T22:41:55  auto_learn      
-2026-09-19T22:43:28  auto_learn      
-2026-09-19T22:45:01  auto_learn      
-2026-09-19T22:46:34  auto_learn      
-2026-09-19T22:48:07  auto_learn      
-2026-09-19T22:49:40  auto_learn      
-2026-09-19T22:51:16  skill_reinforc  
-2026-09-19T22:58:26  auto_learn      
-2026-09-19T23:22:06  plan            Sexual antagonistic coevolution
-2026-09-19T23:22:07  skill_reinforc  
-2026-09-19T23:22:07  branch          Sexual antagonistic coevolution
-2026-09-19T23:53:20  parallel_learn  
+2026-09-20T03:09:39  auto_learn      
+2026-09-20T03:11:15  auto_learn      
+2026-09-20T03:12:51  auto_learn      
+2026-09-20T03:14:27  auto_learn      
+2026-09-20T03:16:03  skill_reinforc  
+2026-09-20T03:16:05  auto_learn_exp  Chromatic adaptation score=10.0
+2026-09-20T03:16:05  auto_learn      
+2026-09-20T03:17:41  auto_learn      
+2026-09-20T03:19:17  auto_learn      
+2026-09-20T03:20:53  auto_learn      
+2026-09-20T03:22:28  auto_learn      
+2026-09-20T03:24:04  skill_reinforc  
+2026-09-20T03:24:06  auto_learn_exp  Adaptive behavior score=10.0
+2026-09-20T03:24:06  auto_learn      
+2026-09-20T03:25:41  skill_reinforc  
 ```
 
 ## Architecture de l'agent
