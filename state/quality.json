@@ -3937,5 +3937,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T14:03:41.329212+00:00"
+  },
+  "A Behavioral Theory of the Firm": {
+    "score": 10.0,
+    "metrics": {
+      "words": 318,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Bamboo fly rod",
+        "ATM adaptation layer",
+        "Sexual antagonistic coevolution",
+        "American Museum of Fly Fishing",
+        "Artificial fly",
+        "Evolutionary anachronism"
+      ],
+      "diversity": 0.825,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T14:05:17.385934+00:00"
   }
 }

@@ -152,7 +152,7 @@
     "last_reinforced": "2026-09-20T12:05:22.203493+00:00"
   },
   "ecologie": {
-    "level": 4.08,
+    "level": 4.18,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -197,9 +197,10 @@
       "Insect Week",
       "Chromatic adaptation",
       "A History of Fly Fishing for Trout",
-      "Behavioral neuroscience"
+      "Behavioral neuroscience",
+      "A Behavioral Theory of the Firm"
     ],
-    "last_reinforced": "2026-09-20T11:16:50.103088+00:00"
+    "last_reinforced": "2026-09-20T14:05:17.488868+00:00"
   },
   "evolution": {
     "level": 4.16,

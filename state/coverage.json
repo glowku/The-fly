@@ -1568,6 +1568,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_economics"
       ],
       "updated_at": "2026-09-20T14:03:41.330652+00:00"
+    },
+    "A Behavioral Theory of the Firm": {
+      "depth": 6,
+      "created_at": "2026-09-20T14:05:17.387435+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/A_Behavioral_Theory_of_the_Firm"
+      ],
+      "updated_at": "2026-09-20T14:05:17.387442+00:00"
     }
   },
   "edges": [
@@ -2546,6 +2554,10 @@
     {
       "from": "Ecosystem-based adaptation",
       "to": "Behavioral cusp"
+    },
+    {
+      "from": "Biological pest control",
+      "to": "A Behavioral Theory of the Firm"
     }
   ],
   "frontier": [
