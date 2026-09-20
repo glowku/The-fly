@@ -1440,6 +1440,14 @@
         "https://en.wikipedia.org/wiki/Insect_Festival"
       ],
       "updated_at": "2026-09-20T02:30:01.302477+00:00"
+    },
+    "Chromatic adaptation": {
+      "depth": 7,
+      "created_at": "2026-09-20T03:16:03.355649+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chromatic_adaptation"
+      ],
+      "updated_at": "2026-09-20T03:16:03.355657+00:00"
     }
   },
   "edges": [
@@ -2286,7 +2294,6 @@
     "Adaptations",
     "Evolutionary biologists",
     "Aerodynamic drag",
-    "Chromatic adaptation",
     "Adaptive behavior",
     "Evolutionary Biology",
     "A History of Fly Fishing for Trout",

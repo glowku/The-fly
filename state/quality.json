@@ -3620,5 +3620,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T02:30:01.300052+00:00"
+  },
+  "Chromatic adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 414,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Domain adaptation",
+        "Cellular adaptation",
+        "Content adaptation",
+        "Ecosystem-based adaptation",
+        "Climate change adaptation",
+        "Adaptation (disambiguation)"
+      ],
+      "diversity": 0.675,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T03:16:03.354206+00:00"
   }
 }
