@@ -3919,5 +3919,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T14:02:03.611165+00:00"
+  },
+  "Behavioral economics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 378,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Literary adaptation",
+        "Adaptation (arts)",
+        "ATM adaptation layer",
+        "Evolutionary anachronism"
+      ],
+      "diversity": 0.768,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T14:03:41.329212+00:00"
   }
 }

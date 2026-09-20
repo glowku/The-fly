@@ -1560,6 +1560,14 @@
         "https://en.wikipedia.org/wiki/Behaviour_(journal)"
       ],
       "updated_at": "2026-09-20T14:02:03.612608+00:00"
+    },
+    "Behavioral economics": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:03:41.330645+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_economics"
+      ],
+      "updated_at": "2026-09-20T14:03:41.330652+00:00"
     }
   },
   "edges": [
@@ -2563,7 +2571,6 @@
     "Insects",
     "Behavioral endocrinology",
     "Behavioral Ecology (journal)",
-    "Behavioral economics",
     "Antecedent (behavioral psychology)",
     "Association for Behavior Analysis International",
     "Behavior (disambiguation)",
