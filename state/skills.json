@@ -251,7 +251,7 @@
     "last_reinforced": "2026-09-20T09:33:14.156821+00:00"
   },
   "comportement": {
-    "level": 4.05,
+    "level": 4.15,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -298,8 +298,9 @@
       "The Entomologist's Record and Journal of Variation",
       "Bibliography of fly fishing",
       "Adaptive Behavior (journal)",
-      "Behavior"
+      "Behavior",
+      "Behavioural genetics"
     ],
-    "last_reinforced": "2026-09-20T09:31:37.830881+00:00"
+    "last_reinforced": "2026-09-20T13:49:57.734645+00:00"
   }
 }

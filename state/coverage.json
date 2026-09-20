@@ -1536,6 +1536,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_neuroscience"
       ],
       "updated_at": "2026-09-20T11:16:50.026103+00:00"
+    },
+    "Behavioural genetics": {
+      "depth": 6,
+      "created_at": "2026-09-20T13:49:57.612990+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioural_genetics"
+      ],
+      "updated_at": "2026-09-20T13:49:57.612999+00:00"
     }
   },
   "edges": [
