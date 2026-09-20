@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 4.08,
+    "level": 4.18,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -38,9 +38,10 @@
       "Blue-winged Olive flies",
       "Blowfly's Party",
       "Bamboo fly rod",
-      "Behavior informatics"
+      "Behavior informatics",
+      "Behaviour (journal)"
     ],
-    "last_reinforced": "2026-09-20T09:39:33.774400+00:00"
+    "last_reinforced": "2026-09-20T14:02:03.724381+00:00"
   },
   "anatomie_insecte": {
     "level": 4.08,
