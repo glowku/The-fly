@@ -3880,5 +3880,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T13:49:57.610510+00:00"
+  },
+  "Consumer behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Association for the Study of Animal Behaviour",
+        "Adaptation (eye)",
+        "Adaptation (arts)",
+        "Literary adaptation",
+        "Evolutionary anachronism"
+      ],
+      "diversity": 0.84,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T13:58:53.756799+00:00"
   }
 }
