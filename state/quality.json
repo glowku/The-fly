@@ -3703,5 +3703,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-20T03:53:01.729094+00:00"
+  },
+  "Vineland Adaptive Behavior Scale": {
+    "score": 10.0,
+    "metrics": {
+      "words": 388,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Adaptation (disambiguation)",
+        "Domain adaptation",
+        "Ecosystem-based adaptation",
+        "Cellular adaptation",
+        "Climate change adaptation",
+        "Content adaptation"
+      ],
+      "diversity": 0.794,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-20T09:08:04.835799+00:00"
   }
 }

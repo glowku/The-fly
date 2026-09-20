@@ -42,7 +42,7 @@
     "last_reinforced": "2026-09-20T06:47:24.155763+00:00"
   },
   "anatomie_insecte": {
-    "level": 3.88,
+    "level": 3.98,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -87,9 +87,10 @@
       "Bibliography of fly fishing (fly tying, stories, fiction)",
       "Austrobaileyales",
       "Two Brothers Brewing",
-      "Insect Festival"
+      "Insect Festival",
+      "Vineland Adaptive Behavior Scale"
     ],
-    "last_reinforced": "2026-09-20T02:30:01.420161+00:00"
+    "last_reinforced": "2026-09-20T09:08:04.967686+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 3.94,
