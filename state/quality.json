@@ -4145,5 +4145,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T03:06:20.626119+00:00"
+  },
+  "Behaviour Santiago": {
+    "score": 10.0,
+    "metrics": {
+      "words": 333,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Adaptation (computer science)",
+        "Behaviour Interactive",
+        "Artificial Mind and Movement",
+        "Bibliography of fly fishing (fly tying, stories, fiction)",
+        "Vivendi Games"
+      ],
+      "diversity": 0.635,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T03:07:58.149134+00:00"
   }
 }
