@@ -4251,5 +4251,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T09:56:42.215219+00:00"
+  },
+  "Coastal biogeomorphology": {
+    "score": 8.0,
+    "metrics": {
+      "words": 286,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.771,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T09:59:57.344147+00:00"
   }
 }

@@ -1704,6 +1704,14 @@
         "https://en.wikipedia.org/wiki/Biogeomorphology"
       ],
       "updated_at": "2026-09-21T09:56:42.216763+00:00"
+    },
+    "Coastal biogeomorphology": {
+      "depth": 5,
+      "created_at": "2026-09-21T09:59:57.345659+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Coastal_biogeomorphology"
+      ],
+      "updated_at": "2026-09-21T09:59:57.345665+00:00"
     }
   },
   "edges": [
