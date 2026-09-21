@@ -4316,5 +4316,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T16:30:01.950109+00:00"
+  },
+  "Behavioral cusp": {
+    "score": 10.0,
+    "metrics": {
+      "words": 386,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Vineland Adaptive Behavior Scale",
+        "Chromatic adaptation",
+        "Adaptive behavior",
+        "Adaptive behavior (ecology)",
+        "Applied behavior analysis",
+        "Behavior"
+      ],
+      "diversity": 0.664,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T16:43:01.612613+00:00"
   }
 }
