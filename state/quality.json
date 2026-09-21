@@ -4264,5 +4264,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T09:59:57.344147+00:00"
+  },
+  "Behavior tree (artificial intelligence, robotics and control)": {
+    "score": 7.33,
+    "metrics": {
+      "words": 267,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.765,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T10:05:02.288389+00:00"
   }
 }

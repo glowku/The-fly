@@ -47,7 +47,7 @@
     "last_reinforced": "2026-09-21T09:59:57.548217+00:00"
   },
   "anatomie_insecte": {
-    "level": 4.47,
+    "level": 4.54,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -98,9 +98,10 @@
       "Behavioral economics",
       "Bonefish fly patterns",
       "Alexandra (wet fly)",
-      "Behavior selection algorithm"
+      "Behavior selection algorithm",
+      "Behavior tree (artificial intelligence, robotics and control)"
     ],
-    "last_reinforced": "2026-09-21T09:33:08.429251+00:00"
+    "last_reinforced": "2026-09-21T10:05:02.540395+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 4.52,
