@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-20 23:52:54 UTC
+**Dernière mise à jour** : 2026-09-21 03:40:40 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.882** |
-| Concepts traités | 200 | **204** |
-| Qualité moyenne | ≥ 7.5 | **9.72/10** |
+| Score global | maximiser | **38.903** |
+| Concepts traités | 200 | **208** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **204** |
-| Arêtes du graphe | 258 |
+| Concepts traités (nœuds) | **208** |
+| Arêtes du graphe | 272 |
 | Frontière (à explorer) | 27 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **38.882** |
-| Actions dernières 24 h | 223 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **38.903** |
+| Actions dernières 24 h | 232 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 199 |
+| Excellent (≥ 8) | 203 |
 | Bon (6 – 8) | 2 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-20T20:53:27  auto_learn      
-2026-09-20T20:55:02  skill_reinforc  
-2026-09-20T20:55:04  auto_learn_exp  Antecedent (behavioral psychology) score=8.7
-2026-09-20T20:55:04  auto_learn      
-2026-09-20T20:56:37  auto_learn      
-2026-09-20T20:58:10  auto_learn      
-2026-09-20T21:25:32  plan            Evolutionary anachronism
-2026-09-20T21:25:32  skill_reinforc  
-2026-09-20T21:25:32  branch          Evolutionary anachronism
-2026-09-20T23:13:12  auto_learn      
-2026-09-20T23:22:15  plan            Evolutionary anachronism
-2026-09-20T23:22:16  skill_reinforc  
-2026-09-20T23:22:16  branch          Evolutionary anachronism
-2026-09-20T23:43:31  parallel_learn  
-2026-09-20T23:49:02  skill_reinforc  
+2026-09-21T00:27:14  auto_learn      
+2026-09-21T00:28:49  auto_learn      
+2026-09-21T00:30:23  auto_learn      
+2026-09-21T00:31:58  auto_learn      
+2026-09-21T00:33:32  auto_learn      
+2026-09-21T01:23:32  plan            Disease ecology
+2026-09-21T01:23:32  skill_reinforc  
+2026-09-21T01:23:32  branch          Disease ecology
+2026-09-21T02:28:02  skill_reinforc  
+2026-09-21T02:28:03  parallel_learn  
+2026-09-21T03:04:46  auto_learn      
+2026-09-21T03:06:20  skill_reinforc  
+2026-09-21T03:06:22  auto_learn_exp  Behaviour Interactive score=10.0
+2026-09-21T03:06:22  auto_learn      
+2026-09-21T03:07:58  skill_reinforc  
 ```
 
 ## Architecture de l'agent
