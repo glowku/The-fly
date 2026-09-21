@@ -1238,3 +1238,4 @@
 {"ts": "2026-09-21T01:23:32.370246+00:00", "type": "plan", "title": "Disease ecology", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-21T01:23:32.602145+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.38, "article": "Disease ecology"}
 {"ts": "2026-09-21T01:23:32.602205+00:00", "type": "branch", "title": "Disease ecology", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-21T02:28:02.086039+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 4.44, "article": "Behavior (disambiguation)"}

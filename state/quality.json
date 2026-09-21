@@ -4105,5 +4105,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T00:24:03.144648+00:00"
+  },
+  "Behavior (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 277,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Comportement",
+        "Journal scientifique",
+        "Développement de jeux vidéo",
+        "Album",
+        "Psychologie animale",
+        "Film"
+      ],
+      "diversity": 0.781,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T02:28:01.900996+00:00"
   }
 }

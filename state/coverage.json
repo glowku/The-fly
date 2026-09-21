@@ -1640,6 +1640,14 @@
         "https://en.wikipedia.org/wiki/Alexandra_(wet_fly)"
       ],
       "updated_at": "2026-09-21T00:24:03.146042+00:00"
+    },
+    "Behavior (disambiguation)": {
+      "depth": 5,
+      "created_at": "2026-09-21T02:28:01.902576+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_(disambiguation)"
+      ],
+      "updated_at": "2026-09-21T02:28:01.902585+00:00"
     }
   },
   "edges": [
@@ -2722,6 +2730,14 @@
     {
       "from": "Disease ecology",
       "to": "Autecology"
+    },
+    {
+      "from": "Behavior (disambiguation)",
+      "to": "Behavioralism"
+    },
+    {
+      "from": "Behavior (disambiguation)",
+      "to": "Behaviorism"
     }
   ],
   "frontier": [
@@ -2743,7 +2759,6 @@
     "Austrobaileya scandens",
     "National Insect Week",
     "Insects",
-    "Behavior (disambiguation)",
     "Behavior selection algorithm",
     "Behavior analysis (disambiguation)",
     "Behavioral pattern",
@@ -2751,7 +2766,8 @@
     "Adaptationist",
     "Behavioral ecology (disambiguation)",
     "Learned behaviors",
-    "Behavior analysis of child development"
+    "Behavior analysis of child development",
+    "Behavioralism"
   ],
   "max_depth": 9
 }
