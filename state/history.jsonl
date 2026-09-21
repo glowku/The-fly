@@ -1363,3 +1363,6 @@
 {"ts": "2026-09-21T19:07:06.014077+00:00", "type": "branch", "title": "Evolutionary anachronism", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-09-21T19:58:43.208039+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Cephalon (arthropod head)", "recent": ["Behavioral cusp", "Behavioral modeling", "Behavioral pattern", "Behavior tree (artificial intelligence, robotics and control)", "Coastal biogeomorphology", "Biogeomorphology", "Behavioral modeling in hydrology", "Behavior analysis (disambiguation)"]}
 {"ts": "2026-09-21T21:26:52.048708+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Cephalon (arthropod head)"}
+{"ts": "2026-09-21T22:44:13.842498+00:00", "type": "plan", "title": "Catskill Fly Fishing Center and Museum", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "entomologie"}
+{"ts": "2026-09-21T22:44:14.425540+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 4.64, "article": "Catskill Fly Fishing Center and Museum"}
+{"ts": "2026-09-21T22:44:14.425592+00:00", "type": "branch", "title": "Catskill Fly Fishing Center and Museum", "children_discovered": 0, "skill": "entomologie"}
