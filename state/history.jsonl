@@ -1361,3 +1361,4 @@
 {"ts": "2026-09-21T19:07:05.759456+00:00", "type": "plan", "title": "Evolutionary anachronism", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-21T19:07:06.014008+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 4.62, "article": "Evolutionary anachronism"}
 {"ts": "2026-09-21T19:07:06.014077+00:00", "type": "branch", "title": "Evolutionary anachronism", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-09-21T19:58:43.208039+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Cephalon (arthropod head)", "recent": ["Behavioral cusp", "Behavioral modeling", "Behavioral pattern", "Behavior tree (artificial intelligence, robotics and control)", "Coastal biogeomorphology", "Biogeomorphology", "Behavioral modeling in hydrology", "Behavior analysis (disambiguation)"]}
