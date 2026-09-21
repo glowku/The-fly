@@ -1277,3 +1277,4 @@
 {"ts": "2026-09-21T06:50:36.319143+00:00", "type": "plan", "title": "List of flying boats and floatplanes", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-21T06:50:36.667950+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 4.47, "article": "List of flying boats and floatplanes"}
 {"ts": "2026-09-21T06:50:36.668012+00:00", "type": "branch", "title": "List of flying boats and floatplanes", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-21T09:26:36.374224+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Cephalothorax"}
