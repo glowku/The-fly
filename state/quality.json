@@ -4164,5 +4164,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T03:07:58.149134+00:00"
+  },
+  "Behavior selection algorithm": {
+    "score": 8.7,
+    "metrics": {
+      "words": 145,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Arthropod mouthparts",
+        "Fly",
+        "Insect",
+        "Diptera"
+      ],
+      "diversity": 0.74,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T09:33:08.147064+00:00"
   }
 }
