@@ -1239,3 +1239,4 @@
 {"ts": "2026-09-21T01:23:32.602145+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.38, "article": "Disease ecology"}
 {"ts": "2026-09-21T01:23:32.602205+00:00", "type": "branch", "title": "Disease ecology", "children_discovered": 0, "skill": "ecologie"}
 {"ts": "2026-09-21T02:28:02.086039+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 4.44, "article": "Behavior (disambiguation)"}
+{"ts": "2026-09-21T02:28:03.845523+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 1, "titles": ["Behavior (disambiguation)"], "workers": 4, "cpu": 4, "frontier_added": 0, "parent": "Brewing", "recent": ["Alexandra (wet fly)", "Association for Behavior Analysis International", "Antecedent (behavioral psychology)", "Bonefish fly patterns", "Behavioral Ecology (journal)", "Evolutionary psychology", "Behavioral endocrinology", "Behaviorism"]}
