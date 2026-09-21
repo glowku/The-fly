@@ -4182,5 +4182,23 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T09:33:08.147064+00:00"
+  },
+  "Behavioral modeling in computer-aided design": {
+    "score": 8.7,
+    "metrics": {
+      "words": 99,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Chemical mimicry",
+        "Insect",
+        "Diptera",
+        "Fly"
+      ],
+      "diversity": 0.838,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T09:34:46.314486+00:00"
   }
 }

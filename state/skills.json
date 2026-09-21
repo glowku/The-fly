@@ -160,7 +160,7 @@
     "last_reinforced": "2026-09-21T03:07:58.203362+00:00"
   },
   "ecologie": {
-    "level": 4.38,
+    "level": 4.47,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -206,9 +206,10 @@
       "Chromatic adaptation",
       "A History of Fly Fishing for Trout",
       "Behavioral neuroscience",
-      "A Behavioral Theory of the Firm"
+      "A Behavioral Theory of the Firm",
+      "Behavioral modeling in computer-aided design"
     ],
-    "last_reinforced": "2026-09-21T01:23:32.601884+00:00"
+    "last_reinforced": "2026-09-21T09:34:46.523724+00:00"
   },
   "evolution": {
     "level": 4.44,

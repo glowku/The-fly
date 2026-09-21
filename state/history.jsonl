@@ -1279,3 +1279,6 @@
 {"ts": "2026-09-21T06:50:36.668012+00:00", "type": "branch", "title": "List of flying boats and floatplanes", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-09-21T09:26:36.374224+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Cephalothorax"}
 {"ts": "2026-09-21T09:33:08.429520+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 4.47, "article": "Behavior selection algorithm"}
+{"ts": "2026-09-21T09:33:10.437558+00:00", "type": "auto_learn_expand", "title": "Behavior selection algorithm", "skill": "anatomie_insecte", "score": 8.7, "objective": 38.884, "parent": "Arthropod mouthparts"}
+{"ts": "2026-09-21T09:33:10.439372+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Behavior selection algorithm"], "parent": "Cephalothorax", "recent": ["Behaviour Santiago", "Behaviour Interactive", "Behavior (disambiguation)", "Alexandra (wet fly)", "Association for Behavior Analysis International", "Antecedent (behavioral psychology)", "Bonefish fly patterns", "Behavioral Ecology (journal)"]}
+{"ts": "2026-09-21T09:34:46.524029+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.47, "article": "Behavioral modeling in computer-aided design"}

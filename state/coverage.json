@@ -1672,6 +1672,14 @@
         "https://en.wikipedia.org/wiki/Behavior_selection_algorithm"
       ],
       "updated_at": "2026-09-21T09:33:08.149834+00:00"
+    },
+    "Behavioral modeling in computer-aided design": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:34:46.315952+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_computer-aided_design"
+      ],
+      "updated_at": "2026-09-21T09:34:46.315959+00:00"
     }
   },
   "edges": [
@@ -2782,6 +2790,10 @@
     {
       "from": "Behavior selection algorithm",
       "to": "Behavioral modeling"
+    },
+    {
+      "from": "Chemical mimicry",
+      "to": "Behavioral modeling in computer-aided design"
     }
   ],
   "frontier": [
