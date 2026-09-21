@@ -272,7 +272,7 @@
     "last_reinforced": "2026-09-21T09:43:04.898764+00:00"
   },
   "comportement": {
-    "level": 4.53,
+    "level": 4.63,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -324,8 +324,9 @@
       "Behavioral endocrinology",
       "Antecedent (behavioral psychology)",
       "Behaviour Interactive",
-      "Behavioral modeling in hydrology"
+      "Behavioral modeling in hydrology",
+      "Behavioral modeling"
     ],
-    "last_reinforced": "2026-09-21T09:55:03.762882+00:00"
+    "last_reinforced": "2026-09-21T16:30:02.129551+00:00"
   }
 }

@@ -4297,5 +4297,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T10:10:05.532705+00:00"
+  },
+  "Behavioral modeling": {
+    "score": 10.0,
+    "metrics": {
+      "words": 324,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Vineland Adaptive Behavior Scale",
+        "Chromatic adaptation",
+        "Adaptive behavior",
+        "Behavior selection algorithm",
+        "Behavior"
+      ],
+      "diversity": 0.732,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T16:30:01.950109+00:00"
   }
 }
