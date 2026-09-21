@@ -4277,5 +4277,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T10:05:02.288389+00:00"
+  },
+  "Behavioral pattern": {
+    "score": 10.0,
+    "metrics": {
+      "words": 339,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Blue-winged Olive flies",
+        "Adaptive behavior",
+        "Adaptive behavior (ecology)",
+        "Insect Festival",
+        "Vineland Adaptive Behavior Scale",
+        "Adaptation (computer science)"
+      ],
+      "diversity": 0.775,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T10:10:05.532705+00:00"
   }
 }

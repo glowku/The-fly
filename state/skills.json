@@ -163,7 +163,7 @@
     "last_reinforced": "2026-09-21T09:56:42.418475+00:00"
   },
   "ecologie": {
-    "level": 4.47,
+    "level": 4.57,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -210,9 +210,10 @@
       "A History of Fly Fishing for Trout",
       "Behavioral neuroscience",
       "A Behavioral Theory of the Firm",
-      "Behavioral modeling in computer-aided design"
+      "Behavioral modeling in computer-aided design",
+      "Behavioral pattern"
     ],
-    "last_reinforced": "2026-09-21T09:34:46.523724+00:00"
+    "last_reinforced": "2026-09-21T10:10:05.805903+00:00"
   },
   "evolution": {
     "level": 4.54,
