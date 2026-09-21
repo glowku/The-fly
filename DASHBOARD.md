@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-21 09:40:33 UTC
+**Dernière mise à jour** : 2026-09-21 16:14:59 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.864** |
-| Concepts traités | 200 | **210** |
-| Qualité moyenne | ≥ 7.5 | **9.72/10** |
+| Score global | maximiser | **38.736** |
+| Concepts traités | 200 | **216** |
+| Qualité moyenne | ≥ 7.5 | **9.68/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **210** |
-| Arêtes du graphe | 278 |
-| Frontière (à explorer) | 30 |
+| Concepts traités (nœuds) | **216** |
+| Arêtes du graphe | 288 |
+| Frontière (à explorer) | 33 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **38.864** |
-| Actions dernières 24 h | 216 |
+| Score qualité moyen | **9.68/10** |
+| Score objectif (coverage × quality) | **38.736** |
+| Actions dernières 24 h | 203 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 205 |
-| Bon (6 – 8) | 2 |
+| Excellent (≥ 8) | 209 |
+| Bon (6 – 8) | 4 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-21T03:41:03  auto_learn      
-2026-09-21T03:42:38  auto_learn      
-2026-09-21T03:44:12  auto_learn      
-2026-09-21T03:45:46  auto_learn      
-2026-09-21T03:47:20  auto_learn      
-2026-09-21T03:48:54  auto_learn      
-2026-09-21T04:49:49  auto_learn      
-2026-09-21T06:50:36  plan            List of flying boats and floatplanes
-2026-09-21T06:50:36  skill_reinforc  
-2026-09-21T06:50:36  branch          List of flying boats and floatplanes
-2026-09-21T09:26:36  parallel_learn  
-2026-09-21T09:33:08  skill_reinforc  
-2026-09-21T09:33:10  auto_learn_exp  Behavior selection algorithm score=8.7
-2026-09-21T09:33:10  auto_learn      
-2026-09-21T09:34:46  skill_reinforc  
+2026-09-21T10:05:04  auto_learn      
+2026-09-21T10:06:45  auto_learn      
+2026-09-21T10:08:27  auto_learn      
+2026-09-21T10:10:05  skill_reinforc  
+2026-09-21T10:10:07  auto_learn_exp  Behavioral pattern score=10.0
+2026-09-21T10:10:07  auto_learn      
+2026-09-21T10:11:49  auto_learn      
+2026-09-21T10:13:30  auto_learn      
+2026-09-21T10:15:11  auto_learn      
+2026-09-21T10:16:52  auto_learn      
+2026-09-21T12:42:00  auto_learn      
+2026-09-21T13:42:45  plan            Evolutionary anachronism
+2026-09-21T13:42:46  skill_reinforc  
+2026-09-21T13:42:46  branch          Evolutionary anachronism
+2026-09-21T16:06:22  parallel_learn  
 ```
 
 ## Architecture de l'agent
