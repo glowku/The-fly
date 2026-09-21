@@ -2706,6 +2706,22 @@
     {
       "from": "Alexandra (wet fly)",
       "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Arctic ecology"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Autecology"
     }
   ],
   "frontier": [
