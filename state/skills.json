@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 4.37,
+    "level": 4.47,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -43,7 +43,7 @@
       "Behavioral Ecology (journal)",
       "Association for Behavior Analysis International"
     ],
-    "last_reinforced": "2026-09-20T23:49:02.502030+00:00"
+    "last_reinforced": "2026-09-21T06:50:36.667672+00:00"
   },
   "anatomie_insecte": {
     "level": 4.38,
