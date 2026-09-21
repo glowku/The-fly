@@ -1632,6 +1632,14 @@
         "https://en.wikipedia.org/wiki/Association_for_Behavior_Analysis_International"
       ],
       "updated_at": "2026-09-20T23:49:02.348785+00:00"
+    },
+    "Alexandra (wet fly)": {
+      "depth": 6,
+      "created_at": "2026-09-21T00:24:03.146035+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alexandra_(wet_fly)"
+      ],
+      "updated_at": "2026-09-21T00:24:03.146042+00:00"
     }
   },
   "edges": [
@@ -2666,6 +2674,38 @@
     {
       "from": "Antecedent (behavioral psychology)",
       "to": "Learned behaviors"
+    },
+    {
+      "from": "Spiracle (vertebrates)",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Adams (dry fly)"
     }
   ],
   "frontier": [
@@ -2683,7 +2723,6 @@
     "Evolutionary biologists",
     "Aerodynamic drag",
     "Evolutionary Biology",
-    "Alexandra (wet fly)",
     "Austrobaileyaceae",
     "Austrobaileya scandens",
     "National Insect Week",
@@ -2695,7 +2734,8 @@
     "Behavioral cusp",
     "Adaptationist",
     "Behavioral ecology (disambiguation)",
-    "Learned behaviors"
+    "Learned behaviors",
+    "Behavior analysis of child development"
   ],
   "max_depth": 9
 }
