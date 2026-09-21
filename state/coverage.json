@@ -1680,6 +1680,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_modeling_in_computer-aided_design"
       ],
       "updated_at": "2026-09-21T09:34:46.315959+00:00"
+    },
+    "Behavior analysis (disambiguation)": {
+      "depth": 5,
+      "created_at": "2026-09-21T09:43:04.450795+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_analysis_(disambiguation)"
+      ],
+      "updated_at": "2026-09-21T09:43:04.450802+00:00"
     }
   },
   "edges": [
@@ -2794,6 +2802,42 @@
     {
       "from": "Chemical mimicry",
       "to": "Behavioral modeling in computer-aided design"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Clinical behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Professional practice of behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Licensed behavior analyst"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Quantitative analysis of behavior"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behavioral analytics"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "User behavior analytics"
     }
   ],
   "frontier": [
@@ -2815,7 +2859,6 @@
     "Austrobaileya scandens",
     "National Insect Week",
     "Insects",
-    "Behavior analysis (disambiguation)",
     "Behavioral pattern",
     "Behavioral cusp",
     "Adaptationist",
@@ -2826,7 +2869,13 @@
     "Behavior tree (artificial intelligence, robotics and control)",
     "Behavioral modeling language",
     "Behavioral modeling in hydrology",
-    "Behavioral modeling"
+    "Behavioral modeling",
+    "Clinical behavior analysis",
+    "Professional practice of behavior analysis",
+    "Licensed behavior analyst",
+    "Quantitative analysis of behavior",
+    "Behavioral analytics",
+    "User behavior analytics"
   ],
   "max_depth": 9
 }

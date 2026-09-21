@@ -4200,5 +4200,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T09:34:46.314486+00:00"
+  },
+  "Behavior analysis (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 327,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behaviorism",
+        "Adaptive behavior",
+        "Adaptation (eye)",
+        "User behavior analytics",
+        "Behavioral analytics",
+        "Adaptation (computer science)"
+      ],
+      "diversity": 0.665,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T09:43:04.449308+00:00"
   }
 }
