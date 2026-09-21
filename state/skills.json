@@ -264,7 +264,7 @@
     "last_reinforced": "2026-09-21T02:28:02.085745+00:00"
   },
   "comportement": {
-    "level": 4.34,
+    "level": 4.44,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -314,8 +314,9 @@
       "Behavior",
       "Behavioural genetics",
       "Behavioral endocrinology",
-      "Antecedent (behavioral psychology)"
+      "Antecedent (behavioral psychology)",
+      "Behaviour Interactive"
     ],
-    "last_reinforced": "2026-09-20T20:55:02.307682+00:00"
+    "last_reinforced": "2026-09-21T03:06:20.680391+00:00"
   }
 }
