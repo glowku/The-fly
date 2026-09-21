@@ -1688,6 +1688,14 @@
         "https://en.wikipedia.org/wiki/Behavior_analysis_(disambiguation)"
       ],
       "updated_at": "2026-09-21T09:43:04.450802+00:00"
+    },
+    "Behavioral modeling in hydrology": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:55:03.383705+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_hydrology"
+      ],
+      "updated_at": "2026-09-21T09:55:03.383711+00:00"
     }
   },
   "edges": [
@@ -2868,7 +2876,6 @@
     "Behavioralism",
     "Behavior tree (artificial intelligence, robotics and control)",
     "Behavioral modeling language",
-    "Behavioral modeling in hydrology",
     "Behavioral modeling",
     "Clinical behavior analysis",
     "Professional practice of behavior analysis",
