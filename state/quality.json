@@ -4238,5 +4238,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T09:55:03.382231+00:00"
+  },
+  "Biogeomorphology": {
+    "score": 7.33,
+    "metrics": {
+      "words": 270,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.824,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-21T09:56:42.215219+00:00"
   }
 }

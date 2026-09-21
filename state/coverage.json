@@ -1696,6 +1696,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_modeling_in_hydrology"
       ],
       "updated_at": "2026-09-21T09:55:03.383711+00:00"
+    },
+    "Biogeomorphology": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:56:42.216757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Biogeomorphology"
+      ],
+      "updated_at": "2026-09-21T09:56:42.216763+00:00"
     }
   },
   "edges": [
