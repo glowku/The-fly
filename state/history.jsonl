@@ -1562,3 +1562,6 @@
 {"ts": "2026-09-22T21:34:04.480090+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 5.03, "article": "Anti-social behaviour"}
 {"ts": "2026-09-22T21:34:05.964994+00:00", "type": "auto_learn_expand", "title": "Anti-social behaviour", "skill": "anatomie_insecte", "score": 10.0, "objective": 38.829, "parent": "Allagash Brewing Company"}
 {"ts": "2026-09-22T21:34:05.967328+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": true, "frontier_added": 0, "fresh": ["Anti-social behaviour"], "parent": "Allagash Brewing Company", "recent": ["Dialectical behavior therapy", "Cognitive behavioral therapy", "Cognitive behavioral analysis system of psychotherapy", "Behavioral activation", "Behavior analysis of child development", "Licensed behavior analyst", "Behavioral ecology (disambiguation)", "Behavior modification"]}
+{"ts": "2026-09-22T23:10:39.532187+00:00", "type": "plan", "title": "Behavioral Ecology (journal)", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "comportement"}
+{"ts": "2026-09-22T23:10:40.142027+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.03, "article": "Behavioral Ecology (journal)"}
+{"ts": "2026-09-22T23:10:40.142089+00:00", "type": "branch", "title": "Behavioral Ecology (journal)", "children_discovered": 1, "skill": "comportement"}

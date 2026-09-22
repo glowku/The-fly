@@ -3214,6 +3214,34 @@
     {
       "from": "Applied behavior analysis",
       "to": "Dialectical behavior therapy"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Evolution"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavioral Ecology and Sociobiology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "International Society for Behavioral Ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavior"
     }
   ],
   "frontier": [
@@ -3250,7 +3278,8 @@
     "Human behavioral ecology",
     "Behavior management",
     "Behavior therapy",
-    "Behavioral engineering"
+    "Behavioral engineering",
+    "International Society for Behavioral Ecology"
   ],
   "max_depth": 9
 }
