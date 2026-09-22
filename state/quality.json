@@ -4639,5 +4639,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:18:02.446716+00:00"
+  },
+  "Dialectical behavior therapy": {
+    "score": 10.0,
+    "metrics": {
+      "words": 365,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Evolutionary psychology",
+        "Behavioral economics",
+        "Behavioral Ecology (journal)",
+        "Behaviorism",
+        "Association for Behavior Analysis International"
+      ],
+      "diversity": 0.771,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:19:42.631629+00:00"
   }
 }

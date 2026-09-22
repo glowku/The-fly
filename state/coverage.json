@@ -1864,6 +1864,14 @@
         "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"
       ],
       "updated_at": "2026-09-22T21:18:02.448547+00:00"
+    },
+    "Dialectical behavior therapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:19:42.633259+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy"
+      ],
+      "updated_at": "2026-09-22T21:19:42.633266+00:00"
     }
   },
   "edges": [
@@ -3194,6 +3202,10 @@
     {
       "from": "Blacker's Art of Fly Making",
       "to": "Cognitive behavioral therapy"
+    },
+    {
+      "from": "Applied behavior analysis",
+      "to": "Dialectical behavior therapy"
     }
   ],
   "frontier": [
