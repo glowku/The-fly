@@ -50,7 +50,7 @@
     "last_reinforced": "2026-09-22T13:46:40.052801+00:00"
   },
   "anatomie_insecte": {
-    "level": 4.83,
+    "level": 4.93,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -105,9 +105,10 @@
       "Behavior tree (artificial intelligence, robotics and control)",
       "Behavioral cusp",
       "Professional practice of behavior analysis",
-      "Butterfly effect"
+      "Butterfly effect",
+      "Allagash Brewing Company"
     ],
-    "last_reinforced": "2026-09-22T13:14:02.610320+00:00"
+    "last_reinforced": "2026-09-22T20:24:17.183040+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 4.9,
