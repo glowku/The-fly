@@ -49,7 +49,7 @@
     "last_reinforced": "2026-09-22T00:59:02.251136+00:00"
   },
   "anatomie_insecte": {
-    "level": 4.64,
+    "level": 4.73,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -102,9 +102,10 @@
       "Alexandra (wet fly)",
       "Behavior selection algorithm",
       "Behavior tree (artificial intelligence, robotics and control)",
-      "Behavioral cusp"
+      "Behavioral cusp",
+      "Professional practice of behavior analysis"
     ],
-    "last_reinforced": "2026-09-21T16:43:01.816688+00:00"
+    "last_reinforced": "2026-09-22T01:06:03.729942+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 4.7,

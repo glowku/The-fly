@@ -4434,5 +4434,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T00:59:01.967711+00:00"
+  },
+  "Professional practice of behavior analysis": {
+    "score": 9.5,
+    "metrics": {
+      "words": 466,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioural sciences",
+        "Consumer behaviour",
+        "Behaviour (journal)",
+        "Behavior",
+        "Applied behavior analysis",
+        "Vineland Adaptive Behavior Scale"
+      ],
+      "diversity": 0.74,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T01:06:03.438186+00:00"
   }
 }
