@@ -3022,6 +3022,10 @@
     {
       "from": "Professional practice of behavior analysis",
       "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Cephalothorax",
+      "to": "Behavior-based safety"
     }
   ],
   "frontier": [
@@ -3057,7 +3061,8 @@
     "Adaptive behaviors",
     "Behavior analysis",
     "Association for Behavioral and Cognitive Therapies",
-    "Association for Contextual Behavioral Science"
+    "Association for Contextual Behavioral Science",
+    "Behavior-based safety"
   ],
   "max_depth": 9
 }
