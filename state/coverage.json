@@ -3026,6 +3026,26 @@
     {
       "from": "Cephalothorax",
       "to": "Behavior-based safety"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Chemical ecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Autecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Arctic ecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Applied ecology"
     }
   ],
   "frontier": [
@@ -3062,7 +3082,8 @@
     "Behavior analysis",
     "Association for Behavioral and Cognitive Therapies",
     "Association for Contextual Behavioral Science",
-    "Behavior-based safety"
+    "Behavior-based safety",
+    "Chemical ecology"
   ],
   "max_depth": 9
 }

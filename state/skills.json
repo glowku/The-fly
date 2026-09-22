@@ -168,7 +168,7 @@
     "last_reinforced": "2026-09-22T00:40:03.302705+00:00"
   },
   "ecologie": {
-    "level": 4.67,
+    "level": 4.77,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -217,9 +217,10 @@
       "A Behavioral Theory of the Firm",
       "Behavioral modeling in computer-aided design",
       "Behavioral pattern",
-      "Clinical behavior analysis"
+      "Clinical behavior analysis",
+      "Desert ecology"
     ],
-    "last_reinforced": "2026-09-22T00:33:04.470403+00:00"
+    "last_reinforced": "2026-09-22T01:28:49.491449+00:00"
   },
   "evolution": {
     "level": 4.72,
