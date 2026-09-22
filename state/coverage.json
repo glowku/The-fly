@@ -3194,6 +3194,10 @@
     {
       "from": "Blacker's Art of Fly Making",
       "to": "Cognitive behavioral therapy"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Dialectical behavior therapy"
     }
   ],
   "frontier": [
@@ -3230,7 +3234,8 @@
     "Human behavioral ecology",
     "Behavior management",
     "Behavior therapy",
-    "Behavioral engineering"
+    "Behavioral engineering",
+    "Dialectical behavior therapy"
   ],
   "max_depth": 9
 }
