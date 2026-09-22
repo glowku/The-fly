@@ -4515,5 +4515,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T13:46:39.928436+00:00"
+  },
+  "Behavioral ecology (disambiguation)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 311,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Behavioral neuroscience",
+        "Behavior informatics",
+        "Behaviour (journal)",
+        "Behaviorism",
+        "Behavioural sciences",
+        "Behavior",
+        "Behavioural genetics",
+        "A Behavioral Theory of the Firm",
+        "Behavioral endocrinology",
+        "Applied behavior analysis",
+        "Consumer behaviour",
+        "Behavioral economics"
+      ],
+      "diversity": 0.703,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T18:08:03.110229+00:00"
   }
 }
