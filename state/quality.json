@@ -4375,5 +4375,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T00:40:02.999642+00:00"
+  },
+  "Experimental analysis of behavior": {
+    "score": 10.0,
+    "metrics": {
+      "words": 347,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Behavioral neuroscience",
+        "Behavioural sciences",
+        "Adaptive behavior (ecology)",
+        "Behavior",
+        "Applied behavior analysis"
+      ],
+      "diversity": 0.722,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T00:41:42.196090+00:00"
   }
 }

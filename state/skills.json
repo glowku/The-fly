@@ -220,7 +220,7 @@
     "last_reinforced": "2026-09-22T00:33:04.470403+00:00"
   },
   "evolution": {
-    "level": 4.62,
+    "level": 4.72,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -271,9 +271,10 @@
       "Evolutionary psychology",
       "Evolutionary anachronism",
       "Behavior (disambiguation)",
-      "Behavior analysis (disambiguation)"
+      "Behavior analysis (disambiguation)",
+      "Experimental analysis of behavior"
     ],
-    "last_reinforced": "2026-09-21T19:07:06.013648+00:00"
+    "last_reinforced": "2026-09-22T00:41:42.421759+00:00"
   },
   "comportement": {
     "level": 4.63,
