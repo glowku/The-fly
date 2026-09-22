@@ -281,7 +281,7 @@
     "last_reinforced": "2026-09-22T12:26:03.747680+00:00"
   },
   "comportement": {
-    "level": 4.73,
+    "level": 4.83,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -335,8 +335,9 @@
       "Behaviour Interactive",
       "Behavioral modeling in hydrology",
       "Behavioral modeling",
-      "Behaviour therapy"
+      "Behaviour therapy",
+      "Association for Behavioral and Cognitive Therapies"
     ],
-    "last_reinforced": "2026-09-22T00:50:05.216680+00:00"
+    "last_reinforced": "2026-09-22T13:45:03.325062+00:00"
   }
 }
