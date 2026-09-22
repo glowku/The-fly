@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-22 00:37:11 UTC
+**Dernière mise à jour** : 2026-09-22 07:23:25 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.753** |
-| Concepts traités | 200 | **219** |
+| Score global | maximiser | **38.772** |
+| Concepts traités | 200 | **224** |
 | Qualité moyenne | ≥ 7.5 | **9.69/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **219** |
-| Arêtes du graphe | 299 |
-| Frontière (à explorer) | 34 |
+| Concepts traités (nœuds) | **224** |
+| Arêtes du graphe | 313 |
+| Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.69/10** |
-| Score objectif (coverage × quality) | **38.753** |
-| Actions dernières 24 h | 134 |
+| Score objectif (coverage × quality) | **38.772** |
+| Actions dernières 24 h | 137 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 212 |
+| Excellent (≥ 8) | 217 |
 | Bon (6 – 8) | 4 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-21T16:49:34  auto_learn      
-2026-09-21T16:51:11  auto_learn      
-2026-09-21T16:52:49  auto_learn      
-2026-09-21T16:54:26  auto_learn      
-2026-09-21T19:07:05  plan            Evolutionary anachronism
-2026-09-21T19:07:06  skill_reinforc  
-2026-09-21T19:07:06  branch          Evolutionary anachronism
-2026-09-21T19:58:43  auto_learn      
-2026-09-21T21:26:52  parallel_learn  
-2026-09-21T22:44:13  plan            Catskill Fly Fishing Center and Museum
-2026-09-21T22:44:14  skill_reinforc  
-2026-09-21T22:44:14  branch          Catskill Fly Fishing Center and Museum
-2026-09-22T00:04:02  auto_learn      
-2026-09-22T00:25:09  parallel_learn  
-2026-09-22T00:33:04  skill_reinforc  
+2026-09-22T01:06:05  auto_learn      
+2026-09-22T01:07:51  auto_learn      
+2026-09-22T01:09:38  auto_learn      
+2026-09-22T01:11:23  auto_learn      
+2026-09-22T01:12:58  auto_learn      
+2026-09-22T01:14:43  auto_learn      
+2026-09-22T01:16:28  auto_learn      
+2026-09-22T01:28:48  plan            Desert ecology
+2026-09-22T01:28:49  skill_reinforc  
+2026-09-22T01:28:49  branch          Desert ecology
+2026-09-22T04:48:55  auto_learn      
+2026-09-22T06:44:25  plan            E. coli long-term evolution experiment
+2026-09-22T06:44:25  skill_reinforc  
+2026-09-22T06:44:25  branch          E. coli long-term evolution experiment
+2026-09-22T07:04:18  parallel_learn  
 ```
 
 ## Architecture de l'agent
