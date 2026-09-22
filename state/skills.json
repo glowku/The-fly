@@ -277,7 +277,7 @@
     "last_reinforced": "2026-09-22T00:41:42.421759+00:00"
   },
   "comportement": {
-    "level": 4.63,
+    "level": 4.73,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -330,8 +330,9 @@
       "Antecedent (behavioral psychology)",
       "Behaviour Interactive",
       "Behavioral modeling in hydrology",
-      "Behavioral modeling"
+      "Behavioral modeling",
+      "Behaviour therapy"
     ],
-    "last_reinforced": "2026-09-21T16:30:02.129551+00:00"
+    "last_reinforced": "2026-09-22T00:50:05.216680+00:00"
   }
 }
