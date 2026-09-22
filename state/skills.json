@@ -108,7 +108,7 @@
     "last_reinforced": "2026-09-22T01:06:03.729942+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 4.7,
+    "level": 4.8,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -165,7 +165,7 @@
       "Biogeomorphology",
       "Quantitative analysis of behavior"
     ],
-    "last_reinforced": "2026-09-22T00:40:03.302705+00:00"
+    "last_reinforced": "2026-09-22T06:44:25.608454+00:00"
   },
   "ecologie": {
     "level": 4.77,
