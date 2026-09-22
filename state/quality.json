@@ -4336,5 +4336,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-21T16:43:01.612613+00:00"
+  },
+  "Clinical behavior analysis": {
+    "score": 10.0,
+    "metrics": {
+      "words": 366,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Behavior analysis (disambiguation)",
+        "Behavior informatics",
+        "Behavior",
+        "Applied behavior analysis",
+        "Adaptive behavior"
+      ],
+      "diversity": 0.754,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T00:33:03.986684+00:00"
   }
 }

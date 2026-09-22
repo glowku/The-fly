@@ -165,7 +165,7 @@
     "last_reinforced": "2026-09-21T13:42:46.172312+00:00"
   },
   "ecologie": {
-    "level": 4.57,
+    "level": 4.67,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -213,9 +213,10 @@
       "Behavioral neuroscience",
       "A Behavioral Theory of the Firm",
       "Behavioral modeling in computer-aided design",
-      "Behavioral pattern"
+      "Behavioral pattern",
+      "Clinical behavior analysis"
     ],
-    "last_reinforced": "2026-09-21T10:10:05.805903+00:00"
+    "last_reinforced": "2026-09-22T00:33:04.470403+00:00"
   },
   "evolution": {
     "level": 4.62,

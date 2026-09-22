@@ -1744,6 +1744,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_cusp"
       ],
       "updated_at": "2026-09-21T16:43:01.614022+00:00"
+    },
+    "Clinical behavior analysis": {
+      "depth": 6,
+      "created_at": "2026-09-22T00:33:03.988271+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clinical_behavior_analysis"
+      ],
+      "updated_at": "2026-09-22T00:33:03.988281+00:00"
     }
   },
   "edges": [
@@ -2930,6 +2938,18 @@
     {
       "from": "Catskill Fly Fishing Center and Museum",
       "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Association for Behavioral and Cognitive Therapies"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Association for Behavior Analysis International"
     }
   ],
   "frontier": [
@@ -2957,7 +2977,6 @@
     "Behavior analysis of child development",
     "Behavioralism",
     "Behavioral modeling language",
-    "Clinical behavior analysis",
     "Professional practice of behavior analysis",
     "Licensed behavior analyst",
     "Quantitative analysis of behavior",
@@ -2966,7 +2985,8 @@
     "Behavior model",
     "Butterfly effect",
     "Adaptive behaviors",
-    "Behavior analysis"
+    "Behavior analysis",
+    "Association for Behavioral and Cognitive Therapies"
   ],
   "max_depth": 9
 }
