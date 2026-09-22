@@ -4658,5 +4658,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:19:42.631629+00:00"
+  },
+  "Anti-social behaviour": {
+    "score": 10.0,
+    "metrics": {
+      "words": 337,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Evolutionary psychology",
+        "Behavioral economics",
+        "Behavior (disambiguation)",
+        "Behaviorism",
+        "Behaviour (journal)",
+        "Association for Behavior Analysis International"
+      ],
+      "diversity": 0.779,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:34:04.149602+00:00"
   }
 }
