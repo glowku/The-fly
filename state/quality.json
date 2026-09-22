@@ -4600,5 +4600,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:09:54.277838+00:00"
+  },
+  "Cognitive behavioral analysis system of psychotherapy": {
+    "score": 10.0,
+    "metrics": {
+      "words": 323,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Behavioral neuroscience",
+        "Behavioral economics",
+        "Behaviorism",
+        "Behaviour (journal)",
+        "Behavioural genetics"
+      ],
+      "diversity": 0.867,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:13:08.262136+00:00"
   }
 }

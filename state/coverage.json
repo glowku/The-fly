@@ -1848,6 +1848,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_activation"
       ],
       "updated_at": "2026-09-22T21:09:54.279839+00:00"
+    },
+    "Cognitive behavioral analysis system of psychotherapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:13:08.263719+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cognitive_behavioral_analysis_system_of_psychotherapy"
+      ],
+      "updated_at": "2026-09-22T21:13:08.263726+00:00"
     }
   },
   "edges": [
@@ -3170,6 +3178,10 @@
     {
       "from": "American Museum of Fly Fishing",
       "to": "Behavioral activation"
+    },
+    {
+      "from": "Behavioral neuroscience",
+      "to": "Cognitive behavioral analysis system of psychotherapy"
     }
   ],
   "frontier": [
