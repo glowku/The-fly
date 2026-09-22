@@ -1824,6 +1824,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_ecology_(disambiguation)"
       ],
       "updated_at": "2026-09-22T18:08:03.111795+00:00"
+    },
+    "Licensed behavior analyst": {
+      "depth": 6,
+      "created_at": "2026-09-22T18:30:02.025799+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Licensed_behavior_analyst"
+      ],
+      "updated_at": "2026-09-22T18:30:02.025807+00:00"
     }
   },
   "edges": [
@@ -3106,6 +3114,30 @@
     {
       "from": "Behavioral ecology (disambiguation)",
       "to": "Human behavioral ecology"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior analysis"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior therapy"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavioral engineering"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Association for Behavior Analysis International"
     }
   ],
   "frontier": [
@@ -3132,7 +3164,6 @@
     "Behavior analysis of child development",
     "Behavioralism",
     "Behavioral modeling language",
-    "Licensed behavior analyst",
     "Behavioral analytics",
     "User behavior analytics",
     "Behavior model",
@@ -3141,7 +3172,10 @@
     "Association for Contextual Behavioral Science",
     "Behavior-based safety",
     "Chemical ecology",
-    "Human behavioral ecology"
+    "Human behavioral ecology",
+    "Behavior management",
+    "Behavior therapy",
+    "Behavioral engineering"
   ],
   "max_depth": 9
 }

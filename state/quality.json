@@ -4541,5 +4541,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T18:08:03.110229+00:00"
+  },
+  "Licensed behavior analyst": {
+    "score": 10.0,
+    "metrics": {
+      "words": 396,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavior informatics",
+        "Behavioural sciences",
+        "Behaviourism",
+        "Evolutionary psychology",
+        "Applied behavior analysis",
+        "Behavioral economics"
+      ],
+      "diversity": 0.757,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T18:30:02.024295+00:00"
   }
 }
