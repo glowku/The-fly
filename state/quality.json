@@ -4619,5 +4619,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:13:08.262136+00:00"
+  },
+  "Cognitive behavioral therapy": {
+    "score": 10.0,
+    "metrics": {
+      "words": 367,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioural economics",
+        "Behaviour (journal)",
+        "Evolutionary psychology",
+        "Consumer behaviour",
+        "Behaviourism",
+        "Behavioural genetics"
+      ],
+      "diversity": 0.839,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:15:03.079754+00:00"
   }
 }

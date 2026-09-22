@@ -1856,6 +1856,14 @@
         "https://en.wikipedia.org/wiki/Cognitive_behavioral_analysis_system_of_psychotherapy"
       ],
       "updated_at": "2026-09-22T21:13:08.263726+00:00"
+    },
+    "Cognitive behavioral therapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:15:03.081761+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"
+      ],
+      "updated_at": "2026-09-22T21:15:03.081772+00:00"
     }
   },
   "edges": [
@@ -3182,6 +3190,10 @@
     {
       "from": "Behavioral neuroscience",
       "to": "Cognitive behavioral analysis system of psychotherapy"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Cognitive behavioral therapy"
     }
   ],
   "frontier": [
