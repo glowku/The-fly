@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-22 17:58:36 UTC
+**Dernière mise à jour** : 2026-09-22 21:11:54 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.788** |
-| Concepts traités | 200 | **227** |
+| Score global | maximiser | **38.809** |
+| Concepts traités | 200 | **231** |
 | Qualité moyenne | ≥ 7.5 | **9.7/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **227** |
-| Arêtes du graphe | 316 |
-| Frontière (à explorer) | 33 |
+| Concepts traités (nœuds) | **231** |
+| Arêtes du graphe | 330 |
+| Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.7/10** |
-| Score objectif (coverage × quality) | **38.788** |
-| Actions dernières 24 h | 129 |
+| Score objectif (coverage × quality) | **38.809** |
+| Actions dernières 24 h | 175 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 220 |
+| Excellent (≥ 8) | 224 |
 | Bon (6 – 8) | 4 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-22T13:38:30  auto_learn      
-2026-09-22T13:40:08  auto_learn      
-2026-09-22T13:41:46  auto_learn      
-2026-09-22T13:43:23  auto_learn      
-2026-09-22T13:45:03  skill_reinforc  
-2026-09-22T13:45:05  auto_learn_exp  Association for Behavioral and Cognitive Therapies score=10.0
-2026-09-22T13:45:05  auto_learn      
-2026-09-22T13:46:40  skill_reinforc  
-2026-09-22T13:46:42  auto_learn_exp  Behavior modification score=10.0
-2026-09-22T13:46:42  auto_learn      
-2026-09-22T16:53:48  auto_learn      
-2026-09-22T17:11:09  plan            Community (ecology)
-2026-09-22T17:11:11  skill_reinforc  
-2026-09-22T17:11:11  branch          Community (ecology)
-2026-09-22T17:50:31  parallel_learn  
+2026-09-22T20:49:27  auto_learn      
+2026-09-22T20:51:13  auto_learn      
+2026-09-22T20:52:58  auto_learn      
+2026-09-22T20:54:42  auto_learn      
+2026-09-22T20:56:27  auto_learn      
+2026-09-22T20:58:11  auto_learn      
+2026-09-22T20:59:54  auto_learn      
+2026-09-22T21:01:38  auto_learn      
+2026-09-22T21:03:22  auto_learn      
+2026-09-22T21:05:03  skill_reinforc  
+2026-09-22T21:05:04  auto_learn_exp  Behavior analysis of child development score=10.0
+2026-09-22T21:05:04  auto_learn      
+2026-09-22T21:06:41  auto_learn      
+2026-09-22T21:08:17  auto_learn      
+2026-09-22T21:09:54  skill_reinforc  
 ```
 
 ## Architecture de l'agent
