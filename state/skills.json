@@ -49,7 +49,7 @@
     "last_reinforced": "2026-09-22T00:59:02.251136+00:00"
   },
   "anatomie_insecte": {
-    "level": 4.73,
+    "level": 4.83,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -103,9 +103,10 @@
       "Behavior selection algorithm",
       "Behavior tree (artificial intelligence, robotics and control)",
       "Behavioral cusp",
-      "Professional practice of behavior analysis"
+      "Professional practice of behavior analysis",
+      "Butterfly effect"
     ],
-    "last_reinforced": "2026-09-22T01:06:03.729942+00:00"
+    "last_reinforced": "2026-09-22T13:14:02.610320+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 4.8,

@@ -4454,5 +4454,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T01:06:03.438186+00:00"
+  },
+  "Butterfly effect": {
+    "score": 10.0,
+    "metrics": {
+      "words": 392,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Adaptive behavior (ecology)",
+        "Behavioural genetics",
+        "Consumer behaviour",
+        "Behavioral economics",
+        "Applied behavior analysis",
+        "Behavioural sciences",
+        "Behavior"
+      ],
+      "diversity": 0.798,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T13:14:02.418039+00:00"
   }
 }
