@@ -1409,3 +1409,4 @@
 {"ts": "2026-09-22T01:28:48.894821+00:00", "type": "plan", "title": "Desert ecology", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-22T01:28:49.491721+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.77, "article": "Desert ecology"}
 {"ts": "2026-09-22T01:28:49.491781+00:00", "type": "branch", "title": "Desert ecology", "children_discovered": 1, "skill": "ecologie"}
+{"ts": "2026-09-22T04:48:55.314067+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Blacker's Art of Fly Making", "recent": ["Professional practice of behavior analysis", "Behavioral momentum", "Behaviour therapy", "Experimental analysis of behavior", "Quantitative analysis of behavior", "Clinical behavior analysis", "Behavioral cusp", "Behavioral modeling"]}
