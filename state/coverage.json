@@ -3074,6 +3074,14 @@
     {
       "from": "Cephalon (arthropod head)",
       "to": "Behavior modification"
+    },
+    {
+      "from": "Community (ecology)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Community (ecology)",
+      "to": "Anti-predator adaptation"
     }
   ],
   "frontier": [

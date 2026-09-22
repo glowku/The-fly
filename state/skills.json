@@ -170,7 +170,7 @@
     "last_reinforced": "2026-09-22T06:44:25.608454+00:00"
   },
   "ecologie": {
-    "level": 4.77,
+    "level": 4.87,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -220,9 +220,10 @@
       "Behavioral modeling in computer-aided design",
       "Behavioral pattern",
       "Clinical behavior analysis",
-      "Desert ecology"
+      "Desert ecology",
+      "Community (ecology)"
     ],
-    "last_reinforced": "2026-09-22T01:28:49.491449+00:00"
+    "last_reinforced": "2026-09-22T17:11:11.791138+00:00"
   },
   "evolution": {
     "level": 4.82,
