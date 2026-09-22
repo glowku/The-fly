@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-22 13:09:11 UTC
+**Dernière mise à jour** : 2026-09-22 17:58:36 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.772** |
-| Concepts traités | 200 | **224** |
-| Qualité moyenne | ≥ 7.5 | **9.69/10** |
+| Score global | maximiser | **38.788** |
+| Concepts traités | 200 | **227** |
+| Qualité moyenne | ≥ 7.5 | **9.7/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **224** |
-| Arêtes du graphe | 313 |
-| Frontière (à explorer) | 35 |
+| Concepts traités (nœuds) | **227** |
+| Arêtes du graphe | 316 |
+| Frontière (à explorer) | 33 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.69/10** |
-| Score objectif (coverage × quality) | **38.772** |
-| Actions dernières 24 h | 126 |
+| Score qualité moyen | **9.7/10** |
+| Score objectif (coverage × quality) | **38.788** |
+| Actions dernières 24 h | 129 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 217 |
+| Excellent (≥ 8) | 220 |
 | Bon (6 – 8) | 4 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-22T07:44:02  auto_learn      
-2026-09-22T07:45:36  auto_learn      
-2026-09-22T07:47:11  auto_learn      
-2026-09-22T07:48:45  auto_learn      
-2026-09-22T07:50:20  auto_learn      
-2026-09-22T07:51:55  auto_learn      
-2026-09-22T07:53:29  auto_learn      
-2026-09-22T07:55:03  auto_learn      
-2026-09-22T07:56:38  auto_learn      
-2026-09-22T07:58:13  auto_learn      
-2026-09-22T11:31:20  auto_learn      
-2026-09-22T12:26:03  plan            E. coli long-term evolution experiment
-2026-09-22T12:26:03  skill_reinforc  
-2026-09-22T12:26:03  branch          E. coli long-term evolution experiment
-2026-09-22T12:57:27  parallel_learn  
+2026-09-22T13:38:30  auto_learn      
+2026-09-22T13:40:08  auto_learn      
+2026-09-22T13:41:46  auto_learn      
+2026-09-22T13:43:23  auto_learn      
+2026-09-22T13:45:03  skill_reinforc  
+2026-09-22T13:45:05  auto_learn_exp  Association for Behavioral and Cognitive Therapies score=10.0
+2026-09-22T13:45:05  auto_learn      
+2026-09-22T13:46:40  skill_reinforc  
+2026-09-22T13:46:42  auto_learn_exp  Behavior modification score=10.0
+2026-09-22T13:46:42  auto_learn      
+2026-09-22T16:53:48  auto_learn      
+2026-09-22T17:11:09  plan            Community (ecology)
+2026-09-22T17:11:11  skill_reinforc  
+2026-09-22T17:11:11  branch          Community (ecology)
+2026-09-22T17:50:31  parallel_learn  
 ```
 
 ## Architecture de l'agent
