@@ -112,7 +112,7 @@
     "last_reinforced": "2026-09-22T20:24:17.183040+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 4.9,
+    "level": 5.0,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -168,9 +168,10 @@
       "Behaviour Santiago",
       "Biogeomorphology",
       "Quantitative analysis of behavior",
-      "Behavioral ecology (disambiguation)"
+      "Behavioral ecology (disambiguation)",
+      "Cognitive behavioral therapy"
     ],
-    "last_reinforced": "2026-09-22T18:08:03.347261+00:00"
+    "last_reinforced": "2026-09-22T21:18:02.749419+00:00"
   },
   "ecologie": {
     "level": 4.97,
