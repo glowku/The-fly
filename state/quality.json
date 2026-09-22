@@ -4581,5 +4581,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:05:02.725573+00:00"
+  },
+  "Behavioral activation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 360,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Evolutionary psychology",
+        "Behavioural sciences",
+        "Behavioral economics",
+        "Behaviorism",
+        "Behaviour (journal)"
+      ],
+      "diversity": 0.822,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:09:54.277838+00:00"
   }
 }
