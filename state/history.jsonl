@@ -1367,3 +1367,4 @@
 {"ts": "2026-09-21T22:44:14.425540+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 4.64, "article": "Catskill Fly Fishing Center and Museum"}
 {"ts": "2026-09-21T22:44:14.425592+00:00", "type": "branch", "title": "Catskill Fly Fishing Center and Museum", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-09-22T00:04:02.703585+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": ["Behavioral ecology (disambiguation)"], "parent": "Cephalothorax", "recent": ["Behavioral cusp", "Behavioral modeling", "Behavioral pattern", "Behavior tree (artificial intelligence, robotics and control)", "Coastal biogeomorphology", "Biogeomorphology", "Behavioral modeling in hydrology", "Behavior analysis (disambiguation)"]}
+{"ts": "2026-09-22T00:25:09.053514+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Cephalothorax"}
