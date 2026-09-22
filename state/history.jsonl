@@ -1521,3 +1521,4 @@
 {"ts": "2026-09-22T20:24:16.132668+00:00", "type": "plan", "title": "Allagash Brewing Company", "action": "branch", "priority": 139.5, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-09-22T20:24:17.183362+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 4.93, "article": "Allagash Brewing Company"}
 {"ts": "2026-09-22T20:24:17.183422+00:00", "type": "branch", "title": "Allagash Brewing Company", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-09-22T20:40:38.065870+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Arthropod head problem"}
