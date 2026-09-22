@@ -4495,5 +4495,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T13:45:03.151087+00:00"
+  },
+  "Behavior modification": {
+    "score": 10.0,
+    "metrics": {
+      "words": 385,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Consumer behaviour",
+        "Behavioral economics",
+        "Applied behavior analysis",
+        "Behavioural neuroscience",
+        "Behaviorism",
+        "Behavior"
+      ],
+      "diversity": 0.716,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T13:46:39.928436+00:00"
   }
 }

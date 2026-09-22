@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 4.74,
+    "level": 4.84,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -44,9 +44,10 @@
       "Association for Behavior Analysis International",
       "Coastal biogeomorphology",
       "Catskill Fly Fishing Center and Museum",
-      "Behavioral momentum"
+      "Behavioral momentum",
+      "Behavior modification"
     ],
-    "last_reinforced": "2026-09-22T00:59:02.251136+00:00"
+    "last_reinforced": "2026-09-22T13:46:40.052801+00:00"
   },
   "anatomie_insecte": {
     "level": 4.83,
