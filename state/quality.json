@@ -4414,5 +4414,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T00:50:04.933650+00:00"
+  },
+  "Behavioral momentum": {
+    "score": 10.0,
+    "metrics": {
+      "words": 365,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral neuroscience",
+        "Behavioural sciences",
+        "Adaptive behavior (ecology)",
+        "Consumer behaviour",
+        "Behavior",
+        "Applied behavior analysis"
+      ],
+      "diversity": 0.709,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T00:59:01.967711+00:00"
   }
 }
