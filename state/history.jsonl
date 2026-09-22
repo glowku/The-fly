@@ -1486,3 +1486,4 @@
 {"ts": "2026-09-22T17:11:09.399440+00:00", "type": "plan", "title": "Community (ecology)", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-22T17:11:11.791412+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 4.87, "article": "Community (ecology)"}
 {"ts": "2026-09-22T17:11:11.791473+00:00", "type": "branch", "title": "Community (ecology)", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-22T17:50:31.808301+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Blacker's Art of Fly Making"}
