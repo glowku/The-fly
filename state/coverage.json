@@ -1832,6 +1832,14 @@
         "https://en.wikipedia.org/wiki/Licensed_behavior_analyst"
       ],
       "updated_at": "2026-09-22T18:30:02.025807+00:00"
+    },
+    "Behavior analysis of child development": {
+      "depth": 5,
+      "created_at": "2026-09-22T21:05:02.727277+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_analysis_of_child_development"
+      ],
+      "updated_at": "2026-09-22T21:05:02.727284+00:00"
     }
   },
   "edges": [
@@ -3138,6 +3146,18 @@
     {
       "from": "Licensed behavior analyst",
       "to": "Association for Behavior Analysis International"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior therapy"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior modification"
     }
   ],
   "frontier": [
@@ -3161,7 +3181,6 @@
     "Insects",
     "Adaptationist",
     "Learned behaviors",
-    "Behavior analysis of child development",
     "Behavioralism",
     "Behavioral modeling language",
     "Behavioral analytics",

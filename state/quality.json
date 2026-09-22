@@ -4561,5 +4561,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T18:30:02.024295+00:00"
+  },
+  "Behavior analysis of child development": {
+    "score": 10.0,
+    "metrics": {
+      "words": 351,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Evolutionary psychology",
+        "Behavioural sciences",
+        "Behavioral neuroscience",
+        "Behavior informatics",
+        "Behavioral Ecology (journal)",
+        "Behavioural genetics"
+      ],
+      "diversity": 0.763,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-22T21:05:02.725573+00:00"
   }
 }
