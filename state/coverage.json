@@ -1968,6 +1968,14 @@
         "https://en.wikipedia.org/wiki/User_behavior_analytics"
       ],
       "updated_at": "2026-09-23T04:40:28.929460+00:00"
+    },
+    "Human behavior": {
+      "depth": 7,
+      "created_at": "2026-09-23T08:56:51.582572+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_behavior"
+      ],
+      "updated_at": "2026-09-23T08:56:51.582580+00:00"
     }
   },
   "edges": [
@@ -3430,6 +3438,10 @@
     {
       "from": "Behavior-based safety",
       "to": "Organizational behavior management"
+    },
+    {
+      "from": "Apex predator",
+      "to": "Human behavior"
     }
   ],
   "frontier": [

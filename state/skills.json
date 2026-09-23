@@ -182,7 +182,7 @@
     "last_reinforced": "2026-09-23T04:10:02.284654+00:00"
   },
   "ecologie": {
-    "level": 5.17,
+    "level": 5.27,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -236,9 +236,10 @@
       "Community (ecology)",
       "Cognitive behavioral analysis system of psychotherapy",
       "Verbal Behavior",
-      "Behavioral addiction"
+      "Behavioral addiction",
+      "Human behavior"
     ],
-    "last_reinforced": "2026-09-23T04:06:49.092833+00:00"
+    "last_reinforced": "2026-09-23T08:56:51.806761+00:00"
   },
   "evolution": {
     "level": 5.22,

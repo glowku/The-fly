@@ -4891,5 +4891,30 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:40:28.927905+00:00"
+  },
+  "Human behavior": {
+    "score": 10.0,
+    "metrics": {
+      "words": 380,
+      "sections": 4,
+      "links": 11,
+      "link_list": [
+        "Biogeomorphology",
+        "Behavioral modeling in hydrology",
+        "Behaviour Santiago",
+        "Behavior analysis (disambiguation)",
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Coastal biogeomorphology",
+        "Behaviour Interactive",
+        "Behavioral cusp",
+        "Behavioral pattern",
+        "Behavioral modeling in computer-aided design",
+        "Behavior selection algorithm"
+      ],
+      "diversity": 0.718,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T08:56:51.580575+00:00"
   }
 }
