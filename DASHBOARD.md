@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-22 21:11:54 UTC
+**Dernière mise à jour** : 2026-09-23 00:03:07 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.809** |
-| Concepts traités | 200 | **231** |
-| Qualité moyenne | ≥ 7.5 | **9.7/10** |
+| Score global | maximiser | **38.829** |
+| Concepts traités | 200 | **235** |
+| Qualité moyenne | ≥ 7.5 | **9.71/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **231** |
-| Arêtes du graphe | 330 |
-| Frontière (à explorer) | 34 |
+| Concepts traités (nœuds) | **235** |
+| Arêtes du graphe | 340 |
+| Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.7/10** |
-| Score objectif (coverage × quality) | **38.809** |
-| Actions dernières 24 h | 175 |
+| Score qualité moyen | **9.71/10** |
+| Score objectif (coverage × quality) | **38.829** |
+| Actions dernières 24 h | 201 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 224 |
+| Excellent (≥ 8) | 228 |
 | Bon (6 – 8) | 4 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-22T20:49:27  auto_learn      
-2026-09-22T20:51:13  auto_learn      
-2026-09-22T20:52:58  auto_learn      
-2026-09-22T20:54:42  auto_learn      
-2026-09-22T20:56:27  auto_learn      
-2026-09-22T20:58:11  auto_learn      
-2026-09-22T20:59:54  auto_learn      
-2026-09-22T21:01:38  auto_learn      
-2026-09-22T21:03:22  auto_learn      
-2026-09-22T21:05:03  skill_reinforc  
-2026-09-22T21:05:04  auto_learn_exp  Behavior analysis of child development score=10.0
-2026-09-22T21:05:04  auto_learn      
-2026-09-22T21:06:41  auto_learn      
-2026-09-22T21:08:17  auto_learn      
-2026-09-22T21:09:54  skill_reinforc  
+2026-09-22T21:22:55  auto_learn      
+2026-09-22T21:24:30  auto_learn      
+2026-09-22T21:26:06  auto_learn      
+2026-09-22T21:27:41  auto_learn      
+2026-09-22T21:29:16  auto_learn      
+2026-09-22T21:30:52  auto_learn      
+2026-09-22T21:32:28  auto_learn      
+2026-09-22T21:34:04  skill_reinforc  
+2026-09-22T21:34:05  auto_learn_exp  Anti-social behaviour score=10.0
+2026-09-22T21:34:05  auto_learn      
+2026-09-22T23:10:39  plan            Behavioral Ecology (journal)
+2026-09-22T23:10:40  skill_reinforc  
+2026-09-22T23:10:40  branch          Behavioral Ecology (journal)
+2026-09-22T23:36:40  auto_learn      
+2026-09-22T23:55:53  parallel_learn  
 ```
 
 ## Architecture de l'agent
