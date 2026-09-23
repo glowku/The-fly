@@ -2000,6 +2000,14 @@
         "https://en.wikipedia.org/wiki/Behavior_change_method"
       ],
       "updated_at": "2026-09-23T11:03:01.553560+00:00"
+    },
+    "Chemical ecology": {
+      "depth": 7,
+      "created_at": "2026-09-23T11:17:02.606760+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chemical_ecology"
+      ],
+      "updated_at": "2026-09-23T11:17:02.606766+00:00"
     }
   },
   "edges": [
@@ -3482,6 +3490,10 @@
     {
       "from": "Behavior change method",
       "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Chemical ecology",
+      "to": "Abundance (ecology)"
     }
   ],
   "frontier": [
@@ -3510,7 +3522,6 @@
     "Behavior model",
     "Adaptive behaviors",
     "Behavior analysis",
-    "Chemical ecology",
     "Human behavioral ecology",
     "Behavior therapy",
     "Behavioral engineering",

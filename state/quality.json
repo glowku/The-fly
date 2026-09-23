@@ -4977,5 +4977,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T11:03:01.551480+00:00"
+  },
+  "Chemical ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 347,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Quantitative analysis of behavior",
+        "Experimental analysis of behavior",
+        "Behavior analysis (disambiguation)",
+        "Behavioral modeling",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.794,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T11:17:02.605051+00:00"
   }
 }
