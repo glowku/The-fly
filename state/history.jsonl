@@ -1717,3 +1717,4 @@
 {"ts": "2026-09-23T17:48:33.327700+00:00", "type": "plan", "title": "Bibliography of fly fishing", "action": "branch", "priority": 123.5, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-09-23T17:48:34.205590+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 5.43, "article": "Bibliography of fly fishing"}
 {"ts": "2026-09-23T17:48:34.205627+00:00", "type": "branch", "title": "Bibliography of fly fishing", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-09-23T19:20:28.293792+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
