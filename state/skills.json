@@ -176,7 +176,7 @@
     "last_reinforced": "2026-09-22T21:18:02.749419+00:00"
   },
   "ecologie": {
-    "level": 4.97,
+    "level": 5.07,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -228,9 +228,10 @@
       "Clinical behavior analysis",
       "Desert ecology",
       "Community (ecology)",
-      "Cognitive behavioral analysis system of psychotherapy"
+      "Cognitive behavioral analysis system of psychotherapy",
+      "Verbal Behavior"
     ],
-    "last_reinforced": "2026-09-22T21:13:08.510048+00:00"
+    "last_reinforced": "2026-09-23T00:21:43.428834+00:00"
   },
   "evolution": {
     "level": 5.02,

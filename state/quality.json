@@ -4691,5 +4691,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T00:20:03.364361+00:00"
+  },
+  "Verbal Behavior": {
+    "score": 10.0,
+    "metrics": {
+      "words": 391,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behaviorism",
+        "Behavior (disambiguation)",
+        "Antecedent (behavioral psychology)",
+        "Association for Behavior Analysis International",
+        "Evolutionary psychology",
+        "Behavioral Ecology (journal)"
+      ],
+      "diversity": 0.701,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T00:21:43.178936+00:00"
   }
 }
