@@ -4832,5 +4832,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:10:02.025090+00:00"
+  },
+  "Behavior change (public health)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 393,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Allagash Brewing Company",
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Behavior analysis (disambiguation)",
+        "Behavior (disambiguation)",
+        "Association for Behavior Analysis International"
+      ],
+      "diversity": 0.812,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:22:01.777294+00:00"
   }
 }

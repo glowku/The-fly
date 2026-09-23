@@ -1944,6 +1944,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_contagion"
       ],
       "updated_at": "2026-09-23T04:10:02.026828+00:00"
+    },
+    "Behavior change (public health)": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:22:01.778999+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_change_(public_health)"
+      ],
+      "updated_at": "2026-09-23T04:22:01.779007+00:00"
     }
   },
   "edges": [
@@ -3382,6 +3390,18 @@
     {
       "from": "Behavioral contagion",
       "to": "Adaptationism"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behavior change methods"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behaviorist"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behavioral change theories"
     }
   ],
   "frontier": [
@@ -3420,10 +3440,12 @@
     "International Society for Behavioral Ecology",
     "Cognitive behavior therapy",
     "Radical behaviorism",
-    "Behavior change (public health)",
     "Chewing gum",
     "Behavior change method",
-    "Addictive behavior"
+    "Addictive behavior",
+    "Behavior change methods",
+    "Behaviorist",
+    "Behavioral change theories"
   ],
   "max_depth": 9
 }
