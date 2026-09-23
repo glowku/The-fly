@@ -188,7 +188,7 @@
     "last_reinforced": "2026-09-23T16:02:02.315002+00:00"
   },
   "ecologie": {
-    "level": 5.37,
+    "level": 5.47,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -244,9 +244,10 @@
       "Verbal Behavior",
       "Behavioral addiction",
       "Human behavior",
-      "Abundance (ecology)"
+      "Abundance (ecology)",
+      "Butterfly effect"
     ],
-    "last_reinforced": "2026-09-23T12:58:23.171839+00:00"
+    "last_reinforced": "2026-09-23T23:52:54.064598+00:00"
   },
   "evolution": {
     "level": 5.42,
