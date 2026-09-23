@@ -302,7 +302,7 @@
     "last_reinforced": "2026-09-23T04:27:02.168200+00:00"
   },
   "comportement": {
-    "level": 5.13,
+    "level": 5.23,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -360,8 +360,9 @@
       "Association for Behavioral and Cognitive Therapies",
       "Behavior analysis of child development",
       "Behavioral Ecology (journal)",
-      "Eccentricity (behavior)"
+      "Eccentricity (behavior)",
+      "Vineland Adaptive Behavior Scale"
     ],
-    "last_reinforced": "2026-09-23T04:05:10.609034+00:00"
+    "last_reinforced": "2026-09-23T07:29:16.202170+00:00"
   }
 }
