@@ -1984,6 +1984,14 @@
         "https://en.wikipedia.org/wiki/Network_behavior_anomaly_detection"
       ],
       "updated_at": "2026-09-23T10:43:00.869633+00:00"
+    },
+    "Behavioral analytics": {
+      "depth": 6,
+      "created_at": "2026-09-23T10:54:03.007416+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_analytics"
+      ],
+      "updated_at": "2026-09-23T10:54:03.007423+00:00"
     }
   },
   "edges": [
@@ -3454,6 +3462,14 @@
     {
       "from": "Aquatic feeding mechanisms",
       "to": "Network behavior anomaly detection"
+    },
+    {
+      "from": "Behavioral analytics",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Behavioral analytics",
+      "to": "Behavior informatics"
     }
   ],
   "frontier": [
@@ -3479,7 +3495,6 @@
     "Learned behaviors",
     "Behavioralism",
     "Behavioral modeling language",
-    "Behavioral analytics",
     "Behavior model",
     "Adaptive behaviors",
     "Behavior analysis",

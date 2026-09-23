@@ -4937,5 +4937,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T10:43:00.867831+00:00"
+  },
+  "Behavioral analytics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 421,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Quantitative analysis of behavior",
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Behavior selection algorithm",
+        "Behavior analysis (disambiguation)",
+        "Behavioral modeling",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T10:54:03.005710+00:00"
   }
 }
