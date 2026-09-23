@@ -4996,5 +4996,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T11:17:02.605051+00:00"
+  },
+  "Social and behavior change communication": {
+    "score": 10.0,
+    "metrics": {
+      "words": 344,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral pattern",
+        "Behaviour therapy",
+        "Behavioral modeling",
+        "Clinical behavior analysis",
+        "Consumer behaviour",
+        "Quantitative analysis of behavior"
+      ],
+      "diversity": 0.775,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T11:29:02.458583+00:00"
   }
 }

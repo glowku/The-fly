@@ -2008,6 +2008,14 @@
         "https://en.wikipedia.org/wiki/Chemical_ecology"
       ],
       "updated_at": "2026-09-23T11:17:02.606766+00:00"
+    },
+    "Social and behavior change communication": {
+      "depth": 6,
+      "created_at": "2026-09-23T11:29:02.460435+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Social_and_behavior_change_communication"
+      ],
+      "updated_at": "2026-09-23T11:29:02.460443+00:00"
     }
   },
   "edges": [
@@ -3494,6 +3502,22 @@
     {
       "from": "Chemical ecology",
       "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior change method"
     }
   ],
   "frontier": [
@@ -3533,7 +3557,6 @@
     "Behavior change methods",
     "Behaviorist",
     "Behavioral change theories",
-    "Social and behavior change communication",
     "Organizational behavior management"
   ],
   "max_depth": 9
