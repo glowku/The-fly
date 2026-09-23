@@ -5056,5 +5056,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T16:12:02.868480+00:00"
+  },
+  "Evolutionary developmental psychology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 435,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Quantitative analysis of behavior",
+        "Butterfly effect",
+        "Behavioral cusp",
+        "Behavioral modeling",
+        "Experimental analysis of behavior",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.745,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T16:17:02.268363+00:00"
   }
 }
