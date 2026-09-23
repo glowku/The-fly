@@ -1928,6 +1928,14 @@
         "https://en.wikipedia.org/wiki/Eccentricity_(behavior)"
       ],
       "updated_at": "2026-09-23T04:05:10.425380+00:00"
+    },
+    "Behavioral addiction": {
+      "depth": 7,
+      "created_at": "2026-09-23T04:06:48.905907+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_addiction"
+      ],
+      "updated_at": "2026-09-23T04:06:48.905915+00:00"
     }
   },
   "edges": [
@@ -3350,6 +3358,10 @@
     {
       "from": "Eusociality",
       "to": "Eccentricity (behavior)"
+    },
+    {
+      "from": "Computational phylogenetics",
+      "to": "Behavioral addiction"
     }
   ],
   "frontier": [

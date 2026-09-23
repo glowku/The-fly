@@ -4792,5 +4792,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:05:10.423722+00:00"
+  },
+  "Behavioral addiction": {
+    "score": 10.0,
+    "metrics": {
+      "words": 340,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Antecedent (behavioral psychology)",
+        "Behavior selection algorithm",
+        "Biogeomorphology",
+        "Behavioral modeling in computer-aided design",
+        "Association for Behavior Analysis International",
+        "Behavior (disambiguation)"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:06:48.904289+00:00"
   }
 }
