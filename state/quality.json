@@ -4751,5 +4751,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T00:34:02.840787+00:00"
+  },
+  "Behavioural change theories": {
+    "score": 10.0,
+    "metrics": {
+      "words": 358,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Behaviour Interactive",
+        "Behavior (disambiguation)",
+        "Behaviour Santiago",
+        "Antecedent (behavioral psychology)",
+        "Association for Behavior Analysis International",
+        "Behavioral Ecology (journal)",
+        "Consumer behaviour"
+      ],
+      "diversity": 0.743,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T00:40:34.187250+00:00"
   }
 }
