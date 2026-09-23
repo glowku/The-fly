@@ -3330,6 +3330,10 @@
     {
       "from": "Allagash Brewing Company",
       "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Chewing",
+      "to": "Chewing gum"
     }
   ],
   "frontier": [
@@ -3368,7 +3372,8 @@
     "International Society for Behavioral Ecology",
     "Cognitive behavior therapy",
     "Radical behaviorism",
-    "Behavior change (public health)"
+    "Behavior change (public health)",
+    "Chewing gum"
   ],
   "max_depth": 9
 }

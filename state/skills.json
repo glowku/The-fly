@@ -53,7 +53,7 @@
     "last_reinforced": "2026-09-23T00:34:03.164275+00:00"
   },
   "anatomie_insecte": {
-    "level": 5.03,
+    "level": 5.13,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -110,9 +110,10 @@
       "Professional practice of behavior analysis",
       "Butterfly effect",
       "Allagash Brewing Company",
-      "Anti-social behaviour"
+      "Anti-social behaviour",
+      "Chewing"
     ],
-    "last_reinforced": "2026-09-22T21:34:04.479629+00:00"
+    "last_reinforced": "2026-09-23T01:40:28.144542+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 5.1,
