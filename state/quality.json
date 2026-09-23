@@ -4678,5 +4678,18 @@
       "has_h1": true
     },
     "updated_at": "2026-09-22T21:34:04.149602+00:00"
+  },
+  "Association for Contextual Behavioral Science": {
+    "score": 7.33,
+    "metrics": {
+      "words": 403,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.702,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T00:20:03.364361+00:00"
   }
 }
