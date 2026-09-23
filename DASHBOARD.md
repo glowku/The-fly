@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-23 18:16:53 UTC
+**Dernière mise à jour** : 2026-09-23 22:44:18 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.72/10** |
 | Score objectif (coverage × quality) | **38.879** |
-| Actions dernières 24 h | 214 |
+| Actions dernières 24 h | 190 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-23T16:28:32  auto_learn      
-2026-09-23T16:30:09  auto_learn      
-2026-09-23T16:31:47  auto_learn      
-2026-09-23T16:33:26  auto_learn      
-2026-09-23T16:35:04  auto_learn      
-2026-09-23T16:36:40  auto_learn      
-2026-09-23T16:38:18  auto_learn      
-2026-09-23T16:39:54  auto_learn      
-2026-09-23T16:41:31  auto_learn      
-2026-09-23T16:43:08  auto_learn      
-2026-09-23T16:44:45  auto_learn      
-2026-09-23T16:52:34  auto_learn      
-2026-09-23T17:48:33  plan            Bibliography of fly fishing
-2026-09-23T17:48:34  skill_reinforc  
-2026-09-23T17:48:34  branch          Bibliography of fly fishing
+2026-09-23T20:08:03  auto_learn      
+2026-09-23T20:09:38  auto_learn      
+2026-09-23T20:11:12  auto_learn      
+2026-09-23T20:12:47  auto_learn      
+2026-09-23T20:14:21  auto_learn      
+2026-09-23T20:15:56  auto_learn      
+2026-09-23T20:17:30  auto_learn      
+2026-09-23T20:19:11  auto_learn      
+2026-09-23T20:20:47  auto_learn      
+2026-09-23T20:22:21  auto_learn      
+2026-09-23T21:13:59  plan            Vineland Adaptive Behavior Scale
+2026-09-23T21:13:59  skill_reinforc  
+2026-09-23T21:13:59  branch          Vineland Adaptive Behavior Scale
+2026-09-23T21:27:46  auto_learn      
+2026-09-23T22:34:08  parallel_learn  
 ```
 
 ## Architecture de l'agent
