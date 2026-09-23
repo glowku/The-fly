@@ -4772,5 +4772,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T00:40:34.187250+00:00"
+  },
+  "Eccentricity (behavior)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 349,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral modeling in hydrology",
+        "Antecedent (behavioral psychology)",
+        "Behavioral Ecology (journal)",
+        "Behavior selection algorithm",
+        "Association for Behavior Analysis International",
+        "Behavior (disambiguation)"
+      ],
+      "diversity": 0.735,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:05:10.423722+00:00"
   }
 }

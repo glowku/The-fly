@@ -297,7 +297,7 @@
     "last_reinforced": "2026-09-23T00:40:34.436689+00:00"
   },
   "comportement": {
-    "level": 5.03,
+    "level": 5.13,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -354,8 +354,9 @@
       "Behaviour therapy",
       "Association for Behavioral and Cognitive Therapies",
       "Behavior analysis of child development",
-      "Behavioral Ecology (journal)"
+      "Behavioral Ecology (journal)",
+      "Eccentricity (behavior)"
     ],
-    "last_reinforced": "2026-09-22T23:10:40.141752+00:00"
+    "last_reinforced": "2026-09-23T04:05:10.609034+00:00"
   }
 }

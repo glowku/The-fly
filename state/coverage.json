@@ -1920,6 +1920,14 @@
         "https://en.wikipedia.org/wiki/Behavioural_change_theories"
       ],
       "updated_at": "2026-09-23T00:40:34.189073+00:00"
+    },
+    "Eccentricity (behavior)": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:05:10.425372+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eccentricity_(behavior)"
+      ],
+      "updated_at": "2026-09-23T04:05:10.425380+00:00"
     }
   },
   "edges": [
@@ -3334,6 +3342,14 @@
     {
       "from": "Chewing",
       "to": "Chewing gum"
+    },
+    {
+      "from": "Arthropod head problem",
+      "to": "Behavior change method"
+    },
+    {
+      "from": "Eusociality",
+      "to": "Eccentricity (behavior)"
     }
   ],
   "frontier": [
@@ -3373,7 +3389,8 @@
     "Cognitive behavior therapy",
     "Radical behaviorism",
     "Behavior change (public health)",
-    "Chewing gum"
+    "Chewing gum",
+    "Behavior change method"
   ],
   "max_depth": 9
 }
