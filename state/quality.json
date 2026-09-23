@@ -4711,5 +4711,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T00:21:43.178936+00:00"
+  },
+  "Abnormality (behavior)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 338,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Behaviorism",
+        "Behavior selection algorithm",
+        "Antecedent (behavioral psychology)",
+        "Association for Behavior Analysis International",
+        "Evolutionary psychology",
+        "Behavioral Ecology (journal)",
+        "Behavioral endocrinology"
+      ],
+      "diversity": 0.754,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T00:23:22.864483+00:00"
   }
 }
