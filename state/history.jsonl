@@ -1751,3 +1751,4 @@
 {"ts": "2026-09-23T21:13:59.486605+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.43, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-23T21:13:59.486676+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-09-23T21:27:46.825726+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Evolutionary developmental psychology", "Human behavioral ecology", "Behavioural design", "Social and behavior change communication", "Chemical ecology", "Behavior change method", "Behavioral analytics", "Network behavior anomaly detection"]}
+{"ts": "2026-09-23T22:34:08.158278+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "A Behavioral Theory of the Firm"}
