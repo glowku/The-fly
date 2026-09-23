@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-23 13:24:01 UTC
+**Dernière mise à jour** : 2026-09-23 18:16:53 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.866** |
-| Concepts traités | 200 | **252** |
+| Score global | maximiser | **38.879** |
+| Concepts traités | 200 | **255** |
 | Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **252** |
-| Arêtes du graphe | 377 |
-| Frontière (à explorer) | 37 |
+| Concepts traités (nœuds) | **255** |
+| Arêtes du graphe | 388 |
+| Frontière (à explorer) | 38 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **38.866** |
+| Score objectif (coverage × quality) | **38.879** |
 | Actions dernières 24 h | 214 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 244 |
+| Excellent (≥ 8) | 247 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-23T11:15:22  auto_learn      
-2026-09-23T11:17:02  skill_reinforc  
-2026-09-23T11:17:04  auto_learn_exp  Chemical ecology score=10.0
-2026-09-23T11:17:04  auto_learn      
-2026-09-23T11:18:47  auto_learn      
-2026-09-23T11:20:30  auto_learn      
-2026-09-23T11:22:14  auto_learn      
-2026-09-23T11:23:57  auto_learn      
-2026-09-23T11:25:40  auto_learn      
-2026-09-23T11:29:02  skill_reinforc  
-2026-09-23T11:29:04  auto_learn_exp  Social and behavior change communication score=10.0
-2026-09-23T11:29:04  auto_learn      
-2026-09-23T12:58:12  plan            Abundance (ecology)
-2026-09-23T12:58:23  skill_reinforc  
-2026-09-23T12:58:23  branch          Abundance (ecology)
+2026-09-23T16:28:32  auto_learn      
+2026-09-23T16:30:09  auto_learn      
+2026-09-23T16:31:47  auto_learn      
+2026-09-23T16:33:26  auto_learn      
+2026-09-23T16:35:04  auto_learn      
+2026-09-23T16:36:40  auto_learn      
+2026-09-23T16:38:18  auto_learn      
+2026-09-23T16:39:54  auto_learn      
+2026-09-23T16:41:31  auto_learn      
+2026-09-23T16:43:08  auto_learn      
+2026-09-23T16:44:45  auto_learn      
+2026-09-23T16:52:34  auto_learn      
+2026-09-23T17:48:33  plan            Bibliography of fly fishing
+2026-09-23T17:48:34  skill_reinforc  
+2026-09-23T17:48:34  branch          Bibliography of fly fishing
 ```
 
 ## Architecture de l'agent
