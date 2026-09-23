@@ -1992,6 +1992,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_analytics"
       ],
       "updated_at": "2026-09-23T10:54:03.007423+00:00"
+    },
+    "Behavior change method": {
+      "depth": 6,
+      "created_at": "2026-09-23T11:03:01.553554+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_change_method"
+      ],
+      "updated_at": "2026-09-23T11:03:01.553560+00:00"
     }
   },
   "edges": [
@@ -3470,6 +3478,10 @@
     {
       "from": "Behavioral analytics",
       "to": "Behavior informatics"
+    },
+    {
+      "from": "Behavior change method",
+      "to": "Behavior change (public health)"
     }
   ],
   "frontier": [
@@ -3506,7 +3518,6 @@
     "Cognitive behavior therapy",
     "Radical behaviorism",
     "Chewing gum",
-    "Behavior change method",
     "Addictive behavior",
     "Behavior change methods",
     "Behaviorist",

@@ -4957,5 +4957,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T10:54:03.005710+00:00"
+  },
+  "Behavior change method": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Biogeomorphology",
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Coastal biogeomorphology",
+        "Behavior analysis (disambiguation)",
+        "Behavioral modeling in hydrology",
+        "Behavioral modeling in computer-aided design"
+      ],
+      "diversity": 0.727,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T11:03:01.551480+00:00"
   }
 }
