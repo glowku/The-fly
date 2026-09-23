@@ -4812,5 +4812,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:06:48.904289+00:00"
+  },
+  "Behavioral contagion": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Coastal biogeomorphology",
+        "Behavioral modeling in hydrology",
+        "Behaviour Interactive",
+        "Antecedent (behavioral psychology)",
+        "E. coli long-term evolution experiment",
+        "Association for Behavior Analysis International"
+      ],
+      "diversity": 0.753,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:10:02.025090+00:00"
   }
 }
