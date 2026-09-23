@@ -5016,5 +5016,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T11:29:02.458583+00:00"
+  },
+  "Behavioural design": {
+    "score": 10.0,
+    "metrics": {
+      "words": 326,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Behaviour therapy",
+        "Quantitative analysis of behavior",
+        "Behavioral modeling",
+        "Clinical behavior analysis",
+        "Experimental analysis of behavior",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T16:02:02.139637+00:00"
   }
 }
