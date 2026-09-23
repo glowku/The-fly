@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-23 00:03:07 UTC
+**Dernière mise à jour** : 2026-09-23 07:26:12 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.829** |
-| Concepts traités | 200 | **235** |
+| Score global | maximiser | **38.838** |
+| Concepts traités | 200 | **246** |
 | Qualité moyenne | ≥ 7.5 | **9.71/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **235** |
-| Arêtes du graphe | 340 |
-| Frontière (à explorer) | 35 |
+| Concepts traités (nœuds) | **246** |
+| Arêtes du graphe | 365 |
+| Frontière (à explorer) | 41 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.71/10** |
-| Score objectif (coverage × quality) | **38.829** |
-| Actions dernières 24 h | 201 |
+| Score objectif (coverage × quality) | **38.838** |
+| Actions dernières 24 h | 211 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 228 |
-| Bon (6 – 8) | 4 |
+| Excellent (≥ 8) | 238 |
+| Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-22T21:22:55  auto_learn      
-2026-09-22T21:24:30  auto_learn      
-2026-09-22T21:26:06  auto_learn      
-2026-09-22T21:27:41  auto_learn      
-2026-09-22T21:29:16  auto_learn      
-2026-09-22T21:30:52  auto_learn      
-2026-09-22T21:32:28  auto_learn      
-2026-09-22T21:34:04  skill_reinforc  
-2026-09-22T21:34:05  auto_learn_exp  Anti-social behaviour score=10.0
-2026-09-22T21:34:05  auto_learn      
-2026-09-22T23:10:39  plan            Behavioral Ecology (journal)
-2026-09-22T23:10:40  skill_reinforc  
-2026-09-22T23:10:40  branch          Behavioral Ecology (journal)
-2026-09-22T23:36:40  auto_learn      
-2026-09-22T23:55:53  parallel_learn  
+2026-09-23T04:11:47  auto_learn      
+2026-09-23T04:13:30  auto_learn      
+2026-09-23T04:15:12  auto_learn      
+2026-09-23T04:16:54  auto_learn      
+2026-09-23T04:18:36  auto_learn      
+2026-09-23T04:20:18  auto_learn      
+2026-09-23T04:22:02  skill_reinforc  
+2026-09-23T04:22:03  auto_learn_exp  Behavior change (public health) score=10.0
+2026-09-23T04:22:03  auto_learn      
+2026-09-23T04:23:39  auto_learn      
+2026-09-23T04:25:22  auto_learn      
+2026-09-23T04:27:02  skill_reinforc  
+2026-09-23T04:40:29  skill_reinforc  
+2026-09-23T04:40:30  auto_learn_exp  User behavior analytics score=10.0
+2026-09-23T04:40:30  auto_learn      
 ```
 
 ## Architecture de l'agent
