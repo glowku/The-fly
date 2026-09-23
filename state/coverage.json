@@ -3326,6 +3326,10 @@
     {
       "from": "Behavior management",
       "to": "Behavior therapy"
+    },
+    {
+      "from": "Allagash Brewing Company",
+      "to": "Behavior change (public health)"
     }
   ],
   "frontier": [
@@ -3363,7 +3367,8 @@
     "Behavioral engineering",
     "International Society for Behavioral Ecology",
     "Cognitive behavior therapy",
-    "Radical behaviorism"
+    "Radical behaviorism",
+    "Behavior change (public health)"
   ],
   "max_depth": 9
 }
