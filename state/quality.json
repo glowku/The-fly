@@ -4871,5 +4871,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:27:01.919025+00:00"
+  },
+  "User behavior analytics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 333,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Behavior analysis (disambiguation)",
+        "Behavioral modeling",
+        "Behavior (disambiguation)",
+        "Behavior selection algorithm",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.749,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:40:28.927905+00:00"
   }
 }
