@@ -5036,5 +5036,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T16:02:02.139637+00:00"
+  },
+  "Human behavioral ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 383,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Quantitative analysis of behavior",
+        "Behavioral cusp",
+        "Clinical behavior analysis",
+        "Behavioral modeling",
+        "Experimental analysis of behavior",
+        "Behavioral pattern"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T16:12:02.868480+00:00"
   }
 }

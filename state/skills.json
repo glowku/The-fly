@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 5.31,
+    "level": 5.41,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -50,9 +50,10 @@
       "Association for Contextual Behavioral Science",
       "Behavior management",
       "Behavior change (public health)",
-      "Behavioral analytics"
+      "Behavioral analytics",
+      "Human behavioral ecology"
     ],
-    "last_reinforced": "2026-09-23T10:54:03.301554+00:00"
+    "last_reinforced": "2026-09-23T16:12:03.071281+00:00"
   },
   "anatomie_insecte": {
     "level": 5.33,
