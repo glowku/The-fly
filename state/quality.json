@@ -4916,5 +4916,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T08:56:51.580575+00:00"
+  },
+  "Network behavior anomaly detection": {
+    "score": 10.0,
+    "metrics": {
+      "words": 395,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Biogeomorphology",
+        "Behaviour Santiago",
+        "Behavior tree (artificial intelligence, robotics and control)",
+        "Behavior selection algorithm",
+        "Behavioral modeling",
+        "Behavioral pattern",
+        "Behavioral modeling in hydrology"
+      ],
+      "diversity": 0.715,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T10:43:00.867831+00:00"
   }
 }
