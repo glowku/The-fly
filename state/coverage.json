@@ -1904,6 +1904,14 @@
         "https://en.wikipedia.org/wiki/Abnormality_(behavior)"
       ],
       "updated_at": "2026-09-23T00:23:22.866425+00:00"
+    },
+    "Behavior management": {
+      "depth": 7,
+      "created_at": "2026-09-23T00:34:02.842725+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_management"
+      ],
+      "updated_at": "2026-09-23T00:34:02.842733+00:00"
     }
   },
   "edges": [
@@ -3294,6 +3302,22 @@
     {
       "from": "Royal Entomological Society",
       "to": "Abnormality (behavior)"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavioral engineering"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior therapy"
     }
   ],
   "frontier": [
@@ -3327,7 +3351,6 @@
     "Behavior-based safety",
     "Chemical ecology",
     "Human behavioral ecology",
-    "Behavior management",
     "Behavior therapy",
     "Behavioral engineering",
     "International Society for Behavioral Ecology",
