@@ -4851,5 +4851,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T04:22:01.777294+00:00"
+  },
+  "Behavior-based safety": {
+    "score": 10.0,
+    "metrics": {
+      "words": 377,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Cephalothorax",
+        "Behavioral pattern",
+        "Behavior analysis (disambiguation)",
+        "Behavior tree",
+        "Behavioral modeling in computer-aided design",
+        "Behavior (disambiguation)"
+      ],
+      "diversity": 0.816,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-23T04:27:01.919025+00:00"
   }
 }

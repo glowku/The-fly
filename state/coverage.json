@@ -1952,6 +1952,14 @@
         "https://en.wikipedia.org/wiki/Behavior_change_(public_health)"
       ],
       "updated_at": "2026-09-23T04:22:01.779007+00:00"
+    },
+    "Behavior-based safety": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:27:01.920805+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior-based_safety"
+      ],
+      "updated_at": "2026-09-23T04:27:01.920812+00:00"
     }
   },
   "edges": [
@@ -3402,6 +3410,18 @@
     {
       "from": "Behavior change (public health)",
       "to": "Behavioral change theories"
+    },
+    {
+      "from": "Consumer behaviour",
+      "to": "Social and behavior change communication"
+    },
+    {
+      "from": "Behavior-based safety",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Behavior-based safety",
+      "to": "Organizational behavior management"
     }
   ],
   "frontier": [
@@ -3432,7 +3452,6 @@
     "Behavior model",
     "Adaptive behaviors",
     "Behavior analysis",
-    "Behavior-based safety",
     "Chemical ecology",
     "Human behavioral ecology",
     "Behavior therapy",
@@ -3445,7 +3464,9 @@
     "Addictive behavior",
     "Behavior change methods",
     "Behaviorist",
-    "Behavioral change theories"
+    "Behavioral change theories",
+    "Social and behavior change communication",
+    "Organizational behavior management"
   ],
   "max_depth": 9
 }
