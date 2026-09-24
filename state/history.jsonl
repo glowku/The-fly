@@ -1784,3 +1784,4 @@
 {"ts": "2026-09-23T23:52:53.382498+00:00", "type": "plan", "title": "Butterfly effect", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-23T23:52:54.065056+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 5.47, "article": "Butterfly effect"}
 {"ts": "2026-09-23T23:52:54.065133+00:00", "type": "branch", "title": "Butterfly effect", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-24T02:20:40.037520+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Alcohol by volume"}
