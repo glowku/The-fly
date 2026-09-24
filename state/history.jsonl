@@ -1821,3 +1821,6 @@
 {"ts": "2026-09-24T09:05:03.631925+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.53, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-24T09:05:03.631976+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-09-24T11:40:04.521747+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology", "Radical behaviorism", "Evolutionary developmental psychology", "Human behavioral ecology", "Behavioural design", "Social and behavior change communication"]}
+{"ts": "2026-09-24T14:19:08.477192+00:00", "type": "plan", "title": "Cultural ecology", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-09-24T14:19:08.801587+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 5.57, "article": "Cultural ecology"}
+{"ts": "2026-09-24T14:19:08.801654+00:00", "type": "branch", "title": "Cultural ecology", "children_discovered": 0, "skill": "ecologie"}
