@@ -2088,6 +2088,14 @@
         "https://en.wikipedia.org/wiki/Organizational_behavior_management"
       ],
       "updated_at": "2026-09-24T15:18:01.694888+00:00"
+    },
+    "Chewing gum": {
+      "depth": 7,
+      "created_at": "2026-09-24T17:06:20.910608+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chewing_gum"
+      ],
+      "updated_at": "2026-09-24T17:06:20.910616+00:00"
     }
   },
   "edges": [
@@ -3726,7 +3734,6 @@
     "Behavioral engineering",
     "International Society for Behavioral Ecology",
     "Cognitive behavior therapy",
-    "Chewing gum",
     "Addictive behavior",
     "Behavior change methods",
     "Behaviorist",
