@@ -2048,6 +2048,14 @@
         "https://en.wikipedia.org/wiki/Radical_behaviorism"
       ],
       "updated_at": "2026-09-24T03:24:01.316771+00:00"
+    },
+    "Cultural ecology": {
+      "depth": 7,
+      "created_at": "2026-09-24T03:32:02.496757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cultural_ecology"
+      ],
+      "updated_at": "2026-09-24T03:32:02.496764+00:00"
     }
   },
   "edges": [
@@ -3652,8 +3660,7 @@
     "Behaviorist",
     "Behavioral change theories",
     "Organizational behavior management",
-    "Biocultural evolution",
-    "Cultural ecology"
+    "Biocultural evolution"
   ],
   "max_depth": 9
 }

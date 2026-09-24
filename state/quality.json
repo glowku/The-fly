@@ -5102,5 +5102,26 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T03:24:01.314937+00:00"
+  },
+  "Cultural ecology": {
+    "score": 10.0,
+    "metrics": {
+      "words": 388,
+      "sections": 3,
+      "links": 7,
+      "link_list": [
+        "Experimental analysis of behavior",
+        "Butterfly effect",
+        "Behavioral momentum",
+        "Behavioral modeling",
+        "Behavior modification",
+        "Behavioral cusp",
+        "Quantitative analysis of behavior"
+      ],
+      "diversity": 0.709,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T03:32:02.495080+00:00"
   }
 }
