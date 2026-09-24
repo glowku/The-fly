@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-24 19:49:44 UTC
+**Dernière mise à jour** : 2026-09-24 23:02:47 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.98** |
-| Concepts traités | 200 | **262** |
+| Score global | maximiser | **38.984** |
+| Concepts traités | 200 | **263** |
 | Qualité moyenne | ≥ 7.5 | **9.75/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **262** |
+| Concepts traités (nœuds) | **263** |
 | Arêtes du graphe | 401 |
-| Frontière (à explorer) | 35 |
+| Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **38.98** |
-| Actions dernières 24 h | 138 |
+| Score objectif (coverage × quality) | **38.984** |
+| Actions dernières 24 h | 132 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 255 |
+| Excellent (≥ 8) | 256 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-24T15:12:47  auto_learn      
-2026-09-24T15:14:27  auto_learn      
-2026-09-24T15:16:12  auto_learn      
-2026-09-24T15:18:01  skill_reinforc  
-2026-09-24T15:18:04  auto_learn_exp  Organizational behavior management score=10.0
-2026-09-24T15:18:04  auto_learn      
-2026-09-24T15:19:44  auto_learn      
-2026-09-24T15:21:32  auto_learn      
-2026-09-24T17:06:20  skill_reinforc  
-2026-09-24T17:06:23  auto_learn_exp  Chewing gum score=10.0
-2026-09-24T17:06:23  auto_learn      
-2026-09-24T18:35:20  plan            Vineland Adaptive Behavior Scale
-2026-09-24T18:35:20  skill_reinforc  
-2026-09-24T18:35:20  branch          Vineland Adaptive Behavior Scale
-2026-09-24T19:37:31  parallel_learn  
+2026-09-24T20:15:39  auto_learn      
+2026-09-24T20:17:16  auto_learn      
+2026-09-24T20:18:53  auto_learn      
+2026-09-24T20:20:31  auto_learn      
+2026-09-24T20:22:08  auto_learn      
+2026-09-24T20:23:45  auto_learn      
+2026-09-24T20:25:22  auto_learn      
+2026-09-24T20:26:59  auto_learn      
+2026-09-24T20:28:36  auto_learn      
+2026-09-24T20:30:14  auto_learn      
+2026-09-24T21:28:17  auto_learn      
+2026-09-24T22:04:06  plan            Butterfly effect
+2026-09-24T22:04:06  skill_reinforc  
+2026-09-24T22:04:06  branch          Butterfly effect
+2026-09-24T22:50:45  parallel_learn  
 ```
 
 ## Architecture de l'agent
