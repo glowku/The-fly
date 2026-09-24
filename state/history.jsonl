@@ -1820,3 +1820,4 @@
 {"ts": "2026-09-24T09:05:02.959617+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 126.2, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-09-24T09:05:03.631925+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.53, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-24T09:05:03.631976+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-09-24T11:40:04.521747+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology", "Radical behaviorism", "Evolutionary developmental psychology", "Human behavioral ecology", "Behavioural design", "Social and behavior change communication"]}
