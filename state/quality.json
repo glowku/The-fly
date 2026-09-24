@@ -5130,5 +5130,27 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T03:32:02.495080+00:00"
+  },
+  "Behavioral systems analysis": {
+    "score": 10.0,
+    "metrics": {
+      "words": 359,
+      "sections": 4,
+      "links": 8,
+      "link_list": [
+        "Behavioral momentum",
+        "Quantitative analysis of behavior",
+        "Butterfly effect",
+        "Clinical behavior analysis",
+        "Behavior modification",
+        "Behavioral cusp",
+        "Association for Behavioral and Cognitive Therapies",
+        "Professional practice of behavior analysis"
+      ],
+      "diversity": 0.693,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T08:58:04.671240+00:00"
   }
 }
