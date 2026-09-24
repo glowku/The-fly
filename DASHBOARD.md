@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-24 09:02:13 UTC
+**Dernière mise à jour** : 2026-09-24 14:39:56 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **258** |
-| Arêtes du graphe | 397 |
+| Arêtes du graphe | 398 |
 | Frontière (à explorer) | 38 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.964** |
-| Actions dernières 24 h | 179 |
+| Actions dernières 24 h | 145 |
 
 ## Répartition de la qualité
 
@@ -55,13 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-24T03:22:26  auto_learn      
-2026-09-24T03:24:01  skill_reinforc  
-2026-09-24T03:24:03  auto_learn_exp  Radical behaviorism score=10.0
-2026-09-24T03:24:03  auto_learn      
-2026-09-24T03:25:38  auto_learn      
-2026-09-24T03:27:13  auto_learn      
-2026-09-24T03:28:48  auto_learn      
 2026-09-24T03:30:22  auto_learn      
 2026-09-24T03:32:02  skill_reinforc  
 2026-09-24T03:40:58  plan            Adaptation (arts)
@@ -70,6 +63,13 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-09-24T04:42:40  auto_learn      
 2026-09-24T08:52:31  parallel_learn  
 2026-09-24T08:58:04  skill_reinforc  
+2026-09-24T09:05:02  plan            Vineland Adaptive Behavior Scale
+2026-09-24T09:05:03  skill_reinforc  
+2026-09-24T09:05:03  branch          Vineland Adaptive Behavior Scale
+2026-09-24T11:40:04  auto_learn      
+2026-09-24T14:19:08  plan            Cultural ecology
+2026-09-24T14:19:08  skill_reinforc  
+2026-09-24T14:19:08  branch          Cultural ecology
 ```
 
 ## Architecture de l'agent
