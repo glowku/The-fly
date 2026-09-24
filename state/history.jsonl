@@ -1898,3 +1898,4 @@
 {"ts": "2026-09-24T22:04:06.148752+00:00", "type": "plan", "title": "Butterfly effect", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-24T22:04:06.349247+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 5.7, "article": "Butterfly effect"}
 {"ts": "2026-09-24T22:04:06.349311+00:00", "type": "branch", "title": "Butterfly effect", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-24T22:50:45.747377+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
