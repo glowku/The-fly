@@ -194,7 +194,7 @@
     "last_reinforced": "2026-09-24T14:53:41.207689+00:00"
   },
   "ecologie": {
-    "level": 5.57,
+    "level": 5.67,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -252,9 +252,10 @@
       "Human behavior",
       "Abundance (ecology)",
       "Butterfly effect",
-      "Cultural ecology"
+      "Cultural ecology",
+      "Addictive behavior"
     ],
-    "last_reinforced": "2026-09-24T14:19:08.801262+00:00"
+    "last_reinforced": "2026-09-24T19:56:03.213327+00:00"
   },
   "evolution": {
     "level": 5.62,

@@ -5229,5 +5229,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T17:06:20.908780+00:00"
+  },
+  "Addictive behavior": {
+    "score": 10.0,
+    "metrics": {
+      "words": 351,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral momentum",
+        "Association for Behavioral and Cognitive Therapies",
+        "Dialectical behavior therapy",
+        "Professional practice of behavior analysis",
+        "Behavior modification",
+        "Cognitive behavioral therapy"
+      ],
+      "diversity": 0.746,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T19:56:03.090575+00:00"
   }
 }
