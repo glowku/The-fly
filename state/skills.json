@@ -124,7 +124,7 @@
     "last_reinforced": "2026-09-24T08:58:04.931392+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 5.5,
+    "level": 5.6,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -186,9 +186,10 @@
       "Behavioral contagion",
       "Network behavior anomaly detection",
       "Behavioural design",
-      "Radical behaviorism"
+      "Radical behaviorism",
+      "Insects in ethics"
     ],
-    "last_reinforced": "2026-09-24T03:24:01.446884+00:00"
+    "last_reinforced": "2026-09-24T14:53:41.207689+00:00"
   },
   "ecologie": {
     "level": 5.57,

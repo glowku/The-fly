@@ -2064,6 +2064,14 @@
         "https://en.wikipedia.org/wiki/Behavioral_systems_analysis"
       ],
       "updated_at": "2026-09-24T08:58:04.673124+00:00"
+    },
+    "Insects in ethics": {
+      "depth": 7,
+      "created_at": "2026-09-24T14:53:41.104883+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insects_in_ethics"
+      ],
+      "updated_at": "2026-09-24T14:53:41.104889+00:00"
     }
   },
   "edges": [
@@ -3658,6 +3666,10 @@
     {
       "from": "Cultural ecology",
       "to": "Acoustic ecology"
+    },
+    {
+      "from": "Alcohol by volume",
+      "to": "Insects in ethics"
     }
   ],
   "frontier": [

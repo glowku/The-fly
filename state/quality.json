@@ -5152,5 +5152,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T08:58:04.671240+00:00"
+  },
+  "Insects in ethics": {
+    "score": 10.0,
+    "metrics": {
+      "words": 385,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Behavioral ecology (disambiguation)",
+        "Clinical behavior analysis",
+        "Butterfly effect",
+        "Behaviour modification",
+        "Quantitative analysis of behavior"
+      ],
+      "diversity": 0.772,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T14:53:41.103037+00:00"
   }
 }
