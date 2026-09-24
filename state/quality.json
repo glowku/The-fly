@@ -5076,5 +5076,31 @@
       "has_h1": true
     },
     "updated_at": "2026-09-23T16:17:02.268363+00:00"
+  },
+  "Radical behaviorism": {
+    "score": 10.0,
+    "metrics": {
+      "words": 395,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Butterfly effect",
+        "Association for Behavioral and Cognitive Therapies",
+        "Behavioral momentum",
+        "Behaviour therapy",
+        "Professional practice of behavior analysis",
+        "Behavioral modeling",
+        "Clinical behavior analysis",
+        "Association for Contextual Behavioral Science",
+        "Behavioral cusp",
+        "Behavioral pattern",
+        "Behavior modification",
+        "Quantitative analysis of behavior"
+      ],
+      "diversity": 0.689,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T03:24:01.314937+00:00"
   }
 }

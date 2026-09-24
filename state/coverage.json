@@ -2040,6 +2040,14 @@
         "https://en.wikipedia.org/wiki/Evolutionary_developmental_psychology"
       ],
       "updated_at": "2026-09-23T16:17:02.269893+00:00"
+    },
+    "Radical behaviorism": {
+      "depth": 7,
+      "created_at": "2026-09-24T03:24:01.316764+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Radical_behaviorism"
+      ],
+      "updated_at": "2026-09-24T03:24:01.316771+00:00"
     }
   },
   "edges": [
@@ -3594,6 +3602,18 @@
     {
       "from": "Bibliography of fly fishing",
       "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Behavior modification"
     }
   ],
   "frontier": [
@@ -3626,7 +3646,6 @@
     "Behavioral engineering",
     "International Society for Behavioral Ecology",
     "Cognitive behavior therapy",
-    "Radical behaviorism",
     "Chewing gum",
     "Addictive behavior",
     "Behavior change methods",
