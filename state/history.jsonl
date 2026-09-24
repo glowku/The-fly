@@ -1817,3 +1817,6 @@
 {"ts": "2026-09-24T04:42:40.245605+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Association for the Study of Animal Behaviour", "recent": ["Adaptation (arts)", "Cultural ecology", "Radical behaviorism", "Evolutionary developmental psychology", "Human behavioral ecology", "Behavioural design", "Social and behavior change communication", "Chemical ecology"]}
 {"ts": "2026-09-24T08:52:31.775946+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Association for the Study of Animal Behaviour"}
 {"ts": "2026-09-24T08:58:04.931677+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 5.53, "article": "Behavioral systems analysis"}
+{"ts": "2026-09-24T09:05:02.959617+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 126.2, "reason": "leaf_no_children", "skill": "comportement"}
+{"ts": "2026-09-24T09:05:03.631925+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.53, "article": "Vineland Adaptive Behavior Scale"}
+{"ts": "2026-09-24T09:05:03.631976+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
