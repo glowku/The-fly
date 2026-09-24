@@ -1814,3 +1814,4 @@
 {"ts": "2026-09-24T03:40:58.769663+00:00", "type": "plan", "title": "Adaptation (arts)", "action": "branch", "priority": 132.8, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-24T03:41:00.923750+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 5.52, "article": "Adaptation (arts)"}
 {"ts": "2026-09-24T03:41:03.166347+00:00", "type": "expand", "title": "Adaptation (arts)", "score": 10.0, "depth": 7, "discovered": 22, "objective": 38.96, "skill": "evolution"}
+{"ts": "2026-09-24T04:42:40.245605+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Association for the Study of Animal Behaviour", "recent": ["Adaptation (arts)", "Cultural ecology", "Radical behaviorism", "Evolutionary developmental psychology", "Human behavioral ecology", "Behavioural design", "Social and behavior change communication", "Chemical ecology"]}
