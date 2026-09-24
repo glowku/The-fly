@@ -3283,17 +3283,24 @@
     "updated_at": "2026-09-19T08:54:03.087827+00:00"
   },
   "Adaptation (arts)": {
-    "score": 5.37,
+    "score": 10.0,
     "metrics": {
-      "words": 153,
-      "sections": 1,
-      "links": 0,
-      "link_list": [],
-      "diversity": 0.867,
+      "words": 373,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Adaptation (littérature)",
+        "Adaptation (musique)",
+        "Remaster",
+        "Remake",
+        "Adaptation (film)",
+        "Transposition"
+      ],
+      "diversity": 0.787,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-09-19T09:08:03.415779+00:00"
+    "updated_at": "2026-09-24T03:41:00.572052+00:00"
   },
   "Literary adaptation": {
     "score": 10.0,

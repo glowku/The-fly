@@ -1299,11 +1299,11 @@
     },
     "Adaptation (arts)": {
       "depth": 7,
-      "created_at": "2026-09-19T09:08:03.417048+00:00",
+      "created_at": "2026-09-24T03:41:00.917379+00:00",
       "sources": [
         "https://en.wikipedia.org/wiki/Adaptation_(arts)"
       ],
-      "updated_at": "2026-09-19T09:08:03.417055+00:00"
+      "updated_at": "2026-09-24T03:41:00.917389+00:00"
     },
     "Literary adaptation": {
       "depth": 4,
@@ -3622,6 +3622,18 @@
     {
       "from": "Radical behaviorism",
       "to": "Behavior modification"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Literary adaptation"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Theatrical adaptation"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Film and television adaptations of video games"
     }
   ],
   "frontier": [
@@ -3660,7 +3672,9 @@
     "Behaviorist",
     "Behavioral change theories",
     "Organizational behavior management",
-    "Biocultural evolution"
+    "Biocultural evolution",
+    "Theatrical adaptation",
+    "Film and television adaptations of video games"
   ],
   "max_depth": 9
 }
