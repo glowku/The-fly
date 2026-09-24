@@ -5171,5 +5171,24 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T14:53:41.103037+00:00"
+  },
+  "Theatrical adaptation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 397,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Stage adaptation",
+        "Adaptation of literature",
+        "Play",
+        "Adaptation (arts)",
+        "Musical"
+      ],
+      "diversity": 0.792,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T15:11:02.926026+00:00"
   }
 }
