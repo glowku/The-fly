@@ -1813,3 +1813,4 @@
 {"ts": "2026-09-24T03:32:02.632558+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 5.51, "article": "Cultural ecology"}
 {"ts": "2026-09-24T03:40:58.769663+00:00", "type": "plan", "title": "Adaptation (arts)", "action": "branch", "priority": 132.8, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-24T03:41:00.923750+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 5.52, "article": "Adaptation (arts)"}
+{"ts": "2026-09-24T03:41:03.166347+00:00", "type": "expand", "title": "Adaptation (arts)", "score": 10.0, "depth": 7, "discovered": 22, "objective": 38.96, "skill": "evolution"}
