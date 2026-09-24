@@ -5190,5 +5190,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T15:11:02.926026+00:00"
+  },
+  "Organizational behavior management": {
+    "score": 10.0,
+    "metrics": {
+      "words": 357,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral momentum",
+        "Behavior analysis of child development",
+        "Cognitive behavioral analysis system of psychotherapy",
+        "Behavioral ecology (disambiguation)",
+        "Licensed behavior analyst",
+        "Behaviour therapy"
+      ],
+      "diversity": 0.699,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-09-24T15:18:01.693127+00:00"
   }
 }
