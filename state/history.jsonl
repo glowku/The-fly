@@ -2034,3 +2034,4 @@
 {"ts": "2026-09-25T19:53:28.884141+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-25T19:53:29.218628+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 5.77, "article": "Black fly"}
 {"ts": "2026-09-25T19:53:29.218663+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-25T21:31:38.715217+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
