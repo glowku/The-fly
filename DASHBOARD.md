@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-25 03:46:16 UTC
+**Dernière mise à jour** : 2026-09-25 09:25:48 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **263** |
-| Arêtes du graphe | 402 |
+| Arêtes du graphe | 403 |
 | Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 117 |
+| Actions dernières 24 h | 143 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-24T23:26:18  auto_learn      
-2026-09-24T23:27:56  auto_learn      
-2026-09-24T23:29:35  auto_learn      
-2026-09-24T23:31:13  auto_learn      
-2026-09-24T23:32:51  auto_learn      
-2026-09-24T23:34:29  auto_learn      
-2026-09-24T23:36:07  auto_learn      
-2026-09-24T23:37:45  auto_learn      
-2026-09-24T23:39:24  auto_learn      
-2026-09-24T23:41:01  auto_learn      
-2026-09-24T23:42:39  auto_learn      
-2026-09-25T00:41:35  plan            Butterfly effect
-2026-09-25T00:41:36  skill_reinforc  
-2026-09-25T00:41:36  branch          Butterfly effect
-2026-09-25T02:36:42  parallel_learn  
+2026-09-25T03:41:16  auto_learn      
+2026-09-25T03:42:54  auto_learn      
+2026-09-25T03:44:32  auto_learn      
+2026-09-25T03:46:10  auto_learn      
+2026-09-25T03:47:47  auto_learn      
+2026-09-25T03:49:26  auto_learn      
+2026-09-25T03:51:04  auto_learn      
+2026-09-25T03:52:41  auto_learn      
+2026-09-25T03:54:19  auto_learn      
+2026-09-25T03:55:57  auto_learn      
+2026-09-25T04:51:57  auto_learn      
+2026-09-25T05:56:04  plan            Theatrical adaptation
+2026-09-25T05:56:04  skill_reinforc  
+2026-09-25T05:56:04  branch          Theatrical adaptation
+2026-09-25T09:13:16  parallel_learn  
 ```
 
 ## Architecture de l'agent
