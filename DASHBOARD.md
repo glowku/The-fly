@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-24 23:02:47 UTC
+**Dernière mise à jour** : 2026-09-25 03:46:16 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **263** |
-| Arêtes du graphe | 401 |
+| Arêtes du graphe | 402 |
 | Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 132 |
+| Actions dernières 24 h | 117 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-24T20:15:39  auto_learn      
-2026-09-24T20:17:16  auto_learn      
-2026-09-24T20:18:53  auto_learn      
-2026-09-24T20:20:31  auto_learn      
-2026-09-24T20:22:08  auto_learn      
-2026-09-24T20:23:45  auto_learn      
-2026-09-24T20:25:22  auto_learn      
-2026-09-24T20:26:59  auto_learn      
-2026-09-24T20:28:36  auto_learn      
-2026-09-24T20:30:14  auto_learn      
-2026-09-24T21:28:17  auto_learn      
-2026-09-24T22:04:06  plan            Butterfly effect
-2026-09-24T22:04:06  skill_reinforc  
-2026-09-24T22:04:06  branch          Butterfly effect
-2026-09-24T22:50:45  parallel_learn  
+2026-09-24T23:26:18  auto_learn      
+2026-09-24T23:27:56  auto_learn      
+2026-09-24T23:29:35  auto_learn      
+2026-09-24T23:31:13  auto_learn      
+2026-09-24T23:32:51  auto_learn      
+2026-09-24T23:34:29  auto_learn      
+2026-09-24T23:36:07  auto_learn      
+2026-09-24T23:37:45  auto_learn      
+2026-09-24T23:39:24  auto_learn      
+2026-09-24T23:41:01  auto_learn      
+2026-09-24T23:42:39  auto_learn      
+2026-09-25T00:41:35  plan            Butterfly effect
+2026-09-25T00:41:36  skill_reinforc  
+2026-09-25T00:41:36  branch          Butterfly effect
+2026-09-25T02:36:42  parallel_learn  
 ```
 
 ## Architecture de l'agent
