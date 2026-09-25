@@ -196,7 +196,7 @@
     "last_reinforced": "2026-09-24T22:04:06.348848+00:00"
   },
   "ecologie": {
-    "level": 5.67,
+    "level": 5.77,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -255,9 +255,10 @@
       "Abundance (ecology)",
       "Butterfly effect",
       "Cultural ecology",
-      "Addictive behavior"
+      "Addictive behavior",
+      "Black fly"
     ],
-    "last_reinforced": "2026-09-24T19:56:03.213327+00:00"
+    "last_reinforced": "2026-09-25T19:53:29.218368+00:00"
   },
   "evolution": {
     "level": 5.72,

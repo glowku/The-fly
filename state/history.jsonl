@@ -2031,3 +2031,6 @@
 {"ts": "2026-09-25T15:54:40.250916+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-09-25T17:06:35.699212+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
 {"ts": "2026-09-25T19:43:25.500179+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "A Behavioral Theory of the Firm"}
+{"ts": "2026-09-25T19:53:28.884141+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-09-25T19:53:29.218628+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 5.77, "article": "Black fly"}
+{"ts": "2026-09-25T19:53:29.218663+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "ecologie"}
