@@ -1930,3 +1930,4 @@
 {"ts": "2026-09-25T00:41:35.738989+00:00", "type": "plan", "title": "Butterfly effect", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-09-25T00:41:36.262175+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 5.71, "article": "Butterfly effect"}
 {"ts": "2026-09-25T00:41:36.262213+00:00", "type": "branch", "title": "Butterfly effect", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-09-25T02:36:42.549797+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
