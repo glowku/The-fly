@@ -2039,3 +2039,6 @@
 {"ts": "2026-09-25T23:09:31.070391+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-25T23:09:31.271969+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 5.8, "article": "Black fly"}
 {"ts": "2026-09-25T23:09:31.272039+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-09-26T01:50:23.965651+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "entomologie"}
+{"ts": "2026-09-26T01:50:24.398512+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 5.81, "article": "Black fly"}
+{"ts": "2026-09-26T01:50:24.398558+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "entomologie"}
