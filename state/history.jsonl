@@ -2074,3 +2074,4 @@
 {"ts": "2026-09-26T07:11:58.554370+00:00", "type": "plan", "title": "Content adaptation", "action": "branch", "priority": 123.9, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-09-26T07:11:59.760665+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 5.81, "article": "Content adaptation"}
 {"ts": "2026-09-26T07:11:59.760703+00:00", "type": "branch", "title": "Content adaptation", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-09-26T08:56:29.686663+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
