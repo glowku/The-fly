@@ -2143,3 +2143,6 @@
 {"ts": "2026-09-26T16:36:19.738953+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.83, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-26T16:36:19.739019+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-09-26T17:37:17.654205+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Black fly"}
+{"ts": "2026-09-26T19:34:37.385051+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-09-26T19:34:37.630616+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 5.87, "article": "Black fly"}
+{"ts": "2026-09-26T19:34:37.630662+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "ecologie"}
