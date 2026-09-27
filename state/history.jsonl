@@ -2253,3 +2253,4 @@
 {"ts": "2026-09-27T17:10:32.796673+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 126.4, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-09-27T17:10:33.249821+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 5.93, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-27T17:10:33.249857+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-09-27T17:59:30.798282+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Black fly"}
