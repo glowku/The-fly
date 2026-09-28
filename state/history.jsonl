@@ -2292,3 +2292,6 @@
 {"ts": "2026-09-27T23:17:40.087030+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 6.0, "article": "Black fly"}
 {"ts": "2026-09-27T23:17:40.087065+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-09-28T00:08:13.386841+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
+{"ts": "2026-09-28T01:53:58.467252+00:00", "type": "plan", "title": "Content adaptation", "action": "branch", "priority": 124.0, "reason": "leaf_no_children", "skill": "evolution"}
+{"ts": "2026-09-28T01:53:58.894769+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 5.99, "article": "Content adaptation"}
+{"ts": "2026-09-28T01:53:58.894820+00:00", "type": "branch", "title": "Content adaptation", "children_discovered": 0, "skill": "evolution"}
