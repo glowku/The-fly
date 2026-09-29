@@ -2428,3 +2428,4 @@
 {"ts": "2026-09-29T02:13:23.684380+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 122.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-09-29T02:13:24.025483+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 6.07, "article": "Black fly"}
 {"ts": "2026-09-29T02:13:24.025546+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-09-29T03:23:48.265773+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
