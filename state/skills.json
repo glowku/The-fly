@@ -128,7 +128,7 @@
     "last_reinforced": "2026-09-28T16:56:07.322742+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 6.0,
+    "level": 6.1,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -195,7 +195,7 @@
       "Butterfly effect",
       "Black fly"
     ],
-    "last_reinforced": "2026-09-27T23:17:40.086804+00:00"
+    "last_reinforced": "2026-09-29T15:26:48.975635+00:00"
   },
   "ecologie": {
     "level": 6.07,
