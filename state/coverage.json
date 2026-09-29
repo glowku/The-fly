@@ -3718,6 +3718,10 @@
     {
       "from": "Theatrical adaptation",
       "to": "Adaptation (arts)"
+    },
+    {
+      "from": "Content adaptation",
+      "to": "Adaptation (computer science)"
     }
   ],
   "frontier": [
