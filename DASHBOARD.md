@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-09-29 12:15:51 UTC
+**Dernière mise à jour** : 2026-09-29 19:08:15 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 106 |
+| Actions dernières 24 h | 134 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-09-29T08:18:54  auto_learn      
-2026-09-29T08:20:27  auto_learn      
-2026-09-29T08:22:01  auto_learn      
-2026-09-29T08:23:34  auto_learn      
-2026-09-29T08:25:07  auto_learn      
-2026-09-29T08:26:40  auto_learn      
-2026-09-29T08:28:12  auto_learn      
-2026-09-29T08:29:45  auto_learn      
-2026-09-29T08:31:18  auto_learn      
-2026-09-29T08:32:51  auto_learn      
-2026-09-29T08:54:32  plan            Content adaptation
-2026-09-29T08:54:32  skill_reinforc  
-2026-09-29T08:54:32  branch          Content adaptation
-2026-09-29T09:44:55  auto_learn      
-2026-09-29T10:15:36  parallel_learn  
+2026-09-29T15:03:29  auto_learn      
+2026-09-29T15:05:06  auto_learn      
+2026-09-29T15:06:42  auto_learn      
+2026-09-29T15:08:18  auto_learn      
+2026-09-29T15:09:55  auto_learn      
+2026-09-29T15:11:31  auto_learn      
+2026-09-29T15:13:08  auto_learn      
+2026-09-29T15:14:44  auto_learn      
+2026-09-29T15:16:20  auto_learn      
+2026-09-29T15:17:56  auto_learn      
+2026-09-29T15:26:48  plan            Black fly
+2026-09-29T15:26:48  skill_reinforc  
+2026-09-29T15:26:48  branch          Black fly
+2026-09-29T17:19:24  parallel_learn  
+2026-09-29T18:03:26  auto_learn      
 ```
 
 ## Architecture de l'agent
