@@ -2600,3 +2600,4 @@
 {"ts": "2026-09-30T10:58:13.039477+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 6.17, "article": "Black fly"}
 {"ts": "2026-09-30T10:58:13.039538+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "ecologie"}
 {"ts": "2026-09-30T12:28:47.308200+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
+{"ts": "2026-09-30T14:26:32.195775+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
