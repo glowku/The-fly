@@ -2566,3 +2566,4 @@
 {"ts": "2026-09-30T04:33:11.242847+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 126.5, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-09-30T04:33:11.584131+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 6.13, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-09-30T04:33:11.584193+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-09-30T05:26:57.387746+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Black fly", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
