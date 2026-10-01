@@ -2671,3 +2671,4 @@
 {"ts": "2026-10-01T00:42:58.739910+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-10-01T00:42:59.087798+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 6.21, "article": "Black fly"}
 {"ts": "2026-10-01T00:42:59.087858+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-10-01T00:56:04.210416+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
