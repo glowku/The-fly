@@ -198,7 +198,7 @@
     "last_reinforced": "2026-09-30T21:17:33.059274+00:00"
   },
   "ecologie": {
-    "level": 6.17,
+    "level": 6.27,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -260,7 +260,7 @@
       "Addictive behavior",
       "Black fly"
     ],
-    "last_reinforced": "2026-09-30T10:58:13.039081+00:00"
+    "last_reinforced": "2026-10-01T19:43:22.609711+00:00"
   },
   "evolution": {
     "level": 6.18,
