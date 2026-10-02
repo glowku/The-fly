@@ -2781,3 +2781,6 @@
 {"ts": "2026-10-02T04:36:01.157561+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-10-02T09:41:00.358621+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Amateur Entomologists' Society", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
 {"ts": "2026-10-02T10:10:08.860202+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
+{"ts": "2026-10-02T10:55:38.223877+00:00", "type": "plan", "title": "Black fly", "action": "branch", "priority": 138.0, "reason": "leaf_no_children", "skill": "entomologie"}
+{"ts": "2026-10-02T10:55:38.359759+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 6.31, "article": "Black fly"}
+{"ts": "2026-10-02T10:55:38.359830+00:00", "type": "branch", "title": "Black fly", "children_discovered": 0, "skill": "entomologie"}

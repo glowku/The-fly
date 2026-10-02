@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 6.21,
+    "level": 6.31,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -57,7 +57,7 @@
       "Butterfly effect",
       "Black fly"
     ],
-    "last_reinforced": "2026-10-01T00:42:59.087414+00:00"
+    "last_reinforced": "2026-10-02T10:55:38.359415+00:00"
   },
   "anatomie_insecte": {
     "level": 6.23,
