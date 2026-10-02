@@ -2775,3 +2775,4 @@
 {"ts": "2026-10-01T23:44:37.989436+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 6.28, "article": "Chromatic adaptation"}
 {"ts": "2026-10-01T23:44:37.989477+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-10-02T00:44:25.712841+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Black fly", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
+{"ts": "2026-10-02T03:14:20.782155+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Black fly"}
