@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-01 23:42:57 UTC
+**Dernière mise à jour** : 2026-10-02 04:24:04 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 104 |
+| Actions dernières 24 h | 76 |
 
 ## Répartition de la qualité
 
@@ -55,11 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-01T17:21:18  auto_learn      
-2026-10-01T17:22:56  auto_learn      
-2026-10-01T17:24:30  auto_learn      
-2026-10-01T17:26:06  auto_learn      
-2026-10-01T17:27:40  auto_learn      
 2026-10-01T17:29:15  auto_learn      
 2026-10-01T17:30:50  auto_learn      
 2026-10-01T17:32:25  auto_learn      
@@ -70,6 +65,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-10-01T19:43:22  skill_reinforc  
 2026-10-01T19:43:22  branch          Black fly
 2026-10-01T22:08:54  parallel_learn  
+2026-10-01T23:44:37  plan            Chromatic adaptation
+2026-10-01T23:44:37  skill_reinforc  
+2026-10-01T23:44:37  branch          Chromatic adaptation
+2026-10-02T00:44:25  auto_learn      
+2026-10-02T03:14:20  parallel_learn  
 ```
 
 ## Architecture de l'agent
