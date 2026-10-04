@@ -128,7 +128,7 @@
     "last_reinforced": "2026-10-03T19:04:29.954920+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 6.4,
+    "level": 6.5,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -193,9 +193,10 @@
       "Radical behaviorism",
       "Insects in ethics",
       "Butterfly effect",
-      "Black fly"
+      "Black fly",
+      "Damselfly"
     ],
-    "last_reinforced": "2026-10-03T11:56:05.218092+00:00"
+    "last_reinforced": "2026-10-04T13:47:18.100157+00:00"
   },
   "ecologie": {
     "level": 6.47,
