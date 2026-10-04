@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-04 00:22:24 UTC
+**Dernière mise à jour** : 2026-10-04 07:50:06 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **263** |
-| Arêtes du graphe | 404 |
-| Frontière (à explorer) | 34 |
+| Arêtes du graphe | 406 |
+| Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 141 |
+| Actions dernières 24 h | 125 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-03T18:22:25  auto_learn      
-2026-10-03T18:24:02  auto_learn      
-2026-10-03T18:25:38  auto_learn      
-2026-10-03T18:27:14  auto_learn      
-2026-10-03T18:28:50  auto_learn      
-2026-10-03T19:04:29  plan            Chewing gum
-2026-10-03T19:04:29  skill_reinforc  
-2026-10-03T19:04:29  branch          Chewing gum
-2026-10-03T20:22:02  parallel_learn  
-2026-10-03T21:11:06  auto_learn      
-2026-10-03T22:20:20  plan            Vineland Adaptive Behavior Scale
-2026-10-03T22:20:21  skill_reinforc  
-2026-10-03T22:20:21  branch          Vineland Adaptive Behavior Scale
-2026-10-03T23:45:38  auto_learn      
-2026-10-04T00:14:51  parallel_learn  
+2026-10-04T00:49:30  auto_learn      
+2026-10-04T00:51:08  auto_learn      
+2026-10-04T00:52:45  auto_learn      
+2026-10-04T00:54:22  auto_learn      
+2026-10-04T00:56:00  auto_learn      
+2026-10-04T00:57:37  auto_learn      
+2026-10-04T00:59:14  auto_learn      
+2026-10-04T01:00:52  auto_learn      
+2026-10-04T01:02:30  auto_learn      
+2026-10-04T01:04:11  auto_learn      
+2026-10-04T01:52:16  plan            Insects in ethics
+2026-10-04T01:52:17  skill_reinforc  
+2026-10-04T01:52:17  branch          Insects in ethics
+2026-10-04T05:46:14  auto_learn      
+2026-10-04T07:35:43  parallel_learn  
 ```
 
 ## Architecture de l'agent
