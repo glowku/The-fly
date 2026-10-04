@@ -3006,3 +3006,4 @@
 {"ts": "2026-10-04T18:01:15.929809+00:00", "type": "plan", "title": "Damselfly", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-10-04T18:01:16.288341+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 6.51, "article": "Damselfly"}
 {"ts": "2026-10-04T18:01:16.288407+00:00", "type": "branch", "title": "Damselfly", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-10-04T18:37:47.339204+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Vineland Adaptive Behavior Scale", "recent": ["Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)"]}
