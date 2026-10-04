@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-04 07:50:06 UTC
+**Dernière mise à jour** : 2026-10-04 13:44:42 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.984** |
-| Concepts traités | 200 | **263** |
+| Score global | maximiser | **38.988** |
+| Concepts traités | 200 | **264** |
 | Qualité moyenne | ≥ 7.5 | **9.75/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **263** |
-| Arêtes du graphe | 406 |
-| Frontière (à explorer) | 35 |
+| Concepts traités (nœuds) | **264** |
+| Arêtes du graphe | 407 |
+| Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **38.984** |
-| Actions dernières 24 h | 125 |
+| Score objectif (coverage × quality) | **38.988** |
+| Actions dernières 24 h | 107 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 256 |
+| Excellent (≥ 8) | 257 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-04T00:49:30  auto_learn      
-2026-10-04T00:51:08  auto_learn      
-2026-10-04T00:52:45  auto_learn      
-2026-10-04T00:54:22  auto_learn      
-2026-10-04T00:56:00  auto_learn      
-2026-10-04T00:57:37  auto_learn      
-2026-10-04T00:59:14  auto_learn      
-2026-10-04T01:00:52  auto_learn      
-2026-10-04T01:02:30  auto_learn      
-2026-10-04T01:04:11  auto_learn      
-2026-10-04T01:52:16  plan            Insects in ethics
-2026-10-04T01:52:17  skill_reinforc  
-2026-10-04T01:52:17  branch          Insects in ethics
-2026-10-04T05:46:14  auto_learn      
-2026-10-04T07:35:43  parallel_learn  
+2026-10-04T08:07:05  auto_learn      
+2026-10-04T08:08:48  auto_learn      
+2026-10-04T08:10:31  auto_learn      
+2026-10-04T08:12:13  auto_learn      
+2026-10-04T08:13:55  auto_learn      
+2026-10-04T08:15:37  auto_learn      
+2026-10-04T08:17:19  auto_learn      
+2026-10-04T08:19:01  auto_learn      
+2026-10-04T08:20:41  auto_learn      
+2026-10-04T08:22:22  auto_learn      
+2026-10-04T08:24:02  auto_learn      
+2026-10-04T08:25:41  auto_learn      
+2026-10-04T08:27:21  auto_learn      
+2026-10-04T12:16:16  auto_learn      
+2026-10-04T13:34:21  parallel_learn  
 ```
 
 ## Architecture de l'agent
