@@ -2966,3 +2966,4 @@
 {"ts": "2026-10-04T01:52:16.189516+00:00", "type": "plan", "title": "Insects in ethics", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-04T01:52:17.103746+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 6.47, "article": "Insects in ethics"}
 {"ts": "2026-10-04T01:52:17.103795+00:00", "type": "branch", "title": "Insects in ethics", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-04T05:46:14.835715+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)", "Cultural ecology"]}
