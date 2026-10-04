@@ -5249,5 +5249,25 @@
       "has_h1": true
     },
     "updated_at": "2026-09-24T19:56:03.090575+00:00"
+  },
+  "Behavior Modification (journal)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 388,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Professional practice of behavior analysis",
+        "Dialectical behavior therapy",
+        "Cognitive behavioral therapy",
+        "Anti-social behaviour",
+        "Behavior modification",
+        "Behavioral activation"
+      ],
+      "diversity": 0.741,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-10-04T08:07:01.967726+00:00"
   }
 }

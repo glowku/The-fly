@@ -2104,6 +2104,14 @@
         "https://en.wikipedia.org/wiki/Addictive_behavior"
       ],
       "updated_at": "2026-09-24T19:56:03.092123+00:00"
+    },
+    "Behavior Modification (journal)": {
+      "depth": 7,
+      "created_at": "2026-10-04T08:07:01.969692+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_Modification_(journal)"
+      ],
+      "updated_at": "2026-10-04T08:07:01.969699+00:00"
     }
   },
   "edges": [
@@ -3730,6 +3738,10 @@
     {
       "from": "Insects in ethics",
       "to": "Artificial fly"
+    },
+    {
+      "from": "Behavior Modification (journal)",
+      "to": "Behavior modification"
     }
   ],
   "frontier": [
@@ -3766,8 +3778,7 @@
     "Behaviorist",
     "Behavioral change theories",
     "Biocultural evolution",
-    "Film and television adaptations of video games",
-    "Behavior Modification (journal)"
+    "Film and television adaptations of video games"
   ],
   "max_depth": 9
 }
