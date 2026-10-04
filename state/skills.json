@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 6.41,
+    "level": 6.51,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -55,9 +55,10 @@
       "Cultural ecology",
       "Theatrical adaptation",
       "Butterfly effect",
-      "Black fly"
+      "Black fly",
+      "Damselfly"
     ],
-    "last_reinforced": "2026-10-03T15:53:30.564361+00:00"
+    "last_reinforced": "2026-10-04T18:01:16.287970+00:00"
   },
   "anatomie_insecte": {
     "level": 6.43,
