@@ -3017,3 +3017,6 @@
 {"ts": "2026-10-05T00:30:57.612601+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 6.53, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-10-05T00:30:57.612666+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-10-05T05:31:06.833330+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)"]}
+{"ts": "2026-10-05T06:37:01.506729+00:00", "type": "plan", "title": "Damselfly", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-10-05T06:37:01.920990+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 6.57, "article": "Damselfly"}
+{"ts": "2026-10-05T06:37:01.921042+00:00", "type": "branch", "title": "Damselfly", "children_discovered": 0, "skill": "ecologie"}

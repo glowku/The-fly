@@ -200,7 +200,7 @@
     "last_reinforced": "2026-10-04T13:47:18.100157+00:00"
   },
   "ecologie": {
-    "level": 6.47,
+    "level": 6.57,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -261,9 +261,10 @@
       "Cultural ecology",
       "Addictive behavior",
       "Black fly",
-      "Insects in ethics"
+      "Insects in ethics",
+      "Damselfly"
     ],
-    "last_reinforced": "2026-10-04T01:52:17.103437+00:00"
+    "last_reinforced": "2026-10-05T06:37:01.920664+00:00"
   },
   "evolution": {
     "level": 6.48,
