@@ -3085,3 +3085,4 @@
 {"ts": "2026-10-05T22:21:14.789118+00:00", "type": "plan", "title": "Damselfly", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-10-05T22:21:15.240213+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 6.6, "article": "Damselfly"}
 {"ts": "2026-10-05T22:21:15.240249+00:00", "type": "branch", "title": "Damselfly", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-10-05T23:29:56.078077+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
