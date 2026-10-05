@@ -3020,3 +3020,4 @@
 {"ts": "2026-10-05T06:37:01.506729+00:00", "type": "plan", "title": "Damselfly", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-05T06:37:01.920990+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 6.57, "article": "Damselfly"}
 {"ts": "2026-10-05T06:37:01.921042+00:00", "type": "branch", "title": "Damselfly", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-05T07:58:33.770144+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
