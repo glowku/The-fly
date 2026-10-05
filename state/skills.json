@@ -129,7 +129,7 @@
     "last_reinforced": "2026-10-04T21:47:42.054663+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 6.5,
+    "level": 6.6,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -197,7 +197,7 @@
       "Black fly",
       "Damselfly"
     ],
-    "last_reinforced": "2026-10-04T13:47:18.100157+00:00"
+    "last_reinforced": "2026-10-05T22:21:15.239941+00:00"
   },
   "ecologie": {
     "level": 6.57,
