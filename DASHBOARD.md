@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-06 01:09:30 UTC
+**Dernière mise à jour** : 2026-10-06 08:38:11 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **264** |
-| Arêtes du graphe | 407 |
+| Arêtes du graphe | 408 |
 | Frontière (à explorer) | 34 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.988** |
-| Actions dernières 24 h | 70 |
+| Actions dernières 24 h | 81 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-05T19:31:00  auto_learn      
-2026-10-05T19:32:41  auto_learn      
-2026-10-05T19:34:22  auto_learn      
-2026-10-05T19:36:03  auto_learn      
-2026-10-05T19:37:42  auto_learn      
-2026-10-05T19:39:21  auto_learn      
-2026-10-05T19:41:01  auto_learn      
-2026-10-05T19:42:40  auto_learn      
-2026-10-05T19:44:20  auto_learn      
-2026-10-05T19:45:59  auto_learn      
-2026-10-05T21:59:59  auto_learn      
-2026-10-05T22:21:14  plan            Damselfly
-2026-10-05T22:21:15  skill_reinforc  
-2026-10-05T22:21:15  branch          Damselfly
-2026-10-05T23:29:56  parallel_learn  
+2026-10-06T01:34:55  auto_learn      
+2026-10-06T01:36:37  auto_learn      
+2026-10-06T01:38:18  auto_learn      
+2026-10-06T01:40:00  auto_learn      
+2026-10-06T01:41:41  auto_learn      
+2026-10-06T01:43:22  auto_learn      
+2026-10-06T01:45:02  auto_learn      
+2026-10-06T01:46:42  auto_learn      
+2026-10-06T01:48:22  auto_learn      
+2026-10-06T01:50:02  auto_learn      
+2026-10-06T02:25:14  plan            Damselfly
+2026-10-06T02:25:14  skill_reinforc  
+2026-10-06T02:25:14  branch          Damselfly
+2026-10-06T03:57:32  parallel_learn  
+2026-10-06T06:14:28  auto_learn      
 ```
 
 ## Architecture de l'agent
