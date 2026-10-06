@@ -3116,3 +3116,4 @@
 {"ts": "2026-10-06T02:25:14.596200+00:00", "type": "plan", "title": "Damselfly", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-10-06T02:25:14.809237+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 6.61, "article": "Damselfly"}
 {"ts": "2026-10-06T02:25:14.809299+00:00", "type": "branch", "title": "Damselfly", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-10-06T03:57:32.385447+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
