@@ -3225,3 +3225,4 @@
 {"ts": "2026-10-07T07:00:15.446566+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 6.7, "article": "Chewing gum"}
 {"ts": "2026-10-07T07:00:15.446622+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
 {"ts": "2026-10-07T10:10:47.354244+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Amateur Entomologists' Society", "recent": ["Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)"]}
+{"ts": "2026-10-07T10:42:57.551191+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
