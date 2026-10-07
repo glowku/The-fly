@@ -3230,3 +3230,4 @@
 {"ts": "2026-10-07T14:39:19.007819+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 6.71, "article": "Chewing gum"}
 {"ts": "2026-10-07T14:39:19.007856+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-10-07T18:09:57.225976+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
+{"ts": "2026-10-07T18:54:39.813460+00:00", "type": "auto_learn", "skill": "anatomie_insecte", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Vineland Adaptive Behavior Scale", "recent": ["Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)"]}
