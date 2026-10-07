@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 6.61,
+    "level": 6.71,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -56,9 +56,10 @@
       "Theatrical adaptation",
       "Butterfly effect",
       "Black fly",
-      "Damselfly"
+      "Damselfly",
+      "Chewing gum"
     ],
-    "last_reinforced": "2026-10-06T02:25:14.808923+00:00"
+    "last_reinforced": "2026-10-07T14:39:19.007549+00:00"
   },
   "anatomie_insecte": {
     "level": 6.63,
