@@ -3238,3 +3238,4 @@
 {"ts": "2026-10-08T00:21:18.951599+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 126.8, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-08T00:21:19.603217+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 6.73, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-10-08T00:21:19.603277+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-08T00:57:42.173280+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "A Behavioral Theory of the Firm", "recent": ["Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis", "Adaptation (arts)"]}
