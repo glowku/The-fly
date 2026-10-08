@@ -271,7 +271,7 @@
     "last_reinforced": "2026-10-08T06:06:07.816088+00:00"
   },
   "evolution": {
-    "level": 6.68,
+    "level": 6.78,
     "description": "Histoire évolutive des diptères",
     "keywords": [
       "evolution",
@@ -335,9 +335,10 @@
       "Theatrical adaptation",
       "Content adaptation",
       "Chromatic adaptation",
-      "Behavior Modification (journal)"
+      "Behavior Modification (journal)",
+      "Evolutionary Ecology (journal)"
     ],
-    "last_reinforced": "2026-10-07T00:55:59.338290+00:00"
+    "last_reinforced": "2026-10-08T06:30:04.386162+00:00"
   },
   "comportement": {
     "level": 6.73,

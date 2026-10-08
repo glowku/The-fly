@@ -3758,6 +3758,18 @@
     {
       "from": "A Behavioral Theory of the Firm",
       "to": "Evolutionary Ecology (journal)"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Evolutionary ecology"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Ecology"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Evolution"
     }
   ],
   "frontier": [
@@ -3794,7 +3806,8 @@
     "Behaviorist",
     "Behavioral change theories",
     "Biocultural evolution",
-    "Film and television adaptations of video games"
+    "Film and television adaptations of video games",
+    "Evolutionary ecology"
   ],
   "max_depth": 9
 }
