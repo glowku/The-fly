@@ -5269,5 +5269,25 @@
       "has_h1": true
     },
     "updated_at": "2026-10-04T08:07:01.967726+00:00"
+  },
+  "Evolutionary Ecology (journal)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 322,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Dialectical behavior therapy",
+        "Behavioral ecology (disambiguation)",
+        "Butterfly effect",
+        "Behavior modification",
+        "Cognitive behavioral therapy",
+        "Association for Contextual Behavioral Science"
+      ],
+      "diversity": 0.783,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-10-08T06:06:07.692845+00:00"
   }
 }

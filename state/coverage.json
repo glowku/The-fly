@@ -2112,6 +2112,14 @@
         "https://en.wikipedia.org/wiki/Behavior_Modification_(journal)"
       ],
       "updated_at": "2026-10-04T08:07:01.969699+00:00"
+    },
+    "Evolutionary Ecology (journal)": {
+      "depth": 7,
+      "created_at": "2026-10-08T06:06:07.694718+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_Ecology_(journal)"
+      ],
+      "updated_at": "2026-10-08T06:06:07.694727+00:00"
     }
   },
   "edges": [
@@ -3746,6 +3754,10 @@
     {
       "from": "Damselfly",
       "to": "Artificial fly"
+    },
+    {
+      "from": "A Behavioral Theory of the Firm",
+      "to": "Evolutionary Ecology (journal)"
     }
   ],
   "frontier": [
