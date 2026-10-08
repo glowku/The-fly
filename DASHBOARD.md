@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-08 00:01:41 UTC
+**Dernière mise à jour** : 2026-10-08 08:29:29 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.988** |
-| Concepts traités | 200 | **264** |
+| Score global | maximiser | **38.992** |
+| Concepts traités | 200 | **265** |
 | Qualité moyenne | ≥ 7.5 | **9.75/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **264** |
-| Arêtes du graphe | 408 |
-| Frontière (à explorer) | 34 |
+| Concepts traités (nœuds) | **265** |
+| Arêtes du graphe | 412 |
+| Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **38.988** |
-| Actions dernières 24 h | 47 |
+| Score objectif (coverage × quality) | **38.992** |
+| Actions dernières 24 h | 32 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 257 |
+| Excellent (≥ 8) | 258 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-07T04:47:33  auto_learn      
-2026-10-07T07:00:15  plan            Chewing gum
-2026-10-07T07:00:15  skill_reinforc  
-2026-10-07T07:00:15  branch          Chewing gum
-2026-10-07T10:10:47  auto_learn      
-2026-10-07T10:42:57  parallel_learn  
-2026-10-07T14:39:18  plan            Chewing gum
-2026-10-07T14:39:19  skill_reinforc  
-2026-10-07T14:39:19  branch          Chewing gum
-2026-10-07T18:09:57  parallel_learn  
-2026-10-07T18:54:39  auto_learn      
-2026-10-07T20:27:46  plan            Chewing gum
-2026-10-07T20:27:46  skill_reinforc  
-2026-10-07T20:27:46  branch          Chewing gum
-2026-10-07T23:56:22  parallel_learn  
+2026-10-08T05:48:01  auto_learn      
+2026-10-08T05:49:40  auto_learn      
+2026-10-08T05:51:18  auto_learn      
+2026-10-08T05:52:56  auto_learn      
+2026-10-08T05:54:34  auto_learn      
+2026-10-08T05:56:11  auto_learn      
+2026-10-08T05:58:01  auto_learn      
+2026-10-08T05:59:37  auto_learn      
+2026-10-08T06:01:14  auto_learn      
+2026-10-08T06:02:52  auto_learn      
+2026-10-08T06:04:29  auto_learn      
+2026-10-08T06:06:07  skill_reinforc  
+2026-10-08T06:30:01  plan            Evolutionary Ecology (journal)
+2026-10-08T06:30:04  skill_reinforc  
+2026-10-08T06:30:04  branch          Evolutionary Ecology (journal)
 ```
 
 ## Architecture de l'agent
