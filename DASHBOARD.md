@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-09 12:41:43 UTC
+**Dernière mise à jour** : 2026-10-09 19:17:36 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 47 |
+| Actions dernières 24 h | 77 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-09T08:48:46  auto_learn      
-2026-10-09T08:50:21  auto_learn      
-2026-10-09T08:51:56  auto_learn      
-2026-10-09T08:53:37  auto_learn      
-2026-10-09T08:55:12  auto_learn      
-2026-10-09T08:56:48  auto_learn      
-2026-10-09T08:58:23  auto_learn      
-2026-10-09T08:59:58  auto_learn      
-2026-10-09T09:01:34  auto_learn      
-2026-10-09T09:03:09  auto_learn      
-2026-10-09T09:04:45  auto_learn      
-2026-10-09T09:06:20  auto_learn      
-2026-10-09T09:07:55  auto_learn      
-2026-10-09T09:09:31  auto_learn      
-2026-10-09T10:27:20  auto_learn      
+2026-10-09T17:10:13  auto_learn      
+2026-10-09T17:11:46  auto_learn      
+2026-10-09T17:13:25  auto_learn      
+2026-10-09T17:14:59  auto_learn      
+2026-10-09T17:16:32  auto_learn      
+2026-10-09T17:18:05  auto_learn      
+2026-10-09T17:19:38  auto_learn      
+2026-10-09T17:21:12  auto_learn      
+2026-10-09T17:22:45  auto_learn      
+2026-10-09T17:24:20  auto_learn      
+2026-10-09T17:25:53  auto_learn      
+2026-10-09T17:27:26  auto_learn      
+2026-10-09T17:29:00  auto_learn      
+2026-10-09T17:30:34  auto_learn      
+2026-10-09T18:19:40  auto_learn      
 ```
 
 ## Architecture de l'agent
