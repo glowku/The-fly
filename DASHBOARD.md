@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-11 18:38:26 UTC
+**Dernière mise à jour** : 2026-10-11 23:28:04 UTC
 
 ## Objectif de l'agent
 
@@ -55,11 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-11T08:47:42  auto_learn      
-2026-10-11T08:49:21  auto_learn      
-2026-10-11T08:51:00  auto_learn      
-2026-10-11T08:52:40  auto_learn      
-2026-10-11T08:54:19  auto_learn      
 2026-10-11T08:55:58  auto_learn      
 2026-10-11T08:57:38  auto_learn      
 2026-10-11T11:17:11  plan            Chewing gum
@@ -70,6 +65,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-10-11T16:43:05  plan            Chewing gum
 2026-10-11T16:43:05  skill_reinforc  
 2026-10-11T16:43:05  branch          Chewing gum
+2026-10-11T19:31:28  auto_learn      
+2026-10-11T20:49:49  plan            Vineland Adaptive Behavior Scale
+2026-10-11T20:49:49  skill_reinforc  
+2026-10-11T20:49:49  branch          Vineland Adaptive Behavior Scale
+2026-10-11T21:16:16  parallel_learn  
 ```
 
 ## Architecture de l'agent
