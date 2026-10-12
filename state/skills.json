@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 7.01,
+    "level": 7.11,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -59,7 +59,7 @@
       "Damselfly",
       "Chewing gum"
     ],
-    "last_reinforced": "2026-10-11T11:17:11.451209+00:00"
+    "last_reinforced": "2026-10-12T22:46:44.361372+00:00"
   },
   "anatomie_insecte": {
     "level": 7.03,
