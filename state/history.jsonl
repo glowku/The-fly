@@ -3642,3 +3642,6 @@
 {"ts": "2026-10-13T10:55:52.048550+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 7.13, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-10-13T10:55:52.048617+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-10-13T17:15:42.014774+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
+{"ts": "2026-10-13T18:02:57.342788+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-10-13T18:03:01.735058+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 7.17, "article": "Chewing gum"}
+{"ts": "2026-10-13T18:03:01.735149+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
