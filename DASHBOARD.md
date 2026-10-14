@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-14 13:21:21 UTC
+**Dernière mise à jour** : 2026-10-14 18:20:11 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 77 |
+| Actions dernières 24 h | 109 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-14T09:36:17  auto_learn      
-2026-10-14T09:37:52  auto_learn      
-2026-10-14T09:39:25  auto_learn      
-2026-10-14T09:40:59  auto_learn      
-2026-10-14T09:42:32  auto_learn      
-2026-10-14T09:44:05  auto_learn      
-2026-10-14T09:45:39  auto_learn      
-2026-10-14T09:47:12  auto_learn      
-2026-10-14T09:48:46  auto_learn      
-2026-10-14T09:50:19  auto_learn      
-2026-10-14T09:51:52  auto_learn      
-2026-10-14T09:53:25  auto_learn      
-2026-10-14T09:54:59  auto_learn      
-2026-10-14T09:56:32  auto_learn      
-2026-10-14T09:58:05  auto_learn      
+2026-10-14T15:17:29  auto_learn      
+2026-10-14T15:19:06  auto_learn      
+2026-10-14T15:20:42  auto_learn      
+2026-10-14T15:22:19  auto_learn      
+2026-10-14T15:23:55  auto_learn      
+2026-10-14T15:25:31  auto_learn      
+2026-10-14T15:27:08  auto_learn      
+2026-10-14T15:28:45  auto_learn      
+2026-10-14T15:30:22  auto_learn      
+2026-10-14T15:31:59  auto_learn      
+2026-10-14T15:33:35  auto_learn      
+2026-10-14T15:35:12  auto_learn      
+2026-10-14T18:07:55  plan            Vineland Adaptive Behavior Scale
+2026-10-14T18:07:55  skill_reinforc  
+2026-10-14T18:07:55  branch          Vineland Adaptive Behavior Scale
 ```
 
 ## Architecture de l'agent
