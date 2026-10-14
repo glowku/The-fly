@@ -3788,3 +3788,4 @@
 {"ts": "2026-10-14T21:52:40.685816+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-14T21:52:41.168834+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 7.27, "article": "Chewing gum"}
 {"ts": "2026-10-14T21:52:41.168899+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-14T22:52:27.193508+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
