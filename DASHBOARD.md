@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-15 08:55:05 UTC
+**Dernière mise à jour** : 2026-10-15 14:42:16 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 166 |
+| Actions dernières 24 h | 165 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-15T03:27:55  auto_learn      
-2026-10-15T03:29:32  auto_learn      
-2026-10-15T03:31:09  auto_learn      
-2026-10-15T03:32:46  auto_learn      
-2026-10-15T03:34:22  auto_learn      
-2026-10-15T03:35:59  auto_learn      
-2026-10-15T03:37:36  auto_learn      
-2026-10-15T03:39:12  auto_learn      
-2026-10-15T03:40:49  auto_learn      
-2026-10-15T03:42:26  auto_learn      
-2026-10-15T04:31:13  auto_learn      
-2026-10-15T05:00:43  plan            Chewing gum
-2026-10-15T05:00:44  skill_reinforc  
-2026-10-15T05:00:44  branch          Chewing gum
-2026-10-15T08:42:30  parallel_learn  
+2026-10-15T09:16:56  auto_learn      
+2026-10-15T09:18:34  auto_learn      
+2026-10-15T09:20:11  auto_learn      
+2026-10-15T09:21:49  auto_learn      
+2026-10-15T09:23:27  auto_learn      
+2026-10-15T09:25:04  auto_learn      
+2026-10-15T09:26:43  auto_learn      
+2026-10-15T09:28:22  auto_learn      
+2026-10-15T09:29:59  auto_learn      
+2026-10-15T09:31:36  auto_learn      
+2026-10-15T10:12:21  plan            Chewing gum
+2026-10-15T10:12:21  skill_reinforc  
+2026-10-15T10:12:21  branch          Chewing gum
+2026-10-15T11:21:34  auto_learn      
+2026-10-15T14:33:13  parallel_learn  
 ```
 
 ## Architecture de l'agent
