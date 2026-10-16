@@ -4065,3 +4065,4 @@
 {"ts": "2026-10-16T19:38:48.458604+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 127.2, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-16T19:38:50.336571+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 7.43, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-10-16T19:38:50.336619+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-16T21:02:45.381929+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behavioral modeling in computer-aided design", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
