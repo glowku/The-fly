@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-16 22:35:49 UTC
+**Dernière mise à jour** : 2026-10-17 03:16:43 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 140 |
+| Actions dernières 24 h | 100 |
 
 ## Répartition de la qualité
 
@@ -55,14 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-16T15:06:59  auto_learn      
-2026-10-16T15:08:36  auto_learn      
-2026-10-16T15:10:13  auto_learn      
-2026-10-16T15:11:50  auto_learn      
-2026-10-16T15:13:27  auto_learn      
-2026-10-16T16:15:49  plan            Chewing gum
-2026-10-16T16:15:49  skill_reinforc  
-2026-10-16T16:15:49  branch          Chewing gum
 2026-10-16T16:34:17  auto_learn      
 2026-10-16T19:08:57  parallel_learn  
 2026-10-16T19:38:48  plan            Vineland Adaptive Behavior Scale
@@ -70,6 +62,14 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-10-16T19:38:50  branch          Vineland Adaptive Behavior Scale
 2026-10-16T21:02:45  auto_learn      
 2026-10-16T22:20:28  parallel_learn  
+2026-10-16T22:38:38  plan            Chewing gum
+2026-10-16T22:38:39  skill_reinforc  
+2026-10-16T22:38:39  branch          Chewing gum
+2026-10-16T23:32:54  auto_learn      
+2026-10-17T01:08:49  plan            Chromatic adaptation
+2026-10-17T01:08:49  skill_reinforc  
+2026-10-17T01:08:49  branch          Chromatic adaptation
+2026-10-17T02:13:50  parallel_learn  
 ```
 
 ## Architecture de l'agent
