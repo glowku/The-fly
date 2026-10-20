@@ -4412,3 +4412,6 @@
 {"ts": "2026-10-20T19:52:51.854871+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 7.87, "article": "Chewing gum"}
 {"ts": "2026-10-20T19:52:51.854934+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
 {"ts": "2026-10-20T22:50:24.693446+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
+{"ts": "2026-10-20T22:58:44.447262+00:00", "type": "plan", "title": "Chromatic adaptation", "action": "branch", "priority": 124.9, "reason": "leaf_no_children", "skill": "evolution"}
+{"ts": "2026-10-20T22:58:44.675178+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 7.88, "article": "Chromatic adaptation"}
+{"ts": "2026-10-20T22:58:44.675242+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
