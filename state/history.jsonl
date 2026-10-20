@@ -4304,3 +4304,6 @@
 {"ts": "2026-10-19T21:52:29.271492+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
 {"ts": "2026-10-20T00:17:53.677582+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
 {"ts": "2026-10-20T00:50:04.862725+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
+{"ts": "2026-10-20T00:56:25.519779+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
+{"ts": "2026-10-20T00:56:26.049525+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 7.8, "article": "Chewing gum"}
+{"ts": "2026-10-20T00:56:26.049586+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
