@@ -4416,3 +4416,6 @@
 {"ts": "2026-10-20T22:58:44.675178+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 7.88, "article": "Chromatic adaptation"}
 {"ts": "2026-10-20T22:58:44.675242+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-10-20T23:50:36.143038+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
+{"ts": "2026-10-21T01:27:00.917797+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
+{"ts": "2026-10-21T01:27:01.249821+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 7.9, "article": "Chewing gum"}
+{"ts": "2026-10-21T01:27:01.249861+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
