@@ -4553,3 +4553,4 @@
 {"ts": "2026-10-21T21:22:34.165922+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-21T21:22:34.396814+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 7.97, "article": "Chewing gum"}
 {"ts": "2026-10-21T21:22:34.396880+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-21T21:36:40.186599+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
