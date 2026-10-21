@@ -4485,3 +4485,4 @@
 {"ts": "2026-10-21T12:15:22.427008+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-10-21T12:15:22.617215+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 7.93, "article": "Chewing gum"}
 {"ts": "2026-10-21T12:15:22.617314+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-10-21T14:46:15.662813+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Vineland Adaptive Behavior Scale"}
