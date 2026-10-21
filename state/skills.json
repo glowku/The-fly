@@ -341,7 +341,7 @@
     "last_reinforced": "2026-10-20T22:58:44.674810+00:00"
   },
   "comportement": {
-    "level": 7.83,
+    "level": 7.93,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -403,6 +403,6 @@
       "Vineland Adaptive Behavior Scale",
       "Social and behavior change communication"
     ],
-    "last_reinforced": "2026-10-20T15:45:47.460929+00:00"
+    "last_reinforced": "2026-10-21T17:33:24.405996+00:00"
   }
 }
