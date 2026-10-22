@@ -4586,3 +4586,4 @@
 {"ts": "2026-10-22T00:07:32.640100+00:00", "type": "plan", "title": "Chromatic adaptation", "action": "branch", "priority": 124.9, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-10-22T00:07:32.946613+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 7.98, "article": "Chromatic adaptation"}
 {"ts": "2026-10-22T00:07:32.946653+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-10-22T02:33:52.253866+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
