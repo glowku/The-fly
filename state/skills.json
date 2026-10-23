@@ -62,7 +62,7 @@
     "last_reinforced": "2026-10-23T12:45:41.598847+00:00"
   },
   "anatomie_insecte": {
-    "level": 8.03,
+    "level": 8.13,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -127,7 +127,7 @@
       "Behavioral systems analysis",
       "Chewing gum"
     ],
-    "last_reinforced": "2026-10-22T15:32:00.485224+00:00"
+    "last_reinforced": "2026-10-23T17:45:28.885449+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 8.1,
