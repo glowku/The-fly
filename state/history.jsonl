@@ -4702,3 +4702,4 @@
 {"ts": "2026-10-23T07:07:03.410134+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-10-23T07:07:03.850705+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 8.1, "article": "Chewing gum"}
 {"ts": "2026-10-23T07:07:03.850773+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-10-23T08:57:18.550531+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
