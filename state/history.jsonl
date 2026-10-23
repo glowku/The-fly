@@ -4666,3 +4666,6 @@
 {"ts": "2026-10-22T23:01:12.074649+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-22T23:01:12.397426+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 8.07, "article": "Chewing gum"}
 {"ts": "2026-10-22T23:01:12.397464+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-23T01:45:27.567480+00:00", "type": "plan", "title": "Chromatic adaptation", "action": "branch", "priority": 125.0, "reason": "leaf_no_children", "skill": "evolution"}
+{"ts": "2026-10-23T01:45:27.893074+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 8.08, "article": "Chromatic adaptation"}
+{"ts": "2026-10-23T01:45:27.893139+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
