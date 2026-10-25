@@ -4971,3 +4971,4 @@
 {"ts": "2026-10-25T17:47:47.749568+00:00", "type": "plan", "title": "Vineland Adaptive Behavior Scale", "action": "branch", "priority": 127.6, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-25T17:47:48.158966+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.33, "article": "Vineland Adaptive Behavior Scale"}
 {"ts": "2026-10-25T17:47:48.159014+00:00", "type": "branch", "title": "Vineland Adaptive Behavior Scale", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-25T18:38:14.037343+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
