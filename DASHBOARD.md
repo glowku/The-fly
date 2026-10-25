@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-25 20:27:49 UTC
+**Dernière mise à jour** : 2026-10-25 23:51:58 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.75/10** |
 | Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 85 |
+| Actions dernières 24 h | 115 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-25T19:03:33  auto_learn      
-2026-10-25T19:05:12  auto_learn      
-2026-10-25T19:06:50  auto_learn      
-2026-10-25T19:08:29  auto_learn      
-2026-10-25T19:10:08  auto_learn      
-2026-10-25T19:11:47  auto_learn      
-2026-10-25T19:13:26  auto_learn      
-2026-10-25T19:15:03  auto_learn      
-2026-10-25T19:16:39  auto_learn      
-2026-10-25T19:18:15  auto_learn      
-2026-10-25T19:19:51  auto_learn      
-2026-10-25T19:21:27  auto_learn      
-2026-10-25T19:23:03  auto_learn      
-2026-10-25T19:24:39  auto_learn      
-2026-10-25T19:26:15  auto_learn      
+2026-10-25T22:42:57  auto_learn      
+2026-10-25T22:44:35  auto_learn      
+2026-10-25T22:46:13  auto_learn      
+2026-10-25T22:47:51  auto_learn      
+2026-10-25T22:49:30  auto_learn      
+2026-10-25T22:51:08  auto_learn      
+2026-10-25T22:52:46  auto_learn      
+2026-10-25T22:54:24  auto_learn      
+2026-10-25T22:56:03  auto_learn      
+2026-10-25T22:57:40  auto_learn      
+2026-10-25T22:59:18  auto_learn      
+2026-10-25T23:03:01  plan            Chromatic adaptation
+2026-10-25T23:03:02  skill_reinforc  
+2026-10-25T23:03:02  branch          Chromatic adaptation
+2026-10-25T23:12:30  auto_learn      
 ```
 
 ## Architecture de l'agent
