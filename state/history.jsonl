@@ -4921,3 +4921,6 @@
 {"ts": "2026-10-24T21:45:33.234470+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
 {"ts": "2026-10-24T22:17:50.805999+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
 {"ts": "2026-10-24T23:08:47.427045+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
+{"ts": "2026-10-25T00:03:54.809564+00:00", "type": "plan", "title": "Chromatic adaptation", "action": "branch", "priority": 125.1, "reason": "leaf_no_children", "skill": "evolution"}
+{"ts": "2026-10-25T00:03:55.447660+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 8.28, "article": "Chromatic adaptation"}
+{"ts": "2026-10-25T00:03:55.447727+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
