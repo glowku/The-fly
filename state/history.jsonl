@@ -5146,3 +5146,4 @@
 {"ts": "2026-10-27T04:08:06.616791+00:00", "type": "plan", "title": "Chromatic adaptation", "action": "branch", "priority": 125.2, "reason": "leaf_no_children", "skill": "evolution"}
 {"ts": "2026-10-27T04:08:07.131637+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 8.48, "article": "Chromatic adaptation"}
 {"ts": "2026-10-27T04:08:07.131699+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-10-27T08:54:13.417877+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics", "Behavioral systems analysis"]}
