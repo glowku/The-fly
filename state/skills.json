@@ -342,7 +342,7 @@
     "last_reinforced": "2026-10-27T04:08:07.131237+00:00"
   },
   "comportement": {
-    "level": 8.43,
+    "level": 8.53,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -402,8 +402,9 @@
       "Behavioral Ecology (journal)",
       "Eccentricity (behavior)",
       "Vineland Adaptive Behavior Scale",
-      "Social and behavior change communication"
+      "Social and behavior change communication",
+      "Behavioral economics"
     ],
-    "last_reinforced": "2026-10-26T19:51:14.920813+00:00"
+    "last_reinforced": "2026-10-27T23:57:24.562566+00:00"
   }
 }
