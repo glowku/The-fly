@@ -62,7 +62,7 @@
     "last_reinforced": "2026-10-27T15:49:54.655837+00:00"
   },
   "anatomie_insecte": {
-    "level": 8.43,
+    "level": 8.52,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -125,9 +125,10 @@
       "Chemical ecology",
       "Bibliography of fly fishing",
       "Behavioral systems analysis",
-      "Chewing gum"
+      "Chewing gum",
+      "Dragonfly"
     ],
-    "last_reinforced": "2026-10-26T13:59:24.217736+00:00"
+    "last_reinforced": "2026-10-27T20:41:10.665676+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 8.5,
