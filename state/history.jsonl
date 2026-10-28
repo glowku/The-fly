@@ -5192,3 +5192,4 @@
 {"ts": "2026-10-27T23:57:24.244618+00:00", "type": "plan", "title": "Behavioral economics", "action": "branch", "priority": 127.7, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-27T23:57:24.562823+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.53, "article": "Behavioral economics"}
 {"ts": "2026-10-27T23:57:24.562858+00:00", "type": "branch", "title": "Behavioral economics", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-28T00:50:15.723707+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
