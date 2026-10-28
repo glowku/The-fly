@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-27 20:27:54 UTC
+**Dernière mise à jour** : 2026-10-28 01:00:02 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.992** |
-| Concepts traités | 200 | **265** |
-| Qualité moyenne | ≥ 7.5 | **9.75/10** |
+| Score global | maximiser | **38.976** |
+| Concepts traités | 200 | **266** |
+| Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **265** |
-| Arêtes du graphe | 412 |
+| Concepts traités (nœuds) | **266** |
+| Arêtes du graphe | 414 |
 | Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.75/10** |
-| Score objectif (coverage × quality) | **38.992** |
-| Actions dernières 24 h | 20 |
+| Score qualité moyen | **9.74/10** |
+| Score objectif (coverage × quality) | **38.976** |
+| Actions dernières 24 h | 51 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 258 |
+| Excellent (≥ 8) | 259 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-27T02:59:30  parallel_learn  
-2026-10-27T04:08:06  plan            Chromatic adaptation
-2026-10-27T04:08:07  skill_reinforc  
-2026-10-27T04:08:07  branch          Chromatic adaptation
-2026-10-27T08:54:13  auto_learn      
-2026-10-27T09:27:50  parallel_learn  
-2026-10-27T09:58:17  plan            Chewing gum
-2026-10-27T09:58:18  skill_reinforc  
-2026-10-27T09:58:18  branch          Chewing gum
-2026-10-27T15:18:52  auto_learn      
-2026-10-27T15:37:41  parallel_learn  
-2026-10-27T15:49:54  plan            Chewing gum
-2026-10-27T15:49:54  skill_reinforc  
-2026-10-27T15:49:54  branch          Chewing gum
-2026-10-27T20:19:35  parallel_learn  
+2026-10-27T20:53:42  auto_learn      
+2026-10-27T20:55:16  auto_learn      
+2026-10-27T20:56:50  auto_learn      
+2026-10-27T20:58:24  auto_learn      
+2026-10-27T20:59:57  auto_learn      
+2026-10-27T21:01:31  auto_learn      
+2026-10-27T21:03:04  auto_learn      
+2026-10-27T21:04:38  auto_learn      
+2026-10-27T21:06:12  auto_learn      
+2026-10-27T21:07:46  auto_learn      
+2026-10-27T22:09:01  auto_learn      
+2026-10-27T23:57:24  plan            Behavioral economics
+2026-10-27T23:57:24  skill_reinforc  
+2026-10-27T23:57:24  branch          Behavioral economics
+2026-10-28T00:50:15  parallel_learn  
 ```
 
 ## Architecture de l'agent
