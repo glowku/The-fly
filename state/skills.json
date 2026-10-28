@@ -203,7 +203,7 @@
     "last_reinforced": "2026-10-27T09:58:18.269372+00:00"
   },
   "ecologie": {
-    "level": 8.47,
+    "level": 8.56,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -267,9 +267,10 @@
       "Insects in ethics",
       "Damselfly",
       "Chewing gum",
-      "Evolutionary Ecology (journal)"
+      "Evolutionary Ecology (journal)",
+      "Dragonfly"
     ],
-    "last_reinforced": "2026-10-26T23:37:19.562590+00:00"
+    "last_reinforced": "2026-10-28T05:22:28.024121+00:00"
   },
   "evolution": {
     "level": 8.48,

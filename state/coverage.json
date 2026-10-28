@@ -3786,6 +3786,10 @@
     {
       "from": "Behavioral economics",
       "to": "A Behavioral Theory of the Firm"
+    },
+    {
+      "from": "Dragonfly",
+      "to": "Anax (dragonfly)"
     }
   ],
   "frontier": [
@@ -3823,7 +3827,8 @@
     "Behavioral change theories",
     "Biocultural evolution",
     "Film and television adaptations of video games",
-    "Evolutionary ecology"
+    "Evolutionary ecology",
+    "Anax (dragonfly)"
   ],
   "max_depth": 9
 }
