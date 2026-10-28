@@ -2128,6 +2128,14 @@
         "https://en.wikipedia.org/wiki/Dragonfly"
       ],
       "updated_at": "2026-10-27T20:41:10.578343+00:00"
+    },
+    "Anax (dragonfly)": {
+      "depth": 7,
+      "created_at": "2026-10-28T08:02:04.230532+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anax_(dragonfly)"
+      ],
+      "updated_at": "2026-10-28T08:02:04.230536+00:00"
     }
   },
   "edges": [
@@ -3827,8 +3835,7 @@
     "Behavioral change theories",
     "Biocultural evolution",
     "Film and television adaptations of video games",
-    "Evolutionary ecology",
-    "Anax (dragonfly)"
+    "Evolutionary ecology"
   ],
   "max_depth": 9
 }
