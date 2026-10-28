@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-28 07:58:07 UTC
+**Dernière mise à jour** : 2026-10-28 15:01:25 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.976** |
-| Concepts traités | 200 | **266** |
+| Score global | maximiser | **38.95** |
+| Concepts traités | 200 | **267** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **266** |
+| Concepts traités (nœuds) | **267** |
 | Arêtes du graphe | 415 |
-| Frontière (à explorer) | 36 |
+| Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **38.976** |
-| Actions dernières 24 h | 79 |
+| Score objectif (coverage × quality) | **38.95** |
+| Actions dernières 24 h | 109 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 259 |
+| Excellent (≥ 8) | 260 |
 | Bon (6 – 8) | 5 |
 | Moyen (4 – 6) | 2 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-28T01:24:57  auto_learn      
-2026-10-28T01:26:36  auto_learn      
-2026-10-28T01:28:16  auto_learn      
-2026-10-28T01:29:55  auto_learn      
-2026-10-28T01:31:35  auto_learn      
-2026-10-28T01:33:14  auto_learn      
-2026-10-28T01:34:53  auto_learn      
-2026-10-28T01:36:32  auto_learn      
-2026-10-28T01:38:11  auto_learn      
-2026-10-28T01:39:50  auto_learn      
-2026-10-28T05:22:27  plan            Dragonfly
-2026-10-28T05:22:28  skill_reinforc  
-2026-10-28T05:22:28  branch          Dragonfly
-2026-10-28T05:32:59  auto_learn      
-2026-10-28T07:44:48  parallel_learn  
+2026-10-28T08:21:25  auto_learn      
+2026-10-28T08:23:03  auto_learn      
+2026-10-28T08:24:41  auto_learn      
+2026-10-28T08:26:18  auto_learn      
+2026-10-28T08:27:55  auto_learn      
+2026-10-28T08:29:32  auto_learn      
+2026-10-28T08:31:09  auto_learn      
+2026-10-28T08:32:46  auto_learn      
+2026-10-28T08:34:23  auto_learn      
+2026-10-28T08:36:01  auto_learn      
+2026-10-28T11:30:20  plan            Chewing gum
+2026-10-28T11:30:21  skill_reinforc  
+2026-10-28T11:30:21  branch          Chewing gum
+2026-10-28T12:44:17  auto_learn      
+2026-10-28T14:42:40  parallel_learn  
 ```
 
 ## Architecture de l'agent
