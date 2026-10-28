@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-10-28 01:00:02 UTC
+**Dernière mise à jour** : 2026-10-28 07:58:07 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **266** |
-| Arêtes du graphe | 414 |
-| Frontière (à explorer) | 35 |
+| Arêtes du graphe | 415 |
+| Frontière (à explorer) | 36 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.976** |
-| Actions dernières 24 h | 51 |
+| Actions dernières 24 h | 79 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-10-27T20:53:42  auto_learn      
-2026-10-27T20:55:16  auto_learn      
-2026-10-27T20:56:50  auto_learn      
-2026-10-27T20:58:24  auto_learn      
-2026-10-27T20:59:57  auto_learn      
-2026-10-27T21:01:31  auto_learn      
-2026-10-27T21:03:04  auto_learn      
-2026-10-27T21:04:38  auto_learn      
-2026-10-27T21:06:12  auto_learn      
-2026-10-27T21:07:46  auto_learn      
-2026-10-27T22:09:01  auto_learn      
-2026-10-27T23:57:24  plan            Behavioral economics
-2026-10-27T23:57:24  skill_reinforc  
-2026-10-27T23:57:24  branch          Behavioral economics
-2026-10-28T00:50:15  parallel_learn  
+2026-10-28T01:24:57  auto_learn      
+2026-10-28T01:26:36  auto_learn      
+2026-10-28T01:28:16  auto_learn      
+2026-10-28T01:29:55  auto_learn      
+2026-10-28T01:31:35  auto_learn      
+2026-10-28T01:33:14  auto_learn      
+2026-10-28T01:34:53  auto_learn      
+2026-10-28T01:36:32  auto_learn      
+2026-10-28T01:38:11  auto_learn      
+2026-10-28T01:39:50  auto_learn      
+2026-10-28T05:22:27  plan            Dragonfly
+2026-10-28T05:22:28  skill_reinforc  
+2026-10-28T05:22:28  branch          Dragonfly
+2026-10-28T05:32:59  auto_learn      
+2026-10-28T07:44:48  parallel_learn  
 ```
 
 ## Architecture de l'agent
