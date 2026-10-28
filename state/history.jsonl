@@ -5224,3 +5224,4 @@
 {"ts": "2026-10-28T05:22:28.024436+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 8.56, "article": "Dragonfly"}
 {"ts": "2026-10-28T05:22:28.024498+00:00", "type": "branch", "title": "Dragonfly", "children_discovered": 1, "skill": "ecologie"}
 {"ts": "2026-10-28T05:32:59.699176+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation", "Insects in ethics"]}
+{"ts": "2026-10-28T07:44:48.743456+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Experimental analysis of behavior"}
