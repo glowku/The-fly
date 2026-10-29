@@ -3798,6 +3798,22 @@
     {
       "from": "Dragonfly",
       "to": "Anax (dragonfly)"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior Modification (journal)"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Association for Behavioral and Cognitive Therapies"
     }
   ],
   "frontier": [

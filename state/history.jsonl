@@ -5325,3 +5325,6 @@
 {"ts": "2026-10-28T22:45:42.160404+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
 {"ts": "2026-10-29T00:52:28.064525+00:00", "type": "auto_learn", "skill": "comportement", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behavior informatics", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
 {"ts": "2026-10-29T01:25:27.065882+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "Behavior informatics"}
+{"ts": "2026-10-29T02:12:21.298324+00:00", "type": "plan", "title": "Behavior modification", "action": "branch", "priority": 127.8, "reason": "leaf_no_children", "skill": "comportement"}
+{"ts": "2026-10-29T02:12:21.562795+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.63, "article": "Behavior modification"}
+{"ts": "2026-10-29T02:12:21.562855+00:00", "type": "branch", "title": "Behavior modification", "children_discovered": 0, "skill": "comportement"}
