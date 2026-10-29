@@ -5328,3 +5328,4 @@
 {"ts": "2026-10-29T02:12:21.298324+00:00", "type": "plan", "title": "Behavior modification", "action": "branch", "priority": 127.8, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-29T02:12:21.562795+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.63, "article": "Behavior modification"}
 {"ts": "2026-10-29T02:12:21.562855+00:00", "type": "branch", "title": "Behavior modification", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-29T07:50:31.101771+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
