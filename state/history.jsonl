@@ -5360,3 +5360,4 @@
 {"ts": "2026-10-29T08:46:24.845618+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-10-29T08:46:25.203253+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 8.66, "article": "Chewing gum"}
 {"ts": "2026-10-29T08:46:25.203314+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-10-29T09:52:10.072012+00:00", "type": "auto_learn", "skill": "evolution", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Experimental analysis of behavior", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
