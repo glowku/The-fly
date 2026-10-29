@@ -5393,3 +5393,4 @@
 {"ts": "2026-10-29T15:54:48.277205+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 8.66, "article": "Chromatic adaptation"}
 {"ts": "2026-10-29T15:54:48.277244+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-10-29T18:25:52.752579+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Amateur Entomologists' Society", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
+{"ts": "2026-10-29T20:45:04.849784+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
