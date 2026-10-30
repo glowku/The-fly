@@ -132,7 +132,7 @@
     "last_reinforced": "2026-10-28T22:45:42.159988+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 8.6,
+    "level": 8.7,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -201,7 +201,7 @@
       "Damselfly",
       "Chewing gum"
     ],
-    "last_reinforced": "2026-10-28T11:30:21.257500+00:00"
+    "last_reinforced": "2026-10-30T00:40:00.011643+00:00"
   },
   "ecologie": {
     "level": 8.66,
