@@ -5465,3 +5465,4 @@
 {"ts": "2026-10-30T13:53:58.096157+00:00", "type": "plan", "title": "Behavior informatics", "action": "branch", "priority": 127.8, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-30T13:53:59.726730+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.73, "article": "Behavior informatics"}
 {"ts": "2026-10-30T13:53:59.726776+00:00", "type": "branch", "title": "Behavior informatics", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-30T14:42:24.738581+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
