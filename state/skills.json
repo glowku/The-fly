@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 8.67,
+    "level": 8.75,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -60,7 +60,7 @@
       "Chewing gum",
       "Anax (dragonfly)"
     ],
-    "last_reinforced": "2026-10-29T20:55:07.008710+00:00"
+    "last_reinforced": "2026-10-31T02:39:01.459446+00:00"
   },
   "anatomie_insecte": {
     "level": 8.72,
