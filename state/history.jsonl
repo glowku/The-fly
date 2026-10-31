@@ -5632,3 +5632,4 @@
 {"ts": "2026-10-31T19:29:34.715971+00:00", "type": "plan", "title": "Association for Behavior Analysis International", "action": "branch", "priority": 127.9, "reason": "leaf_no_children", "skill": "comportement"}
 {"ts": "2026-10-31T19:29:35.643797+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.82, "article": "Association for Behavior Analysis International"}
 {"ts": "2026-10-31T19:29:35.643867+00:00", "type": "branch", "title": "Association for Behavior Analysis International", "children_discovered": 0, "skill": "comportement"}
+{"ts": "2026-10-31T19:38:28.881594+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
