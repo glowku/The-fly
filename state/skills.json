@@ -345,7 +345,7 @@
     "last_reinforced": "2026-10-30T23:06:12.949340+00:00"
   },
   "comportement": {
-    "level": 8.73,
+    "level": 8.82,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -408,8 +408,9 @@
       "Social and behavior change communication",
       "Behavioral economics",
       "Behavior modification",
-      "Behavior informatics"
+      "Behavior informatics",
+      "Association for Behavior Analysis International"
     ],
-    "last_reinforced": "2026-10-30T13:53:59.726484+00:00"
+    "last_reinforced": "2026-10-31T19:29:35.643498+00:00"
   }
 }
