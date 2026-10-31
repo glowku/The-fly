@@ -5628,3 +5628,4 @@
 {"ts": "2026-10-31T15:27:48.729699+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-10-31T15:27:49.203695+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 8.82, "article": "Chewing gum"}
 {"ts": "2026-10-31T15:27:49.203733+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-10-31T19:15:26.743149+00:00", "type": "auto_learn", "skill": "comportement", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Association for Behavior Analysis International", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
