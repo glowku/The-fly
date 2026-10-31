@@ -5564,3 +5564,4 @@
 {"ts": "2026-10-31T02:39:01.459802+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 8.75, "article": "Anax (dragonfly)"}
 {"ts": "2026-10-31T02:39:01.459856+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-10-31T05:31:32.179266+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
+{"ts": "2026-10-31T07:46:49.533641+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
