@@ -5770,3 +5770,6 @@
 {"ts": "2026-11-01T20:22:28.800158+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 8.92, "article": "Chewing gum"}
 {"ts": "2026-11-01T20:22:28.800220+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
 {"ts": "2026-11-01T21:30:10.699070+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "The Entomologist's Record and Journal of Variation"}
+{"ts": "2026-11-01T23:47:42.734381+00:00", "type": "plan", "title": "Verbal Behavior", "action": "branch", "priority": 126.4, "reason": "leaf_no_children", "skill": "comportement"}
+{"ts": "2026-11-01T23:47:43.638825+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 8.92, "article": "Verbal Behavior"}
+{"ts": "2026-11-01T23:47:43.638871+00:00", "type": "branch", "title": "Verbal Behavior", "children_discovered": 0, "skill": "comportement"}
