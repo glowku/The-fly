@@ -5732,3 +5732,4 @@
 {"ts": "2026-11-01T08:58:43.307744+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 8.86, "article": "Chromatic adaptation"}
 {"ts": "2026-11-01T08:58:43.307779+00:00", "type": "branch", "title": "Chromatic adaptation", "children_discovered": 0, "skill": "evolution"}
 {"ts": "2026-11-01T10:54:50.494011+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
+{"ts": "2026-11-01T13:14:38.494912+00:00", "type": "auto_learn", "skill": "vol_et_aerodynamique", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behaviour Santiago", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
