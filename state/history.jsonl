@@ -5769,3 +5769,4 @@
 {"ts": "2026-11-01T20:22:27.914948+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "anatomie_insecte"}
 {"ts": "2026-11-01T20:22:28.800158+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 8.92, "article": "Chewing gum"}
 {"ts": "2026-11-01T20:22:28.800220+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
+{"ts": "2026-11-01T21:30:10.699070+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "The Entomologist's Record and Journal of Variation"}
