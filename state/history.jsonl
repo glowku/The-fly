@@ -5736,3 +5736,4 @@
 {"ts": "2026-11-01T15:56:25.042982+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
 {"ts": "2026-11-01T15:56:26.248381+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 8.9, "article": "Chewing gum"}
 {"ts": "2026-11-01T15:56:26.248443+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
+{"ts": "2026-11-01T17:25:37.763717+00:00", "type": "parallel_learn", "skill": "anatomie_insecte", "learned": 0, "workers": 4, "parent": "Behavioural sciences"}
