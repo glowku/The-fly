@@ -5806,3 +5806,4 @@
 {"ts": "2026-11-02T04:56:16.284532+00:00", "type": "plan", "title": "Anax (dragonfly)", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-11-02T04:56:16.590620+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 8.91, "article": "Anax (dragonfly)"}
 {"ts": "2026-11-02T04:56:16.590656+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-11-02T08:39:26.782173+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
