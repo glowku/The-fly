@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-01 21:45:30 UTC
+**Dernière mise à jour** : 2026-11-02 01:18:20 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **267** |
-| Arêtes du graphe | 423 |
+| Arêtes du graphe | 427 |
 | Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 109 |
+| Actions dernières 24 h | 80 |
 
 ## Répartition de la qualité
 
@@ -55,11 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-01T19:12:33  auto_learn      
-2026-11-01T19:14:09  auto_learn      
-2026-11-01T19:15:44  auto_learn      
-2026-11-01T19:17:21  auto_learn      
-2026-11-01T19:18:56  auto_learn      
 2026-11-01T19:20:31  auto_learn      
 2026-11-01T19:22:07  auto_learn      
 2026-11-01T19:23:42  auto_learn      
@@ -70,6 +65,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-11-01T20:22:28  skill_reinforc  
 2026-11-01T20:22:28  branch          Chewing gum
 2026-11-01T21:30:10  parallel_learn  
+2026-11-01T23:47:42  plan            Verbal Behavior
+2026-11-01T23:47:43  skill_reinforc  
+2026-11-01T23:47:43  branch          Verbal Behavior
+2026-11-02T00:38:32  auto_learn      
+2026-11-02T01:08:28  parallel_learn  
 ```
 
 ## Architecture de l'agent
