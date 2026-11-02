@@ -5808,3 +5808,6 @@
 {"ts": "2026-11-02T04:56:16.590656+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-11-02T08:39:26.782173+00:00", "type": "parallel_learn", "skill": "ecologie", "learned": 0, "workers": 4, "parent": "Behavioral modeling in computer-aided design"}
 {"ts": "2026-11-02T10:56:02.590219+00:00", "type": "auto_learn", "skill": "ecologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Behavioral modeling in computer-aided design", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
+{"ts": "2026-11-02T13:15:54.894242+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
+{"ts": "2026-11-02T13:15:55.228819+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 8.96, "article": "Chewing gum"}
+{"ts": "2026-11-02T13:15:55.228876+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
