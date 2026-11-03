@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-03 02:11:04 UTC
+**Dernière mise à jour** : 2026-11-03 11:39:57 UTC
 
 ## Objectif de l'agent
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-02T23:41:03  auto_learn      
-2026-11-02T23:42:41  auto_learn      
-2026-11-02T23:44:19  auto_learn      
-2026-11-02T23:45:58  auto_learn      
-2026-11-02T23:47:36  auto_learn      
-2026-11-02T23:49:14  auto_learn      
-2026-11-02T23:50:52  auto_learn      
-2026-11-02T23:52:31  auto_learn      
-2026-11-02T23:54:10  auto_learn      
-2026-11-02T23:55:49  auto_learn      
-2026-11-02T23:57:27  auto_learn      
-2026-11-02T23:59:04  auto_learn      
-2026-11-03T00:00:42  auto_learn      
-2026-11-03T00:02:20  auto_learn      
-2026-11-03T01:55:44  parallel_learn  
+2026-11-03T05:32:32  auto_learn      
+2026-11-03T05:34:11  auto_learn      
+2026-11-03T05:35:50  auto_learn      
+2026-11-03T05:37:29  auto_learn      
+2026-11-03T05:39:09  auto_learn      
+2026-11-03T05:40:48  auto_learn      
+2026-11-03T05:42:27  auto_learn      
+2026-11-03T05:44:06  auto_learn      
+2026-11-03T05:45:45  auto_learn      
+2026-11-03T05:47:25  auto_learn      
+2026-11-03T05:49:05  auto_learn      
+2026-11-03T05:50:43  auto_learn      
+2026-11-03T05:52:21  auto_learn      
+2026-11-03T06:41:13  auto_learn      
+2026-11-03T08:52:35  parallel_learn  
 ```
 
 ## Architecture de l'agent
