@@ -3846,6 +3846,18 @@
     {
       "from": "Verbal Behavior",
       "to": "Behavioral neuroscience"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Behavioral analytics"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Network behavior anomaly detection"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Human behavior"
     }
   ],
   "frontier": [
