@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-03 19:09:59 UTC
+**Dernière mise à jour** : 2026-11-04 00:25:22 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **267** |
-| Arêtes du graphe | 427 |
+| Arêtes du graphe | 430 |
 | Frontière (à explorer) | 35 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 72 |
+| Actions dernières 24 h | 74 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-03T05:40:48  auto_learn      
-2026-11-03T05:42:27  auto_learn      
-2026-11-03T05:44:06  auto_learn      
-2026-11-03T05:45:45  auto_learn      
-2026-11-03T05:47:25  auto_learn      
-2026-11-03T05:49:05  auto_learn      
-2026-11-03T05:50:43  auto_learn      
-2026-11-03T05:52:21  auto_learn      
-2026-11-03T06:41:13  auto_learn      
-2026-11-03T08:52:35  parallel_learn  
-2026-11-03T11:41:41  plan            Anax (dragonfly)
-2026-11-03T11:41:42  skill_reinforc  
-2026-11-03T11:41:42  branch          Anax (dragonfly)
-2026-11-03T16:59:36  auto_learn      
-2026-11-03T17:26:46  parallel_learn  
+2026-11-03T20:52:39  auto_learn      
+2026-11-03T20:54:16  auto_learn      
+2026-11-03T20:55:54  auto_learn      
+2026-11-03T20:57:32  auto_learn      
+2026-11-03T20:59:09  auto_learn      
+2026-11-03T21:00:48  auto_learn      
+2026-11-03T21:02:26  auto_learn      
+2026-11-03T21:04:04  auto_learn      
+2026-11-03T21:05:41  auto_learn      
+2026-11-03T21:07:18  auto_learn      
+2026-11-03T22:42:41  parallel_learn  
+2026-11-03T23:16:12  auto_learn      
+2026-11-04T00:07:12  plan            User behavior analytics
+2026-11-04T00:07:13  skill_reinforc  
+2026-11-04T00:07:13  branch          User behavior analytics
 ```
 
 ## Architecture de l'agent
