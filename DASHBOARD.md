@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-05 05:28:05 UTC
+**Dernière mise à jour** : 2026-11-05 14:06:44 UTC
 
 ## Objectif de l'agent
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-04T18:19:09  auto_learn      
-2026-11-04T18:20:48  auto_learn      
-2026-11-04T18:22:27  auto_learn      
-2026-11-04T18:24:06  auto_learn      
-2026-11-04T18:25:44  auto_learn      
-2026-11-04T18:27:22  auto_learn      
-2026-11-04T19:12:47  parallel_learn  
-2026-11-04T21:16:28  auto_learn      
-2026-11-04T21:26:38  plan            Anax (dragonfly)
-2026-11-04T21:26:39  skill_reinforc  
-2026-11-04T21:26:39  branch          Anax (dragonfly)
-2026-11-05T00:39:53  parallel_learn  
-2026-11-05T01:43:11  plan            Chewing gum
-2026-11-05T01:43:12  skill_reinforc  
-2026-11-05T01:43:12  branch          Chewing gum
+2026-11-05T05:23:20  auto_learn      
+2026-11-05T05:24:57  auto_learn      
+2026-11-05T05:26:34  auto_learn      
+2026-11-05T05:28:11  auto_learn      
+2026-11-05T05:29:48  auto_learn      
+2026-11-05T05:31:24  auto_learn      
+2026-11-05T05:33:02  auto_learn      
+2026-11-05T05:34:39  auto_learn      
+2026-11-05T05:36:16  auto_learn      
+2026-11-05T05:37:52  auto_learn      
+2026-11-05T06:37:07  auto_learn      
+2026-11-05T08:45:46  parallel_learn  
+2026-11-05T09:06:53  plan            Chewing gum
+2026-11-05T09:06:54  skill_reinforc  
+2026-11-05T09:06:54  branch          Chewing gum
 ```
 
 ## Architecture de l'agent
