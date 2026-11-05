@@ -6044,3 +6044,4 @@
 {"ts": "2026-11-04T21:26:38.293882+00:00", "type": "plan", "title": "Anax (dragonfly)", "action": "branch", "priority": 137.0, "reason": "leaf_no_children", "skill": "entomologie"}
 {"ts": "2026-11-04T21:26:39.061152+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 9.07, "article": "Anax (dragonfly)"}
 {"ts": "2026-11-04T21:26:39.061203+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "entomologie"}
+{"ts": "2026-11-05T00:39:53.075848+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
