@@ -3858,6 +3858,18 @@
     {
       "from": "User behavior analytics",
       "to": "Human behavior"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavior"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavioral momentum"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavioral epigenetics"
     }
   ],
   "frontier": [
@@ -3895,7 +3907,8 @@
     "Behavioral change theories",
     "Biocultural evolution",
     "Film and television adaptations of video games",
-    "Evolutionary ecology"
+    "Evolutionary ecology",
+    "Behavioral epigenetics"
   ],
   "max_depth": 9
 }

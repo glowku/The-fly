@@ -345,7 +345,7 @@
     "last_reinforced": "2026-11-04T15:12:59.196073+00:00"
   },
   "comportement": {
-    "level": 9.02,
+    "level": 9.12,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -411,8 +411,9 @@
       "Behavior informatics",
       "Association for Behavior Analysis International",
       "Verbal Behavior",
-      "User behavior analytics"
+      "User behavior analytics",
+      "Experimental analysis of behavior"
     ],
-    "last_reinforced": "2026-11-04T00:07:13.225056+00:00"
+    "last_reinforced": "2026-11-05T17:34:31.031973+00:00"
   }
 }
