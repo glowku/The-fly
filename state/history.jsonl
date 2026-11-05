@@ -6045,3 +6045,6 @@
 {"ts": "2026-11-04T21:26:39.061152+00:00", "type": "skill_reinforce", "skill": "entomologie", "new_level": 9.07, "article": "Anax (dragonfly)"}
 {"ts": "2026-11-04T21:26:39.061203+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "entomologie"}
 {"ts": "2026-11-05T00:39:53.075848+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
+{"ts": "2026-11-05T01:43:11.911466+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "vol_et_aerodynamique"}
+{"ts": "2026-11-05T01:43:12.609215+00:00", "type": "skill_reinforce", "skill": "vol_et_aerodynamique", "new_level": 9.1, "article": "Chewing gum"}
+{"ts": "2026-11-05T01:43:12.609277+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "vol_et_aerodynamique"}
