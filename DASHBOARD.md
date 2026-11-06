@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-05 21:47:49 UTC
+**Dernière mise à jour** : 2026-11-06 02:00:14 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 97 |
+| Actions dernières 24 h | 95 |
 
 ## Répartition de la qualité
 
@@ -55,8 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-05T21:15:44  auto_learn      
-2026-11-05T21:17:24  auto_learn      
 2026-11-05T21:19:03  auto_learn      
 2026-11-05T21:20:41  auto_learn      
 2026-11-05T21:22:19  auto_learn      
@@ -70,6 +68,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-11-05T21:35:26  auto_learn      
 2026-11-05T21:37:03  auto_learn      
 2026-11-05T21:38:40  auto_learn      
+2026-11-05T23:03:40  parallel_learn  
+2026-11-05T23:35:54  auto_learn      
 ```
 
 ## Architecture de l'agent
