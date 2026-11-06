@@ -6174,3 +6174,4 @@
 {"ts": "2026-11-06T03:33:56.408112+00:00", "type": "plan", "title": "Chewing gum", "action": "branch", "priority": 121.0, "reason": "leaf_no_children", "skill": "ecologie"}
 {"ts": "2026-11-06T03:33:56.806619+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 9.16, "article": "Chewing gum"}
 {"ts": "2026-11-06T03:33:56.806659+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-11-06T04:19:15.752612+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Dialectical behavior therapy"}
