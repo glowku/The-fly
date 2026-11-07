@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-07 05:44:51 UTC
+**Dernière mise à jour** : 2026-11-07 12:34:22 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **267** |
-| Arêtes du graphe | 433 |
+| Arêtes du graphe | 435 |
 | Frontière (à explorer) | 36 |
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 73 |
+| Actions dernières 24 h | 47 |
 
 ## Répartition de la qualité
 
@@ -55,11 +55,6 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-06T17:48:40  auto_learn      
-2026-11-06T17:50:16  auto_learn      
-2026-11-06T17:51:53  auto_learn      
-2026-11-06T19:00:41  plan            Anax (dragonfly)
-2026-11-06T19:00:41  skill_reinforc  
 2026-11-06T19:00:41  branch          Anax (dragonfly)
 2026-11-06T20:10:33  parallel_learn  
 2026-11-06T23:04:21  auto_learn      
@@ -70,6 +65,11 @@ Formule d'optimisation : `coverage_factor × average_quality`
 2026-11-07T05:04:11  plan            Chewing gum
 2026-11-07T05:04:11  skill_reinforc  
 2026-11-07T05:04:11  branch          Chewing gum
+2026-11-07T05:52:21  auto_learn      
+2026-11-07T08:02:27  parallel_learn  
+2026-11-07T11:52:14  plan            Eccentricity (behavior)
+2026-11-07T11:52:15  skill_reinforc  
+2026-11-07T11:52:15  branch          Eccentricity (behavior)
 ```
 
 ## Architecture de l'agent
