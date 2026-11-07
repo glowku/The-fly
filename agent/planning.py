@@ -1,6 +1,9 @@
-"""Planification : priorise nœuds sans enfants, frontier, qualité faible, anti-doublon."""
+"""Planification : priorise nœuds sans enfants, frontier, qualité faible, anti-doublon.
+
+Anti-dérive v1 : seuils de relevance relevés + hard junk.
+"""
 from .memory import load_coverage, load_quality, log_event
-from .skills import pick_skill_to_develop, score_relevance, load_skills
+from .skills import pick_skill_to_develop, score_relevance, load_skills, is_hard_junk
 
 
 def _children_of(title: str, cov: dict) -> list:
@@ -11,6 +14,10 @@ def _score_candidate(title: str, cov: dict, qual: dict, target_skill: str, actio
     score = 0.0
     nodes = cov.get("nodes", {})
     frontier = cov.get("frontier", [])
+
+    # Hard junk → éliminé
+    if is_hard_junk(title):
+        return -999.0
 
     # --- qualité faible → repair ---
     if title in qual:
@@ -24,20 +31,20 @@ def _score_candidate(title: str, cov: dict, qual: dict, target_skill: str, actio
     if title in nodes:
         kids = _children_of(title, cov)
         if len(kids) == 0:
-            score += 55.0  # gros bonus : créer des sous-branches
+            score += 55.0
         elif len(kids) < 3:
             score += 25.0 + (3 - len(kids)) * 5
         else:
-            score -= 5.0  # déjà bien branché
+            score -= 5.0
 
     # --- frontier jamais écrite ---
     if title in frontier and title not in nodes:
         score += 40.0
         score += max(0, 10 - len(title) * 0.2)
 
-    # --- pertinence skill ---
+    # --- pertinence skill / domaine (anti-dérive) ---
     rel = score_relevance(title)
-    score += rel * 30
+    score += rel * 45  # poids augmenté (était 30)
 
     skills = load_skills()
     skill = skills.get(target_skill, {})
@@ -55,7 +62,7 @@ def _score_candidate(title: str, cov: dict, qual: dict, target_skill: str, actio
     # --- action bonuses ---
     if action == "repair":
         score += 35
-    elif action == "branch":  # feuille sans enfants
+    elif action == "branch":
         score += 45
     elif action == "expand":
         score += 10
@@ -65,10 +72,19 @@ def _score_candidate(title: str, cov: dict, qual: dict, target_skill: str, actio
         score -= 12
     if title.count(" ") > 5:
         score -= 6
-    banned = ["anus", "human", "mammal", "penis", "vagina", "rectum", "feces",
-              "computer security", "password", "malware"]
+
+    banned = [
+        "anus", "human", "mammal", "penis", "vagina", "rectum", "feces",
+        "computer security", "password", "malware", "chewing gum",
+        "eccentricity", "angular velocity", "angular momentum",
+        "tv series", "album", "film", "song", "episode",
+    ]
     if any(b in title.lower() for b in banned):
-        score -= 100
+        score -= 120
+
+    # Pénalité si relevance trop basse
+    if rel < 0.25:
+        score -= 40
 
     return score
 
@@ -77,8 +93,8 @@ def pick_next_target(strategy: str = "value"):
     """
     Priorités :
     1. repair articles faibles
-    2. branch : nœuds SANS sous-enfants (étendre le graphe)
-    3. expand : frontier non encore écrite
+    2. branch : nœuds SANS sous-enfants
+    3. expand : frontier non encore écrite (relevance ≥ 0.35)
     4. re-expand : nœuds avec peu d'enfants
     """
     cov = load_coverage()
@@ -92,7 +108,7 @@ def pick_next_target(strategy: str = "value"):
         if info.get("score", 10) < 6.5:
             candidates.append((title, "repair", info.get("score", 0)))
 
-    # 2. feuilles sans enfants (nœuds existants à ramifier)
+    # 2. feuilles sans enfants
     for title in nodes:
         kids = _children_of(title, cov)
         if len(kids) == 0:
@@ -100,9 +116,9 @@ def pick_next_target(strategy: str = "value"):
         elif len(kids) < 2:
             candidates.append((title, "re-expand", len(kids)))
 
-    # 3. frontier jamais écrite
+    # 3. frontier jamais écrite — seuil relevé (anti-dérive)
     for t in cov.get("frontier", []):
-        if t not in nodes and score_relevance(t) >= 0.2:
+        if t not in nodes and score_relevance(t) >= 0.35 and not is_hard_junk(t):
             candidates.append((t, "expand", 0))
 
     if not candidates:
@@ -118,7 +134,19 @@ def pick_next_target(strategy: str = "value"):
     scored = []
     for title, action, extra in candidates:
         prio = _score_candidate(title, cov, qual, target_skill, action)
+        if prio < -500:  # hard junk
+            continue
         scored.append((prio, title, action, extra))
+
+    if not scored:
+        root = cov.get("root", "Fly")
+        return {
+            "title": root,
+            "reason": "bootstrap_after_filter",
+            "action": "expand",
+            "priority": 999,
+            "skill": target_skill,
+        }
 
     scored.sort(reverse=True)
     prio, title, action, extra = scored[0]
@@ -137,6 +165,7 @@ def pick_next_target(strategy: str = "value"):
         "priority": round(prio, 1),
         "reason": reason,
         "skill": target_skill,
+        "relevance": score_relevance(title),
     })
 
     return {
@@ -149,8 +178,13 @@ def pick_next_target(strategy: str = "value"):
 
 
 def register_discovered(title: str, depth: int, parent: str | None = None):
-    """Ajoute à la frontier seulement si pertinent et pas déjà connu."""
-    if score_relevance(title) < 0.2:
+    """Ajoute à la frontier seulement si pertinent et pas déjà connu.
+
+    Seuil anti-dérive : relevance ≥ 0.38 + pas de hard junk.
+    """
+    if is_hard_junk(title):
+        return
+    if score_relevance(title) < 0.38:
         return
 
     from .memory import save_coverage
@@ -158,7 +192,6 @@ def register_discovered(title: str, depth: int, parent: str | None = None):
     nodes = cov.get("nodes", {})
     frontier = cov.get("frontier", [])
 
-    # déjà un nœud écrit → juste l'edge parent
     if title in nodes:
         if parent:
             edge = {"from": parent, "to": title}
