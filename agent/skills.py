@@ -1,7 +1,6 @@
 """Système de compétences (nœuds neuronaux) que l'agent développe.
 
-Anti-dérive v1 : score de résonance domaine strict (keyword + density).
-Pas d'embedding vectoriel pour rester léger (requests only).
+Anti-dérive v2 : résonance domaine insecte/diptère stricte.
 """
 import json
 import re
@@ -11,7 +10,6 @@ from .memory import STATE_DIR, log_event
 
 SKILLS_FILE = STATE_DIR / "skills.json"
 
-# Compétences de base pour le domaine "Fly" / entomologie / evolution
 DEFAULT_SKILLS = {
     "entomologie": {
         "level": 1.0,
@@ -51,24 +49,25 @@ DEFAULT_SKILLS = {
     },
 }
 
-# --- Anti-dérive : noyau sémantique du domaine ---
 CORE_TERMS = {
     "fly", "flies", "mouche", "diptera", "insect", "insecte", "arthropod",
     "wing", "halter", "haltere", "larva", "maggot", "pupa",
     "entomolog", "thorax", "antenna", "exoskeleton", "compound eye",
     "hover", "swarm", "pollinat", "parasitoid", "mimicry",
     "neoptera", "paleoptera", "apterygota", "alate",
+    "housefly", "blowfly", "hoverfly", "drosophila", "mosquito",
+    "mouthpart", "proboscis", "spiracle",
 }
 
 STRONG_TERMS = CORE_TERMS | {
     "flight", "aerodynamic", "wingbeat", "ecology", "evolution",
     "speciation", "adaptation", "phylogen", "fossil", "devonian",
     "predator", "parasite", "decomposer", "courtship", "foraging",
-    "mouthpart", "spiracle", "blowfly", "hoverfly", "tachinid",
-    "mosquito", "fruit fly", "housefly", "drosophila",
+    "tachinid", "fruit fly", "insect flight", "insect ecology",
+    "insect behavior", "insect behaviour", "insect morphology",
 }
 
-# Patterns explicitement hors-domaine (même s'ils matchent vaguement "behavior" etc.)
+# Hors-domaine explicite (pêche à la mouche, bières, orgs, psych pure…)
 HARD_JUNK = re.compile(
     r"("
     r"chewing gum|bubblegum|"
@@ -80,7 +79,16 @@ HARD_JUNK = re.compile(
     r"wuornos|wing chun|"
     r"isbn|doi\s*:|academic press|publisher|"
     r"software|operating system|programming language|"
-    r"human anatomy|mammal|penis|vagina|rectum|feces|anus"
+    r"human anatomy|mammal|penis|vagina|rectum|feces|anus|"
+    # parasites chat / auto_learn observés
+    r"fly\s*fishing|fishing|angler|trout|salmon|"
+    r"brewery|brewing|brewpub|beer|allagash|"
+    r"bibliography|company|corporation|inc\.|ltd|"
+    r"behavioral\s+momentum|association for the study|"
+    r"animal behaviour\)|journal of|proceedings of|"
+    r"critique of some current|george\s+c\.?\s*williams|"
+    r"password|nasdaq|stock|"
+    r"football|basketball|baseball|soccer"
     r")",
     re.I,
 )
@@ -88,7 +96,15 @@ HARD_JUNK = re.compile(
 NOISE_TERMS = {
     "computer security", "cybersecurity", "encryption", "password",
     "malware", "firewall", "software", "programming",
+    "fishing", "brewery", "brewing", "bibliography",
+    "behavioral momentum",
 }
+
+# "fly" seul dans un titre type "fly fishing" / "butterfly" ambigu
+FALSE_FLY = re.compile(
+    r"\b(fly\s*fishing|fishing\s*fly|butterfly|flying\s+fox|flywheel|flyby)\b",
+    re.I,
+)
 
 
 def load_skills():
@@ -102,14 +118,12 @@ def save_skills(skills):
 
 
 def pick_skill_to_develop():
-    """Choisit la compétence la plus faible à renforcer."""
     skills = load_skills()
     sorted_skills = sorted(skills.items(), key=lambda kv: kv[1]["level"])
     return sorted_skills[0][0] if sorted_skills else "entomologie"
 
 
 def reinforce_skill(skill_name: str, article_title: str, score: float):
-    """Renforce une compétence après un article réussi."""
     skills = load_skills()
     if skill_name not in skills:
         return
@@ -127,24 +141,24 @@ def reinforce_skill(skill_name: str, article_title: str, score: float):
 
 
 def is_hard_junk(title: str, extract: str = "") -> bool:
-    """Rejet absolu (patterns explicitement hors-domaine)."""
     text = f"{title} {extract}".strip()
     if not text:
         return True
-    return bool(HARD_JUNK.search(text))
+    if HARD_JUNK.search(text):
+        return True
+    if FALSE_FLY.search(title or ""):
+        return True
+    return False
+
+
+def is_domain_node(title: str, extract: str = "") -> bool:
+    """True seulement si clairement ancré insecte/diptère/vol."""
+    if is_hard_junk(title, extract):
+        return False
+    return score_relevance(title, extract) >= 0.35
 
 
 def score_relevance(title: str, extract: str = "") -> float:
-    """
-    Score de résonance domaine [0.0 – 1.0].
-
-    Logique v1 (anti-dérive) :
-    1. Hard junk → 0.0 immédiat
-    2. Noise pure (sécurité/ordi) sans ancrage insecte → 0.0
-    3. Hits sur CORE / STRONG + keywords des skills
-    4. Bonus si le titre contient un terme cœur
-    5. Pénalité si le titre est trop générique ("behavior", "adaptation") sans ancrage
-    """
     if not title or not title.strip():
         return 0.0
 
@@ -154,7 +168,6 @@ def score_relevance(title: str, extract: str = "") -> float:
     text = (title + " " + (extract or "")).lower()
     title_l = title.lower()
 
-    # Noise pure sans ancrage insecte
     if any(n in text for n in NOISE_TERMS) and not any(c in text for c in CORE_TERMS):
         return 0.0
 
@@ -166,31 +179,44 @@ def score_relevance(title: str, extract: str = "") -> float:
             rel = min(1.0, hits / 2.5) * (0.45 + skill.get("level", 0) / 25)
             best_skill = max(best_skill, rel)
 
-    # Densité de termes forts / cœur
     core_hits = sum(1 for t in CORE_TERMS if t in text)
     strong_hits = sum(1 for t in STRONG_TERMS if t in text)
 
     core_score = min(1.0, core_hits / 2.0) * 0.55
     strong_score = min(1.0, strong_hits / 3.0) * 0.35
 
-    # Bonus titre
     title_bonus = 0.0
     if any(s in title_l for s in CORE_TERMS):
         title_bonus = 0.35
     elif any(s in title_l for s in STRONG_TERMS):
         title_bonus = 0.18
 
-    # Pénalité termes trop génériques sans ancrage
     generic = {"behavior", "behaviour", "adaptation", "ecology", "evolution", "morphology"}
     if any(g in title_l for g in generic) and core_hits == 0 and strong_hits <= 1:
-        title_bonus -= 0.25
+        title_bonus -= 0.35
+
+    # Organisations / livres génériques
+    if re.search(r"\b(association|society|journal|review of|company|brewery)\b", title_l):
+        if core_hits == 0:
+            return 0.0
 
     score = best_skill + core_score + strong_score + title_bonus
     score = max(0.0, min(1.0, score))
 
-    # Plancher si ancrage très fort dans le titre
-    if any(s in title_l for s in ("fly", "diptera", "insect", "haltere", "mosquito", "larva", "maggot")):
-        score = max(score, 0.72)
+    # Plancher UNIQUEMENT pour vrais ancres insecte (pas "fly fishing")
+    strong_anchor = (
+        "diptera", "housefly", "hoverfly", "blowfly", "drosophila", "mosquito",
+        "haltere", "halteres", "insect flight", "insect ecology", "insect morphology",
+        "maggot", "larva", "compound eye", "musca",
+    )
+    if any(s in title_l for s in strong_anchor):
+        score = max(score, 0.75)
+    elif re.search(r"\b(insect|insects)\b", title_l):
+        score = max(score, 0.65)
+    elif re.search(r"\b(fly|flies)\b", title_l) and not FALSE_FLY.search(title_l):
+        # "Fly" / "Fruit fly" OK ; pas le boost auto si extract hors-sujet
+        if core_hits >= 1 or strong_hits >= 2:
+            score = max(score, 0.70)
 
     return round(score, 3)
 
