@@ -1,49 +1,93 @@
-"""Système de compétences (nœuds neuronaux) que l'agent développe."""
+"""Système de compétences (nœuds neuronaux) que l'agent développe.
+
+Anti-dérive v1 : score de résonance domaine strict (keyword + density).
+Pas d'embedding vectoriel pour rester léger (requests only).
+"""
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from .memory import STATE_DIR, log_event
 
 SKILLS_FILE = STATE_DIR / "skills.json"
 
-# Compétences de base pour le domaine "Fly" / entomologie
+# Compétences de base pour le domaine "Fly" / entomologie / evolution
 DEFAULT_SKILLS = {
     "entomologie": {
         "level": 1.0,
         "description": "Connaissance générale des insectes",
-        "keywords": ["insect", "insecte", "diptera", "fly", "mouche", "entomology"],
+        "keywords": ["insect", "insecte", "diptera", "fly", "mouche", "entomology", "arthropod"],
         "articles": [],
     },
     "anatomie_insecte": {
         "level": 0.5,
         "description": "Morphologie et organes des insectes",
-        "keywords": ["wing", "aile", "halter", "thorax", "antenne", "compound eye", "exoskeleton"],
+        "keywords": ["wing", "aile", "halter", "thorax", "antenne", "compound eye", "exoskeleton", "spiracle", "mouthpart"],
         "articles": [],
     },
     "vol_et_aerodynamique": {
         "level": 0.3,
         "description": "Mécanismes du vol des diptères",
-        "keywords": ["flight", "vol", "aerodynamic", "wingbeat", "hover", "maneuver"],
+        "keywords": ["flight", "vol", "aerodynamic", "wingbeat", "hover", "maneuver", "lift", "drag"],
         "articles": [],
     },
     "ecologie": {
         "level": 0.4,
         "description": "Rôle écologique, habitats, interactions",
-        "keywords": ["ecology", "habitat", "pollinat", "predator", "parasite", "larva"],
+        "keywords": ["ecology", "habitat", "pollinat", "predator", "parasite", "larva", "maggot", "decomposer"],
         "articles": [],
     },
     "evolution": {
         "level": 0.2,
         "description": "Histoire évolutive des diptères",
-        "keywords": ["evolution", "fossil", "phylogen", "adaptation", "speciation"],
+        "keywords": ["evolution", "fossil", "phylogen", "adaptation", "speciation", "radiation", "devonian", "paleoptera", "neoptera"],
         "articles": [],
     },
     "comportement": {
         "level": 0.3,
         "description": "Comportements (reproduction, alimentation, social)",
-        "keywords": ["behavior", "mating", "feeding", "swarm", "courtship"],
+        "keywords": ["behavior", "behaviour", "mating", "feeding", "swarm", "courtship", "foraging", "mimicry"],
         "articles": [],
     },
+}
+
+# --- Anti-dérive : noyau sémantique du domaine ---
+CORE_TERMS = {
+    "fly", "flies", "mouche", "diptera", "insect", "insecte", "arthropod",
+    "wing", "halter", "haltere", "larva", "maggot", "pupa",
+    "entomolog", "thorax", "antenna", "exoskeleton", "compound eye",
+    "hover", "swarm", "pollinat", "parasitoid", "mimicry",
+    "neoptera", "paleoptera", "apterygota", "alate",
+}
+
+STRONG_TERMS = CORE_TERMS | {
+    "flight", "aerodynamic", "wingbeat", "ecology", "evolution",
+    "speciation", "adaptation", "phylogen", "fossil", "devonian",
+    "predator", "parasite", "decomposer", "courtship", "foraging",
+    "mouthpart", "spiracle", "blowfly", "hoverfly", "tachinid",
+    "mosquito", "fruit fly", "housefly", "drosophila",
+}
+
+# Patterns explicitement hors-domaine (même s'ils matchent vaguement "behavior" etc.)
+HARD_JUNK = re.compile(
+    r"("
+    r"chewing gum|bubblegum|"
+    r"eccentricity\s*\(behavior\)|eccentricity\s*\(behaviour\)|"
+    r"tv series|television|album|film|song|band|episode|novel|game|"
+    r"airline|aircraft manufacturer|institute|university|"
+    r"password|malware|firewall|encryption|computer security|cybersecurity|"
+    r"angular velocity|angular momentum|"
+    r"wuornos|wing chun|"
+    r"isbn|doi\s*:|academic press|publisher|"
+    r"software|operating system|programming language|"
+    r"human anatomy|mammal|penis|vagina|rectum|feces|anus"
+    r")",
+    re.I,
+)
+
+NOISE_TERMS = {
+    "computer security", "cybersecurity", "encryption", "password",
+    "malware", "firewall", "software", "programming",
 }
 
 
@@ -60,7 +104,6 @@ def save_skills(skills):
 def pick_skill_to_develop():
     """Choisit la compétence la plus faible à renforcer."""
     skills = load_skills()
-    # Priorité aux plus faibles
     sorted_skills = sorted(skills.items(), key=lambda kv: kv[1]["level"])
     return sorted_skills[0][0] if sorted_skills else "entomologie"
 
@@ -70,7 +113,6 @@ def reinforce_skill(skill_name: str, article_title: str, score: float):
     skills = load_skills()
     if skill_name not in skills:
         return
-    # Gain proportionnel au score de l'article
     gain = min(0.15, score / 100.0)
     skills[skill_name]["level"] = round(min(10.0, skills[skill_name]["level"] + gain), 2)
     if article_title not in skills[skill_name]["articles"]:
@@ -84,22 +126,73 @@ def reinforce_skill(skill_name: str, article_title: str, score: float):
     })
 
 
+def is_hard_junk(title: str, extract: str = "") -> bool:
+    """Rejet absolu (patterns explicitement hors-domaine)."""
+    text = f"{title} {extract}".strip()
+    if not text:
+        return True
+    return bool(HARD_JUNK.search(text))
+
+
 def score_relevance(title: str, extract: str = "") -> float:
-    skills = load_skills()
-    text = (title + " " + extract).lower()
-    noise = ["computer security", "cybersecurity", "encryption", "password", "malware", "firewall"]
-    if any(n in text for n in noise) and not any(x in text for x in ("insect", "fly", "diptera")):
+    """
+    Score de résonance domaine [0.0 – 1.0].
+
+    Logique v1 (anti-dérive) :
+    1. Hard junk → 0.0 immédiat
+    2. Noise pure (sécurité/ordi) sans ancrage insecte → 0.0
+    3. Hits sur CORE / STRONG + keywords des skills
+    4. Bonus si le titre contient un terme cœur
+    5. Pénalité si le titre est trop générique ("behavior", "adaptation") sans ancrage
+    """
+    if not title or not title.strip():
         return 0.0
-    best = 0.0
+
+    if is_hard_junk(title, extract):
+        return 0.0
+
+    text = (title + " " + (extract or "")).lower()
+    title_l = title.lower()
+
+    # Noise pure sans ancrage insecte
+    if any(n in text for n in NOISE_TERMS) and not any(c in text for c in CORE_TERMS):
+        return 0.0
+
+    skills = load_skills()
+    best_skill = 0.0
     for skill in skills.values():
-        hits = sum(1 for kw in skill["keywords"] if kw.lower() in text)
+        hits = sum(1 for kw in skill.get("keywords", []) if kw.lower() in text)
         if hits:
-            rel = min(1.0, hits / 3.0) * (0.5 + skill["level"] / 20)
-            best = max(best, rel)
-    strong = ["fly", "mouche", "diptera", "insect", "insecte", "wing", "aile", "larva", "maggot", "ecology", "evolution"]
-    if any(s in title.lower() for s in strong):
-        best = max(best, 0.7)
-    return round(best, 3)
+            rel = min(1.0, hits / 2.5) * (0.45 + skill.get("level", 0) / 25)
+            best_skill = max(best_skill, rel)
+
+    # Densité de termes forts / cœur
+    core_hits = sum(1 for t in CORE_TERMS if t in text)
+    strong_hits = sum(1 for t in STRONG_TERMS if t in text)
+
+    core_score = min(1.0, core_hits / 2.0) * 0.55
+    strong_score = min(1.0, strong_hits / 3.0) * 0.35
+
+    # Bonus titre
+    title_bonus = 0.0
+    if any(s in title_l for s in CORE_TERMS):
+        title_bonus = 0.35
+    elif any(s in title_l for s in STRONG_TERMS):
+        title_bonus = 0.18
+
+    # Pénalité termes trop génériques sans ancrage
+    generic = {"behavior", "behaviour", "adaptation", "ecology", "evolution", "morphology"}
+    if any(g in title_l for g in generic) and core_hits == 0 and strong_hits <= 1:
+        title_bonus -= 0.25
+
+    score = best_skill + core_score + strong_score + title_bonus
+    score = max(0.0, min(1.0, score))
+
+    # Plancher si ancrage très fort dans le titre
+    if any(s in title_l for s in ("fly", "diptera", "insect", "haltere", "mosquito", "larva", "maggot")):
+        score = max(score, 0.72)
+
+    return round(score, 3)
 
 
 def get_skills_summary():
