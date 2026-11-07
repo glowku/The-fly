@@ -2,10 +2,28 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=https://glowku.github.io/The-fly/docs/brain-core.html">
-<title>loading brain-core</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>the-fly · brain core</title>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
-<body style="background:#040604;color:#5dba4a;font:12px monospace;padding:20px">
-Si tu vois ce texte, le vrai brain-core arrive au prochain commit.
+<body style="margin:0;background:#040604;color:#5dba4a;font:12px monospace">
+<div id="b" style="padding:16px">chargement graphe neural…</div>
+<script>
+(function(){
+  var n = 7;
+  var fetches = [];
+  for (var i = 0; i < n; i++) fetches.push(fetch("bc" + i + ".txt?t=" + Date.now()).then(function(r){ return r.text(); }));
+  Promise.all(fetches).then(function(parts){
+    var B64 = parts.join("");
+    var bin = Uint8Array.from(atob(B64), function(c){ return c.charCodeAt(0); });
+    var html = pako.ungzip(bin, { to: "string" });
+    document.open();
+    document.write(html);
+    document.close();
+  }).catch(function(e){
+    document.getElementById("b").textContent = "Erreur: " + e;
+  });
+})();
+</script>
 </body>
 </html>
