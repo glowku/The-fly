@@ -6291,3 +6291,4 @@
 {"ts": "2026-11-07T21:33:42.361382+00:00", "type": "plan", "title": "Anax (dragonfly)", "action": "branch", "priority": 145.0, "reason": "leaf_no_children", "skill": "ecologie", "relevance": 1.0}
 {"ts": "2026-11-07T21:33:42.846773+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 9.24, "article": "Anax (dragonfly)"}
 {"ts": "2026-11-07T21:33:42.846833+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "ecologie"}
+{"ts": "2026-11-07T23:16:03.245889+00:00", "type": "parallel_learn", "skill": "evolution", "learned": 0, "workers": 4, "parent": "Dialectical behavior therapy"}
