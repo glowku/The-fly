@@ -5,97 +5,36 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>the-fly · brain</title>
 <style>
-  html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #040604;
-  }
-  #frame {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-    background: #040604;
-  }
+  html, body { margin: 0; height: 100%; width: 100%; overflow: hidden; background: #040604; }
+  #frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: #040604; }
   #chatHost {
-    position: fixed;
-    right: 12px;
-    bottom: 12px;
-    z-index: 99999;
-    width: min(360px, calc(100vw - 24px));
-    max-height: 45vh;
-    display: flex;
-    flex-direction: column;
-    background: rgba(8,12,8,.97);
-    border: 1px solid #1a261a;
-    color: #c4d0c4;
-    font: 12px/1.45 ui-monospace, Consolas, monospace;
+    position: fixed; right: 12px; bottom: 12px; z-index: 99999;
+    width: min(360px, calc(100vw - 24px)); max-height: 45vh;
+    display: flex; flex-direction: column;
+    background: rgba(8,12,8,.97); border: 1px solid #1a261a;
+    color: #c4d0c4; font: 12px/1.45 ui-monospace, Consolas, monospace;
   }
   #chatHost header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10px;
-    border-bottom: 1px solid #1a261a;
-    color: #5dba4a;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    font-size: 11px;
-    cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 10px; border-bottom: 1px solid #1a261a; color: #5dba4a;
+    text-transform: uppercase; letter-spacing: .08em; font-size: 11px; cursor: pointer;
   }
   #chatHost.collapsed { max-height: 40px; overflow: hidden; }
-  #chatLog {
-    flex: 1;
-    overflow: auto;
-    padding: 10px;
-    min-height: 100px;
-  }
-  #chatLog .m {
-    margin-bottom: 8px;
-    padding: 8px 10px;
-    border-radius: 6px;
-    white-space: pre-wrap;
-    font-size: 11.5px;
-  }
+  #chatLog { flex: 1; overflow: auto; padding: 10px; min-height: 100px; }
+  #chatLog .m { margin-bottom: 8px; padding: 8px 10px; border-radius: 6px; white-space: pre-wrap; font-size: 11.5px; }
   #chatLog .u { background: #122012; border: 1px solid #1e2e1e; margin-left: 20%; }
   #chatLog .b { background: #0a0e0a; border: 1px solid #1a261a; margin-right: 10%; }
   #chatLog .src { margin-top: 6px; color: #5a6a5a; font-size: 10px; }
-  #chatForm {
-    display: flex;
-    gap: 6px;
-    padding: 8px;
-    border-top: 1px solid #1a261a;
-  }
-  #chatForm input {
-    flex: 1;
-    background: #060906;
-    border: 1px solid #1a261a;
-    color: #c4d0c4;
-    font: inherit;
-    padding: 7px 9px;
-  }
-  #chatForm button {
-    border: 1px solid #3a5a3a;
-    color: #5dba4a;
-    background: transparent;
-    padding: 6px 10px;
-    cursor: pointer;
-    font: inherit;
-  }
+  #chatForm { display: flex; gap: 6px; padding: 8px; border-top: 1px solid #1a261a; }
+  #chatForm input { flex: 1; background: #060906; border: 1px solid #1a261a; color: #c4d0c4; font: inherit; padding: 7px 9px; }
+  #chatForm button { border: 1px solid #3a5a3a; color: #5dba4a; background: transparent; padding: 6px 10px; cursor: pointer; font: inherit; }
   #chatStatus { padding: 4px 10px 8px; font-size: 10px; color: #5a6a5a; }
 </style>
 </head>
 <body>
-<iframe
-  id="frame"
-  title="The-fly neural graph"
+<iframe id="frame" title="The-fly neural graph"
   src="https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html"
-  allowfullscreen
-></iframe>
+  allowfullscreen></iframe>
 
 <div id="chatHost">
   <header id="chatToggle"><span>🪰 fly chat · wiki</span><span id="chatMin">–</span></header>
@@ -104,7 +43,7 @@
     <input id="chatQ" type="text" placeholder="ex: comment vole la mouche ?" autocomplete="off" />
     <button type="submit">→</button>
   </form>
-  <div id="chatStatus">mode wiki (extraits articles)</div>
+  <div id="chatStatus">mode wiki · filtre insecte strict</div>
 </div>
 
 <script>
@@ -134,19 +73,40 @@
     return d;
   }
 
+  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|association for the study|animal behaviour\)|journal of|proceedings of|critique of some current|isbn|tv series|album|football|nasdaq/i;
+  var CORE = /\b(insect|insects|diptera|housefly|hoverfly|blowfly|drosophila|mosquito|haltere|halteres|maggot|larva|musca|entomolog|arthropod|compound eye|insect flight|insect ecology)\b/i;
+  var FLY_OK = /\b(fly|flies)\b/i;
+
   var FR = {
-    vol: ["flight", "wing", "hover", "insect flight", "haltere", "halteres"],
+    vol: ["flight", "insect flight", "wing", "haltere", "hover"],
     vole: ["flight", "fly", "wing", "hover"],
     voler: ["flight", "fly", "wing"],
-    mouche: ["fly", "flies", "diptera", "housefly", "drosophila"],
+    mouche: ["fly", "housefly", "diptera", "musca", "drosophila"],
     mouches: ["fly", "flies", "diptera"],
-    aile: ["wing", "haltere", "flight"],
+    mange: ["feeding", "mouthpart", "proboscis", "foraging", "maggot", "diet"],
+    manger: ["feeding", "mouthpart", "foraging"],
+    alimentation: ["feeding", "foraging", "mouthpart"],
+    aile: ["wing", "haltere", "insect wing"],
     ailes: ["wing", "haltere"],
+    yeux: ["compound eye"],
+    larve: ["larva", "maggot"],
     insecte: ["insect", "entomology", "arthropod"],
-    insectes: ["insect", "entomology"],
-    "évolution": ["evolution", "evolution of insects"],
-    evolution: ["evolution", "evolution of insects"]
+    insectes: ["insect", "entomology"]
   };
+
+  function isJunk(title) {
+    if (!title) return true;
+    if (JUNK.test(title)) return true;
+    if (/fly\s*fishing/i.test(title)) return true;
+    return false;
+  }
+
+  function isDomain(title) {
+    if (isJunk(title)) return false;
+    if (CORE.test(title)) return true;
+    if (FLY_OK.test(title) && !/fishing|brewery|butterfly/i.test(title)) return true;
+    return false;
+  }
 
   function terms(q) {
     var words = (q || "").toLowerCase().split(/[^a-z0-9àâäéèêëïîôùûüç]+/).filter(function (w) { return w.length > 1; });
@@ -155,20 +115,22 @@
       t[w] = 1;
       (FR[w] || []).forEach(function (x) { t[x.toLowerCase()] = 1; });
     });
-    if (words.some(function (w) { return ["vol", "vole", "voler", "mouche", "aile", "flight", "fly"].indexOf(w) >= 0; })) {
-      ["insect flight", "haltere", "wing", "fly", "diptera"].forEach(function (x) { t[x] = 1; });
+    if (words.some(function (w) { return ["vol", "vole", "voler", "mouche", "mange", "manger", "aile", "flight", "fly"].indexOf(w) >= 0; })) {
+      ["insect flight", "haltere", "wing", "fly", "diptera", "housefly", "feeding", "mouthpart"].forEach(function (x) { t[x] = 1; });
     }
     return Object.keys(t);
   }
 
   function scoreTitle(title, ts) {
+    if (!isDomain(title)) return -1;
     var low = (title || "").toLowerCase();
     var sc = 0;
     ts.forEach(function (w) {
       if (low === w) sc += 6;
       else if (low.indexOf(w) >= 0) sc += 3;
     });
-    if (/flight|haltere|wing|fly|diptera|hover/i.test(low)) sc += 1.5;
+    if (/housefly|insect flight|haltere|diptera|drosophila|mouthpart|maggot/i.test(low)) sc += 4;
+    else if (/insect|flight|wing|hover|fly\b/i.test(low)) sc += 1.5;
     return sc;
   }
 
@@ -192,17 +154,17 @@
   function snippets(md, ts) {
     if (!md) return "";
     var lines = md.split(/\n+/).map(function (l) { return l.trim(); }).filter(function (l) {
-      return l && l[0] !== "#" && l.length > 40;
+      return l && l[0] !== "#" && l.length > 40 && !JUNK.test(l);
     });
     var scored = lines.map(function (l) {
       var low = l.toLowerCase();
       var s = 0;
       ts.forEach(function (w) { if (low.indexOf(w) >= 0) s += 2; });
-      if (/flight|wing|haltere|insect|fly|hover/i.test(low)) s += 1;
+      if (/flight|wing|haltere|insect|fly|hover|feeding|mouth|larva|maggot/i.test(low)) s += 1;
       return { l: l, s: s };
     }).filter(function (x) { return x.s > 0; }).sort(function (a, b) { return b.s - a.s; });
     var out = [];
-    for (var i = 0; i < scored.length && out.length < 5; i++) {
+    for (var i = 0; i < scored.length && out.length < 4; i++) {
       out.push("• " + scored[i].l.replace(/^[-*]\s*/, "").slice(0, 280));
     }
     if (!out.length) {
@@ -211,36 +173,49 @@
     return out.join("\n");
   }
 
+  function isGreeting(q) {
+    return /^(salut|hello|hi|hey|bonjour|bonsoir|ça\s*va|ca\s*va|comment\s+tu\s+vas|comment\s+allez|who\s+are\s+you|qui\s+es)/i.test((q || "").trim());
+  }
+
   async function answer(q) {
+    if (isGreeting(q) || (q || "").trim().length < 4) {
+      return {
+        answer: "Salut — je suis The-fly. Pose une question de mouche : vol, haltères, yeux, alimentation, larves…",
+        sources: []
+      };
+    }
+
     var ts = terms(q);
     var nodes = await loadCoverage();
-    var titles = Object.keys(nodes);
-    ["Insect flight", "Halteres", "Fly", "Wing", "Hover", "Diptera", "Insect"].forEach(function (t) {
+    var titles = Object.keys(nodes).filter(isDomain);
+    ["Insect flight", "Halteres", "Housefly", "Fly", "Wing", "Hover", "Diptera", "Insect", "Compound eye", "Maggot"].forEach(function (t) {
       if (titles.indexOf(t) < 0) titles.push(t);
     });
+
     var ranked = titles.map(function (t) {
       return { t: t, sc: scoreTitle(t, ts) };
     }).filter(function (x) { return x.sc > 0; }).sort(function (a, b) { return b.sc - a.sc; }).slice(0, 5);
 
     if (!ranked.length) {
-      ranked = ["Insect flight", "Halteres", "Fly"].map(function (t) { return { t: t, sc: 1 }; });
+      ranked = ["Housefly", "Insect flight", "Halteres", "Fly"].map(function (t) { return { t: t, sc: 1 }; });
     }
 
     var chunks = [];
     var used = [];
     for (var i = 0; i < Math.min(3, ranked.length); i++) {
+      if (isJunk(ranked[i].t)) continue;
       var md = await fetchWiki(ranked[i].t);
       var sn = snippets(md, ts);
       used.push(ranked[i].t);
       if (sn) chunks.push("【" + ranked[i].t + "】\n" + sn);
     }
     var text = chunks.length
-      ? ("D’après le noyau wiki The-fly :\n\n" + chunks.join("\n\n"))
-      : ("Nœuds proches :\n" + ranked.map(function (x) { return "• " + x.t; }).join("\n"));
+      ? ("D’après le noyau wiki (insecte) :\n\n" + chunks.join("\n\n"))
+      : "Rien de solide dans le domaine insecte pour ça. Essaie « comment vole la mouche » ou « comment mange la mouche »."
     return { answer: text, sources: used };
   }
 
-  add("bot", "Graphe neural chargé dans la page. Pose une question (ex: « comment vole la mouche ? »).");
+  add("bot", "Cerveau mouche en ligne. Questions du type : vol, haltères, alimentation, larves.");
 
   form.addEventListener("submit", async function (ev) {
     ev.preventDefault();
