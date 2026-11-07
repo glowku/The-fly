@@ -44,10 +44,7 @@
 </style>
 </head>
 <body>
-<!-- SITE rendu (pas de raw, pas de redirect) -->
-<iframe id="frame" title="The-fly neural graph"
-  src="https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html"
-  allowfullscreen></iframe>
+<iframe id="frame" title="The-fly neural graph" src="brain-core.html" allowfullscreen></iframe>
 
 <div id="chatHost">
   <header id="chatToggle">
@@ -72,7 +69,6 @@
   var GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
   var MODEL = "openai/gpt-oss-20b";
   var LOCAL_API = ["http://127.0.0.1:8765", "http://localhost:8765"];
-
   var logEl = document.getElementById("chatLog");
   var form = document.getElementById("chatForm");
   var input = document.getElementById("chatQ");
@@ -81,7 +77,6 @@
   var keyInput = document.getElementById("groqKey");
   var apiBase = null;
 
-  // UI
   document.getElementById("chatToggle").onclick = function (e) {
     if (e.target.id === "chatMin") return;
     host.classList.toggle("collapsed");
@@ -97,10 +92,10 @@
     else localStorage.removeItem("THEFLY_GROQ_KEY");
     keyInput.value = "";
     refreshStatus();
-    add("bot", k ? "Clé enregistrée localement. Je peux raisonner en mouche." : "Clé effacée.");
+    add("bot", k ? "Clé enregistrée. Mode IA mouche actif." : "Clé effacée.");
   };
   if (localStorage.getItem("THEFLY_GROQ_KEY")) {
-    keyInput.placeholder = "clé Groq déjà enregistrée (laisse vide)";
+    keyInput.placeholder = "clé Groq déjà enregistrée";
   }
 
   function add(role, text) {
@@ -114,7 +109,6 @@
 
   var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|association for the study|animal behaviour\)|journal of|proceedings of|critique of some current|isbn|tv series|album|football|nasdaq/i;
   var CORE = /\b(insect|insects|diptera|housefly|hoverfly|blowfly|drosophila|mosquito|haltere|halteres|maggot|larva|musca|entomolog|arthropod|compound eye|insect flight|insect ecology|proboscis|mouthpart)\b/i;
-
   var FR = {
     vol: ["flight", "insect flight", "wing", "haltere", "hover"],
     vole: ["flight", "fly", "wing", "hover"],
@@ -128,9 +122,7 @@
     ailes: ["wing", "haltere"],
     yeux: ["compound eye"],
     larve: ["larva", "maggot"],
-    insecte: ["insect", "entomology"],
-    pense: ["behavior", "swarm", "foraging", "insect"],
-    penser: ["behavior", "swarm", "foraging"]
+    insecte: ["insect", "entomology"]
   };
 
   function isJunk(t) { return !t || JUNK.test(t); }
@@ -193,7 +185,6 @@
     for (var i = 0; i < ranked.length; i++) {
       var md = await fetchWiki(ranked[i].t);
       if (!md) continue;
-      // strip junk lines, keep substance
       var body = md.split("\n").filter(function (l) {
         l = l.trim();
         return l && l[0] !== "#" && !JUNK.test(l) && l.length > 30;
@@ -213,69 +204,40 @@
     apiBase = null;
     return false;
   }
-
-  function groqKey() {
-    return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim();
-  }
+  function groqKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
 
   async function refreshStatus() {
     var local = await probeLocal();
     var key = !!groqKey();
-    if (local) {
-      st.textContent = "IA locale OK · " + apiBase;
-      st.className = "ok";
-    } else if (key) {
-      st.textContent = "IA mouche Groq (navigateur) · nœuds wiki";
-      st.className = "ok";
-    } else {
-      st.textContent = "Colle une clé Groq ci-dessus pour la VRAIE IA mouche";
-      st.className = "warn";
-    }
+    if (local) { st.textContent = "IA locale OK · " + apiBase; st.className = "ok"; }
+    else if (key) { st.textContent = "IA mouche Groq · nœuds wiki"; st.className = "ok"; }
+    else { st.textContent = "Colle une clé Groq pour la VRAIE IA mouche"; st.className = "warn"; }
   }
 
   async function callGroq(q, docs) {
     var key = groqKey();
     if (!key) throw new Error("no key");
-    var ctx = docs.map(function (d) {
-      return "### " + d.title + "\n" + d.text;
-    }).join("\n\n");
+    var ctx = docs.map(function (d) { return "### " + d.title + "\n" + d.text; }).join("\n\n");
     var prompt =
-      "Tu es THE-FLY : une intelligence artificielle qui RAISONNE COMME UNE MOUCHE.\n" +
-      "Tu as un cerveau de diptère branché sur un graphe de connaissance (nœuds wiki).\n" +
+      "Tu es THE-FLY : une intelligence qui RAISONNE COMME UNE MOUCHE.\n" +
+      "Cerveau de diptère branché sur un graphe de connaissance (nœuds wiki).\n" +
       "Domaine UNIQUE : mouches, insectes, diptères, vol, haltères, yeux composés, alimentation, larves, écologie.\n\n" +
-      "Style :\n" +
-      "- français, 60–140 mots\n" +
-      "- concret, sensoriel (ailes, flux d’air, goût, lumière), pas corporate\n" +
-      "- si on te salue, réponds en mouche brève puis invite une vraie question\n" +
-      "- n’invente pas ; base-toi sur les NŒUDS fournis\n" +
-      "- ignore brasseries, pêche à la mouche, associations, livres hors insecte\n" +
-      "- si le contexte est vide : dis-le et recentre sur le domaine\n\n" +
+      "Style : français, 60–140 mots, concret/sensoriel, pas corporate.\n" +
+      "Salutations : réponse brève de mouche puis invite une vraie question.\n" +
+      "N'invente pas ; base-toi sur les NŒUDS. Ignore brasseries, pêche à la mouche, associations.\n\n" +
       "Question: " + q + "\n\n" +
       "=== NŒUDS DU GRAPHE ===\n" + (ctx || "(aucun nœud pertinent)");
-
     var r = await fetch(GROQ_URL, {
       method: "POST",
-      headers: {
-        "Authorization": "Bearer " + key,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.35,
-        max_tokens: 500
-      })
+      headers: { "Authorization": "Bearer " + key, "Content-Type": "application/json" },
+      body: JSON.stringify({ model: MODEL, messages: [{ role: "user", content: prompt }], temperature: 0.35, max_tokens: 500 })
     });
-    if (!r.ok) {
-      var err = await r.text();
-      throw new Error("Groq HTTP " + r.status + " " + err.slice(0, 120));
-    }
+    if (!r.ok) { var err = await r.text(); throw new Error("Groq HTTP " + r.status + " " + err.slice(0, 120)); }
     var data = await r.json();
     return data.choices[0].message.content.trim();
   }
 
   async function answer(q) {
-    // 1) serveur local Graph-RAG si dispo
     if (!apiBase) await probeLocal();
     if (apiBase) {
       var r = await fetch(apiBase + "/api/chat", {
@@ -286,33 +248,18 @@
       var j = await r.json();
       return { answer: j.answer || JSON.stringify(j), sources: j.sources || [], mode: "local-api" };
     }
-
-    // 2) vraie IA navigateur via Groq + nœuds
     var docs = await pickNodes(q, 5);
     var sources = docs.map(function (d) { return d.title; });
     if (groqKey()) {
       var text = await callGroq(q, docs);
       return { answer: text, sources: sources, mode: "groq-nodes" };
     }
-
-    // 3) fallback extractif intelligent (sans clé)
-    if (!docs.length) {
-      return {
-        answer: "Pas de nœud insecte solide. Ajoute une clé Groq pour que je raisonne vraiment.",
-        sources: [],
-        mode: "empty"
-      };
-    }
+    if (!docs.length) return { answer: "Pas de nœud insecte. Ajoute une clé Groq.", sources: [], mode: "empty" };
     var bits = docs.slice(0, 3).map(function (d) {
       var line = d.text.split("\n").filter(Boolean)[0] || "";
       return "• " + d.title + ": " + line.slice(0, 220);
     });
-    return {
-      answer: "[mode sans clé — extraits nœuds]\n" + bits.join("\n") +
-        "\n\n→ colle une clé Groq (gsk_…) au-dessus pour la VRAIE IA mouche.",
-      sources: sources,
-      mode: "extractive"
-    };
+    return { answer: "[sans clé]\n" + bits.join("\n") + "\n\n→ colle une clé Groq pour la VRAIE IA mouche.", sources: sources, mode: "extractive" };
   }
 
   form.addEventListener("submit", async function (ev) {
@@ -336,7 +283,7 @@
     }
   });
 
-  add("bot", "Je suis The-fly. Branche une clé Groq (locale) pour raisonner avec les nœuds du graphe — pas un dump wiki brut.");
+  add("bot", "The-fly en ligne. Graphe local + IA mouche (clé Groq).");
   refreshStatus();
 })();
 </script>
