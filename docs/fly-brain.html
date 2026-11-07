@@ -1,1 +1,17 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title>loading</title></head><body><p>Restoring… refresh in a moment.</p><script>location.replace('https://raw.githubusercontent.com/glowku/The-fly/e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html')</script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>the-fly · brain</title>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+</head>
+<body>
+<script>
+/* payload inlined from restored fly-brain + fly-chat.js hook */
+fetch('https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html').then(r=>r.text()).then(html=>{
+  document.open();
+  document.write(html);
+  document.close();
+  const s=document.createElement('script');s.src='fly-chat.js';document.body.appendChild(s);
+}).catch(e=>{document.body.textContent='Erreur chargement UI: '+e;});
+</script>
+</body></html>
