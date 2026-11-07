@@ -4,29 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>the-fly · brain</title>
-<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+<style>
+  html,body{margin:0;height:100%;background:#040604;color:#5dba4a;
+    font:12px/1.4 ui-monospace,Consolas,monospace}
+  #boot{padding:24px}
+</style>
 </head>
-<body style="background:#040604;color:#5dba4a;font:12px monospace;padding:20px">
-Chargement du graphe neural…
+<body>
+<div id="boot">Chargement du graphe neural The-fly…</div>
 <script>
-Promise.all([
-  fetch('fb_part_0.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_1.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_2.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_3.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_4.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_5.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_6.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_7.txt?t='+Date.now()).then(r=>r.text()),
-  fetch('fb_part_8.txt?t='+Date.now()).then(r=>r.text())
-]).then(parts => {
-  const B64 = parts.join("");
-  const bin = Uint8Array.from(atob(B64), c => c.charCodeAt(0));
-  const html = pako.ungzip(bin, {to: "string"});
-  document.open();
-  document.write(html);
-  document.close();
-}).catch(e => { document.body.textContent = "Erreur: " + e; });
+(function () {
+  // IMPORTANT: pas de location.replace — on reste sur github.io
+  // On injecte l'UI d'origine dans la page (même origine Pages)
+  var SRC = "https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html";
+  fetch(SRC)
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.text();
+    })
+    .then(function (html) {
+      document.open();
+      document.write(html);
+      document.close();
+      // chat non-destructif
+      var s = document.createElement("script");
+      s.src = "fly-chat.js?t=" + Date.now();
+      s.onerror = function () {
+        console.warn("fly-chat.js introuvable");
+      };
+      document.body.appendChild(s);
+    })
+    .catch(function (e) {
+      document.getElementById("boot").textContent =
+        "Erreur chargement UI: " + e +
+        " — essaie un hard refresh (Ctrl+Shift+R)";
+    });
+})();
 </script>
 </body>
 </html>
