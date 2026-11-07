@@ -6254,3 +6254,4 @@
 {"ts": "2026-11-07T11:52:15.928825+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 9.22, "article": "Eccentricity (behavior)"}
 {"ts": "2026-11-07T11:52:15.928874+00:00", "type": "branch", "title": "Eccentricity (behavior)", "children_discovered": 0, "skill": "comportement"}
 {"ts": "2026-11-07T12:54:04.258632+00:00", "type": "auto_learn", "skill": "entomologie", "learned": false, "frontier_added": 0, "fresh": [], "parent": "Amateur Entomologists' Society", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
+{"ts": "2026-11-07T15:58:36.059441+00:00", "type": "parallel_learn", "skill": "entomologie", "learned": 0, "workers": 4, "parent": "Amateur Entomologists' Society"}
