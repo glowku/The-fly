@@ -3,6 +3,7 @@ import os
 import re
 import requests
 from .memory import load_coverage
+from .arxiv_source import search_domain, format_arxiv_context
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 # llama-3.3-70b-versatile est déprécié (shutdown free tier 16/08/2026)
@@ -28,6 +29,13 @@ def synthesize_article(
     parent_line = f"Ce concept est relié à **{parent}** dans le graphe." if parent else ""
 
     link_hint = ""
+    arxiv_block = ""
+    try:
+        papers = search_domain(title, max_results=3)
+        if papers:
+            arxiv_block = "Contexte arXiv (secondaire, ne pas inventer au-delà) :\n" + format_arxiv_context(papers, limit=2)
+    except Exception:
+        arxiv_block = ""
     if existing:
         sample = existing[:12]
         link_hint = (
@@ -41,6 +49,8 @@ Description : {description or '(aucune)'}
 
 Résumé source (base factuelle exclusive) :
 {summary[:1800]}
+
+{arxiv_block}
 
 {parent_line}
 
