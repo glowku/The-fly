@@ -204,7 +204,7 @@
     "last_reinforced": "2026-11-06T23:46:28.843216+00:00"
   },
   "ecologie": {
-    "level": 9.16,
+    "level": 9.24,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -269,9 +269,10 @@
       "Damselfly",
       "Chewing gum",
       "Evolutionary Ecology (journal)",
-      "Dragonfly"
+      "Dragonfly",
+      "Anax (dragonfly)"
     ],
-    "last_reinforced": "2026-11-06T03:33:56.806301+00:00"
+    "last_reinforced": "2026-11-07T21:33:42.846355+00:00"
   },
   "evolution": {
     "level": 9.16,
