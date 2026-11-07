@@ -5,40 +5,263 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>the-fly · brain</title>
 <style>
-  html,body{margin:0;height:100%;background:#040604;color:#5dba4a;
-    font:12px/1.4 ui-monospace,Consolas,monospace}
-  #boot{padding:24px}
+  html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #040604;
+  }
+  #frame {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    background: #040604;
+  }
+  #chatHost {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 99999;
+    width: min(360px, calc(100vw - 24px));
+    max-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(8,12,8,.97);
+    border: 1px solid #1a261a;
+    color: #c4d0c4;
+    font: 12px/1.45 ui-monospace, Consolas, monospace;
+  }
+  #chatHost header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid #1a261a;
+    color: #5dba4a;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  #chatHost.collapsed { max-height: 40px; overflow: hidden; }
+  #chatLog {
+    flex: 1;
+    overflow: auto;
+    padding: 10px;
+    min-height: 100px;
+  }
+  #chatLog .m {
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    font-size: 11.5px;
+  }
+  #chatLog .u { background: #122012; border: 1px solid #1e2e1e; margin-left: 20%; }
+  #chatLog .b { background: #0a0e0a; border: 1px solid #1a261a; margin-right: 10%; }
+  #chatLog .src { margin-top: 6px; color: #5a6a5a; font-size: 10px; }
+  #chatForm {
+    display: flex;
+    gap: 6px;
+    padding: 8px;
+    border-top: 1px solid #1a261a;
+  }
+  #chatForm input {
+    flex: 1;
+    background: #060906;
+    border: 1px solid #1a261a;
+    color: #c4d0c4;
+    font: inherit;
+    padding: 7px 9px;
+  }
+  #chatForm button {
+    border: 1px solid #3a5a3a;
+    color: #5dba4a;
+    background: transparent;
+    padding: 6px 10px;
+    cursor: pointer;
+    font: inherit;
+  }
+  #chatStatus { padding: 4px 10px 8px; font-size: 10px; color: #5a6a5a; }
 </style>
 </head>
 <body>
-<div id="boot">Chargement du graphe neural The-fly…</div>
+<iframe
+  id="frame"
+  title="The-fly neural graph"
+  src="https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html"
+  allowfullscreen
+></iframe>
+
+<div id="chatHost">
+  <header id="chatToggle"><span>🪰 fly chat · wiki</span><span id="chatMin">–</span></header>
+  <div id="chatLog"></div>
+  <form id="chatForm">
+    <input id="chatQ" type="text" placeholder="ex: comment vole la mouche ?" autocomplete="off" />
+    <button type="submit">→</button>
+  </form>
+  <div id="chatStatus">mode wiki (extraits articles)</div>
+</div>
+
 <script>
 (function () {
-  // IMPORTANT: pas de location.replace — on reste sur github.io
-  // On injecte l'UI d'origine dans la page (même origine Pages)
-  var SRC = "https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html";
-  fetch(SRC)
-    .then(function (r) {
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      return r.text();
-    })
-    .then(function (html) {
-      document.open();
-      document.write(html);
-      document.close();
-      // chat non-destructif
-      var s = document.createElement("script");
-      s.src = "fly-chat.js?t=" + Date.now();
-      s.onerror = function () {
-        console.warn("fly-chat.js introuvable");
-      };
-      document.body.appendChild(s);
-    })
-    .catch(function (e) {
-      document.getElementById("boot").textContent =
-        "Erreur chargement UI: " + e +
-        " — essaie un hard refresh (Ctrl+Shift+R)";
+  var RAW = "https://raw.githubusercontent.com/glowku/The-fly/main";
+  var logEl = document.getElementById("chatLog");
+  var form = document.getElementById("chatForm");
+  var input = document.getElementById("chatQ");
+  var host = document.getElementById("chatHost");
+
+  document.getElementById("chatToggle").onclick = function (e) {
+    if (e.target.id === "chatMin") return;
+    host.classList.toggle("collapsed");
+  };
+  document.getElementById("chatMin").onclick = function (e) {
+    e.stopPropagation();
+    host.classList.toggle("collapsed");
+    e.target.textContent = host.classList.contains("collapsed") ? "+" : "–";
+  };
+
+  function add(role, text) {
+    var d = document.createElement("div");
+    d.className = "m " + (role === "user" ? "u" : "b");
+    d.textContent = text;
+    logEl.appendChild(d);
+    logEl.scrollTop = logEl.scrollHeight;
+    return d;
+  }
+
+  var FR = {
+    vol: ["flight", "wing", "hover", "insect flight", "haltere", "halteres"],
+    vole: ["flight", "fly", "wing", "hover"],
+    voler: ["flight", "fly", "wing"],
+    mouche: ["fly", "flies", "diptera", "housefly", "drosophila"],
+    mouches: ["fly", "flies", "diptera"],
+    aile: ["wing", "haltere", "flight"],
+    ailes: ["wing", "haltere"],
+    insecte: ["insect", "entomology", "arthropod"],
+    insectes: ["insect", "entomology"],
+    "évolution": ["evolution", "evolution of insects"],
+    evolution: ["evolution", "evolution of insects"]
+  };
+
+  function terms(q) {
+    var words = (q || "").toLowerCase().split(/[^a-z0-9àâäéèêëïîôùûüç]+/).filter(function (w) { return w.length > 1; });
+    var t = {};
+    words.forEach(function (w) {
+      t[w] = 1;
+      (FR[w] || []).forEach(function (x) { t[x.toLowerCase()] = 1; });
     });
+    if (words.some(function (w) { return ["vol", "vole", "voler", "mouche", "aile", "flight", "fly"].indexOf(w) >= 0; })) {
+      ["insect flight", "haltere", "wing", "fly", "diptera"].forEach(function (x) { t[x] = 1; });
+    }
+    return Object.keys(t);
+  }
+
+  function scoreTitle(title, ts) {
+    var low = (title || "").toLowerCase();
+    var sc = 0;
+    ts.forEach(function (w) {
+      if (low === w) sc += 6;
+      else if (low.indexOf(w) >= 0) sc += 3;
+    });
+    if (/flight|haltere|wing|fly|diptera|hover/i.test(low)) sc += 1.5;
+    return sc;
+  }
+
+  async function loadCoverage() {
+    try {
+      var r = await fetch(RAW + "/state/coverage.json?t=" + Date.now());
+      if (!r.ok) return {};
+      var j = await r.json();
+      return j.nodes || {};
+    } catch (e) { return {}; }
+  }
+
+  async function fetchWiki(title) {
+    try {
+      var r = await fetch(RAW + "/wiki/" + encodeURIComponent(title) + ".md?t=" + Date.now());
+      if (!r.ok) return "";
+      return await r.text();
+    } catch (e) { return ""; }
+  }
+
+  function snippets(md, ts) {
+    if (!md) return "";
+    var lines = md.split(/\n+/).map(function (l) { return l.trim(); }).filter(function (l) {
+      return l && l[0] !== "#" && l.length > 40;
+    });
+    var scored = lines.map(function (l) {
+      var low = l.toLowerCase();
+      var s = 0;
+      ts.forEach(function (w) { if (low.indexOf(w) >= 0) s += 2; });
+      if (/flight|wing|haltere|insect|fly|hover/i.test(low)) s += 1;
+      return { l: l, s: s };
+    }).filter(function (x) { return x.s > 0; }).sort(function (a, b) { return b.s - a.s; });
+    var out = [];
+    for (var i = 0; i < scored.length && out.length < 5; i++) {
+      out.push("• " + scored[i].l.replace(/^[-*]\s*/, "").slice(0, 280));
+    }
+    if (!out.length) {
+      lines.slice(0, 3).forEach(function (l) { out.push("• " + l.slice(0, 280)); });
+    }
+    return out.join("\n");
+  }
+
+  async function answer(q) {
+    var ts = terms(q);
+    var nodes = await loadCoverage();
+    var titles = Object.keys(nodes);
+    ["Insect flight", "Halteres", "Fly", "Wing", "Hover", "Diptera", "Insect"].forEach(function (t) {
+      if (titles.indexOf(t) < 0) titles.push(t);
+    });
+    var ranked = titles.map(function (t) {
+      return { t: t, sc: scoreTitle(t, ts) };
+    }).filter(function (x) { return x.sc > 0; }).sort(function (a, b) { return b.sc - a.sc; }).slice(0, 5);
+
+    if (!ranked.length) {
+      ranked = ["Insect flight", "Halteres", "Fly"].map(function (t) { return { t: t, sc: 1 }; });
+    }
+
+    var chunks = [];
+    var used = [];
+    for (var i = 0; i < Math.min(3, ranked.length); i++) {
+      var md = await fetchWiki(ranked[i].t);
+      var sn = snippets(md, ts);
+      used.push(ranked[i].t);
+      if (sn) chunks.push("【" + ranked[i].t + "】\n" + sn);
+    }
+    var text = chunks.length
+      ? ("D’après le noyau wiki The-fly :\n\n" + chunks.join("\n\n"))
+      : ("Nœuds proches :\n" + ranked.map(function (x) { return "• " + x.t; }).join("\n"));
+    return { answer: text, sources: used };
+  }
+
+  add("bot", "Graphe neural chargé dans la page. Pose une question (ex: « comment vole la mouche ? »).");
+
+  form.addEventListener("submit", async function (ev) {
+    ev.preventDefault();
+    var q = (input.value || "").trim();
+    if (!q) return;
+    input.value = "";
+    add("user", q);
+    var pending = add("bot", "…");
+    try {
+      var res = await answer(q);
+      pending.textContent = res.answer;
+      if (res.sources && res.sources.length) {
+        var s = document.createElement("div");
+        s.className = "src";
+        s.textContent = "sources: " + res.sources.join(" · ");
+        pending.appendChild(s);
+      }
+    } catch (e) {
+      pending.textContent = "Erreur: " + e.message;
+    }
+  });
 })();
 </script>
 </body>
