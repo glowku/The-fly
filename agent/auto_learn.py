@@ -5,7 +5,7 @@ Auto-learning :
 - priorise les liens du parent et du voisinage récent
 - Groq guidé par parent + contexte graphe
 - seeds en dernier recours
-- filtre insecte + anti-junk
+- filtre insecte + anti-junk + anti-dérive v1
 - depth = parent.depth + 1
 - 1 article par cycle rattaché au bon parent
 """
@@ -28,6 +28,7 @@ from .skills import (
     pick_skill_to_develop,
     reinforce_skill,
     score_relevance,
+    is_hard_junk,
 )
 from .perception import get_summary, search_titles, get_links, get_related
 from .planning import register_discovered, register_processed
@@ -71,7 +72,8 @@ JUNK_RE = re.compile(
     r"wuornos|chun|password|malware|software|episode|novel|game|"
     r"arxiv|academic press|publisher|isbn|doi|"
     r"computer security|cybersecurity|encryption|"
-    r"angular velocity|angular momentum)",
+    r"angular velocity|angular momentum|"
+    r"chewing gum|bubblegum|eccentricity\s*\(behavior\)|eccentricity\s*\(behaviour\))",
     re.I,
 )
 
@@ -87,11 +89,17 @@ def _similar(a: str, b: str) -> float:
 def _is_junk(title: str) -> bool:
     if not title or len(title) < 2:
         return True
+    if is_hard_junk(title):
+        return True
     return bool(JUNK_RE.search(title))
 
 
 def _is_insect_relevant(title: str) -> bool:
+    """Filtre anti-dérive strict."""
     if _is_junk(title):
+        return False
+    # Seuil relevé : 0.32 (était ~0.18)
+    if score_relevance(title) < 0.32:
         return False
     t = (title or "").lower()
     strong = (
@@ -116,7 +124,7 @@ def _is_insect_relevant(title: str) -> bool:
         for kw in sk.get("keywords", []):
             if kw.lower() in t:
                 return True
-    return score_relevance(title) >= 0.18
+    return score_relevance(title) >= 0.40
 
 
 def _already_known(title: str, nodes: dict, frontier: list, quality: dict) -> bool:
@@ -144,8 +152,7 @@ def _resolve_page(title: str):
     return None, None
 
 
-def _recent_nodes(nodes: dict, limit: int = 12) -> list[str]:
-    """Derniers nœuds créés (par created_at), pour comprendre le graphe."""
+def _recent_nodes(nodes: dict, limit: int = 12) -> list:
     items = []
     for title, info in nodes.items():
         ts = info.get("created_at") or info.get("updated_at") or ""
@@ -156,11 +163,7 @@ def _recent_nodes(nodes: dict, limit: int = 12) -> list[str]:
     return recent
 
 
-def _graph_neighborhood(parent: str | None, recent: list[str], limit: int = 40) -> list[str]:
-    """
-    Récupère les liens Wikipedia des derniers nœuds + du parent
-    → le 'complément' pour comprendre les mots et leurs relations.
-    """
+def _graph_neighborhood(parent: str | None, recent: list, limit: int = 40) -> list:
     sources = []
     if parent:
         sources.append(parent)
@@ -199,7 +202,7 @@ def _groq_suggest(
     skill_info: dict,
     root: str,
     parent: str | None,
-    recent: list[str],
+    recent: list,
     existing: list,
 ) -> list:
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
@@ -224,7 +227,8 @@ Recent nodes in the graph: {recent_s}
 Already in wiki — DO NOT suggest these: {existing_s}
 
 Return ONLY a valid JSON array of 8 real English Wikipedia article titles.
-Focus on insects, flies, diptera, and direct children of the parent.
+Focus STRICTLY on insects, flies, diptera, morphology, flight, ecology, evolution of insects.
+Reject anything about humans, media, gum, pure psychology, software, or unrelated behavior.
 No markdown, no text outside the JSON array.
 Example: ["Haltere", "Insect wing", "Compound eye"]"""
 
@@ -238,7 +242,7 @@ Example: ["Haltere", "Insect wing", "Compound eye"]"""
             json={
                 "model": MODEL,
                 "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.35,
+                "temperature": 0.30,
                 "max_tokens": 400,
             },
             timeout=60,
@@ -277,10 +281,12 @@ def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
         if not _is_insect_relevant(t):
             continue
         rel = score_relevance(t)
+        if rel < 0.35:
+            continue
         bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.25
         scored.append((rel + bonus, t))
     scored.sort(reverse=True)
-    return [t for s, t in scored if s >= 0.12][:8]
+    return [t for s, t in scored if s >= 0.32][:8]
 
 
 def _best_parent_for_skill(
@@ -291,7 +297,7 @@ def _best_parent_for_skill(
     skill_articles = set(skill.get("articles", []))
     keywords = [k.lower() for k in skill.get("keywords", [])]
 
-    children_count: dict[str, int] = {}
+    children_count: dict = {}
     for e in cov.get("edges", []):
         fr = e.get("from")
         if fr:
@@ -332,11 +338,6 @@ def _best_parent_for_skill(
 def _pick_parent_for_title(
     title: str, preferred: str | None, nodes: dict, cov: dict
 ) -> str | None:
-    """
-    Si le titre est un lien du preferred → garder preferred.
-    Sinon essayer de trouver un nœud existant qui linke vers ce titre.
-    Sinon preferred / root.
-    """
     if preferred:
         try:
             links = set(get_links(preferred, 30) + get_related(preferred, 10))
@@ -345,7 +346,6 @@ def _pick_parent_for_title(
         except Exception:
             pass
 
-    # chercher un parent déjà dans le graphe via edges
     for e in cov.get("edges", []):
         if _norm(e.get("to", "")) == _norm(title) and e.get("from") in nodes:
             return e["from"]
@@ -359,6 +359,10 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
         print(f"[auto_learn] cannot resolve: {title}", flush=True)
         return False
     title = canon
+
+    if not _is_insect_relevant(title):
+        print(f"[auto_learn] reject after resolve (hors-domaine): {title}", flush=True)
+        return False
 
     content = synthesize_article(
         title=title,
@@ -415,6 +419,7 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
             "score": score["score"],
             "objective": obj,
             "parent": parent,
+            "relevance": score_relevance(title),
         },
     )
     print(
@@ -426,7 +431,7 @@ def _expand_one(title: str, parent: str | None, skill_name: str) -> bool:
 
 def run_auto_learn():
     print("=" * 60, flush=True)
-    print("[auto_learn] cycle intelligent (voisinage + sous-parent)", flush=True)
+    print("[auto_learn] cycle intelligent (voisinage + anti-dérive v1)", flush=True)
 
     cov = load_coverage()
     quality = load_quality()
@@ -444,30 +449,26 @@ def run_auto_learn():
 
     existing = list(nodes.keys()) + list(quality.keys())
 
-    # 1) derniers nœuds pour comprendre le graphe
     recent = _recent_nodes(nodes, limit=12)
 
-    # 2) sous-parent
     parent = _best_parent_for_skill(skill_name, nodes, cov)
     if not parent:
         parent = root if root in nodes else (
             existing[0] if existing else None
         )
 
-    # 3) voisinage = liens des derniers nœuds + parent
     neighborhood = _graph_neighborhood(parent, recent, limit=40)
 
-    # 4) pool de candidats (ordre de priorité)
-    pool: list[str] = []
-    pool += neighborhood                          # liens réels du graphe
+    pool = []
+    pool += neighborhood
     pool += _candidates_from_frontier(skill_name, frontier)
     pool += _groq_suggest(
         skill_name, skill_info, root, parent, recent, existing
     )
     pool += SKILL_SEEDS.get(skill_name, SKILL_SEEDS["entomologie"])
 
-    seen: set[str] = set()
-    ordered: list[str] = []
+    seen = set()
+    ordered = []
     for t in pool:
         k = _norm(t)
         if k in seen:
@@ -475,7 +476,7 @@ def run_auto_learn():
         seen.add(k)
         ordered.append(t)
 
-    fresh: list[str] = []
+    fresh = []
     for title in ordered:
         if _already_known(title, nodes, frontier, quality):
             continue
@@ -496,7 +497,6 @@ def run_auto_learn():
         flush=True,
     )
 
-    # fallback : frontier pertinente (pas un seed random sous le mauvais parent)
     if not fresh and frontier:
         for t in frontier:
             if not _is_insect_relevant(t) or t in nodes:
@@ -516,7 +516,6 @@ def run_auto_learn():
 
     learned = False
     for title in fresh[:4]:
-        # rattacher au bon parent (lien réel si possible)
         real_parent = _pick_parent_for_title(title, parent, nodes, cov)
         if _expand_one(title, real_parent, skill_name):
             learned = True
