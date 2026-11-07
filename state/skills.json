@@ -63,7 +63,7 @@
     "last_reinforced": "2026-11-06T19:00:41.482647+00:00"
   },
   "anatomie_insecte": {
-    "level": 9.12,
+    "level": 9.22,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -129,7 +129,7 @@
       "Chewing gum",
       "Dragonfly"
     ],
-    "last_reinforced": "2026-11-05T09:06:54.062082+00:00"
+    "last_reinforced": "2026-11-07T05:04:11.892092+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 9.2,
