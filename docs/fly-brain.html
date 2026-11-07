@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>the-fly · brain</title>
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
-<body>
+<body style="background:#040604;color:#5dba4a;font:12px monospace;padding:20px">
+Chargement du graphe neural…
 <script>
-/* payload inlined from restored fly-brain + fly-chat.js hook */
-fetch('https://cdn.jsdelivr.net/gh/glowku/The-fly@e01040baffe08f04e746b6c8826ea829f8d047fe/docs/fly-brain.html').then(r=>r.text()).then(html=>{
+Promise.all([
+  fetch('fb_part_0.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_1.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_2.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_3.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_4.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_5.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_6.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_7.txt?t='+Date.now()).then(r=>r.text()),
+  fetch('fb_part_8.txt?t='+Date.now()).then(r=>r.text())
+]).then(parts => {
+  const B64 = parts.join("");
+  const bin = Uint8Array.from(atob(B64), c => c.charCodeAt(0));
+  const html = pako.ungzip(bin, {to: "string"});
   document.open();
   document.write(html);
   document.close();
-  const s=document.createElement('script');s.src='fly-chat.js';document.body.appendChild(s);
-}).catch(e=>{document.body.textContent='Erreur chargement UI: '+e;});
+}).catch(e => { document.body.textContent = "Erreur: " + e; });
 </script>
-</body></html>
+</body>
+</html>
