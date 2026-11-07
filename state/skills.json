@@ -345,7 +345,7 @@
     "last_reinforced": "2026-11-06T11:53:35.415731+00:00"
   },
   "comportement": {
-    "level": 9.12,
+    "level": 9.22,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -414,6 +414,6 @@
       "User behavior analytics",
       "Experimental analysis of behavior"
     ],
-    "last_reinforced": "2026-11-05T17:34:31.031973+00:00"
+    "last_reinforced": "2026-11-07T11:52:15.928550+00:00"
   }
 }

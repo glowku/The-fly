@@ -6250,3 +6250,6 @@
 {"ts": "2026-11-07T05:04:11.892456+00:00", "type": "branch", "title": "Chewing gum", "children_discovered": 0, "skill": "anatomie_insecte"}
 {"ts": "2026-11-07T05:52:21.872803+00:00", "type": "auto_learn", "skill": "comportement", "learned": false, "frontier_added": 0, "fresh": [], "parent": "The Entomologist's Record and Journal of Variation", "recent": ["Anax (dragonfly)", "Dragonfly", "Evolutionary Ecology (journal)", "Behavior Modification (journal)", "Addictive behavior", "Chewing gum", "Organizational behavior management", "Theatrical adaptation"]}
 {"ts": "2026-11-07T08:02:27.510415+00:00", "type": "parallel_learn", "skill": "comportement", "learned": 0, "workers": 4, "parent": "The Entomologist's Record and Journal of Variation"}
+{"ts": "2026-11-07T11:52:14.911197+00:00", "type": "plan", "title": "Eccentricity (behavior)", "action": "branch", "priority": 126.6, "reason": "leaf_no_children", "skill": "comportement"}
+{"ts": "2026-11-07T11:52:15.928825+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 9.22, "article": "Eccentricity (behavior)"}
+{"ts": "2026-11-07T11:52:15.928874+00:00", "type": "branch", "title": "Eccentricity (behavior)", "children_discovered": 0, "skill": "comportement"}
