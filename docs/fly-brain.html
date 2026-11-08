@@ -6,13 +6,10 @@
 <title>the-fly · brain</title>
 <style>
   html, body { margin: 0; height: 100%; width: 100%; overflow: hidden; background: #040604; }
-  #frame {
-    position: fixed; inset: 0; width: 100%; height: 100%; border: 0;
-    display: block; background: #040604;
-  }
+  #frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: #040604; }
   #chatHost {
     position: fixed; right: 12px; bottom: 12px; z-index: 99999;
-    width: min(380px, calc(100vw - 24px)); max-height: min(52vh, 520px);
+    width: min(400px, calc(100vw - 24px)); max-height: min(58vh, 560px);
     display: flex; flex-direction: column;
     background: rgba(8,12,8,.97); border: 1px solid #1a261a;
     color: #c4d0c4; font: 12px/1.45 ui-monospace, Consolas, monospace;
@@ -23,22 +20,24 @@
     text-transform: uppercase; letter-spacing: .08em; font-size: 11px; cursor: pointer;
   }
   #chatHost.collapsed { max-height: 40px; overflow: hidden; }
-  #chatLog { flex: 1; overflow: auto; padding: 10px; min-height: 120px; }
+  #chatLog { flex: 1; overflow: auto; padding: 10px; min-height: 140px; }
   #chatLog .m { margin-bottom: 8px; padding: 8px 10px; border-radius: 6px; white-space: pre-wrap; font-size: 11.5px; }
-  #chatLog .u { background: #122012; border: 1px solid #1e2e1e; margin-left: 18%; }
-  #chatLog .b { background: #0a0e0a; border: 1px solid #1a261a; margin-right: 8%; }
+  #chatLog .u { background: #122012; border: 1px solid #1e2e1e; margin-left: 14%; }
+  #chatLog .b { background: #0a0e0a; border: 1px solid #1a261a; margin-right: 6%; }
   #chatLog .src { margin-top: 6px; color: #5a6a5a; font-size: 10px; }
+  #chatLog pre { margin: 6px 0 0; padding: 8px; background: #060906; border: 1px solid #1a261a; overflow:auto; font-size: 11px; }
   #chatForm { display: flex; gap: 6px; padding: 8px; border-top: 1px solid #1a261a; }
   #chatForm input, #keyRow input {
     flex: 1; background: #060906; border: 1px solid #1a261a; color: #c4d0c4;
     font: inherit; padding: 7px 9px;
   }
-  #chatForm button, #keyRow button {
+  #chatForm button, #keyRow button, #links a {
     border: 1px solid #3a5a3a; color: #5dba4a; background: transparent;
-    padding: 6px 10px; cursor: pointer; font: inherit;
+    padding: 6px 10px; cursor: pointer; font: inherit; text-decoration: none;
   }
   #keyRow { display: flex; gap: 6px; padding: 6px 8px; border-top: 1px solid #141a14; }
-  #chatStatus { padding: 4px 10px 8px; font-size: 10px; color: #5a6a5a; }
+  #links { display: flex; gap: 6px; padding: 4px 8px 6px; }
+  #chatStatus { padding: 2px 10px 8px; font-size: 10px; color: #5a6a5a; }
   #chatStatus.ok { color: #5dba4a; }
   #chatStatus.warn { color: #c96; }
 </style>
@@ -48,16 +47,20 @@
 
 <div id="chatHost">
   <header id="chatToggle">
-    <span>🪰 IA mouche · nœuds</span>
+    <span>🪰 IA mouche · multi-mode</span>
     <span id="chatMin">–</span>
   </header>
   <div id="chatLog"></div>
   <div id="keyRow">
-    <input id="groqKey" type="password" placeholder="clé Groq gsk_… (stockée ici, pas sur GitHub)" />
+    <input id="groqKey" type="password" placeholder="clé Groq gsk_… (locale)" />
     <button type="button" id="saveKey">OK</button>
   </div>
+  <div id="links">
+    <a href="fly-skills.html" target="_blank">cortex skills</a>
+    <a href="fly-brain.html">brain</a>
+  </div>
   <form id="chatForm">
-    <input id="chatQ" type="text" placeholder="pense comme une mouche…" autocomplete="off" />
+    <input id="chatQ" type="text" placeholder="code, page HTML, vol, tech…" autocomplete="off" />
     <button type="submit">→</button>
   </form>
   <div id="chatStatus">init…</div>
@@ -69,6 +72,7 @@
   var GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
   var MODEL = "openai/gpt-oss-20b";
   var LOCAL_API = ["http://127.0.0.1:8765", "http://localhost:8765"];
+
   var logEl = document.getElementById("chatLog");
   var form = document.getElementById("chatForm");
   var input = document.getElementById("chatQ");
@@ -76,6 +80,7 @@
   var st = document.getElementById("chatStatus");
   var keyInput = document.getElementById("groqKey");
   var apiBase = null;
+  var history = [];
 
   document.getElementById("chatToggle").onclick = function (e) {
     if (e.target.id === "chatMin") return;
@@ -92,44 +97,58 @@
     else localStorage.removeItem("THEFLY_GROQ_KEY");
     keyInput.value = "";
     refreshStatus();
-    add("bot", k ? "Clé enregistrée. Mode IA mouche actif." : "Clé effacée.");
+    add("bot", k ? "Clé OK. Modes: insecte · code · créa · tech." : "Clé effacée.");
   };
-  if (localStorage.getItem("THEFLY_GROQ_KEY")) {
-    keyInput.placeholder = "clé Groq déjà enregistrée";
-  }
+  if (localStorage.getItem("THEFLY_GROQ_KEY")) keyInput.placeholder = "clé déjà enregistrée";
 
   function add(role, text) {
     var d = document.createElement("div");
     d.className = "m " + (role === "user" ? "u" : "b");
-    d.textContent = text;
+    // render code fences simply
+    if (role === "bot" && text.indexOf("```") >= 0) {
+      var parts = text.split(/```/);
+      d.innerHTML = "";
+      parts.forEach(function (p, i) {
+        if (i % 2 === 0) {
+          var t = document.createTextNode(p);
+          d.appendChild(t);
+        } else {
+          var pre = document.createElement("pre");
+          // drop language tag first line
+          var body = p.replace(/^\w*\n/, "");
+          pre.textContent = body;
+          d.appendChild(pre);
+        }
+      });
+    } else {
+      d.textContent = text;
+    }
     logEl.appendChild(d);
     logEl.scrollTop = logEl.scrollHeight;
     return d;
   }
 
-  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|association for the study|animal behaviour\)|journal of|proceedings of|critique of some current|isbn|tv series|album|football|nasdaq/i;
+  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|association for the study|animal behaviour\)|journal of|proceedings of|critique of some current|isbn|tv series|album|football|nasdaq|punk rock party|blowfly's party|bamboo fly rod|catskill|off color|two brothers|hovercraft|hovertrain|madama butterfly|chewing gum|cognitive behavioral|behavior therapy|behavior modification|vineland|nasdaq/i;
   var CORE = /\b(insect|insects|diptera|housefly|hoverfly|blowfly|drosophila|mosquito|haltere|halteres|maggot|larva|musca|entomolog|arthropod|compound eye|insect flight|insect ecology|proboscis|mouthpart)\b/i;
+
   var FR = {
     vol: ["flight", "insect flight", "wing", "haltere", "hover"],
     vole: ["flight", "fly", "wing", "hover"],
-    voler: ["flight", "fly", "wing"],
     mouche: ["fly", "housefly", "diptera", "musca", "drosophila"],
-    mouches: ["fly", "flies", "diptera"],
-    mange: ["feeding", "mouthpart", "proboscis", "foraging", "maggot", "diet"],
-    manger: ["feeding", "mouthpart", "foraging"],
-    alimentation: ["feeding", "foraging", "mouthpart", "proboscis"],
-    aile: ["wing", "haltere", "insect wing"],
-    ailes: ["wing", "haltere"],
+    mange: ["feeding", "mouthpart", "proboscis", "foraging", "maggot"],
+    aile: ["wing", "haltere"],
     yeux: ["compound eye"],
     larve: ["larva", "maggot"],
-    insecte: ["insect", "entomology"]
+    code: ["code", "html", "javascript", "python"],
+    coder: ["code", "html", "javascript", "python"],
+    page: ["html", "page", "css"]
   };
 
   function isJunk(t) { return !t || JUNK.test(t); }
   function isDomain(t) {
     if (isJunk(t)) return false;
     if (CORE.test(t)) return true;
-    if (/\b(fly|flies)\b/i.test(t) && !/fishing|brewery|butterfly/i.test(t)) return true;
+    if (/\b(fly|flies)\b/i.test(t) && !/fishing|brewery|butterfly|party|rod|boat/i.test(t)) return true;
     return false;
   }
   function terms(q) {
@@ -152,6 +171,17 @@
     return sc;
   }
 
+  /** Intent router — ce qui rend la mouche moins bête */
+  function detectMode(q) {
+    var s = (q || "").toLowerCase();
+    if (/^(salut|hello|hi|hey|bonjour|bonsoir|ça\s*va|ca\s*va|comment\s+tu\s+vas)/i.test(s.trim())) return "greet";
+    if (/(code|coder|script|python|javascript|html|css|fonction|algorithme|implement|génère|genere|ascii|svg)/i.test(s)) return "code";
+    if (/(page html|crée.*page|creer.*page|site|landing|visuali|représent|representation|dashboard)/i.test(s)) return "create";
+    if (/(ram|gpu|cpu|server|serveur|acheter|hardware|cloud|docker|api key|github|git )/i.test(s)) return "tech";
+    if (/(vol|vole|mouche|aile|haltere|haltère|insecte|larve|yeux|compound|diptere|diptère|mange|alimentation)/i.test(s)) return "insect";
+    return "general";
+  }
+
   async function loadCoverage() {
     try {
       var r = await fetch(RAW + "/state/coverage.json?t=" + Date.now());
@@ -172,7 +202,7 @@
     var ts = terms(q);
     var nodes = await loadCoverage();
     var titles = Object.keys(nodes).filter(isDomain);
-    ["Housefly", "Insect flight", "Halteres", "Fly", "Diptera", "Insect", "Compound eye", "Maggot", "Wing", "Hover"].forEach(function (t) {
+    ["Housefly", "Insect flight", "Halteres", "Fly", "Diptera", "Insect", "Compound eye", "Maggot", "Wing", "Hover", "Insect mouthparts"].forEach(function (t) {
       if (titles.indexOf(t) < 0) titles.push(t);
     });
     var ranked = titles.map(function (t) {
@@ -183,63 +213,109 @@
     }
     var docs = [];
     for (var i = 0; i < ranked.length; i++) {
+      if (isJunk(ranked[i].t)) continue;
       var md = await fetchWiki(ranked[i].t);
       if (!md) continue;
       var body = md.split("\n").filter(function (l) {
         l = l.trim();
         return l && l[0] !== "#" && !JUNK.test(l) && l.length > 30;
-      }).slice(0, 12).join("\n");
-      docs.push({ title: ranked[i].t, text: body.slice(0, 1200), score: ranked[i].sc });
+      }).slice(0, 10).join("\n");
+      docs.push({ title: ranked[i].t, text: body.slice(0, 1000) });
     }
     return docs;
   }
 
+  function groqKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
+
   async function probeLocal() {
     for (var i = 0; i < LOCAL_API.length; i++) {
       try {
-        var r = await fetch(LOCAL_API[i] + "/health", { signal: AbortSignal.timeout(600) });
+        var r = await fetch(LOCAL_API[i] + "/health", { signal: AbortSignal.timeout(500) });
         if (r.ok) { apiBase = LOCAL_API[i]; return true; }
       } catch (e) {}
     }
     apiBase = null;
     return false;
   }
-  function groqKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
 
   async function refreshStatus() {
     var local = await probeLocal();
     var key = !!groqKey();
-    if (local) { st.textContent = "IA locale OK · " + apiBase; st.className = "ok"; }
-    else if (key) { st.textContent = "IA mouche Groq · nœuds wiki"; st.className = "ok"; }
-    else { st.textContent = "Colle une clé Groq pour la VRAIE IA mouche"; st.className = "warn"; }
+    if (local) { st.textContent = "IA locale · " + apiBase; st.className = "ok"; }
+    else if (key) { st.textContent = "multi-mode Groq · insecte/code/créa/tech"; st.className = "ok"; }
+    else { st.textContent = "Colle une clé Groq pour débloquer tous les modes"; st.className = "warn"; }
   }
 
-  async function callGroq(q, docs) {
+  function systemFor(mode) {
+    var base =
+      "Tu es THE-FLY : agent intelligent avec personnalité de mouche savante.\n" +
+      "Tu es compétent en entomologie ET en ingénierie logicielle (HTML/CSS/JS/Python, archi agent, viz).\n" +
+      "Règles:\n" +
+      "- Réponds en français, clair, utile. 80–220 mots sauf si on demande du code long.\n" +
+      "- Si on demande du CODE ou une PAGE HTML : fournis le code complet dans des blocs ```language.\n" +
+      "- Si question tech (RAM, GPU, serveur) : réponds franchement, analogie mouche OK mais NE détourne PAS vers les larves.\n" +
+      "- Si question insecte : base-toi sur les nœuds fournis, ignore brasseries/pêche/punk party.\n" +
+      "- Ne refuse pas de coder. Ne pose pas une question hors-sujet à la place d'une réponse.\n" +
+      "- Ton: un peu buzz, précis, jamais corporate.\n";
+    if (mode === "code" || mode === "create") {
+      base += "Mode CODE/CRÉA actif : priorise des snippets exécutables, propres, commentés brièvement.\n";
+    }
+    if (mode === "tech") {
+      base += "Mode TECH : conseil hardware/software concret, pas de détour entomologie forcé.\n";
+    }
+    if (mode === "insect") {
+      base += "Mode INSECTE : ancre la réponse dans les nœuds wiki fournis.\n";
+    }
+    return base;
+  }
+
+  async function callGroq(q, docs, mode) {
     var key = groqKey();
     if (!key) throw new Error("no key");
     var ctx = docs.map(function (d) { return "### " + d.title + "\n" + d.text; }).join("\n\n");
-    var prompt =
-      "Tu es THE-FLY : une intelligence qui RAISONNE COMME UNE MOUCHE.\n" +
-      "Cerveau de diptère branché sur un graphe de connaissance (nœuds wiki).\n" +
-      "Domaine UNIQUE : mouches, insectes, diptères, vol, haltères, yeux composés, alimentation, larves, écologie.\n\n" +
-      "Style : français, 60–140 mots, concret/sensoriel, pas corporate.\n" +
-      "Salutations : réponse brève de mouche puis invite une vraie question.\n" +
-      "N'invente pas ; base-toi sur les NŒUDS. Ignore brasseries, pêche à la mouche, associations.\n\n" +
+    var user =
+      "Mode détecté: " + mode + "\n" +
       "Question: " + q + "\n\n" +
-      "=== NŒUDS DU GRAPHE ===\n" + (ctx || "(aucun nœud pertinent)");
+      (mode === "insect" || mode === "general"
+        ? ("=== NŒUDS WIKI (filtre insecte) ===\n" + (ctx || "(peu de contexte)") + "\n\n")
+        : "(contexte wiki optionnel — focus sur la demande utilisateur)\n\n") +
+      "Réponds maintenant.";
+
+    var messages = [{ role: "system", content: systemFor(mode) }];
+    // short memory
+    history.slice(-4).forEach(function (h) { messages.push(h); });
+    messages.push({ role: "user", content: user });
+
     var r = await fetch(GROQ_URL, {
       method: "POST",
       headers: { "Authorization": "Bearer " + key, "Content-Type": "application/json" },
-      body: JSON.stringify({ model: MODEL, messages: [{ role: "user", content: prompt }], temperature: 0.35, max_tokens: 500 })
+      body: JSON.stringify({ model: MODEL, messages: messages, temperature: mode === "code" || mode === "create" ? 0.25 : 0.4, max_tokens: 1200 })
     });
-    if (!r.ok) { var err = await r.text(); throw new Error("Groq HTTP " + r.status + " " + err.slice(0, 120)); }
+    if (!r.ok) {
+      var err = await r.text();
+      throw new Error("Groq HTTP " + r.status + " " + err.slice(0, 140));
+    }
     var data = await r.json();
-    return data.choices[0].message.content.trim();
+    var text = data.choices[0].message.content.trim();
+    history.push({ role: "user", content: q });
+    history.push({ role: "assistant", content: text });
+    if (history.length > 8) history = history.slice(-8);
+    return text;
   }
 
   async function answer(q) {
+    var mode = detectMode(q);
+
+    if (mode === "greet") {
+      return {
+        answer: "Bzz. The-fly en ligne — cortex skills + graphe. Demande-moi du code, une page HTML, du vol, ou du hardware.",
+        sources: [],
+        mode: "greet"
+      };
+    }
+
     if (!apiBase) await probeLocal();
-    if (apiBase) {
+    if (apiBase && mode === "insect") {
       var r = await fetch(apiBase + "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -248,18 +324,31 @@
       var j = await r.json();
       return { answer: j.answer || JSON.stringify(j), sources: j.sources || [], mode: "local-api" };
     }
-    var docs = await pickNodes(q, 5);
+
+    var docs = (mode === "insect" || mode === "general") ? await pickNodes(q, 5) : [];
     var sources = docs.map(function (d) { return d.title; });
+
     if (groqKey()) {
-      var text = await callGroq(q, docs);
-      return { answer: text, sources: sources, mode: "groq-nodes" };
+      var text = await callGroq(q, docs, mode);
+      return { answer: text, sources: sources, mode: mode + "+groq" };
     }
-    if (!docs.length) return { answer: "Pas de nœud insecte. Ajoute une clé Groq.", sources: [], mode: "empty" };
+
+    // fallbacks sans clé
+    if (mode === "code" || mode === "create") {
+      return {
+        answer: "Pour générer du vrai code / une page HTML, colle une clé Groq au-dessus. (Sinon je suis limité aux extraits wiki.)",
+        sources: [],
+        mode: mode + "-locked"
+      };
+    }
+    if (!docs.length) {
+      return { answer: "Peu de nœuds insecte propres. Clé Groq recommandée.", sources: [], mode: "empty" };
+    }
     var bits = docs.slice(0, 3).map(function (d) {
       var line = d.text.split("\n").filter(Boolean)[0] || "";
-      return "• " + d.title + ": " + line.slice(0, 220);
+      return "• " + d.title + ": " + line.slice(0, 200);
     });
-    return { answer: "[sans clé]\n" + bits.join("\n") + "\n\n→ colle une clé Groq pour la VRAIE IA mouche.", sources: sources, mode: "extractive" };
+    return { answer: bits.join("\n"), sources: sources, mode: "extractive" };
   }
 
   form.addEventListener("submit", async function (ev) {
@@ -271,19 +360,26 @@
     var pending = add("bot", "buzz…");
     try {
       var res = await answer(q);
-      pending.textContent = res.answer;
+      // replace pending with rich render
+      pending.remove();
+      var node = add("bot", res.answer);
       if (res.sources && res.sources.length) {
         var s = document.createElement("div");
         s.className = "src";
         s.textContent = "nœuds: " + res.sources.join(" · ") + " · " + (res.mode || "");
-        pending.appendChild(s);
+        node.appendChild(s);
+      } else if (res.mode) {
+        var s2 = document.createElement("div");
+        s2.className = "src";
+        s2.textContent = "mode: " + res.mode;
+        node.appendChild(s2);
       }
     } catch (e) {
       pending.textContent = "Erreur: " + e.message;
     }
   });
 
-  add("bot", "The-fly en ligne. Graphe local + IA mouche (clé Groq).");
+  add("bot", "The-fly multi-mode.\n• insecte (vol, haltères…)\n• code / page HTML / ASCII\n• tech (RAM, GPU, archi)\nCortex: fly-skills.html");
   refreshStatus();
 })();
 </script>
