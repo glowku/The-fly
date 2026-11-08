@@ -721,6 +721,14 @@
       ],
       "updated_at": "2026-09-16T23:10:51.133706+00:00"
     },
+    "Angular resolution (graph drawing)": {
+      "depth": 3,
+      "created_at": "2026-11-08T16:35:19.022130+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Angular_resolution_(graph_drawing)"
+      ],
+      "updated_at": "2026-11-08T16:35:19.022135+00:00"
+    },
     "Insect flight": {
       "depth": 2,
       "created_at": "2026-09-16T13:55:50.280207+00:00",
@@ -865,29 +873,13 @@
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
     },
-    "Lightweight and Direct Document Relevance Optimization for Generative Informatio": {
+    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
       "depth": 2,
-      "created_at": "2026-11-08T16:34:32.353682+00:00",
+      "created_at": "2026-11-08T16:37:38.071183+00:00",
       "sources": [
-        "https://arxiv.org/abs/2504.05181v2"
+        "https://arxiv.org/abs/1710.04328v1"
       ],
-      "updated_at": "2026-11-08T16:34:32.353687+00:00"
-    },
-    "Angular resolution (graph drawing)": {
-      "depth": 3,
-      "created_at": "2026-11-08T16:35:19.022130+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Angular_resolution_(graph_drawing)"
-      ],
-      "updated_at": "2026-11-08T16:35:19.022135+00:00"
-    },
-    "A Code Equivalence between Secure Network and Index Coding": {
-      "depth": 2,
-      "created_at": "2026-11-08T16:36:07.642342+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1804.09888v1"
-      ],
-      "updated_at": "2026-11-08T16:36:07.642346+00:00"
+      "updated_at": "2026-11-08T16:37:38.071188+00:00"
     }
   },
   "edges": [
