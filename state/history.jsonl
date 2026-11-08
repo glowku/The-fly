@@ -6375,3 +6375,5 @@
 {"ts": "2026-11-08T10:12:11.782169+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 0.65, "article": "ai-agent-driven-framework-for-automated-product-knowledge-graph-constr"}
 {"ts": "2026-11-08T10:12:11.782221+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "AI Agent-Driven Framework for Automated Product Knowledge Graph Construction in E-Commerce", "url": "https://arxiv.org/abs/2511.11017v1"}
 {"ts": "2026-11-08T10:12:20.141699+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-08T10:16:37.029059+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 0.78, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
+{"ts": "2026-11-08T10:16:37.029114+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
