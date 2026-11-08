@@ -5395,5 +5395,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:17:25.288963+00:00"
+  },
+  "Scientific visualization": {
+    "score": 10.0,
+    "metrics": {
+      "words": 342,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Human–computer interaction",
+        "Visualization science",
+        "Scientific computing",
+        "Scientific data analysis",
+        "Computer graphics",
+        "Data visualization"
+      ],
+      "diversity": 0.821,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:18:05.158890+00:00"
   }
 }
