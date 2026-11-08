@@ -6399,3 +6399,5 @@
 {"ts": "2026-11-08T16:34:30.242359+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 0.95, "article": "lightweight-and-direct-document-relevance-optimization-for-generative-"}
 {"ts": "2026-11-08T16:34:30.242410+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Lightweight and Direct Document Relevance Optimization for Generative Information Retrieval", "url": "https://arxiv.org/abs/2504.05181v2"}
 {"ts": "2026-11-08T16:35:19.053551+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 9.32, "article": "Angular resolution (graph drawing)"}
+{"ts": "2026-11-08T16:35:20.492797+00:00", "type": "auto_learn_expand", "title": "Angular resolution (graph drawing)", "skill": "anatomie_insecte", "score": 10.0, "objective": 21.385}
+{"ts": "2026-11-08T16:35:20.493565+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": true}]}
