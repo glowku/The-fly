@@ -912,6 +912,14 @@
         "https://en.wikipedia.org/wiki/Data_and_information_visualization"
       ],
       "updated_at": "2026-11-08T22:26:29.352919+00:00"
+    },
+    "Microservices": {
+      "depth": 4,
+      "created_at": "2026-11-08T22:28:45.572884+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Microservices"
+      ],
+      "updated_at": "2026-11-08T22:28:45.572888+00:00"
     }
   },
   "edges": [
