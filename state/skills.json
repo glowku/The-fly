@@ -295,7 +295,7 @@
     "last_reinforced": "2026-11-08T16:49:52.195870+00:00"
   },
   "recherche_image": {
-    "level": 0.97,
+    "level": 1.07,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -306,8 +306,9 @@
     ],
     "articles": [
       "describing-insect-morphology-for-image-search",
-      "ippog-bridging-the-gap-between-science-education-at-school-and-modern-"
+      "ippog-bridging-the-gap-between-science-education-at-school-and-modern-",
+      "Diagram"
     ],
-    "last_reinforced": "2026-11-08T16:47:43.919013+00:00"
+    "last_reinforced": "2026-11-08T16:51:59.237354+00:00"
   }
 }

@@ -5659,5 +5659,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:49:52.189556+00:00"
+  },
+  "Diagram": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Black fly",
+        "Behavioral ecology (disambiguation)",
+        "Helicopter flight controls",
+        "Common green bottle fly",
+        "Adaptive compliant wing",
+        "Blue-winged Olive flies"
+      ],
+      "diversity": 0.823,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:51:59.231081+00:00"
   }
 }
