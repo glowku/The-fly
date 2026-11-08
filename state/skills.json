@@ -218,7 +218,6 @@
     ],
     "articles": [
       "clean-architecture-for-autonomous-agents",
-      "GitHub",
       "intelligent-interaction-strategies-for-context-aware-cognitive-augment"
     ],
     "last_reinforced": "2026-11-08T10:22:22.259910+00:00"
@@ -270,9 +269,7 @@
       "cors"
     ],
     "articles": [
-      "secure-coding-basics-input-validation",
-      "Authentication",
-      "Authorization"
+      "secure-coding-basics-input-validation"
     ],
     "last_reinforced": "2026-11-08T10:21:38.782553+00:00"
   },
@@ -304,7 +301,6 @@
     ],
     "articles": [
       "describing-insect-morphology-for-image-search",
-      "Scientific visualization",
       "ippog-bridging-the-gap-between-science-education-at-school-and-modern-"
     ],
     "last_reinforced": "2026-11-08T10:20:53.515434+00:00"
