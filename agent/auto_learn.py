@@ -1,21 +1,14 @@
 """
-Auto-learning :
-- lit les DERNIERS nœuds + leurs liens Wikipedia (voisinage du graphe)
-- choisit un sous-parent (feuille / peu d'enfants)
-- priorise les liens du parent et du voisinage récent
-- Groq guidé par parent + contexte graphe
-- seeds en dernier recours
-- filtre insecte + anti-junk + anti-dérive v1
-- arXiv concepts (filtrés) dans le pool
-- depth = parent.depth + 1
-- 1 article par cycle rattaché au bon parent
+Auto-learning hybride :
+- track A: wiki insecte (graphe connaissance)
+- track B: skill_learn (code, sécu défensive, web, images, raisonnement)
+Alterne pour ne pas stagner sur un graphe pollué.
 """
 import os
 import re
 import json
 import requests
 from difflib import SequenceMatcher
-from datetime import datetime
 
 from .memory import (
     load_coverage,
@@ -37,6 +30,7 @@ from .synthesis import synthesize_article
 from .evaluation import score_article, is_acceptable, explain_score
 from .tools import write_article, git_commit_push
 from .arxiv_source import search_domain, concepts_from_papers
+from .skill_learn import run_skill_learn, SKILL_TRACKS
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "openai/gpt-oss-20b"
@@ -57,7 +51,7 @@ SKILL_SEEDS = {
     ],
     "ecologie": [
         "Insect ecology", "Pollination", "Larva", "Maggot",
-        "Parasitoid", "Decomposer", "Insecticide", "Biological pest control",
+        "Parasitoid", "Decomposer", "Biological pest control",
     ],
     "evolution": [
         "Evolution of insects", "Insect evolution", "Devonian",
@@ -75,9 +69,14 @@ JUNK_RE = re.compile(
     r"arxiv|academic press|publisher|isbn|doi|"
     r"computer security|cybersecurity|encryption|"
     r"angular velocity|angular momentum|"
-    r"chewing gum|bubblegum|eccentricity\s*\(behavior\)|eccentricity\s*\(behaviour\))",
+    r"chewing gum|bubblegum|eccentricity\s*\(behavior\)|"
+    r"punk rock|fly fishing|brewery|behavioral momentum|"
+    r"cognitive behavioral|hovercraft|madama butterfly)",
     re.I,
 )
+
+# compteur simple en process pour alterner les tracks
+_CYCLE = {"n": 0}
 
 
 def _norm(s: str) -> str:
@@ -99,9 +98,13 @@ def _is_junk(title: str) -> bool:
 def _is_insect_relevant(title: str) -> bool:
     if _is_junk(title):
         return False
-    if score_relevance(title) < 0.32:
+    if score_relevance(title) < 0.35:
         return False
     t = (title or "").lower()
+    # rejeter ambiguïtés fréquentes
+    if any(x in t for x in ("fishing", "brew", "party", "therapy", "journal", "company")):
+        if not any(x in t for x in ("insect", "diptera", "housefly", "mosquito", "haltere")):
+            return False
     strong = (
         "insect", "fly", "flies", "diptera", "mosquito", "larva", "maggot",
         "wing", "halter", "flight", "hover", "swarm", "pollinat",
@@ -110,21 +113,11 @@ def _is_insect_relevant(title: str) -> bool:
         "compound eye", "spiracle", "mouthpart", "blowfly", "hoverfly",
         "tachinid", "apterygota", "alate", "wingbeat", "aerodynamic",
         "courtship", "foraging", "mating", "eusocial", "decomposer",
-        "pest control", "insecticide", "pollination", "morphology",
-        "ecology", "evolution", "behaviour", "behavior",
+        "pest control", "pollination", "morphology",
     )
     if any(s in t for s in strong):
         return True
-    for seeds in SKILL_SEEDS.values():
-        for seed in seeds:
-            if _norm(seed) == _norm(title) or _similar(seed, title) >= 0.9:
-                return True
-    skills = load_skills()
-    for sk in skills.values():
-        for kw in sk.get("keywords", []):
-            if kw.lower() in t:
-                return True
-    return score_relevance(title) >= 0.40
+    return score_relevance(title) >= 0.45
 
 
 def _already_known(title: str, nodes: dict, frontier: list, quality: dict) -> bool:
@@ -158,9 +151,7 @@ def _recent_nodes(nodes: dict, limit: int = 12) -> list:
         ts = info.get("created_at") or info.get("updated_at") or ""
         items.append((ts, title))
     items.sort(reverse=True)
-    recent = [t for _, t in items[:limit]]
-    print(f"[auto_learn] derniers nœuds: {recent[:8]}", flush=True)
-    return recent
+    return [t for _, t in items[:limit]]
 
 
 def _graph_neighborhood(parent: str | None, recent: list, limit: int = 40) -> list:
@@ -187,18 +178,12 @@ def _graph_neighborhood(parent: str | None, recent: list, limit: int = 40) -> li
                 break
         if len(neigh) >= limit:
             break
-    print(
-        f"[auto_learn] voisinage graphe ({len(sources)} sources) "
-        f"→ {len(neigh)} titres pertinents",
-        flush=True,
-    )
     return neigh
 
 
 def _groq_suggest(skill_name, skill_info, root, parent, recent, existing):
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
-        print("[auto_learn] GROQ_API_KEY missing", flush=True)
         return []
     kws = ", ".join(skill_info.get("keywords", [])[:8])
     existing_s = ", ".join(existing[:20]) if existing else "(none)"
@@ -210,38 +195,32 @@ def _groq_suggest(skill_name, skill_info, root, parent, recent, existing):
     prompt = f"""You expand a knowledge graph about insects/flies: {root}
 Skill: {skill_name} — {skill_info.get('description', '')}
 Keywords: {kws}
-Recent nodes in the graph: {recent_s}
+Recent nodes: {recent_s}
 {parent_line}
-Already in wiki — DO NOT suggest these: {existing_s}
+Already known — DO NOT suggest: {existing_s}
 
-Return ONLY a valid JSON array of 8 real English Wikipedia article titles.
-Focus STRICTLY on insects, flies, diptera, morphology, flight, ecology, evolution of insects.
-Reject anything about humans, media, gum, pure psychology, software, or unrelated behavior.
-No markdown, no text outside the JSON array.
-Example: ["Haltere", "Insect wing", "Compound eye"]"""
+Return ONLY a JSON array of 8 real English Wikipedia titles.
+STRICT domain: insects, flies, diptera, morphology, flight, ecology, evolution of insects.
+Reject media, fishing, brewing, psychology, software, gum, parties.
+"""
     try:
         r = requests.post(
             GROQ_URL,
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
-            json={"model": MODEL, "messages": [{"role": "user", "content": prompt}], "temperature": 0.30, "max_tokens": 400},
+            json={"model": MODEL, "messages": [{"role": "user", "content": prompt}], "temperature": 0.25, "max_tokens": 400},
             timeout=60,
         )
         if r.status_code != 200:
-            print(f"[auto_learn] Groq HTTP {r.status_code}: {r.text[:250]}", flush=True)
             return []
         text = r.json()["choices"][0]["message"]["content"].strip()
         text = re.sub(r"^```(?:json)?\s*", "", text)
         text = re.sub(r"\s*```$", "", text)
         m = re.search(r"\[[\s\S]*?\]", text)
         if not m:
-            print(f"[auto_learn] Groq bad JSON: {text[:200]}", flush=True)
             return []
         raw = re.sub(r",\s*]", "]", m.group(0))
-        items = [str(x).strip() for x in json.loads(raw) if str(x).strip()]
-        print(f"[auto_learn] Groq OK → {items}", flush=True)
-        return items[:10]
-    except Exception as e:
-        print(f"[auto_learn] Groq error: {e}", flush=True)
+        return [str(x).strip() for x in json.loads(raw) if str(x).strip()][:10]
+    except Exception:
         return []
 
 
@@ -253,12 +232,12 @@ def _candidates_from_frontier(skill_name, frontier):
         if not _is_insect_relevant(t):
             continue
         rel = score_relevance(t)
-        if rel < 0.35:
+        if rel < 0.38:
             continue
         bonus = sum(1 for k in kws if k.lower() in t.lower()) * 0.25
         scored.append((rel + bonus, t))
     scored.sort(reverse=True)
-    return [t for s, t in scored if s >= 0.32][:8]
+    return [t for s, t in scored if s >= 0.35][:8]
 
 
 def _best_parent_for_skill(skill_name, nodes, cov):
@@ -273,6 +252,8 @@ def _best_parent_for_skill(skill_name, nodes, cov):
             children_count[fr] = children_count.get(fr, 0) + 1
     candidates = []
     for title, info in nodes.items():
+        if not _is_insect_relevant(title):
+            continue
         n_kids = children_count.get(title, 0)
         is_skill = title in skill_articles or any(kw in title.lower() for kw in keywords)
         score = 0.0
@@ -286,13 +267,11 @@ def _best_parent_for_skill(skill_name, nodes, cov):
             score += 70
         depth = info.get("depth", 1)
         score += max(0, 10 - abs(depth - 2) * 2)
-        candidates.append((score, title, n_kids, is_skill))
+        candidates.append((score, title))
     if not candidates:
         return cov.get("root") or "Fly"
     candidates.sort(key=lambda x: x[0], reverse=True)
-    best_score, best_title, n_kids, is_skill = candidates[0]
-    print(f"[auto_learn] parent choisi: {best_title} (score={best_score:.0f} kids={n_kids} skill={is_skill})", flush=True)
-    return best_title
+    return candidates[0][1]
 
 
 def _pick_parent_for_title(title, preferred, nodes, cov):
@@ -312,11 +291,9 @@ def _pick_parent_for_title(title, preferred, nodes, cov):
 def _expand_one(title, parent, skill_name):
     canon, summary = _resolve_page(title)
     if not summary:
-        print(f"[auto_learn] cannot resolve: {title}", flush=True)
         return False
     title = canon
     if not _is_insect_relevant(title):
-        print(f"[auto_learn] reject after resolve (hors-domaine): {title}", flush=True)
         return False
     content = synthesize_article(
         title=title,
@@ -328,7 +305,6 @@ def _expand_one(title, parent, skill_name):
     score = score_article(content)
     print(f"[auto_learn] {explain_score(score)} — {title}", flush=True)
     if not is_acceptable(score):
-        print(f"[auto_learn] reject score={score['score']}", flush=True)
         return False
     write_article(title, content)
     parent_depth = 1
@@ -347,43 +323,40 @@ def _expand_one(title, parent, skill_name):
             register_discovered(child, depth=parent_depth + 1, parent=title)
     reinforce_skill(skill_name, title, score["score"])
     obj, n_nodes, _ = compute_objective_score()
-    msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes} parent={parent})"
+    msg = f"auto_learn: {title} (skill={skill_name} score={score['score']} nodes={n_nodes})"
     git_commit_push([f"wiki/{title}.md", "state/", "DASHBOARD.md"], msg)
-    log_event("auto_learn_expand", {"title": title, "skill": skill_name, "score": score["score"], "objective": obj, "parent": parent, "relevance": score_relevance(title)})
-    print(f"[auto_learn] ✅ article créé: {title} ← parent={parent}", flush=True)
+    log_event("auto_learn_expand", {"title": title, "skill": skill_name, "score": score["score"], "objective": obj})
+    print(f"[auto_learn] ✅ {title} ← {parent}", flush=True)
     return True
 
 
-def run_auto_learn():
-    print("=" * 60, flush=True)
-    print("[auto_learn] cycle intelligent (voisinage + anti-dérive v1 + arXiv)", flush=True)
+def run_wiki_learn() -> bool:
+    print("[auto_learn] track WIKI insecte", flush=True)
     cov = load_coverage()
     quality = load_quality()
     root = cov.get("root") or "Fly"
     nodes = cov.get("nodes") or {}
     frontier = list(cov.get("frontier") or [])
-    skill_name = pick_skill_to_develop()
+    # ne pick que skills entomologie pour le wiki track
+    insect_skills = [k for k in load_skills() if k not in SKILL_TRACKS]
+    if not insect_skills:
+        insect_skills = list(SKILL_SEEDS.keys())
     skills = load_skills()
+    skill_name = min(insect_skills, key=lambda k: skills.get(k, {}).get("level", 0))
     skill_info = skills.get(skill_name, {})
-    print(f"[auto_learn] skill={skill_name} level={skill_info.get('level', 0)}", flush=True)
     existing = list(nodes.keys()) + list(quality.keys())
     recent = _recent_nodes(nodes, limit=12)
     parent = _best_parent_for_skill(skill_name, nodes, cov)
-    if not parent:
-        parent = root if root in nodes else (existing[0] if existing else None)
     neighborhood = _graph_neighborhood(parent, recent, limit=40)
     pool = []
     pool += neighborhood
     pool += _candidates_from_frontier(skill_name, frontier)
     pool += _groq_suggest(skill_name, skill_info, root, parent, recent, existing)
     try:
-        topic = f"{skill_name.replace('_', ' ')} {root} insect"
-        papers = search_domain(topic, max_results=5)
-        ax_concepts = concepts_from_papers(papers, min_relevance=0.28)
-        print(f"[auto_learn] arXiv → {len(papers)} papers, {len(ax_concepts)} concepts", flush=True)
-        pool += ax_concepts
-    except Exception as e:
-        print(f"[auto_learn] arXiv skip: {e}", flush=True)
+        papers = search_domain(f"{skill_name} {root} insect", max_results=5)
+        pool += concepts_from_papers(papers, min_relevance=0.30)
+    except Exception:
+        pass
     pool += SKILL_SEEDS.get(skill_name, SKILL_SEEDS["entomologie"])
     seen = set()
     ordered = []
@@ -398,7 +371,6 @@ def run_auto_learn():
         if _already_known(title, nodes, frontier, quality):
             continue
         if not _is_insect_relevant(title):
-            print(f"[auto_learn] skip hors-sujet: {title}", flush=True)
             continue
         canon, s = _resolve_page(title)
         if not s:
@@ -408,41 +380,27 @@ def run_auto_learn():
         if not _is_insect_relevant(canon):
             continue
         fresh.append(canon)
-    print(f"[auto_learn] {len(fresh)} candidats valides: {fresh[:8]}", flush=True)
-    if not fresh and frontier:
-        for t in frontier:
-            if not _is_insect_relevant(t) or t in nodes:
-                continue
-            canon, s = _resolve_page(t)
-            if s and not _already_known(canon, nodes, [], quality) and _is_insect_relevant(canon):
-                fresh.append(canon)
-                print(f"[auto_learn] fallback frontier → {canon}", flush=True)
-                break
+    print(f"[auto_learn] candidats: {fresh[:8]}", flush=True)
     learned = False
     for title in fresh[:4]:
         real_parent = _pick_parent_for_title(title, parent, nodes, cov)
         if _expand_one(title, real_parent, skill_name):
             learned = True
-            cov = load_coverage()
-            nodes = cov.get("nodes") or {}
-            quality = load_quality()
-            frontier = list(cov.get("frontier") or [])
             break
-    parent_depth = 1
-    if parent and parent in nodes:
-        parent_depth = nodes[parent].get("depth", 1) + 1
-    added_f = 0
-    for title in fresh[(1 if learned else 0):]:
-        if _already_known(title, nodes, frontier, quality):
-            continue
-        if not _is_insect_relevant(title):
-            continue
-        real_parent = _pick_parent_for_title(title, parent, nodes, cov)
-        register_discovered(title, depth=parent_depth, parent=real_parent)
-        frontier.append(title)
-        added_f += 1
-        if added_f >= 6:
-            break
-    log_event("auto_learn", {"skill": skill_name, "learned": learned, "frontier_added": added_f, "fresh": fresh[:10], "parent": parent, "recent": recent[:8]})
-    print(f"[auto_learn] done — article_écrit={learned} frontier+={added_f} parent={parent}", flush=True)
-    return learned or added_f > 0
+    log_event("auto_learn", {"skill": skill_name, "learned": learned, "fresh": fresh[:8]})
+    return learned
+
+
+def run_auto_learn():
+    """Point d'entrée: alterne wiki / skill tracks."""
+    print("=" * 60, flush=True)
+    _CYCLE["n"] += 1
+    n = _CYCLE["n"]
+    # 1 sur 3 cycles → skill transverse (code/sécu/web/image)
+    if n % 3 == 0:
+        ok = run_skill_learn()
+        print(f"[auto_learn] skill_learn done={ok}", flush=True)
+        return ok
+    ok = run_wiki_learn()
+    print(f"[auto_learn] wiki done={ok}", flush=True)
+    return ok
