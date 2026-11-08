@@ -6326,3 +6326,4 @@
 {"ts": "2026-11-08T01:10:02.510338+00:00", "type": "plan", "title": "Anax (dragonfly)", "action": "branch", "priority": 145.0, "reason": "leaf_no_children", "skill": "evolution", "relevance": 1.0}
 {"ts": "2026-11-08T01:10:03.042414+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 9.24, "article": "Anax (dragonfly)"}
 {"ts": "2026-11-08T01:10:03.042462+00:00", "type": "branch", "title": "Anax (dragonfly)", "children_discovered": 0, "skill": "evolution"}
+{"ts": "2026-11-08T03:30:02.729052+00:00", "type": "parallel_learn", "skill": "vol_et_aerodynamique", "learned": 0, "workers": 4, "parent": "Behaviour Santiago"}
