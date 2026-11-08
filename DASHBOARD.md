@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-08 04:48:19 UTC
+**Dernière mise à jour** : 2026-11-08 12:51:39 UTC
 
 ## Objectif de l'agent
 
@@ -10,29 +10,29 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **38.95** |
-| Concepts traités | 200 | **267** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Score global | maximiser | **22.936** |
+| Concepts traités | 200 | **118** |
+| Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **267** |
-| Arêtes du graphe | 435 |
-| Frontière (à explorer) | 36 |
+| Concepts traités (nœuds) | **118** |
+| Arêtes du graphe | 48 |
+| Frontière (à explorer) | 12 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 82 |
+| Score qualité moyen | **9.72/10** |
+| Score objectif (coverage × quality) | **22.936** |
+| Actions dernières 24 h | 137 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 260 |
+| Excellent (≥ 8) | 271 |
 | Bon (6 – 8) | 5 |
-| Moyen (4 – 6) | 2 |
+| Moyen (4 – 6) | 3 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-07T23:53:40  auto_learn      
-2026-11-07T23:55:12  auto_learn      
-2026-11-07T23:56:44  auto_learn      
-2026-11-07T23:58:16  auto_learn      
-2026-11-07T23:59:48  auto_learn      
-2026-11-08T00:01:20  auto_learn      
-2026-11-08T00:02:52  auto_learn      
-2026-11-08T00:04:24  auto_learn      
-2026-11-08T00:05:56  auto_learn      
-2026-11-08T00:07:28  auto_learn      
-2026-11-08T00:30:58  auto_learn      
-2026-11-08T01:10:02  plan            Anax (dragonfly)
-2026-11-08T01:10:03  skill_reinforc  
-2026-11-08T01:10:03  branch          Anax (dragonfly)
-2026-11-08T03:30:02  parallel_learn  
+2026-11-08T10:16:37  skill_reinforc  
+2026-11-08T10:16:37  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-08T10:17:23  skill_reinforc  
+2026-11-08T10:17:23  skill_learn_ar  Domain-specific information retrieval
+2026-11-08T10:18:05  skill_reinforc  
+2026-11-08T10:18:46  skill_reinforc  
+2026-11-08T10:19:28  skill_reinforc  
+2026-11-08T10:19:28  skill_learn_ar  Knowledge Graph Reasoning with Logics and Embeddings: Survey and Perspective
+2026-11-08T10:20:12  skill_reinforc  
+2026-11-08T10:20:53  skill_reinforc  
+2026-11-08T10:20:53  skill_learn_ar  IPPOG : Bridging the gap between science education at school and modern scientific research
+2026-11-08T10:21:38  skill_reinforc  
+2026-11-08T10:22:22  skill_reinforc  
+2026-11-08T10:22:22  skill_learn_ar  Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation
+2026-11-08T10:23:03  skill_reinforc  
 ```
 
 ## Architecture de l'agent
