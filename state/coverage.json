@@ -864,6 +864,14 @@
         "https://en.wikipedia.org/wiki/Automotive_aerodynamics"
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
+    },
+    "Lightweight and Direct Document Relevance Optimization for Generative Informatio": {
+      "depth": 2,
+      "created_at": "2026-11-08T16:34:32.353682+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2504.05181v2"
+      ],
+      "updated_at": "2026-11-08T16:34:32.353687+00:00"
     }
   },
   "edges": [

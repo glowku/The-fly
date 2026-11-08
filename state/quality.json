@@ -5543,5 +5543,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:23:03.949892+00:00"
+  },
+  "Lightweight and Direct Document Relevance Optimization for Generative Informatio": {
+    "score": 10.0,
+    "metrics": {
+      "words": 292,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Black fly",
+        "Insect Festival",
+        "Blue-winged Olive flies",
+        "Bonefish fly patterns",
+        "Spiracle (vertebrates)",
+        "Common green bottle fly"
+      ],
+      "diversity": 0.764,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:34:32.353224+00:00"
   }
 }
