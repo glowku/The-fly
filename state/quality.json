@@ -5474,5 +5474,18 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:20:12.904471+00:00"
+  },
+  "IPPOG  Bridging the gap between science education at school and modern scientifi": {
+    "score": 5.37,
+    "metrics": {
+      "words": 166,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.879,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:20:56.868983+00:00"
   }
 }

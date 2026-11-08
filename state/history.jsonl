@@ -6384,3 +6384,5 @@
 {"ts": "2026-11-08T10:19:28.077880+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 0.8, "article": "knowledge-graph-reasoning-with-logics-and-embeddings-survey-and-perspe"}
 {"ts": "2026-11-08T10:19:28.077938+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Knowledge Graph Reasoning with Logics and Embeddings: Survey and Perspective", "url": "https://arxiv.org/abs/2202.07412v1"}
 {"ts": "2026-11-08T10:20:12.909992+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 0.75, "article": "GitHub"}
+{"ts": "2026-11-08T10:20:53.515876+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 0.9, "article": "ippog-bridging-the-gap-between-science-education-at-school-and-modern-"}
+{"ts": "2026-11-08T10:20:53.515922+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "IPPOG : Bridging the gap between science education at school and modern scientific research", "url": "https://arxiv.org/abs/2011.14743v1"}
