@@ -5454,5 +5454,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:19:30.014595+00:00"
+  },
+  "GitHub": {
+    "score": 10.0,
+    "metrics": {
+      "words": 350,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Microsoft",
+        "Continuous integration",
+        "Version control",
+        "San Francisco",
+        "Wikis",
+        "Git"
+      ],
+      "diversity": 0.72,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:20:12.904471+00:00"
   }
 }
