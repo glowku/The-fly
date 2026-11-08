@@ -257,7 +257,7 @@
     "last_reinforced": "2026-11-08T10:19:28.077391+00:00"
   },
   "securite_defensive": {
-    "level": 0.75,
+    "level": 0.85,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -268,9 +268,10 @@
     ],
     "articles": [
       "secure-coding-basics-input-validation",
-      "Authentication"
+      "Authentication",
+      "Authorization"
     ],
-    "last_reinforced": "2026-11-08T10:18:46.685421+00:00"
+    "last_reinforced": "2026-11-08T10:21:38.782553+00:00"
   },
   "recherche_web": {
     "level": 0.8,

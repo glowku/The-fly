@@ -5487,5 +5487,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:20:56.868983+00:00"
+  },
+  "Authorization": {
+    "score": 10.0,
+    "metrics": {
+      "words": 372,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Chemical ecology",
+        "Cultural ecology",
+        "Evolutionary developmental psychology",
+        "Insects in ethics",
+        "Human behavioral ecology",
+        "Theatrical adaptation"
+      ],
+      "diversity": 0.701,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:21:38.776938+00:00"
   }
 }
