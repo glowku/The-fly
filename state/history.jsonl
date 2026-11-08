@@ -6427,3 +6427,5 @@
 {"ts": "2026-11-08T16:50:55.994929+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-08T16:51:59.237758+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.07, "article": "Diagram"}
 {"ts": "2026-11-08T16:53:04.870817+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 9.32, "article": "Area (graph drawing)"}
+{"ts": "2026-11-08T16:53:06.394342+00:00", "type": "auto_learn_expand", "title": "Area (graph drawing)", "skill": "comportement", "score": 10.0, "objective": 21.746}
+{"ts": "2026-11-08T16:53:06.395032+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": true}]}
