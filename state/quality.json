@@ -5360,22 +5360,22 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 403,
+      "words": 368,
       "sections": 4,
       "links": 6,
       "link_list": [
+        "Amateur Entomologists' Society",
         "Helicopter flight controls",
         "Black fly",
         "Blacker's Art of Fly Making",
-        "Spiracle (vertebrates)",
-        "Adaptive compliant wing",
-        "Common green bottle fly"
+        "Common green bottle fly",
+        "Insect Week"
       ],
-      "diversity": 0.78,
+      "diversity": 0.712,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-08T16:37:38.070518+00:00"
+    "updated_at": "2026-11-08T21:53:00.276696+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
