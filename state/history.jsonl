@@ -6387,3 +6387,5 @@
 {"ts": "2026-11-08T10:20:53.515876+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 0.9, "article": "ippog-bridging-the-gap-between-science-education-at-school-and-modern-"}
 {"ts": "2026-11-08T10:20:53.515922+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "IPPOG : Bridging the gap between science education at school and modern scientific research", "url": "https://arxiv.org/abs/2011.14743v1"}
 {"ts": "2026-11-08T10:21:38.782983+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 0.85, "article": "Authorization"}
+{"ts": "2026-11-08T10:22:22.260534+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 0.9, "article": "intelligent-interaction-strategies-for-context-aware-cognitive-augment"}
+{"ts": "2026-11-08T10:22:22.260603+00:00", "type": "skill_learn_arxiv", "skill": "code_et_outils", "title": "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation", "url": "https://arxiv.org/abs/2504.13684v1"}

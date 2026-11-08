@@ -928,6 +928,14 @@
         "https://en.wikipedia.org/wiki/Authorization"
       ],
       "updated_at": "2026-11-08T10:21:38.777560+00:00"
+    },
+    "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation": {
+      "depth": 2,
+      "created_at": "2026-11-08T10:22:24.044622+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2504.13684v1"
+      ],
+      "updated_at": "2026-11-08T10:22:24.044626+00:00"
     }
   },
   "edges": [

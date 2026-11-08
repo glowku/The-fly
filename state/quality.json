@@ -5507,5 +5507,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:21:38.776938+00:00"
+  },
+  "Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 301,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Evolutionary developmental psychology",
+        "Cultural ecology",
+        "Human behavioral ecology",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.833,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:22:24.044146+00:00"
   }
 }
