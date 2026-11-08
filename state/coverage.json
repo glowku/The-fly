@@ -1,14 +1,6 @@
 {
   "root": "mouche evolution",
   "nodes": {
-    "Evolution": {
-      "depth": 1,
-      "created_at": "2026-09-16T11:06:18.677505+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolution"
-      ],
-      "updated_at": "2026-09-16T11:06:18.677514+00:00"
-    },
     "Halteres": {
       "depth": 2,
       "created_at": "2026-09-16T13:23:44.670641+00:00",
@@ -17,14 +9,6 @@
       ],
       "updated_at": "2026-09-16T13:23:44.670647+00:00"
     },
-    "Insect flight": {
-      "depth": 2,
-      "created_at": "2026-09-16T13:55:50.280207+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Insect_flight"
-      ],
-      "updated_at": "2026-09-16T13:55:50.280215+00:00"
-    },
     "Fly": {
       "depth": 2,
       "created_at": "2026-09-16T14:04:50.391121+00:00",
@@ -32,14 +16,6 @@
         "https://en.wikipedia.org/wiki/Fly"
       ],
       "updated_at": "2026-09-16T14:04:50.391129+00:00"
-    },
-    "Devonian": {
-      "depth": 2,
-      "created_at": "2026-09-16T16:49:14.505234+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Devonian"
-      ],
-      "updated_at": "2026-09-16T16:49:14.505239+00:00"
     },
     "Wing": {
       "depth": 2,
@@ -56,14 +32,6 @@
         "https://en.wikipedia.org/wiki/Aerodynamics"
       ],
       "updated_at": "2026-09-16T20:15:23.438169+00:00"
-    },
-    "Palaeoptera": {
-      "depth": 2,
-      "created_at": "2026-09-16T20:17:46.556467+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Palaeoptera"
-      ],
-      "updated_at": "2026-09-16T20:17:46.556473+00:00"
     },
     "Compound eye": {
       "depth": 2,
@@ -153,38 +121,6 @@
       ],
       "updated_at": "2026-09-16T21:45:39.630184+00:00"
     },
-    "Mating": {
-      "depth": 3,
-      "created_at": "2026-09-16T21:45:58.576195+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Mating"
-      ],
-      "updated_at": "2026-09-16T21:45:58.576202+00:00"
-    },
-    "Adaptive radiation": {
-      "depth": 3,
-      "created_at": "2026-09-16T21:46:16.920811+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptive_radiation"
-      ],
-      "updated_at": "2026-09-16T21:46:16.920817+00:00"
-    },
-    "Angular velocity": {
-      "depth": 3,
-      "created_at": "2026-09-16T22:23:32.651434+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Angular_velocity"
-      ],
-      "updated_at": "2026-09-16T22:23:32.651440+00:00"
-    },
-    "Arthropod": {
-      "depth": 3,
-      "created_at": "2026-09-16T22:28:22.360324+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Arthropod"
-      ],
-      "updated_at": "2026-09-16T22:28:22.360331+00:00"
-    },
     "Annual Review of Entomology": {
       "depth": 3,
       "created_at": "2026-09-16T22:34:47.098535+00:00",
@@ -240,14 +176,6 @@
         "https://en.wikipedia.org/wiki/Evolution_of_insects"
       ],
       "updated_at": "2026-09-16T22:45:19.844484+00:00"
-    },
-    "Behavioral Ecology and Sociobiology": {
-      "depth": 3,
-      "created_at": "2026-09-16T22:46:55.417471+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_Ecology_and_Sociobiology"
-      ],
-      "updated_at": "2026-09-16T22:46:55.417476+00:00"
     },
     "Thorax": {
       "depth": 3,
@@ -305,14 +233,6 @@
       ],
       "updated_at": "2026-09-16T22:58:04.976540+00:00"
     },
-    "Automotive aerodynamics": {
-      "depth": 3,
-      "created_at": "2026-09-16T22:59:40.242009+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Automotive_aerodynamics"
-      ],
-      "updated_at": "2026-09-16T22:59:40.242014+00:00"
-    },
     "Mosquito": {
       "depth": 4,
       "created_at": "2026-09-16T23:01:16.954547+00:00",
@@ -353,30 +273,6 @@
       ],
       "updated_at": "2026-09-16T23:07:40.403074+00:00"
     },
-    "Aileron": {
-      "depth": 3,
-      "created_at": "2026-09-16T23:09:15.652045+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Aileron"
-      ],
-      "updated_at": "2026-09-16T23:09:15.652050+00:00"
-    },
-    "Tachinidae": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:10:51.133702+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Tachinidae"
-      ],
-      "updated_at": "2026-09-16T23:10:51.133706+00:00"
-    },
-    "Ecology": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:12:25.595508+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Ecology"
-      ],
-      "updated_at": "2026-09-16T23:12:25.595513+00:00"
-    },
     "Ant mimicry": {
       "depth": 4,
       "created_at": "2026-09-16T23:14:00.461008+00:00",
@@ -384,22 +280,6 @@
         "https://en.wikipedia.org/wiki/Ant_mimicry"
       ],
       "updated_at": "2026-09-16T23:14:00.461012+00:00"
-    },
-    "Hovertrain": {
-      "depth": 3,
-      "created_at": "2026-09-16T23:15:40.443701+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Hovertrain"
-      ],
-      "updated_at": "2026-09-16T23:15:40.443707+00:00"
-    },
-    "Applications of evolution": {
-      "depth": 4,
-      "created_at": "2026-09-17T00:11:14.447821+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Applications_of_evolution"
-      ],
-      "updated_at": "2026-09-17T00:11:14.447830+00:00"
     },
     "Caddisfly": {
       "depth": 3,
@@ -425,30 +305,6 @@
       ],
       "updated_at": "2026-09-16T23:22:03.647154+00:00"
     },
-    "Annual Review of Ecology, Evolution, and Systematics": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:23:38.603852+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Annual_Review_of_Ecology%2C_Evolution%2C_and_Systematics"
-      ],
-      "updated_at": "2026-09-16T23:23:38.603857+00:00"
-    },
-    "Anthecology": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:25:13.971574+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Anthecology"
-      ],
-      "updated_at": "2026-09-16T23:25:13.971579+00:00"
-    },
-    "Windhover": {
-      "depth": 3,
-      "created_at": "2026-09-16T23:26:51.265421+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Windhover"
-      ],
-      "updated_at": "2026-09-16T23:26:51.265426+00:00"
-    },
     "Arthropod exoskeleton": {
       "depth": 3,
       "created_at": "2026-09-16T23:28:27.481522+00:00",
@@ -457,22 +313,6 @@
       ],
       "updated_at": "2026-09-16T23:28:27.481527+00:00"
     },
-    "Applied ecology": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:30:02.949438+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Applied_ecology"
-      ],
-      "updated_at": "2026-09-16T23:30:02.949443+00:00"
-    },
-    "Autecology": {
-      "depth": 5,
-      "created_at": "2026-09-16T23:39:25.935177+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Autecology"
-      ],
-      "updated_at": "2026-09-16T23:39:25.935183+00:00"
-    },
     "Allopatric speciation": {
       "depth": 5,
       "created_at": "2026-09-17T00:02:10.049863+00:00",
@@ -480,46 +320,6 @@
         "https://en.wikipedia.org/wiki/Allopatric_speciation"
       ],
       "updated_at": "2026-09-17T00:02:10.049870+00:00"
-    },
-    "Adaptation": {
-      "depth": 5,
-      "created_at": "2026-09-17T00:03:49.319190+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation"
-      ],
-      "updated_at": "2026-09-17T00:03:49.319199+00:00"
-    },
-    "Hover (EP)": {
-      "depth": 3,
-      "created_at": "2026-09-17T00:05:29.991210+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Hover_(EP)"
-      ],
-      "updated_at": "2026-09-17T00:05:29.991217+00:00"
-    },
-    "Adaptationism": {
-      "depth": 3,
-      "created_at": "2026-09-17T00:07:09.153108+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptationism"
-      ],
-      "updated_at": "2026-09-17T00:07:09.153114+00:00"
-    },
-    "Adaptation and Natural Selection": {
-      "depth": 4,
-      "created_at": "2026-09-17T00:08:49.258551+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_and_Natural_Selection"
-      ],
-      "updated_at": "2026-09-17T00:08:49.258558+00:00"
-    },
-    "Butterfly": {
-      "depth": 5,
-      "created_at": "2026-09-17T00:10:28.229562+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Butterfly"
-      ],
-      "updated_at": "2026-09-17T00:10:28.229570+00:00"
     },
     "Ambush predator": {
       "depth": 5,
@@ -545,62 +345,6 @@
       ],
       "updated_at": "2026-09-17T00:17:00.983005+00:00"
     },
-    "Bird flight": {
-      "depth": 3,
-      "created_at": "2026-09-17T00:18:38.718217+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bird_flight"
-      ],
-      "updated_at": "2026-09-17T00:18:38.718223+00:00"
-    },
-    "Contingency (evolutionary biology)": {
-      "depth": 4,
-      "created_at": "2026-09-17T00:23:24.998581+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Contingency_(evolutionary_biology)"
-      ],
-      "updated_at": "2026-09-17T00:23:24.998587+00:00"
-    },
-    "Disease ecology": {
-      "depth": 6,
-      "created_at": "2026-09-17T00:25:04.481226+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Disease_ecology"
-      ],
-      "updated_at": "2026-09-17T00:25:04.481232+00:00"
-    },
-    "Anti-predator adaptation": {
-      "depth": 5,
-      "created_at": "2026-09-17T00:26:40.650092+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Anti-predator_adaptation"
-      ],
-      "updated_at": "2026-09-17T00:26:40.650098+00:00"
-    },
-    "Agroecology": {
-      "depth": 5,
-      "created_at": "2026-09-17T00:28:17.498785+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Agroecology"
-      ],
-      "updated_at": "2026-09-17T00:28:17.498791+00:00"
-    },
-    "Convergent evolution": {
-      "depth": 6,
-      "created_at": "2026-09-17T00:29:55.824159+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Convergent_evolution"
-      ],
-      "updated_at": "2026-09-17T00:29:55.824166+00:00"
-    },
-    "Basal (phylogenetics)": {
-      "depth": 3,
-      "created_at": "2026-09-17T00:47:01.012581+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Basal_(phylogenetics)"
-      ],
-      "updated_at": "2026-09-17T00:47:01.012588+00:00"
-    },
     "Bayesian inference in phylogeny": {
       "depth": 5,
       "created_at": "2026-09-17T04:47:39.458284+00:00",
@@ -617,14 +361,6 @@
       ],
       "updated_at": "2026-09-17T07:06:39.588835+00:00"
     },
-    "Alternatives to Darwinian evolution": {
-      "depth": 5,
-      "created_at": "2026-09-17T07:09:53.657775+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Alternatives_to_Darwinian_evolution"
-      ],
-      "updated_at": "2026-09-17T07:09:53.657782+00:00"
-    },
     "Hover Chamber Choir": {
       "depth": 3,
       "created_at": "2026-09-17T07:16:21.319215+00:00",
@@ -632,14 +368,6 @@
         "https://en.wikipedia.org/wiki/Hover_Chamber_Choir"
       ],
       "updated_at": "2026-09-17T07:16:21.319223+00:00"
-    },
-    "Madama Butterfly": {
-      "depth": 3,
-      "created_at": "2026-09-17T07:17:57.158307+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Madama_Butterfly"
-      ],
-      "updated_at": "2026-09-17T07:17:57.158313+00:00"
     },
     "Distance matrices in phylogeny": {
       "depth": 5,
@@ -649,22 +377,6 @@
       ],
       "updated_at": "2026-09-17T07:21:07.808355+00:00"
     },
-    "E. coli long-term evolution experiment": {
-      "depth": 6,
-      "created_at": "2026-09-17T07:26:02.000966+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/E._coli_long-term_evolution_experiment"
-      ],
-      "updated_at": "2026-09-17T07:26:02.000971+00:00"
-    },
-    "Evolutionary biology": {
-      "depth": 6,
-      "created_at": "2026-09-17T07:27:38.073617+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionary_biology"
-      ],
-      "updated_at": "2026-09-17T07:27:38.073623+00:00"
-    },
     "Larva": {
       "depth": 2,
       "created_at": "2026-09-17T07:34:02.680911+00:00",
@@ -672,14 +384,6 @@
         "https://en.wikipedia.org/wiki/Larva"
       ],
       "updated_at": "2026-09-17T07:34:02.680916+00:00"
-    },
-    "Hovercraft": {
-      "depth": 3,
-      "created_at": "2026-09-17T07:35:40.159698+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Hovercraft"
-      ],
-      "updated_at": "2026-09-17T07:35:40.159704+00:00"
     },
     "Maggot": {
       "depth": 2,
@@ -697,22 +401,6 @@
       ],
       "updated_at": "2026-09-17T07:43:40.185113+00:00"
     },
-    "Animal sexual behaviour": {
-      "depth": 4,
-      "created_at": "2026-09-17T07:45:17.576728+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Animal_sexual_behaviour"
-      ],
-      "updated_at": "2026-09-17T07:45:17.576734+00:00"
-    },
-    "Alternative mating strategy": {
-      "depth": 3,
-      "created_at": "2026-09-17T07:46:55.248864+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Alternative_mating_strategy"
-      ],
-      "updated_at": "2026-09-17T07:46:55.248869+00:00"
-    },
     "Allochronic speciation": {
       "depth": 6,
       "created_at": "2026-09-17T09:02:16.887515+00:00",
@@ -720,38 +408,6 @@
         "https://en.wikipedia.org/wiki/Allochronic_speciation"
       ],
       "updated_at": "2026-09-17T09:02:16.887522+00:00"
-    },
-    "Animal Behaviour (journal)": {
-      "depth": 4,
-      "created_at": "2026-09-17T11:35:46.011734+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Animal_Behaviour_(journal)"
-      ],
-      "updated_at": "2026-09-17T11:35:46.011741+00:00"
-    },
-    "Animal behaviour": {
-      "depth": 4,
-      "created_at": "2026-09-17T12:20:50.252434+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Animal_behaviour"
-      ],
-      "updated_at": "2026-09-17T12:20:50.252443+00:00"
-    },
-    "Comfort behaviour in animals": {
-      "depth": 4,
-      "created_at": "2026-09-17T13:01:52.929748+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Comfort_behaviour_in_animals"
-      ],
-      "updated_at": "2026-09-17T13:01:52.929752+00:00"
-    },
-    "Decomposer": {
-      "depth": 4,
-      "created_at": "2026-09-17T13:03:33.619256+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Decomposer"
-      ],
-      "updated_at": "2026-09-17T13:03:33.619260+00:00"
     },
     "Apex predator": {
       "depth": 6,
@@ -761,22 +417,6 @@
       ],
       "updated_at": "2026-09-17T13:10:05.877583+00:00"
     },
-    "Deimatic behaviour": {
-      "depth": 3,
-      "created_at": "2026-09-17T13:11:45.061671+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Deimatic_behaviour"
-      ],
-      "updated_at": "2026-09-17T13:11:45.061675+00:00"
-    },
-    "Agonistic behaviour": {
-      "depth": 4,
-      "created_at": "2026-09-17T13:13:24.816744+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Agonistic_behaviour"
-      ],
-      "updated_at": "2026-09-17T13:13:24.816748+00:00"
-    },
     "Apex Predator (disambiguation)": {
       "depth": 4,
       "created_at": "2026-09-17T13:15:05.006584+00:00",
@@ -785,22 +425,6 @@
       ],
       "updated_at": "2026-09-17T13:15:05.006587+00:00"
     },
-    "Apex Predator – Easy Meat": {
-      "depth": 4,
-      "created_at": "2026-09-17T13:16:44.598237+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Apex_Predator_%E2%80%93_Easy_Meat"
-      ],
-      "updated_at": "2026-09-17T13:16:44.598241+00:00"
-    },
-    "Biological pest control": {
-      "depth": 5,
-      "created_at": "2026-09-17T13:18:22.497768+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Biological_pest_control"
-      ],
-      "updated_at": "2026-09-17T13:18:22.497771+00:00"
-    },
     "Chemical communication in insects": {
       "depth": 5,
       "created_at": "2026-09-17T13:20:02.657582+00:00",
@@ -808,22 +432,6 @@
         "https://en.wikipedia.org/wiki/Chemical_communication_in_insects"
       ],
       "updated_at": "2026-09-17T13:20:02.657585+00:00"
-    },
-    "Aquatic feeding mechanisms": {
-      "depth": 6,
-      "created_at": "2026-09-17T13:23:21.846956+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Aquatic_feeding_mechanisms"
-      ],
-      "updated_at": "2026-09-17T13:23:21.846959+00:00"
-    },
-    "Behavioral ecology": {
-      "depth": 5,
-      "created_at": "2026-09-17T13:25:01.570856+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_ecology"
-      ],
-      "updated_at": "2026-09-17T13:25:01.570860+00:00"
     },
     "Batesian mimicry": {
       "depth": 4,
@@ -848,14 +456,6 @@
         "https://en.wikipedia.org/wiki/Chemical_mimicry"
       ],
       "updated_at": "2026-09-17T13:34:41.983420+00:00"
-    },
-    "Community (ecology)": {
-      "depth": 6,
-      "created_at": "2026-09-17T13:36:20.066631+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Community_(ecology)"
-      ],
-      "updated_at": "2026-09-17T13:36:20.066635+00:00"
     },
     "Arthropod mouthparts": {
       "depth": 4,
@@ -905,14 +505,6 @@
       ],
       "updated_at": "2026-09-17T20:56:01.284436+00:00"
     },
-    "Desert ecology": {
-      "depth": 6,
-      "created_at": "2026-09-17T21:03:52.411904+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Desert_ecology"
-      ],
-      "updated_at": "2026-09-17T21:03:52.411911+00:00"
-    },
     "Foraging": {
       "depth": 5,
       "created_at": "2026-09-17T21:07:00.556589+00:00",
@@ -937,38 +529,6 @@
       ],
       "updated_at": "2026-09-17T21:11:44.148868+00:00"
     },
-    "Gene-centered view of evolution": {
-      "depth": 6,
-      "created_at": "2026-09-17T21:33:31.343286+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Gene-centered_view_of_evolution"
-      ],
-      "updated_at": "2026-09-17T21:33:31.343292+00:00"
-    },
-    "Evolution (journal)": {
-      "depth": 5,
-      "created_at": "2026-09-17T23:54:02.063253+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolution_(journal)"
-      ],
-      "updated_at": "2026-09-17T23:54:02.063265+00:00"
-    },
-    "Society for the Study of Evolution": {
-      "depth": 5,
-      "created_at": "2026-09-17T23:55:39.848047+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Society_for_the_Study_of_Evolution"
-      ],
-      "updated_at": "2026-09-17T23:55:39.848054+00:00"
-    },
-    "Arctic ecology": {
-      "depth": 5,
-      "created_at": "2026-09-18T00:07:02.770993+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Arctic_ecology"
-      ],
-      "updated_at": "2026-09-18T00:07:02.771000+00:00"
-    },
     "Blowfly": {
       "depth": 4,
       "created_at": "2026-09-18T00:18:04.726619+00:00",
@@ -985,38 +545,6 @@
       ],
       "updated_at": "2026-09-18T00:19:41.473000+00:00"
     },
-    "Blowfly's Party": {
-      "depth": 4,
-      "created_at": "2026-09-18T00:21:18.630120+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Blowfly's_Party"
-      ],
-      "updated_at": "2026-09-18T00:21:18.630127+00:00"
-    },
-    "Blowfly's Punk Rock Party": {
-      "depth": 4,
-      "created_at": "2026-09-18T00:22:56.170321+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Blowfly's_Punk_Rock_Party"
-      ],
-      "updated_at": "2026-09-18T00:22:56.170330+00:00"
-    },
-    "Eusociality": {
-      "depth": 5,
-      "created_at": "2026-09-18T00:24:32.465608+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Eusociality"
-      ],
-      "updated_at": "2026-09-18T00:24:32.465617+00:00"
-    },
-    "Alderfly": {
-      "depth": 4,
-      "created_at": "2026-09-18T00:26:09.403789+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Alderfly"
-      ],
-      "updated_at": "2026-09-18T00:26:09.403796+00:00"
-    },
     "Aerodynamic (instrumental)": {
       "depth": 4,
       "created_at": "2026-09-18T02:18:25.590716+00:00",
@@ -1024,54 +552,6 @@
         "https://en.wikipedia.org/wiki/Aerodynamic_(instrumental)"
       ],
       "updated_at": "2026-09-18T02:18:25.590723+00:00"
-    },
-    "Spiracle (arthropods)": {
-      "depth": 4,
-      "created_at": "2026-09-18T02:57:16.794199+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Spiracle_(arthropods)"
-      ],
-      "updated_at": "2026-09-18T02:57:16.794205+00:00"
-    },
-    "Off Color Brewing": {
-      "depth": 5,
-      "created_at": "2026-09-18T03:31:03.140244+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Off_Color_Brewing"
-      ],
-      "updated_at": "2026-09-18T03:31:03.140253+00:00"
-    },
-    "Two Brothers Brewing": {
-      "depth": 5,
-      "created_at": "2026-09-18T03:32:40.160052+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Two_Brothers_Brewing"
-      ],
-      "updated_at": "2026-09-18T03:32:40.160059+00:00"
-    },
-    "Allagash Brewing Company": {
-      "depth": 5,
-      "created_at": "2026-09-18T03:34:15.839964+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Allagash_Brewing_Company"
-      ],
-      "updated_at": "2026-09-18T03:34:15.839972+00:00"
-    },
-    "Brewing": {
-      "depth": 5,
-      "created_at": "2026-09-18T03:35:55.744799+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Brewing"
-      ],
-      "updated_at": "2026-09-18T03:35:55.744806+00:00"
-    },
-    "Drafting (aerodynamics)": {
-      "depth": 4,
-      "created_at": "2026-09-18T03:37:33.050092+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Drafting_(aerodynamics)"
-      ],
-      "updated_at": "2026-09-18T03:37:33.050099+00:00"
     },
     "Spiracle (vertebrates)": {
       "depth": 4,
@@ -1089,46 +569,6 @@
       ],
       "updated_at": "2026-09-18T09:12:03.229009+00:00"
     },
-    "Cooperation (evolution)": {
-      "depth": 5,
-      "created_at": "2026-09-18T09:17:03.794868+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Cooperation_(evolution)"
-      ],
-      "updated_at": "2026-09-18T09:17:03.794877+00:00"
-    },
-    "Adaptive evolution in the human genome": {
-      "depth": 4,
-      "created_at": "2026-09-18T09:18:41.728930+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptive_evolution_in_the_human_genome"
-      ],
-      "updated_at": "2026-09-18T09:18:41.728937+00:00"
-    },
-    "Evolution of the horse": {
-      "depth": 6,
-      "created_at": "2026-09-18T09:22:02.017806+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolution_of_the_horse"
-      ],
-      "updated_at": "2026-09-18T09:22:02.017814+00:00"
-    },
-    "Evolutionary arms race": {
-      "depth": 4,
-      "created_at": "2026-09-18T09:23:38.915025+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionary_arms_race"
-      ],
-      "updated_at": "2026-09-18T09:23:38.915032+00:00"
-    },
-    "Abundance (ecology)": {
-      "depth": 6,
-      "created_at": "2026-09-18T11:08:34.351757+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Abundance_(ecology)"
-      ],
-      "updated_at": "2026-09-18T11:08:34.351767+00:00"
-    },
     "Helicopter flight controls": {
       "depth": 3,
       "created_at": "2026-09-18T13:59:02.443052+00:00",
@@ -1136,22 +576,6 @@
         "https://en.wikipedia.org/wiki/Helicopter_flight_controls"
       ],
       "updated_at": "2026-09-18T13:59:02.443059+00:00"
-    },
-    "Acoustic ecology": {
-      "depth": 5,
-      "created_at": "2026-09-18T14:04:02.370719+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Acoustic_ecology"
-      ],
-      "updated_at": "2026-09-18T14:04:02.370726+00:00"
-    },
-    "Austrobaileyales": {
-      "depth": 4,
-      "created_at": "2026-09-18T14:15:03.518630+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Austrobaileyales"
-      ],
-      "updated_at": "2026-09-18T14:15:03.518636+00:00"
     },
     "Common green bottle fly": {
       "depth": 3,
@@ -1161,62 +585,6 @@
       ],
       "updated_at": "2026-09-18T14:24:27.978260+00:00"
     },
-    "Evolutionarily stable strategy": {
-      "depth": 5,
-      "created_at": "2026-09-18T14:37:02.734643+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionarily_stable_strategy"
-      ],
-      "updated_at": "2026-09-18T14:37:02.734649+00:00"
-    },
-    "Adaptation (disambiguation)": {
-      "depth": 6,
-      "created_at": "2026-09-18T19:25:01.945294+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_(disambiguation)"
-      ],
-      "updated_at": "2026-09-18T19:25:01.945306+00:00"
-    },
-    "Cellular adaptation": {
-      "depth": 4,
-      "created_at": "2026-09-18T19:29:52.808750+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Cellular_adaptation"
-      ],
-      "updated_at": "2026-09-18T19:29:52.808758+00:00"
-    },
-    "Climate change adaptation": {
-      "depth": 4,
-      "created_at": "2026-09-18T19:31:30.239078+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Climate_change_adaptation"
-      ],
-      "updated_at": "2026-09-18T19:31:30.239086+00:00"
-    },
-    "Domain adaptation": {
-      "depth": 4,
-      "created_at": "2026-09-18T19:33:08.635526+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Domain_adaptation"
-      ],
-      "updated_at": "2026-09-18T19:33:08.635535+00:00"
-    },
-    "Ecosystem-based adaptation": {
-      "depth": 4,
-      "created_at": "2026-09-18T19:34:46.870086+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Ecosystem-based_adaptation"
-      ],
-      "updated_at": "2026-09-18T19:34:46.870097+00:00"
-    },
-    "Content adaptation": {
-      "depth": 7,
-      "created_at": "2026-09-18T22:34:02.785127+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Content_adaptation"
-      ],
-      "updated_at": "2026-09-18T22:34:02.785133+00:00"
-    },
     "Black fly": {
       "depth": 6,
       "created_at": "2026-09-18T22:38:44.256806+00:00",
@@ -1225,126 +593,6 @@
       ],
       "updated_at": "2026-09-18T22:38:44.256813+00:00"
     },
-    "Association for the Study of Animal Behaviour": {
-      "depth": 5,
-      "created_at": "2026-09-18T22:40:19.694231+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Association_for_the_Study_of_Animal_Behaviour"
-      ],
-      "updated_at": "2026-09-18T22:40:19.694237+00:00"
-    },
-    "Alcohol by volume": {
-      "depth": 6,
-      "created_at": "2026-09-18T22:45:03.341278+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Alcohol_by_volume"
-      ],
-      "updated_at": "2026-09-18T22:45:03.341285+00:00"
-    },
-    "Adaptation (eye)": {
-      "depth": 4,
-      "created_at": "2026-09-19T03:03:01.465314+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_(eye)"
-      ],
-      "updated_at": "2026-09-19T03:03:01.465321+00:00"
-    },
-    "Artificial fly": {
-      "depth": 5,
-      "created_at": "2026-09-19T03:28:02.357567+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Artificial_fly"
-      ],
-      "updated_at": "2026-09-19T03:28:02.357574+00:00"
-    },
-    "American Museum of Fly Fishing": {
-      "depth": 5,
-      "created_at": "2026-09-19T03:29:38.307533+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/American_Museum_of_Fly_Fishing"
-      ],
-      "updated_at": "2026-09-19T03:29:38.307539+00:00"
-    },
-    "Bamboo fly rod": {
-      "depth": 4,
-      "created_at": "2026-09-19T03:32:48.642864+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bamboo_fly_rod"
-      ],
-      "updated_at": "2026-09-19T03:32:48.642871+00:00"
-    },
-    "Sexual antagonistic coevolution": {
-      "depth": 5,
-      "created_at": "2026-09-19T03:39:03.247399+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Sexual_antagonistic_coevolution"
-      ],
-      "updated_at": "2026-09-19T03:39:03.247406+00:00"
-    },
-    "ATM adaptation layer": {
-      "depth": 7,
-      "created_at": "2026-09-19T08:40:02.617188+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/ATM_adaptation_layer"
-      ],
-      "updated_at": "2026-09-19T08:40:02.617195+00:00"
-    },
-    "Evolutionary anachronism": {
-      "depth": 5,
-      "created_at": "2026-09-19T08:54:03.089109+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionary_anachronism"
-      ],
-      "updated_at": "2026-09-19T08:54:03.089116+00:00"
-    },
-    "Adaptation (arts)": {
-      "depth": 7,
-      "created_at": "2026-09-24T03:41:00.917379+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_(arts)"
-      ],
-      "updated_at": "2026-09-24T03:41:00.917389+00:00"
-    },
-    "Literary adaptation": {
-      "depth": 4,
-      "created_at": "2026-09-19T09:09:39.703236+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Literary_adaptation"
-      ],
-      "updated_at": "2026-09-19T09:09:39.703244+00:00"
-    },
-    "Saro Windhover": {
-      "depth": 4,
-      "created_at": "2026-09-19T13:40:02.585196+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Saro_Windhover"
-      ],
-      "updated_at": "2026-09-19T13:40:02.585203+00:00"
-    },
-    "List of flying boats and floatplanes": {
-      "depth": 5,
-      "created_at": "2026-09-19T13:41:39.479811+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/List_of_flying_boats_and_floatplanes"
-      ],
-      "updated_at": "2026-09-19T13:41:39.479817+00:00"
-    },
-    "AD Flying Boat": {
-      "depth": 4,
-      "created_at": "2026-09-19T13:43:17.415273+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/AD_Flying_Boat"
-      ],
-      "updated_at": "2026-09-19T13:43:17.415278+00:00"
-    },
-    "Bibliography of fly fishing (fly tying, stories, fiction)": {
-      "depth": 5,
-      "created_at": "2026-09-19T14:03:02.440989+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(fly_tying%2C_stories%2C_fiction)"
-      ],
-      "updated_at": "2026-09-19T14:03:02.440995+00:00"
-    },
     "Blacker's Art of Fly Making": {
       "depth": 5,
       "created_at": "2026-09-19T14:09:33.123631+00:00",
@@ -1352,22 +600,6 @@
         "https://en.wikipedia.org/wiki/Blacker's_Art_of_Fly_Making"
       ],
       "updated_at": "2026-09-19T14:09:33.123636+00:00"
-    },
-    "Catskill Fly Fishing Center and Museum": {
-      "depth": 5,
-      "created_at": "2026-09-19T14:11:11.322092+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Catskill_Fly_Fishing_Center_and_Museum"
-      ],
-      "updated_at": "2026-09-19T14:11:11.322097+00:00"
-    },
-    "Adams (dry fly)": {
-      "depth": 6,
-      "created_at": "2026-09-19T14:21:03.669051+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adams_(dry_fly)"
-      ],
-      "updated_at": "2026-09-19T14:21:03.669057+00:00"
     },
     "Amateur Entomologists' Society": {
       "depth": 5,
@@ -1385,30 +617,6 @@
       ],
       "updated_at": "2026-09-19T16:59:03.877046+00:00"
     },
-    "Royal Entomological Society": {
-      "depth": 5,
-      "created_at": "2026-09-19T17:00:42.120562+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Royal_Entomological_Society"
-      ],
-      "updated_at": "2026-09-19T17:00:42.120568+00:00"
-    },
-    "The Entomologist's Record and Journal of Variation": {
-      "depth": 6,
-      "created_at": "2026-09-19T17:02:18.788226+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/The_Entomologist's_Record_and_Journal_of_Variation"
-      ],
-      "updated_at": "2026-09-19T17:02:18.788234+00:00"
-    },
-    "Adaptation (computer science)": {
-      "depth": 7,
-      "created_at": "2026-09-19T17:12:02.499476+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_(computer_science)"
-      ],
-      "updated_at": "2026-09-19T17:12:02.499485+00:00"
-    },
     "Blue-winged Olive flies": {
       "depth": 5,
       "created_at": "2026-09-19T17:25:01.630623+00:00",
@@ -1416,22 +624,6 @@
         "https://en.wikipedia.org/wiki/Blue-winged_Olive_flies"
       ],
       "updated_at": "2026-09-19T17:25:01.630633+00:00"
-    },
-    "Adaptation (The Walking Dead)": {
-      "depth": 7,
-      "created_at": "2026-09-19T22:31:02.809052+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptation_(The_Walking_Dead)"
-      ],
-      "updated_at": "2026-09-19T22:31:02.809058+00:00"
-    },
-    "Bibliography of fly fishing": {
-      "depth": 5,
-      "created_at": "2026-09-19T22:51:16.508628+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing"
-      ],
-      "updated_at": "2026-09-19T22:51:16.508635+00:00"
     },
     "Insect Festival": {
       "depth": 6,
@@ -1441,174 +633,6 @@
       ],
       "updated_at": "2026-09-20T02:30:01.302477+00:00"
     },
-    "Chromatic adaptation": {
-      "depth": 7,
-      "created_at": "2026-09-20T03:16:03.355649+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Chromatic_adaptation"
-      ],
-      "updated_at": "2026-09-20T03:16:03.355657+00:00"
-    },
-    "Adaptive behavior": {
-      "depth": 7,
-      "created_at": "2026-09-20T03:24:04.777490+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptive_behavior"
-      ],
-      "updated_at": "2026-09-20T03:24:04.777498+00:00"
-    },
-    "Adaptive Behavior (journal)": {
-      "depth": 6,
-      "created_at": "2026-09-20T03:25:40.974450+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptive_Behavior_(journal)"
-      ],
-      "updated_at": "2026-09-20T03:25:40.974457+00:00"
-    },
-    "Bibliography of fly fishing (species related)": {
-      "depth": 5,
-      "created_at": "2026-09-20T03:53:01.730452+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(species_related)"
-      ],
-      "updated_at": "2026-09-20T03:53:01.730459+00:00"
-    },
-    "Vineland Adaptive Behavior Scale": {
-      "depth": 5,
-      "created_at": "2026-09-20T09:08:04.837241+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Vineland_Adaptive_Behavior_Scale"
-      ],
-      "updated_at": "2026-09-20T09:08:04.837250+00:00"
-    },
-    "A History of Fly Fishing for Trout": {
-      "depth": 6,
-      "created_at": "2026-09-20T09:19:03.694753+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/A_History_of_Fly_Fishing_for_Trout"
-      ],
-      "updated_at": "2026-09-20T09:19:03.694761+00:00"
-    },
-    "Adaptive behavior (ecology)": {
-      "depth": 8,
-      "created_at": "2026-09-20T09:30:01.730217+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Adaptive_behavior_(ecology)"
-      ],
-      "updated_at": "2026-09-20T09:30:01.730224+00:00"
-    },
-    "Behavior": {
-      "depth": 6,
-      "created_at": "2026-09-20T09:31:37.775581+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior"
-      ],
-      "updated_at": "2026-09-20T09:31:37.775588+00:00"
-    },
-    "Applied behavior analysis": {
-      "depth": 5,
-      "created_at": "2026-09-20T09:33:14.098163+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Applied_behavior_analysis"
-      ],
-      "updated_at": "2026-09-20T09:33:14.098170+00:00"
-    },
-    "Behavior informatics": {
-      "depth": 5,
-      "created_at": "2026-09-20T09:39:33.720934+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_informatics"
-      ],
-      "updated_at": "2026-09-20T09:39:33.720940+00:00"
-    },
-    "Behavioural sciences": {
-      "depth": 5,
-      "created_at": "2026-09-20T09:42:43.123792+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioural_sciences"
-      ],
-      "updated_at": "2026-09-20T09:42:43.123798+00:00"
-    },
-    "Behavioral neuroscience": {
-      "depth": 5,
-      "created_at": "2026-09-20T11:16:50.026096+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_neuroscience"
-      ],
-      "updated_at": "2026-09-20T11:16:50.026103+00:00"
-    },
-    "Behavioural genetics": {
-      "depth": 6,
-      "created_at": "2026-09-20T13:49:57.612990+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioural_genetics"
-      ],
-      "updated_at": "2026-09-20T13:49:57.612999+00:00"
-    },
-    "Consumer behaviour": {
-      "depth": 5,
-      "created_at": "2026-09-20T13:58:53.758143+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Consumer_behaviour"
-      ],
-      "updated_at": "2026-09-20T13:58:53.758149+00:00"
-    },
-    "Behaviour (journal)": {
-      "depth": 5,
-      "created_at": "2026-09-20T14:02:03.612601+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behaviour_(journal)"
-      ],
-      "updated_at": "2026-09-20T14:02:03.612608+00:00"
-    },
-    "Behavioral economics": {
-      "depth": 5,
-      "created_at": "2026-09-20T14:03:41.330645+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_economics"
-      ],
-      "updated_at": "2026-09-20T14:03:41.330652+00:00"
-    },
-    "A Behavioral Theory of the Firm": {
-      "depth": 6,
-      "created_at": "2026-09-20T14:05:17.387435+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/A_Behavioral_Theory_of_the_Firm"
-      ],
-      "updated_at": "2026-09-20T14:05:17.387442+00:00"
-    },
-    "Behaviorism": {
-      "depth": 5,
-      "created_at": "2026-09-20T14:10:05.741396+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behaviorism"
-      ],
-      "updated_at": "2026-09-20T14:10:05.741404+00:00"
-    },
-    "Behavioral endocrinology": {
-      "depth": 9,
-      "created_at": "2026-09-20T14:18:02.070285+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_endocrinology"
-      ],
-      "updated_at": "2026-09-20T14:18:02.070291+00:00"
-    },
-    "Evolutionary psychology": {
-      "depth": 5,
-      "created_at": "2026-09-20T14:19:37.578017+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionary_psychology"
-      ],
-      "updated_at": "2026-09-20T14:19:37.578023+00:00"
-    },
-    "Behavioral Ecology (journal)": {
-      "depth": 6,
-      "created_at": "2026-09-20T17:09:39.347638+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_Ecology_(journal)"
-      ],
-      "updated_at": "2026-09-20T17:09:39.347645+00:00"
-    },
     "Bonefish fly patterns": {
       "depth": 5,
       "created_at": "2026-09-20T17:42:01.830202+00:00",
@@ -1617,109 +641,13 @@
       ],
       "updated_at": "2026-09-20T17:42:01.830211+00:00"
     },
-    "Antecedent (behavioral psychology)": {
-      "depth": 5,
-      "created_at": "2026-09-20T20:55:02.222794+00:00",
+    "Insects in ethics": {
+      "depth": 7,
+      "created_at": "2026-09-24T14:53:41.104883+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Antecedent_(behavioral_psychology)"
+        "https://en.wikipedia.org/wiki/Insects_in_ethics"
       ],
-      "updated_at": "2026-09-20T20:55:02.222801+00:00"
-    },
-    "Association for Behavior Analysis International": {
-      "depth": 5,
-      "created_at": "2026-09-20T23:49:02.348778+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Association_for_Behavior_Analysis_International"
-      ],
-      "updated_at": "2026-09-20T23:49:02.348785+00:00"
-    },
-    "Alexandra (wet fly)": {
-      "depth": 6,
-      "created_at": "2026-09-21T00:24:03.146035+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Alexandra_(wet_fly)"
-      ],
-      "updated_at": "2026-09-21T00:24:03.146042+00:00"
-    },
-    "Behavior (disambiguation)": {
-      "depth": 5,
-      "created_at": "2026-09-21T02:28:01.902576+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_(disambiguation)"
-      ],
-      "updated_at": "2026-09-21T02:28:01.902585+00:00"
-    },
-    "Behaviour Interactive": {
-      "depth": 6,
-      "created_at": "2026-09-21T03:06:20.627738+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behaviour_Interactive"
-      ],
-      "updated_at": "2026-09-21T03:06:20.627744+00:00"
-    },
-    "Behaviour Santiago": {
-      "depth": 6,
-      "created_at": "2026-09-21T03:07:58.151028+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behaviour_Santiago"
-      ],
-      "updated_at": "2026-09-21T03:07:58.151035+00:00"
-    },
-    "Behavior selection algorithm": {
-      "depth": 5,
-      "created_at": "2026-09-21T09:33:08.149820+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_selection_algorithm"
-      ],
-      "updated_at": "2026-09-21T09:33:08.149834+00:00"
-    },
-    "Behavioral modeling in computer-aided design": {
-      "depth": 6,
-      "created_at": "2026-09-21T09:34:46.315952+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_computer-aided_design"
-      ],
-      "updated_at": "2026-09-21T09:34:46.315959+00:00"
-    },
-    "Behavior analysis (disambiguation)": {
-      "depth": 5,
-      "created_at": "2026-09-21T09:43:04.450795+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_analysis_(disambiguation)"
-      ],
-      "updated_at": "2026-09-21T09:43:04.450802+00:00"
-    },
-    "Behavioral modeling in hydrology": {
-      "depth": 6,
-      "created_at": "2026-09-21T09:55:03.383705+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_hydrology"
-      ],
-      "updated_at": "2026-09-21T09:55:03.383711+00:00"
-    },
-    "Biogeomorphology": {
-      "depth": 6,
-      "created_at": "2026-09-21T09:56:42.216757+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Biogeomorphology"
-      ],
-      "updated_at": "2026-09-21T09:56:42.216763+00:00"
-    },
-    "Coastal biogeomorphology": {
-      "depth": 5,
-      "created_at": "2026-09-21T09:59:57.345659+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Coastal_biogeomorphology"
-      ],
-      "updated_at": "2026-09-21T09:59:57.345665+00:00"
-    },
-    "Behavior tree (artificial intelligence, robotics and control)": {
-      "depth": 6,
-      "created_at": "2026-09-21T10:05:02.289900+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence%2C_robotics_and_control)"
-      ],
-      "updated_at": "2026-09-21T10:05:02.289907+00:00"
+      "updated_at": "2026-09-24T14:53:41.104889+00:00"
     },
     "Behavioral pattern": {
       "depth": 5,
@@ -1784,14 +712,6 @@
         "https://en.wikipedia.org/wiki/Behavioral_momentum"
       ],
       "updated_at": "2026-09-22T00:59:01.969128+00:00"
-    },
-    "Professional practice of behavior analysis": {
-      "depth": 6,
-      "created_at": "2026-09-22T01:06:03.439812+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis"
-      ],
-      "updated_at": "2026-09-22T01:06:03.439819+00:00"
     },
     "Butterfly effect": {
       "depth": 6,
@@ -1880,14 +800,6 @@
         "https://en.wikipedia.org/wiki/Anti-social_behaviour"
       ],
       "updated_at": "2026-09-22T21:34:04.151357+00:00"
-    },
-    "Association for Contextual Behavioral Science": {
-      "depth": 6,
-      "created_at": "2026-09-23T00:20:03.366120+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Association_for_Contextual_Behavioral_Science"
-      ],
-      "updated_at": "2026-09-23T00:20:03.366127+00:00"
     },
     "Verbal Behavior": {
       "depth": 6,
@@ -2065,14 +977,6 @@
       ],
       "updated_at": "2026-09-24T08:58:04.673124+00:00"
     },
-    "Insects in ethics": {
-      "depth": 7,
-      "created_at": "2026-09-24T14:53:41.104883+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Insects_in_ethics"
-      ],
-      "updated_at": "2026-09-24T14:53:41.104889+00:00"
-    },
     "Theatrical adaptation": {
       "depth": 8,
       "created_at": "2026-09-24T15:11:02.927748+00:00",
@@ -2121,6 +1025,102 @@
       ],
       "updated_at": "2026-10-08T06:06:07.694727+00:00"
     },
+    "Professional practice of behavior analysis": {
+      "depth": 6,
+      "created_at": "2026-09-22T01:06:03.439812+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis"
+      ],
+      "updated_at": "2026-09-22T01:06:03.439819+00:00"
+    },
+    "Insect flight": {
+      "depth": 2,
+      "created_at": "2026-09-16T13:55:50.280207+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Insect_flight"
+      ],
+      "updated_at": "2026-09-16T13:55:50.280215+00:00"
+    },
+    "Windhover": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:26:51.265421+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Windhover"
+      ],
+      "updated_at": "2026-09-16T23:26:51.265426+00:00"
+    },
+    "Hover (EP)": {
+      "depth": 3,
+      "created_at": "2026-09-17T00:05:29.991210+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hover_(EP)"
+      ],
+      "updated_at": "2026-09-17T00:05:29.991217+00:00"
+    },
+    "Bird flight": {
+      "depth": 3,
+      "created_at": "2026-09-17T00:18:38.718217+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bird_flight"
+      ],
+      "updated_at": "2026-09-17T00:18:38.718223+00:00"
+    },
+    "Anti-predator adaptation": {
+      "depth": 5,
+      "created_at": "2026-09-17T00:26:40.650092+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anti-predator_adaptation"
+      ],
+      "updated_at": "2026-09-17T00:26:40.650098+00:00"
+    },
+    "Basal (phylogenetics)": {
+      "depth": 3,
+      "created_at": "2026-09-17T00:47:01.012581+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Basal_(phylogenetics)"
+      ],
+      "updated_at": "2026-09-17T00:47:01.012588+00:00"
+    },
+    "Apex Predator – Easy Meat": {
+      "depth": 4,
+      "created_at": "2026-09-17T13:16:44.598237+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Apex_Predator_%E2%80%93_Easy_Meat"
+      ],
+      "updated_at": "2026-09-17T13:16:44.598241+00:00"
+    },
+    "Alderfly": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:26:09.403789+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alderfly"
+      ],
+      "updated_at": "2026-09-18T00:26:09.403796+00:00"
+    },
+    "Spiracle (arthropods)": {
+      "depth": 4,
+      "created_at": "2026-09-18T02:57:16.794199+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Spiracle_(arthropods)"
+      ],
+      "updated_at": "2026-09-18T02:57:16.794205+00:00"
+    },
+    "Saro Windhover": {
+      "depth": 4,
+      "created_at": "2026-09-19T13:40:02.585196+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saro_Windhover"
+      ],
+      "updated_at": "2026-09-19T13:40:02.585203+00:00"
+    },
+    "Royal Entomological Society": {
+      "depth": 5,
+      "created_at": "2026-09-19T17:00:42.120562+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Royal_Entomological_Society"
+      ],
+      "updated_at": "2026-09-19T17:00:42.120568+00:00"
+    },
     "Dragonfly": {
       "depth": 6,
       "created_at": "2026-10-27T20:41:10.578337+00:00",
@@ -2129,6 +1129,22 @@
       ],
       "updated_at": "2026-10-27T20:41:10.578343+00:00"
     },
+    "Arthropod": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:28:22.360324+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arthropod"
+      ],
+      "updated_at": "2026-09-16T22:28:22.360331+00:00"
+    },
+    "Drafting (aerodynamics)": {
+      "depth": 4,
+      "created_at": "2026-09-18T03:37:33.050092+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Drafting_(aerodynamics)"
+      ],
+      "updated_at": "2026-09-18T03:37:33.050099+00:00"
+    },
     "Anax (dragonfly)": {
       "depth": 7,
       "created_at": "2026-10-28T08:02:04.230532+00:00",
@@ -2136,41 +1152,33 @@
         "https://en.wikipedia.org/wiki/Anax_(dragonfly)"
       ],
       "updated_at": "2026-10-28T08:02:04.230536+00:00"
+    },
+    "Automotive aerodynamics": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:59:40.242009+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Automotive_aerodynamics"
+      ],
+      "updated_at": "2026-09-16T22:59:40.242014+00:00"
+    },
+    "Behavior tree (artificial intelligence, robotics and control)": {
+      "depth": 6,
+      "created_at": "2026-09-21T10:05:02.289900+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence%2C_robotics_and_control)"
+      ],
+      "updated_at": "2026-09-21T10:05:02.289907+00:00"
+    },
+    "Association for Contextual Behavioral Science": {
+      "depth": 6,
+      "created_at": "2026-09-23T00:20:03.366120+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_Contextual_Behavioral_Science"
+      ],
+      "updated_at": "2026-09-23T00:20:03.366127+00:00"
     }
   },
   "edges": [
-    {
-      "from": "Evolution",
-      "to": "Evolution of insects"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect morphology"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect wing"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insecticide"
-    },
-    {
-      "from": "Evolution",
-      "to": "Fly"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect flight"
-    },
-    {
-      "from": "Evolution",
-      "to": "Wing"
-    },
     {
       "from": "Wing",
       "to": "Bird wing"
@@ -2178,70 +1186,6 @@
     {
       "from": "Wing",
       "to": "Bat wing development"
-    },
-    {
-      "from": "Wing",
-      "to": "Aileron"
-    },
-    {
-      "from": "Palaeoptera",
-      "to": "Basal (evolution)"
-    },
-    {
-      "from": "Palaeoptera",
-      "to": "Caddisfly"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect mouthparts"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect ecology"
-    },
-    {
-      "from": "Insect ecology",
-      "to": "Annual Review of Ecology, Evolution, and Systematics"
-    },
-    {
-      "from": "Insect ecology",
-      "to": "Anthecology"
-    },
-    {
-      "from": "Insect ecology",
-      "to": "Applied ecology"
-    },
-    {
-      "from": "Evolution",
-      "to": "Larva"
-    },
-    {
-      "from": "Evolution",
-      "to": "Maggot"
-    },
-    {
-      "from": "Evolution",
-      "to": "Insect behaviour"
-    },
-    {
-      "from": "Flight",
-      "to": "Ailerons"
-    },
-    {
-      "from": "Antenna (zoology)",
-      "to": "Aquatic insects"
-    },
-    {
-      "from": "Parasitoid",
-      "to": "Aquatic insects"
-    },
-    {
-      "from": "Mating",
-      "to": "Blue-tailed damselfly"
-    },
-    {
-      "from": "Arthropod eye",
-      "to": "Aquatic insects"
     },
     {
       "from": "Alate",
@@ -2252,20 +1196,8 @@
       "to": "Evolution of insects"
     },
     {
-      "from": "Evolution of insects",
-      "to": "Amphibious insect"
-    },
-    {
-      "from": "Insect behaviour",
-      "to": "Behavioral Ecology and Sociobiology"
-    },
-    {
       "from": "Insect flight",
       "to": "Insect"
-    },
-    {
-      "from": "Insect",
-      "to": "Abdomen (insect anatomy)"
     },
     {
       "from": "Annual Review of Entomology",
@@ -2284,16 +1216,8 @@
       "to": "Insect morphology"
     },
     {
-      "from": "Devonian",
-      "to": "Insect wing"
-    },
-    {
       "from": "Insect wing",
       "to": "Alderfly"
-    },
-    {
-      "from": "Insect wing",
-      "to": "Amphibious insect"
     },
     {
       "from": "Pollination",
@@ -2312,26 +1236,6 @@
       "to": "Bat wing development"
     },
     {
-      "from": "Neoptera",
-      "to": "Aileron"
-    },
-    {
-      "from": "Aileron",
-      "to": "Adaptive Compliant Wing"
-    },
-    {
-      "from": "Behavioral Ecology and Sociobiology",
-      "to": "Ecology"
-    },
-    {
-      "from": "Ecology",
-      "to": "Agroecology"
-    },
-    {
-      "from": "Adaptive radiation",
-      "to": "Applications of evolution"
-    },
-    {
       "from": "Compound eye",
       "to": "Caddisfly"
     },
@@ -2341,111 +1245,11 @@
     },
     {
       "from": "Insect mouthparts",
-      "to": "Aquatic insects"
-    },
-    {
-      "from": "Insect mouthparts",
       "to": "Chemical communication in insects"
-    },
-    {
-      "from": "Mimicry",
-      "to": "Annual Review of Ecology, Evolution, and Systematics"
-    },
-    {
-      "from": "Apterygota",
-      "to": "Anthecology"
-    },
-    {
-      "from": "Arthropod exoskeleton",
-      "to": "Aquatic insects"
-    },
-    {
-      "from": "Arthropod leg",
-      "to": "Applied ecology"
-    },
-    {
-      "from": "Applied ecology",
-      "to": "Behavioral ecology"
-    },
-    {
-      "from": "Applied ecology",
-      "to": "Agroecology"
-    },
-    {
-      "from": "Applied ecology",
-      "to": "Arctic ecology"
-    },
-    {
-      "from": "Annual Review of Ecology, Evolution, and Systematics",
-      "to": "Autecology"
-    },
-    {
-      "from": "Anthecology",
-      "to": "Butterfly"
-    },
-    {
-      "from": "Applications of evolution",
-      "to": "Current research in evolutionary biology"
-    },
-    {
-      "from": "Applications of evolution",
-      "to": "Ecology"
-    },
-    {
-      "from": "Applications of evolution",
-      "to": "Cooperation (evolution)"
-    },
-    {
-      "from": "Adaptationism",
-      "to": "Adaptive evolution in the human genome"
     },
     {
       "from": "Hover (behaviour)",
       "to": "Bird wing"
-    },
-    {
-      "from": "Insecticide",
-      "to": "Contingency (evolutionary biology)"
-    },
-    {
-      "from": "Autecology",
-      "to": "Disease ecology"
-    },
-    {
-      "from": "Autecology",
-      "to": "Desert ecology"
-    },
-    {
-      "from": "Autecology",
-      "to": "Convergent evolution"
-    },
-    {
-      "from": "Autecology",
-      "to": "E. coli long-term evolution experiment"
-    },
-    {
-      "from": "Autecology",
-      "to": "Evolution of the horse"
-    },
-    {
-      "from": "Autecology",
-      "to": "Gene-centered view of evolution"
-    },
-    {
-      "from": "Basal (phylogenetics)",
-      "to": "Austrobaileyales"
-    },
-    {
-      "from": "Adaptation and Natural Selection",
-      "to": "Alternatives to Darwinian evolution"
-    },
-    {
-      "from": "Exoskeleton",
-      "to": "Madama Butterfly"
-    },
-    {
-      "from": "Butterfly",
-      "to": "Evolutionary biology"
     },
     {
       "from": "Maggot",
@@ -2456,92 +1260,20 @@
       "to": "Courtship"
     },
     {
-      "from": "Larva",
-      "to": "Alternative mating strategy"
-    },
-    {
-      "from": "Hoverfly",
-      "to": "Evolution (journal)"
-    },
-    {
-      "from": "Contingency (evolutionary biology)",
-      "to": "Evolutionarily stable strategy"
-    },
-    {
       "from": "Allopatric speciation",
       "to": "Allochronic speciation"
-    },
-    {
-      "from": "Alternatives to Darwinian evolution",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Adaptation",
-      "to": "Adaptation (disambiguation)"
-    },
-    {
-      "from": "Anti-predator adaptation",
-      "to": "Abundance (ecology)"
-    },
-    {
-      "from": "Agroecology",
-      "to": "Apex predator"
-    },
-    {
-      "from": "Agroecology",
-      "to": "Aquatic feeding mechanisms"
-    },
-    {
-      "from": "Agroecology",
-      "to": "Black fly"
-    },
-    {
-      "from": "Alternative mating strategy",
-      "to": "Apex Predator (disambiguation)"
-    },
-    {
-      "from": "Apex Predator (disambiguation)",
-      "to": "Predator (disambiguation)"
-    },
-    {
-      "from": "Apex Predator (disambiguation)",
-      "to": "Superpredators (disambiguation)"
-    },
-    {
-      "from": "Apex Predator (disambiguation)",
-      "to": "Off Color Brewing"
     },
     {
       "from": "Caddisfly",
       "to": "Apex Predator – Easy Meat"
     },
     {
-      "from": "Chemical communication in insects",
-      "to": "Aquatic insects"
-    },
-    {
       "from": "Hover",
       "to": "Helicopter flight controls"
     },
     {
-      "from": "Behavioral ecology",
-      "to": "Abundance (ecology)"
-    },
-    {
       "from": "Automimicry",
       "to": "Anti-predator adaptation"
-    },
-    {
-      "from": "Bayesian inference in phylogeny",
-      "to": "Community (ecology)"
-    },
-    {
-      "from": "Evolutionary biology",
-      "to": "Allopatric speciation"
-    },
-    {
-      "from": "Decomposer",
-      "to": "Cephalothorax"
     },
     {
       "from": "Distance matrices in phylogeny",
@@ -2552,40 +1284,8 @@
       "to": "Aquatic insect"
     },
     {
-      "from": "Aquatic insect",
-      "to": "Acoustic ecology"
-    },
-    {
-      "from": "Aquatic insect",
-      "to": "Aquatic insects"
-    },
-    {
-      "from": "Aquatic insect",
-      "to": "Aquatic adaptation"
-    },
-    {
       "from": "Foraging",
       "to": "Anti-predator adaptation"
-    },
-    {
-      "from": "Foraging",
-      "to": "Abundance (ecology)"
-    },
-    {
-      "from": "Convergent evolution",
-      "to": "Damselfly"
-    },
-    {
-      "from": "Gene-centered view of evolution",
-      "to": "Adaptation and Natural Selection"
-    },
-    {
-      "from": "Gene-centered view of evolution",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Gene-centered view of evolution",
-      "to": "Adaptationism"
     },
     {
       "from": "Bat wing development",
@@ -2596,272 +1296,20 @@
       "to": "Allopatric speciation"
     },
     {
-      "from": "Bat wing development",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Ant mimicry",
-      "to": "Society for the Study of Evolution"
-    },
-    {
-      "from": "Arctic ecology",
-      "to": "Agroecology"
-    },
-    {
-      "from": "Arctic ecology",
-      "to": "Applied ecology"
-    },
-    {
-      "from": "Arctic ecology",
-      "to": "Adaptations"
-    },
-    {
-      "from": "Angular velocity",
-      "to": "Blowfly (musician)"
-    },
-    {
-      "from": "Thorax",
-      "to": "Blowfly's Party"
-    },
-    {
-      "from": "Madama Butterfly",
-      "to": "Blowfly's Punk Rock Party"
-    },
-    {
-      "from": "Society for the Study of Evolution",
-      "to": "Evolution (journal)"
-    },
-    {
-      "from": "Society for the Study of Evolution",
-      "to": "Evolutionary biologists"
-    },
-    {
-      "from": "Society for the Study of Evolution",
-      "to": "Evolution"
-    },
-    {
-      "from": "Society for the Study of Evolution",
-      "to": "Evolutionary biology"
-    },
-    {
       "from": "Aerodynamic (disambiguation)",
       "to": "Aerodynamic (instrumental)"
-    },
-    {
-      "from": "Off Color Brewing",
-      "to": "Alcohol by volume"
-    },
-    {
-      "from": "Apex Predator – Easy Meat",
-      "to": "Two Brothers Brewing"
-    },
-    {
-      "from": "Animal behaviour",
-      "to": "Allagash Brewing Company"
-    },
-    {
-      "from": "Animal behaviour",
-      "to": "Brewing"
     },
     {
       "from": "Automotive aerodynamics",
       "to": "Drafting (aerodynamics)"
     },
     {
-      "from": "Housefly",
-      "to": "Artificial fly"
-    },
-    {
-      "from": "Aileron",
-      "to": "Adaptive compliant wing"
-    },
-    {
-      "from": "Adaptive compliant wing",
-      "to": "Aileron"
-    },
-    {
-      "from": "Adaptive compliant wing",
-      "to": "Aerodynamic drag"
-    },
-    {
-      "from": "Cooperation (evolution)",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Cooperation (evolution)",
-      "to": "Allopatric speciation"
-    },
-    {
-      "from": "Evolution of the horse",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Evolution of the horse",
-      "to": "Allopatric speciation"
-    },
-    {
-      "from": "Spiracle",
-      "to": "Evolutionary arms race"
-    },
-    {
-      "from": "Mosquito",
-      "to": "Sexual antagonistic coevolution"
-    },
-    {
       "from": "Blue-tailed damselfly",
       "to": "Insect"
     },
     {
-      "from": "Evolutionarily stable strategy",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Evolutionary arms race",
-      "to": "Anti-predator adaptation"
-    },
-    {
-      "from": "Evolutionary arms race",
-      "to": "Evolution"
-    },
-    {
-      "from": "Evolutionary arms race",
-      "to": "Evolutionary biology"
-    },
-    {
-      "from": "Evolutionary arms race",
-      "to": "Evolutionary anachronism"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Adaptation (arts)"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Chromatic adaptation"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "ATM adaptation layer"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Content adaptation"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Adaptation (computer science)"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Adaptive behavior"
-    },
-    {
-      "from": "Adaptation (disambiguation)",
-      "to": "Adaptation (The Walking Dead)"
-    },
-    {
-      "from": "Hovertrain",
-      "to": "Adaptation (eye)"
-    },
-    {
       "from": "Windhover",
       "to": "Saro Windhover"
-    },
-    {
-      "from": "Hover (EP)",
-      "to": "Cellular adaptation"
-    },
-    {
-      "from": "Bird flight",
-      "to": "Climate change adaptation"
-    },
-    {
-      "from": "Hover Chamber Choir",
-      "to": "Domain adaptation"
-    },
-    {
-      "from": "Common green bottle fly",
-      "to": "Ecosystem-based adaptation"
-    },
-    {
-      "from": "Evolution (journal)",
-      "to": "Society for the Study of Evolution"
-    },
-    {
-      "from": "Evolution (journal)",
-      "to": "Evolutionary Biology"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "A History of Fly Fishing for Trout"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "Artificial fly",
-      "to": "Alexandra (wet fly)"
-    },
-    {
-      "from": "Animal Behaviour (journal)",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Hovercraft",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Blowfly",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Adaptive evolution in the human genome",
-      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
-    },
-    {
-      "from": "Cellular adaptation",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Blowfly's Punk Rock Party",
-      "to": "Blowfly (musician)"
-    },
-    {
-      "from": "Deimatic behaviour",
-      "to": "Literary adaptation"
-    },
-    {
-      "from": "Tachinidae",
-      "to": "List of flying boats and floatplanes"
-    },
-    {
-      "from": "Helicopter flight controls",
-      "to": "AD Flying Boat"
-    },
-    {
-      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
-      "to": "A History of Fly Fishing for Trout"
-    },
-    {
-      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
-      "to": "Bibliography of fly fishing (species related)"
     },
     {
       "from": "Blowfly (musician)",
@@ -2876,42 +1324,6 @@
       "to": "Bonefish fly patterns"
     },
     {
-      "from": "Saro Windhover",
-      "to": "Catskill Fly Fishing Center and Museum"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Adams (dry fly)",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Austrobaileyales",
-      "to": "Austrobaileyaceae"
-    },
-    {
-      "from": "Austrobaileyales",
-      "to": "Austrobaileya scandens"
-    },
-    {
       "from": "Alderfly",
       "to": "Insect Week"
     },
@@ -2924,220 +1336,8 @@
       "to": "Insect Festival"
     },
     {
-      "from": "Adaptation (computer science)",
-      "to": "Content adaptation"
-    },
-    {
-      "from": "Adaptation (computer science)",
-      "to": "Adaptation (disambiguation)"
-    },
-    {
-      "from": "Blue-winged Olive flies",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Blue-winged Olive flies",
-      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
-    },
-    {
-      "from": "Blue-winged Olive flies",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "Two Brothers Brewing",
-      "to": "Alcohol by volume"
-    },
-    {
-      "from": "Sexual antagonistic coevolution",
-      "to": "Evolutionary arms race"
-    },
-    {
-      "from": "Blowfly's Party",
-      "to": "Blowfly (musician)"
-    },
-    {
       "from": "Insect Festival",
       "to": "Entomology"
-    },
-    {
-      "from": "Insect Festival",
-      "to": "National Insect Week"
-    },
-    {
-      "from": "Insect Festival",
-      "to": "Insects"
-    },
-    {
-      "from": "Adaptive behavior",
-      "to": "Adaptive behavior (ecology)"
-    },
-    {
-      "from": "Adaptive behavior",
-      "to": "Adaptation (computer science)"
-    },
-    {
-      "from": "Ambush predator",
-      "to": "Adaptive Behavior (journal)"
-    },
-    {
-      "from": "Bibliography of fly fishing (species related)",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Bibliography of fly fishing (species related)",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Bibliography of fly fishing (species related)",
-      "to": "Artificial fly"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "Bonefish fly patterns"
-    },
-    {
-      "from": "Bamboo fly rod",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Agonistic behaviour",
-      "to": "Vineland Adaptive Behavior Scale"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Alexandra (wet fly)"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "A History of Fly Fishing for Trout",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Adaptive behavior (ecology)",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Adaptive behavior (ecology)",
-      "to": "Behavioral endocrinology"
-    },
-    {
-      "from": "Adaptive behavior (ecology)",
-      "to": "Behavioral ecology"
-    },
-    {
-      "from": "Courtship",
-      "to": "Behavior"
-    },
-    {
-      "from": "Courtship",
-      "to": "Behavioral Ecology (journal)"
-    },
-    {
-      "from": "Climate change adaptation",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Climate change adaptation",
-      "to": "Behavioral economics"
-    },
-    {
-      "from": "Entomology",
-      "to": "Antecedent (behavioral psychology)"
-    },
-    {
-      "from": "Animal sexual behaviour",
-      "to": "Association for Behavior Analysis International"
-    },
-    {
-      "from": "Comfort behaviour in animals",
-      "to": "Behavior (disambiguation)"
-    },
-    {
-      "from": "Batesian mimicry",
-      "to": "Behavior informatics"
-    },
-    {
-      "from": "Arthropod mouthparts",
-      "to": "Behavior selection algorithm"
-    },
-    {
-      "from": "Adaptation (eye)",
-      "to": "Behavior analysis (disambiguation)"
-    },
-    {
-      "from": "AD Flying Boat",
-      "to": "Behavioral neuroscience"
-    },
-    {
-      "from": "AD Flying Boat",
-      "to": "Behavioral pattern"
-    },
-    {
-      "from": "Domain adaptation",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Ecosystem-based adaptation",
-      "to": "Behavioral cusp"
-    },
-    {
-      "from": "Biological pest control",
-      "to": "A Behavioral Theory of the Firm"
-    },
-    {
-      "from": "Behavioral endocrinology",
-      "to": "Behavior"
-    },
-    {
-      "from": "Literary adaptation",
-      "to": "Evolutionary psychology"
-    },
-    {
-      "from": "Evolutionary psychology",
-      "to": "Adaptationist"
-    },
-    {
-      "from": "Evolutionary psychology",
-      "to": "Allopatric speciation"
-    },
-    {
-      "from": "Evolutionary psychology",
-      "to": "Adaptationism"
     },
     {
       "from": "Spiracle (arthropods)",
@@ -3145,215 +1345,23 @@
     },
     {
       "from": "Bonefish fly patterns",
-      "to": "Alexandra (wet fly)"
-    },
-    {
-      "from": "Bonefish fly patterns",
       "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Bonefish fly patterns",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Bonefish fly patterns",
-      "to": "Artificial fly"
-    },
-    {
-      "from": "Bonefish fly patterns",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Acoustic ecology",
-      "to": "Aquatic adaptation"
-    },
-    {
-      "from": "Antecedent (behavioral psychology)",
-      "to": "Learned behaviors"
     },
     {
       "from": "Spiracle (vertebrates)",
       "to": "Behavior analysis of child development"
     },
     {
-      "from": "Alexandra (wet fly)",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Bibliography of fly fishing"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Alexandra (wet fly)",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "Disease ecology",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Disease ecology",
-      "to": "Applied ecology"
-    },
-    {
-      "from": "Disease ecology",
-      "to": "Arctic ecology"
-    },
-    {
-      "from": "Disease ecology",
-      "to": "Autecology"
-    },
-    {
-      "from": "Behavior (disambiguation)",
-      "to": "Behavioralism"
-    },
-    {
-      "from": "Behavior (disambiguation)",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "List of flying boats and floatplanes",
-      "to": "AD Flying Boat"
-    },
-    {
-      "from": "Behavior selection algorithm",
-      "to": "Behavior tree (artificial intelligence, robotics and control)"
-    },
-    {
-      "from": "Behavior selection algorithm",
-      "to": "Behavioral modeling language"
-    },
-    {
-      "from": "Behavior selection algorithm",
-      "to": "Behavioral modeling in hydrology"
-    },
-    {
-      "from": "Behavior selection algorithm",
-      "to": "Behavioral modeling"
-    },
-    {
-      "from": "Chemical mimicry",
-      "to": "Behavioral modeling in computer-aided design"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Behavior analysis of child development"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Clinical behavior analysis"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Professional practice of behavior analysis"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Licensed behavior analyst"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Quantitative analysis of behavior"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "Behavioral analytics"
-    },
-    {
-      "from": "Behavior analysis (disambiguation)",
-      "to": "User behavior analytics"
-    },
-    {
-      "from": "Behavior tree (artificial intelligence, robotics and control)",
-      "to": "Behavior model"
-    },
-    {
       "from": "Behavioral cusp",
       "to": "Butterfly effect"
-    },
-    {
-      "from": "Behavioral cusp",
-      "to": "Adaptive behaviors"
-    },
-    {
-      "from": "Behavioral cusp",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Behavioral cusp",
-      "to": "Behavior analysis"
-    },
-    {
-      "from": "Catskill Fly Fishing Center and Museum",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Catskill Fly Fishing Center and Museum",
-      "to": "Artificial fly"
-    },
-    {
-      "from": "Catskill Fly Fishing Center and Museum",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Catskill Fly Fishing Center and Museum",
-      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
     },
     {
       "from": "Clinical behavior analysis",
       "to": "Association for Behavioral and Cognitive Therapies"
     },
     {
-      "from": "Clinical behavior analysis",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Clinical behavior analysis",
-      "to": "Association for Behavior Analysis International"
-    },
-    {
-      "from": "Evolutionary anachronism",
-      "to": "Association for Contextual Behavioral Science"
-    },
-    {
-      "from": "Quantitative analysis of behavior",
-      "to": "Behavioral economics"
-    },
-    {
       "from": "Quantitative analysis of behavior",
       "to": "Behavioral momentum"
-    },
-    {
-      "from": "Brewing",
-      "to": "Experimental analysis of behavior"
-    },
-    {
-      "from": "Behaviour therapy",
-      "to": "Applied behavior analysis"
     },
     {
       "from": "Behavioral momentum",
@@ -3364,56 +1372,12 @@
       "to": "Association for Behavioral and Cognitive Therapies"
     },
     {
-      "from": "Professional practice of behavior analysis",
-      "to": "Applied behavior analysis"
-    },
-    {
       "from": "Cephalothorax",
       "to": "Behavior-based safety"
     },
     {
-      "from": "Desert ecology",
-      "to": "Chemical ecology"
-    },
-    {
-      "from": "Desert ecology",
-      "to": "Autecology"
-    },
-    {
-      "from": "Desert ecology",
-      "to": "Arctic ecology"
-    },
-    {
-      "from": "Desert ecology",
-      "to": "Agroecology"
-    },
-    {
-      "from": "Desert ecology",
-      "to": "Applied ecology"
-    },
-    {
       "from": "Cephalon (arthropod head)",
       "to": "Behavior modification"
-    },
-    {
-      "from": "Community (ecology)",
-      "to": "Adaptation"
-    },
-    {
-      "from": "Community (ecology)",
-      "to": "Anti-predator adaptation"
-    },
-    {
-      "from": "Behavioral ecology (disambiguation)",
-      "to": "Behavioral Ecology (journal)"
-    },
-    {
-      "from": "Behavioral ecology (disambiguation)",
-      "to": "Behavioral Ecology and Sociobiology"
-    },
-    {
-      "from": "Behavioral ecology (disambiguation)",
-      "to": "Behavioral ecology"
     },
     {
       "from": "Behavioral ecology (disambiguation)",
@@ -3425,27 +1389,7 @@
     },
     {
       "from": "Licensed behavior analyst",
-      "to": "Behavior analysis"
-    },
-    {
-      "from": "Licensed behavior analyst",
-      "to": "Behavior therapy"
-    },
-    {
-      "from": "Licensed behavior analyst",
-      "to": "Behavioral engineering"
-    },
-    {
-      "from": "Licensed behavior analyst",
       "to": "Behavior modification"
-    },
-    {
-      "from": "Licensed behavior analyst",
-      "to": "Association for Behavior Analysis International"
-    },
-    {
-      "from": "Behavior analysis of child development",
-      "to": "Behavior therapy"
     },
     {
       "from": "Behavior analysis of child development",
@@ -3456,56 +1400,8 @@
       "to": "Behavior modification"
     },
     {
-      "from": "American Museum of Fly Fishing",
-      "to": "Behavioral activation"
-    },
-    {
-      "from": "Behavioral neuroscience",
-      "to": "Cognitive behavioral analysis system of psychotherapy"
-    },
-    {
       "from": "Blacker's Art of Fly Making",
       "to": "Cognitive behavioral therapy"
-    },
-    {
-      "from": "Applied behavior analysis",
-      "to": "Dialectical behavior therapy"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Evolutionary biology"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Behavioral ecology"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Evolution"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Behavioral Ecology and Sociobiology"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Ecology"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "International Society for Behavioral Ecology"
-    },
-    {
-      "from": "Behavioral Ecology (journal)",
-      "to": "Behavior"
-    },
-    {
-      "from": "Association for Contextual Behavioral Science",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Association for Contextual Behavioral Science",
-      "to": "Cognitive behavior therapy"
     },
     {
       "from": "Association for Contextual Behavioral Science",
@@ -3536,18 +1432,6 @@
       "to": "Behavior modification"
     },
     {
-      "from": "Behavior management",
-      "to": "Behavioral engineering"
-    },
-    {
-      "from": "Behavior management",
-      "to": "Behavior therapy"
-    },
-    {
-      "from": "Allagash Brewing Company",
-      "to": "Behavior change (public health)"
-    },
-    {
       "from": "Chewing",
       "to": "Chewing gum"
     },
@@ -3556,44 +1440,8 @@
       "to": "Behavior change method"
     },
     {
-      "from": "Eusociality",
-      "to": "Eccentricity (behavior)"
-    },
-    {
       "from": "Computational phylogenetics",
       "to": "Behavioral addiction"
-    },
-    {
-      "from": "Behaviorism",
-      "to": "Addictive behavior"
-    },
-    {
-      "from": "E. coli long-term evolution experiment",
-      "to": "Behavioral contagion"
-    },
-    {
-      "from": "Behavioral contagion",
-      "to": "Adaptationism"
-    },
-    {
-      "from": "Behavior change (public health)",
-      "to": "Behavior change methods"
-    },
-    {
-      "from": "Behavior change (public health)",
-      "to": "Behaviorist"
-    },
-    {
-      "from": "Behavior change (public health)",
-      "to": "Behavioral change theories"
-    },
-    {
-      "from": "Consumer behaviour",
-      "to": "Social and behavior change communication"
-    },
-    {
-      "from": "Behavior-based safety",
-      "to": "Applied behavior analysis"
     },
     {
       "from": "Behavior-based safety",
@@ -3604,28 +1452,8 @@
       "to": "Human behavior"
     },
     {
-      "from": "Aquatic feeding mechanisms",
-      "to": "Network behavior anomaly detection"
-    },
-    {
-      "from": "Behavioral analytics",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Behavioral analytics",
-      "to": "Behavior informatics"
-    },
-    {
       "from": "Behavior change method",
       "to": "Behavior change (public health)"
-    },
-    {
-      "from": "Chemical ecology",
-      "to": "Abundance (ecology)"
-    },
-    {
-      "from": "Social and behavior change communication",
-      "to": "Behavior"
     },
     {
       "from": "Social and behavior change communication",
@@ -3640,18 +1468,6 @@
       "to": "Behavior change method"
     },
     {
-      "from": "Abundance (ecology)",
-      "to": "Behavioral ecology"
-    },
-    {
-      "from": "Abundance (ecology)",
-      "to": "Apex predator"
-    },
-    {
-      "from": "Human behavioral ecology",
-      "to": "Biocultural evolution"
-    },
-    {
       "from": "Human behavioral ecology",
       "to": "Cultural ecology"
     },
@@ -3660,140 +1476,24 @@
       "to": "Evolutionary developmental psychology"
     },
     {
-      "from": "Evolutionary developmental psychology",
-      "to": "Adaptationism"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "Blue-winged Olive flies"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "Adams (dry fly)"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "Blacker's Art of Fly Making"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "Bamboo fly rod"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "A History of Fly Fishing for Trout"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "American Museum of Fly Fishing"
-    },
-    {
-      "from": "Bibliography of fly fishing",
-      "to": "Bibliography of fly fishing (species related)"
-    },
-    {
-      "from": "Radical behaviorism",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Radical behaviorism",
-      "to": "Applied behavior analysis"
-    },
-    {
       "from": "Radical behaviorism",
       "to": "Behavior modification"
-    },
-    {
-      "from": "Adaptation (arts)",
-      "to": "Literary adaptation"
-    },
-    {
-      "from": "Adaptation (arts)",
-      "to": "Theatrical adaptation"
-    },
-    {
-      "from": "Adaptation (arts)",
-      "to": "Film and television adaptations of video games"
-    },
-    {
-      "from": "Association for the Study of Animal Behaviour",
-      "to": "Behavioral systems analysis"
     },
     {
       "from": "Behavioral systems analysis",
       "to": "Organizational behavior management"
     },
     {
-      "from": "Behavioral systems analysis",
-      "to": "Behavior analysis"
-    },
-    {
-      "from": "Cultural ecology",
-      "to": "Acoustic ecology"
-    },
-    {
-      "from": "Alcohol by volume",
-      "to": "Insects in ethics"
-    },
-    {
-      "from": "Organizational behavior management",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Organizational behavior management",
-      "to": "Antecedent (behavioral psychology)"
-    },
-    {
       "from": "Butterfly effect",
       "to": "Behavioral cusp"
-    },
-    {
-      "from": "Theatrical adaptation",
-      "to": "Adaptation (arts)"
-    },
-    {
-      "from": "Content adaptation",
-      "to": "Adaptation (computer science)"
     },
     {
       "from": "Black fly",
       "to": "Behavior Modification (journal)"
     },
     {
-      "from": "Insects in ethics",
-      "to": "Artificial fly"
-    },
-    {
       "from": "Behavior Modification (journal)",
       "to": "Behavior modification"
-    },
-    {
-      "from": "Damselfly",
-      "to": "Artificial fly"
-    },
-    {
-      "from": "A Behavioral Theory of the Firm",
-      "to": "Evolutionary Ecology (journal)"
-    },
-    {
-      "from": "Evolutionary Ecology (journal)",
-      "to": "Evolutionary ecology"
-    },
-    {
-      "from": "Evolutionary Ecology (journal)",
-      "to": "Ecology"
-    },
-    {
-      "from": "Evolutionary Ecology (journal)",
-      "to": "Evolution"
-    },
-    {
-      "from": "Vineland Adaptive Behavior Scale",
-      "to": "Dragonfly"
-    },
-    {
-      "from": "Behavioral economics",
-      "to": "A Behavioral Theory of the Firm"
     },
     {
       "from": "Dragonfly",
@@ -3816,38 +1516,6 @@
       "to": "Association for Behavioral and Cognitive Therapies"
     },
     {
-      "from": "Behavior informatics",
-      "to": "Behavioral economics"
-    },
-    {
-      "from": "Association for Behavior Analysis International",
-      "to": "Behavior analysis"
-    },
-    {
-      "from": "Association for Behavior Analysis International",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Association for Behavior Analysis International",
-      "to": "Behavior analysis of child development"
-    },
-    {
-      "from": "Verbal Behavior",
-      "to": "Behaviorism"
-    },
-    {
-      "from": "Verbal Behavior",
-      "to": "Applied behavior analysis"
-    },
-    {
-      "from": "Verbal Behavior",
-      "to": "Behavior"
-    },
-    {
-      "from": "Verbal Behavior",
-      "to": "Behavioral neuroscience"
-    },
-    {
       "from": "User behavior analytics",
       "to": "Behavioral analytics"
     },
@@ -3861,62 +1529,26 @@
     },
     {
       "from": "Experimental analysis of behavior",
-      "to": "Behavior"
-    },
-    {
-      "from": "Experimental analysis of behavior",
       "to": "Behavioral momentum"
-    },
-    {
-      "from": "Experimental analysis of behavior",
-      "to": "Behavioral epigenetics"
     },
     {
       "from": "Eccentricity (behavior)",
       "to": "Behavioral contagion"
-    },
-    {
-      "from": "Eccentricity (behavior)",
-      "to": "Behavior"
     }
   ],
   "frontier": [
-    "Basal (evolution)",
     "Ailerons",
     "Aquatic insects",
     "Amphibious insect",
     "Abdomen (insect anatomy)",
-    "Adaptive Compliant Wing",
-    "Current research in evolutionary biology",
     "Predator (disambiguation)",
     "Superpredators (disambiguation)",
-    "Aquatic adaptation",
-    "Adaptations",
-    "Evolutionary biologists",
     "Aerodynamic drag",
-    "Evolutionary Biology",
     "Austrobaileyaceae",
     "Austrobaileya scandens",
     "National Insect Week",
     "Insects",
-    "Adaptationist",
-    "Learned behaviors",
-    "Behavioralism",
-    "Behavioral modeling language",
-    "Behavior model",
-    "Adaptive behaviors",
-    "Behavior analysis",
-    "Behavior therapy",
-    "Behavioral engineering",
-    "International Society for Behavioral Ecology",
-    "Cognitive behavior therapy",
-    "Behavior change methods",
-    "Behaviorist",
-    "Behavioral change theories",
-    "Biocultural evolution",
-    "Film and television adaptations of video games",
-    "Evolutionary ecology",
-    "Behavioral epigenetics"
+    "Evolutionary ecology"
   ],
   "max_depth": 9
 }

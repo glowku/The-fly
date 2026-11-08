@@ -1,0 +1,6454 @@
+{
+  "nodes": {
+    "Evolution": {
+      "depth": 1,
+      "created_at": "2026-09-16T11:06:18.677505+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolution"
+      ],
+      "updated_at": "2026-09-16T11:06:18.677514+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619595+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 298,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Génétique des populations",
+            "Sélection naturelle",
+            "Dérive génétique",
+            "Variation génétique",
+            "Biologie évolutive",
+            "Biodiversité"
+          ],
+          "diversity": 0.667,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T11:06:18.093351+00:00"
+      }
+    },
+    "Devonian": {
+      "depth": 2,
+      "created_at": "2026-09-16T16:49:14.505234+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devonian"
+      ],
+      "updated_at": "2026-09-16T16:49:14.505239+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619612+00:00",
+      "reason": "low_rel=0.297",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 149,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Insect",
+            "Diptera",
+            "Evolution",
+            "Fly"
+          ],
+          "diversity": 0.839,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T16:49:14.504857+00:00"
+      }
+    },
+    "Palaeoptera": {
+      "depth": 2,
+      "created_at": "2026-09-16T20:17:46.556467+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Palaeoptera"
+      ],
+      "updated_at": "2026-09-16T20:17:46.556473+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619616+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 337,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Fly",
+            "Evolution",
+            "Insect flight",
+            "Devonian",
+            "Aerodynamics",
+            "Wing",
+            "Halteres"
+          ],
+          "diversity": 0.689,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T20:17:46.556031+00:00"
+      }
+    },
+    "Mating": {
+      "depth": 3,
+      "created_at": "2026-09-16T21:45:58.576195+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mating"
+      ],
+      "updated_at": "2026-09-16T21:45:58.576202+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619619+00:00",
+      "reason": "low_rel=0.328",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 378,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Insect behaviour",
+            "Wing",
+            "Evolution",
+            "Insect ecology",
+            "Fly",
+            "Aerodynamics"
+          ],
+          "diversity": 0.724,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T21:45:58.575731+00:00"
+      }
+    },
+    "Adaptive radiation": {
+      "depth": 3,
+      "created_at": "2026-09-16T21:46:16.920811+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_radiation"
+      ],
+      "updated_at": "2026-09-16T21:46:16.920817+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619623+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 361,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Insect flight",
+            "Insect behaviour",
+            "Wing",
+            "Evolution",
+            "Insect ecology",
+            "Aerodynamics"
+          ],
+          "diversity": 0.806,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T21:46:16.920261+00:00"
+      }
+    },
+    "Angular velocity": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:23:32.651434+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Angular_velocity"
+      ],
+      "updated_at": "2026-09-16T22:23:32.651440+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619626+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 400,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Evolution",
+            "Compound eye",
+            "Hover",
+            "Insect flight",
+            "Wing",
+            "Aerodynamics"
+          ],
+          "diversity": 0.675,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T22:23:32.650885+00:00"
+      }
+    },
+    "Behavioral Ecology and Sociobiology": {
+      "depth": 3,
+      "created_at": "2026-09-16T22:46:55.417471+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_Ecology_and_Sociobiology"
+      ],
+      "updated_at": "2026-09-16T22:46:55.417476+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619628+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 364,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Aerodynamics",
+            "Insect behaviour",
+            "Wing",
+            "Insect ecology",
+            "Evolution"
+          ],
+          "diversity": 0.772,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T22:46:55.417030+00:00"
+      }
+    },
+    "Aileron": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:09:15.652045+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aileron"
+      ],
+      "updated_at": "2026-09-16T23:09:15.652050+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619632+00:00",
+      "reason": "low_rel=0.328",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 133,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Fly",
+            "Neoptera",
+            "Diptera",
+            "Insect"
+          ],
+          "diversity": 0.894,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:09:15.651607+00:00"
+      }
+    },
+    "Tachinidae": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:10:51.133702+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tachinidae"
+      ],
+      "updated_at": "2026-09-16T23:10:51.133706+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619635+00:00",
+      "reason": "low_rel=0.297",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 377,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Aerodynamics",
+            "Compound eye",
+            "Insect behaviour",
+            "Hover",
+            "Wing",
+            "Exoskeleton",
+            "Pollination",
+            "Swarm behaviour",
+            "Insect ecology",
+            "Flight",
+            "Palaeoptera",
+            "Neoptera"
+          ],
+          "diversity": 0.77,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:10:51.133205+00:00"
+      }
+    },
+    "Ecology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:12:25.595508+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ecology"
+      ],
+      "updated_at": "2026-09-16T23:12:25.595513+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619638+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 393,
+          "sections": 3,
+          "links": 13,
+          "link_list": [
+            "Aerodynamics",
+            "Compound eye",
+            "Insect behaviour",
+            "Antenna (zoology)",
+            "Hover",
+            "Exoskeleton",
+            "Pollination",
+            "Swarm behaviour",
+            "Insect ecology",
+            "Flight",
+            "Palaeoptera",
+            "Neoptera",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.753,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:12:25.594973+00:00"
+      }
+    },
+    "Hovertrain": {
+      "depth": 3,
+      "created_at": "2026-09-16T23:15:40.443701+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hovertrain"
+      ],
+      "updated_at": "2026-09-16T23:15:40.443707+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619641+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 184,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Fly",
+            "Diptera",
+            "Hover",
+            "Insect"
+          ],
+          "diversity": 0.87,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:15:40.443176+00:00"
+      }
+    },
+    "Applications of evolution": {
+      "depth": 4,
+      "created_at": "2026-09-17T00:11:14.447821+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Applications_of_evolution"
+      ],
+      "updated_at": "2026-09-17T00:11:14.447830+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619643+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 116,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Applications of evolution",
+            "Diptera",
+            "Fly",
+            "Insect"
+          ],
+          "diversity": 0.872,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:11:14.189729+00:00"
+      }
+    },
+    "Annual Review of Ecology, Evolution, and Systematics": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:23:38.603852+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Annual_Review_of_Ecology%2C_Evolution%2C_and_Systematics"
+      ],
+      "updated_at": "2026-09-16T23:23:38.603857+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619646+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 316,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Exoskeleton",
+            "Pollination",
+            "Mimicry",
+            "Annual Review of Entomology",
+            "Swarm behaviour",
+            "Flight"
+          ],
+          "diversity": 0.75,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:23:38.603277+00:00"
+      }
+    },
+    "Anthecology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:25:13.971574+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anthecology"
+      ],
+      "updated_at": "2026-09-16T23:25:13.971579+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619649+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 406,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Antenna (zoology)",
+            "Arthropod eye",
+            "Pollination",
+            "Swarm behaviour",
+            "Annual Review of Entomology",
+            "Mimicry",
+            "Flight"
+          ],
+          "diversity": 0.751,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:25:13.971055+00:00"
+      }
+    },
+    "Applied ecology": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:30:02.949438+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Applied_ecology"
+      ],
+      "updated_at": "2026-09-16T23:30:02.949443+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619651+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 339,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Parasitoid",
+            "Mimicry",
+            "Annual Review of Entomology",
+            "Mating",
+            "Arthropod",
+            "Arthropod leg"
+          ],
+          "diversity": 0.786,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:30:02.948886+00:00"
+      }
+    },
+    "Autecology": {
+      "depth": 5,
+      "created_at": "2026-09-16T23:39:25.935177+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Autecology"
+      ],
+      "updated_at": "2026-09-16T23:39:25.935183+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619654+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 423,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Mating",
+            "Evolution of insects",
+            "Angular velocity",
+            "Apterygota",
+            "Arthropod eye",
+            "Arthropod leg",
+            "Arthropod",
+            "Mimicry",
+            "Alate",
+            "Parasitoid",
+            "Annual Review of Entomology",
+            "Adaptive radiation"
+          ],
+          "diversity": 0.741,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-16T23:39:25.934454+00:00"
+      }
+    },
+    "Adaptation": {
+      "depth": 5,
+      "created_at": "2026-09-17T00:03:49.319190+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation"
+      ],
+      "updated_at": "2026-09-17T00:03:49.319199+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619657+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 358,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Mimicry",
+            "Adaptive radiation",
+            "Evolution of insects",
+            "Arthropod leg",
+            "Behavioral Ecology and Sociobiology",
+            "Arthropod eye"
+          ],
+          "diversity": 0.728,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:03:49.318344+00:00"
+      }
+    },
+    "Adaptationism": {
+      "depth": 3,
+      "created_at": "2026-09-17T00:07:09.153108+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptationism"
+      ],
+      "updated_at": "2026-09-17T00:07:09.153114+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619659+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 371,
+          "sections": 4,
+          "links": 8,
+          "link_list": [
+            "Mimicry",
+            "Evolution of insects",
+            "Annual Review of Entomology",
+            "Thorax",
+            "Aerodynamic (disambiguation)",
+            "Arthropod",
+            "Insect",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.786,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:07:09.152511+00:00"
+      }
+    },
+    "Adaptation and Natural Selection": {
+      "depth": 4,
+      "created_at": "2026-09-17T00:08:49.258551+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_and_Natural_Selection"
+      ],
+      "updated_at": "2026-09-17T00:08:49.258558+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619661+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 339,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Housefly",
+            "Mimicry",
+            "Evolution of insects",
+            "Annual Review of Entomology",
+            "Insect",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.788,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:08:49.257909+00:00"
+      }
+    },
+    "Butterfly": {
+      "depth": 5,
+      "created_at": "2026-09-17T00:10:28.229562+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Butterfly"
+      ],
+      "updated_at": "2026-09-17T00:10:28.229570+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619664+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 328,
+          "sections": 4,
+          "links": 9,
+          "link_list": [
+            "Housefly",
+            "Mimicry",
+            "Arthropod eye",
+            "Thorax",
+            "Arthropod leg",
+            "Aerodynamic (disambiguation)",
+            "Insect morphology",
+            "Insect",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.763,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:10:28.228828+00:00"
+      }
+    },
+    "Contingency (evolutionary biology)": {
+      "depth": 4,
+      "created_at": "2026-09-17T00:23:24.998581+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Contingency_(evolutionary_biology)"
+      ],
+      "updated_at": "2026-09-17T00:23:24.998587+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619666+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 304,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Insecticide",
+            "Evolution of insects",
+            "Insect morphology",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.81,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:23:24.997729+00:00"
+      }
+    },
+    "Disease ecology": {
+      "depth": 6,
+      "created_at": "2026-09-17T00:25:04.481226+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Disease_ecology"
+      ],
+      "updated_at": "2026-09-17T00:25:04.481232+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619669+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 393,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Housefly",
+            "Insecticide",
+            "Autecology",
+            "Thorax",
+            "Aerodynamic (disambiguation)",
+            "Insect wing",
+            "Aggressive mimicry",
+            "Spiracle",
+            "Mosquito",
+            "Insect morphology",
+            "Insect",
+            "Behavioral Ecology and Sociobiology"
+          ],
+          "diversity": 0.712,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:25:04.480408+00:00"
+      }
+    },
+    "Agroecology": {
+      "depth": 5,
+      "created_at": "2026-09-17T00:28:17.498785+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Agroecology"
+      ],
+      "updated_at": "2026-09-17T00:28:17.498791+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619671+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 152,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Ecology",
+            "Fly",
+            "Insect",
+            "Diptera"
+          ],
+          "diversity": 0.907,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:28:17.497962+00:00"
+      }
+    },
+    "Convergent evolution": {
+      "depth": 6,
+      "created_at": "2026-09-17T00:29:55.824159+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Convergent_evolution"
+      ],
+      "updated_at": "2026-09-17T00:29:55.824166+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619674+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 176,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Fly",
+            "Insect",
+            "Diptera",
+            "Autecology"
+          ],
+          "diversity": 0.8,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T00:29:55.823387+00:00"
+      }
+    },
+    "Alternatives to Darwinian evolution": {
+      "depth": 5,
+      "created_at": "2026-09-17T07:09:53.657775+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alternatives_to_Darwinian_evolution"
+      ],
+      "updated_at": "2026-09-17T07:09:53.657782+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619676+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 327,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Insect wing",
+            "Aggressive mimicry",
+            "Bird wing",
+            "Bat wing development",
+            "Ecology"
+          ],
+          "diversity": 0.785,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:09:53.657076+00:00"
+      }
+    },
+    "Madama Butterfly": {
+      "depth": 3,
+      "created_at": "2026-09-17T07:17:57.158307+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Madama_Butterfly"
+      ],
+      "updated_at": "2026-09-17T07:17:57.158313+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619678+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 370,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Applications of evolution",
+            "Ecology",
+            "Insecticide",
+            "Aggressive mimicry"
+          ],
+          "diversity": 0.787,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:17:57.157702+00:00"
+      }
+    },
+    "E. coli long-term evolution experiment": {
+      "depth": 6,
+      "created_at": "2026-09-17T07:26:02.000966+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/E._coli_long-term_evolution_experiment"
+      ],
+      "updated_at": "2026-09-17T07:26:02.000971+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619681+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 359,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Applications of evolution",
+            "Insect mouthparts",
+            "Ecology",
+            "Entomology"
+          ],
+          "diversity": 0.79,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:26:02.000438+00:00"
+      }
+    },
+    "Evolutionary biology": {
+      "depth": 6,
+      "created_at": "2026-09-17T07:27:38.073617+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_biology"
+      ],
+      "updated_at": "2026-09-17T07:27:38.073623+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619683+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 393,
+          "sections": 3,
+          "links": 12,
+          "link_list": [
+            "Annual Review of Ecology, Evolution, and Systematics",
+            "Aileron",
+            "Tachinidae",
+            "Insect mouthparts",
+            "Bird wing",
+            "Hovertrain",
+            "Bat wing development",
+            "Ant mimicry",
+            "Applications of evolution",
+            "Caddisfly",
+            "Ecology",
+            "Entomology"
+          ],
+          "diversity": 0.719,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:27:38.072944+00:00"
+      }
+    },
+    "Hovercraft": {
+      "depth": 3,
+      "created_at": "2026-09-17T07:35:40.159698+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hovercraft"
+      ],
+      "updated_at": "2026-09-17T07:35:40.159704+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619686+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 8.5,
+        "metrics": {
+          "words": 292,
+          "sections": 3,
+          "links": 1,
+          "link_list": [
+            "Hovertrain"
+          ],
+          "diversity": 0.844,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:35:40.159094+00:00"
+      }
+    },
+    "Animal sexual behaviour": {
+      "depth": 4,
+      "created_at": "2026-09-17T07:45:17.576728+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Animal_sexual_behaviour"
+      ],
+      "updated_at": "2026-09-17T07:45:17.576734+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619688+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 354,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Autecology",
+            "Annual Review of Ecology, Evolution, and Systematics",
+            "Arthropod exoskeleton",
+            "Caddisfly",
+            "Applied ecology",
+            "Entomology"
+          ],
+          "diversity": 0.721,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:45:17.576069+00:00"
+      }
+    },
+    "Alternative mating strategy": {
+      "depth": 3,
+      "created_at": "2026-09-17T07:46:55.248864+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alternative_mating_strategy"
+      ],
+      "updated_at": "2026-09-17T07:46:55.248869+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619691+00:00",
+      "reason": "low_rel=0.328",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 337,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Autecology",
+            "Arthropod exoskeleton",
+            "Allopatric speciation",
+            "Caddisfly",
+            "Applied ecology",
+            "Entomology"
+          ],
+          "diversity": 0.785,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T07:46:55.248261+00:00"
+      }
+    },
+    "Animal Behaviour (journal)": {
+      "depth": 4,
+      "created_at": "2026-09-17T11:35:46.011734+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Animal_Behaviour_(journal)"
+      ],
+      "updated_at": "2026-09-17T11:35:46.011741+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619693+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 350,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Allopatric speciation",
+            "Entomology",
+            "Adaptation",
+            "Autecology",
+            "Arthropod exoskeleton",
+            "Applied ecology"
+          ],
+          "diversity": 0.718,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T11:35:46.011014+00:00"
+      }
+    },
+    "Animal behaviour": {
+      "depth": 4,
+      "created_at": "2026-09-17T12:20:50.252434+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Animal_behaviour"
+      ],
+      "updated_at": "2026-09-17T12:20:50.252443+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619695+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 399,
+          "sections": 4,
+          "links": 10,
+          "link_list": [
+            "Anthecology",
+            "Adaptation",
+            "Autecology",
+            "Adaptationism",
+            "Windhover",
+            "Applied ecology",
+            "Allopatric speciation",
+            "Annual Review of Ecology, Evolution, and Systematics",
+            "Arthropod exoskeleton",
+            "Entomology"
+          ],
+          "diversity": 0.763,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T12:20:50.251625+00:00"
+      }
+    },
+    "Comfort behaviour in animals": {
+      "depth": 4,
+      "created_at": "2026-09-17T13:01:52.929748+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Comfort_behaviour_in_animals"
+      ],
+      "updated_at": "2026-09-17T13:01:52.929752+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619698+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 347,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Arthropod exoskeleton",
+            "Autecology",
+            "Annual Review of Ecology, Evolution, and Systematics",
+            "Adaptation",
+            "Adaptation and Natural Selection",
+            "Insect mouthparts",
+            "Applied ecology"
+          ],
+          "diversity": 0.703,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:01:52.929184+00:00"
+      }
+    },
+    "Decomposer": {
+      "depth": 4,
+      "created_at": "2026-09-17T13:03:33.619256+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Decomposer"
+      ],
+      "updated_at": "2026-09-17T13:03:33.619260+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619700+00:00",
+      "reason": "low_rel=0.297",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 298,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Allopatric speciation",
+            "Autecology",
+            "Annual Review of Ecology, Evolution, and Systematics",
+            "Adaptation",
+            "Anthecology",
+            "Applied ecology"
+          ],
+          "diversity": 0.773,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:03:33.618692+00:00"
+      }
+    },
+    "Deimatic behaviour": {
+      "depth": 3,
+      "created_at": "2026-09-17T13:11:45.061671+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deimatic_behaviour"
+      ],
+      "updated_at": "2026-09-17T13:11:45.061675+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619702+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 313,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Allopatric speciation",
+            "Arthropod exoskeleton",
+            "Butterfly",
+            "Autecology",
+            "Adaptation",
+            "Adaptation and Natural Selection",
+            "Windhover",
+            "Hoverfly",
+            "Hover (EP)",
+            "Applied ecology",
+            "Ambush predator",
+            "Adaptationism"
+          ],
+          "diversity": 0.811,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:11:45.061049+00:00"
+      }
+    },
+    "Agonistic behaviour": {
+      "depth": 4,
+      "created_at": "2026-09-17T13:13:24.816744+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Agonistic_behaviour"
+      ],
+      "updated_at": "2026-09-17T13:13:24.816748+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619705+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 319,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Allopatric speciation",
+            "Arthropod exoskeleton",
+            "Autecology",
+            "Adaptation",
+            "Applied ecology",
+            "Hover (behaviour)"
+          ],
+          "diversity": 0.772,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:13:24.816189+00:00"
+      }
+    },
+    "Biological pest control": {
+      "depth": 5,
+      "created_at": "2026-09-17T13:18:22.497768+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Biological_pest_control"
+      ],
+      "updated_at": "2026-09-17T13:18:22.497771+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619708+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 381,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Allopatric speciation",
+            "Disease ecology",
+            "Adaptation",
+            "Hoverfly",
+            "Integrated pest management",
+            "Ambush predator"
+          ],
+          "diversity": 0.77,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:18:22.497148+00:00"
+      }
+    },
+    "Aquatic feeding mechanisms": {
+      "depth": 6,
+      "created_at": "2026-09-17T13:23:21.846956+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aquatic_feeding_mechanisms"
+      ],
+      "updated_at": "2026-09-17T13:23:21.846959+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619710+00:00",
+      "reason": "low_rel=0.328",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 376,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Contingency (evolutionary biology)",
+            "Disease ecology",
+            "Anti-predator adaptation",
+            "Agroecology",
+            "Hover (behaviour)",
+            "Adaptationism"
+          ],
+          "diversity": 0.754,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:23:21.846302+00:00"
+      }
+    },
+    "Behavioral ecology": {
+      "depth": 5,
+      "created_at": "2026-09-17T13:25:01.570856+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_ecology"
+      ],
+      "updated_at": "2026-09-17T13:25:01.570860+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619713+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 354,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Disease ecology",
+            "Adaptationism",
+            "Adaptation and Natural Selection",
+            "Anti-predator adaptation",
+            "Convergent evolution",
+            "Agroecology"
+          ],
+          "diversity": 0.763,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:25:01.570210+00:00"
+      }
+    },
+    "Community (ecology)": {
+      "depth": 6,
+      "created_at": "2026-09-17T13:36:20.066631+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Community_(ecology)"
+      ],
+      "updated_at": "2026-09-17T13:36:20.066635+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619715+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 364,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Contingency (evolutionary biology)",
+            "Bayesian inference in phylogeny",
+            "Disease ecology",
+            "Computational phylogenetics",
+            "Convergent evolution",
+            "Agroecology"
+          ],
+          "diversity": 0.762,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T13:36:20.065982+00:00"
+      }
+    },
+    "Desert ecology": {
+      "depth": 6,
+      "created_at": "2026-09-17T21:03:52.411904+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Desert_ecology"
+      ],
+      "updated_at": "2026-09-17T21:03:52.411911+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619718+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 408,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Evolutionary biology",
+            "Basal (phylogenetics)",
+            "Convergent evolution",
+            "Distance matrices in phylogeny",
+            "Computational phylogenetics",
+            "Bayesian inference in phylogeny"
+          ],
+          "diversity": 0.805,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T21:03:52.410979+00:00"
+      }
+    },
+    "Gene-centered view of evolution": {
+      "depth": 6,
+      "created_at": "2026-09-17T21:33:31.343286+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gene-centered_view_of_evolution"
+      ],
+      "updated_at": "2026-09-17T21:33:31.343292+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619720+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 336,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Evolutionary biology",
+            "Distance matrices in phylogeny",
+            "E. coli long-term evolution experiment",
+            "Autecology",
+            "Animal sexual behaviour",
+            "Alternative mating strategy"
+          ],
+          "diversity": 0.741,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T21:33:31.342290+00:00"
+      }
+    },
+    "Evolution (journal)": {
+      "depth": 5,
+      "created_at": "2026-09-17T23:54:02.063253+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolution_(journal)"
+      ],
+      "updated_at": "2026-09-17T23:54:02.063265+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619723+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 135,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Insect",
+            "Diptera",
+            "Fly",
+            "Hoverfly"
+          ],
+          "diversity": 0.886,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T23:54:02.061874+00:00"
+      }
+    },
+    "Society for the Study of Evolution": {
+      "depth": 5,
+      "created_at": "2026-09-17T23:55:39.848047+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Society_for_the_Study_of_Evolution"
+      ],
+      "updated_at": "2026-09-17T23:55:39.848054+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619725+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 350,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Animal sexual behaviour",
+            "E. coli long-term evolution experiment",
+            "Allochronic speciation",
+            "Distance matrices in phylogeny",
+            "Animal Behaviour (journal)",
+            "Evolutionary biology"
+          ],
+          "diversity": 0.75,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-17T23:55:39.846994+00:00"
+      }
+    },
+    "Arctic ecology": {
+      "depth": 5,
+      "created_at": "2026-09-18T00:07:02.770993+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Arctic_ecology"
+      ],
+      "updated_at": "2026-09-18T00:07:02.771000+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619728+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 381,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Courtship",
+            "Hovercraft",
+            "Animal behaviour",
+            "Maggot",
+            "Evolutionary biology"
+          ],
+          "diversity": 0.782,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T00:07:02.769938+00:00"
+      }
+    },
+    "Blowfly's Party": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:21:18.630120+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blowfly's_Party"
+      ],
+      "updated_at": "2026-09-18T00:21:18.630127+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619730+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 308,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Decomposer",
+            "Animal behaviour",
+            "Alternative mating strategy",
+            "Comfort behaviour in animals",
+            "Allochronic speciation",
+            "Animal Behaviour (journal)"
+          ],
+          "diversity": 0.716,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T00:21:18.629141+00:00"
+      }
+    },
+    "Blowfly's Punk Rock Party": {
+      "depth": 4,
+      "created_at": "2026-09-18T00:22:56.170321+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Blowfly's_Punk_Rock_Party"
+      ],
+      "updated_at": "2026-09-18T00:22:56.170330+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619732+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 320,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Courtship",
+            "Hovercraft",
+            "Alternative mating strategy",
+            "Animal sexual behaviour",
+            "Allochronic speciation",
+            "Maggot"
+          ],
+          "diversity": 0.732,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T00:22:56.169235+00:00"
+      }
+    },
+    "Eusociality": {
+      "depth": 5,
+      "created_at": "2026-09-18T00:24:32.465608+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eusociality"
+      ],
+      "updated_at": "2026-09-18T00:24:32.465617+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619735+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 341,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Courtship",
+            "Apex predator",
+            "Decomposer",
+            "Animal behaviour",
+            "Animal sexual behaviour"
+          ],
+          "diversity": 0.759,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T00:24:32.464448+00:00"
+      }
+    },
+    "Off Color Brewing": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:31:03.140244+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Off_Color_Brewing"
+      ],
+      "updated_at": "2026-09-18T03:31:03.140253+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619737+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 425,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Apex Predator (disambiguation)",
+            "Animal behaviour",
+            "Biological pest control",
+            "Chemical communication in insects",
+            "Decomposer",
+            "Apex predator"
+          ],
+          "diversity": 0.752,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T03:31:03.139054+00:00"
+      }
+    },
+    "Two Brothers Brewing": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:32:40.160052+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Two_Brothers_Brewing"
+      ],
+      "updated_at": "2026-09-18T03:32:40.160059+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619739+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 323,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Animal behaviour",
+            "Biological pest control",
+            "Apex Predator – Easy Meat",
+            "Decomposer",
+            "Apex predator"
+          ],
+          "diversity": 0.766,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T03:32:40.159010+00:00"
+      }
+    },
+    "Allagash Brewing Company": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:34:15.839964+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Allagash_Brewing_Company"
+      ],
+      "updated_at": "2026-09-18T03:34:15.839972+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619741+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 280,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Animal behaviour",
+            "Behavioral ecology",
+            "Comfort behaviour in animals",
+            "Decomposer",
+            "Apex predator"
+          ],
+          "diversity": 0.785,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T03:34:15.838824+00:00"
+      }
+    },
+    "Brewing": {
+      "depth": 5,
+      "created_at": "2026-09-18T03:35:55.744799+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brewing"
+      ],
+      "updated_at": "2026-09-18T03:35:55.744806+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619744+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 7.33,
+        "metrics": {
+          "words": 320,
+          "sections": 2,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.843,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T03:35:55.743528+00:00"
+      }
+    },
+    "Cooperation (evolution)": {
+      "depth": 5,
+      "created_at": "2026-09-18T09:17:03.794868+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cooperation_(evolution)"
+      ],
+      "updated_at": "2026-09-18T09:17:03.794877+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619746+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 349,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Biological pest control",
+            "Community (ecology)",
+            "Behavioral ecology",
+            "Chemical communication in insects",
+            "Batesian mimicry"
+          ],
+          "diversity": 0.791,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T09:17:03.793818+00:00"
+      }
+    },
+    "Adaptive evolution in the human genome": {
+      "depth": 4,
+      "created_at": "2026-09-18T09:18:41.728930+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_evolution_in_the_human_genome"
+      ],
+      "updated_at": "2026-09-18T09:18:41.728937+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619748+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 318,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Molecular evolution",
+            "Natural selection",
+            "Adaptationism",
+            "Genome",
+            "Human evolution",
+            "Genetic drift"
+          ],
+          "diversity": 0.874,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T09:18:41.727719+00:00"
+      }
+    },
+    "Evolution of the horse": {
+      "depth": 6,
+      "created_at": "2026-09-18T09:22:02.017806+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolution_of_the_horse"
+      ],
+      "updated_at": "2026-09-18T09:22:02.017814+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619752+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 340,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Biological pest control",
+            "Community (ecology)",
+            "Behavioral ecology",
+            "Chemical communication in insects",
+            "Apex Predator – Easy Meat"
+          ],
+          "diversity": 0.837,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T09:22:02.016622+00:00"
+      }
+    },
+    "Evolutionary arms race": {
+      "depth": 4,
+      "created_at": "2026-09-18T09:23:38.915025+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_arms_race"
+      ],
+      "updated_at": "2026-09-18T09:23:38.915032+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619754+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 375,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Biological pest control",
+            "Community (ecology)",
+            "Behavioral ecology",
+            "Chemical communication in insects",
+            "Chemical mimicry",
+            "Batesian mimicry"
+          ],
+          "diversity": 0.746,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T09:23:38.913864+00:00"
+      }
+    },
+    "Abundance (ecology)": {
+      "depth": 6,
+      "created_at": "2026-09-18T11:08:34.351757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abundance_(ecology)"
+      ],
+      "updated_at": "2026-09-18T11:08:34.351767+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619757+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 385,
+          "sections": 4,
+          "links": 9,
+          "link_list": [
+            "Chemical communication in insects",
+            "Batesian mimicry",
+            "Arthropod mouthparts",
+            "Behavioral ecology",
+            "Automimicry",
+            "Chewing",
+            "Community (ecology)",
+            "Anti-predator adaptation",
+            "Aquatic feeding mechanisms"
+          ],
+          "diversity": 0.743,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T11:08:34.350589+00:00"
+      }
+    },
+    "Acoustic ecology": {
+      "depth": 5,
+      "created_at": "2026-09-18T14:04:02.370719+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Acoustic_ecology"
+      ],
+      "updated_at": "2026-09-18T14:04:02.370726+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619759+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 446,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Desert ecology",
+            "Aquatic insect",
+            "Community (ecology)",
+            "Cephalothorax",
+            "Behavioral ecology",
+            "Chewing"
+          ],
+          "diversity": 0.742,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T14:04:02.369570+00:00"
+      }
+    },
+    "Austrobaileyales": {
+      "depth": 4,
+      "created_at": "2026-09-18T14:15:03.518630+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Austrobaileyales"
+      ],
+      "updated_at": "2026-09-18T14:15:03.518636+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619762+00:00",
+      "reason": "low_rel=0.328",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 353,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Évolution des fleurs",
+            "Basal (phylogenetics)",
+            "Angiospermes",
+            "Phylogénie des plantes",
+            "Diversification des plantes à fleurs"
+          ],
+          "diversity": 0.718,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T14:15:03.517408+00:00"
+      }
+    },
+    "Evolutionarily stable strategy": {
+      "depth": 5,
+      "created_at": "2026-09-18T14:37:02.734643+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionarily_stable_strategy"
+      ],
+      "updated_at": "2026-09-18T14:37:02.734649+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619765+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 350,
+          "sections": 4,
+          "links": 11,
+          "link_list": [
+            "Aquatic insect",
+            "Desert ecology",
+            "Arthropod head problem",
+            "Arthropod mouthparts",
+            "Community (ecology)",
+            "Cephalothorax",
+            "Damselfly",
+            "Blue-tailed damselfly",
+            "Foraging",
+            "Chemical mimicry",
+            "Chewing"
+          ],
+          "diversity": 0.836,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T14:37:02.733533+00:00"
+      }
+    },
+    "Adaptation (disambiguation)": {
+      "depth": 6,
+      "created_at": "2026-09-18T19:25:01.945294+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(disambiguation)"
+      ],
+      "updated_at": "2026-09-18T19:25:01.945306+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619767+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 301,
+          "sections": 3,
+          "links": 11,
+          "link_list": [
+            "Aquatic insect",
+            "Cephalon (arthropod head)",
+            "Cephalothorax",
+            "Arthropod mouthparts",
+            "Desert ecology",
+            "Foraging",
+            "Gene-centered view of evolution",
+            "Arthropod head problem",
+            "Blue-tailed damselfly",
+            "Community (ecology)",
+            "Chewing"
+          ],
+          "diversity": 0.723,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T19:25:01.943916+00:00"
+      }
+    },
+    "Cellular adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:29:52.808750+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cellular_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:29:52.808758+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619770+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 5.37,
+        "metrics": {
+          "words": 92,
+          "sections": 1,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.867,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T19:29:52.807569+00:00"
+      }
+    },
+    "Climate change adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:31:30.239078+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Climate_change_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:31:30.239086+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619773+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 361,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Evolution (journal)",
+            "Aquatic insect",
+            "Damselfly",
+            "Desert ecology",
+            "Foraging"
+          ],
+          "diversity": 0.801,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T19:31:30.237862+00:00"
+      }
+    },
+    "Domain adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:33:08.635526+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Domain_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:33:08.635535+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619775+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 376,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Evolution (journal)",
+            "Arctic ecology",
+            "Desert ecology",
+            "Gene-centered view of evolution",
+            "Foraging"
+          ],
+          "diversity": 0.741,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T19:33:08.634308+00:00"
+      }
+    },
+    "Ecosystem-based adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-18T19:34:46.870086+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ecosystem-based_adaptation"
+      ],
+      "updated_at": "2026-09-18T19:34:46.870097+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619778+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 9.5,
+        "metrics": {
+          "words": 467,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Evolution (journal)",
+            "Aquatic insect",
+            "Arctic ecology",
+            "Damselfly",
+            "Cephalothorax",
+            "Blowfly",
+            "Desert ecology",
+            "Gene-centered view of evolution",
+            "Foraging",
+            "Blue-tailed damselfly",
+            "Society for the Study of Evolution",
+            "Chewing"
+          ],
+          "diversity": 0.77,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T19:34:46.868718+00:00"
+      }
+    },
+    "Content adaptation": {
+      "depth": 7,
+      "created_at": "2026-09-18T22:34:02.785127+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Content_adaptation"
+      ],
+      "updated_at": "2026-09-18T22:34:02.785133+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619780+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 114,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Diptera",
+            "Adaptation (disambiguation)",
+            "Fly",
+            "Insect"
+          ],
+          "diversity": 0.863,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T22:34:02.783869+00:00"
+      }
+    },
+    "Association for the Study of Animal Behaviour": {
+      "depth": 5,
+      "created_at": "2026-09-18T22:40:19.694231+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_the_Study_of_Animal_Behaviour"
+      ],
+      "updated_at": "2026-09-18T22:40:19.694237+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619782+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 392,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Society for the Study of Evolution",
+            "Foraging",
+            "Evolution (journal)",
+            "Damselfly"
+          ],
+          "diversity": 0.683,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T22:40:19.693096+00:00"
+      }
+    },
+    "Alcohol by volume": {
+      "depth": 6,
+      "created_at": "2026-09-18T22:45:03.341278+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alcohol_by_volume"
+      ],
+      "updated_at": "2026-09-18T22:45:03.341285+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619785+00:00",
+      "reason": "low_rel=0.327",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 315,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Bouteille de vin",
+            "Blue-tailed damselfly",
+            "Ethanol",
+            "Distillation",
+            "Foraging",
+            "Alcool"
+          ],
+          "diversity": 0.785,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-18T22:45:03.340068+00:00"
+      }
+    },
+    "Adaptation (eye)": {
+      "depth": 4,
+      "created_at": "2026-09-19T03:03:01.465314+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+      ],
+      "updated_at": "2026-09-19T03:03:01.465321+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619788+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 350,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Society for the Study of Evolution",
+            "Hovertrain",
+            "Evolution (journal)",
+            "Blue-tailed damselfly",
+            "Gene-centered view of evolution",
+            "Eusociality",
+            "Arctic ecology"
+          ],
+          "diversity": 0.757,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T03:03:01.463623+00:00"
+      }
+    },
+    "Artificial fly": {
+      "depth": 5,
+      "created_at": "2026-09-19T03:28:02.357567+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Artificial_fly"
+      ],
+      "updated_at": "2026-09-19T03:28:02.357574+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619790+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 403,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Damselfly",
+            "Society for the Study of Evolution",
+            "Aerodynamic (instrumental)",
+            "Blowfly",
+            "Evolution (journal)",
+            "Alderfly"
+          ],
+          "diversity": 0.719,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T03:28:02.356342+00:00"
+      }
+    },
+    "American Museum of Fly Fishing": {
+      "depth": 5,
+      "created_at": "2026-09-19T03:29:38.307533+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/American_Museum_of_Fly_Fishing"
+      ],
+      "updated_at": "2026-09-19T03:29:38.307539+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619792+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 374,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Society for the Study of Evolution",
+            "Blowfly",
+            "Evolution (journal)",
+            "Eusociality",
+            "Spiracle (arthropods)",
+            "Arctic ecology"
+          ],
+          "diversity": 0.724,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T03:29:38.306389+00:00"
+      }
+    },
+    "Bamboo fly rod": {
+      "depth": 4,
+      "created_at": "2026-09-19T03:32:48.642864+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bamboo_fly_rod"
+      ],
+      "updated_at": "2026-09-19T03:32:48.642871+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619794+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 367,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Society for the Study of Evolution",
+            "Aerodynamic (instrumental)",
+            "Evolution (journal)",
+            "Blowfly",
+            "Alderfly",
+            "Arctic ecology"
+          ],
+          "diversity": 0.771,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T03:32:48.641684+00:00"
+      }
+    },
+    "Sexual antagonistic coevolution": {
+      "depth": 5,
+      "created_at": "2026-09-19T03:39:03.247399+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sexual_antagonistic_coevolution"
+      ],
+      "updated_at": "2026-09-19T03:39:03.247406+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619796+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 358,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Spiracle (arthropods)",
+            "Blowfly",
+            "Society for the Study of Evolution",
+            "Eusociality"
+          ],
+          "diversity": 0.786,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T03:39:03.246266+00:00"
+      }
+    },
+    "ATM adaptation layer": {
+      "depth": 7,
+      "created_at": "2026-09-19T08:40:02.617188+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ATM_adaptation_layer"
+      ],
+      "updated_at": "2026-09-19T08:40:02.617195+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619799+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 332,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Protocol adaptation",
+            "Quality of Service",
+            "Adaptation (disambiguation)",
+            "ATM cell",
+            "Network layer",
+            "Asynchronous Transfer Mode"
+          ],
+          "diversity": 0.697,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T08:40:02.615846+00:00"
+      }
+    },
+    "Evolutionary anachronism": {
+      "depth": 5,
+      "created_at": "2026-09-19T08:54:03.089109+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_anachronism"
+      ],
+      "updated_at": "2026-09-19T08:54:03.089116+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619801+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 8.0,
+        "metrics": {
+          "words": 291,
+          "sections": 3,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.799,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T08:54:03.087827+00:00"
+      }
+    },
+    "Adaptation (arts)": {
+      "depth": 7,
+      "created_at": "2026-09-24T03:41:00.917379+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(arts)"
+      ],
+      "updated_at": "2026-09-24T03:41:00.917389+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619804+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 373,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Adaptation (littérature)",
+            "Adaptation (musique)",
+            "Remaster",
+            "Remake",
+            "Adaptation (film)",
+            "Transposition"
+          ],
+          "diversity": 0.787,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T03:41:00.572052+00:00"
+      }
+    },
+    "Literary adaptation": {
+      "depth": 4,
+      "created_at": "2026-09-19T09:09:39.703236+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Literary_adaptation"
+      ],
+      "updated_at": "2026-09-19T09:09:39.703244+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619807+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 285,
+          "sections": 3,
+          "links": 12,
+          "link_list": [
+            "Alderfly",
+            "Brewing",
+            "Spiracle (vertebrates)",
+            "Off Color Brewing",
+            "Two Brothers Brewing",
+            "Aerodynamic (instrumental)",
+            "Allagash Brewing Company",
+            "Drafting (aerodynamics)",
+            "Eusociality",
+            "Spiracle (arthropods)",
+            "Blowfly's Punk Rock Party",
+            "Blowfly's Party"
+          ],
+          "diversity": 0.836,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T09:09:39.701533+00:00"
+      }
+    },
+    "List of flying boats and floatplanes": {
+      "depth": 5,
+      "created_at": "2026-09-19T13:41:39.479811+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_flying_boats_and_floatplanes"
+      ],
+      "updated_at": "2026-09-19T13:41:39.479817+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619809+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 262,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Aerodynamic (instrumental)",
+            "Spiracle (arthropods)",
+            "Adaptive compliant wing",
+            "Spiracle (vertebrates)",
+            "Drafting (aerodynamics)",
+            "Cooperation (evolution)"
+          ],
+          "diversity": 0.78,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T13:41:39.478731+00:00"
+      }
+    },
+    "AD Flying Boat": {
+      "depth": 4,
+      "created_at": "2026-09-19T13:43:17.415273+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AD_Flying_Boat"
+      ],
+      "updated_at": "2026-09-19T13:43:17.415278+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619812+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 355,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Aerodynamic (instrumental)",
+            "Royal Navy",
+            "Supermarine Aviation",
+            "Hydravion",
+            "Drafting (aerodynamics)"
+          ],
+          "diversity": 0.777,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T13:43:17.414079+00:00"
+      }
+    },
+    "Bibliography of fly fishing (fly tying, stories, fiction)": {
+      "depth": 5,
+      "created_at": "2026-09-19T14:03:02.440989+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(fly_tying%2C_stories%2C_fiction)"
+      ],
+      "updated_at": "2026-09-19T14:03:02.440995+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619814+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 8.5,
+        "metrics": {
+          "words": 276,
+          "sections": 4,
+          "links": 1,
+          "link_list": [
+            "Bibliography of fly fishing"
+          ],
+          "diversity": 0.742,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T14:03:02.439949+00:00"
+      }
+    },
+    "Catskill Fly Fishing Center and Museum": {
+      "depth": 5,
+      "created_at": "2026-09-19T14:11:11.322092+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Catskill_Fly_Fishing_Center_and_Museum"
+      ],
+      "updated_at": "2026-09-19T14:11:11.322097+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619816+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 136,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Insect",
+            "Saro Windhover",
+            "Diptera",
+            "Fly"
+          ],
+          "diversity": 0.857,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T14:11:11.321016+00:00"
+      }
+    },
+    "Adams (dry fly)": {
+      "depth": 6,
+      "created_at": "2026-09-19T14:21:03.669051+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adams_(dry_fly)"
+      ],
+      "updated_at": "2026-09-19T14:21:03.669057+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619818+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 141,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Insect",
+            "Fly",
+            "Artificial fly",
+            "Diptera"
+          ],
+          "diversity": 0.905,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T14:21:03.667941+00:00"
+      }
+    },
+    "The Entomologist's Record and Journal of Variation": {
+      "depth": 6,
+      "created_at": "2026-09-19T17:02:18.788226+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Entomologist's_Record_and_Journal_of_Variation"
+      ],
+      "updated_at": "2026-09-19T17:02:18.788234+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619821+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 279,
+          "sections": 3,
+          "links": 5,
+          "link_list": [
+            "Common green bottle fly",
+            "Evolutionarily stable strategy",
+            "Abundance (ecology)",
+            "Acoustic ecology",
+            "Evolutionary arms race"
+          ],
+          "diversity": 0.821,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T17:02:18.786833+00:00"
+      }
+    },
+    "Adaptation (computer science)": {
+      "depth": 7,
+      "created_at": "2026-09-19T17:12:02.499476+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(computer_science)"
+      ],
+      "updated_at": "2026-09-19T17:12:02.499485+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619823+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 288,
+          "sections": 3,
+          "links": 5,
+          "link_list": [
+            "Adaptive evolution in the human genome",
+            "Evolutionarily stable strategy",
+            "Adaptation (disambiguation)",
+            "Acoustic ecology",
+            "Evolutionary arms race"
+          ],
+          "diversity": 0.809,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T17:12:02.498207+00:00"
+      }
+    },
+    "Adaptation (The Walking Dead)": {
+      "depth": 7,
+      "created_at": "2026-09-19T22:31:02.809052+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptation_(The_Walking_Dead)"
+      ],
+      "updated_at": "2026-09-19T22:31:02.809058+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619825+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 303,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Cellular adaptation",
+            "Evolutionarily stable strategy",
+            "Climate change adaptation",
+            "Evolutionary arms race",
+            "Adaptation (disambiguation)"
+          ],
+          "diversity": 0.75,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T22:31:02.807708+00:00"
+      }
+    },
+    "Bibliography of fly fishing": {
+      "depth": 5,
+      "created_at": "2026-09-19T22:51:16.508628+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing"
+      ],
+      "updated_at": "2026-09-19T22:51:16.508635+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619828+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 268,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Evolutionarily stable strategy",
+            "Abundance (ecology)",
+            "Common green bottle fly",
+            "Climate change adaptation",
+            "Adaptation (disambiguation)",
+            "Evolutionary arms race"
+          ],
+          "diversity": 0.859,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-19T22:51:16.507353+00:00"
+      }
+    },
+    "Chromatic adaptation": {
+      "depth": 7,
+      "created_at": "2026-09-20T03:16:03.355649+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chromatic_adaptation"
+      ],
+      "updated_at": "2026-09-20T03:16:03.355657+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619830+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 414,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Domain adaptation",
+            "Cellular adaptation",
+            "Content adaptation",
+            "Ecosystem-based adaptation",
+            "Climate change adaptation",
+            "Adaptation (disambiguation)"
+          ],
+          "diversity": 0.675,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T03:16:03.354206+00:00"
+      }
+    },
+    "Adaptive behavior": {
+      "depth": 7,
+      "created_at": "2026-09-20T03:24:04.777490+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_behavior"
+      ],
+      "updated_at": "2026-09-20T03:24:04.777498+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619832+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 341,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Domain adaptation",
+            "Ecosystem-based adaptation",
+            "Evolutionarily stable strategy",
+            "Climate change adaptation",
+            "Adaptation (disambiguation)"
+          ],
+          "diversity": 0.763,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T03:24:04.776217+00:00"
+      }
+    },
+    "Adaptive Behavior (journal)": {
+      "depth": 6,
+      "created_at": "2026-09-20T03:25:40.974450+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_Behavior_(journal)"
+      ],
+      "updated_at": "2026-09-20T03:25:40.974457+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619835+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 389,
+          "sections": 4,
+          "links": 9,
+          "link_list": [
+            "Acoustic ecology",
+            "Ambush predator",
+            "Domain adaptation",
+            "Cellular adaptation",
+            "Content adaptation",
+            "Association for the Study of Animal Behaviour",
+            "Ecosystem-based adaptation",
+            "Evolutionarily stable strategy",
+            "Adaptation (disambiguation)"
+          ],
+          "diversity": 0.687,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T03:25:40.973145+00:00"
+      }
+    },
+    "Bibliography of fly fishing (species related)": {
+      "depth": 5,
+      "created_at": "2026-09-20T03:53:01.730452+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bibliography_of_fly_fishing_(species_related)"
+      ],
+      "updated_at": "2026-09-20T03:53:01.730459+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619838+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 353,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Cellular adaptation",
+            "Bibliography of fly fishing",
+            "Evolutionarily stable strategy",
+            "Austrobaileyales",
+            "Common green bottle fly",
+            "Climate change adaptation",
+            "Adaptation (disambiguation)"
+          ],
+          "diversity": 0.722,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T03:53:01.729094+00:00"
+      }
+    },
+    "Vineland Adaptive Behavior Scale": {
+      "depth": 5,
+      "created_at": "2026-09-20T09:08:04.837241+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vineland_Adaptive_Behavior_Scale"
+      ],
+      "updated_at": "2026-09-20T09:08:04.837250+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619841+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 388,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Adaptation (disambiguation)",
+            "Domain adaptation",
+            "Ecosystem-based adaptation",
+            "Cellular adaptation",
+            "Climate change adaptation",
+            "Content adaptation"
+          ],
+          "diversity": 0.794,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:08:04.835799+00:00"
+      }
+    },
+    "A History of Fly Fishing for Trout": {
+      "depth": 6,
+      "created_at": "2026-09-20T09:19:03.694753+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/A_History_of_Fly_Fishing_for_Trout"
+      ],
+      "updated_at": "2026-09-20T09:19:03.694761+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619843+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 362,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Evolutionarily stable strategy",
+            "Adaptation (disambiguation)",
+            "Ecosystem-based adaptation",
+            "Artificial fly",
+            "Adaptation (eye)",
+            "Black fly",
+            "Association for the Study of Animal Behaviour"
+          ],
+          "diversity": 0.74,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:19:03.693378+00:00"
+      }
+    },
+    "Adaptive behavior (ecology)": {
+      "depth": 8,
+      "created_at": "2026-09-20T09:30:01.730217+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Adaptive_behavior_(ecology)"
+      ],
+      "updated_at": "2026-09-20T09:30:01.730224+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619846+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 364,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Territoriality",
+            "Adaptation (disambiguation)",
+            "Sexual selection",
+            "Kin selection",
+            "Reproductive success",
+            "Association for the Study of Animal Behaviour"
+          ],
+          "diversity": 0.847,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:30:01.728924+00:00"
+      }
+    },
+    "Behavior": {
+      "depth": 6,
+      "created_at": "2026-09-20T09:31:37.775581+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior"
+      ],
+      "updated_at": "2026-09-20T09:31:37.775588+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619849+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 382,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Domain adaptation",
+            "Ecosystem-based adaptation",
+            "Cellular adaptation",
+            "Association for the Study of Animal Behaviour",
+            "Climate change adaptation",
+            "Content adaptation"
+          ],
+          "diversity": 0.636,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:31:37.774218+00:00"
+      }
+    },
+    "Applied behavior analysis": {
+      "depth": 5,
+      "created_at": "2026-09-20T09:33:14.098163+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Applied_behavior_analysis"
+      ],
+      "updated_at": "2026-09-20T09:33:14.098170+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619851+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 385,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Domain adaptation",
+            "Ecosystem-based adaptation",
+            "Association for the Study of Animal Behaviour",
+            "Climate change adaptation",
+            "Content adaptation"
+          ],
+          "diversity": 0.785,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:33:14.096527+00:00"
+      }
+    },
+    "Behavior informatics": {
+      "depth": 5,
+      "created_at": "2026-09-20T09:39:33.720934+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_informatics"
+      ],
+      "updated_at": "2026-09-20T09:39:33.720940+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619854+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 379,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Domain adaptation",
+            "Ecosystem-based adaptation",
+            "Association for the Study of Animal Behaviour",
+            "Content adaptation"
+          ],
+          "diversity": 0.769,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:39:33.719598+00:00"
+      }
+    },
+    "Behavioural sciences": {
+      "depth": 5,
+      "created_at": "2026-09-20T09:42:43.123792+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioural_sciences"
+      ],
+      "updated_at": "2026-09-20T09:42:43.123798+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619856+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 305,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Evolutionary anachronism",
+            "Sexual antagonistic coevolution",
+            "Spiracle (arthropods)",
+            "Ecosystem-based adaptation",
+            "Adaptation (eye)",
+            "Association for the Study of Animal Behaviour"
+          ],
+          "diversity": 0.799,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T09:42:43.122383+00:00"
+      }
+    },
+    "Behavioral neuroscience": {
+      "depth": 5,
+      "created_at": "2026-09-20T11:16:50.026096+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_neuroscience"
+      ],
+      "updated_at": "2026-09-20T11:16:50.026103+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619859+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 322,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Adaptation (eye)",
+            "Association for the Study of Animal Behaviour",
+            "Adaptation (arts)",
+            "Evolutionary anachronism",
+            "Sexual antagonistic coevolution"
+          ],
+          "diversity": 0.805,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T11:16:50.024680+00:00"
+      }
+    },
+    "Behavioural genetics": {
+      "depth": 6,
+      "created_at": "2026-09-20T13:49:57.612990+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioural_genetics"
+      ],
+      "updated_at": "2026-09-20T13:49:57.612999+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619861+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 379,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Black fly",
+            "Adaptation (arts)",
+            "Association for the Study of Animal Behaviour",
+            "Sexual antagonistic coevolution",
+            "Literary adaptation",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.811,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T13:49:57.610510+00:00"
+      }
+    },
+    "Consumer behaviour": {
+      "depth": 5,
+      "created_at": "2026-09-20T13:58:53.758143+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Consumer_behaviour"
+      ],
+      "updated_at": "2026-09-20T13:58:53.758149+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619863+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 371,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Association for the Study of Animal Behaviour",
+            "Adaptation (eye)",
+            "Adaptation (arts)",
+            "Literary adaptation",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.84,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T13:58:53.756799+00:00"
+      }
+    },
+    "Behaviour (journal)": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:02:03.612601+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviour_(journal)"
+      ],
+      "updated_at": "2026-09-20T14:02:03.612608+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619865+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 326,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Sexual antagonistic coevolution",
+            "Adaptation (eye)",
+            "Adaptation (arts)",
+            "Cephalon",
+            "Literary adaptation",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.813,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:02:03.611165+00:00"
+      }
+    },
+    "Behavioral economics": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:03:41.330645+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_economics"
+      ],
+      "updated_at": "2026-09-20T14:03:41.330652+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619868+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 378,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Literary adaptation",
+            "Adaptation (arts)",
+            "ATM adaptation layer",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.768,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:03:41.329212+00:00"
+      }
+    },
+    "A Behavioral Theory of the Firm": {
+      "depth": 6,
+      "created_at": "2026-09-20T14:05:17.387435+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/A_Behavioral_Theory_of_the_Firm"
+      ],
+      "updated_at": "2026-09-20T14:05:17.387442+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619870+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 318,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Bamboo fly rod",
+            "ATM adaptation layer",
+            "Sexual antagonistic coevolution",
+            "American Museum of Fly Fishing",
+            "Artificial fly",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.825,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:05:17.385934+00:00"
+      }
+    },
+    "Behaviorism": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:10:05.741396+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviorism"
+      ],
+      "updated_at": "2026-09-20T14:10:05.741404+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619872+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 5.37,
+        "metrics": {
+          "words": 170,
+          "sections": 1,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.856,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:10:05.739914+00:00"
+      }
+    },
+    "Behavioral endocrinology": {
+      "depth": 9,
+      "created_at": "2026-09-20T14:18:02.070285+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_endocrinology"
+      ],
+      "updated_at": "2026-09-20T14:18:02.070291+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619875+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 312,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "ATM adaptation layer",
+            "Adaptive behavior (ecology)",
+            "Sexual antagonistic coevolution",
+            "Adaptation (arts)",
+            "Literary adaptation",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.838,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:18:02.068806+00:00"
+      }
+    },
+    "Evolutionary psychology": {
+      "depth": 5,
+      "created_at": "2026-09-20T14:19:37.578017+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_psychology"
+      ],
+      "updated_at": "2026-09-20T14:19:37.578023+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619877+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 347,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "ATM adaptation layer",
+            "Sexual antagonistic coevolution",
+            "Adaptation (arts)",
+            "Literary adaptation",
+            "Evolutionary anachronism"
+          ],
+          "diversity": 0.811,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T14:19:37.576578+00:00"
+      }
+    },
+    "Behavioral Ecology (journal)": {
+      "depth": 6,
+      "created_at": "2026-09-20T17:09:39.347638+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_Ecology_(journal)"
+      ],
+      "updated_at": "2026-09-20T17:09:39.347645+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619879+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 331,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Literary adaptation",
+            "Evolutionary anachronism",
+            "Saro Windhover",
+            "ATM adaptation layer",
+            "Courtship",
+            "Adaptation (arts)"
+          ],
+          "diversity": 0.773,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T17:09:39.346113+00:00"
+      }
+    },
+    "Antecedent (behavioral psychology)": {
+      "depth": 5,
+      "created_at": "2026-09-20T20:55:02.222794+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Antecedent_(behavioral_psychology)"
+      ],
+      "updated_at": "2026-09-20T20:55:02.222801+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619881+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 117,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Diptera",
+            "Fly",
+            "Entomology",
+            "Insect"
+          ],
+          "diversity": 0.87,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T20:55:02.221102+00:00"
+      }
+    },
+    "Association for Behavior Analysis International": {
+      "depth": 5,
+      "created_at": "2026-09-20T23:49:02.348778+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_Behavior_Analysis_International"
+      ],
+      "updated_at": "2026-09-20T23:49:02.348785+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619884+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 176,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Fly",
+            "Diptera",
+            "Insect",
+            "Animal sexual behaviour"
+          ],
+          "diversity": 0.788,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-20T23:49:02.347285+00:00"
+      }
+    },
+    "Alexandra (wet fly)": {
+      "depth": 6,
+      "created_at": "2026-09-21T00:24:03.146035+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Alexandra_(wet_fly)"
+      ],
+      "updated_at": "2026-09-21T00:24:03.146042+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619887+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 343,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Blacker's Art of Fly Making",
+            "Insect Week",
+            "Royal Entomological Society",
+            "The Entomologist's Record and Journal of Variation",
+            "Artificial fly",
+            "Amateur Entomologists' Society"
+          ],
+          "diversity": 0.743,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T00:24:03.144648+00:00"
+      }
+    },
+    "Behavior (disambiguation)": {
+      "depth": 5,
+      "created_at": "2026-09-21T02:28:01.902576+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_(disambiguation)"
+      ],
+      "updated_at": "2026-09-21T02:28:01.902585+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619889+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 277,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Comportement",
+            "Journal scientifique",
+            "Développement de jeux vidéo",
+            "Album",
+            "Psychologie animale",
+            "Film"
+          ],
+          "diversity": 0.781,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T02:28:01.900996+00:00"
+      }
+    },
+    "Behaviour Interactive": {
+      "depth": 6,
+      "created_at": "2026-09-21T03:06:20.627738+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviour_Interactive"
+      ],
+      "updated_at": "2026-09-21T03:06:20.627744+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619891+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 383,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Canadian video game industry",
+            "Asymmetric multiplayer",
+            "Montreal",
+            "The Walking Dead (franchise)",
+            "Dead by Daylight",
+            "Survival horror"
+          ],
+          "diversity": 0.708,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T03:06:20.626119+00:00"
+      }
+    },
+    "Behaviour Santiago": {
+      "depth": 6,
+      "created_at": "2026-09-21T03:07:58.151028+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviour_Santiago"
+      ],
+      "updated_at": "2026-09-21T03:07:58.151035+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619893+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 333,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Adaptation (computer science)",
+            "Behaviour Interactive",
+            "Artificial Mind and Movement",
+            "Bibliography of fly fishing (fly tying, stories, fiction)",
+            "Vivendi Games"
+          ],
+          "diversity": 0.635,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T03:07:58.149134+00:00"
+      }
+    },
+    "Behavior selection algorithm": {
+      "depth": 5,
+      "created_at": "2026-09-21T09:33:08.149820+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_selection_algorithm"
+      ],
+      "updated_at": "2026-09-21T09:33:08.149834+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619896+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 145,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Arthropod mouthparts",
+            "Fly",
+            "Insect",
+            "Diptera"
+          ],
+          "diversity": 0.74,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:33:08.147064+00:00"
+      }
+    },
+    "Behavioral modeling in computer-aided design": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:34:46.315952+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_computer-aided_design"
+      ],
+      "updated_at": "2026-09-21T09:34:46.315959+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619898+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 99,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Chemical mimicry",
+            "Insect",
+            "Diptera",
+            "Fly"
+          ],
+          "diversity": 0.838,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:34:46.314486+00:00"
+      }
+    },
+    "Behavior analysis (disambiguation)": {
+      "depth": 5,
+      "created_at": "2026-09-21T09:43:04.450795+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_analysis_(disambiguation)"
+      ],
+      "updated_at": "2026-09-21T09:43:04.450802+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619901+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 327,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behaviorism",
+            "Adaptive behavior",
+            "Adaptation (eye)",
+            "User behavior analytics",
+            "Behavioral analytics",
+            "Adaptation (computer science)"
+          ],
+          "diversity": 0.665,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:43:04.449308+00:00"
+      }
+    },
+    "Behavioral modeling in hydrology": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:55:03.383705+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_modeling_in_hydrology"
+      ],
+      "updated_at": "2026-09-21T09:55:03.383711+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619903+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 99,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Behavior selection algorithm",
+            "Fly",
+            "Insect",
+            "Diptera"
+          ],
+          "diversity": 0.815,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:55:03.382231+00:00"
+      }
+    },
+    "Biogeomorphology": {
+      "depth": 6,
+      "created_at": "2026-09-21T09:56:42.216757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Biogeomorphology"
+      ],
+      "updated_at": "2026-09-21T09:56:42.216763+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619905+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 7.33,
+        "metrics": {
+          "words": 270,
+          "sections": 2,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.824,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:56:42.215219+00:00"
+      }
+    },
+    "Coastal biogeomorphology": {
+      "depth": 5,
+      "created_at": "2026-09-21T09:59:57.345659+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Coastal_biogeomorphology"
+      ],
+      "updated_at": "2026-09-21T09:59:57.345665+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.619907+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.0,
+        "metrics": {
+          "words": 286,
+          "sections": 3,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.771,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T09:59:57.344147+00:00"
+      }
+    },
+    "Behavior tree (artificial intelligence, robotics and control)": {
+      "depth": 6,
+      "created_at": "2026-09-21T10:05:02.289900+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence%2C_robotics_and_control)"
+      ],
+      "updated_at": "2026-09-21T10:05:02.289907+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.542399+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 7.33,
+        "metrics": {
+          "words": 267,
+          "sections": 2,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.765,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T10:05:02.288389+00:00"
+      }
+    },
+    "Behavioral pattern": {
+      "depth": 5,
+      "created_at": "2026-09-21T10:10:05.534203+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_pattern"
+      ],
+      "updated_at": "2026-09-21T10:10:05.534209+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.542681+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 339,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Blue-winged Olive flies",
+            "Adaptive behavior",
+            "Adaptive behavior (ecology)",
+            "Insect Festival",
+            "Vineland Adaptive Behavior Scale",
+            "Adaptation (computer science)"
+          ],
+          "diversity": 0.775,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T10:10:05.532705+00:00"
+      }
+    },
+    "Behavioral modeling": {
+      "depth": 6,
+      "created_at": "2026-09-21T16:30:01.951717+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_modeling"
+      ],
+      "updated_at": "2026-09-21T16:30:01.951725+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.542956+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 324,
+          "sections": 3,
+          "links": 5,
+          "link_list": [
+            "Vineland Adaptive Behavior Scale",
+            "Chromatic adaptation",
+            "Adaptive behavior",
+            "Behavior selection algorithm",
+            "Behavior"
+          ],
+          "diversity": 0.732,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T16:30:01.950109+00:00"
+      }
+    },
+    "Behavioral cusp": {
+      "depth": 5,
+      "created_at": "2026-09-21T16:43:01.614014+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_cusp"
+      ],
+      "updated_at": "2026-09-21T16:43:01.614022+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.543232+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 386,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Vineland Adaptive Behavior Scale",
+            "Chromatic adaptation",
+            "Adaptive behavior",
+            "Adaptive behavior (ecology)",
+            "Applied behavior analysis",
+            "Behavior"
+          ],
+          "diversity": 0.664,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-21T16:43:01.612613+00:00"
+      }
+    },
+    "Clinical behavior analysis": {
+      "depth": 6,
+      "created_at": "2026-09-22T00:33:03.988271+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clinical_behavior_analysis"
+      ],
+      "updated_at": "2026-09-22T00:33:03.988281+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.543539+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 366,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Behavior analysis (disambiguation)",
+            "Behavior informatics",
+            "Behavior",
+            "Applied behavior analysis",
+            "Adaptive behavior"
+          ],
+          "diversity": 0.754,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T00:33:03.986684+00:00"
+      }
+    },
+    "Quantitative analysis of behavior": {
+      "depth": 6,
+      "created_at": "2026-09-22T00:40:03.001202+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Quantitative_analysis_of_behavior"
+      ],
+      "updated_at": "2026-09-22T00:40:03.001211+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.543869+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 361,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioural sciences",
+            "Adaptive behavior (ecology)",
+            "Behavior",
+            "Applied behavior analysis",
+            "Vineland Adaptive Behavior Scale",
+            "Adaptive behavior"
+          ],
+          "diversity": 0.724,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T00:40:02.999642+00:00"
+      }
+    },
+    "Experimental analysis of behavior": {
+      "depth": 6,
+      "created_at": "2026-09-22T00:41:42.197474+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Experimental_analysis_of_behavior"
+      ],
+      "updated_at": "2026-09-22T00:41:42.197482+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.544210+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 347,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Behavioral neuroscience",
+            "Behavioural sciences",
+            "Adaptive behavior (ecology)",
+            "Behavior",
+            "Applied behavior analysis"
+          ],
+          "diversity": 0.722,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T00:41:42.196090+00:00"
+      }
+    },
+    "Behaviour therapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T00:50:04.935080+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behaviour_therapy"
+      ],
+      "updated_at": "2026-09-22T00:50:04.935088+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.544481+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 314,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral neuroscience",
+            "Behavioural sciences",
+            "Adaptive behavior (ecology)",
+            "Behavior",
+            "Applied behavior analysis",
+            "Behavioural genetics"
+          ],
+          "diversity": 0.803,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T00:50:04.933650+00:00"
+      }
+    },
+    "Behavioral momentum": {
+      "depth": 7,
+      "created_at": "2026-09-22T00:59:01.969120+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_momentum"
+      ],
+      "updated_at": "2026-09-22T00:59:01.969128+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.544489+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 365,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral neuroscience",
+            "Behavioural sciences",
+            "Adaptive behavior (ecology)",
+            "Consumer behaviour",
+            "Behavior",
+            "Applied behavior analysis"
+          ],
+          "diversity": 0.709,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T00:59:01.967711+00:00"
+      }
+    },
+    "Professional practice of behavior analysis": {
+      "depth": 6,
+      "created_at": "2026-09-22T01:06:03.439812+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis"
+      ],
+      "updated_at": "2026-09-22T01:06:03.439819+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.544855+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 9.5,
+        "metrics": {
+          "words": 466,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioural sciences",
+            "Consumer behaviour",
+            "Behaviour (journal)",
+            "Behavior",
+            "Applied behavior analysis",
+            "Vineland Adaptive Behavior Scale"
+          ],
+          "diversity": 0.74,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T01:06:03.438186+00:00"
+      }
+    },
+    "Butterfly effect": {
+      "depth": 6,
+      "created_at": "2026-09-22T13:14:02.419692+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Butterfly_effect"
+      ],
+      "updated_at": "2026-09-22T13:14:02.419700+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.544899+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 392,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Adaptive behavior (ecology)",
+            "Behavioural genetics",
+            "Consumer behaviour",
+            "Behavioral economics",
+            "Applied behavior analysis",
+            "Behavioural sciences",
+            "Behavior"
+          ],
+          "diversity": 0.798,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T13:14:02.418039+00:00"
+      }
+    },
+    "Association for Behavioral and Cognitive Therapies": {
+      "depth": 7,
+      "created_at": "2026-09-22T13:45:03.152852+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_Behavioral_and_Cognitive_Therapies"
+      ],
+      "updated_at": "2026-09-22T13:45:03.152860+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.545313+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 320,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "A Behavioral Theory of the Firm",
+            "Behaviour (journal)",
+            "Behavioral economics",
+            "Applied behavior analysis",
+            "Behavioural sciences",
+            "Behavior"
+          ],
+          "diversity": 0.8,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T13:45:03.151087+00:00"
+      }
+    },
+    "Behavior modification": {
+      "depth": 5,
+      "created_at": "2026-09-22T13:46:39.929973+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_modification"
+      ],
+      "updated_at": "2026-09-22T13:46:39.929979+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.545322+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 385,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Consumer behaviour",
+            "Behavioral economics",
+            "Applied behavior analysis",
+            "Behavioural neuroscience",
+            "Behaviorism",
+            "Behavior"
+          ],
+          "diversity": 0.716,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T13:46:39.928436+00:00"
+      }
+    },
+    "Behavioral ecology (disambiguation)": {
+      "depth": 5,
+      "created_at": "2026-09-22T18:08:03.111787+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_ecology_(disambiguation)"
+      ],
+      "updated_at": "2026-09-22T18:08:03.111795+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.545671+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 311,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Behavioral neuroscience",
+            "Behavior informatics",
+            "Behaviour (journal)",
+            "Behaviorism",
+            "Behavioural sciences",
+            "Behavior",
+            "Behavioural genetics",
+            "A Behavioral Theory of the Firm",
+            "Behavioral endocrinology",
+            "Applied behavior analysis",
+            "Consumer behaviour",
+            "Behavioral economics"
+          ],
+          "diversity": 0.703,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T18:08:03.110229+00:00"
+      }
+    },
+    "Licensed behavior analyst": {
+      "depth": 6,
+      "created_at": "2026-09-22T18:30:02.025799+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Licensed_behavior_analyst"
+      ],
+      "updated_at": "2026-09-22T18:30:02.025807+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.545989+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 396,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavior informatics",
+            "Behavioural sciences",
+            "Behaviourism",
+            "Evolutionary psychology",
+            "Applied behavior analysis",
+            "Behavioral economics"
+          ],
+          "diversity": 0.757,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T18:30:02.024295+00:00"
+      }
+    },
+    "Behavior analysis of child development": {
+      "depth": 5,
+      "created_at": "2026-09-22T21:05:02.727277+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_analysis_of_child_development"
+      ],
+      "updated_at": "2026-09-22T21:05:02.727284+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546338+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 351,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Evolutionary psychology",
+            "Behavioural sciences",
+            "Behavioral neuroscience",
+            "Behavior informatics",
+            "Behavioral Ecology (journal)",
+            "Behavioural genetics"
+          ],
+          "diversity": 0.763,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:05:02.725573+00:00"
+      }
+    },
+    "Behavioral activation": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:09:54.279832+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_activation"
+      ],
+      "updated_at": "2026-09-22T21:09:54.279839+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546627+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 360,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Evolutionary psychology",
+            "Behavioural sciences",
+            "Behavioral economics",
+            "Behaviorism",
+            "Behaviour (journal)"
+          ],
+          "diversity": 0.822,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:09:54.277838+00:00"
+      }
+    },
+    "Cognitive behavioral analysis system of psychotherapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:13:08.263719+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cognitive_behavioral_analysis_system_of_psychotherapy"
+      ],
+      "updated_at": "2026-09-22T21:13:08.263726+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546637+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 323,
+          "sections": 3,
+          "links": 5,
+          "link_list": [
+            "Behavioral neuroscience",
+            "Behavioral economics",
+            "Behaviorism",
+            "Behaviour (journal)",
+            "Behavioural genetics"
+          ],
+          "diversity": 0.867,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:13:08.262136+00:00"
+      }
+    },
+    "Cognitive behavioral therapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:18:02.448539+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"
+      ],
+      "updated_at": "2026-09-22T21:18:02.448547+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546644+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 397,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Antecedent (behavioral psychology)",
+            "Evolutionary psychology",
+            "Behavioral economics",
+            "Behaviorism",
+            "Behaviour (journal)",
+            "Association for Behavior Analysis International"
+          ],
+          "diversity": 0.821,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:18:02.446716+00:00"
+      }
+    },
+    "Dialectical behavior therapy": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:19:42.633259+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy"
+      ],
+      "updated_at": "2026-09-22T21:19:42.633266+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546680+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 365,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Evolutionary psychology",
+            "Behavioral economics",
+            "Behavioral Ecology (journal)",
+            "Behaviorism",
+            "Association for Behavior Analysis International"
+          ],
+          "diversity": 0.771,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:19:42.631629+00:00"
+      }
+    },
+    "Anti-social behaviour": {
+      "depth": 6,
+      "created_at": "2026-09-22T21:34:04.151349+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Anti-social_behaviour"
+      ],
+      "updated_at": "2026-09-22T21:34:04.151357+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.546984+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 337,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Evolutionary psychology",
+            "Behavioral economics",
+            "Behavior (disambiguation)",
+            "Behaviorism",
+            "Behaviour (journal)",
+            "Association for Behavior Analysis International"
+          ],
+          "diversity": 0.779,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-22T21:34:04.149602+00:00"
+      }
+    },
+    "Association for Contextual Behavioral Science": {
+      "depth": 6,
+      "created_at": "2026-09-23T00:20:03.366120+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Association_for_Contextual_Behavioral_Science"
+      ],
+      "updated_at": "2026-09-23T00:20:03.366127+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.547357+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 7.33,
+        "metrics": {
+          "words": 403,
+          "sections": 2,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.702,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T00:20:03.364361+00:00"
+      }
+    },
+    "Verbal Behavior": {
+      "depth": 6,
+      "created_at": "2026-09-23T00:21:43.180683+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Verbal_Behavior"
+      ],
+      "updated_at": "2026-09-23T00:21:43.180693+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.547624+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 391,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behaviorism",
+            "Behavior (disambiguation)",
+            "Antecedent (behavioral psychology)",
+            "Association for Behavior Analysis International",
+            "Evolutionary psychology",
+            "Behavioral Ecology (journal)"
+          ],
+          "diversity": 0.701,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T00:21:43.178936+00:00"
+      }
+    },
+    "Abnormality (behavior)": {
+      "depth": 6,
+      "created_at": "2026-09-23T00:23:22.866419+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Abnormality_(behavior)"
+      ],
+      "updated_at": "2026-09-23T00:23:22.866425+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.547912+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 338,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Behaviorism",
+            "Behavior selection algorithm",
+            "Antecedent (behavioral psychology)",
+            "Association for Behavior Analysis International",
+            "Evolutionary psychology",
+            "Behavioral Ecology (journal)",
+            "Behavioral endocrinology"
+          ],
+          "diversity": 0.754,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T00:23:22.864483+00:00"
+      }
+    },
+    "Behavior management": {
+      "depth": 7,
+      "created_at": "2026-09-23T00:34:02.842725+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_management"
+      ],
+      "updated_at": "2026-09-23T00:34:02.842733+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.548204+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 338,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Behavior (disambiguation)",
+            "Behavioral modeling in computer-aided design",
+            "Antecedent (behavioral psychology)",
+            "Association for Behavior Analysis International",
+            "Evolutionary psychology"
+          ],
+          "diversity": 0.792,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T00:34:02.840787+00:00"
+      }
+    },
+    "Behavioural change theories": {
+      "depth": 6,
+      "created_at": "2026-09-23T00:40:34.189064+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioural_change_theories"
+      ],
+      "updated_at": "2026-09-23T00:40:34.189073+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.548512+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 358,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Behaviour Interactive",
+            "Behavior (disambiguation)",
+            "Behaviour Santiago",
+            "Antecedent (behavioral psychology)",
+            "Association for Behavior Analysis International",
+            "Behavioral Ecology (journal)",
+            "Consumer behaviour"
+          ],
+          "diversity": 0.743,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T00:40:34.187250+00:00"
+      }
+    },
+    "Eccentricity (behavior)": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:05:10.425372+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Eccentricity_(behavior)"
+      ],
+      "updated_at": "2026-09-23T04:05:10.425380+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.548519+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 349,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral modeling in hydrology",
+            "Antecedent (behavioral psychology)",
+            "Behavioral Ecology (journal)",
+            "Behavior selection algorithm",
+            "Association for Behavior Analysis International",
+            "Behavior (disambiguation)"
+          ],
+          "diversity": 0.735,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:05:10.423722+00:00"
+      }
+    },
+    "Behavioral addiction": {
+      "depth": 7,
+      "created_at": "2026-09-23T04:06:48.905907+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_addiction"
+      ],
+      "updated_at": "2026-09-23T04:06:48.905915+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.548804+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 340,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Antecedent (behavioral psychology)",
+            "Behavior selection algorithm",
+            "Biogeomorphology",
+            "Behavioral modeling in computer-aided design",
+            "Association for Behavior Analysis International",
+            "Behavior (disambiguation)"
+          ],
+          "diversity": 0.75,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:06:48.904289+00:00"
+      }
+    },
+    "Behavioral contagion": {
+      "depth": 7,
+      "created_at": "2026-09-23T04:10:02.026820+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_contagion"
+      ],
+      "updated_at": "2026-09-23T04:10:02.026828+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.549097+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 371,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Coastal biogeomorphology",
+            "Behavioral modeling in hydrology",
+            "Behaviour Interactive",
+            "Antecedent (behavioral psychology)",
+            "E. coli long-term evolution experiment",
+            "Association for Behavior Analysis International"
+          ],
+          "diversity": 0.753,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:10:02.025090+00:00"
+      }
+    },
+    "Behavior change (public health)": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:22:01.778999+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_change_(public_health)"
+      ],
+      "updated_at": "2026-09-23T04:22:01.779007+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.549422+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 393,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Allagash Brewing Company",
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Behavior analysis (disambiguation)",
+            "Behavior (disambiguation)",
+            "Association for Behavior Analysis International"
+          ],
+          "diversity": 0.812,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:22:01.777294+00:00"
+      }
+    },
+    "Behavior-based safety": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:27:01.920805+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior-based_safety"
+      ],
+      "updated_at": "2026-09-23T04:27:01.920812+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.549708+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 377,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Cephalothorax",
+            "Behavioral pattern",
+            "Behavior analysis (disambiguation)",
+            "Behavior tree",
+            "Behavioral modeling in computer-aided design",
+            "Behavior (disambiguation)"
+          ],
+          "diversity": 0.816,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:27:01.919025+00:00"
+      }
+    },
+    "User behavior analytics": {
+      "depth": 6,
+      "created_at": "2026-09-23T04:40:28.929434+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/User_behavior_analytics"
+      ],
+      "updated_at": "2026-09-23T04:40:28.929460+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.550011+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 333,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Behavior analysis (disambiguation)",
+            "Behavioral modeling",
+            "Behavior (disambiguation)",
+            "Behavior selection algorithm",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.749,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T04:40:28.927905+00:00"
+      }
+    },
+    "Human behavior": {
+      "depth": 7,
+      "created_at": "2026-09-23T08:56:51.582572+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_behavior"
+      ],
+      "updated_at": "2026-09-23T08:56:51.582580+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.550276+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 380,
+          "sections": 4,
+          "links": 11,
+          "link_list": [
+            "Biogeomorphology",
+            "Behavioral modeling in hydrology",
+            "Behaviour Santiago",
+            "Behavior analysis (disambiguation)",
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Coastal biogeomorphology",
+            "Behaviour Interactive",
+            "Behavioral cusp",
+            "Behavioral pattern",
+            "Behavioral modeling in computer-aided design",
+            "Behavior selection algorithm"
+          ],
+          "diversity": 0.718,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T08:56:51.580575+00:00"
+      }
+    },
+    "Network behavior anomaly detection": {
+      "depth": 7,
+      "created_at": "2026-09-23T10:43:00.869624+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Network_behavior_anomaly_detection"
+      ],
+      "updated_at": "2026-09-23T10:43:00.869633+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.550618+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 395,
+          "sections": 4,
+          "links": 7,
+          "link_list": [
+            "Biogeomorphology",
+            "Behaviour Santiago",
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Behavior selection algorithm",
+            "Behavioral modeling",
+            "Behavioral pattern",
+            "Behavioral modeling in hydrology"
+          ],
+          "diversity": 0.715,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T10:43:00.867831+00:00"
+      }
+    },
+    "Behavioral analytics": {
+      "depth": 6,
+      "created_at": "2026-09-23T10:54:03.007416+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_analytics"
+      ],
+      "updated_at": "2026-09-23T10:54:03.007423+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.550900+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 421,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Quantitative analysis of behavior",
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Behavior selection algorithm",
+            "Behavior analysis (disambiguation)",
+            "Behavioral modeling",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.75,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T10:54:03.005710+00:00"
+      }
+    },
+    "Behavior change method": {
+      "depth": 6,
+      "created_at": "2026-09-23T11:03:01.553554+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_change_method"
+      ],
+      "updated_at": "2026-09-23T11:03:01.553560+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.551202+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 375,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Biogeomorphology",
+            "Behavior tree (artificial intelligence, robotics and control)",
+            "Coastal biogeomorphology",
+            "Behavior analysis (disambiguation)",
+            "Behavioral modeling in hydrology",
+            "Behavioral modeling in computer-aided design"
+          ],
+          "diversity": 0.727,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T11:03:01.551480+00:00"
+      }
+    },
+    "Chemical ecology": {
+      "depth": 7,
+      "created_at": "2026-09-23T11:17:02.606760+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chemical_ecology"
+      ],
+      "updated_at": "2026-09-23T11:17:02.606766+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.551467+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 347,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Quantitative analysis of behavior",
+            "Experimental analysis of behavior",
+            "Behavior analysis (disambiguation)",
+            "Behavioral modeling",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.794,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T11:17:02.605051+00:00"
+      }
+    },
+    "Social and behavior change communication": {
+      "depth": 6,
+      "created_at": "2026-09-23T11:29:02.460435+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Social_and_behavior_change_communication"
+      ],
+      "updated_at": "2026-09-23T11:29:02.460443+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.551829+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 344,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral pattern",
+            "Behaviour therapy",
+            "Behavioral modeling",
+            "Clinical behavior analysis",
+            "Consumer behaviour",
+            "Quantitative analysis of behavior"
+          ],
+          "diversity": 0.775,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T11:29:02.458583+00:00"
+      }
+    },
+    "Behavioural design": {
+      "depth": 7,
+      "created_at": "2026-09-23T16:02:02.140947+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioural_design"
+      ],
+      "updated_at": "2026-09-23T16:02:02.140955+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.552126+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 326,
+          "sections": 3,
+          "links": 6,
+          "link_list": [
+            "Behaviour therapy",
+            "Quantitative analysis of behavior",
+            "Behavioral modeling",
+            "Clinical behavior analysis",
+            "Experimental analysis of behavior",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.751,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T16:02:02.139637+00:00"
+      }
+    },
+    "Human behavioral ecology": {
+      "depth": 6,
+      "created_at": "2026-09-23T16:12:02.869850+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Human_behavioral_ecology"
+      ],
+      "updated_at": "2026-09-23T16:12:02.869858+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.552422+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 383,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Quantitative analysis of behavior",
+            "Behavioral cusp",
+            "Clinical behavior analysis",
+            "Behavioral modeling",
+            "Experimental analysis of behavior",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.751,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T16:12:02.868480+00:00"
+      }
+    },
+    "Evolutionary developmental psychology": {
+      "depth": 7,
+      "created_at": "2026-09-23T16:17:02.269884+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_developmental_psychology"
+      ],
+      "updated_at": "2026-09-23T16:17:02.269893+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.552767+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 435,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Quantitative analysis of behavior",
+            "Butterfly effect",
+            "Behavioral cusp",
+            "Behavioral modeling",
+            "Experimental analysis of behavior",
+            "Behavioral pattern"
+          ],
+          "diversity": 0.745,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-23T16:17:02.268363+00:00"
+      }
+    },
+    "Radical behaviorism": {
+      "depth": 7,
+      "created_at": "2026-09-24T03:24:01.316764+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Radical_behaviorism"
+      ],
+      "updated_at": "2026-09-24T03:24:01.316771+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.553057+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 395,
+          "sections": 4,
+          "links": 12,
+          "link_list": [
+            "Butterfly effect",
+            "Association for Behavioral and Cognitive Therapies",
+            "Behavioral momentum",
+            "Behaviour therapy",
+            "Professional practice of behavior analysis",
+            "Behavioral modeling",
+            "Clinical behavior analysis",
+            "Association for Contextual Behavioral Science",
+            "Behavioral cusp",
+            "Behavioral pattern",
+            "Behavior modification",
+            "Quantitative analysis of behavior"
+          ],
+          "diversity": 0.689,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T03:24:01.314937+00:00"
+      }
+    },
+    "Cultural ecology": {
+      "depth": 7,
+      "created_at": "2026-09-24T03:32:02.496757+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cultural_ecology"
+      ],
+      "updated_at": "2026-09-24T03:32:02.496764+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.553321+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 388,
+          "sections": 3,
+          "links": 7,
+          "link_list": [
+            "Experimental analysis of behavior",
+            "Butterfly effect",
+            "Behavioral momentum",
+            "Behavioral modeling",
+            "Behavior modification",
+            "Behavioral cusp",
+            "Quantitative analysis of behavior"
+          ],
+          "diversity": 0.709,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T03:32:02.495080+00:00"
+      }
+    },
+    "Behavioral systems analysis": {
+      "depth": 6,
+      "created_at": "2026-09-24T08:58:04.673116+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavioral_systems_analysis"
+      ],
+      "updated_at": "2026-09-24T08:58:04.673124+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.553632+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 359,
+          "sections": 4,
+          "links": 8,
+          "link_list": [
+            "Behavioral momentum",
+            "Quantitative analysis of behavior",
+            "Butterfly effect",
+            "Clinical behavior analysis",
+            "Behavior modification",
+            "Behavioral cusp",
+            "Association for Behavioral and Cognitive Therapies",
+            "Professional practice of behavior analysis"
+          ],
+          "diversity": 0.693,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T08:58:04.671240+00:00"
+      }
+    },
+    "Theatrical adaptation": {
+      "depth": 8,
+      "created_at": "2026-09-24T15:11:02.927748+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Theatrical_adaptation"
+      ],
+      "updated_at": "2026-09-24T15:11:02.927754+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.554182+00:00",
+      "reason": "low_rel=0.275",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 397,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Stage adaptation",
+            "Adaptation of literature",
+            "Play",
+            "Adaptation (arts)",
+            "Musical"
+          ],
+          "diversity": 0.792,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T15:11:02.926026+00:00"
+      }
+    },
+    "Organizational behavior management": {
+      "depth": 7,
+      "created_at": "2026-09-24T15:18:01.694881+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Organizational_behavior_management"
+      ],
+      "updated_at": "2026-09-24T15:18:01.694888+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.554516+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 357,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral momentum",
+            "Behavior analysis of child development",
+            "Cognitive behavioral analysis system of psychotherapy",
+            "Behavioral ecology (disambiguation)",
+            "Licensed behavior analyst",
+            "Behaviour therapy"
+          ],
+          "diversity": 0.699,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T15:18:01.693127+00:00"
+      }
+    },
+    "Chewing gum": {
+      "depth": 7,
+      "created_at": "2026-09-24T17:06:20.910608+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chewing_gum"
+      ],
+      "updated_at": "2026-09-24T17:06:20.910616+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.554524+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 344,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Behaviour therapy",
+            "Cognitive behavioral therapy",
+            "Behavioral momentum",
+            "Behavior modification",
+            "Professional practice of behavior analysis"
+          ],
+          "diversity": 0.733,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T17:06:20.908780+00:00"
+      }
+    },
+    "Addictive behavior": {
+      "depth": 6,
+      "created_at": "2026-09-24T19:56:03.092114+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Addictive_behavior"
+      ],
+      "updated_at": "2026-09-24T19:56:03.092123+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.554799+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 351,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral momentum",
+            "Association for Behavioral and Cognitive Therapies",
+            "Dialectical behavior therapy",
+            "Professional practice of behavior analysis",
+            "Behavior modification",
+            "Cognitive behavioral therapy"
+          ],
+          "diversity": 0.746,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-09-24T19:56:03.090575+00:00"
+      }
+    },
+    "Behavior Modification (journal)": {
+      "depth": 7,
+      "created_at": "2026-10-04T08:07:01.969692+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Behavior_Modification_(journal)"
+      ],
+      "updated_at": "2026-10-04T08:07:01.969699+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.554808+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 388,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Professional practice of behavior analysis",
+            "Dialectical behavior therapy",
+            "Cognitive behavioral therapy",
+            "Anti-social behaviour",
+            "Behavior modification",
+            "Behavioral activation"
+          ],
+          "diversity": 0.741,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-10-04T08:07:01.967726+00:00"
+      }
+    },
+    "Evolutionary Ecology (journal)": {
+      "depth": 7,
+      "created_at": "2026-10-08T06:06:07.694718+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Evolutionary_Ecology_(journal)"
+      ],
+      "updated_at": "2026-10-08T06:06:07.694727+00:00",
+      "quarantined_at": "2026-11-08T09:48:48.555125+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 322,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Dialectical behavior therapy",
+            "Behavioral ecology (disambiguation)",
+            "Butterfly effect",
+            "Behavior modification",
+            "Cognitive behavioral therapy",
+            "Association for Contextual Behavioral Science"
+          ],
+          "diversity": 0.783,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-10-08T06:06:07.692845+00:00"
+      }
+    }
+  },
+  "edges": [
+    {
+      "from": "Evolution",
+      "to": "Evolution of insects"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect morphology"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect wing"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insecticide"
+    },
+    {
+      "from": "Evolution",
+      "to": "Fly"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect flight"
+    },
+    {
+      "from": "Evolution",
+      "to": "Wing"
+    },
+    {
+      "from": "Wing",
+      "to": "Aileron"
+    },
+    {
+      "from": "Palaeoptera",
+      "to": "Basal (evolution)"
+    },
+    {
+      "from": "Palaeoptera",
+      "to": "Caddisfly"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect mouthparts"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect ecology"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Annual Review of Ecology, Evolution, and Systematics"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Anthecology"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Evolution",
+      "to": "Larva"
+    },
+    {
+      "from": "Evolution",
+      "to": "Maggot"
+    },
+    {
+      "from": "Evolution",
+      "to": "Insect behaviour"
+    },
+    {
+      "from": "Flight",
+      "to": "Ailerons"
+    },
+    {
+      "from": "Antenna (zoology)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Parasitoid",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mating",
+      "to": "Blue-tailed damselfly"
+    },
+    {
+      "from": "Arthropod eye",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Evolution of insects",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Insect behaviour",
+      "to": "Behavioral Ecology and Sociobiology"
+    },
+    {
+      "from": "Insect",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Devonian",
+      "to": "Insect wing"
+    },
+    {
+      "from": "Insect wing",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Neoptera",
+      "to": "Aileron"
+    },
+    {
+      "from": "Aileron",
+      "to": "Adaptive Compliant Wing"
+    },
+    {
+      "from": "Behavioral Ecology and Sociobiology",
+      "to": "Ecology"
+    },
+    {
+      "from": "Ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Adaptive radiation",
+      "to": "Applications of evolution"
+    },
+    {
+      "from": "Insect mouthparts",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mimicry",
+      "to": "Annual Review of Ecology, Evolution, and Systematics"
+    },
+    {
+      "from": "Apterygota",
+      "to": "Anthecology"
+    },
+    {
+      "from": "Arthropod exoskeleton",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Arthropod leg",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Applied ecology",
+      "to": "Arctic ecology"
+    },
+    {
+      "from": "Annual Review of Ecology, Evolution, and Systematics",
+      "to": "Autecology"
+    },
+    {
+      "from": "Anthecology",
+      "to": "Butterfly"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Current research in evolutionary biology"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Ecology"
+    },
+    {
+      "from": "Applications of evolution",
+      "to": "Cooperation (evolution)"
+    },
+    {
+      "from": "Adaptationism",
+      "to": "Adaptive evolution in the human genome"
+    },
+    {
+      "from": "Insecticide",
+      "to": "Contingency (evolutionary biology)"
+    },
+    {
+      "from": "Autecology",
+      "to": "Disease ecology"
+    },
+    {
+      "from": "Autecology",
+      "to": "Desert ecology"
+    },
+    {
+      "from": "Autecology",
+      "to": "Convergent evolution"
+    },
+    {
+      "from": "Autecology",
+      "to": "E. coli long-term evolution experiment"
+    },
+    {
+      "from": "Autecology",
+      "to": "Evolution of the horse"
+    },
+    {
+      "from": "Autecology",
+      "to": "Gene-centered view of evolution"
+    },
+    {
+      "from": "Basal (phylogenetics)",
+      "to": "Austrobaileyales"
+    },
+    {
+      "from": "Adaptation and Natural Selection",
+      "to": "Alternatives to Darwinian evolution"
+    },
+    {
+      "from": "Exoskeleton",
+      "to": "Madama Butterfly"
+    },
+    {
+      "from": "Butterfly",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Larva",
+      "to": "Alternative mating strategy"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Evolution (journal)"
+    },
+    {
+      "from": "Contingency (evolutionary biology)",
+      "to": "Evolutionarily stable strategy"
+    },
+    {
+      "from": "Alternatives to Darwinian evolution",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Adaptation",
+      "to": "Adaptation (disambiguation)"
+    },
+    {
+      "from": "Anti-predator adaptation",
+      "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Apex predator"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Aquatic feeding mechanisms"
+    },
+    {
+      "from": "Agroecology",
+      "to": "Black fly"
+    },
+    {
+      "from": "Alternative mating strategy",
+      "to": "Apex Predator (disambiguation)"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Superpredators (disambiguation)"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Off Color Brewing"
+    },
+    {
+      "from": "Chemical communication in insects",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Behavioral ecology",
+      "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Bayesian inference in phylogeny",
+      "to": "Community (ecology)"
+    },
+    {
+      "from": "Evolutionary biology",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Decomposer",
+      "to": "Cephalothorax"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Acoustic ecology"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Aquatic adaptation"
+    },
+    {
+      "from": "Foraging",
+      "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Convergent evolution",
+      "to": "Damselfly"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptation and Natural Selection"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Gene-centered view of evolution",
+      "to": "Adaptationism"
+    },
+    {
+      "from": "Bat wing development",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Ant mimicry",
+      "to": "Society for the Study of Evolution"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Arctic ecology",
+      "to": "Adaptations"
+    },
+    {
+      "from": "Angular velocity",
+      "to": "Blowfly (musician)"
+    },
+    {
+      "from": "Thorax",
+      "to": "Blowfly's Party"
+    },
+    {
+      "from": "Madama Butterfly",
+      "to": "Blowfly's Punk Rock Party"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolution (journal)"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolutionary biologists"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolution"
+    },
+    {
+      "from": "Society for the Study of Evolution",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Off Color Brewing",
+      "to": "Alcohol by volume"
+    },
+    {
+      "from": "Apex Predator – Easy Meat",
+      "to": "Two Brothers Brewing"
+    },
+    {
+      "from": "Animal behaviour",
+      "to": "Allagash Brewing Company"
+    },
+    {
+      "from": "Animal behaviour",
+      "to": "Brewing"
+    },
+    {
+      "from": "Housefly",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Aileron",
+      "to": "Adaptive compliant wing"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aileron"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Cooperation (evolution)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Cooperation (evolution)",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Evolution of the horse",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Evolution of the horse",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Spiracle",
+      "to": "Evolutionary arms race"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Sexual antagonistic coevolution"
+    },
+    {
+      "from": "Evolutionarily stable strategy",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Anti-predator adaptation"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolution"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Evolutionary arms race",
+      "to": "Evolutionary anachronism"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (arts)"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Chromatic adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "ATM adaptation layer"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Content adaptation"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (computer science)"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptive behavior"
+    },
+    {
+      "from": "Adaptation (disambiguation)",
+      "to": "Adaptation (The Walking Dead)"
+    },
+    {
+      "from": "Hovertrain",
+      "to": "Adaptation (eye)"
+    },
+    {
+      "from": "Hover (EP)",
+      "to": "Cellular adaptation"
+    },
+    {
+      "from": "Bird flight",
+      "to": "Climate change adaptation"
+    },
+    {
+      "from": "Hover Chamber Choir",
+      "to": "Domain adaptation"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Ecosystem-based adaptation"
+    },
+    {
+      "from": "Evolution (journal)",
+      "to": "Society for the Study of Evolution"
+    },
+    {
+      "from": "Evolution (journal)",
+      "to": "Evolutionary Biology"
+    },
+    {
+      "from": "Artificial fly",
+      "to": "A History of Fly Fishing for Trout"
+    },
+    {
+      "from": "Artificial fly",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Artificial fly",
+      "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "Animal Behaviour (journal)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Hovercraft",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Blowfly",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Adaptive evolution in the human genome",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Cellular adaptation",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Blowfly's Punk Rock Party",
+      "to": "Blowfly (musician)"
+    },
+    {
+      "from": "Deimatic behaviour",
+      "to": "Literary adaptation"
+    },
+    {
+      "from": "Tachinidae",
+      "to": "List of flying boats and floatplanes"
+    },
+    {
+      "from": "Helicopter flight controls",
+      "to": "AD Flying Boat"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "A History of Fly Fishing for Trout"
+    },
+    {
+      "from": "Bibliography of fly fishing (fly tying, stories, fiction)",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Catskill Fly Fishing Center and Museum"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Adams (dry fly)",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Austrobaileyales",
+      "to": "Austrobaileyaceae"
+    },
+    {
+      "from": "Austrobaileyales",
+      "to": "Austrobaileya scandens"
+    },
+    {
+      "from": "Adaptation (computer science)",
+      "to": "Content adaptation"
+    },
+    {
+      "from": "Adaptation (computer science)",
+      "to": "Adaptation (disambiguation)"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Two Brothers Brewing",
+      "to": "Alcohol by volume"
+    },
+    {
+      "from": "Sexual antagonistic coevolution",
+      "to": "Evolutionary arms race"
+    },
+    {
+      "from": "Blowfly's Party",
+      "to": "Blowfly (musician)"
+    },
+    {
+      "from": "Insect Festival",
+      "to": "National Insect Week"
+    },
+    {
+      "from": "Insect Festival",
+      "to": "Insects"
+    },
+    {
+      "from": "Adaptive behavior",
+      "to": "Adaptive behavior (ecology)"
+    },
+    {
+      "from": "Adaptive behavior",
+      "to": "Adaptation (computer science)"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Adaptive Behavior (journal)"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Bibliography of fly fishing (species related)",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "Bonefish fly patterns"
+    },
+    {
+      "from": "Bamboo fly rod",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Agonistic behaviour",
+      "to": "Vineland Adaptive Behavior Scale"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "A History of Fly Fishing for Trout",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Adaptive behavior (ecology)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Adaptive behavior (ecology)",
+      "to": "Behavioral endocrinology"
+    },
+    {
+      "from": "Adaptive behavior (ecology)",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Courtship",
+      "to": "Behavior"
+    },
+    {
+      "from": "Courtship",
+      "to": "Behavioral Ecology (journal)"
+    },
+    {
+      "from": "Climate change adaptation",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Climate change adaptation",
+      "to": "Behavioral economics"
+    },
+    {
+      "from": "Entomology",
+      "to": "Antecedent (behavioral psychology)"
+    },
+    {
+      "from": "Animal sexual behaviour",
+      "to": "Association for Behavior Analysis International"
+    },
+    {
+      "from": "Comfort behaviour in animals",
+      "to": "Behavior (disambiguation)"
+    },
+    {
+      "from": "Batesian mimicry",
+      "to": "Behavior informatics"
+    },
+    {
+      "from": "Arthropod mouthparts",
+      "to": "Behavior selection algorithm"
+    },
+    {
+      "from": "Adaptation (eye)",
+      "to": "Behavior analysis (disambiguation)"
+    },
+    {
+      "from": "AD Flying Boat",
+      "to": "Behavioral neuroscience"
+    },
+    {
+      "from": "AD Flying Boat",
+      "to": "Behavioral pattern"
+    },
+    {
+      "from": "Domain adaptation",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Ecosystem-based adaptation",
+      "to": "Behavioral cusp"
+    },
+    {
+      "from": "Biological pest control",
+      "to": "A Behavioral Theory of the Firm"
+    },
+    {
+      "from": "Behavioral endocrinology",
+      "to": "Behavior"
+    },
+    {
+      "from": "Literary adaptation",
+      "to": "Evolutionary psychology"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Adaptationist"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Allopatric speciation"
+    },
+    {
+      "from": "Evolutionary psychology",
+      "to": "Adaptationism"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Alexandra (wet fly)"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Bonefish fly patterns",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Acoustic ecology",
+      "to": "Aquatic adaptation"
+    },
+    {
+      "from": "Antecedent (behavioral psychology)",
+      "to": "Learned behaviors"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Alexandra (wet fly)",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Arctic ecology"
+    },
+    {
+      "from": "Disease ecology",
+      "to": "Autecology"
+    },
+    {
+      "from": "Behavior (disambiguation)",
+      "to": "Behavioralism"
+    },
+    {
+      "from": "Behavior (disambiguation)",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "List of flying boats and floatplanes",
+      "to": "AD Flying Boat"
+    },
+    {
+      "from": "Behavior selection algorithm",
+      "to": "Behavior tree (artificial intelligence, robotics and control)"
+    },
+    {
+      "from": "Behavior selection algorithm",
+      "to": "Behavioral modeling language"
+    },
+    {
+      "from": "Behavior selection algorithm",
+      "to": "Behavioral modeling in hydrology"
+    },
+    {
+      "from": "Behavior selection algorithm",
+      "to": "Behavioral modeling"
+    },
+    {
+      "from": "Chemical mimicry",
+      "to": "Behavioral modeling in computer-aided design"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Clinical behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Professional practice of behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Licensed behavior analyst"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Quantitative analysis of behavior"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "Behavioral analytics"
+    },
+    {
+      "from": "Behavior analysis (disambiguation)",
+      "to": "User behavior analytics"
+    },
+    {
+      "from": "Behavior tree (artificial intelligence, robotics and control)",
+      "to": "Behavior model"
+    },
+    {
+      "from": "Behavioral cusp",
+      "to": "Adaptive behaviors"
+    },
+    {
+      "from": "Behavioral cusp",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Behavioral cusp",
+      "to": "Behavior analysis"
+    },
+    {
+      "from": "Catskill Fly Fishing Center and Museum",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Catskill Fly Fishing Center and Museum",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Catskill Fly Fishing Center and Museum",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Catskill Fly Fishing Center and Museum",
+      "to": "Bibliography of fly fishing (fly tying, stories, fiction)"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Association for Behavior Analysis International"
+    },
+    {
+      "from": "Evolutionary anachronism",
+      "to": "Association for Contextual Behavioral Science"
+    },
+    {
+      "from": "Quantitative analysis of behavior",
+      "to": "Behavioral economics"
+    },
+    {
+      "from": "Brewing",
+      "to": "Experimental analysis of behavior"
+    },
+    {
+      "from": "Behaviour therapy",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Professional practice of behavior analysis",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Chemical ecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Autecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Arctic ecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Agroecology"
+    },
+    {
+      "from": "Desert ecology",
+      "to": "Applied ecology"
+    },
+    {
+      "from": "Community (ecology)",
+      "to": "Adaptation"
+    },
+    {
+      "from": "Community (ecology)",
+      "to": "Anti-predator adaptation"
+    },
+    {
+      "from": "Behavioral ecology (disambiguation)",
+      "to": "Behavioral Ecology (journal)"
+    },
+    {
+      "from": "Behavioral ecology (disambiguation)",
+      "to": "Behavioral Ecology and Sociobiology"
+    },
+    {
+      "from": "Behavioral ecology (disambiguation)",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior analysis"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior therapy"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavioral engineering"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Association for Behavior Analysis International"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior therapy"
+    },
+    {
+      "from": "American Museum of Fly Fishing",
+      "to": "Behavioral activation"
+    },
+    {
+      "from": "Behavioral neuroscience",
+      "to": "Cognitive behavioral analysis system of psychotherapy"
+    },
+    {
+      "from": "Applied behavior analysis",
+      "to": "Dialectical behavior therapy"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Evolutionary biology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Evolution"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavioral Ecology and Sociobiology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "International Society for Behavioral Ecology"
+    },
+    {
+      "from": "Behavioral Ecology (journal)",
+      "to": "Behavior"
+    },
+    {
+      "from": "Association for Contextual Behavioral Science",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Association for Contextual Behavioral Science",
+      "to": "Cognitive behavior therapy"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavioral engineering"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior therapy"
+    },
+    {
+      "from": "Allagash Brewing Company",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Eusociality",
+      "to": "Eccentricity (behavior)"
+    },
+    {
+      "from": "Behaviorism",
+      "to": "Addictive behavior"
+    },
+    {
+      "from": "E. coli long-term evolution experiment",
+      "to": "Behavioral contagion"
+    },
+    {
+      "from": "Behavioral contagion",
+      "to": "Adaptationism"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behavior change methods"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behaviorist"
+    },
+    {
+      "from": "Behavior change (public health)",
+      "to": "Behavioral change theories"
+    },
+    {
+      "from": "Consumer behaviour",
+      "to": "Social and behavior change communication"
+    },
+    {
+      "from": "Behavior-based safety",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Aquatic feeding mechanisms",
+      "to": "Network behavior anomaly detection"
+    },
+    {
+      "from": "Behavioral analytics",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Behavioral analytics",
+      "to": "Behavior informatics"
+    },
+    {
+      "from": "Chemical ecology",
+      "to": "Abundance (ecology)"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior"
+    },
+    {
+      "from": "Abundance (ecology)",
+      "to": "Behavioral ecology"
+    },
+    {
+      "from": "Abundance (ecology)",
+      "to": "Apex predator"
+    },
+    {
+      "from": "Human behavioral ecology",
+      "to": "Biocultural evolution"
+    },
+    {
+      "from": "Evolutionary developmental psychology",
+      "to": "Adaptationism"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "Blue-winged Olive flies"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "Adams (dry fly)"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "Blacker's Art of Fly Making"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "Bamboo fly rod"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "A History of Fly Fishing for Trout"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "American Museum of Fly Fishing"
+    },
+    {
+      "from": "Bibliography of fly fishing",
+      "to": "Bibliography of fly fishing (species related)"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Literary adaptation"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Theatrical adaptation"
+    },
+    {
+      "from": "Adaptation (arts)",
+      "to": "Film and television adaptations of video games"
+    },
+    {
+      "from": "Association for the Study of Animal Behaviour",
+      "to": "Behavioral systems analysis"
+    },
+    {
+      "from": "Behavioral systems analysis",
+      "to": "Behavior analysis"
+    },
+    {
+      "from": "Cultural ecology",
+      "to": "Acoustic ecology"
+    },
+    {
+      "from": "Alcohol by volume",
+      "to": "Insects in ethics"
+    },
+    {
+      "from": "Organizational behavior management",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Organizational behavior management",
+      "to": "Antecedent (behavioral psychology)"
+    },
+    {
+      "from": "Theatrical adaptation",
+      "to": "Adaptation (arts)"
+    },
+    {
+      "from": "Content adaptation",
+      "to": "Adaptation (computer science)"
+    },
+    {
+      "from": "Insects in ethics",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "Damselfly",
+      "to": "Artificial fly"
+    },
+    {
+      "from": "A Behavioral Theory of the Firm",
+      "to": "Evolutionary Ecology (journal)"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Evolutionary ecology"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Ecology"
+    },
+    {
+      "from": "Evolutionary Ecology (journal)",
+      "to": "Evolution"
+    },
+    {
+      "from": "Vineland Adaptive Behavior Scale",
+      "to": "Dragonfly"
+    },
+    {
+      "from": "Behavioral economics",
+      "to": "A Behavioral Theory of the Firm"
+    },
+    {
+      "from": "Behavior informatics",
+      "to": "Behavioral economics"
+    },
+    {
+      "from": "Association for Behavior Analysis International",
+      "to": "Behavior analysis"
+    },
+    {
+      "from": "Association for Behavior Analysis International",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Association for Behavior Analysis International",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Verbal Behavior",
+      "to": "Behaviorism"
+    },
+    {
+      "from": "Verbal Behavior",
+      "to": "Applied behavior analysis"
+    },
+    {
+      "from": "Verbal Behavior",
+      "to": "Behavior"
+    },
+    {
+      "from": "Verbal Behavior",
+      "to": "Behavioral neuroscience"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavior"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavioral epigenetics"
+    },
+    {
+      "from": "Eccentricity (behavior)",
+      "to": "Behavior"
+    }
+  ],
+  "dedup_map": {},
+  "updated_at": "2026-11-08T09:48:48.644740+00:00"
+}
