@@ -1,6 +1,6 @@
 """Système de compétences (nœuds neuronaux) que l'agent développe.
 
-Anti-dérive v2 : résonance domaine insecte/diptère stricte.
+Anti-dérive v3 : domaine insecte + compétences code/représentation.
 """
 import json
 import re
@@ -47,6 +47,24 @@ DEFAULT_SKILLS = {
         "keywords": ["behavior", "behaviour", "mating", "feeding", "swarm", "courtship", "foraging", "mimicry"],
         "articles": [],
     },
+    "code_et_outils": {
+        "level": 0.5,
+        "description": "Coder HTML/JS/Python, scripts agent, APIs",
+        "keywords": ["code", "html", "python", "javascript", "api", "script", "github"],
+        "articles": [],
+    },
+    "representation": {
+        "level": 0.4,
+        "description": "Viz graphes, ASCII, pages, cortex skills",
+        "keywords": ["graph", "visual", "ascii", "canvas", "network", "cortex"],
+        "articles": [],
+    },
+    "raisonnement": {
+        "level": 0.5,
+        "description": "Planifier, router intent, anti-dérive, Graph-RAG",
+        "keywords": ["plan", "rag", "intent", "reasoning", "agent"],
+        "articles": [],
+    },
 }
 
 CORE_TERMS = {
@@ -67,7 +85,6 @@ STRONG_TERMS = CORE_TERMS | {
     "insect behavior", "insect behaviour", "insect morphology",
 }
 
-# Hors-domaine explicite (pêche à la mouche, bières, orgs, psych pure…)
 HARD_JUNK = re.compile(
     r"("
     r"chewing gum|bubblegum|"
@@ -80,37 +97,45 @@ HARD_JUNK = re.compile(
     r"isbn|doi\s*:|academic press|publisher|"
     r"software|operating system|programming language|"
     r"human anatomy|mammal|penis|vagina|rectum|feces|anus|"
-    # parasites chat / auto_learn observés
-    r"fly\s*fishing|fishing|angler|trout|salmon|"
-    r"brewery|brewing|brewpub|beer|allagash|"
+    r"fly\s*fishing|fishing|angler|trout|salmon|bamboo fly rod|"
+    r"brewery|brewing|brewpub|beer|allagash|off color|two brothers|"
     r"bibliography|company|corporation|inc\.|ltd|"
     r"behavioral\s+momentum|association for the study|"
     r"animal behaviour\)|journal of|proceedings of|"
     r"critique of some current|george\s+c\.?\s*williams|"
-    r"password|nasdaq|stock|"
-    r"football|basketball|baseball|soccer"
+    r"nasdaq|stock|football|basketball|baseball|soccer|"
+    r"punk rock|blowfly's party|blowfly's punk|"
+    r"cognitive behavioral|behavior therapy|behavior modification|"
+    r"vineland adaptive|behaviour interactive|hovercraft|hovertrain|"
+    r"madama butterfly|catskill fly|artificial fly|dry fly|wet fly|"
+    r"flying boat|floatplane|list of flying"
     r")",
     re.I,
 )
 
 NOISE_TERMS = {
     "computer security", "cybersecurity", "encryption", "password",
-    "malware", "firewall", "software", "programming",
+    "malware", "firewall",
     "fishing", "brewery", "brewing", "bibliography",
-    "behavioral momentum",
+    "behavioral momentum", "punk rock", "behavior therapy",
 }
 
-# "fly" seul dans un titre type "fly fishing" / "butterfly" ambigu
 FALSE_FLY = re.compile(
-    r"\b(fly\s*fishing|fishing\s*fly|butterfly|flying\s+fox|flywheel|flyby)\b",
+    r"\b(fly\s*fishing|fishing\s*fly|butterfly|flying\s+fox|flywheel|flyby|"
+    r"artificial fly|bamboo fly|dry fly|wet fly|fly rod|fly tying)\b",
     re.I,
 )
 
 
 def load_skills():
     if SKILLS_FILE.exists():
-        return json.loads(SKILLS_FILE.read_text(encoding="utf-8"))
-    return DEFAULT_SKILLS.copy()
+        skills = json.loads(SKILLS_FILE.read_text(encoding="utf-8"))
+        # merge new default skills if missing
+        for k, v in DEFAULT_SKILLS.items():
+            if k not in skills:
+                skills[k] = v.copy()
+        return skills
+    return {k: v.copy() for k, v in DEFAULT_SKILLS.items()}
 
 
 def save_skills(skills):
@@ -152,7 +177,6 @@ def is_hard_junk(title: str, extract: str = "") -> bool:
 
 
 def is_domain_node(title: str, extract: str = "") -> bool:
-    """True seulement si clairement ancré insecte/diptère/vol."""
     if is_hard_junk(title, extract):
         return False
     return score_relevance(title, extract) >= 0.35
@@ -161,7 +185,6 @@ def is_domain_node(title: str, extract: str = "") -> bool:
 def score_relevance(title: str, extract: str = "") -> float:
     if not title or not title.strip():
         return 0.0
-
     if is_hard_junk(title, extract):
         return 0.0
 
@@ -195,7 +218,6 @@ def score_relevance(title: str, extract: str = "") -> float:
     if any(g in title_l for g in generic) and core_hits == 0 and strong_hits <= 1:
         title_bonus -= 0.35
 
-    # Organisations / livres génériques
     if re.search(r"\b(association|society|journal|review of|company|brewery)\b", title_l):
         if core_hits == 0:
             return 0.0
@@ -203,7 +225,6 @@ def score_relevance(title: str, extract: str = "") -> float:
     score = best_skill + core_score + strong_score + title_bonus
     score = max(0.0, min(1.0, score))
 
-    # Plancher UNIQUEMENT pour vrais ancres insecte (pas "fly fishing")
     strong_anchor = (
         "diptera", "housefly", "hoverfly", "blowfly", "drosophila", "mosquito",
         "haltere", "halteres", "insect flight", "insect ecology", "insect morphology",
@@ -214,7 +235,6 @@ def score_relevance(title: str, extract: str = "") -> float:
     elif re.search(r"\b(insect|insects)\b", title_l):
         score = max(score, 0.65)
     elif re.search(r"\b(fly|flies)\b", title_l) and not FALSE_FLY.search(title_l):
-        # "Fly" / "Fruit fly" OK ; pas le boost auto si extract hors-sujet
         if core_hits >= 1 or strong_hits >= 2:
             score = max(score, 0.70)
 
