@@ -260,7 +260,7 @@
     "last_reinforced": "2026-11-08T14:50:38.852609+00:00"
   },
   "securite_defensive": {
-    "level": 0.85,
+    "level": 1.0,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -270,9 +270,10 @@
       "cors"
     ],
     "articles": [
-      "secure-coding-basics-input-validation"
+      "secure-coding-basics-input-validation",
+      "a-code-equivalence-between-secure-network-and-index-coding"
     ],
-    "last_reinforced": "2026-11-08T10:21:38.782553+00:00"
+    "last_reinforced": "2026-11-08T16:36:05.100529+00:00"
   },
   "recherche_web": {
     "level": 0.95,

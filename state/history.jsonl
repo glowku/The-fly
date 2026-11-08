@@ -6401,3 +6401,5 @@
 {"ts": "2026-11-08T16:35:19.053551+00:00", "type": "skill_reinforce", "skill": "anatomie_insecte", "new_level": 9.32, "article": "Angular resolution (graph drawing)"}
 {"ts": "2026-11-08T16:35:20.492797+00:00", "type": "auto_learn_expand", "title": "Angular resolution (graph drawing)", "skill": "anatomie_insecte", "score": 10.0, "objective": 21.385}
 {"ts": "2026-11-08T16:35:20.493565+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": true}]}
+{"ts": "2026-11-08T16:36:05.100983+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.0, "article": "a-code-equivalence-between-secure-network-and-index-coding"}
+{"ts": "2026-11-08T16:36:05.101033+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "A Code Equivalence between Secure Network and Index Coding", "url": "https://arxiv.org/abs/1804.09888v1"}

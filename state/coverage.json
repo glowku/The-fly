@@ -880,6 +880,14 @@
         "https://en.wikipedia.org/wiki/Angular_resolution_(graph_drawing)"
       ],
       "updated_at": "2026-11-08T16:35:19.022135+00:00"
+    },
+    "A Code Equivalence between Secure Network and Index Coding": {
+      "depth": 2,
+      "created_at": "2026-11-08T16:36:07.642342+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1804.09888v1"
+      ],
+      "updated_at": "2026-11-08T16:36:07.642346+00:00"
     }
   },
   "edges": [
