@@ -6462,3 +6462,6 @@
 {"ts": "2026-11-08T21:58:39.970412+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": true}]}
 {"ts": "2026-11-08T21:58:42.082590+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-08T21:58:42.108389+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 113, "active_edges": 53, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "OWASP", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-08T22:21:52.046999+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-08T22:21:52.074155+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-08T22:21:52.094047+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 113, "active_edges": 53, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
