@@ -281,7 +281,7 @@
     "last_reinforced": "2026-11-08T09:55:00.862957+00:00"
   },
   "recherche_image": {
-    "level": 0.5,
+    "level": 0.65,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -290,6 +290,9 @@
       "visual",
       "canvas"
     ],
-    "articles": []
+    "articles": [
+      "describing-insect-morphology-for-image-search"
+    ],
+    "last_reinforced": "2026-11-08T09:55:38.612460+00:00"
   }
 }
