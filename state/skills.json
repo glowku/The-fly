@@ -224,7 +224,7 @@
     "last_reinforced": "2026-11-08T10:22:22.259910+00:00"
   },
   "representation": {
-    "level": 0.78,
+    "level": 0.87,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -237,9 +237,10 @@
     "articles": [
       "Anax (dragonfly)",
       "force-directed-graph-layouts",
-      "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"
+      "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
+      "Force-directed graph drawing"
     ],
-    "last_reinforced": "2026-11-08T10:16:37.028763+00:00"
+    "last_reinforced": "2026-11-08T10:23:03.956724+00:00"
   },
   "raisonnement": {
     "level": 0.8,

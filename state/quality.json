@@ -5525,5 +5525,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:22:24.044146+00:00"
+  },
+  "Force-directed graph drawing": {
+    "score": 8.7,
+    "metrics": {
+      "words": 172,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Insect",
+        "Anax (dragonfly)",
+        "Fly",
+        "Diptera"
+      ],
+      "diversity": 0.798,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:23:03.949892+00:00"
   }
 }

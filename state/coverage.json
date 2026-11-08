@@ -936,6 +936,14 @@
         "https://arxiv.org/abs/2504.13684v1"
       ],
       "updated_at": "2026-11-08T10:22:24.044626+00:00"
+    },
+    "Force-directed graph drawing": {
+      "depth": 8,
+      "created_at": "2026-11-08T10:23:03.950433+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Force-directed_graph_drawing"
+      ],
+      "updated_at": "2026-11-08T10:23:03.950438+00:00"
     }
   },
   "edges": [
@@ -1126,6 +1134,10 @@
     {
       "from": "Flight",
       "to": "Aerodynamic force"
+    },
+    {
+      "from": "Anax (dragonfly)",
+      "to": "Force-directed graph drawing"
     }
   ],
   "frontier": [
