@@ -1134,6 +1134,14 @@
     {
       "from": "Parasitoid",
       "to": "Architectural drawing"
+    },
+    {
+      "from": "Technical drawing",
+      "to": "Architectural drawing"
+    },
+    {
+      "from": "Technical drawing",
+      "to": "Assembly drawing"
     }
   ],
   "frontier": [
@@ -1149,7 +1157,8 @@
     "National Insect Week",
     "Insects",
     "Evolutionary ecology",
-    "Arthropoda"
+    "Arthropoda",
+    "Assembly drawing"
   ],
   "max_depth": 9
 }
