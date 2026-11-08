@@ -6439,3 +6439,4 @@
 {"ts": "2026-11-08T17:53:58.313096+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-08T17:53:58.334497+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 111, "active_edges": 52, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Relevance (information retrieval)", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-08T17:54:02.665154+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.1, "article": "Security"}
+{"ts": "2026-11-08T17:54:08.238042+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
