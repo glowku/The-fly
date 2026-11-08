@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-07 23:28:17 UTC
+**Dernière mise à jour** : 2026-11-08 04:48:19 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 9 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **38.95** |
-| Actions dernières 24 h | 51 |
+| Actions dernières 24 h | 82 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-07T18:58:16  auto_learn      
-2026-11-07T18:59:53  auto_learn      
-2026-11-07T19:01:30  auto_learn      
-2026-11-07T19:03:08  auto_learn      
-2026-11-07T19:04:45  auto_learn      
-2026-11-07T19:06:23  auto_learn      
-2026-11-07T19:08:01  auto_learn      
-2026-11-07T19:09:38  auto_learn      
-2026-11-07T19:11:16  auto_learn      
-2026-11-07T19:23:22  auto_learn      
-2026-11-07T19:55:01  parallel_learn  
-2026-11-07T21:33:42  plan            Anax (dragonfly)
-2026-11-07T21:33:42  skill_reinforc  
-2026-11-07T21:33:42  branch          Anax (dragonfly)
-2026-11-07T23:16:03  parallel_learn  
+2026-11-07T23:53:40  auto_learn      
+2026-11-07T23:55:12  auto_learn      
+2026-11-07T23:56:44  auto_learn      
+2026-11-07T23:58:16  auto_learn      
+2026-11-07T23:59:48  auto_learn      
+2026-11-08T00:01:20  auto_learn      
+2026-11-08T00:02:52  auto_learn      
+2026-11-08T00:04:24  auto_learn      
+2026-11-08T00:05:56  auto_learn      
+2026-11-08T00:07:28  auto_learn      
+2026-11-08T00:30:58  auto_learn      
+2026-11-08T01:10:02  plan            Anax (dragonfly)
+2026-11-08T01:10:03  skill_reinforc  
+2026-11-08T01:10:03  branch          Anax (dragonfly)
+2026-11-08T03:30:02  parallel_learn  
 ```
 
 ## Architecture de l'agent
