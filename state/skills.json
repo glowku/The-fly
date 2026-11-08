@@ -270,7 +270,7 @@
     "last_reinforced": "2026-11-08T09:54:23.421103+00:00"
   },
   "recherche_web": {
-    "level": 0.65,
+    "level": 0.8,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -280,9 +280,10 @@
       "query"
     ],
     "articles": [
-      "query-formulation-for-scientific-literature"
+      "query-formulation-for-scientific-literature",
+      "domain-specific-information-retrieval"
     ],
-    "last_reinforced": "2026-11-08T09:55:00.862957+00:00"
+    "last_reinforced": "2026-11-08T10:17:23.438140+00:00"
   },
   "recherche_image": {
     "level": 0.65,

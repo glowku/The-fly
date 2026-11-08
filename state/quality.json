@@ -5369,5 +5369,31 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:16:41.130385+00:00"
+  },
+  "Domain-specific information retrieval": {
+    "score": 9.5,
+    "metrics": {
+      "words": 463,
+      "sections": 5,
+      "links": 12,
+      "link_list": [
+        "Adaptive compliant wing",
+        "Insect Week",
+        "Amateur Entomologists' Society",
+        "Insects in ethics",
+        "Spiracle (vertebrates)",
+        "Black fly",
+        "Blue-winged Olive flies",
+        "Bonefish fly patterns",
+        "Insect Festival",
+        "Blacker's Art of Fly Making",
+        "Helicopter flight controls",
+        "Common green bottle fly"
+      ],
+      "diversity": 0.753,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:17:25.288963+00:00"
   }
 }
