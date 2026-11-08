@@ -6449,3 +6449,5 @@
 {"ts": "2026-11-08T21:52:53.259398+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 1.17, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
 {"ts": "2026-11-08T21:52:53.259476+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
 {"ts": "2026-11-08T21:53:47.566130+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-08T21:54:37.016690+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 1.2, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
+{"ts": "2026-11-08T21:54:37.016762+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}

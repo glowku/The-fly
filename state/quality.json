@@ -5755,5 +5755,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T17:54:02.658463+00:00"
+  },
+  "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
+    "score": 10.0,
+    "metrics": {
+      "words": 370,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Human behavioral ecology",
+        "Blue-winged Olive flies",
+        "Black fly",
+        "Behavioral ecology (disambiguation)",
+        "Common green bottle fly",
+        "Insect Week"
+      ],
+      "diversity": 0.753,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T21:54:39.616520+00:00"
   }
 }
