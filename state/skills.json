@@ -264,7 +264,7 @@
     "last_reinforced": "2026-11-08T21:54:37.016220+00:00"
   },
   "securite_defensive": {
-    "level": 1.1,
+    "level": 1.2,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -275,9 +275,10 @@
     ],
     "articles": [
       "secure-coding-basics-input-validation",
-      "a-code-equivalence-between-secure-network-and-index-coding"
+      "a-code-equivalence-between-secure-network-and-index-coding",
+      "OWASP"
     ],
-    "last_reinforced": "2026-11-08T17:54:02.664853+00:00"
+    "last_reinforced": "2026-11-08T21:57:48.580980+00:00"
   },
   "recherche_web": {
     "level": 1.1,
