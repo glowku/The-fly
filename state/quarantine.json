@@ -5423,6 +5423,34 @@
         },
         "updated_at": "2026-11-08T16:51:59.231081+00:00"
       }
+    },
+    "Relevance (information retrieval)": {
+      "depth": 1,
+      "created_at": "2026-11-08T16:54:12.158004+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Relevance_(information_retrieval)"
+      ],
+      "updated_at": "2026-11-08T16:54:12.158010+00:00",
+      "quarantined_at": "2026-11-08T17:53:58.322856+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 316,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Bonefish fly patterns",
+            "Common green bottle fly",
+            "Blue-winged Olive flies",
+            "Black fly"
+          ],
+          "diversity": 0.725,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T16:54:12.157440+00:00"
+      }
     }
   },
   "edges": [
@@ -6988,5 +7016,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T16:53:08.028933+00:00"
+  "updated_at": "2026-11-08T17:53:58.329520+00:00"
 }

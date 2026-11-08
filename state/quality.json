@@ -5735,5 +5735,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:55:18.821335+00:00"
+  },
+  "Security": {
+    "score": 10.0,
+    "metrics": {
+      "words": 349,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Behavioral ecology (disambiguation)",
+        "Insect Week",
+        "Common green bottle fly",
+        "Insects in ethics",
+        "Chemical ecology",
+        "Insect Festival"
+      ],
+      "diversity": 0.809,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T17:54:02.658463+00:00"
   }
 }
