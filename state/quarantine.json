@@ -5370,6 +5370,59 @@
         },
         "updated_at": "2026-11-08T16:47:43.912964+00:00"
       }
+    },
+    "Search engine": {
+      "depth": 1,
+      "created_at": "2026-11-08T16:49:52.190117+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Search_engine"
+      ],
+      "updated_at": "2026-11-08T16:49:52.190123+00:00",
+      "quarantined_at": "2026-11-08T16:53:08.020986+00:00",
+      "reason": "low_rel=0.196",
+      "prev_quality": {
+        "score": 5.37,
+        "metrics": {
+          "words": 100,
+          "sections": 1,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.83,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T16:49:52.189556+00:00"
+      }
+    },
+    "Diagram": {
+      "depth": 1,
+      "created_at": "2026-11-08T16:51:59.231704+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Diagram"
+      ],
+      "updated_at": "2026-11-08T16:51:59.231711+00:00",
+      "quarantined_at": "2026-11-08T16:53:08.020996+00:00",
+      "reason": "low_rel=0.197",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 371,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Black fly",
+            "Behavioral ecology (disambiguation)",
+            "Helicopter flight controls",
+            "Common green bottle fly",
+            "Adaptive compliant wing",
+            "Blue-winged Olive flies"
+          ],
+          "diversity": 0.823,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T16:51:59.231081+00:00"
+      }
     }
   },
   "edges": [
@@ -6935,5 +6988,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T16:48:49.688177+00:00"
+  "updated_at": "2026-11-08T16:53:08.028933+00:00"
 }

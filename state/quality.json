@@ -5699,5 +5699,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:53:04.835418+00:00"
+  },
+  "Relevance (information retrieval)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 316,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Bonefish fly patterns",
+        "Common green bottle fly",
+        "Blue-winged Olive flies",
+        "Black fly"
+      ],
+      "diversity": 0.725,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:54:12.157440+00:00"
   }
 }

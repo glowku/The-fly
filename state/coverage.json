@@ -729,6 +729,14 @@
       ],
       "updated_at": "2026-11-08T16:35:19.022135+00:00"
     },
+    "Area (graph drawing)": {
+      "depth": 3,
+      "created_at": "2026-11-08T16:53:04.836302+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Area_(graph_drawing)"
+      ],
+      "updated_at": "2026-11-08T16:53:04.836309+00:00"
+    },
     "Insect flight": {
       "depth": 2,
       "created_at": "2026-09-16T13:55:50.280207+00:00",
@@ -873,29 +881,13 @@
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
     },
-    "Search engine": {
+    "Relevance (information retrieval)": {
       "depth": 1,
-      "created_at": "2026-11-08T16:49:52.190117+00:00",
+      "created_at": "2026-11-08T16:54:12.158004+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Search_engine"
+        "https://en.wikipedia.org/wiki/Relevance_(information_retrieval)"
       ],
-      "updated_at": "2026-11-08T16:49:52.190123+00:00"
-    },
-    "Diagram": {
-      "depth": 1,
-      "created_at": "2026-11-08T16:51:59.231704+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Diagram"
-      ],
-      "updated_at": "2026-11-08T16:51:59.231711+00:00"
-    },
-    "Area (graph drawing)": {
-      "depth": 3,
-      "created_at": "2026-11-08T16:53:04.836302+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Area_(graph_drawing)"
-      ],
-      "updated_at": "2026-11-08T16:53:04.836309+00:00"
+      "updated_at": "2026-11-08T16:54:12.158010+00:00"
     }
   },
   "edges": [

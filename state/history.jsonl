@@ -6429,3 +6429,6 @@
 {"ts": "2026-11-08T16:53:04.870817+00:00", "type": "skill_reinforce", "skill": "comportement", "new_level": 9.32, "article": "Area (graph drawing)"}
 {"ts": "2026-11-08T16:53:06.394342+00:00", "type": "auto_learn_expand", "title": "Area (graph drawing)", "skill": "comportement", "score": 10.0, "objective": 21.746}
 {"ts": "2026-11-08T16:53:06.395032+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": true}]}
+{"ts": "2026-11-08T16:53:08.009475+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-08T16:53:08.034648+00:00", "type": "triage", "moved_to_quarantine": 2, "deduped": 0, "active_nodes": 110, "active_edges": 51, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 2, "pending_out_of_domain": 0, "sample_moved": [{"title": "Search engine", "reason": "low_rel=0.196"}, {"title": "Diagram", "reason": "low_rel=0.197"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-08T16:54:12.164275+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 1.1, "article": "Relevance (information retrieval)"}
