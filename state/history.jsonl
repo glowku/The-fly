@@ -6472,3 +6472,4 @@
 {"ts": "2026-11-08T22:25:25.535193+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-08T22:25:25.555258+00:00", "type": "triage", "moved_to_quarantine": 2, "deduped": 0, "active_nodes": 113, "active_edges": 53, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 2, "pending_out_of_domain": 0, "sample_moved": [{"title": "Query", "reason": "low_rel=0.199"}, {"title": "Computer vision", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-08T22:26:29.358479+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 1.27, "article": "Data and information visualization"}
+{"ts": "2026-11-08T22:27:36.618737+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
