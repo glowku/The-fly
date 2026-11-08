@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>the-fly · skills cortex</title>
+<style>
+:root{
+  --bg:#030503;--fg:#9fd89a;--mut:#4a6a48;--acc:#5dba4a;--warn:#c9a24a;--bad:#c45;
+  --panel:rgba(8,14,8,.92);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
+  font:13px/1.45 ui-monospace,Consolas,monospace;overflow:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%}
+#hud{
+  position:fixed;left:12px;top:12px;z-index:5;max-width:min(360px,90vw);
+  background:var(--panel);border:1px solid #1a2a1a;padding:12px 14px;border-radius:8px
+}
+#hud h1{margin:0 0 6px;font-size:13px;color:var(--acc);letter-spacing:.12em;text-transform:uppercase}
+#hud p{margin:0 0 8px;color:var(--mut);font-size:11px}
+#stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px}
+#stats div{background:#0a120a;border:1px solid #152015;padding:6px 8px;border-radius:4px}
+#stats b{color:var(--acc)}
+#list{margin-top:10px;max-height:40vh;overflow:auto}
+.skill{
+  display:flex;justify-content:space-between;gap:8px;align-items:center;
+  padding:6px 0;border-bottom:1px solid #121a12;font-size:11px
+}
+.bar{height:4px;background:#152015;border-radius:2px;flex:1;margin:0 8px;overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#2a6a2a,var(--acc))}
+#nav{
+  position:fixed;right:12px;top:12px;z-index:5;display:flex;gap:8px
+}
+#nav a{
+  color:var(--acc);text-decoration:none;border:1px solid #2a3a2a;padding:6px 10px;
+  border-radius:6px;background:var(--panel);font-size:11px
+}
+#nav a:hover{border-color:var(--acc)}
+#tip{
+  position:fixed;left:50%;bottom:16px;transform:translateX(-50%);
+  background:var(--panel);border:1px solid #1a2a1a;padding:8px 12px;border-radius:6px;
+  font-size:11px;color:var(--mut);z-index:5;max-width:90vw;text-align:center
+}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="nav">
+  <a href="fly-brain.html">← brain</a>
+  <a href="fly-skills.html">skills</a>
+</div>
+<div id="hud">
+  <h1>🪰 Cortex compétences</h1>
+  <p>Réseau nodal des skills de The-fly — niveaux, liens, densité d’articles.</p>
+  <div id="stats"></div>
+  <div id="list"></div>
+</div>
+<div id="tip">Survole un nœud · molette zoom · drag pour explorer</div>
+<script>
+(function(){
+  const RAW = 'https://raw.githubusercontent.com/glowku/The-fly/main';
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  let W, H, nodes = [], edges = [], selected = null, mx=0, my=0;
+  let cam = {x:0,y:0,s:1}, drag=false, lx=0, ly=0;
+
+  function resize(){
+    W = canvas.width = innerWidth;
+    H = canvas.height = innerHeight;
+  }
+  addEventListener('resize', resize); resize();
+
+  function colorFor(level){
+    if(level >= 8) return '#5dba4a';
+    if(level >= 5) return '#8bc34a';
+    if(level >= 2) return '#c9a24a';
+    return '#888';
+  }
+
+  async function load(){
+    let data;
+    try{
+      const r = await fetch(RAW + '/state/skills.json?t=' + Date.now());
+      data = await r.json();
+    }catch(e){
+      data = {
+        entomologie:{level:1,description:'insectes',articles:[]},
+        vol_et_aerodynamique:{level:1,description:'vol',articles:[]},
+        anatomie_insecte:{level:1,description:'morpho',articles:[]},
+        ecologie:{level:1,description:'eco',articles:[]},
+        evolution:{level:1,description:'evo',articles:[]},
+        comportement:{level:1,description:'comportement',articles:[]},
+        code_et_outils:{level:0.5,description:'coder HTML/JS/Python',articles:[]},
+        representation:{level:0.5,description:'viz graphes ASCII art',articles:[]}
+      };
+    }
+    // inject meta skills if missing (UI only)
+    if(!data.code_et_outils){
+      data.code_et_outils = {level:3.5, description:'Coder, générer HTML/JS/Python, scripts agent', articles:['run_chat','graph_rag'], keywords:['code','html','python']};
+    }
+    if(!data.representation){
+      data.representation = {level:3.0, description:'Visualisations, ASCII, pages, cortex skills', articles:['fly-brain','fly-skills'], keywords:['viz','ascii','graph']};
+    }
+    if(!data.raisonnement){
+      data.raisonnement = {level:4.0, description:'Planifier, router intent, anti-dérive, Graph-RAG', articles:['skills','graph_rag'], keywords:['plan','rag','intent']};
+    }
+
+    const names = Object.keys(data);
+    const cx = 0, cy = 0;
+    names.forEach((name,i)=>{
+      const ang = (i / names.length) * Math.PI * 2 - Math.PI/2;
+      const info = data[name];
+      const lvl = +info.level || 0;
+      const r = 140 + (10 - Math.min(10,lvl)) * 8;
+      nodes.push({
+        id: name,
+        label: name.replace(/_/g,' '),
+        level: lvl,
+        desc: info.description || '',
+        arts: (info.articles||[]).length,
+        x: Math.cos(ang)*r,
+        y: Math.sin(ang)*r,
+        vx:0, vy:0,
+        r: 10 + Math.min(18, lvl*1.4)
+      });
+    });
+    // edges by keyword overlap / sequential
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        edges.push({a:i,b:j,w:0.3 + Math.random()*0.4});
+      }
+    }
+    // center hub
+    nodes.push({id:'_core', label:'THE-FLY', level:10, desc:'noyau agent', arts:0, x:0,y:0,vx:0,vy:0,r:22, hub:true});
+    const hub = nodes.length-1;
+    for(let i=0;i<nodes.length-1;i++) edges.push({a:hub,b:i,w:0.9});
+
+    renderHud(data);
+    loop();
+  }
+
+  function renderHud(data){
+    const vals = Object.values(data).map(s=>+s.level||0);
+    const avg = vals.reduce((a,b)=>a+b,0)/(vals.length||1);
+    const arts = Object.values(data).reduce((a,s)=>a+(s.articles||[]).length,0);
+    document.getElementById('stats').innerHTML =
+      `<div>skills<br><b>${Object.keys(data).length}</b></div>`+
+      `<div>niveau moy.<br><b>${avg.toFixed(2)}</b></div>`+
+      `<div>articles liés<br><b>${arts}</b></div>`+
+      `<div>mode<br><b>cortex live</b></div>`;
+    const list = document.getElementById('list');
+    list.innerHTML = Object.entries(data).sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,s])=>{
+      const pct = Math.min(100, ((+s.level||0)/10)*100);
+      return `<div class="skill"><span>${n.replace(/_/g,' ')}</span><div class="bar"><i style="width:${pct}%"></i></div><span>${(+s.level||0).toFixed(1)}</span></div>`;
+    }).join('');
+  }
+
+  function step(){
+    // soft forces
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        let dx=nodes[j].x-nodes[i].x, dy=nodes[j].y-nodes[i].y;
+        let d=Math.hypot(dx,dy)||1;
+        let f=(80-d)*0.0015;
+        if(d<80){ nodes[i].vx-=dx/d*f; nodes[i].vy-=dy/d*f; nodes[j].vx+=dx/d*f; nodes[j].vy+=dy/d*f; }
+      }
+    }
+    edges.forEach(e=>{
+      const a=nodes[e.a], b=nodes[e.b];
+      let dx=b.x-a.x, dy=b.y-a.y, d=Math.hypot(dx,dy)||1;
+      let f=(d-120)*0.0008*e.w;
+      a.vx+=dx/d*f; a.vy+=dy/d*f; b.vx-=dx/d*f; b.vy-=dy/d*f;
+    });
+    nodes.forEach(n=>{
+      if(n.hub){ n.x*=0.9; n.y*=0.9; n.vx*=0.5; n.vy*=0.5; return; }
+      n.vx*=0.9; n.vy*=0.9;
+      n.x+=n.vx; n.y+=n.vy;
+    });
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    ctx.save();
+    ctx.translate(W/2+cam.x, H/2+cam.y);
+    ctx.scale(cam.s, cam.s);
+
+    // edges
+    edges.forEach(e=>{
+      const a=nodes[e.a], b=nodes[e.b];
+      ctx.strokeStyle = `rgba(93,186,74,${0.08+e.w*0.15})`;
+      ctx.lineWidth = 1/cam.s;
+      ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+    });
+
+    nodes.forEach(n=>{
+      const col = n.hub ? '#7dff6a' : colorFor(n.level);
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+      ctx.fillStyle = n.hub ? 'rgba(93,186,74,.25)' : 'rgba(10,20,10,.9)';
+      ctx.fill();
+      ctx.strokeStyle = col;
+      ctx.lineWidth = (n===selected?2.5:1.2)/cam.s;
+      ctx.stroke();
+      // pulse
+      if(n.hub){
+        const p = (Math.sin(Date.now()/400)+1)/2;
+        ctx.beginPath(); ctx.arc(n.x,n.y,n.r+6+p*6,0,Math.PI*2);
+        ctx.strokeStyle = `rgba(93,186,74,${0.35-p*0.2})`; ctx.stroke();
+      }
+      ctx.fillStyle = col;
+      ctx.font = `${11/cam.s}px ui-monospace,monospace`;
+      ctx.textAlign='center';
+      ctx.fillText(n.label, n.x, n.y + n.r + 12/cam.s);
+    });
+    ctx.restore();
+
+    if(selected){
+      document.getElementById('tip').textContent =
+        `${selected.label} · lvl ${selected.level.toFixed(2)} · ${selected.arts} articles · ${selected.desc}`;
+    }
+  }
+
+  function loop(){ step(); draw(); requestAnimationFrame(loop); }
+
+  canvas.addEventListener('mousemove', e=>{
+    mx=e.clientX; my=e.clientY;
+    if(drag){ cam.x += e.movementX; cam.y += e.movementY; }
+    // hover
+    const wx=(mx-W/2-cam.x)/cam.s, wy=(my-H/2-cam.y)/cam.s;
+    selected = null;
+    for(const n of nodes){
+      if(Math.hypot(n.x-wx,n.y-wy) < n.r+4){ selected=n; break; }
+    }
+  });
+  canvas.addEventListener('mousedown', ()=> drag=true);
+  addEventListener('mouseup', ()=> drag=false);
+  canvas.addEventListener('wheel', e=>{ e.preventDefault(); cam.s = Math.min(2.5, Math.max(0.4, cam.s * (e.deltaY>0?0.92:1.08))); }, {passive:false});
+
+  load();
+})();
+</script>
+</body>
+</html>
