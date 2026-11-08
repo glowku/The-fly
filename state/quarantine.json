@@ -5451,6 +5451,36 @@
         },
         "updated_at": "2026-11-08T16:54:12.157440+00:00"
       }
+    },
+    "Security": {
+      "depth": 1,
+      "created_at": "2026-11-08T17:54:02.659154+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Security"
+      ],
+      "updated_at": "2026-11-08T17:54:02.659162+00:00",
+      "quarantined_at": "2026-11-08T21:52:44.705360+00:00",
+      "reason": "low_rel=0.198",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 349,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Behavioral ecology (disambiguation)",
+            "Insect Week",
+            "Common green bottle fly",
+            "Insects in ethics",
+            "Chemical ecology",
+            "Insect Festival"
+          ],
+          "diversity": 0.809,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T17:54:02.658463+00:00"
+      }
     }
   },
   "edges": [
@@ -7016,5 +7046,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T17:53:58.329520+00:00"
+  "updated_at": "2026-11-08T21:52:44.713724+00:00"
 }
