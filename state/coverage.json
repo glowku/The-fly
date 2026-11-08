@@ -888,6 +888,14 @@
         "https://en.wikipedia.org/wiki/Diagram"
       ],
       "updated_at": "2026-11-08T16:51:59.231711+00:00"
+    },
+    "Area (graph drawing)": {
+      "depth": 3,
+      "created_at": "2026-11-08T16:53:04.836302+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Area_(graph_drawing)"
+      ],
+      "updated_at": "2026-11-08T16:53:04.836309+00:00"
     }
   },
   "edges": [
@@ -1090,6 +1098,10 @@
     {
       "from": "Exoskeleton",
       "to": "Angular resolution (graph drawing)"
+    },
+    {
+      "from": "Insect behaviour",
+      "to": "Area (graph drawing)"
     }
   ],
   "frontier": [

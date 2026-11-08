@@ -5679,5 +5679,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:51:59.231081+00:00"
+  },
+  "Area (graph drawing)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 316,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Amateur Entomologists' Society",
+        "Black fly",
+        "Behavioral ecology (disambiguation)",
+        "Common green bottle fly",
+        "Chemical ecology",
+        "Insect Week"
+      ],
+      "diversity": 0.765,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:53:04.835418+00:00"
   }
 }

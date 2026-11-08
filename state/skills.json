@@ -172,7 +172,7 @@
     "last_reinforced": "2026-11-08T01:10:03.042080+00:00"
   },
   "comportement": {
-    "level": 9.22,
+    "level": 9.32,
     "description": "Comportements",
     "keywords": [
       "behavior",
@@ -201,9 +201,10 @@
       "Arthropod head problem",
       "Foraging",
       "Black fly",
-      "Saro Windhover"
+      "Saro Windhover",
+      "Area (graph drawing)"
     ],
-    "last_reinforced": "2026-11-07T11:52:15.928550+00:00"
+    "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
     "level": 1.0,
