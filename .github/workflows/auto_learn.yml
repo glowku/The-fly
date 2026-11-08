@@ -4,14 +4,29 @@ on:
   schedule:
     - cron: "15 */3 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "full (défaut) | triage | skill | wiki"
+        required: false
+        default: "full"
+        type: choice
+        options:
+          - full
+          - triage
+          - skill
+          - wiki
 
 permissions:
   contents: write
 
+concurrency:
+  group: the-fly-cortex-short
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,11 +44,13 @@ jobs:
           git config user.name "fly-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Auto-learn cycle
+      - name: Cortex one-shot
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python -c "from agent.auto_learn import run_auto_learn; run_auto_learn()"
-
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          if [ -z "$MODE" ]; then MODE=full; fi
+          python run_cortex.py --mode "$MODE"
 
       - name: Commit and push
         run: |
@@ -43,7 +60,7 @@ jobs:
             echo "nothing to commit"
             exit 0
           fi
-          git commit -m "auto_learn: expand skill branch"
+          git commit -m "auto_learn: ${{ github.event.inputs.mode || 'full' }}"
           git fetch origin main
           if ! git pull --rebase origin main; then
             git rebase --abort || true

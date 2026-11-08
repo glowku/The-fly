@@ -1,0 +1,82 @@
+name: cortex
+
+# Organisme autonome The-fly — tout passe ici, pas besoin du laptop.
+on:
+  schedule:
+    # Toutes les 2 h
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "triage | skill | wiki | full | loop"
+        required: true
+        default: "full"
+        type: choice
+        options:
+          - triage
+          - skill
+          - wiki
+          - full
+          - loop
+      cycles:
+        description: "Cycles (mode loop seulement)"
+        required: false
+        default: "8"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: the-fly-cortex
+  cancel-in-progress: true
+
+jobs:
+  cortex:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "fly-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run cortex
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          CORTEX_MODE: ${{ github.event.inputs.mode || 'loop' }}
+          CORTEX_CYCLES: ${{ github.event.inputs.cycles || '8' }}
+          CORTEX_INTERVAL: "60"
+          CORTEX_MAX_MIN: "45"
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          if [ -z "$MODE" ]; then MODE=loop; fi
+          echo "Running cortex mode=$MODE"
+          python run_cortex.py --mode "$MODE" --cycles "${{ github.event.inputs.cycles || 8 }}"
+
+      - name: Safety push
+        run: |
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "cortex: safety commit" || true
+          fi
+          git fetch origin main
+          git pull --rebase origin main || {
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          }
+          git push origin HEAD:main || true
