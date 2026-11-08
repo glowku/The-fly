@@ -5814,5 +5814,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T21:57:48.574030+00:00"
+  },
+  "REST": {
+    "score": 10.0,
+    "metrics": {
+      "words": 281,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "HTTP",
+        "Architecture logicielle",
+        "HATEOAS",
+        "API",
+        "Web services"
+      ],
+      "diversity": 0.78,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T21:58:44.902462+00:00"
   }
 }

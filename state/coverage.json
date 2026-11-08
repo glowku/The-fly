@@ -737,6 +737,14 @@
       ],
       "updated_at": "2026-11-08T16:53:04.836309+00:00"
     },
+    "Technical drawing": {
+      "depth": 1,
+      "created_at": "2026-11-08T21:56:12.130998+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Technical_drawing"
+      ],
+      "updated_at": "2026-11-08T21:56:12.131004+00:00"
+    },
     "Insect flight": {
       "depth": 2,
       "created_at": "2026-09-16T13:55:50.280207+00:00",
@@ -889,21 +897,13 @@
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
     },
-    "Technical drawing": {
-      "depth": 1,
-      "created_at": "2026-11-08T21:56:12.130998+00:00",
+    "REST": {
+      "depth": 4,
+      "created_at": "2026-11-08T21:58:44.902972+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Technical_drawing"
+        "https://en.wikipedia.org/wiki/REST"
       ],
-      "updated_at": "2026-11-08T21:56:12.131004+00:00"
-    },
-    "OWASP": {
-      "depth": 1,
-      "created_at": "2026-11-08T21:57:48.574810+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/OWASP"
-      ],
-      "updated_at": "2026-11-08T21:57:48.574819+00:00"
+      "updated_at": "2026-11-08T21:58:44.902979+00:00"
     }
   },
   "edges": [
