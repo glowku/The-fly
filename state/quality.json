@@ -5853,5 +5853,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T22:22:02.237117+00:00"
+  },
+  "Computer vision": {
+    "score": 10.0,
+    "metrics": {
+      "words": 401,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Amateur Entomologists' Society",
+        "Blacker's Art of Fly Making",
+        "Chemical ecology",
+        "Human behavioral ecology",
+        "Evolutionary developmental psychology",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.796,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T22:24:16.265431+00:00"
   }
 }
