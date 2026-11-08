@@ -208,7 +208,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 1.0,
+    "level": 1.1,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -221,9 +221,10 @@
     ],
     "articles": [
       "clean-architecture-for-autonomous-agents",
-      "intelligent-interaction-strategies-for-context-aware-cognitive-augment"
+      "intelligent-interaction-strategies-for-context-aware-cognitive-augment",
+      "Thorax"
     ],
-    "last_reinforced": "2026-11-08T16:39:07.576077+00:00"
+    "last_reinforced": "2026-11-08T19:23:12.674532+00:00"
   },
   "representation": {
     "level": 1.02,

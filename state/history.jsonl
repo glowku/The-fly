@@ -6440,3 +6440,6 @@
 {"ts": "2026-11-08T17:53:58.334497+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 111, "active_edges": 52, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Relevance (information retrieval)", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-08T17:54:02.665154+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.1, "article": "Security"}
 {"ts": "2026-11-08T17:54:08.238042+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-08T19:23:12.287073+00:00", "type": "plan", "title": "Thorax", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "code_et_outils", "relevance": 1.0}
+{"ts": "2026-11-08T19:23:12.674881+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 1.1, "article": "Thorax"}
+{"ts": "2026-11-08T19:23:12.674933+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "code_et_outils"}
