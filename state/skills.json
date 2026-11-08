@@ -251,7 +251,7 @@
     "articles": []
   },
   "securite_defensive": {
-    "level": 0.5,
+    "level": 0.65,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -260,7 +260,10 @@
       "validation",
       "cors"
     ],
-    "articles": []
+    "articles": [
+      "secure-coding-basics-input-validation"
+    ],
+    "last_reinforced": "2026-11-08T09:54:23.421103+00:00"
   },
   "recherche_web": {
     "level": 0.5,
