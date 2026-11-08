@@ -224,8 +224,7 @@
       "clean-architecture-for-autonomous-agents",
       "intelligent-interaction-strategies-for-context-aware-cognitive-augment",
       "Thorax",
-      "REST",
-      "Microservices"
+      "REST"
     ],
     "last_reinforced": "2026-11-08T22:28:45.578141+00:00"
   },
@@ -250,7 +249,7 @@
     "last_reinforced": "2026-11-08T22:26:29.358101+00:00"
   },
   "raisonnement": {
-    "level": 1.2,
+    "level": 1.3,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -263,9 +262,10 @@
       "ai-agent-driven-framework-for-automated-product-knowledge-graph-constr",
       "knowledge-graph-reasoning-with-logics-and-embeddings-survey-and-perspe",
       "Larva",
-      "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"
+      "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-",
+      "Graph database"
     ],
-    "last_reinforced": "2026-11-08T21:54:37.016220+00:00"
+    "last_reinforced": "2026-11-08T22:31:01.728390+00:00"
   },
   "securite_defensive": {
     "level": 1.2,
