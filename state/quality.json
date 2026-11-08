@@ -5614,5 +5614,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:36:07.641902+00:00"
+  },
+  "Git": {
+    "score": 10.0,
+    "metrics": {
+      "words": 294,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Distributed version control",
+        "Linus Torvalds",
+        "Linux kernel",
+        "Source code",
+        "Version control system"
+      ],
+      "diversity": 0.792,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:39:07.570750+00:00"
   }
 }
