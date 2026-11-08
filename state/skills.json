@@ -416,5 +416,47 @@
       "Experimental analysis of behavior"
     ],
     "last_reinforced": "2026-11-07T11:52:15.928550+00:00"
+  },
+  "code_et_outils": {
+    "level": 0.5,
+    "description": "Coder HTML/JS/Python, scripts agent, APIs",
+    "keywords": [
+      "code",
+      "html",
+      "python",
+      "javascript",
+      "api",
+      "script",
+      "github"
+    ],
+    "articles": []
+  },
+  "representation": {
+    "level": 0.48,
+    "description": "Viz graphes, ASCII, pages, cortex skills",
+    "keywords": [
+      "graph",
+      "visual",
+      "ascii",
+      "canvas",
+      "network",
+      "cortex"
+    ],
+    "articles": [
+      "Anax (dragonfly)"
+    ],
+    "last_reinforced": "2026-11-08T07:46:39.151476+00:00"
+  },
+  "raisonnement": {
+    "level": 0.5,
+    "description": "Planifier, router intent, anti-dérive, Graph-RAG",
+    "keywords": [
+      "plan",
+      "rag",
+      "intent",
+      "reasoning",
+      "agent"
+    ],
+    "articles": []
   }
 }
