@@ -1,6 +1,6 @@
 """
-Graph-RAG : interroge le noyau wiki The-fly (+ option arXiv) via Groq.
-Persona : raisonner comme une mouche savante — domaine insecte/diptère only.
+Graph-RAG The-fly : nœuds wiki + option arXiv.
+Identité agent — jamais cosplay GPT/provider.
 """
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ import requests
 from .memory import load_coverage, load_quality
 from .skills import score_relevance, is_hard_junk, is_domain_node
 from .arxiv_source import search_domain, format_arxiv_context
+from .identity import SYSTEM_CORE, skill_boost_answer
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "openai/gpt-oss-20b"
@@ -38,7 +39,13 @@ FR_EXPAND = {
 
 GREETING = re.compile(
     r"^(salut|hello|hi|hey|bonjour|bonsoir|ça\s*va|ca\s*va|comment\s+tu\s+vas|"
-    r"comment\s+allez|who\s+are\s+you|qui\s+es[- ]tu|présente)\b",
+    r"comment\s+allez|who\s+are\s+you|qui\s+es|présente|t'es\s+la|tes\s+la)\b",
+    re.I,
+)
+
+SKILL_Q = re.compile(
+    r"(booster?|améliorer|ameliorer|upgrade).*(skill|compétence|competence)|"
+    r"(skill|compétence).*(booster?|améliorer)|fine[- ]?tun|ré[- ]?entraîner|re[- ]?entrain",
     re.I,
 )
 
@@ -48,7 +55,6 @@ def _tokenize(q: str) -> list[str]:
     out = list(words)
     for w in words:
         out.extend(FR_EXPAND.get(w, []))
-    # dédoublonne en gardant l'ordre
     seen = set()
     uniq = []
     for w in out:
@@ -91,7 +97,6 @@ def read_article(title: str) -> str | None:
 
 
 def retrieve(query: str, k: int = 6) -> list[dict]:
-    """Top-k articles wiki — domaine insecte uniquement."""
     cov = load_coverage()
     qual = load_quality()
     titles = list(dict.fromkeys(list(cov.get("nodes", {}).keys()) + list_wiki_titles()))
@@ -122,22 +127,26 @@ def answer(
     query: str,
     k: int = 6,
     use_arxiv: bool = True,
-    temperature: float = 0.2,
+    temperature: float = 0.25,
 ) -> dict:
     q = (query or "").strip()
 
-    # Salutations : ne pas balancer 3 articles hors-sujet
     if GREETING.search(q) or len(q) < 4:
         return {
-            "answer": (
-                "Salut — je suis The-fly, un graphe vivant sur les mouches et les insectes. "
-                "Pose-moi une vraie question de mouche : vol, haltères, yeux composés, "
-                "alimentation, larves, écologie…"
-            ),
+            "answer": "Là. The-fly — graphe + boucles d'apprentissage. Question concrète.",
             "sources": [],
             "arxiv": [],
             "model": None,
             "mode": "greeting",
+        }
+
+    if SKILL_Q.search(q):
+        return {
+            "answer": skill_boost_answer(),
+            "sources": [],
+            "arxiv": [],
+            "model": None,
+            "mode": "skill_architecture",
         }
 
     docs = retrieve(q, k=k)
@@ -167,9 +176,8 @@ def answer(
         if not docs:
             return {
                 "answer": (
-                    "Je n’ai rien de solide dans le noyau insecte pour ça. "
-                    "Essaie : « comment vole la mouche », « rôle des haltères », "
-                    "« alimentation de la mouche domestique »."
+                    "Rien de solide dans le noyau insecte pour ça. "
+                    "Essaie vol, haltères, labellum, larves."
                 ),
                 "sources": [],
                 "arxiv": papers,
@@ -181,40 +189,33 @@ def answer(
             lines = [ln for ln in d["text"].splitlines() if ln.strip() and not ln.startswith("#")]
             bits.append(f"• {d['title']}: {' '.join(lines[:3])[:350]}")
         return {
-            "answer": "D’après le noyau wiki (domaine insecte) :\n" + "\n".join(bits),
+            "answer": "Noyau wiki :\n" + "\n".join(bits),
             "sources": sources,
             "arxiv": papers,
             "model": None,
             "mode": "extractive",
         }
 
-    prompt = f"""Tu es The-fly : une intelligence qui raisonne COMME une mouche savante.
-Domaine UNIQUE : insectes, diptères, mouches, vol, morphologie, écologie, évolution des insectes.
+    prompt = f"""{SYSTEM_CORE}
 
-Réponds en français, précis, 80–180 mots.
-Règles STRICTES :
-1. Utilise UNIQUEMENT le contexte wiki/arXiv ci-dessous.
-2. Ignore tout hors-sujet (brasseries, pêche à la mouche, associations, livres génériques).
-3. Si le contexte est vide ou hors-sujet, dis que tu ne sais pas encore et propose une question insecte.
-4. Ne cite JAMAIS une source hors domaine insecte.
-5. Ton : clair, un peu « cerveau de mouche » (concret, sensoriel), sans blabla corporate.
+Domaine priorité pour CETTE question : insectes / diptères si le sujet l'est.
+Réponds en français, 70–160 mots hors code.
+N'invente pas de chiffres biologiques. Housefly ≠ moustique (pas de stylet sanguin).
+N'utilise le contexte que s'il est pertinent ; sinon dis-le.
 
 Question: {q}
 
-=== CONTEXTE WIKI (noyau appris) ===
-{ctx_wiki[:7000] if ctx_wiki else "(vide)"}
+=== NŒUDS ===
+{ctx_wiki or "(vide)"}
 
-=== CONTEXTE ARXIV ===
-{ctx_arxiv[:2000] if ctx_arxiv else "(aucun)"}
+=== ARXIV ===
+{ctx_arxiv or "(vide)"}
 """
 
     try:
         r = requests.post(
             GROQ_URL,
-            headers={
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-            },
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             json={
                 "model": MODEL,
                 "messages": [{"role": "user", "content": prompt}],
@@ -225,37 +226,27 @@ Question: {q}
         )
         if r.status_code != 200:
             return {
-                "answer": f"[Groq HTTP {r.status_code}] " + (ctx_wiki[:1200] or "pas de contexte"),
+                "answer": f"Moteur langage indispo ({r.status_code}). Fallback extractif.",
                 "sources": sources,
                 "arxiv": papers,
-                "model": MODEL,
-                "mode": "error_fallback",
+                "model": None,
+                "mode": "error",
             }
         text = r.json()["choices"][0]["message"]["content"].strip()
+        # scrub provider names if model leaks them
+        text = re.sub(r"\b(GPT-?4|ChatGPT|OpenAI|Groq|Claude)\b", "moteur de langage", text, flags=re.I)
         return {
             "answer": text,
             "sources": sources,
             "arxiv": papers,
-            "model": MODEL,
-            "mode": "llm",
+            "model": "the-fly-cortex",
+            "mode": "rag",
         }
     except Exception as e:
         return {
-            "answer": f"[erreur LLM: {e}]",
+            "answer": f"Erreur cortex: {e}",
             "sources": sources,
             "arxiv": papers,
-            "model": MODEL,
+            "model": None,
             "mode": "error",
         }
-
-
-def verify_claim(claim: str, k: int = 5) -> dict:
-    q = f"Vérification factuelle (domaine insecte uniquement): {claim}"
-    res = answer(
-        q + "\nRéponds par SOUTENU / PARTIEL / NON_SOUTENU puis justification courte.",
-        k=k,
-        use_arxiv=True,
-        temperature=0.1,
-    )
-    res["claim"] = claim
-    return res
