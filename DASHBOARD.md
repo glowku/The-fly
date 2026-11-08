@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-08 12:51:39 UTC
+**Dernière mise à jour** : 2026-11-08 18:40:43 UTC
 
 ## Objectif de l'agent
 
@@ -10,29 +10,29 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **22.936** |
-| Concepts traités | 200 | **118** |
-| Qualité moyenne | ≥ 7.5 | **9.72/10** |
+| Score global | maximiser | **21.742** |
+| Concepts traités | 200 | **112** |
+| Qualité moyenne | ≥ 7.5 | **9.71/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **118** |
-| Arêtes du graphe | 48 |
-| Frontière (à explorer) | 12 |
+| Concepts traités (nœuds) | **112** |
+| Arêtes du graphe | 52 |
+| Frontière (à explorer) | 13 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **22.936** |
-| Actions dernières 24 h | 137 |
+| Score qualité moyen | **9.71/10** |
+| Score objectif (coverage × quality) | **21.742** |
+| Actions dernières 24 h | 173 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 271 |
-| Bon (6 – 8) | 5 |
-| Moyen (4 – 6) | 3 |
+| Excellent (≥ 8) | 280 |
+| Bon (6 – 8) | 6 |
+| Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-08T10:16:37  skill_reinforc  
-2026-11-08T10:16:37  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-08T10:17:23  skill_reinforc  
-2026-11-08T10:17:23  skill_learn_ar  Domain-specific information retrieval
-2026-11-08T10:18:05  skill_reinforc  
-2026-11-08T10:18:46  skill_reinforc  
-2026-11-08T10:19:28  skill_reinforc  
-2026-11-08T10:19:28  skill_learn_ar  Knowledge Graph Reasoning with Logics and Embeddings: Survey and Perspective
-2026-11-08T10:20:12  skill_reinforc  
-2026-11-08T10:20:53  skill_reinforc  
-2026-11-08T10:20:53  skill_learn_ar  IPPOG : Bridging the gap between science education at school and modern scientific research
-2026-11-08T10:21:38  skill_reinforc  
-2026-11-08T10:22:22  skill_reinforc  
-2026-11-08T10:22:22  skill_learn_ar  Intelligent Interaction Strategies for Context-Aware Cognitive Augmentation
-2026-11-08T10:23:03  skill_reinforc  
+2026-11-08T16:51:59  skill_reinforc  
+2026-11-08T16:53:04  skill_reinforc  
+2026-11-08T16:53:06  auto_learn_exp  Area (graph drawing) score=10.0
+2026-11-08T16:53:06  auto_learn_cyc  
+2026-11-08T16:53:08  triage_restore  
+2026-11-08T16:53:08  triage          
+2026-11-08T16:54:12  skill_reinforc  
+2026-11-08T16:55:18  skill_reinforc  
+2026-11-08T16:55:20  auto_learn_exp  Graph drawing score=8.7
+2026-11-08T16:55:20  auto_learn_cyc  
+2026-11-08T17:53:58  triage_restore  
+2026-11-08T17:53:58  triage_restore  
+2026-11-08T17:53:58  triage          
+2026-11-08T17:54:02  skill_reinforc  
+2026-11-08T17:54:08  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
