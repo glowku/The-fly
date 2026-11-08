@@ -282,7 +282,7 @@
     "last_reinforced": "2026-11-08T21:57:48.580980+00:00"
   },
   "recherche_web": {
-    "level": 1.1,
+    "level": 1.2,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -294,9 +294,10 @@
     "articles": [
       "query-formulation-for-scientific-literature",
       "domain-specific-information-retrieval",
-      "lightweight-and-direct-document-relevance-optimization-for-generative-"
+      "lightweight-and-direct-document-relevance-optimization-for-generative-",
+      "Query"
     ],
-    "last_reinforced": "2026-11-08T16:54:12.163900+00:00"
+    "last_reinforced": "2026-11-08T22:22:02.242302+00:00"
   },
   "recherche_image": {
     "level": 1.17,

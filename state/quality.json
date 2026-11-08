@@ -5833,5 +5833,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T21:58:44.902462+00:00"
+  },
+  "Query": {
+    "score": 10.0,
+    "metrics": {
+      "words": 300,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Amateur Entomologists' Society",
+        "Blacker's Art of Fly Making",
+        "Chemical ecology",
+        "Black fly",
+        "Insect Week",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.767,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T22:22:02.237117+00:00"
   }
 }
