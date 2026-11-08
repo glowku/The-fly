@@ -6458,3 +6458,5 @@
 {"ts": "2026-11-08T21:56:59.362058+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-08T21:57:48.581343+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.2, "article": "OWASP"}
 {"ts": "2026-11-08T21:58:37.883815+00:00", "type": "skill_reinforce", "skill": "ecologie", "new_level": 9.34, "article": "Architectural drawing"}
+{"ts": "2026-11-08T21:58:39.969726+00:00", "type": "auto_learn_expand", "title": "Architectural drawing", "skill": "ecologie", "score": 10.0, "objective": 22.14}
+{"ts": "2026-11-08T21:58:39.970412+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": true}]}
