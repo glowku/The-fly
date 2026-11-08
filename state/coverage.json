@@ -888,6 +888,14 @@
         "https://en.wikipedia.org/wiki/Relevance_(information_retrieval)"
       ],
       "updated_at": "2026-11-08T16:54:12.158010+00:00"
+    },
+    "Graph drawing": {
+      "depth": 3,
+      "created_at": "2026-11-08T16:55:18.822152+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Graph_drawing"
+      ],
+      "updated_at": "2026-11-08T16:55:18.822158+00:00"
     }
   },
   "edges": [
@@ -1094,6 +1102,10 @@
     {
       "from": "Insect behaviour",
       "to": "Area (graph drawing)"
+    },
+    {
+      "from": "Insect ecology",
+      "to": "Graph drawing"
     }
   ],
   "frontier": [

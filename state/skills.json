@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 9.23,
+    "level": 9.32,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -24,9 +24,10 @@
       "Blue-winged Olive flies",
       "Black fly",
       "Damselfly",
-      "Anax (dragonfly)"
+      "Anax (dragonfly)",
+      "Graph drawing"
     ],
-    "last_reinforced": "2026-11-07T17:33:29.241512+00:00"
+    "last_reinforced": "2026-11-08T16:55:18.855091+00:00"
   },
   "anatomie_insecte": {
     "level": 9.32,

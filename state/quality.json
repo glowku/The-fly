@@ -5717,5 +5717,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:54:12.157440+00:00"
+  },
+  "Graph drawing": {
+    "score": 8.7,
+    "metrics": {
+      "words": 114,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Diptera",
+        "Insect ecology",
+        "Fly",
+        "Insect"
+      ],
+      "diversity": 0.873,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:55:18.821335+00:00"
   }
 }
