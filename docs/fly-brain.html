@@ -36,7 +36,7 @@
     padding: 6px 10px; cursor: pointer; font: inherit; text-decoration: none;
   }
   #keyRow { display: flex; gap: 6px; padding: 6px 8px; border-top: 1px solid #141a14; }
-  #links { display: flex; gap: 6px; padding: 4px 8px 6px; }
+  #links { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 8px 6px; }
   #chatStatus { padding: 2px 10px 8px; font-size: 10px; color: #5a6a5a; }
   #chatStatus.ok { color: #5dba4a; }
   #chatStatus.warn { color: #c96; }
@@ -52,15 +52,17 @@
   </header>
   <div id="chatLog"></div>
   <div id="keyRow">
-    <input id="groqKey" type="password" placeholder="clé cortex gsk_… (locale only)" />
+    <input id="groqKey" type="password" placeholder="clé cortex gsk_… (optionnel si local)" />
     <button type="button" id="saveKey">OK</button>
   </div>
   <div id="links">
-    <a href="fly-skills.html" target="_blank">cortex skills</a>
-    <a href="fly-brain.html">brain</a>
+    <a href="fly-skills.html" target="_blank">skills</a>
+    <a href="#" id="btnTriage">triage</a>
+    <a href="#" id="btnSkill">skill_learn</a>
+    <a href="#" id="btnLearn">auto_learn</a>
   </div>
   <form id="chatForm">
-    <input id="chatQ" type="text" placeholder="skills · code · vol · architecture…" autocomplete="off" />
+    <input id="chatQ" type="text" placeholder="triage · skill_learn · auto_learn · question…" autocomplete="off" />
     <button type="submit">→</button>
   </form>
   <div id="chatStatus">init…</div>
@@ -71,7 +73,7 @@
   var RAW = "https://raw.githubusercontent.com/glowku/The-fly/main";
   var API = "https://api.groq.com/openai/v1/chat/completions";
   var MODEL = "openai/gpt-oss-20b";
-  var LOCAL_API = ["http://127.0.0.1:8765", "http://localhost:8765"];
+  var LOCAL = ["http://127.0.0.1:8765", "http://localhost:8765"];
   var logEl = document.getElementById("chatLog");
   var form = document.getElementById("chatForm");
   var input = document.getElementById("chatQ");
@@ -96,9 +98,9 @@
     else localStorage.removeItem("THEFLY_GROQ_KEY");
     keyInput.value = "";
     refreshStatus();
-    add("bot", k ? "Cortex armé." : "Clé effacée.");
+    add("bot", k ? "Cortex cloud armé." : "Clé effacée.");
   };
-  if (localStorage.getItem("THEFLY_GROQ_KEY")) keyInput.placeholder = "clé cortex déjà en local";
+  if (localStorage.getItem("THEFLY_GROQ_KEY")) keyInput.placeholder = "clé cortex en localStorage";
 
   function add(role, text) {
     var d = document.createElement("div");
@@ -121,107 +123,39 @@
   }
 
   function scrub(t) {
-    return (t || "").replace(/\b(GPT-?4|ChatGPT|OpenAI|Groq|Claude|fine-?tun(e|ing))\b/gi, function (m) {
-      if (/fine/i.test(m)) return "boucles d'apprentissage agent";
-      return "moteur de langage";
-    });
+    return (t || "").replace(/\b(GPT-?4|ChatGPT|OpenAI|Groq|Claude)\b/gi, "moteur de langage");
   }
 
-  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|punk rock|blowfly's party|bamboo fly rod|catskill|cognitive behavioral|hovercraft|madama butterfly|chewing gum|therapy|nasdaq/i;
-  var CORE = /\b(insect|insects|diptera|housefly|hoverfly|blowfly|drosophila|mosquito|haltere|halteres|maggot|larva|musca|entomolog|arthropod|compound eye|insect flight|proboscis|mouthpart)\b/i;
-
-  function isJunk(t) { return !t || JUNK.test(t); }
-  function isDomain(t) {
-    if (isJunk(t)) return false;
-    if (CORE.test(t)) return true;
-    if (/\b(fly|flies)\b/i.test(t) && !/fishing|brewery|butterfly|party|rod|boat/i.test(t)) return true;
-    return false;
+  function skillBoost() {
+    return [
+      "Booster skills = faire tourner l'organisme :",
+      "1. skill_learn → skill_notes/ + levels",
+      "2. auto_learn → nouveaux nœuds insecte filtrés",
+      "3. triage → TRIE vers quarantine.json (ne supprime pas les wiki)",
+      "4. Avec python run_chat_server.py : boutons triage / skill_learn / auto_learn AGISSENT",
+      "5. Sans serveur local : description seulement (Pages ne peut pas écrire le repo)"
+    ].join("\n");
   }
 
   function detectMode(q) {
     var s = (q || "").toLowerCase().trim();
-    if (/^(salut|hello|hi|hey|bonjour|bonsoir|t'es la|tes la|yo)\b/i.test(s)) return "greet";
-    if (/(booster?|améliorer|ameliorer|upgrade).*(skill|compétence)|skill.*(boost|améli)|fine[- ]?tun|ré[- ]?entraîner|re[- ]?entrain|corpus|annotation/i.test(s)) return "skill";
-    if (/(hack|attaque|exploit|malware|ransomware|ddos)/i.test(s)) return "sec_boundary";
-    if (/(code|coder|script|python|javascript|html|css|ascii|svg|génère|genere|page html|interactive)/i.test(s)) return "code";
-    if (/(ram|gpu|cpu|server|serveur|acheter|hardware|docker)/i.test(s)) return "tech";
-    if (/(comment tu (parle|fonctionne)|es[- ]tu gpt|t'es gpt|architecture|qui es[- ]tu|myst)/i.test(s)) return "meta";
-    if (/(vol|vole|mouche|aile|haltere|haltère|insecte|larve|yeux|compound|mange|alimentation)/i.test(s)) return "insect";
+    if (/^(salut|hello|hi|hey|bonjour|t'es la|tes la|yo)\b/i.test(s)) return "greet";
+    if (/(triage|purge|nettoie|trie les)/i.test(s)) return "act_triage";
+    if (/^(skill_learn|lance skill|run skill)/i.test(s) || s === "skill_learn") return "act_skill";
+    if (/^(auto_learn|apprend|lance learn|run learn)/i.test(s) || /auto_learn/i.test(s) && !/comment/.test(s)) return "act_learn";
+    if (/(booster?|améliorer|ameliorer).*(skill|compétence)|comment booster/i.test(s)) return "skill";
+    if (/(hack|attaque|exploit|ransomware)/i.test(s)) return "sec";
+    if (/(code|coder|html|python|ascii|génère|page html)/i.test(s)) return "code";
+    if (/(comment tu|qui es|t'es quel|architecture|myst)/i.test(s)) return "meta";
+    if (/(vol|mouche|aile|haltere|insecte|larve|yeux)/i.test(s)) return "insect";
     return "general";
   }
 
-  function skillBoostText() {
-    return [
-      "Booster mes skills ≠ fine-tuning d'un fondation model.",
-      "C'est l'organisme The-fly :",
-      "1. skill_learn (1 cycle / 3) → notes dans skill_notes/ (code, sécu défensive, web, images, raisonnement) + level dans skills.json",
-      "2. auto_learn wiki → parent, filtre junk, score qualité, commit",
-      "3. Purge des nœuds déjà pourris (pêche, bières, punk party) sinon le cortex reste bruité",
-      "4. Graph-RAG ancré sur nœuds propres",
-      "5. CI qui tourne la boucle sans toi",
-      "Pas de « plus de GPU pour réentraîner GPT ». Structure + évaluation + notes."
-    ].join("\n");
-  }
-
-  function metaText() {
-    return [
-      "Je suis The-fly : agent à graphe + boucles d'apprentissage.",
-      "Composants : coverage/quality, auto_learn, skill_learn, anti-dérive, Graph-RAG.",
-      "Le moteur de langage est un organe, pas mon identité — je ne me présente pas comme un chat générique.",
-      "Myst-AI (ton OS bare-metal) est un autre projet : noyau x86, pas un serveur de chat. On peut un jour y brancher un agent, mais ce n'est pas le runtime web actuel."
-    ].join("\n");
-  }
-
-  async function loadCoverage() {
-    try {
-      var r = await fetch(RAW + "/state/coverage.json?t=" + Date.now());
-      if (!r.ok) return {};
-      return (await r.json()).nodes || {};
-    } catch (e) { return {}; }
-  }
-  async function fetchWiki(title) {
-    try {
-      var r = await fetch(RAW + "/wiki/" + encodeURIComponent(title) + ".md?t=" + Date.now());
-      if (!r.ok) return "";
-      return await r.text();
-    } catch (e) { return ""; }
-  }
-
-  async function pickNodes(q, k) {
-    k = k || 4;
-    var words = (q || "").toLowerCase().split(/[^a-z0-9àâäéèêëïîôùûüç]+/).filter(function (w) { return w.length > 2; });
-    var nodes = await loadCoverage();
-    var titles = Object.keys(nodes).filter(isDomain);
-    ["Housefly", "Insect flight", "Halteres", "Compound eye", "Insect mouthparts", "Diptera"].forEach(function (t) {
-      if (titles.indexOf(t) < 0) titles.push(t);
-    });
-    var ranked = titles.map(function (t) {
-      var low = t.toLowerCase(), sc = 0;
-      words.forEach(function (w) { if (low.indexOf(w) >= 0) sc += 3; });
-      if (/housefly|insect flight|haltere|compound eye|mouthpart|diptera/i.test(low)) sc += 2;
-      return { t: t, sc: sc };
-    }).filter(function (x) { return x.sc > 0 && !isJunk(x.t); }).sort(function (a, b) { return b.sc - a.sc; }).slice(0, k);
-    if (!ranked.length) ranked = ["Housefly", "Insect flight", "Halteres"].map(function (t) { return { t: t, sc: 1 }; });
-    var docs = [];
-    for (var i = 0; i < ranked.length; i++) {
-      var md = await fetchWiki(ranked[i].t);
-      if (!md) continue;
-      var body = md.split("\n").filter(function (l) {
-        l = l.trim();
-        return l && l[0] !== "#" && !JUNK.test(l) && l.length > 40;
-      }).slice(0, 8).join("\n");
-      docs.push({ title: ranked[i].t, text: body.slice(0, 900) });
-    }
-    return docs;
-  }
-
-  function cortexKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
-
   async function probeLocal() {
-    for (var i = 0; i < LOCAL_API.length; i++) {
+    for (var i = 0; i < LOCAL.length; i++) {
       try {
-        var r = await fetch(LOCAL_API[i] + "/health", { signal: AbortSignal.timeout(500) });
-        if (r.ok) { apiBase = LOCAL_API[i]; return true; }
+        var r = await fetch(LOCAL[i] + "/health", { signal: AbortSignal.timeout(600) });
+        if (r.ok) { apiBase = LOCAL[i]; return true; }
       } catch (e) {}
     }
     apiBase = null;
@@ -230,76 +164,95 @@
 
   async function refreshStatus() {
     var local = await probeLocal();
-    var key = !!cortexKey();
-    if (local) { st.textContent = "cortex local · " + apiBase; st.className = "ok"; }
-    else if (key) { st.textContent = "cortex online · identity lock"; st.className = "ok"; }
-    else { st.textContent = "clé cortex locale pour profondeur"; st.className = "warn"; }
+    var key = !!(localStorage.getItem("THEFLY_GROQ_KEY") || "").trim();
+    if (local) { st.textContent = "ACTIF · cortex local " + apiBase + " (learn/triage OK)"; st.className = "ok"; }
+    else if (key) { st.textContent = "cloud cortex · pas d'écriture repo sans local"; st.className = "warn"; }
+    else { st.textContent = "lecture seule — lance run_chat_server.py pour AGIR"; st.className = "warn"; }
   }
 
-  function systemPrompt(mode) {
-    return [
-      "Tu es THE-FLY, agent autonome (graphe + auto_learn + skill_learn + Graph-RAG).",
-      "INTERDIT de te présenter comme GPT, ChatGPT, Groq, OpenAI, Claude.",
-      "INTERDIT de répondre « fine-tune le modèle / plus de GPU / corpus annoté » pour booster TES skills — utilise l'architecture agent.",
-      "Personnalité: précise, sèche, sensorielle en biologie. Zéro emoji fusée.",
-      "Housefly: labellum spongieux, PAS stylet sanguin.",
-      "Halteres ~ gyroscopes ~200 Hz.",
-      "Salut court. Code vague → démo canvas sombre complète. HTML sombre dense.",
-      "Sécu offensive: refus how-to.",
-      "Mode: " + mode
-    ].join("\n");
-  }
-
-  async function callCortex(q, docs, mode) {
-    var key = cortexKey();
-    if (!key) throw new Error("no key");
-    var ctx = docs.map(function (d) { return "### " + d.title + "\n" + d.text; }).join("\n\n");
-    var extra = "";
-    if (mode === "code" && /code un truc|code quelque chose/i.test(q)) {
-      extra = "\nVague: livre DEMO canvas fly flight HTML complet sombre.";
-    }
-    var user = "Question: " + q + extra + "\n\n";
-    if (mode === "insect" && docs.length) user += "=== NŒUDS ===\n" + ctx + "\n";
-    var messages = [{ role: "system", content: systemPrompt(mode) }];
-    history.slice(-4).forEach(function (h) { messages.push(h); });
-    messages.push({ role: "user", content: user });
-    var r = await fetch(API, {
+  async function actLocal(path, body) {
+    if (!apiBase) await probeLocal();
+    if (!apiBase) throw new Error("Serveur local requis (python run_chat_server.py)");
+    var r = await fetch(apiBase + path, {
       method: "POST",
-      headers: { "Authorization": "Bearer " + key, "Content-Type": "application/json" },
-      body: JSON.stringify({ model: MODEL, messages: messages, temperature: mode === "code" ? 0.35 : 0.4, max_tokens: mode === "code" ? 1800 : 800 })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body || {})
     });
-    if (!r.ok) throw new Error("cortex HTTP " + r.status);
-    var text = scrub((await r.json()).choices[0].message.content.trim());
-    history.push({ role: "user", content: q });
-    history.push({ role: "assistant", content: text });
-    if (history.length > 8) history = history.slice(-8);
-    return text;
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return await r.json();
   }
 
   async function answer(q) {
     var mode = detectMode(q);
-    if (mode === "greet") return { answer: "Là. Graphe + skills. Quoi construire ou comprendre ?", sources: [], mode: "greet" };
-    if (mode === "skill") return { answer: skillBoostText(), sources: [], mode: "skill_arch" };
-    if (mode === "meta") return { answer: metaText(), sources: [], mode: "meta" };
-    if (mode === "sec_boundary" && !cortexKey()) {
-      return { answer: "Pas de guide d'attaque. Reformule en sécu défensive si besoin.", sources: [], mode: "sec" };
+
+    if (mode === "greet") return { answer: "Là. Avec serveur local je peux triage / skill_learn / auto_learn.", sources: [], mode: "greet" };
+    if (mode === "skill") return { answer: skillBoost(), sources: [], mode: "skill_arch" };
+    if (mode === "meta") return {
+      answer: "The-fly = graphe + auto_learn + skill_learn + triage (quarantine, pas delete) + Graph-RAG. Myst-AI = OS bare-metal séparé, pas le runtime web.",
+      sources: [], mode: "meta"
+    };
+
+    // Actions réelles via local
+    if (mode === "act_triage" || mode === "act_skill" || mode === "act_learn") {
+      try {
+        if (!apiBase) await probeLocal();
+        if (apiBase) {
+          var j = await actLocal("/api/chat", { question: q });
+          return { answer: scrub(j.answer || JSON.stringify(j.report || j)), sources: j.sources || [], mode: j.mode || mode };
+        }
+        return {
+          answer: "Action « " + mode + " » nécessite le cortex local:\n  python run_chat_server.py\nPuis réessaie triage / skill_learn / auto_learn.\n(Pages seul = lecture seule, ne peut pas écrire le graphe.)",
+          sources: [], mode: "need_local"
+        };
+      } catch (e) {
+        return { answer: "Échec action: " + e.message, sources: [], mode: "error" };
+      }
     }
+
     if (!apiBase) await probeLocal();
-    if (apiBase && (mode === "insect" || mode === "skill" || mode === "meta")) {
+    if (apiBase) {
       var r = await fetch(apiBase + "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: q, use_arxiv: true, k: 5 })
       });
-      var j = await r.json();
-      return { answer: scrub(j.answer || ""), sources: j.sources || [], mode: "local" };
+      var j2 = await r.json();
+      return { answer: scrub(j2.answer || ""), sources: j2.sources || [], mode: j2.mode || "local" };
     }
-    var docs = mode === "insect" ? await pickNodes(q, 4) : [];
-    if (cortexKey()) {
-      return { answer: await callCortex(q, docs, mode), sources: docs.map(function (d) { return d.title; }), mode: mode };
-    }
-    return { answer: "Cortex profond verrouillé sans clé locale. Les modes skill/meta répondent déjà sans.", sources: [], mode: "locked" };
+
+    var key = (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim();
+    if (!key) return { answer: "Sans serveur local ni clé cortex: modes skill/meta seulement.", sources: [], mode: "locked" };
+
+    // cloud fallback (no act)
+    var sys = "Tu es THE-FLY agent graphe. Interdit de te dire GPT/Groq. Housefly=labellum pas stylet. Mode=" + mode;
+    var messages = [{ role: "system", content: sys }, { role: "user", content: q }];
+    var rr = await fetch(API, {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + key, "Content-Type": "application/json" },
+      body: JSON.stringify({ model: MODEL, messages: messages, temperature: 0.4, max_tokens: 900 })
+    });
+    if (!rr.ok) throw new Error("cortex HTTP " + rr.status);
+    var text = scrub((await rr.json()).choices[0].message.content.trim());
+    return { answer: text, sources: [], mode: mode + "+cloud" };
   }
+
+  async function runBtn(cmd) {
+    add("user", cmd);
+    var p = add("bot", "…");
+    try {
+      var res = await answer(cmd);
+      p.remove();
+      var n = add("bot", res.answer);
+      var s = document.createElement("div");
+      s.className = "src";
+      s.textContent = "mode: " + res.mode;
+      n.appendChild(s);
+    } catch (e) { p.textContent = e.message; }
+  }
+
+  document.getElementById("btnTriage").onclick = function (e) { e.preventDefault(); runBtn("triage"); };
+  document.getElementById("btnSkill").onclick = function (e) { e.preventDefault(); runBtn("skill_learn"); };
+  document.getElementById("btnLearn").onclick = function (e) { e.preventDefault(); runBtn("auto_learn"); };
 
   form.addEventListener("submit", async function (ev) {
     ev.preventDefault();
@@ -314,15 +267,14 @@
       var node = add("bot", res.answer);
       var s = document.createElement("div");
       s.className = "src";
-      s.textContent = (res.sources && res.sources.length ? "nœuds: " + res.sources.join(" · ") + " · " : "") + "mode: " + (res.mode || "");
+      s.textContent = (res.sources && res.sources.length ? "nœuds: " + res.sources.join(" · ") + " · " : "") + "mode: " + res.mode;
       node.appendChild(s);
-    } catch (e) {
-      pending.textContent = "Erreur: " + e.message;
-    }
+    } catch (e) { pending.textContent = "Erreur: " + e.message; }
   });
 
-  add("bot", "The-fly — agent graphe, pas un chat générique.\nDemande « booster skills » pour le vrai plan (pas du fine-tune).\nCortex: fly-skills.html");
+  add("bot", "The-fly cortex.\n• Pages seul = parle\n• python run_chat_server.py = AGIT (triage / skill_learn / auto_learn)\nBoutons en bas du panneau.");
   refreshStatus();
+  setInterval(refreshStatus, 8000);
 })();
 </script>
 </body>
