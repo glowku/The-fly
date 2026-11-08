@@ -1138,6 +1138,14 @@
     {
       "from": "Anax (dragonfly)",
       "to": "Force-directed graph drawing"
+    },
+    {
+      "from": "Larva",
+      "to": "Arthropoda"
+    },
+    {
+      "from": "Larva",
+      "to": "Caddisfly"
     }
   ],
   "frontier": [
@@ -1152,7 +1160,8 @@
     "Austrobaileya scandens",
     "National Insect Week",
     "Insects",
-    "Evolutionary ecology"
+    "Evolutionary ecology",
+    "Arthropoda"
   ],
   "max_depth": 9
 }
