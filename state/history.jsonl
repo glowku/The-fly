@@ -6455,3 +6455,4 @@
 {"ts": "2026-11-08T21:55:28.728051+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-08T21:55:28.753880+00:00", "type": "triage", "moved_to_quarantine": 2, "deduped": 0, "active_nodes": 111, "active_edges": 52, "archived_edges": 0, "frontier": 13, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large", "reason": "low_rel=0.199"}, {"title": "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-08T21:56:12.137304+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.17, "article": "Technical drawing"}
+{"ts": "2026-11-08T21:56:59.362058+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
