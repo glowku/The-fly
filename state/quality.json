@@ -5633,5 +5633,18 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:39:07.570750+00:00"
+  },
+  "Image retrieval": {
+    "score": 7.33,
+    "metrics": {
+      "words": 233,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.821,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:47:43.912964+00:00"
   }
 }
