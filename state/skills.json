@@ -277,7 +277,7 @@
     "last_reinforced": "2026-11-08T16:36:05.100529+00:00"
   },
   "recherche_web": {
-    "level": 0.95,
+    "level": 1.0,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -289,9 +289,10 @@
     "articles": [
       "query-formulation-for-scientific-literature",
       "domain-specific-information-retrieval",
-      "lightweight-and-direct-document-relevance-optimization-for-generative-"
+      "lightweight-and-direct-document-relevance-optimization-for-generative-",
+      "Search engine"
     ],
-    "last_reinforced": "2026-11-08T16:34:30.241909+00:00"
+    "last_reinforced": "2026-11-08T16:49:52.195870+00:00"
   },
   "recherche_image": {
     "level": 0.97,
@@ -305,8 +306,7 @@
     ],
     "articles": [
       "describing-insect-morphology-for-image-search",
-      "ippog-bridging-the-gap-between-science-education-at-school-and-modern-",
-      "Image retrieval"
+      "ippog-bridging-the-gap-between-science-education-at-school-and-modern-"
     ],
     "last_reinforced": "2026-11-08T16:47:43.919013+00:00"
   }
