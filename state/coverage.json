@@ -872,22 +872,6 @@
         "https://en.wikipedia.org/wiki/Automotive_aerodynamics"
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
-    },
-    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-      "depth": 2,
-      "created_at": "2026-11-08T16:37:38.071183+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1710.04328v1"
-      ],
-      "updated_at": "2026-11-08T16:37:38.071188+00:00"
-    },
-    "Git": {
-      "depth": 1,
-      "created_at": "2026-11-08T16:39:07.571253+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Git"
-      ],
-      "updated_at": "2026-11-08T16:39:07.571257+00:00"
     }
   },
   "edges": [
