@@ -107,7 +107,7 @@
     "last_reinforced": "2026-11-08T09:48:59.205117+00:00"
   },
   "ecologie": {
-    "level": 9.24,
+    "level": 9.34,
     "description": "Rôle écologique, habitats, interactions",
     "keywords": [
       "ecology",
@@ -138,9 +138,10 @@
       "Insects in ethics",
       "Damselfly",
       "Dragonfly",
-      "Anax (dragonfly)"
+      "Anax (dragonfly)",
+      "Architectural drawing"
     ],
-    "last_reinforced": "2026-11-07T21:33:42.846355+00:00"
+    "last_reinforced": "2026-11-08T21:58:37.883319+00:00"
   },
   "evolution": {
     "level": 9.24,
