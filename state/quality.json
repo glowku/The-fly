@@ -5815,24 +5815,23 @@
     },
     "updated_at": "2026-11-08T21:57:48.574030+00:00"
   },
-  "Architectural drawing": {
+  "REST": {
     "score": 10.0,
     "metrics": {
-      "words": 360,
-      "sections": 4,
-      "links": 6,
+      "words": 281,
+      "sections": 3,
+      "links": 5,
       "link_list": [
-        "Bonefish fly patterns",
-        "Amateur Entomologists' Society",
-        "Blue-winged Olive flies",
-        "Black fly",
-        "Insect Week",
-        "Insect Festival"
+        "HTTP",
+        "Architecture logicielle",
+        "HATEOAS",
+        "API",
+        "Web services"
       ],
-      "diversity": 0.808,
+      "diversity": 0.78,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-08T21:58:37.711228+00:00"
+    "updated_at": "2026-11-08T21:58:44.902462+00:00"
   }
 }
