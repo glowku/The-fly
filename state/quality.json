@@ -5563,5 +5563,31 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T16:34:32.353224+00:00"
+  },
+  "Angular resolution (graph drawing)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 358,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Helicopter flight controls",
+        "Black fly",
+        "Blue-winged Olive flies",
+        "Insect Festival",
+        "Bonefish fly patterns",
+        "Amateur Entomologists' Society",
+        "Blacker's Art of Fly Making",
+        "Spiracle (vertebrates)",
+        "Adaptive compliant wing",
+        "Common green bottle fly",
+        "Insect Week",
+        "Insects in ethics"
+      ],
+      "diversity": 0.675,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T16:35:19.021388+00:00"
   }
 }

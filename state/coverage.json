@@ -872,6 +872,14 @@
         "https://arxiv.org/abs/2504.05181v2"
       ],
       "updated_at": "2026-11-08T16:34:32.353687+00:00"
+    },
+    "Angular resolution (graph drawing)": {
+      "depth": 3,
+      "created_at": "2026-11-08T16:35:19.022130+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Angular_resolution_(graph_drawing)"
+      ],
+      "updated_at": "2026-11-08T16:35:19.022135+00:00"
     }
   },
   "edges": [
@@ -1070,6 +1078,10 @@
     {
       "from": "Larva",
       "to": "Caddisfly"
+    },
+    {
+      "from": "Exoskeleton",
+      "to": "Angular resolution (graph drawing)"
     }
   ],
   "frontier": [

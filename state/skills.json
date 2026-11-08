@@ -29,7 +29,7 @@
     "last_reinforced": "2026-11-07T17:33:29.241512+00:00"
   },
   "anatomie_insecte": {
-    "level": 9.22,
+    "level": 9.32,
     "description": "Morphologie et organes des insectes",
     "keywords": [
       "wing",
@@ -63,9 +63,10 @@
       "Insect Festival",
       "Bonefish fly patterns",
       "Chewing",
-      "Dragonfly"
+      "Dragonfly",
+      "Angular resolution (graph drawing)"
     ],
-    "last_reinforced": "2026-11-07T05:04:11.892092+00:00"
+    "last_reinforced": "2026-11-08T16:35:19.053129+00:00"
   },
   "vol_et_aerodynamique": {
     "level": 9.3,
