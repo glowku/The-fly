@@ -5434,5 +5434,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:18:46.680192+00:00"
+  },
+  "Knowledge Graph Reasoning with Logics and Embeddings Survey and Perspective": {
+    "score": 10.0,
+    "metrics": {
+      "words": 372,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Insect Week",
+        "Amateur Entomologists' Society",
+        "Black fly",
+        "Blue-winged Olive flies",
+        "Blacker's Art of Fly Making",
+        "Common green bottle fly"
+      ],
+      "diversity": 0.837,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:19:30.014595+00:00"
   }
 }

@@ -896,6 +896,14 @@
         "https://en.wikipedia.org/wiki/Authentication"
       ],
       "updated_at": "2026-11-08T10:18:46.680837+00:00"
+    },
+    "Knowledge Graph Reasoning with Logics and Embeddings Survey and Perspective": {
+      "depth": 2,
+      "created_at": "2026-11-08T10:19:30.015091+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2202.07412v1"
+      ],
+      "updated_at": "2026-11-08T10:19:30.015096+00:00"
     }
   },
   "edges": [
