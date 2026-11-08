@@ -229,7 +229,7 @@
     "last_reinforced": "2026-11-08T21:58:44.907659+00:00"
   },
   "representation": {
-    "level": 1.17,
+    "level": 1.27,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -243,9 +243,10 @@
       "Anax (dragonfly)",
       "force-directed-graph-layouts",
       "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
-      "Force-directed graph drawing"
+      "Force-directed graph drawing",
+      "Data and information visualization"
     ],
-    "last_reinforced": "2026-11-08T21:52:53.258937+00:00"
+    "last_reinforced": "2026-11-08T22:26:29.358101+00:00"
   },
   "raisonnement": {
     "level": 1.2,
@@ -294,8 +295,7 @@
     "articles": [
       "query-formulation-for-scientific-literature",
       "domain-specific-information-retrieval",
-      "lightweight-and-direct-document-relevance-optimization-for-generative-",
-      "Query"
+      "lightweight-and-direct-document-relevance-optimization-for-generative-"
     ],
     "last_reinforced": "2026-11-08T22:22:02.242302+00:00"
   },
@@ -312,8 +312,7 @@
     "articles": [
       "describing-insect-morphology-for-image-search",
       "ippog-bridging-the-gap-between-science-education-at-school-and-modern-",
-      "Technical drawing",
-      "Computer vision"
+      "Technical drawing"
     ],
     "last_reinforced": "2026-11-08T22:24:16.271077+00:00"
   }

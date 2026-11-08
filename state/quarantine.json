@@ -5540,6 +5540,66 @@
         },
         "updated_at": "2026-11-08T21:57:48.574030+00:00"
       }
+    },
+    "Query": {
+      "depth": 1,
+      "created_at": "2026-11-08T22:22:02.237595+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Query"
+      ],
+      "updated_at": "2026-11-08T22:22:02.237600+00:00",
+      "quarantined_at": "2026-11-08T22:25:25.544286+00:00",
+      "reason": "low_rel=0.199",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 300,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Amateur Entomologists' Society",
+            "Blacker's Art of Fly Making",
+            "Chemical ecology",
+            "Black fly",
+            "Insect Week",
+            "Behavioral ecology (disambiguation)"
+          ],
+          "diversity": 0.767,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T22:22:02.237117+00:00"
+      }
+    },
+    "Computer vision": {
+      "depth": 2,
+      "created_at": "2026-11-08T22:24:16.265991+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Computer_vision"
+      ],
+      "updated_at": "2026-11-08T22:24:16.265997+00:00",
+      "quarantined_at": "2026-11-08T22:25:25.544298+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 401,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Amateur Entomologists' Society",
+            "Blacker's Art of Fly Making",
+            "Chemical ecology",
+            "Human behavioral ecology",
+            "Evolutionary developmental psychology",
+            "Behavioral ecology (disambiguation)"
+          ],
+          "diversity": 0.796,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-08T22:24:16.265431+00:00"
+      }
     }
   },
   "edges": [
@@ -7105,5 +7165,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T22:21:52.089135+00:00"
+  "updated_at": "2026-11-08T22:25:25.550593+00:00"
 }

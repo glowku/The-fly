@@ -5873,5 +5873,31 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T22:24:16.265431+00:00"
+  },
+  "Data and information visualization": {
+    "score": 10.0,
+    "metrics": {
+      "words": 336,
+      "sections": 4,
+      "links": 12,
+      "link_list": [
+        "Blue-winged Olive flies",
+        "Amateur Entomologists' Society",
+        "Insect Festival",
+        "Blacker's Art of Fly Making",
+        "Chemical ecology",
+        "Bonefish fly patterns",
+        "Insects in ethics",
+        "Human behavioral ecology",
+        "Black fly",
+        "Evolutionary developmental psychology",
+        "Insect Week",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.868,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T22:26:29.352362+00:00"
   }
 }
