@@ -243,7 +243,7 @@
     "last_reinforced": "2026-11-08T16:37:34.882223+00:00"
   },
   "raisonnement": {
-    "level": 0.9,
+    "level": 1.05,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -255,9 +255,10 @@
     "articles": [
       "ai-agent-driven-framework-for-automated-product-knowledge-graph-constr",
       "knowledge-graph-reasoning-with-logics-and-embeddings-survey-and-perspe",
-      "Larva"
+      "Larva",
+      "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"
     ],
-    "last_reinforced": "2026-11-08T14:50:38.852609+00:00"
+    "last_reinforced": "2026-11-08T16:45:32.687957+00:00"
   },
   "securite_defensive": {
     "level": 1.0,
