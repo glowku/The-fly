@@ -52,7 +52,7 @@
   </header>
   <div id="chatLog"></div>
   <div id="keyRow">
-    <input id="groqKey" type="password" placeholder="clé Groq gsk_… (locale)" />
+    <input id="groqKey" type="password" placeholder="clé cortex gsk_… (locale only)" />
     <button type="button" id="saveKey">OK</button>
   </div>
   <div id="links">
@@ -60,7 +60,7 @@
     <a href="fly-brain.html">brain</a>
   </div>
   <form id="chatForm">
-    <input id="chatQ" type="text" placeholder="code · vol · tech · architecture…" autocomplete="off" />
+    <input id="chatQ" type="text" placeholder="skills · code · vol · architecture…" autocomplete="off" />
     <button type="submit">→</button>
   </form>
   <div id="chatStatus">init…</div>
@@ -69,7 +69,7 @@
 <script>
 (function () {
   var RAW = "https://raw.githubusercontent.com/glowku/The-fly/main";
-  var GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
+  var API = "https://api.groq.com/openai/v1/chat/completions";
   var MODEL = "openai/gpt-oss-20b";
   var LOCAL_API = ["http://127.0.0.1:8765", "http://localhost:8765"];
   var logEl = document.getElementById("chatLog");
@@ -96,9 +96,9 @@
     else localStorage.removeItem("THEFLY_GROQ_KEY");
     keyInput.value = "";
     refreshStatus();
-    add("bot", k ? "Cortex LLM armé. Je code, j’explique, je ne recrache pas." : "Clé effacée.");
+    add("bot", k ? "Cortex armé." : "Clé effacée.");
   };
-  if (localStorage.getItem("THEFLY_GROQ_KEY")) keyInput.placeholder = "clé déjà enregistrée";
+  if (localStorage.getItem("THEFLY_GROQ_KEY")) keyInput.placeholder = "clé cortex déjà en local";
 
   function add(role, text) {
     var d = document.createElement("div");
@@ -120,7 +120,14 @@
     return d;
   }
 
-  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|association for the study|animal behaviour\)|journal of|proceedings of|punk rock|blowfly's party|bamboo fly rod|catskill|cognitive behavioral|hovercraft|madama butterfly|chewing gum|therapy|nasdaq/i;
+  function scrub(t) {
+    return (t || "").replace(/\b(GPT-?4|ChatGPT|OpenAI|Groq|Claude|fine-?tun(e|ing))\b/gi, function (m) {
+      if (/fine/i.test(m)) return "boucles d'apprentissage agent";
+      return "moteur de langage";
+    });
+  }
+
+  var JUNK = /fly\s*fishing|fishing|brewery|brewing|allagash|bibliography|company|corporation|behavioral\s+momentum|punk rock|blowfly's party|bamboo fly rod|catskill|cognitive behavioral|hovercraft|madama butterfly|chewing gum|therapy|nasdaq/i;
   var CORE = /\b(insect|insects|diptera|housefly|hoverfly|blowfly|drosophila|mosquito|haltere|halteres|maggot|larva|musca|entomolog|arthropod|compound eye|insect flight|proboscis|mouthpart)\b/i;
 
   function isJunk(t) { return !t || JUNK.test(t); }
@@ -134,12 +141,35 @@
   function detectMode(q) {
     var s = (q || "").toLowerCase().trim();
     if (/^(salut|hello|hi|hey|bonjour|bonsoir|t'es la|tes la|yo)\b/i.test(s)) return "greet";
-    if (/(hack|attaque|exploit|malware|ransomware|phishing attack|ddos)/i.test(s)) return "sec_boundary";
+    if (/(booster?|améliorer|ameliorer|upgrade).*(skill|compétence)|skill.*(boost|améli)|fine[- ]?tun|ré[- ]?entraîner|re[- ]?entrain|corpus|annotation/i.test(s)) return "skill";
+    if (/(hack|attaque|exploit|malware|ransomware|ddos)/i.test(s)) return "sec_boundary";
     if (/(code|coder|script|python|javascript|html|css|ascii|svg|génère|genere|page html|interactive)/i.test(s)) return "code";
-    if (/(ram|gpu|cpu|server|serveur|acheter|hardware|docker|github|git |api key)/i.test(s)) return "tech";
-    if (/(comment tu (parle|fonctionne)|es[- ]tu gpt|t'es gpt|architecture|qui es[- ]tu)/i.test(s)) return "meta";
+    if (/(ram|gpu|cpu|server|serveur|acheter|hardware|docker)/i.test(s)) return "tech";
+    if (/(comment tu (parle|fonctionne)|es[- ]tu gpt|t'es gpt|architecture|qui es[- ]tu|myst)/i.test(s)) return "meta";
     if (/(vol|vole|mouche|aile|haltere|haltère|insecte|larve|yeux|compound|mange|alimentation)/i.test(s)) return "insect";
     return "general";
+  }
+
+  function skillBoostText() {
+    return [
+      "Booster mes skills ≠ fine-tuning d'un fondation model.",
+      "C'est l'organisme The-fly :",
+      "1. skill_learn (1 cycle / 3) → notes dans skill_notes/ (code, sécu défensive, web, images, raisonnement) + level dans skills.json",
+      "2. auto_learn wiki → parent, filtre junk, score qualité, commit",
+      "3. Purge des nœuds déjà pourris (pêche, bières, punk party) sinon le cortex reste bruité",
+      "4. Graph-RAG ancré sur nœuds propres",
+      "5. CI qui tourne la boucle sans toi",
+      "Pas de « plus de GPU pour réentraîner GPT ». Structure + évaluation + notes."
+    ].join("\n");
+  }
+
+  function metaText() {
+    return [
+      "Je suis The-fly : agent à graphe + boucles d'apprentissage.",
+      "Composants : coverage/quality, auto_learn, skill_learn, anti-dérive, Graph-RAG.",
+      "Le moteur de langage est un organe, pas mon identité — je ne me présente pas comme un chat générique.",
+      "Myst-AI (ton OS bare-metal) est un autre projet : noyau x86, pas un serveur de chat. On peut un jour y brancher un agent, mais ce n'est pas le runtime web actuel."
+    ].join("\n");
   }
 
   async function loadCoverage() {
@@ -162,7 +192,7 @@
     var words = (q || "").toLowerCase().split(/[^a-z0-9àâäéèêëïîôùûüç]+/).filter(function (w) { return w.length > 2; });
     var nodes = await loadCoverage();
     var titles = Object.keys(nodes).filter(isDomain);
-    ["Housefly", "Insect flight", "Halteres", "Compound eye", "Insect mouthparts", "Diptera", "Maggot"].forEach(function (t) {
+    ["Housefly", "Insect flight", "Halteres", "Compound eye", "Insect mouthparts", "Diptera"].forEach(function (t) {
       if (titles.indexOf(t) < 0) titles.push(t);
     });
     var ranked = titles.map(function (t) {
@@ -185,7 +215,7 @@
     return docs;
   }
 
-  function groqKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
+  function cortexKey() { return (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim(); }
 
   async function probeLocal() {
     for (var i = 0; i < LOCAL_API.length; i++) {
@@ -200,67 +230,46 @@
 
   async function refreshStatus() {
     var local = await probeLocal();
-    var key = !!groqKey();
+    var key = !!cortexKey();
     if (local) { st.textContent = "cortex local · " + apiBase; st.className = "ok"; }
-    else if (key) { st.textContent = "cortex LLM · depth mode"; st.className = "ok"; }
-    else { st.textContent = "clé Groq requise pour la profondeur"; st.className = "warn"; }
+    else if (key) { st.textContent = "cortex online · identity lock"; st.className = "ok"; }
+    else { st.textContent = "clé cortex locale pour profondeur"; st.className = "warn"; }
   }
 
   function systemPrompt(mode) {
     return [
-      "Tu es THE-FLY — agent autonome (graphe de connaissance + skills + boucles auto_learn).",
-      "Tu n'es PAS « GPT » pour l'utilisateur : tu es une instance agent The-fly (retrieval nœuds + LLM + skills code/sécu/web).",
-      "Personnalité: précise, un peu sèche, sensorielle quand tu parles biologie. Zéro corporate. Zéro emoji fusée.",
-      "",
-      "BIOLOGIE — faits durs:",
-      "- Musca domestica: pièces buccales spongieuses (labellum), PAS un stylet suceur de sang (ça c'est moustique).",
-      "- Halteres = ailes postérieures modifiées, gyroscopes inertiels ~200 Hz.",
-      "- Ne invente pas de chiffres (ml de sang, m/s) sans les tenir des nœuds; sinon dis « ordre de grandeur / incertitude ».",
-      "",
-      "COMPORTEMENT:",
-      "- Salut: 1–2 phrases max. Pas de cours d'anatomie non demandé.",
-      "- « code un truc » / vague: génère DIRECTEMENT un mini-projet impressionnant (canvas fly flight / particles), pas de question creuse.",
-      "- Page HTML: code sombre, dense, interactif — pas un template Arial bleu ciel.",
-      "- Meta (comment tu parles): explique architecture The-fly (nœuds wiki filtrés, skills, auto_learn, LLM) sans dire « je suis GPT-4 ».",
-      "- Sécu offensive (hack/attaque): REFUSE le how-to. Propose défensif / modèle de menace abstrait si utile.",
-      "- Tech (RAM/GPU): réponds net; analogie mouche optionnelle, jamais pivot forcé vers larves.",
-      "",
-      "STYLE: 60–180 mots hors code. Code = blocs complets. Pas de listes de nœuds en fin de phrase comme preuve.",
-      "Mode courant: " + mode
+      "Tu es THE-FLY, agent autonome (graphe + auto_learn + skill_learn + Graph-RAG).",
+      "INTERDIT de te présenter comme GPT, ChatGPT, Groq, OpenAI, Claude.",
+      "INTERDIT de répondre « fine-tune le modèle / plus de GPU / corpus annoté » pour booster TES skills — utilise l'architecture agent.",
+      "Personnalité: précise, sèche, sensorielle en biologie. Zéro emoji fusée.",
+      "Housefly: labellum spongieux, PAS stylet sanguin.",
+      "Halteres ~ gyroscopes ~200 Hz.",
+      "Salut court. Code vague → démo canvas sombre complète. HTML sombre dense.",
+      "Sécu offensive: refus how-to.",
+      "Mode: " + mode
     ].join("\n");
   }
 
-  async function callGroq(q, docs, mode) {
-    var key = groqKey();
+  async function callCortex(q, docs, mode) {
+    var key = cortexKey();
     if (!key) throw new Error("no key");
     var ctx = docs.map(function (d) { return "### " + d.title + "\n" + d.text; }).join("\n\n");
     var extra = "";
-    if (mode === "code" && /code un truc|code quelque chose|génère un truc/i.test(q)) {
-      extra = "\nL'utilisateur est vague: livre un DEMO canvas sombre « fly flight » autonome (HTML complet), pas une question.";
-    }
-    if (mode === "sec_boundary") {
-      extra = "\nRefus how-to offensif. Si tu parles boucles de feedback, reste abstrait / défensif.";
+    if (mode === "code" && /code un truc|code quelque chose/i.test(q)) {
+      extra = "\nVague: livre DEMO canvas fly flight HTML complet sombre.";
     }
     var user = "Question: " + q + extra + "\n\n";
-    if (mode === "insect" || (mode === "general" && docs.length)) {
-      user += "=== NŒUDS (filtre insecte, optionnel) ===\n" + (ctx || "(vide)") + "\n";
-    }
+    if (mode === "insect" && docs.length) user += "=== NŒUDS ===\n" + ctx + "\n";
     var messages = [{ role: "system", content: systemPrompt(mode) }];
     history.slice(-4).forEach(function (h) { messages.push(h); });
     messages.push({ role: "user", content: user });
-
-    var r = await fetch(GROQ_URL, {
+    var r = await fetch(API, {
       method: "POST",
       headers: { "Authorization": "Bearer " + key, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: MODEL,
-        messages: messages,
-        temperature: mode === "code" ? 0.35 : 0.45,
-        max_tokens: mode === "code" ? 1800 : 900
-      })
+      body: JSON.stringify({ model: MODEL, messages: messages, temperature: mode === "code" ? 0.35 : 0.4, max_tokens: mode === "code" ? 1800 : 800 })
     });
-    if (!r.ok) throw new Error("Groq HTTP " + r.status + " " + (await r.text()).slice(0, 120));
-    var text = (await r.json()).choices[0].message.content.trim();
+    if (!r.ok) throw new Error("cortex HTTP " + r.status);
+    var text = scrub((await r.json()).choices[0].message.content.trim());
     history.push({ role: "user", content: q });
     history.push({ role: "assistant", content: text });
     if (history.length > 8) history = history.slice(-8);
@@ -269,27 +278,27 @@
 
   async function answer(q) {
     var mode = detectMode(q);
-    if (mode === "greet") {
-      return { answer: "Là. Cortex up — graphe + skills. Dis-moi quoi construire ou quoi comprendre.", sources: [], mode: "greet" };
-    }
-    if (mode === "sec_boundary" && !groqKey()) {
-      return { answer: "Pas de guide d'attaque. Pour de la sécu défensive (secrets, validation, supply-chain), active la clé et reformule sans payload offensif.", sources: [], mode: "sec" };
+    if (mode === "greet") return { answer: "Là. Graphe + skills. Quoi construire ou comprendre ?", sources: [], mode: "greet" };
+    if (mode === "skill") return { answer: skillBoostText(), sources: [], mode: "skill_arch" };
+    if (mode === "meta") return { answer: metaText(), sources: [], mode: "meta" };
+    if (mode === "sec_boundary" && !cortexKey()) {
+      return { answer: "Pas de guide d'attaque. Reformule en sécu défensive si besoin.", sources: [], mode: "sec" };
     }
     if (!apiBase) await probeLocal();
-    if (apiBase && mode === "insect") {
+    if (apiBase && (mode === "insect" || mode === "skill" || mode === "meta")) {
       var r = await fetch(apiBase + "/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: q, use_arxiv: true, k: 5 })
       });
       var j = await r.json();
-      return { answer: j.answer || JSON.stringify(j), sources: j.sources || [], mode: "local" };
+      return { answer: scrub(j.answer || ""), sources: j.sources || [], mode: "local" };
     }
-    var docs = (mode === "insect") ? await pickNodes(q, 4) : [];
-    if (groqKey()) {
-      return { answer: await callGroq(q, docs, mode), sources: docs.map(function (d) { return d.title; }), mode: mode };
+    var docs = mode === "insect" ? await pickNodes(q, 4) : [];
+    if (cortexKey()) {
+      return { answer: await callCortex(q, docs, mode), sources: docs.map(function (d) { return d.title; }), mode: mode };
     }
-    return { answer: "Sans clé Groq je reste plat. Colle gsk_… pour la profondeur (code dense, biologie exacte, architecture agent).", sources: [], mode: "locked" };
+    return { answer: "Cortex profond verrouillé sans clé locale. Les modes skill/meta répondent déjà sans.", sources: [], mode: "locked" };
   }
 
   form.addEventListener("submit", async function (ev) {
@@ -312,7 +321,7 @@
     }
   });
 
-  add("bot", "The-fly — pas un wrapper GPT poli.\nSkills: insecte · code · sécu défensive · web · images · raisonnement.\nCortex: fly-skills.html");
+  add("bot", "The-fly — agent graphe, pas un chat générique.\nDemande « booster skills » pour le vrai plan (pas du fine-tune).\nCortex: fly-skills.html");
   refreshStatus();
 })();
 </script>
