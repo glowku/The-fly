@@ -649,94 +649,6 @@
       ],
       "updated_at": "2026-09-24T14:53:41.104889+00:00"
     },
-    "Behavioral pattern": {
-      "depth": 5,
-      "created_at": "2026-09-21T10:10:05.534203+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_pattern"
-      ],
-      "updated_at": "2026-09-21T10:10:05.534209+00:00"
-    },
-    "Behavioral modeling": {
-      "depth": 6,
-      "created_at": "2026-09-21T16:30:01.951717+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_modeling"
-      ],
-      "updated_at": "2026-09-21T16:30:01.951725+00:00"
-    },
-    "Behavioral cusp": {
-      "depth": 5,
-      "created_at": "2026-09-21T16:43:01.614014+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_cusp"
-      ],
-      "updated_at": "2026-09-21T16:43:01.614022+00:00"
-    },
-    "Clinical behavior analysis": {
-      "depth": 6,
-      "created_at": "2026-09-22T00:33:03.988271+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Clinical_behavior_analysis"
-      ],
-      "updated_at": "2026-09-22T00:33:03.988281+00:00"
-    },
-    "Quantitative analysis of behavior": {
-      "depth": 6,
-      "created_at": "2026-09-22T00:40:03.001202+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Quantitative_analysis_of_behavior"
-      ],
-      "updated_at": "2026-09-22T00:40:03.001211+00:00"
-    },
-    "Experimental analysis of behavior": {
-      "depth": 6,
-      "created_at": "2026-09-22T00:41:42.197474+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Experimental_analysis_of_behavior"
-      ],
-      "updated_at": "2026-09-22T00:41:42.197482+00:00"
-    },
-    "Behaviour therapy": {
-      "depth": 6,
-      "created_at": "2026-09-22T00:50:04.935080+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behaviour_therapy"
-      ],
-      "updated_at": "2026-09-22T00:50:04.935088+00:00"
-    },
-    "Behavioral momentum": {
-      "depth": 7,
-      "created_at": "2026-09-22T00:59:01.969120+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_momentum"
-      ],
-      "updated_at": "2026-09-22T00:59:01.969128+00:00"
-    },
-    "Butterfly effect": {
-      "depth": 6,
-      "created_at": "2026-09-22T13:14:02.419692+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Butterfly_effect"
-      ],
-      "updated_at": "2026-09-22T13:14:02.419700+00:00"
-    },
-    "Association for Behavioral and Cognitive Therapies": {
-      "depth": 7,
-      "created_at": "2026-09-22T13:45:03.152852+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Association_for_Behavioral_and_Cognitive_Therapies"
-      ],
-      "updated_at": "2026-09-22T13:45:03.152860+00:00"
-    },
-    "Behavior modification": {
-      "depth": 5,
-      "created_at": "2026-09-22T13:46:39.929973+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_modification"
-      ],
-      "updated_at": "2026-09-22T13:46:39.929979+00:00"
-    },
     "Behavioral ecology (disambiguation)": {
       "depth": 5,
       "created_at": "2026-09-22T18:08:03.111787+00:00",
@@ -745,174 +657,6 @@
       ],
       "updated_at": "2026-09-22T18:08:03.111795+00:00"
     },
-    "Licensed behavior analyst": {
-      "depth": 6,
-      "created_at": "2026-09-22T18:30:02.025799+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Licensed_behavior_analyst"
-      ],
-      "updated_at": "2026-09-22T18:30:02.025807+00:00"
-    },
-    "Behavior analysis of child development": {
-      "depth": 5,
-      "created_at": "2026-09-22T21:05:02.727277+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_analysis_of_child_development"
-      ],
-      "updated_at": "2026-09-22T21:05:02.727284+00:00"
-    },
-    "Behavioral activation": {
-      "depth": 6,
-      "created_at": "2026-09-22T21:09:54.279832+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_activation"
-      ],
-      "updated_at": "2026-09-22T21:09:54.279839+00:00"
-    },
-    "Cognitive behavioral analysis system of psychotherapy": {
-      "depth": 6,
-      "created_at": "2026-09-22T21:13:08.263719+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Cognitive_behavioral_analysis_system_of_psychotherapy"
-      ],
-      "updated_at": "2026-09-22T21:13:08.263726+00:00"
-    },
-    "Cognitive behavioral therapy": {
-      "depth": 6,
-      "created_at": "2026-09-22T21:18:02.448539+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"
-      ],
-      "updated_at": "2026-09-22T21:18:02.448547+00:00"
-    },
-    "Dialectical behavior therapy": {
-      "depth": 6,
-      "created_at": "2026-09-22T21:19:42.633259+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy"
-      ],
-      "updated_at": "2026-09-22T21:19:42.633266+00:00"
-    },
-    "Anti-social behaviour": {
-      "depth": 6,
-      "created_at": "2026-09-22T21:34:04.151349+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Anti-social_behaviour"
-      ],
-      "updated_at": "2026-09-22T21:34:04.151357+00:00"
-    },
-    "Verbal Behavior": {
-      "depth": 6,
-      "created_at": "2026-09-23T00:21:43.180683+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Verbal_Behavior"
-      ],
-      "updated_at": "2026-09-23T00:21:43.180693+00:00"
-    },
-    "Abnormality (behavior)": {
-      "depth": 6,
-      "created_at": "2026-09-23T00:23:22.866419+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Abnormality_(behavior)"
-      ],
-      "updated_at": "2026-09-23T00:23:22.866425+00:00"
-    },
-    "Behavior management": {
-      "depth": 7,
-      "created_at": "2026-09-23T00:34:02.842725+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_management"
-      ],
-      "updated_at": "2026-09-23T00:34:02.842733+00:00"
-    },
-    "Behavioural change theories": {
-      "depth": 6,
-      "created_at": "2026-09-23T00:40:34.189064+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioural_change_theories"
-      ],
-      "updated_at": "2026-09-23T00:40:34.189073+00:00"
-    },
-    "Eccentricity (behavior)": {
-      "depth": 6,
-      "created_at": "2026-09-23T04:05:10.425372+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Eccentricity_(behavior)"
-      ],
-      "updated_at": "2026-09-23T04:05:10.425380+00:00"
-    },
-    "Behavioral addiction": {
-      "depth": 7,
-      "created_at": "2026-09-23T04:06:48.905907+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_addiction"
-      ],
-      "updated_at": "2026-09-23T04:06:48.905915+00:00"
-    },
-    "Behavioral contagion": {
-      "depth": 7,
-      "created_at": "2026-09-23T04:10:02.026820+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_contagion"
-      ],
-      "updated_at": "2026-09-23T04:10:02.026828+00:00"
-    },
-    "Behavior change (public health)": {
-      "depth": 6,
-      "created_at": "2026-09-23T04:22:01.778999+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_change_(public_health)"
-      ],
-      "updated_at": "2026-09-23T04:22:01.779007+00:00"
-    },
-    "Behavior-based safety": {
-      "depth": 6,
-      "created_at": "2026-09-23T04:27:01.920805+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior-based_safety"
-      ],
-      "updated_at": "2026-09-23T04:27:01.920812+00:00"
-    },
-    "User behavior analytics": {
-      "depth": 6,
-      "created_at": "2026-09-23T04:40:28.929434+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/User_behavior_analytics"
-      ],
-      "updated_at": "2026-09-23T04:40:28.929460+00:00"
-    },
-    "Human behavior": {
-      "depth": 7,
-      "created_at": "2026-09-23T08:56:51.582572+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Human_behavior"
-      ],
-      "updated_at": "2026-09-23T08:56:51.582580+00:00"
-    },
-    "Network behavior anomaly detection": {
-      "depth": 7,
-      "created_at": "2026-09-23T10:43:00.869624+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Network_behavior_anomaly_detection"
-      ],
-      "updated_at": "2026-09-23T10:43:00.869633+00:00"
-    },
-    "Behavioral analytics": {
-      "depth": 6,
-      "created_at": "2026-09-23T10:54:03.007416+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_analytics"
-      ],
-      "updated_at": "2026-09-23T10:54:03.007423+00:00"
-    },
-    "Behavior change method": {
-      "depth": 6,
-      "created_at": "2026-09-23T11:03:01.553554+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_change_method"
-      ],
-      "updated_at": "2026-09-23T11:03:01.553560+00:00"
-    },
     "Chemical ecology": {
       "depth": 7,
       "created_at": "2026-09-23T11:17:02.606760+00:00",
@@ -920,22 +664,6 @@
         "https://en.wikipedia.org/wiki/Chemical_ecology"
       ],
       "updated_at": "2026-09-23T11:17:02.606766+00:00"
-    },
-    "Social and behavior change communication": {
-      "depth": 6,
-      "created_at": "2026-09-23T11:29:02.460435+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Social_and_behavior_change_communication"
-      ],
-      "updated_at": "2026-09-23T11:29:02.460443+00:00"
-    },
-    "Behavioural design": {
-      "depth": 7,
-      "created_at": "2026-09-23T16:02:02.140947+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioural_design"
-      ],
-      "updated_at": "2026-09-23T16:02:02.140955+00:00"
     },
     "Human behavioral ecology": {
       "depth": 6,
@@ -953,14 +681,6 @@
       ],
       "updated_at": "2026-09-23T16:17:02.269893+00:00"
     },
-    "Radical behaviorism": {
-      "depth": 7,
-      "created_at": "2026-09-24T03:24:01.316764+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Radical_behaviorism"
-      ],
-      "updated_at": "2026-09-24T03:24:01.316771+00:00"
-    },
     "Cultural ecology": {
       "depth": 7,
       "created_at": "2026-09-24T03:32:02.496757+00:00",
@@ -968,14 +688,6 @@
         "https://en.wikipedia.org/wiki/Cultural_ecology"
       ],
       "updated_at": "2026-09-24T03:32:02.496764+00:00"
-    },
-    "Behavioral systems analysis": {
-      "depth": 6,
-      "created_at": "2026-09-24T08:58:04.673116+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavioral_systems_analysis"
-      ],
-      "updated_at": "2026-09-24T08:58:04.673124+00:00"
     },
     "Theatrical adaptation": {
       "depth": 8,
@@ -985,53 +697,29 @@
       ],
       "updated_at": "2026-09-24T15:11:02.927754+00:00"
     },
-    "Organizational behavior management": {
-      "depth": 7,
-      "created_at": "2026-09-24T15:18:01.694881+00:00",
+    "Aerodynamic force": {
+      "depth": 3,
+      "created_at": "2026-11-08T09:48:59.039412+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Organizational_behavior_management"
+        "https://en.wikipedia.org/wiki/Aerodynamic_force"
       ],
-      "updated_at": "2026-09-24T15:18:01.694888+00:00"
+      "updated_at": "2026-11-08T09:48:59.039421+00:00"
     },
-    "Chewing gum": {
-      "depth": 7,
-      "created_at": "2026-09-24T17:06:20.910608+00:00",
+    "Palaeoptera": {
+      "depth": 2,
+      "created_at": "2026-09-16T20:17:46.556467+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Chewing_gum"
+        "https://en.wikipedia.org/wiki/Palaeoptera"
       ],
-      "updated_at": "2026-09-24T17:06:20.910616+00:00"
+      "updated_at": "2026-09-16T20:17:46.556473+00:00"
     },
-    "Addictive behavior": {
-      "depth": 6,
-      "created_at": "2026-09-24T19:56:03.092114+00:00",
+    "Tachinidae": {
+      "depth": 4,
+      "created_at": "2026-09-16T23:10:51.133702+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Addictive_behavior"
+        "https://en.wikipedia.org/wiki/Tachinidae"
       ],
-      "updated_at": "2026-09-24T19:56:03.092123+00:00"
-    },
-    "Behavior Modification (journal)": {
-      "depth": 7,
-      "created_at": "2026-10-04T08:07:01.969692+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_Modification_(journal)"
-      ],
-      "updated_at": "2026-10-04T08:07:01.969699+00:00"
-    },
-    "Evolutionary Ecology (journal)": {
-      "depth": 7,
-      "created_at": "2026-10-08T06:06:07.694718+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Evolutionary_Ecology_(journal)"
-      ],
-      "updated_at": "2026-10-08T06:06:07.694727+00:00"
-    },
-    "Professional practice of behavior analysis": {
-      "depth": 6,
-      "created_at": "2026-09-22T01:06:03.439812+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis"
-      ],
-      "updated_at": "2026-09-22T01:06:03.439819+00:00"
+      "updated_at": "2026-09-16T23:10:51.133706+00:00"
     },
     "Insect flight": {
       "depth": 2,
@@ -1129,6 +817,14 @@
       ],
       "updated_at": "2026-10-27T20:41:10.578343+00:00"
     },
+    "Devonian": {
+      "depth": 2,
+      "created_at": "2026-09-16T16:49:14.505234+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Devonian"
+      ],
+      "updated_at": "2026-09-16T16:49:14.505239+00:00"
+    },
     "Arthropod": {
       "depth": 3,
       "created_at": "2026-09-16T22:28:22.360324+00:00",
@@ -1161,29 +857,13 @@
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
     },
-    "Behavior tree (artificial intelligence, robotics and control)": {
-      "depth": 6,
-      "created_at": "2026-09-21T10:05:02.289900+00:00",
+    "AI Agent-Driven Framework for Automated Product Knowledge Graph Construction in": {
+      "depth": 2,
+      "created_at": "2026-11-08T10:12:13.685028+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence%2C_robotics_and_control)"
+        "https://arxiv.org/abs/2511.11017v1"
       ],
-      "updated_at": "2026-09-21T10:05:02.289907+00:00"
-    },
-    "Association for Contextual Behavioral Science": {
-      "depth": 6,
-      "created_at": "2026-09-23T00:20:03.366120+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Association_for_Contextual_Behavioral_Science"
-      ],
-      "updated_at": "2026-09-23T00:20:03.366127+00:00"
-    },
-    "Aerodynamic force": {
-      "depth": 3,
-      "created_at": "2026-11-08T09:48:59.039412+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Aerodynamic_force"
-      ],
-      "updated_at": "2026-11-08T09:48:59.039421+00:00"
+      "updated_at": "2026-11-08T10:12:13.685032+00:00"
     }
   },
   "edges": [
@@ -1356,124 +1036,8 @@
       "to": "Blacker's Art of Fly Making"
     },
     {
-      "from": "Spiracle (vertebrates)",
-      "to": "Behavior analysis of child development"
-    },
-    {
-      "from": "Behavioral cusp",
-      "to": "Butterfly effect"
-    },
-    {
-      "from": "Clinical behavior analysis",
-      "to": "Association for Behavioral and Cognitive Therapies"
-    },
-    {
-      "from": "Quantitative analysis of behavior",
-      "to": "Behavioral momentum"
-    },
-    {
-      "from": "Behavioral momentum",
-      "to": "Quantitative analysis of behavior"
-    },
-    {
-      "from": "Professional practice of behavior analysis",
-      "to": "Association for Behavioral and Cognitive Therapies"
-    },
-    {
-      "from": "Cephalothorax",
-      "to": "Behavior-based safety"
-    },
-    {
-      "from": "Cephalon (arthropod head)",
-      "to": "Behavior modification"
-    },
-    {
       "from": "Behavioral ecology (disambiguation)",
       "to": "Human behavioral ecology"
-    },
-    {
-      "from": "Licensed behavior analyst",
-      "to": "Behavior management"
-    },
-    {
-      "from": "Licensed behavior analyst",
-      "to": "Behavior modification"
-    },
-    {
-      "from": "Behavior analysis of child development",
-      "to": "Behavior management"
-    },
-    {
-      "from": "Behavior analysis of child development",
-      "to": "Behavior modification"
-    },
-    {
-      "from": "Blacker's Art of Fly Making",
-      "to": "Cognitive behavioral therapy"
-    },
-    {
-      "from": "Association for Contextual Behavioral Science",
-      "to": "Clinical behavior analysis"
-    },
-    {
-      "from": "Association for Contextual Behavioral Science",
-      "to": "Cognitive behavioral therapy"
-    },
-    {
-      "from": "Association for Contextual Behavioral Science",
-      "to": "Radical behaviorism"
-    },
-    {
-      "from": "Behavioral pattern",
-      "to": "Verbal Behavior"
-    },
-    {
-      "from": "Royal Entomological Society",
-      "to": "Abnormality (behavior)"
-    },
-    {
-      "from": "Behavior management",
-      "to": "Behavior analysis of child development"
-    },
-    {
-      "from": "Behavior management",
-      "to": "Behavior modification"
-    },
-    {
-      "from": "Chewing",
-      "to": "Chewing gum"
-    },
-    {
-      "from": "Arthropod head problem",
-      "to": "Behavior change method"
-    },
-    {
-      "from": "Computational phylogenetics",
-      "to": "Behavioral addiction"
-    },
-    {
-      "from": "Behavior-based safety",
-      "to": "Organizational behavior management"
-    },
-    {
-      "from": "Apex predator",
-      "to": "Human behavior"
-    },
-    {
-      "from": "Behavior change method",
-      "to": "Behavior change (public health)"
-    },
-    {
-      "from": "Social and behavior change communication",
-      "to": "Behavior modification"
-    },
-    {
-      "from": "Social and behavior change communication",
-      "to": "Behavior change (public health)"
-    },
-    {
-      "from": "Social and behavior change communication",
-      "to": "Behavior change method"
     },
     {
       "from": "Human behavioral ecology",
@@ -1484,64 +1048,8 @@
       "to": "Evolutionary developmental psychology"
     },
     {
-      "from": "Radical behaviorism",
-      "to": "Behavior modification"
-    },
-    {
-      "from": "Behavioral systems analysis",
-      "to": "Organizational behavior management"
-    },
-    {
-      "from": "Butterfly effect",
-      "to": "Behavioral cusp"
-    },
-    {
-      "from": "Black fly",
-      "to": "Behavior Modification (journal)"
-    },
-    {
-      "from": "Behavior Modification (journal)",
-      "to": "Behavior modification"
-    },
-    {
       "from": "Dragonfly",
       "to": "Anax (dragonfly)"
-    },
-    {
-      "from": "Behavior modification",
-      "to": "Behavior management"
-    },
-    {
-      "from": "Behavior modification",
-      "to": "Behavior change (public health)"
-    },
-    {
-      "from": "Behavior modification",
-      "to": "Behavior Modification (journal)"
-    },
-    {
-      "from": "Behavior modification",
-      "to": "Association for Behavioral and Cognitive Therapies"
-    },
-    {
-      "from": "User behavior analytics",
-      "to": "Behavioral analytics"
-    },
-    {
-      "from": "User behavior analytics",
-      "to": "Network behavior anomaly detection"
-    },
-    {
-      "from": "User behavior analytics",
-      "to": "Human behavior"
-    },
-    {
-      "from": "Experimental analysis of behavior",
-      "to": "Behavioral momentum"
-    },
-    {
-      "from": "Eccentricity (behavior)",
-      "to": "Behavioral contagion"
     },
     {
       "from": "Flight",

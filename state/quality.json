@@ -5338,5 +5338,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T09:48:59.038310+00:00"
+  },
+  "AI Agent-Driven Framework for Automated Product Knowledge Graph Construction in": {
+    "score": 10.0,
+    "metrics": {
+      "words": 354,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Blowfly (musician)",
+        "Insect Festival",
+        "Adaptive compliant wing",
+        "Helicopter flight controls"
+      ],
+      "diversity": 0.76,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:12:13.684587+00:00"
   }
 }

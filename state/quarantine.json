@@ -30,65 +30,6 @@
         "updated_at": "2026-09-16T11:06:18.093351+00:00"
       }
     },
-    "Devonian": {
-      "depth": 2,
-      "created_at": "2026-09-16T16:49:14.505234+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Devonian"
-      ],
-      "updated_at": "2026-09-16T16:49:14.505239+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.619612+00:00",
-      "reason": "low_rel=0.297",
-      "prev_quality": {
-        "score": 8.7,
-        "metrics": {
-          "words": 149,
-          "sections": 3,
-          "links": 4,
-          "link_list": [
-            "Insect",
-            "Diptera",
-            "Evolution",
-            "Fly"
-          ],
-          "diversity": 0.839,
-          "has_placeholder": false,
-          "has_h1": true
-        },
-        "updated_at": "2026-09-16T16:49:14.504857+00:00"
-      }
-    },
-    "Palaeoptera": {
-      "depth": 2,
-      "created_at": "2026-09-16T20:17:46.556467+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Palaeoptera"
-      ],
-      "updated_at": "2026-09-16T20:17:46.556473+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.619616+00:00",
-      "reason": "low_rel=0.0",
-      "prev_quality": {
-        "score": 10.0,
-        "metrics": {
-          "words": 337,
-          "sections": 4,
-          "links": 7,
-          "link_list": [
-            "Fly",
-            "Evolution",
-            "Insect flight",
-            "Devonian",
-            "Aerodynamics",
-            "Wing",
-            "Halteres"
-          ],
-          "diversity": 0.689,
-          "has_placeholder": false,
-          "has_h1": true
-        },
-        "updated_at": "2026-09-16T20:17:46.556031+00:00"
-      }
-    },
     "Mating": {
       "depth": 3,
       "created_at": "2026-09-16T21:45:58.576195+00:00",
@@ -234,42 +175,6 @@
           "has_h1": true
         },
         "updated_at": "2026-09-16T23:09:15.651607+00:00"
-      }
-    },
-    "Tachinidae": {
-      "depth": 4,
-      "created_at": "2026-09-16T23:10:51.133702+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Tachinidae"
-      ],
-      "updated_at": "2026-09-16T23:10:51.133706+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.619635+00:00",
-      "reason": "low_rel=0.297",
-      "prev_quality": {
-        "score": 10.0,
-        "metrics": {
-          "words": 377,
-          "sections": 4,
-          "links": 12,
-          "link_list": [
-            "Aerodynamics",
-            "Compound eye",
-            "Insect behaviour",
-            "Hover",
-            "Wing",
-            "Exoskeleton",
-            "Pollination",
-            "Swarm behaviour",
-            "Insect ecology",
-            "Flight",
-            "Palaeoptera",
-            "Neoptera"
-          ],
-          "diversity": 0.77,
-          "has_placeholder": false,
-          "has_h1": true
-        },
-        "updated_at": "2026-09-16T23:10:51.133205+00:00"
       }
     },
     "Ecology": {
@@ -3570,7 +3475,7 @@
         "https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence%2C_robotics_and_control)"
       ],
       "updated_at": "2026-09-21T10:05:02.289907+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.542399+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448656+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 7.33,
@@ -3593,7 +3498,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_pattern"
       ],
       "updated_at": "2026-09-21T10:10:05.534209+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.542681+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448549+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3623,7 +3528,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_modeling"
       ],
       "updated_at": "2026-09-21T16:30:01.951725+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.542956+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448560+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3652,7 +3557,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_cusp"
       ],
       "updated_at": "2026-09-21T16:43:01.614022+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.543232+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448565+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3682,7 +3587,7 @@
         "https://en.wikipedia.org/wiki/Clinical_behavior_analysis"
       ],
       "updated_at": "2026-09-22T00:33:03.988281+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.543539+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448567+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3711,7 +3616,7 @@
         "https://en.wikipedia.org/wiki/Quantitative_analysis_of_behavior"
       ],
       "updated_at": "2026-09-22T00:40:03.001211+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.543869+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448570+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3741,7 +3646,7 @@
         "https://en.wikipedia.org/wiki/Experimental_analysis_of_behavior"
       ],
       "updated_at": "2026-09-22T00:41:42.197482+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.544210+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448572+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3770,7 +3675,7 @@
         "https://en.wikipedia.org/wiki/Behaviour_therapy"
       ],
       "updated_at": "2026-09-22T00:50:04.935088+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.544481+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448574+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3800,7 +3705,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_momentum"
       ],
       "updated_at": "2026-09-22T00:59:01.969128+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.544489+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448577+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -3830,7 +3735,7 @@
         "https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis"
       ],
       "updated_at": "2026-09-22T01:06:03.439819+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.544855+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448653+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 9.5,
@@ -3860,7 +3765,7 @@
         "https://en.wikipedia.org/wiki/Butterfly_effect"
       ],
       "updated_at": "2026-09-22T13:14:02.419700+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.544899+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448579+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -3891,7 +3796,7 @@
         "https://en.wikipedia.org/wiki/Association_for_Behavioral_and_Cognitive_Therapies"
       ],
       "updated_at": "2026-09-22T13:45:03.152860+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.545313+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448582+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -3921,7 +3826,7 @@
         "https://en.wikipedia.org/wiki/Behavior_modification"
       ],
       "updated_at": "2026-09-22T13:46:39.929979+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.545322+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448584+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -3987,7 +3892,7 @@
         "https://en.wikipedia.org/wiki/Licensed_behavior_analyst"
       ],
       "updated_at": "2026-09-22T18:30:02.025807+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.545989+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448586+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4017,7 +3922,7 @@
         "https://en.wikipedia.org/wiki/Behavior_analysis_of_child_development"
       ],
       "updated_at": "2026-09-22T21:05:02.727284+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546338+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448588+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4047,7 +3952,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_activation"
       ],
       "updated_at": "2026-09-22T21:09:54.279839+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546627+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448591+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4076,7 +3981,7 @@
         "https://en.wikipedia.org/wiki/Cognitive_behavioral_analysis_system_of_psychotherapy"
       ],
       "updated_at": "2026-09-22T21:13:08.263726+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546637+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448593+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -4105,7 +4010,7 @@
         "https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy"
       ],
       "updated_at": "2026-09-22T21:18:02.448547+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546644+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448595+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -4135,7 +4040,7 @@
         "https://en.wikipedia.org/wiki/Dialectical_behavior_therapy"
       ],
       "updated_at": "2026-09-22T21:19:42.633266+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546680+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448597+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -4164,7 +4069,7 @@
         "https://en.wikipedia.org/wiki/Anti-social_behaviour"
       ],
       "updated_at": "2026-09-22T21:34:04.151357+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.546984+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448600+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4194,7 +4099,7 @@
         "https://en.wikipedia.org/wiki/Association_for_Contextual_Behavioral_Science"
       ],
       "updated_at": "2026-09-23T00:20:03.366127+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.547357+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448658+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 7.33,
@@ -4217,7 +4122,7 @@
         "https://en.wikipedia.org/wiki/Verbal_Behavior"
       ],
       "updated_at": "2026-09-23T00:21:43.180693+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.547624+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448602+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4247,7 +4152,7 @@
         "https://en.wikipedia.org/wiki/Abnormality_(behavior)"
       ],
       "updated_at": "2026-09-23T00:23:22.866425+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.547912+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448604+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4278,7 +4183,7 @@
         "https://en.wikipedia.org/wiki/Behavior_management"
       ],
       "updated_at": "2026-09-23T00:34:02.842733+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.548204+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448606+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4307,7 +4212,7 @@
         "https://en.wikipedia.org/wiki/Behavioural_change_theories"
       ],
       "updated_at": "2026-09-23T00:40:34.189073+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.548512+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448608+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4338,7 +4243,7 @@
         "https://en.wikipedia.org/wiki/Eccentricity_(behavior)"
       ],
       "updated_at": "2026-09-23T04:05:10.425380+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.548519+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448610+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -4368,7 +4273,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_addiction"
       ],
       "updated_at": "2026-09-23T04:06:48.905915+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.548804+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448612+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4398,7 +4303,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_contagion"
       ],
       "updated_at": "2026-09-23T04:10:02.026828+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.549097+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448614+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4428,7 +4333,7 @@
         "https://en.wikipedia.org/wiki/Behavior_change_(public_health)"
       ],
       "updated_at": "2026-09-23T04:22:01.779007+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.549422+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448617+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4457,7 +4362,7 @@
         "https://en.wikipedia.org/wiki/Behavior-based_safety"
       ],
       "updated_at": "2026-09-23T04:27:01.920812+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.549708+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448619+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4487,7 +4392,7 @@
         "https://en.wikipedia.org/wiki/User_behavior_analytics"
       ],
       "updated_at": "2026-09-23T04:40:28.929460+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.550011+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448621+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4517,7 +4422,7 @@
         "https://en.wikipedia.org/wiki/Human_behavior"
       ],
       "updated_at": "2026-09-23T08:56:51.582580+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.550276+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448623+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4552,7 +4457,7 @@
         "https://en.wikipedia.org/wiki/Network_behavior_anomaly_detection"
       ],
       "updated_at": "2026-09-23T10:43:00.869633+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.550618+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448625+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4583,7 +4488,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_analytics"
       ],
       "updated_at": "2026-09-23T10:54:03.007423+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.550900+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448628+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4613,7 +4518,7 @@
         "https://en.wikipedia.org/wiki/Behavior_change_method"
       ],
       "updated_at": "2026-09-23T11:03:01.553560+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.551202+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448631+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4672,7 +4577,7 @@
         "https://en.wikipedia.org/wiki/Social_and_behavior_change_communication"
       ],
       "updated_at": "2026-09-23T11:29:02.460443+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.551829+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448633+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4702,7 +4607,7 @@
         "https://en.wikipedia.org/wiki/Behavioural_design"
       ],
       "updated_at": "2026-09-23T16:02:02.140955+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.552126+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448635+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4792,7 +4697,7 @@
         "https://en.wikipedia.org/wiki/Radical_behaviorism"
       ],
       "updated_at": "2026-09-24T03:24:01.316771+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.553057+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448637+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4859,7 +4764,7 @@
         "https://en.wikipedia.org/wiki/Behavioral_systems_analysis"
       ],
       "updated_at": "2026-09-24T08:58:04.673124+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.553632+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448640+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4920,7 +4825,7 @@
         "https://en.wikipedia.org/wiki/Organizational_behavior_management"
       ],
       "updated_at": "2026-09-24T15:18:01.694888+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.554516+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448642+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -4950,7 +4855,7 @@
         "https://en.wikipedia.org/wiki/Chewing_gum"
       ],
       "updated_at": "2026-09-24T17:06:20.910616+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.554524+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448645+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -4979,7 +4884,7 @@
         "https://en.wikipedia.org/wiki/Addictive_behavior"
       ],
       "updated_at": "2026-09-24T19:56:03.092123+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.554799+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448647+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -5009,7 +4914,7 @@
         "https://en.wikipedia.org/wiki/Behavior_Modification_(journal)"
       ],
       "updated_at": "2026-10-04T08:07:01.969699+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.554808+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448649+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
@@ -5039,7 +4944,7 @@
         "https://en.wikipedia.org/wiki/Evolutionary_Ecology_(journal)"
       ],
       "updated_at": "2026-10-08T06:06:07.694727+00:00",
-      "quarantined_at": "2026-11-08T09:48:48.555125+00:00",
+      "quarantined_at": "2026-11-08T10:12:04.448651+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
@@ -6447,8 +6352,180 @@
     {
       "from": "Eccentricity (behavior)",
       "to": "Behavior"
+    },
+    {
+      "from": "Spiracle (vertebrates)",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Behavioral cusp",
+      "to": "Butterfly effect"
+    },
+    {
+      "from": "Clinical behavior analysis",
+      "to": "Association for Behavioral and Cognitive Therapies"
+    },
+    {
+      "from": "Quantitative analysis of behavior",
+      "to": "Behavioral momentum"
+    },
+    {
+      "from": "Behavioral momentum",
+      "to": "Quantitative analysis of behavior"
+    },
+    {
+      "from": "Professional practice of behavior analysis",
+      "to": "Association for Behavioral and Cognitive Therapies"
+    },
+    {
+      "from": "Cephalothorax",
+      "to": "Behavior-based safety"
+    },
+    {
+      "from": "Cephalon (arthropod head)",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Licensed behavior analyst",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Behavior analysis of child development",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Cognitive behavioral therapy"
+    },
+    {
+      "from": "Association for Contextual Behavioral Science",
+      "to": "Clinical behavior analysis"
+    },
+    {
+      "from": "Association for Contextual Behavioral Science",
+      "to": "Cognitive behavioral therapy"
+    },
+    {
+      "from": "Association for Contextual Behavioral Science",
+      "to": "Radical behaviorism"
+    },
+    {
+      "from": "Behavioral pattern",
+      "to": "Verbal Behavior"
+    },
+    {
+      "from": "Royal Entomological Society",
+      "to": "Abnormality (behavior)"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior analysis of child development"
+    },
+    {
+      "from": "Behavior management",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Chewing",
+      "to": "Chewing gum"
+    },
+    {
+      "from": "Arthropod head problem",
+      "to": "Behavior change method"
+    },
+    {
+      "from": "Computational phylogenetics",
+      "to": "Behavioral addiction"
+    },
+    {
+      "from": "Behavior-based safety",
+      "to": "Organizational behavior management"
+    },
+    {
+      "from": "Apex predator",
+      "to": "Human behavior"
+    },
+    {
+      "from": "Behavior change method",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Social and behavior change communication",
+      "to": "Behavior change method"
+    },
+    {
+      "from": "Radical behaviorism",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Behavioral systems analysis",
+      "to": "Organizational behavior management"
+    },
+    {
+      "from": "Butterfly effect",
+      "to": "Behavioral cusp"
+    },
+    {
+      "from": "Black fly",
+      "to": "Behavior Modification (journal)"
+    },
+    {
+      "from": "Behavior Modification (journal)",
+      "to": "Behavior modification"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior management"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior change (public health)"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Behavior Modification (journal)"
+    },
+    {
+      "from": "Behavior modification",
+      "to": "Association for Behavioral and Cognitive Therapies"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Behavioral analytics"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Network behavior anomaly detection"
+    },
+    {
+      "from": "User behavior analytics",
+      "to": "Human behavior"
+    },
+    {
+      "from": "Experimental analysis of behavior",
+      "to": "Behavioral momentum"
+    },
+    {
+      "from": "Eccentricity (behavior)",
+      "to": "Behavioral contagion"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T09:48:48.644740+00:00"
+  "updated_at": "2026-11-08T10:12:04.454082+00:00"
 }
