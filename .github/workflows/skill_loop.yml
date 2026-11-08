@@ -1,0 +1,63 @@
+name: skill_loop
+
+# Boucle autonome compétences uniquement
+on:
+  schedule:
+    # 1× / jour + créneau off-peak
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+    inputs:
+      cycles:
+        description: "Nombre de notes skill_learn"
+        required: false
+        default: "10"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: the-fly-skill-loop
+  cancel-in-progress: true
+
+jobs:
+  skills:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "fly-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Skill loop
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          CYCLES="${{ github.event.inputs.cycles }}"
+          if [ -z "$CYCLES" ]; then CYCLES=10; fi
+          python run_cortex.py --mode skill_loop --cycles "$CYCLES" --interval 35 --max-minutes 45
+
+      - name: Safety push
+        run: |
+          git add -A
+          if ! git diff --staged --quiet; then
+            git commit -m "skill_loop: safety" || true
+          fi
+          git fetch origin main
+          git pull --rebase origin main || {
+            git rebase --abort || true
+            git pull origin main --no-rebase --no-edit || true
+          }
+          git push origin HEAD:main || true
