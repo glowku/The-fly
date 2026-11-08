@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-08 18:40:43 UTC
+**Dernière mise à jour** : 2026-11-08 23:26:58 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **21.742** |
-| Concepts traités | 200 | **112** |
-| Qualité moyenne | ≥ 7.5 | **9.71/10** |
+| Score global | maximiser | **22.345** |
+| Concepts traités | 200 | **115** |
+| Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **112** |
-| Arêtes du graphe | 52 |
-| Frontière (à explorer) | 13 |
+| Concepts traités (nœuds) | **115** |
+| Arêtes du graphe | 55 |
+| Frontière (à explorer) | 14 |
 | Profondeur max | 9 |
-| Score qualité moyen | **9.71/10** |
-| Score objectif (coverage × quality) | **21.742** |
-| Actions dernières 24 h | 173 |
+| Score qualité moyen | **9.72/10** |
+| Score objectif (coverage × quality) | **22.345** |
+| Actions dernières 24 h | 187 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 280 |
+| Excellent (≥ 8) | 289 |
 | Bon (6 – 8) | 6 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-08T16:51:59  skill_reinforc  
-2026-11-08T16:53:04  skill_reinforc  
-2026-11-08T16:53:06  auto_learn_exp  Area (graph drawing) score=10.0
-2026-11-08T16:53:06  auto_learn_cyc  
-2026-11-08T16:53:08  triage_restore  
-2026-11-08T16:53:08  triage          
-2026-11-08T16:54:12  skill_reinforc  
-2026-11-08T16:55:18  skill_reinforc  
-2026-11-08T16:55:20  auto_learn_exp  Graph drawing score=8.7
-2026-11-08T16:55:20  auto_learn_cyc  
-2026-11-08T17:53:58  triage_restore  
-2026-11-08T17:53:58  triage_restore  
-2026-11-08T17:53:58  triage          
-2026-11-08T17:54:02  skill_reinforc  
-2026-11-08T17:54:08  auto_learn_cyc  
+2026-11-08T22:24:16  skill_reinforc  
+2026-11-08T22:25:23  auto_learn_cyc  
+2026-11-08T22:25:25  triage_restore  
+2026-11-08T22:25:25  triage          
+2026-11-08T22:26:29  skill_reinforc  
+2026-11-08T22:27:36  auto_learn_cyc  
+2026-11-08T22:28:45  skill_reinforc  
+2026-11-08T22:29:53  auto_learn_cyc  
+2026-11-08T22:29:55  triage_restore  
+2026-11-08T22:29:55  triage          
+2026-11-08T22:31:01  skill_reinforc  
+2026-11-08T22:32:09  auto_learn_cyc  
+2026-11-08T23:01:01  plan            Technical drawing
+2026-11-08T23:01:01  skill_reinforc  
+2026-11-08T23:01:01  branch          Technical drawing
 ```
 
 ## Architecture de l'agent
