@@ -68,7 +68,7 @@
     "last_reinforced": "2026-11-07T05:04:11.892092+00:00"
   },
   "vol_et_aerodynamique": {
-    "level": 9.2,
+    "level": 9.3,
     "description": "Mécanismes du vol des diptères",
     "keywords": [
       "flight",
@@ -99,9 +99,10 @@
       "Royal Entomological Society",
       "Insects in ethics",
       "Black fly",
-      "Damselfly"
+      "Damselfly",
+      "Aerodynamic force"
     ],
-    "last_reinforced": "2026-11-06T23:46:28.843216+00:00"
+    "last_reinforced": "2026-11-08T09:48:59.205117+00:00"
   },
   "ecologie": {
     "level": 9.24,
