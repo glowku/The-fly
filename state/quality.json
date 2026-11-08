@@ -5415,5 +5415,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T10:18:05.158890+00:00"
+  },
+  "Authentication": {
+    "score": 10.0,
+    "metrics": {
+      "words": 317,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Gestion des identités",
+        "Authentification forte",
+        "Système informatique",
+        "Sécurité informatique",
+        "Identification"
+      ],
+      "diversity": 0.687,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-08T10:18:46.680192+00:00"
   }
 }
