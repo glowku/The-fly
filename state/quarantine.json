@@ -5688,6 +5688,35 @@
         },
         "updated_at": "2026-11-09T01:34:24.712117+00:00"
       }
+    },
+    "Factually Exploring Wearable Fact-Checking for Augmented Truth Discernment": {
+      "depth": 2,
+      "created_at": "2026-11-09T01:37:45.792710+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2504.17204v1"
+      ],
+      "updated_at": "2026-11-09T01:37:45.792715+00:00",
+      "quarantined_at": "2026-11-09T01:38:35.516506+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 375,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Bonefish fly patterns",
+            "Insects in ethics",
+            "Blue-winged Olive flies",
+            "Insect Festival",
+            "Behavioral ecology (disambiguation)"
+          ],
+          "diversity": 0.789,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T01:37:45.792224+00:00"
+      }
     }
   },
   "edges": [
@@ -7257,5 +7286,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-09T01:35:14.364646+00:00"
+  "updated_at": "2026-11-09T01:38:35.523073+00:00"
 }
