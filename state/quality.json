@@ -6064,5 +6064,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:59:50.975232+00:00"
+  },
+  "Cross-origin resource sharing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 416,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Chemical ecology",
+        "Angular resolution (graph drawing)",
+        "Human behavioral ecology",
+        "Cultural ecology",
+        "Insects in ethics",
+        "Evolutionary developmental psychology"
+      ],
+      "diversity": 0.692,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T06:15:02.145864+00:00"
   }
 }
