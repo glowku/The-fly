@@ -6400,5 +6400,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T20:37:17.602391+00:00"
+  },
+  "Canvassing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Graph database",
+        "Data and information visualization",
+        "Network theory",
+        "Technical drawing",
+        "Area (graph drawing)"
+      ],
+      "diversity": 0.757,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T20:38:57.300035+00:00"
   }
 }
