@@ -913,22 +913,6 @@
       ],
       "updated_at": "2026-09-16T22:59:40.242014+00:00"
     },
-    "Architectural drawing": {
-      "depth": 4,
-      "created_at": "2026-11-08T21:58:37.712165+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Architectural_drawing"
-      ],
-      "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Overcoming low-utility facets for complex answer retrieval": {
-      "depth": 2,
-      "created_at": "2026-11-09T01:32:41.292828+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1811.08772v1"
-      ],
-      "updated_at": "2026-11-09T01:32:41.292832+00:00"
-    },
     "International Symposium on Graph Drawing": {
       "depth": 3,
       "created_at": "2026-11-09T01:33:30.801125+00:00",
@@ -937,13 +921,21 @@
       ],
       "updated_at": "2026-11-09T01:33:30.801132+00:00"
     },
-    "Reclaiming the Horizon Novel Visualization Designs for Time-Series Data with Lar": {
-      "depth": 2,
-      "created_at": "2026-11-09T01:34:24.712578+00:00",
+    "Architectural drawing": {
+      "depth": 4,
+      "created_at": "2026-11-08T21:58:37.712165+00:00",
       "sources": [
-        "https://arxiv.org/abs/2307.10278v2"
+        "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
-      "updated_at": "2026-11-09T01:34:24.712583+00:00"
+      "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
+      "depth": 2,
+      "created_at": "2026-11-09T01:36:05.054655+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1710.04328v1"
+      ],
+      "updated_at": "2026-11-09T01:36:05.054660+00:00"
     }
   },
   "edges": [

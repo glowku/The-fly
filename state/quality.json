@@ -5360,22 +5360,21 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 368,
+      "words": 339,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Amateur Entomologists' Society",
-        "Helicopter flight controls",
-        "Black fly",
-        "Blacker's Art of Fly Making",
-        "Common green bottle fly",
-        "Insect Week"
+        "Cultural ecology",
+        "Evolutionary developmental psychology",
+        "Chemical ecology",
+        "Human behavioral ecology",
+        "Behavioral ecology (disambiguation)"
       ],
-      "diversity": 0.712,
+      "diversity": 0.745,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-08T21:53:00.276696+00:00"
+    "updated_at": "2026-11-09T01:36:05.054008+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,

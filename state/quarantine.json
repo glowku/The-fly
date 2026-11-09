@@ -5630,6 +5630,64 @@
         },
         "updated_at": "2026-11-08T22:28:45.572390+00:00"
       }
+    },
+    "Overcoming low-utility facets for complex answer retrieval": {
+      "depth": 2,
+      "created_at": "2026-11-09T01:32:41.292828+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1811.08772v1"
+      ],
+      "updated_at": "2026-11-09T01:32:41.292832+00:00",
+      "quarantined_at": "2026-11-09T01:35:14.357022+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 391,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Neural ranking technique",
+            "Knowledge graph embeddings",
+            "TREC CAR dataset",
+            "Complex Answer Retrieval"
+          ],
+          "diversity": 0.722,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T01:32:41.292354+00:00"
+      }
+    },
+    "Reclaiming the Horizon Novel Visualization Designs for Time-Series Data with Lar": {
+      "depth": 2,
+      "created_at": "2026-11-09T01:34:24.712578+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2307.10278v2"
+      ],
+      "updated_at": "2026-11-09T01:34:24.712583+00:00",
+      "quarantined_at": "2026-11-09T01:35:14.357043+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 415,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Bonefish fly patterns",
+            "Insects in ethics",
+            "Blue-winged Olive flies",
+            "Insect Festival",
+            "Chemical ecology",
+            "Behavioral ecology (disambiguation)"
+          ],
+          "diversity": 0.741,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T01:34:24.712117+00:00"
+      }
     }
   },
   "edges": [
@@ -7199,5 +7257,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-09T01:32:27.814876+00:00"
+  "updated_at": "2026-11-09T01:35:14.364646+00:00"
 }
