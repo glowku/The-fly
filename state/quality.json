@@ -6103,5 +6103,22 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T09:32:59.963729+00:00"
+  },
+  "Template-Based Graph Clustering": {
+    "score": 9.5,
+    "metrics": {
+      "words": 376,
+      "sections": 3,
+      "links": 3,
+      "link_list": [
+        "Insects in ethics",
+        "Area (graph drawing)",
+        "Angular resolution (graph drawing)"
+      ],
+      "diversity": 0.767,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T09:35:10.898261+00:00"
   }
 }

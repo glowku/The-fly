@@ -5484,17 +5484,17 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-09T01:51:00.271164+00:00",
+      "created_at": "2026-11-09T09:29:45.547304+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-09T01:51:00.271169+00:00",
-      "quarantined_at": "2026-11-09T01:54:22.007991+00:00",
+      "updated_at": "2026-11-09T09:29:45.547308+00:00",
+      "quarantined_at": "2026-11-09T09:33:47.886681+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 370,
+          "words": 410,
           "sections": 4,
           "links": 5,
           "link_list": [
@@ -5502,13 +5502,13 @@
             "Cultural ecology",
             "Evolutionary developmental psychology",
             "Human behavioral ecology",
-            "Insects in ethics"
+            "Chemical ecology"
           ],
-          "diversity": 0.814,
+          "diversity": 0.726,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-09T01:51:00.270649+00:00"
+        "updated_at": "2026-11-09T09:29:45.546783+00:00"
       }
     },
     "OWASP": {
@@ -5745,6 +5745,35 @@
           "has_h1": true
         },
         "updated_at": "2026-11-09T01:55:27.451890+00:00"
+      }
+    },
+    "Scientific Literature Text Mining and the Case for Open Access": {
+      "depth": 2,
+      "created_at": "2026-11-09T09:32:59.964171+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1611.00097v3"
+      ],
+      "updated_at": "2026-11-09T09:32:59.964175+00:00",
+      "quarantined_at": "2026-11-09T09:33:47.886696+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 394,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Behavioral ecology (disambiguation)",
+            "Cultural ecology",
+            "Evolutionary developmental psychology",
+            "Human behavioral ecology",
+            "Chemical ecology"
+          ],
+          "diversity": 0.738,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T09:32:59.963729+00:00"
       }
     }
   },
@@ -7315,5 +7344,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-09T09:29:35.651341+00:00"
+  "updated_at": "2026-11-09T09:33:47.892132+00:00"
 }
