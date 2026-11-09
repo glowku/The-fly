@@ -5760,20 +5760,19 @@
     "metrics": {
       "words": 370,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Human behavioral ecology",
-        "Blue-winged Olive flies",
-        "Black fly",
         "Behavioral ecology (disambiguation)",
-        "Common green bottle fly",
-        "Insect Week"
+        "Cultural ecology",
+        "Evolutionary developmental psychology",
+        "Human behavioral ecology",
+        "Insects in ethics"
       ],
-      "diversity": 0.753,
+      "diversity": 0.814,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-08T21:54:39.616520+00:00"
+    "updated_at": "2026-11-09T01:51:00.270649+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
