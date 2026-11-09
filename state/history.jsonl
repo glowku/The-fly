@@ -6488,3 +6488,5 @@
 {"ts": "2026-11-09T01:32:38.480741+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 1.35, "article": "overcoming-low-utility-facets-for-complex-answer-retrieval"}
 {"ts": "2026-11-09T01:32:38.480794+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Overcoming low-utility facets for complex answer retrieval", "url": "https://arxiv.org/abs/1811.08772v1"}
 {"ts": "2026-11-09T01:33:31.004661+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 9.31, "article": "International Symposium on Graph Drawing"}
+{"ts": "2026-11-09T01:33:32.887469+00:00", "type": "auto_learn_expand", "title": "International Symposium on Graph Drawing", "skill": "evolution", "score": 7.33, "objective": 22.717}
+{"ts": "2026-11-09T01:33:32.888170+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": true}]}
