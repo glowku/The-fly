@@ -229,13 +229,12 @@
       "factually-exploring-wearable-fact-checking-for-augmented-truth-discern",
       "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit",
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
-      "evor-evolving-retrieval-for-code-generation",
-      "agent-driven-automatic-software-improvement"
+      "evor-evolving-retrieval-for-code-generation"
     ],
     "last_reinforced": "2026-11-09T21:04:36.930227+00:00"
   },
   "representation": {
-    "level": 2.09,
+    "level": 2.24,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -257,7 +256,7 @@
       "Graphics processing unit",
       "Canvassing"
     ],
-    "last_reinforced": "2026-11-09T20:38:57.307223+00:00"
+    "last_reinforced": "2026-11-09T21:06:50.389720+00:00"
   },
   "raisonnement": {
     "level": 2.1,

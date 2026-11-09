@@ -5938,6 +5938,36 @@
         },
         "updated_at": "2026-11-09T20:57:56.662884+00:00"
       }
+    },
+    "Agent-Driven Automatic Software Improvement": {
+      "depth": 2,
+      "created_at": "2026-11-09T21:04:39.037725+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2406.16739v1"
+      ],
+      "updated_at": "2026-11-09T21:04:39.037729+00:00",
+      "quarantined_at": "2026-11-09T21:05:46.365266+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 396,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Network theory",
+            "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance",
+            "Graph database",
+            "Application security",
+            "Diagrammatic reasoning",
+            "Data and information visualization"
+          ],
+          "diversity": 0.772,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T21:04:39.037268+00:00"
+      }
     }
   },
   "edges": [
@@ -7507,5 +7537,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-09T21:01:22.621522+00:00"
+  "updated_at": "2026-11-09T21:05:46.373277+00:00"
 }
