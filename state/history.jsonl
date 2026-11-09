@@ -6582,3 +6582,5 @@
 {"ts": "2026-11-09T12:39:26.644171+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
 {"ts": "2026-11-09T12:40:13.219490+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 1.9, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
 {"ts": "2026-11-09T12:40:13.219531+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
+{"ts": "2026-11-09T12:40:58.695639+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 1.93, "article": "automated-literature-review-using-nlp-techniques-and-llm-based-retriev"}
+{"ts": "2026-11-09T12:40:58.695687+00:00", "type": "skill_learn_arxiv", "skill": "code_et_outils", "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation", "url": "https://arxiv.org/abs/2411.18583v1"}

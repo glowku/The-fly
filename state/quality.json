@@ -6231,5 +6231,18 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:38:45.812728+00:00"
+  },
+  "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment": {
+    "score": 7.33,
+    "metrics": {
+      "words": 241,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.842,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:41:02.504237+00:00"
   }
 }
