@@ -6531,3 +6531,4 @@
 {"ts": "2026-11-09T06:14:56.655422+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-09T06:14:56.681573+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 119, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-09T06:15:02.153512+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.55, "article": "Cross-origin resource sharing"}
+{"ts": "2026-11-09T06:15:09.325519+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
