@@ -6013,22 +6013,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 343,
+      "words": 344,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "RFID",
-        "ISO‑18000‑6C",
-        "Firmware update",
-        "Physical Unclonable Function",
-        "Texas Instruments",
-        "Energy harvesting"
+        "Technical drawing",
+        "Angular resolution (graph drawing)",
+        "Palaeoptera",
+        "Tachinidae",
+        "Data and information visualization",
+        "Area (graph drawing)"
       ],
-      "diversity": 0.788,
+      "diversity": 0.75,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T09:36:45.938487+00:00"
+    "updated_at": "2026-11-09T16:21:27.586508+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,

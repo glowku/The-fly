@@ -277,7 +277,7 @@
     "last_reinforced": "2026-11-09T12:44:27.952724+00:00"
   },
   "securite_defensive": {
-    "level": 1.9,
+    "level": 2.05,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -292,10 +292,9 @@
       "Technical drawing",
       "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo",
       "Cross-origin resource sharing",
-      "Principle of least privilege",
       "Application security"
     ],
-    "last_reinforced": "2026-11-09T12:41:43.793655+00:00"
+    "last_reinforced": "2026-11-09T16:21:25.407736+00:00"
   },
   "recherche_web": {
     "level": 1.95,

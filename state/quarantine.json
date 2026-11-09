@@ -5484,31 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-09T10:12:08.385775+00:00",
+      "created_at": "2026-11-09T12:40:16.158508+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-09T10:12:08.385780+00:00",
-      "quarantined_at": "2026-11-09T10:15:25.157349+00:00",
+      "updated_at": "2026-11-09T12:40:16.158512+00:00",
+      "quarantined_at": "2026-11-09T16:21:19.968643+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 331,
-          "sections": 3,
-          "links": 5,
+          "words": 337,
+          "sections": 4,
+          "links": 6,
           "link_list": [
-            "Cultural ecology",
+            "Angular resolution (graph drawing)",
+            "Area (graph drawing)",
             "Technical drawing",
-            "Evolutionary developmental psychology",
-            "Human behavioral ecology",
-            "Data and information visualization"
+            "Cultural ecology",
+            "Data and information visualization",
+            "Graph database"
           ],
-          "diversity": 0.82,
+          "diversity": 0.769,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-09T10:12:08.384965+00:00"
+        "updated_at": "2026-11-09T12:40:16.156131+00:00"
       }
     },
     "OWASP": {
@@ -5826,6 +5827,86 @@
           "has_h1": true
         },
         "updated_at": "2026-11-09T10:14:19.795708+00:00"
+      }
+    },
+    "Dynamic Information Retrieval Theoretical Framework and Application": {
+      "depth": 2,
+      "created_at": "2026-11-09T10:16:30.737045+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1601.04605v1"
+      ],
+      "updated_at": "2026-11-09T10:16:30.737050+00:00",
+      "quarantined_at": "2026-11-09T16:21:19.968625+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 421,
+          "sections": 5,
+          "links": 4,
+          "link_list": [
+            "Cultural ecology",
+            "Chemical ecology",
+            "Human behavioral ecology",
+            "Data and information visualization"
+          ],
+          "diversity": 0.735,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T10:16:30.736499+00:00"
+      }
+    },
+    "Principle of least privilege": {
+      "depth": 3,
+      "created_at": "2026-11-09T12:38:03.604176+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+      ],
+      "updated_at": "2026-11-09T12:38:03.604180+00:00",
+      "quarantined_at": "2026-11-09T16:21:19.968640+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 380,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Angular resolution (graph drawing)",
+            "Area (graph drawing)",
+            "Technical drawing",
+            "Data and information visualization",
+            "Graph database"
+          ],
+          "diversity": 0.751,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T12:38:03.603638+00:00"
+      }
+    },
+    "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augment": {
+      "depth": 2,
+      "created_at": "2026-11-09T12:41:02.504717+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2411.18583v1"
+      ],
+      "updated_at": "2026-11-09T12:41:02.504721+00:00",
+      "quarantined_at": "2026-11-09T16:21:19.968646+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 7.33,
+        "metrics": {
+          "words": 241,
+          "sections": 2,
+          "links": 0,
+          "link_list": [],
+          "diversity": 0.842,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-09T12:41:02.504237+00:00"
       }
     }
   },
@@ -7396,5 +7477,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-09T10:15:25.166126+00:00"
+  "updated_at": "2026-11-09T16:21:19.974865+00:00"
 }
