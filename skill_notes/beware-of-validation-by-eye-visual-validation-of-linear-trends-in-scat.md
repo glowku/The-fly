@@ -3,7 +3,7 @@ skill: recherche_image
 title: Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots
 source: arxiv
 url: https://arxiv.org/abs/2407.11625v2
-created: 2026-11-09T01:57:37.835654+00:00
+created: 2026-11-09T10:09:56.795119+00:00
 ---
 
 # Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots

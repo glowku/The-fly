@@ -976,6 +976,14 @@
         "https://en.wikipedia.org/wiki/JSON"
       ],
       "updated_at": "2026-11-09T10:07:48.979311+00:00"
+    },
+    "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots": {
+      "depth": 2,
+      "created_at": "2026-11-09T10:09:58.522211+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2407.11625v2"
+      ],
+      "updated_at": "2026-11-09T10:09:58.522218+00:00"
     }
   },
   "edges": [

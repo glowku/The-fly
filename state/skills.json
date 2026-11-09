@@ -312,7 +312,7 @@
     "last_reinforced": "2026-11-09T09:32:18.200532+00:00"
   },
   "recherche_image": {
-    "level": 1.57,
+    "level": 1.72,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -327,6 +327,6 @@
       "Technical drawing",
       "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat"
     ],
-    "last_reinforced": "2026-11-09T01:57:37.835964+00:00"
+    "last_reinforced": "2026-11-09T10:09:56.795713+00:00"
   }
 }

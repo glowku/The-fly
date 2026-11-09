@@ -6135,5 +6135,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T10:07:48.978681+00:00"
+  },
+  "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots": {
+    "score": 10.0,
+    "metrics": {
+      "words": 364,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Area (graph drawing)",
+        "Angular resolution (graph drawing)",
+        "Technical drawing",
+        "Data and information visualization"
+      ],
+      "diversity": 0.773,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T10:09:58.521547+00:00"
   }
 }
