@@ -6172,5 +6172,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T10:14:19.795708+00:00"
+  },
+  "Dynamic Information Retrieval Theoretical Framework and Application": {
+    "score": 10.0,
+    "metrics": {
+      "words": 421,
+      "sections": 5,
+      "links": 4,
+      "link_list": [
+        "Cultural ecology",
+        "Chemical ecology",
+        "Human behavioral ecology",
+        "Data and information visualization"
+      ],
+      "diversity": 0.735,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T10:16:30.736499+00:00"
   }
 }
