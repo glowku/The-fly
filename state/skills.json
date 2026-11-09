@@ -231,7 +231,7 @@
     "last_reinforced": "2026-11-09T01:37:43.706563+00:00"
   },
   "representation": {
-    "level": 1.42,
+    "level": 1.52,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -246,9 +246,10 @@
       "force-directed-graph-layouts",
       "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
       "Force-directed graph drawing",
-      "Data and information visualization"
+      "Data and information visualization",
+      "Network theory"
     ],
-    "last_reinforced": "2026-11-09T01:36:00.628667+00:00"
+    "last_reinforced": "2026-11-09T01:59:50.980824+00:00"
   },
   "raisonnement": {
     "level": 1.45,

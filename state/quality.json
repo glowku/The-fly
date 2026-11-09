@@ -6045,5 +6045,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:55:27.451890+00:00"
+  },
+  "Network theory": {
+    "score": 10.0,
+    "metrics": {
+      "words": 333,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Behavioral ecology (disambiguation)",
+        "Cultural ecology",
+        "Chemical ecology",
+        "Evolutionary developmental psychology",
+        "Human behavioral ecology"
+      ],
+      "diversity": 0.721,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:59:50.975232+00:00"
   }
 }

@@ -6520,3 +6520,6 @@
 {"ts": "2026-11-09T01:57:37.836445+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.57, "article": "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat"}
 {"ts": "2026-11-09T01:57:37.836496+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots", "url": "https://arxiv.org/abs/2407.11625v2"}
 {"ts": "2026-11-09T01:58:45.408264+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-09T01:58:47.244796+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-09T01:58:47.266038+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 118, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "Neural ranking models for document retrieval", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-09T01:59:50.981181+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 1.52, "article": "Network theory"}
