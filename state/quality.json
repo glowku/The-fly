@@ -6321,5 +6321,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:43:48.382481+00:00"
+  },
+  "Automated reasoning": {
+    "score": 10.0,
+    "metrics": {
+      "words": 424,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
+        "Area (graph drawing)",
+        "Technical drawing",
+        "Network theory",
+        "Data and information visualization",
+        "Graph database"
+      ],
+      "diversity": 0.756,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:44:27.947769+00:00"
   }
 }

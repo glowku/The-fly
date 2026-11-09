@@ -1048,6 +1048,14 @@
         "https://en.wikipedia.org/wiki/Graphics_processing_unit"
       ],
       "updated_at": "2026-11-09T12:43:48.383679+00:00"
+    },
+    "Automated reasoning": {
+      "depth": 4,
+      "created_at": "2026-11-09T12:44:27.948293+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Automated_reasoning"
+      ],
+      "updated_at": "2026-11-09T12:44:27.948297+00:00"
     }
   },
   "edges": [
