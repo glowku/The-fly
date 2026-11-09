@@ -5939,5 +5939,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-08T22:31:01.722370+00:00"
+  },
+  "Overcoming low-utility facets for complex answer retrieval": {
+    "score": 10.0,
+    "metrics": {
+      "words": 391,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Neural ranking technique",
+        "Knowledge graph embeddings",
+        "TREC CAR dataset",
+        "Complex Answer Retrieval"
+      ],
+      "diversity": 0.722,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:32:41.292354+00:00"
   }
 }
