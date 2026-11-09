@@ -6608,3 +6608,4 @@
 {"ts": "2026-11-09T20:36:33.798166+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-09T20:36:33.829094+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 130, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-09T20:37:17.609937+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 2.07, "article": "Diagrams.net"}
+{"ts": "2026-11-09T20:38:12.467516+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
