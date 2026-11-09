@@ -226,8 +226,7 @@
       "intelligent-interaction-strategies-for-context-aware-cognitive-augment",
       "Thorax",
       "REST",
-      "factually-exploring-wearable-fact-checking-for-augmented-truth-discern",
-      "JSON"
+      "factually-exploring-wearable-fact-checking-for-augmented-truth-discern"
     ],
     "last_reinforced": "2026-11-09T10:07:48.985273+00:00"
   },
@@ -254,7 +253,7 @@
     "last_reinforced": "2026-11-09T09:35:00.329454+00:00"
   },
   "raisonnement": {
-    "level": 1.6,
+    "level": 1.75,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -270,7 +269,7 @@
       "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-",
       "Graph database"
     ],
-    "last_reinforced": "2026-11-09T09:29:43.227979+00:00"
+    "last_reinforced": "2026-11-09T10:12:07.010032+00:00"
   },
   "securite_defensive": {
     "level": 1.7,

@@ -5758,21 +5758,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 410,
-      "sections": 4,
+      "words": 331,
+      "sections": 3,
       "links": 5,
       "link_list": [
-        "Behavioral ecology (disambiguation)",
         "Cultural ecology",
+        "Technical drawing",
         "Evolutionary developmental psychology",
         "Human behavioral ecology",
-        "Chemical ecology"
+        "Data and information visualization"
       ],
-      "diversity": 0.726,
+      "diversity": 0.82,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T09:29:45.546783+00:00"
+    "updated_at": "2026-11-09T10:12:08.384965+00:00"
   },
   "Technical drawing": {
     "score": 10.0,

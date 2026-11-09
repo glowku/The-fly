@@ -793,6 +793,14 @@
       ],
       "updated_at": "2026-11-09T06:15:02.146503+00:00"
     },
+    "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots": {
+      "depth": 2,
+      "created_at": "2026-11-09T10:09:58.522211+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2407.11625v2"
+      ],
+      "updated_at": "2026-11-09T10:09:58.522218+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -969,21 +977,13 @@
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
     },
-    "JSON": {
-      "depth": 4,
-      "created_at": "2026-11-09T10:07:48.979305+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/JSON"
-      ],
-      "updated_at": "2026-11-09T10:07:48.979311+00:00"
-    },
-    "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots": {
+    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-09T10:09:58.522211+00:00",
+      "created_at": "2026-11-09T10:12:08.385775+00:00",
       "sources": [
-        "https://arxiv.org/abs/2407.11625v2"
+        "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-09T10:09:58.522218+00:00"
+      "updated_at": "2026-11-09T10:12:08.385780+00:00"
     }
   },
   "edges": [
