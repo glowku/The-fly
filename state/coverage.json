@@ -936,6 +936,14 @@
         "https://en.wikipedia.org/wiki/International_Symposium_on_Graph_Drawing"
       ],
       "updated_at": "2026-11-09T01:33:30.801132+00:00"
+    },
+    "Reclaiming the Horizon Novel Visualization Designs for Time-Series Data with Lar": {
+      "depth": 2,
+      "created_at": "2026-11-09T01:34:24.712578+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2307.10278v2"
+      ],
+      "updated_at": "2026-11-09T01:34:24.712583+00:00"
     }
   },
   "edges": [

@@ -6490,3 +6490,5 @@
 {"ts": "2026-11-09T01:33:31.004661+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 9.31, "article": "International Symposium on Graph Drawing"}
 {"ts": "2026-11-09T01:33:32.887469+00:00", "type": "auto_learn_expand", "title": "International Symposium on Graph Drawing", "skill": "evolution", "score": 7.33, "objective": 22.717}
 {"ts": "2026-11-09T01:33:32.888170+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": true}]}
+{"ts": "2026-11-09T01:34:21.881644+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.42, "article": "reclaiming-the-horizon-novel-visualization-designs-for-time-series-dat"}
+{"ts": "2026-11-09T01:34:21.881703+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "Reclaiming the Horizon: Novel Visualization Designs for Time-Series Data with Large Value Ranges", "url": "https://arxiv.org/abs/2307.10278v2"}

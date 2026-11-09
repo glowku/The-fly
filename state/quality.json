@@ -5970,5 +5970,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:33:30.800176+00:00"
+  },
+  "Reclaiming the Horizon Novel Visualization Designs for Time-Series Data with Lar": {
+    "score": 10.0,
+    "metrics": {
+      "words": 415,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Bonefish fly patterns",
+        "Insects in ethics",
+        "Blue-winged Olive flies",
+        "Insect Festival",
+        "Chemical ecology",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.741,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:34:24.712117+00:00"
   }
 }
