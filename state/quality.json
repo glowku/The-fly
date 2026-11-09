@@ -6025,5 +6025,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:53:14.910475+00:00"
+  },
+  "Neural ranking models for document retrieval": {
+    "score": 10.0,
+    "metrics": {
+      "words": 400,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Theatrical adaptation",
+        "Behavioral ecology (disambiguation)",
+        "Cultural ecology",
+        "Chemical ecology",
+        "Evolutionary developmental psychology",
+        "Human behavioral ecology"
+      ],
+      "diversity": 0.802,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:55:27.451890+00:00"
   }
 }

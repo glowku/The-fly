@@ -288,7 +288,7 @@
     "last_reinforced": "2026-11-09T01:53:12.601771+00:00"
   },
   "recherche_web": {
-    "level": 1.35,
+    "level": 1.5,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -301,9 +301,10 @@
       "query-formulation-for-scientific-literature",
       "domain-specific-information-retrieval",
       "lightweight-and-direct-document-relevance-optimization-for-generative-",
-      "overcoming-low-utility-facets-for-complex-answer-retrieval"
+      "overcoming-low-utility-facets-for-complex-answer-retrieval",
+      "neural-ranking-models-for-document-retrieval"
     ],
-    "last_reinforced": "2026-11-09T01:32:38.480268+00:00"
+    "last_reinforced": "2026-11-09T01:55:25.505037+00:00"
   },
   "recherche_image": {
     "level": 1.42,
