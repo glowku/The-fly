@@ -1024,6 +1024,14 @@
         "https://en.wikipedia.org/wiki/Application_security"
       ],
       "updated_at": "2026-11-09T12:41:43.789469+00:00"
+    },
+    "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance": {
+      "depth": 2,
+      "created_at": "2026-11-09T12:42:28.807082+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2605.05991v1"
+      ],
+      "updated_at": "2026-11-09T12:42:28.807085+00:00"
     }
   },
   "edges": [

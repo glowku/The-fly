@@ -6262,5 +6262,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:41:43.788987+00:00"
+  },
+  "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance": {
+    "score": 10.0,
+    "metrics": {
+      "words": 389,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Data and information visualization",
+        "Graph database",
+        "Cross-origin resource sharing",
+        "Network theory"
+      ],
+      "diversity": 0.734,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:42:28.806639+00:00"
   }
 }

@@ -296,7 +296,7 @@
     "last_reinforced": "2026-11-09T12:41:43.793655+00:00"
   },
   "recherche_web": {
-    "level": 1.8,
+    "level": 1.95,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -312,9 +312,10 @@
       "overcoming-low-utility-facets-for-complex-answer-retrieval",
       "neural-ranking-models-for-document-retrieval",
       "scientific-literature-text-mining-and-the-case-for-open-access",
-      "dynamic-information-retrieval-theoretical-framework-and-application"
+      "dynamic-information-retrieval-theoretical-framework-and-application",
+      "a-case-driven-multi-agent-framework-for-e-commerce-search-relevance"
     ],
-    "last_reinforced": "2026-11-09T10:16:27.617760+00:00"
+    "last_reinforced": "2026-11-09T12:42:25.742068+00:00"
   },
   "recherche_image": {
     "level": 1.87,
