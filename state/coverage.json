@@ -865,6 +865,22 @@
       ],
       "updated_at": "2026-11-09T20:35:47.316495+00:00"
     },
+    "Diagrams.net": {
+      "depth": 3,
+      "created_at": "2026-11-09T20:37:17.603063+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Diagrams.net"
+      ],
+      "updated_at": "2026-11-09T20:37:17.603070+00:00"
+    },
+    "Canvassing": {
+      "depth": 5,
+      "created_at": "2026-11-09T20:38:57.300610+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Canvassing"
+      ],
+      "updated_at": "2026-11-09T20:38:57.300616+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1040,22 +1056,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Diagrams.net": {
-      "depth": 3,
-      "created_at": "2026-11-09T20:37:17.603063+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Diagrams.net"
-      ],
-      "updated_at": "2026-11-09T20:37:17.603070+00:00"
-    },
-    "Canvassing": {
-      "depth": 5,
-      "created_at": "2026-11-09T20:38:57.300610+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Canvassing"
-      ],
-      "updated_at": "2026-11-09T20:38:57.300616+00:00"
     }
   },
   "edges": [
