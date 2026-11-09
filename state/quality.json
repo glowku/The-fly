@@ -6013,22 +6013,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 344,
+      "words": 443,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Technical drawing",
-        "Angular resolution (graph drawing)",
-        "Palaeoptera",
-        "Tachinidae",
-        "Data and information visualization",
-        "Area (graph drawing)"
+        "Network theory",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+        "Application security",
+        "Diagrammatic reasoning",
+        "Data and information visualization"
       ],
-      "diversity": 0.75,
+      "diversity": 0.736,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T16:21:27.586508+00:00"
+    "updated_at": "2026-11-09T21:00:14.913961+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
