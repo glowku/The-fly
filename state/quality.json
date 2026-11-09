@@ -6153,5 +6153,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T10:09:58.521547+00:00"
+  },
+  "Designing AI Systems that Augment Human Performed vs Demonstrated Critical Think": {
+    "score": 10.0,
+    "metrics": {
+      "words": 416,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Cultural ecology",
+        "Evolutionary developmental psychology",
+        "Graph database",
+        "Human behavioral ecology",
+        "Data and information visualization"
+      ],
+      "diversity": 0.734,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T10:14:19.795708+00:00"
   }
 }

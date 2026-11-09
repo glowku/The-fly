@@ -6564,3 +6564,5 @@
 {"ts": "2026-11-09T10:12:07.010542+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 1.75, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
 {"ts": "2026-11-09T10:12:07.010606+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
 {"ts": "2026-11-09T10:13:11.951306+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-09T10:14:17.562373+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 1.78, "article": "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit"}
+{"ts": "2026-11-09T10:14:17.562440+00:00", "type": "skill_learn_arxiv", "skill": "code_et_outils", "title": "Designing AI Systems that Augment Human Performed vs. Demonstrated Critical Thinking", "url": "https://arxiv.org/abs/2504.14689v1"}

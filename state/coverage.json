@@ -984,6 +984,14 @@
         "https://arxiv.org/abs/2504.16021v1"
       ],
       "updated_at": "2026-11-09T10:12:08.385780+00:00"
+    },
+    "Designing AI Systems that Augment Human Performed vs Demonstrated Critical Think": {
+      "depth": 2,
+      "created_at": "2026-11-09T10:14:19.796311+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2504.14689v1"
+      ],
+      "updated_at": "2026-11-09T10:14:19.796317+00:00"
     }
   },
   "edges": [
