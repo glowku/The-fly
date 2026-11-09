@@ -321,7 +321,7 @@
     "last_reinforced": "2026-11-09T20:35:45.217316+00:00"
   },
   "recherche_image": {
-    "level": 1.97,
+    "level": 2.07,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -336,8 +336,9 @@
       "Technical drawing",
       "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat",
       "lmap-shape-preserving-local-mappings-for-biomedical-visualization",
-      "Diagrammatic reasoning"
+      "Diagrammatic reasoning",
+      "Diagrams.net"
     ],
-    "last_reinforced": "2026-11-09T12:43:08.704450+00:00"
+    "last_reinforced": "2026-11-09T20:37:17.609566+00:00"
   }
 }

@@ -6380,5 +6380,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T20:35:47.315918+00:00"
+  },
+  "Diagrams.net": {
+    "score": 10.0,
+    "metrics": {
+      "words": 341,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Graph database",
+        "Data and information visualization",
+        "Network theory",
+        "Technical drawing",
+        "Cross-origin resource sharing",
+        "Application security"
+      ],
+      "diversity": 0.797,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T20:37:17.602391+00:00"
   }
 }
