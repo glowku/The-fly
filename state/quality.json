@@ -5957,5 +5957,18 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:32:41.292354+00:00"
+  },
+  "International Symposium on Graph Drawing": {
+    "score": 7.33,
+    "metrics": {
+      "words": 205,
+      "sections": 2,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.803,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:33:30.800176+00:00"
   }
 }

@@ -928,6 +928,14 @@
         "https://arxiv.org/abs/1811.08772v1"
       ],
       "updated_at": "2026-11-09T01:32:41.292832+00:00"
+    },
+    "International Symposium on Graph Drawing": {
+      "depth": 3,
+      "created_at": "2026-11-09T01:33:30.801125+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/International_Symposium_on_Graph_Drawing"
+      ],
+      "updated_at": "2026-11-09T01:33:30.801132+00:00"
     }
   },
   "edges": [
@@ -1146,6 +1154,10 @@
     {
       "from": "Technical drawing",
       "to": "Architectural drawing"
+    },
+    {
+      "from": "Neoptera",
+      "to": "International Symposium on Graph Drawing"
     }
   ],
   "frontier": [

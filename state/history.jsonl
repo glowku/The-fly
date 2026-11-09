@@ -6487,3 +6487,4 @@
 {"ts": "2026-11-09T01:32:27.819587+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 115, "active_edges": 54, "archived_edges": 1, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-09T01:32:38.480741+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 1.35, "article": "overcoming-low-utility-facets-for-complex-answer-retrieval"}
 {"ts": "2026-11-09T01:32:38.480794+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Overcoming low-utility facets for complex answer retrieval", "url": "https://arxiv.org/abs/1811.08772v1"}
+{"ts": "2026-11-09T01:33:31.004661+00:00", "type": "skill_reinforce", "skill": "evolution", "new_level": 9.31, "article": "International Symposium on Graph Drawing"}
