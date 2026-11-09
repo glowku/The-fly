@@ -1064,6 +1064,14 @@
         "https://en.wikipedia.org/wiki/Image"
       ],
       "updated_at": "2026-11-09T21:02:25.845611+00:00"
+    },
+    "Agent-Driven Automatic Software Improvement": {
+      "depth": 2,
+      "created_at": "2026-11-09T21:04:39.037725+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2406.16739v1"
+      ],
+      "updated_at": "2026-11-09T21:04:39.037729+00:00"
     }
   },
   "edges": [
