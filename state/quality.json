@@ -6301,5 +6301,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:43:08.699446+00:00"
+  },
+  "Graphics processing unit": {
+    "score": 10.0,
+    "metrics": {
+      "words": 358,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Angular resolution (graph drawing)",
+        "Area (graph drawing)",
+        "Technical drawing",
+        "Network theory",
+        "Data and information visualization",
+        "Graph database"
+      ],
+      "diversity": 0.795,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:43:48.382481+00:00"
   }
 }

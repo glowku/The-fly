@@ -233,7 +233,7 @@
     "last_reinforced": "2026-11-09T12:40:58.695136+00:00"
   },
   "representation": {
-    "level": 1.89,
+    "level": 1.99,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -251,9 +251,10 @@
       "Data and information visualization",
       "Network theory",
       "template-based-graph-clustering",
-      "International Symposium on Graph Drawing"
+      "International Symposium on Graph Drawing",
+      "Graphics processing unit"
     ],
-    "last_reinforced": "2026-11-09T12:39:26.643742+00:00"
+    "last_reinforced": "2026-11-09T12:43:48.390406+00:00"
   },
   "raisonnement": {
     "level": 1.9,

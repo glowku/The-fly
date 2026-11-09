@@ -1040,6 +1040,14 @@
         "https://en.wikipedia.org/wiki/Diagrammatic_reasoning"
       ],
       "updated_at": "2026-11-09T12:43:08.699964+00:00"
+    },
+    "Graphics processing unit": {
+      "depth": 4,
+      "created_at": "2026-11-09T12:43:48.383674+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Graphics_processing_unit"
+      ],
+      "updated_at": "2026-11-09T12:43:48.383679+00:00"
     }
   },
   "edges": [
