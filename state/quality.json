@@ -6341,5 +6341,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:44:27.947769+00:00"
+  },
+  "EVOR Evolving Retrieval for Code Generation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 339,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Graph database",
+        "Data and information visualization",
+        "Technical drawing",
+        "Network theory",
+        "Cross-origin resource sharing"
+      ],
+      "diversity": 0.77,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T20:34:15.900123+00:00"
   }
 }
