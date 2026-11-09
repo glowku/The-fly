@@ -984,6 +984,14 @@
         "https://arxiv.org/abs/1601.04605v1"
       ],
       "updated_at": "2026-11-09T10:16:30.737050+00:00"
+    },
+    "Principle of least privilege": {
+      "depth": 3,
+      "created_at": "2026-11-09T12:38:03.604176+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Principle_of_least_privilege"
+      ],
+      "updated_at": "2026-11-09T12:38:03.604180+00:00"
     }
   },
   "edges": [

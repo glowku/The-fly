@@ -6190,5 +6190,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T10:16:30.736499+00:00"
+  },
+  "Principle of least privilege": {
+    "score": 10.0,
+    "metrics": {
+      "words": 380,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Angular resolution (graph drawing)",
+        "Area (graph drawing)",
+        "Technical drawing",
+        "Data and information visualization",
+        "Graph database"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:38:03.603638+00:00"
   }
 }

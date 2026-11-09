@@ -274,7 +274,7 @@
     "last_reinforced": "2026-11-09T10:12:07.010032+00:00"
   },
   "securite_defensive": {
-    "level": 1.7,
+    "level": 1.8,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -288,9 +288,10 @@
       "a-code-equivalence-between-secure-network-and-index-coding",
       "Technical drawing",
       "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo",
-      "Cross-origin resource sharing"
+      "Cross-origin resource sharing",
+      "Principle of least privilege"
     ],
-    "last_reinforced": "2026-11-09T09:36:43.728047+00:00"
+    "last_reinforced": "2026-11-09T12:38:03.608041+00:00"
   },
   "recherche_web": {
     "level": 1.8,
