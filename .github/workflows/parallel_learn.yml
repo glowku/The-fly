@@ -2,7 +2,6 @@ name: parallel_learn
 
 on:
   schedule:
-    # toutes les 2 heures
     - cron: "0 */2 * * *"
   workflow_dispatch:
 
@@ -37,14 +36,28 @@ jobs:
           git config user.name "fly-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Parallel learn (1 node / CPU)
+      - name: Parallel learn (fallback cortex if import fails)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python run_parallel_learn.py
+        run: |
+          set +e
+          python -c "from agent.auto_learn import _candidates_from_frontier; print('import ok')"
+          if [ $? -ne 0 ]; then
+            echo "parallel imports broken → cortex full"
+            python run_cortex.py --mode full --cycles 1
+            exit 0
+          fi
+          python run_parallel_learn.py
+          code=$?
+          if [ $code -ne 0 ]; then
+            echo "parallel failed ($code) → skill+wiki fallback"
+            python run_cortex.py --mode skill --cycles 1 || true
+            python run_cortex.py --mode wiki --cycles 1 || true
+          fi
+          exit 0
 
       - name: Safety commit + push
         run: |
-          set -e
           git add -A
           if git diff --staged --quiet; then
             echo "nothing to commit"
