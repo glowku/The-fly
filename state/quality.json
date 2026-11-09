@@ -5989,5 +5989,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T01:34:24.712117+00:00"
+  },
+  "Factually Exploring Wearable Fact-Checking for Augmented Truth Discernment": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Bonefish fly patterns",
+        "Insects in ethics",
+        "Blue-winged Olive flies",
+        "Insect Festival",
+        "Behavioral ecology (disambiguation)"
+      ],
+      "diversity": 0.789,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T01:37:45.792224+00:00"
   }
 }

@@ -210,7 +210,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 1.3,
+    "level": 1.45,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -225,9 +225,10 @@
       "clean-architecture-for-autonomous-agents",
       "intelligent-interaction-strategies-for-context-aware-cognitive-augment",
       "Thorax",
-      "REST"
+      "REST",
+      "factually-exploring-wearable-fact-checking-for-augmented-truth-discern"
     ],
-    "last_reinforced": "2026-11-08T22:28:45.578141+00:00"
+    "last_reinforced": "2026-11-09T01:37:43.706563+00:00"
   },
   "representation": {
     "level": 1.42,
