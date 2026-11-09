@@ -6584,3 +6584,4 @@
 {"ts": "2026-11-09T12:40:13.219531+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
 {"ts": "2026-11-09T12:40:58.695639+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 1.93, "article": "automated-literature-review-using-nlp-techniques-and-llm-based-retriev"}
 {"ts": "2026-11-09T12:40:58.695687+00:00", "type": "skill_learn_arxiv", "skill": "code_et_outils", "title": "Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation", "url": "https://arxiv.org/abs/2411.18583v1"}
+{"ts": "2026-11-09T12:41:43.793962+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.9, "article": "Application security"}

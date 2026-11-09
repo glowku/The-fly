@@ -6244,5 +6244,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:41:02.504237+00:00"
+  },
+  "Application security": {
+    "score": 10.0,
+    "metrics": {
+      "words": 369,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Data and information visualization",
+        "Graph database",
+        "Cross-origin resource sharing",
+        "Network theory"
+      ],
+      "diversity": 0.712,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:41:43.788987+00:00"
   }
 }

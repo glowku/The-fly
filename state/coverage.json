@@ -1016,6 +1016,14 @@
         "https://arxiv.org/abs/2411.18583v1"
       ],
       "updated_at": "2026-11-09T12:41:02.504721+00:00"
+    },
+    "Application security": {
+      "depth": 4,
+      "created_at": "2026-11-09T12:41:43.789465+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Application_security"
+      ],
+      "updated_at": "2026-11-09T12:41:43.789469+00:00"
     }
   },
   "edges": [
