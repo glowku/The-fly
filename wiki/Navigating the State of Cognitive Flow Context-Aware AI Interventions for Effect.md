@@ -1,19 +1,24 @@
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 
-Cette étude présente un cadre d’augmentation cognitive contextuelle visant à soutenir le raisonnement humain assisté par l’IA. Elle s’appuie sur la théorie du flow, qui décrit un état optimal de concentration et de motivation intrinsèque lorsque la difficulté d’une tâche correspond au niveau de compétence de l’individu. Le travail souligne que les interventions statiques peuvent rompre cet état, nuisant ainsi à la prise de décision. Il propose plutôt un ajustement dynamique des interventions, basé sur trois facteurs contextuels : le type, le timing et l’échelle.
+Ce travail, publié sur arXiv, étend la théorie du flow à l’IA augmentée en proposant un cadre d’intervention contextuel. Il démontre que les interventions statiques peuvent interrompre l’état de concentration optimale, tandis qu’une adaptation dynamique aux signaux comportementaux permet de soutenir la prise de décision sans perturber l’immersion cognitive.
 
-## Cadre conceptuel et méthodologie
+## Conceptual Foundations
 
-Le concept de *cognitive flow* introduit dans l’article étend la théorie du flow aux environnements d’IA-augmented reasoning. Les interventions sont conçues pour être personnalisées, adaptatives et peu intrusives. Le cadre utilise des signaux comportementaux multimodaux – tels que le comportement oculaire, les hésitations de frappe et la vitesse d’interaction – afin de détecter les fluctuations de l’état de flow. En fonction de ces indicateurs, l’IA ajuste le type d’aide (par exemple, suggestions explicatives ou rappels de stratégie), le moment de l’intervention (préventif, correctif ou post‑tâche) et l’échelle (niveau de détail ou de complexité).
+La théorie du flow décrit un état où la difficulté d’une tâche correspond au niveau de compétence de l’individu, générant une concentration profonde et une motivation intrinsèque. Dans le contexte de l’IA, l’objectif est de préserver cet état en ajustant les interventions en fonction de trois dimensions contextuelles : le type d’intervention, son timing et son échelle. Le cadre proposé introduit le concept de « cognitive flow » comme une extension de la théorie du flow, où les systèmes d’IA offrent un soutien personnalisé, adaptatif et peu intrusif.
 
-## Implications pour la prise de décision et la recherche
+## Méthodologie et Cadre d’Intervention
 
-En conservant ou en rétablissant le flow, les interventions contextuelles permettent aux utilisateurs de rester profondément engagés dans des tâches de décision complexes. Cela contraste avec les approches traditionnelles qui imposent des aides statiques, susceptibles de perturber l’immersion cognitive. Les résultats suggèrent que l’IA, lorsqu’elle est sensible aux dynamiques comportementales, peut améliorer la qualité des décisions sans sacrifier l’autonomie ou la motivation de l’utilisateur. Ce travail ouvre de nouvelles pistes pour la conception d’interfaces intelligentes, notamment dans les domaines de la visualisation de données et de la prise de décision collaborative.
+Le modèle s’appuie sur des indices multimodaux tels que le comportement oculaire, les hésitations de frappe et la vitesse d’interaction. En analysant ces signaux en temps réel, l’IA détermine le niveau de distraction ou de surcharge cognitive et ajuste automatiquement la nature, le moment et l’intensité de l’intervention. Cette approche permet de maintenir ou de restaurer l’état de flow, évitant ainsi les effets négatifs d’interventions mal synchronisées.
+
+## Implications pour l’IA Augmentée
+
+En passant d’interventions statiques à des ajustements contextuels, le cadre améliore la qualité de la prise de décision dans des tâches complexes. Il ouvre la voie à des systèmes d’aide à la décision plus fluides, capables de soutenir l’engagement profond sans rompre l’immersion. Cette contribution est pertinente pour les domaines où la concentration soutenue est cruciale, tels que l’analyse de données, la conception technique ou la recherche scientifique.
 
 ## Voir aussi
 
-- [[Human behavioral ecology]]
-- [[Evolutionary developmental psychology]]
 - [[Data and information visualization]]
-- [[Cultural ecology]]
+- [[Graph database]]
 - [[Technical drawing]]
+- [[Angular resolution (graph drawing)]]
+- [[Area (graph drawing)]]
+- [[Cultural ecology]]
