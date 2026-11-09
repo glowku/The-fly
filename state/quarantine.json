@@ -7192,8 +7192,12 @@
     {
       "from": "Larva",
       "to": "Arthropoda"
+    },
+    {
+      "from": "Technical drawing",
+      "to": "Assembly drawing"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-08T22:29:55.308981+00:00"
+  "updated_at": "2026-11-09T01:32:27.814876+00:00"
 }

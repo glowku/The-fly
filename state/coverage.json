@@ -753,6 +753,14 @@
       ],
       "updated_at": "2026-11-08T22:26:29.352919+00:00"
     },
+    "Graph database": {
+      "depth": 3,
+      "created_at": "2026-11-08T22:31:01.723010+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Graph_database"
+      ],
+      "updated_at": "2026-11-08T22:31:01.723016+00:00"
+    },
     "Insect flight": {
       "depth": 2,
       "created_at": "2026-09-16T13:55:50.280207+00:00",
@@ -912,14 +920,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Graph database": {
-      "depth": 3,
-      "created_at": "2026-11-08T22:31:01.723010+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Graph_database"
-      ],
-      "updated_at": "2026-11-08T22:31:01.723016+00:00"
     }
   },
   "edges": [
@@ -1138,10 +1138,6 @@
     {
       "from": "Technical drawing",
       "to": "Architectural drawing"
-    },
-    {
-      "from": "Technical drawing",
-      "to": "Assembly drawing"
     }
   ],
   "frontier": [
