@@ -6508,3 +6508,4 @@
 {"ts": "2026-11-09T01:50:51.585973+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 117, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-09T01:50:58.106419+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 1.45, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
 {"ts": "2026-11-09T01:50:58.106469+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
+{"ts": "2026-11-09T01:52:05.691955+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
