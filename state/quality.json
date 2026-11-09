@@ -6209,5 +6209,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T12:38:03.603638+00:00"
+  },
+  "LMap Shape-Preserving Local Mappings for Biomedical Visualization": {
+    "score": 10.0,
+    "metrics": {
+      "words": 410,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
+        "Angular resolution (graph drawing)",
+        "Area (graph drawing)",
+        "Technical drawing",
+        "Data and information visualization",
+        "Graph database"
+      ],
+      "diversity": 0.802,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T12:38:45.812728+00:00"
   }
 }

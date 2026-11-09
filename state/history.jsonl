@@ -6576,3 +6576,5 @@
 {"ts": "2026-11-09T11:01:23.711584+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 1.74, "article": "International Symposium on Graph Drawing"}
 {"ts": "2026-11-09T11:01:23.711643+00:00", "type": "branch", "title": "International Symposium on Graph Drawing", "children_discovered": 0, "skill": "representation"}
 {"ts": "2026-11-09T12:38:03.608229+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 1.8, "article": "Principle of least privilege"}
+{"ts": "2026-11-09T12:38:43.967115+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.87, "article": "lmap-shape-preserving-local-mappings-for-biomedical-visualization"}
+{"ts": "2026-11-09T12:38:43.967204+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "LMap: Shape-Preserving Local Mappings for Biomedical Visualization", "url": "https://arxiv.org/abs/1809.06442v2"}

@@ -315,7 +315,7 @@
     "last_reinforced": "2026-11-09T10:16:27.617760+00:00"
   },
   "recherche_image": {
-    "level": 1.72,
+    "level": 1.87,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -328,8 +328,9 @@
       "describing-insect-morphology-for-image-search",
       "ippog-bridging-the-gap-between-science-education-at-school-and-modern-",
       "Technical drawing",
-      "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat"
+      "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat",
+      "lmap-shape-preserving-local-mappings-for-biomedical-visualization"
     ],
-    "last_reinforced": "2026-11-09T10:09:56.795713+00:00"
+    "last_reinforced": "2026-11-09T12:38:43.966681+00:00"
   }
 }
