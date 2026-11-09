@@ -307,7 +307,7 @@
     "last_reinforced": "2026-11-09T01:55:25.505037+00:00"
   },
   "recherche_image": {
-    "level": 1.42,
+    "level": 1.57,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -319,8 +319,9 @@
     "articles": [
       "describing-insect-morphology-for-image-search",
       "ippog-bridging-the-gap-between-science-education-at-school-and-modern-",
-      "Technical drawing"
+      "Technical drawing",
+      "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat"
     ],
-    "last_reinforced": "2026-11-09T01:34:21.881166+00:00"
+    "last_reinforced": "2026-11-09T01:57:37.835964+00:00"
   }
 }

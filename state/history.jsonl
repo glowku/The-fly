@@ -6517,3 +6517,5 @@
 {"ts": "2026-11-09T01:55:25.505510+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 1.5, "article": "neural-ranking-models-for-document-retrieval"}
 {"ts": "2026-11-09T01:55:25.505561+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Neural ranking models for document retrieval", "url": "https://arxiv.org/abs/2102.11903v2"}
 {"ts": "2026-11-09T01:56:32.883136+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-09T01:57:37.836445+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 1.57, "article": "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat"}
+{"ts": "2026-11-09T01:57:37.836496+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots", "url": "https://arxiv.org/abs/2407.11625v2"}
