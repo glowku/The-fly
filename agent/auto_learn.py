@@ -167,6 +167,23 @@ def _graph_neighborhood(parent: str | None, recent: list, limit: int = 40) -> li
     return neigh
 
 
+def _candidates_from_frontier(skill_name: str, frontier: list) -> list:
+    """Compat parallel_learn + auto_learn: titres frontier résonants."""
+    scored = []
+    skills = load_skills()
+    kws = [k.lower() for k in (skills.get(skill_name, {}).get("keywords") or [])]
+    for t in frontier or []:
+        if not _is_insect_relevant(t):
+            continue
+        rel = score_relevance(t)
+        if rel < 0.35:
+            continue
+        bonus = sum(1 for k in kws if k in t.lower()) * 0.25
+        scored.append((rel + bonus, t))
+    scored.sort(reverse=True)
+    return [t for s, t in scored if s >= 0.35][:12]
+
+
 def _groq_suggest(skill_name, skill_info, root, parent, recent, existing):
     api_key = os.environ.get("GROQ_API_KEY", "").strip()
     if not api_key:
@@ -270,7 +287,10 @@ def _expand_one(title, parent, skill_name):
             register_discovered(child, depth=parent_depth + 1, parent=title)
     reinforce_skill(skill_name, title, score["score"])
     obj, n_nodes, _ = compute_objective_score()
-    git_commit_push([f"wiki/{title}.md", "state/", "DASHBOARD.md"], f"auto_learn: {title} (skill={skill_name})")
+    try:
+        git_commit_push([f"wiki/{title}.md", "state/", "DASHBOARD.md"], f"auto_learn: {title} (skill={skill_name})")
+    except Exception as e:
+        print(f"[auto_learn] push skip: {e}", flush=True)
     log_event("auto_learn_expand", {"title": title, "skill": skill_name, "score": score["score"], "objective": obj})
     print(f"[auto_learn] ✅ {title} ← {parent}", flush=True)
     return True
@@ -294,9 +314,7 @@ def run_wiki_learn() -> bool:
     parent = _best_parent_for_skill(skill_name, nodes, cov)
     pool = []
     pool += _graph_neighborhood(parent, recent, 40)
-    for t in frontier:
-        if _is_insect_relevant(t) and score_relevance(t) >= 0.4:
-            pool.append(t)
+    pool += _candidates_from_frontier(skill_name, frontier)
     pool += _groq_suggest(skill_name, skill_info, root, parent, recent, existing)
     try:
         pool += concepts_from_papers(search_domain(f"{skill_name} insect fly", max_results=5), min_relevance=0.32)
@@ -328,39 +346,41 @@ def run_wiki_learn() -> bool:
 
 
 def run_auto_learn(mode: str | None = None) -> dict:
-    """
-    mode: None (auto rotation) | skill | wiki | triage | full
-    """
     print("=" * 60, flush=True)
     _CYCLE["n"] += 1
     n = _CYCLE["n"]
     result = {"cycle": n, "actions": []}
 
-    if mode == "triage" or (mode is None and n % 5 == 0):
-        rep = run_triage(max_move=100)
-        result["actions"].append({"triage": rep})
-        if mode == "triage":
-            try:
-                git_commit_push(["state/"], f"triage: moved={rep.get('moved_to_quarantine')} active={rep.get('active_nodes')}")
-            except Exception as e:
-                print(f"[triage] push skip: {e}", flush=True)
-            return result
+    try:
+        if mode == "triage" or (mode is None and n % 5 == 0):
+            rep = run_triage(max_move=80)
+            result["actions"].append({"triage": rep})
+            if mode == "triage":
+                try:
+                    git_commit_push(["state/"], f"triage: moved={rep.get('moved_to_quarantine')}")
+                except Exception:
+                    pass
+                return result
 
-    if mode == "skill" or (mode is None and n % 2 == 1):
-        sk = run_skill_learn()
-        result["actions"].append({"skill_learn": sk})
-        if mode == "skill":
-            return result
+        if mode == "skill" or (mode is None and n % 2 == 1):
+            sk = run_skill_learn()
+            result["actions"].append({"skill_learn": sk})
+            if mode == "skill":
+                return result
 
-    if mode in (None, "wiki", "full"):
-        ok = run_wiki_learn()
-        result["actions"].append({"wiki_learn": ok})
+        if mode in (None, "wiki", "full"):
+            ok = run_wiki_learn()
+            result["actions"].append({"wiki_learn": ok})
 
-    if mode == "full":
-        sk = run_skill_learn()
-        result["actions"].append({"skill_learn": sk})
-        rep = run_triage(max_move=60)
-        result["actions"].append({"triage": rep})
+        if mode == "full":
+            sk = run_skill_learn()
+            result["actions"].append({"skill_learn": sk})
+            rep = run_triage(max_move=40)
+            result["actions"].append({"triage": rep})
+    except Exception as e:
+        print(f"[auto_learn] caught: {e}", flush=True)
+        result["error"] = str(e)
+        log_event("auto_learn_error", {"error": str(e), "cycle": n})
 
     log_event("auto_learn_cycle", result)
     print(f"[auto_learn] done {result}", flush=True)
