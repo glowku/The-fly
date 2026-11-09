@@ -274,8 +274,7 @@
       "Larva",
       "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-",
       "Graph database",
-      "Automated reasoning",
-      "Inference"
+      "Automated reasoning"
     ],
     "last_reinforced": "2026-11-09T20:57:56.668600+00:00"
   },
@@ -323,7 +322,7 @@
     "last_reinforced": "2026-11-09T20:35:45.217316+00:00"
   },
   "recherche_image": {
-    "level": 2.07,
+    "level": 2.17,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -339,8 +338,9 @@
       "beware-of-validation-by-eye-visual-validation-of-linear-trends-in-scat",
       "lmap-shape-preserving-local-mappings-for-biomedical-visualization",
       "Diagrammatic reasoning",
-      "Diagrams.net"
+      "Diagrams.net",
+      "Image"
     ],
-    "last_reinforced": "2026-11-09T20:37:17.609566+00:00"
+    "last_reinforced": "2026-11-09T21:02:25.851113+00:00"
   }
 }

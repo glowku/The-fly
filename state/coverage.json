@@ -1057,13 +1057,13 @@
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
     },
-    "Inference": {
-      "depth": 5,
-      "created_at": "2026-11-09T20:57:56.663415+00:00",
+    "Image": {
+      "depth": 4,
+      "created_at": "2026-11-09T21:02:25.845605+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Inference"
+        "https://en.wikipedia.org/wiki/Image"
       ],
-      "updated_at": "2026-11-09T20:57:56.663420+00:00"
+      "updated_at": "2026-11-09T21:02:25.845611+00:00"
     }
   },
   "edges": [

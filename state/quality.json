@@ -6438,5 +6438,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T20:57:56.662884+00:00"
+  },
+  "Image": {
+    "score": 10.0,
+    "metrics": {
+      "words": 316,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Network theory",
+        "Graph database",
+        "Technical drawing",
+        "Diagrammatic reasoning",
+        "Data and information visualization"
+      ],
+      "diversity": 0.796,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T21:02:25.845090+00:00"
   }
 }
