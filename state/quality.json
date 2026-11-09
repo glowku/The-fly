@@ -6011,20 +6011,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 385,
+      "words": 343,
       "sections": 4,
-      "links": 4,
+      "links": 6,
       "link_list": [
-        "Behavioral ecology (disambiguation)",
-        "Insect Festival",
-        "Bonefish fly patterns",
-        "Insects in ethics"
+        "RFID",
+        "ISO‑18000‑6C",
+        "Firmware update",
+        "Physical Unclonable Function",
+        "Texas Instruments",
+        "Energy harvesting"
       ],
-      "diversity": 0.776,
+      "diversity": 0.788,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T01:53:14.910475+00:00"
+    "updated_at": "2026-11-09T09:36:45.938487+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
