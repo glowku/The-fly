@@ -210,7 +210,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 1.55,
+    "level": 1.63,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -226,9 +226,10 @@
       "intelligent-interaction-strategies-for-context-aware-cognitive-augment",
       "Thorax",
       "REST",
-      "factually-exploring-wearable-fact-checking-for-augmented-truth-discern"
+      "factually-exploring-wearable-fact-checking-for-augmented-truth-discern",
+      "JSON"
     ],
-    "last_reinforced": "2026-11-09T02:54:03.346728+00:00"
+    "last_reinforced": "2026-11-09T10:07:48.985273+00:00"
   },
   "representation": {
     "level": 1.67,

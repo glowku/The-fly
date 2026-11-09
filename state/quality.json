@@ -6122,5 +6122,18 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T09:35:10.898261+00:00"
+  },
+  "JSON": {
+    "score": 8.0,
+    "metrics": {
+      "words": 272,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.689,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T10:07:48.978681+00:00"
   }
 }

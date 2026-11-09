@@ -6554,3 +6554,4 @@
 {"ts": "2026-11-09T10:07:43.227982+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-09T10:07:43.262424+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-09T10:07:43.288439+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 121, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-09T10:07:48.985720+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 1.63, "article": "JSON"}

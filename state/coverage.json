@@ -968,6 +968,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "JSON": {
+      "depth": 4,
+      "created_at": "2026-11-09T10:07:48.979305+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/JSON"
+      ],
+      "updated_at": "2026-11-09T10:07:48.979311+00:00"
     }
   },
   "edges": [
