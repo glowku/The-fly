@@ -6360,5 +6360,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T20:34:15.900123+00:00"
+  },
+  "Multi-Turn Agentic Scientific Literature Search via Workflow Induction": {
+    "score": 10.0,
+    "metrics": {
+      "words": 392,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Graph database",
+        "Data and information visualization",
+        "Angular resolution (graph drawing)",
+        "Network theory",
+        "Technical drawing",
+        "Area (graph drawing)"
+      ],
+      "diversity": 0.75,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T20:35:47.315918+00:00"
   }
 }
