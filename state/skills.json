@@ -232,7 +232,7 @@
     "last_reinforced": "2026-11-09T10:14:17.561776+00:00"
   },
   "representation": {
-    "level": 1.74,
+    "level": 1.89,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -252,7 +252,7 @@
       "template-based-graph-clustering",
       "International Symposium on Graph Drawing"
     ],
-    "last_reinforced": "2026-11-09T11:01:23.711232+00:00"
+    "last_reinforced": "2026-11-09T12:39:26.643742+00:00"
   },
   "raisonnement": {
     "level": 1.75,
