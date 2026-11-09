@@ -270,7 +270,7 @@
     "last_reinforced": "2026-11-09T01:50:58.105995+00:00"
   },
   "securite_defensive": {
-    "level": 1.3,
+    "level": 1.45,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -282,9 +282,10 @@
     "articles": [
       "secure-coding-basics-input-validation",
       "a-code-equivalence-between-secure-network-and-index-coding",
-      "Technical drawing"
+      "Technical drawing",
+      "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo"
     ],
-    "last_reinforced": "2026-11-08T23:01:01.839937+00:00"
+    "last_reinforced": "2026-11-09T01:53:12.601771+00:00"
   },
   "recherche_web": {
     "level": 1.35,
