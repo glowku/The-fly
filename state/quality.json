@@ -6084,5 +6084,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T06:15:02.145864+00:00"
+  },
+  "Scientific Literature Text Mining and the Case for Open Access": {
+    "score": 10.0,
+    "metrics": {
+      "words": 394,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Behavioral ecology (disambiguation)",
+        "Cultural ecology",
+        "Evolutionary developmental psychology",
+        "Human behavioral ecology",
+        "Chemical ecology"
+      ],
+      "diversity": 0.738,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-09T09:32:59.963729+00:00"
   }
 }
