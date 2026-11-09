@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-09 15:24:19 UTC
+**Dernière mise à jour** : 2026-11-09 23:58:27 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **25.635** |
-| Concepts traités | 200 | **132** |
-| Qualité moyenne | ≥ 7.5 | **9.71/10** |
+| Score global | maximiser | **25.846** |
+| Concepts traités | 200 | **133** |
+| Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **132** |
+| Concepts traités (nœuds) | **133** |
 | Arêtes du graphe | 55 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.71/10** |
-| Score objectif (coverage × quality) | **25.635** |
-| Actions dernières 24 h | 197 |
+| Score qualité moyen | **9.72/10** |
+| Score objectif (coverage × quality) | **25.846** |
+| Actions dernières 24 h | 154 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 309 |
+| Excellent (≥ 8) | 316 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-09T12:38:03  skill_reinforc  
-2026-11-09T12:38:43  skill_reinforc  
-2026-11-09T12:38:43  skill_learn_ar  LMap: Shape-Preserving Local Mappings for Biomedical Visualization
-2026-11-09T12:39:26  skill_reinforc  
-2026-11-09T12:39:26  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-09T12:40:13  skill_reinforc  
-2026-11-09T12:40:13  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
-2026-11-09T12:40:58  skill_reinforc  
-2026-11-09T12:40:58  skill_learn_ar  Automated Literature Review Using NLP Techniques and LLM-Based Retrieval-Augmented Generation
-2026-11-09T12:41:43  skill_reinforc  
-2026-11-09T12:42:25  skill_reinforc  
-2026-11-09T12:42:25  skill_learn_ar  A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance
-2026-11-09T12:43:08  skill_reinforc  
-2026-11-09T12:43:48  skill_reinforc  
-2026-11-09T12:44:27  skill_reinforc  
+2026-11-09T21:01:22  triage_restore  
+2026-11-09T21:01:22  triage          
+2026-11-09T21:02:25  skill_reinforc  
+2026-11-09T21:03:31  auto_learn_cyc  
+2026-11-09T21:04:36  skill_reinforc  
+2026-11-09T21:04:36  skill_learn_ar  Agent-Driven Automatic Software Improvement
+2026-11-09T21:05:44  auto_learn_cyc  
+2026-11-09T21:05:46  triage_restore  
+2026-11-09T21:05:46  triage          
+2026-11-09T21:06:50  skill_reinforc  
+2026-11-09T21:06:50  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-09T21:08:01  auto_learn_cyc  
+2026-11-09T21:33:57  plan            Thorax
+2026-11-09T21:33:57  skill_reinforc  
+2026-11-09T21:33:57  branch          Thorax
 ```
 
 ## Architecture de l'agent
