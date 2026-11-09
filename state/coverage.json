@@ -1056,6 +1056,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "Inference": {
+      "depth": 5,
+      "created_at": "2026-11-09T20:57:56.663415+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Inference"
+      ],
+      "updated_at": "2026-11-09T20:57:56.663420+00:00"
     }
   },
   "edges": [
