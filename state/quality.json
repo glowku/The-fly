@@ -6787,5 +6787,26 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T21:01:50.689420+00:00"
+  },
+  "Supply chain security": {
+    "score": 10.0,
+    "metrics": {
+      "words": 368,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Canvassing",
+        "Diagrams.net",
+        "Diagrammatic reasoning",
+        "Automated reasoning",
+        "Graph theory",
+        "Search engine indexing",
+        "Image"
+      ],
+      "diversity": 0.766,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T21:04:02.724723+00:00"
   }
 }
