@@ -328,7 +328,7 @@
     "last_reinforced": "2026-11-10T12:21:31.678165+00:00"
   },
   "recherche_image": {
-    "level": 2.52,
+    "level": 2.62,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -348,8 +348,9 @@
       "Image",
       "Thorax",
       "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
-      "Diagram of the Federal Government and American Union"
+      "Diagram of the Federal Government and American Union",
+      "Visual system"
     ],
-    "last_reinforced": "2026-11-10T12:19:30.703562+00:00"
+    "last_reinforced": "2026-11-10T12:23:45.522293+00:00"
   }
 }

@@ -1120,6 +1120,14 @@
         "https://en.wikipedia.org/wiki/Query_expansion"
       ],
       "updated_at": "2026-11-10T12:21:31.671312+00:00"
+    },
+    "Visual system": {
+      "depth": 5,
+      "created_at": "2026-11-10T12:23:45.515373+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Visual_system"
+      ],
+      "updated_at": "2026-11-10T12:23:45.515381+00:00"
     }
   },
   "edges": [
