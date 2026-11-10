@@ -1350,6 +1350,10 @@
     {
       "from": "Neoptera",
       "to": "International Symposium on Graph Drawing"
+    },
+    {
+      "from": "International Symposium on Graph Drawing",
+      "to": "Graph drawing"
     }
   ],
   "frontier": [

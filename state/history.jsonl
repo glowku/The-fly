@@ -6700,3 +6700,6 @@
 {"ts": "2026-11-10T12:23:02.519364+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 2.65, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
 {"ts": "2026-11-10T12:23:02.519430+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
 {"ts": "2026-11-10T12:23:45.522662+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 2.62, "article": "Visual system"}
+{"ts": "2026-11-10T12:28:04.156923+00:00", "type": "plan", "title": "International Symposium on Graph Drawing", "action": "branch", "priority": 166.5, "reason": "leaf_no_children", "skill": "representation", "relevance": 1.0}
+{"ts": "2026-11-10T12:28:04.619245+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 2.61, "article": "International Symposium on Graph Drawing"}
+{"ts": "2026-11-10T12:28:04.619295+00:00", "type": "branch", "title": "International Symposium on Graph Drawing", "children_discovered": 0, "skill": "representation"}
