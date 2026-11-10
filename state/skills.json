@@ -324,7 +324,7 @@
     "last_reinforced": "2026-11-10T01:28:48.630711+00:00"
   },
   "recherche_image": {
-    "level": 2.17,
+    "level": 2.27,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -341,8 +341,9 @@
       "lmap-shape-preserving-local-mappings-for-biomedical-visualization",
       "Diagrammatic reasoning",
       "Diagrams.net",
-      "Image"
+      "Image",
+      "Thorax"
     ],
-    "last_reinforced": "2026-11-09T21:02:25.851113+00:00"
+    "last_reinforced": "2026-11-10T03:58:44.326837+00:00"
   }
 }
