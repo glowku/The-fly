@@ -6688,5 +6688,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T12:53:15.474943+00:00"
+  },
+  "Andy Diagram": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Diagrammatic reasoning",
+        "Graphics processing unit",
+        "Diagrams.net",
+        "Image",
+        "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots",
+        "Automated reasoning"
+      ],
+      "diversity": 0.711,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T13:02:51.669124+00:00"
   }
 }
