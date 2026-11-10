@@ -6669,5 +6669,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T12:23:45.514642+00:00"
+  },
+  "Citation": {
+    "score": 10.0,
+    "metrics": {
+      "words": 330,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Diagrammatic reasoning",
+        "Diagrams.net",
+        "Image",
+        "Application security",
+        "Automated reasoning"
+      ],
+      "diversity": 0.798,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T12:53:15.474943+00:00"
   }
 }

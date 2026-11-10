@@ -301,7 +301,7 @@
     "last_reinforced": "2026-11-10T12:22:12.888026+00:00"
   },
   "recherche_web": {
-    "level": 2.55,
+    "level": 2.65,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -322,9 +322,10 @@
       "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
       "searching-scientific-literature-for-answers-on-covid-19-questions",
       "Search engine indexing",
-      "Query expansion"
+      "Query expansion",
+      "Citation"
     ],
-    "last_reinforced": "2026-11-10T12:21:31.678165+00:00"
+    "last_reinforced": "2026-11-10T12:53:15.483233+00:00"
   },
   "recherche_image": {
     "level": 2.62,

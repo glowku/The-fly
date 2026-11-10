@@ -1112,6 +1112,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "Citation": {
+      "depth": 3,
+      "created_at": "2026-11-10T12:53:15.475456+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Citation"
+      ],
+      "updated_at": "2026-11-10T12:53:15.475460+00:00"
     }
   },
   "edges": [
