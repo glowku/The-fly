@@ -6726,3 +6726,4 @@
 {"ts": "2026-11-10T14:39:44.645014+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-10T14:39:44.676072+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-10T14:39:44.702676+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 140, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-10T14:39:54.883716+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 2.75, "article": "Reason"}
