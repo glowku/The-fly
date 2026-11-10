@@ -300,7 +300,7 @@
     "last_reinforced": "2026-11-10T04:02:30.009479+00:00"
   },
   "recherche_web": {
-    "level": 2.25,
+    "level": 2.35,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -319,9 +319,10 @@
       "dynamic-information-retrieval-theoretical-framework-and-application",
       "a-case-driven-multi-agent-framework-for-e-commerce-search-relevance",
       "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
-      "searching-scientific-literature-for-answers-on-covid-19-questions"
+      "searching-scientific-literature-for-answers-on-covid-19-questions",
+      "Information retrieval"
     ],
-    "last_reinforced": "2026-11-10T01:28:48.630711+00:00"
+    "last_reinforced": "2026-11-10T04:18:26.943035+00:00"
   },
   "recherche_image": {
     "level": 2.27,

@@ -6517,5 +6517,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T04:04:09.975387+00:00"
+  },
+  "Information retrieval": {
+    "score": 10.0,
+    "metrics": {
+      "words": 293,
+      "sections": 3,
+      "links": 5,
+      "link_list": [
+        "Cross-origin resource sharing",
+        "Network theory",
+        "Automated reasoning",
+        "Graph database",
+        "Application security"
+      ],
+      "diversity": 0.768,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T04:18:26.938086+00:00"
   }
 }
