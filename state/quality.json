@@ -5360,21 +5360,22 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 351,
+      "words": 360,
       "sections": 4,
-      "links": 5,
+      "links": 6,
       "link_list": [
-        "Network theory",
-        "Graph database",
+        "Application security",
         "Graphics processing unit",
-        "Diagrammatic reasoning",
-        "Data and information visualization"
+        "Automated reasoning",
+        "Network theory",
+        "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots",
+        "Diagrammatic reasoning"
       ],
-      "diversity": 0.756,
+      "diversity": 0.798,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T21:06:55.728128+00:00"
+    "updated_at": "2026-11-10T04:05:47.321511+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
