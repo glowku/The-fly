@@ -1136,6 +1136,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-10T21:43:31.833588+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1911.04016v2"
+      ],
+      "updated_at": "2026-11-10T21:43:31.833597+00:00"
     }
   },
   "edges": [
