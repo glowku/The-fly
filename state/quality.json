@@ -6496,5 +6496,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T01:28:51.256595+00:00"
+  },
+  "Continuous integration": {
+    "score": 10.0,
+    "metrics": {
+      "words": 301,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Graph database",
+        "Application security",
+        "Graphics processing unit",
+        "Automated reasoning",
+        "Network theory",
+        "Diagrammatic reasoning"
+      ],
+      "diversity": 0.774,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T04:04:09.975387+00:00"
   }
 }

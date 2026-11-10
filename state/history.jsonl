@@ -6655,3 +6655,6 @@
 {"ts": "2026-11-10T04:02:30.009890+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 2.35, "article": "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo"}
 {"ts": "2026-11-10T04:02:30.009941+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices", "url": "https://arxiv.org/abs/1807.10463v4"}
 {"ts": "2026-11-10T04:03:22.740475+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-10T04:03:24.858576+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-10T04:03:24.884159+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 134, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-10T04:04:09.981951+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 2.33, "article": "Continuous integration"}
