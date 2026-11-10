@@ -6575,5 +6575,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T04:25:11.347353+00:00"
+  },
+  "Search engine indexing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 336,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Automated reasoning",
+        "Graphics processing unit",
+        "Diagrammatic reasoning",
+        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+        "Application security",
+        "Network theory"
+      ],
+      "diversity": 0.749,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T12:18:07.225337+00:00"
   }
 }
