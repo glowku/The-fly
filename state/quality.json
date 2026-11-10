@@ -5758,22 +5758,22 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 337,
+      "words": 333,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Angular resolution (graph drawing)",
-        "Area (graph drawing)",
-        "Technical drawing",
-        "Cultural ecology",
-        "Data and information visualization",
-        "Graph database"
+        "Graph database",
+        "Application security",
+        "Graphics processing unit",
+        "Automated reasoning",
+        "Network theory",
+        "Diagrammatic reasoning"
       ],
-      "diversity": 0.769,
+      "diversity": 0.841,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-09T12:40:16.156131+00:00"
+    "updated_at": "2026-11-10T04:00:42.451877+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
