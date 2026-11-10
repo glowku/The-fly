@@ -1112,6 +1112,14 @@
         "https://arxiv.org/abs/1911.04016v2"
       ],
       "updated_at": "2026-11-10T12:20:16.633330+00:00"
+    },
+    "Query expansion": {
+      "depth": 2,
+      "created_at": "2026-11-10T12:21:31.671306+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Query_expansion"
+      ],
+      "updated_at": "2026-11-10T12:21:31.671312+00:00"
     }
   },
   "edges": [

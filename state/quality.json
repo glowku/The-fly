@@ -6632,5 +6632,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T12:20:16.632750+00:00"
+  },
+  "Query expansion": {
+    "score": 10.0,
+    "metrics": {
+      "words": 363,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Automated reasoning",
+        "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance",
+        "Diagrammatic reasoning",
+        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction"
+      ],
+      "diversity": 0.758,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T12:21:31.670662+00:00"
   }
 }

@@ -302,7 +302,7 @@
     "last_reinforced": "2026-11-10T04:25:11.352625+00:00"
   },
   "recherche_web": {
-    "level": 2.45,
+    "level": 2.55,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -322,9 +322,10 @@
       "a-case-driven-multi-agent-framework-for-e-commerce-search-relevance",
       "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
       "searching-scientific-literature-for-answers-on-covid-19-questions",
-      "Search engine indexing"
+      "Search engine indexing",
+      "Query expansion"
     ],
-    "last_reinforced": "2026-11-10T12:18:07.232795+00:00"
+    "last_reinforced": "2026-11-10T12:21:31.678165+00:00"
   },
   "recherche_image": {
     "level": 2.52,
