@@ -6642,3 +6642,4 @@
 {"ts": "2026-11-10T01:28:48.631145+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 2.25, "article": "searching-scientific-literature-for-answers-on-covid-19-questions"}
 {"ts": "2026-11-10T01:28:48.631186+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Searching Scientific Literature for Answers on COVID-19 Questions", "url": "https://arxiv.org/abs/2007.02492v1"}
 {"ts": "2026-11-10T01:28:56.636930+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-10T03:53:57.048867+00:00", "type": "parallel_learn", "skill": "recherche_image", "learned": 0, "workers": 4, "parent": "Technical drawing"}
