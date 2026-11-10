@@ -210,7 +210,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 2.33,
+    "level": 2.43,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -229,9 +229,10 @@
       "factually-exploring-wearable-fact-checking-for-augmented-truth-discern",
       "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit",
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
-      "evor-evolving-retrieval-for-code-generation"
+      "evor-evolving-retrieval-for-code-generation",
+      "Graph theory"
     ],
-    "last_reinforced": "2026-11-10T04:04:09.981552+00:00"
+    "last_reinforced": "2026-11-10T04:22:55.670509+00:00"
   },
   "representation": {
     "level": 2.39,

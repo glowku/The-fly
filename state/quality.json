@@ -6536,5 +6536,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T04:18:26.938086+00:00"
+  },
+  "Graph theory": {
+    "score": 10.0,
+    "metrics": {
+      "words": 396,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Diagrammatic reasoning",
+        "LMap Shape-Preserving Local Mappings for Biomedical Visualization",
+        "Network theory",
+        "Graphics processing unit",
+        "Automated reasoning",
+        "Graph database"
+      ],
+      "diversity": 0.676,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T04:22:55.665491+00:00"
   }
 }
