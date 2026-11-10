@@ -6594,5 +6594,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T12:18:07.225337+00:00"
+  },
+  "Diagram of the Federal Government and American Union": {
+    "score": 10.0,
+    "metrics": {
+      "words": 349,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Automated reasoning",
+        "Graphics processing unit",
+        "Diagrams.net",
+        "Diagrammatic reasoning",
+        "Network theory"
+      ],
+      "diversity": 0.82,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T12:19:30.695580+00:00"
   }
 }
