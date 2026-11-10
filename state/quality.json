@@ -6011,21 +6011,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 404,
+      "words": 399,
       "sections": 4,
       "links": 5,
       "link_list": [
-        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
+        "Automated reasoning",
+        "Image",
+        "Diagrams.net",
         "Application security",
-        "Network theory",
-        "Cross-origin resource sharing",
-        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat"
+        "Searching Scientific Literature for Answers on COVID-19 Questions"
       ],
-      "diversity": 0.766,
+      "diversity": 0.765,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T04:02:36.002174+00:00"
+    "updated_at": "2026-11-10T12:22:16.016775+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,

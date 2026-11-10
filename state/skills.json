@@ -282,7 +282,7 @@
     "last_reinforced": "2026-11-10T11:03:24.925914+00:00"
   },
   "securite_defensive": {
-    "level": 2.45,
+    "level": 2.6,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -299,7 +299,7 @@
       "Cross-origin resource sharing",
       "Application security"
     ],
-    "last_reinforced": "2026-11-10T04:25:11.352625+00:00"
+    "last_reinforced": "2026-11-10T12:22:12.888026+00:00"
   },
   "recherche_web": {
     "level": 2.55,
