@@ -6669,3 +6669,4 @@
 {"ts": "2026-11-10T04:16:10.252147+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 134, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-10T04:17:21.588904+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-10T04:18:26.943341+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 2.35, "article": "Information retrieval"}
+{"ts": "2026-11-10T04:19:32.524934+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
