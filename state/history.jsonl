@@ -6722,3 +6722,4 @@
 {"ts": "2026-11-10T13:01:07.170340+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-10T13:01:07.189086+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 139, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-10T13:02:51.674371+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 2.72, "article": "Andy Diagram"}
+{"ts": "2026-11-10T13:03:57.522157+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
