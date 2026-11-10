@@ -6113,6 +6113,36 @@
         },
         "updated_at": "2026-11-10T12:53:15.474943+00:00"
       }
+    },
+    "Reason": {
+      "depth": 4,
+      "created_at": "2026-11-10T14:39:54.877915+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Reason"
+      ],
+      "updated_at": "2026-11-10T14:39:54.877920+00:00",
+      "quarantined_at": "2026-11-10T14:42:18.644785+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 391,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Automated reasoning",
+            "Graphics processing unit",
+            "Diagrams.net",
+            "Diagrammatic reasoning",
+            "Application security",
+            "Searching Scientific Literature for Answers on COVID-19 Questions"
+          ],
+          "diversity": 0.759,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-10T14:39:54.877416+00:00"
+      }
     }
   },
   "edges": [
@@ -7682,5 +7712,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-10T14:39:44.697635+00:00"
+  "updated_at": "2026-11-10T14:42:18.748392+00:00"
 }
