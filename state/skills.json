@@ -235,7 +235,7 @@
     "last_reinforced": "2026-11-10T19:40:29.980292+00:00"
   },
   "representation": {
-    "level": 2.76,
+    "level": 2.91,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -257,7 +257,7 @@
       "Graphics processing unit",
       "Canvassing"
     ],
-    "last_reinforced": "2026-11-10T12:59:54.569506+00:00"
+    "last_reinforced": "2026-11-10T21:06:14.587280+00:00"
   },
   "raisonnement": {
     "level": 2.85,
@@ -324,8 +324,7 @@
       "searching-scientific-literature-for-answers-on-covid-19-questions",
       "Search engine indexing",
       "Query expansion",
-      "ArXiv",
-      "Peer review"
+      "ArXiv"
     ],
     "last_reinforced": "2026-11-10T21:01:50.696900+00:00"
   },

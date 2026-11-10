@@ -6172,6 +6172,36 @@
         },
         "updated_at": "2026-11-10T19:40:29.972852+00:00"
       }
+    },
+    "Peer review": {
+      "depth": 4,
+      "created_at": "2026-11-10T21:01:50.690157+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Peer_review"
+      ],
+      "updated_at": "2026-11-10T21:01:50.690164+00:00",
+      "quarantined_at": "2026-11-10T21:05:10.445469+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 367,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Application security",
+            "Diagrammatic reasoning",
+            "Searching Scientific Literature for Answers on COVID-19 Questions",
+            "Automated reasoning",
+            "Graph theory",
+            "ArXiv"
+          ],
+          "diversity": 0.79,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-10T21:01:50.689420+00:00"
+      }
     }
   },
   "edges": [
@@ -7741,5 +7771,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-10T21:00:47.328274+00:00"
+  "updated_at": "2026-11-10T21:05:10.456594+00:00"
 }
