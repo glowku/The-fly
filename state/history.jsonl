@@ -6652,3 +6652,5 @@
 {"ts": "2026-11-10T04:00:31.706332+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 2.35, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
 {"ts": "2026-11-10T04:00:31.706383+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
 {"ts": "2026-11-10T04:01:34.904323+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-10T04:02:30.009890+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 2.35, "article": "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo"}
+{"ts": "2026-11-10T04:02:30.009941+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices", "url": "https://arxiv.org/abs/1807.10463v4"}
