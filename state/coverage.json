@@ -1104,6 +1104,14 @@
         "https://en.wikipedia.org/wiki/Diagram_of_the_Federal_Government_and_American_Union"
       ],
       "updated_at": "2026-11-10T12:19:30.696235+00:00"
+    },
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-10T12:20:16.633324+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1911.04016v2"
+      ],
+      "updated_at": "2026-11-10T12:20:16.633330+00:00"
     }
   },
   "edges": [
