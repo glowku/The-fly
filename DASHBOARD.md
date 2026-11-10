@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-09 23:58:27 UTC
+**Dernière mise à jour** : 2026-11-10 07:01:56 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **25.846** |
-| Concepts traités | 200 | **133** |
+| Score global | maximiser | **26.441** |
+| Concepts traités | 200 | **136** |
 | Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **133** |
+| Concepts traités (nœuds) | **136** |
 | Arêtes du graphe | 55 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.72/10** |
-| Score objectif (coverage × quality) | **25.846** |
-| Actions dernières 24 h | 154 |
+| Score objectif (coverage × quality) | **26.441** |
+| Actions dernières 24 h | 149 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 316 |
+| Excellent (≥ 8) | 321 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-09T21:01:22  triage_restore  
-2026-11-09T21:01:22  triage          
-2026-11-09T21:02:25  skill_reinforc  
-2026-11-09T21:03:31  auto_learn_cyc  
-2026-11-09T21:04:36  skill_reinforc  
-2026-11-09T21:04:36  skill_learn_ar  Agent-Driven Automatic Software Improvement
-2026-11-09T21:05:44  auto_learn_cyc  
-2026-11-09T21:05:46  triage_restore  
-2026-11-09T21:05:46  triage          
-2026-11-09T21:06:50  skill_reinforc  
-2026-11-09T21:06:50  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-09T21:08:01  auto_learn_cyc  
-2026-11-09T21:33:57  plan            Thorax
-2026-11-09T21:33:57  skill_reinforc  
-2026-11-09T21:33:57  branch          Thorax
+2026-11-10T04:16:10  triage          
+2026-11-10T04:17:21  auto_learn_cyc  
+2026-11-10T04:18:26  skill_reinforc  
+2026-11-10T04:19:32  auto_learn_cyc  
+2026-11-10T04:19:34  triage_restore  
+2026-11-10T04:19:34  triage          
+2026-11-10T04:20:38  skill_reinforc  
+2026-11-10T04:20:38  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-10T04:21:48  auto_learn_cyc  
+2026-11-10T04:22:55  skill_reinforc  
+2026-11-10T04:24:02  auto_learn_cyc  
+2026-11-10T04:24:04  triage_restore  
+2026-11-10T04:24:04  triage          
+2026-11-10T04:25:11  skill_reinforc  
+2026-11-10T04:26:16  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
