@@ -905,6 +905,38 @@
       ],
       "updated_at": "2026-11-10T04:22:55.665993+00:00"
     },
+    "Search engine indexing": {
+      "depth": 1,
+      "created_at": "2026-11-10T12:18:07.225973+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Search_engine_indexing"
+      ],
+      "updated_at": "2026-11-10T12:18:07.225980+00:00"
+    },
+    "Diagram of the Federal Government and American Union": {
+      "depth": 4,
+      "created_at": "2026-11-10T12:19:30.696229+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Diagram_of_the_Federal_Government_and_American_Union"
+      ],
+      "updated_at": "2026-11-10T12:19:30.696235+00:00"
+    },
+    "Query expansion": {
+      "depth": 2,
+      "created_at": "2026-11-10T12:21:31.671306+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Query_expansion"
+      ],
+      "updated_at": "2026-11-10T12:21:31.671312+00:00"
+    },
+    "Visual system": {
+      "depth": 5,
+      "created_at": "2026-11-10T12:23:45.515373+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Visual_system"
+      ],
+      "updated_at": "2026-11-10T12:23:45.515381+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1080,54 +1112,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-10T12:23:06.255199+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-10T12:23:06.255205+00:00"
-    },
-    "Search engine indexing": {
-      "depth": 1,
-      "created_at": "2026-11-10T12:18:07.225973+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Search_engine_indexing"
-      ],
-      "updated_at": "2026-11-10T12:18:07.225980+00:00"
-    },
-    "Diagram of the Federal Government and American Union": {
-      "depth": 4,
-      "created_at": "2026-11-10T12:19:30.696229+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Diagram_of_the_Federal_Government_and_American_Union"
-      ],
-      "updated_at": "2026-11-10T12:19:30.696235+00:00"
-    },
-    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
-      "depth": 2,
-      "created_at": "2026-11-10T12:20:16.633324+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1911.04016v2"
-      ],
-      "updated_at": "2026-11-10T12:20:16.633330+00:00"
-    },
-    "Query expansion": {
-      "depth": 2,
-      "created_at": "2026-11-10T12:21:31.671306+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Query_expansion"
-      ],
-      "updated_at": "2026-11-10T12:21:31.671312+00:00"
-    },
-    "Visual system": {
-      "depth": 5,
-      "created_at": "2026-11-10T12:23:45.515373+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Visual_system"
-      ],
-      "updated_at": "2026-11-10T12:23:45.515381+00:00"
     }
   },
   "edges": [

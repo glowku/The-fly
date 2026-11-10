@@ -5484,32 +5484,31 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-10T04:00:42.452423+00:00",
+      "created_at": "2026-11-10T12:23:06.255199+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-10T04:00:42.452428+00:00",
-      "quarantined_at": "2026-11-10T04:03:24.871018+00:00",
+      "updated_at": "2026-11-10T12:23:06.255205+00:00",
+      "quarantined_at": "2026-11-10T12:53:08.941891+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 333,
-          "sections": 4,
-          "links": 6,
+          "words": 447,
+          "sections": 6,
+          "links": 5,
           "link_list": [
-            "Graph database",
-            "Application security",
-            "Graphics processing unit",
             "Automated reasoning",
-            "Network theory",
-            "Diagrammatic reasoning"
+            "LMap Shape-Preserving Local Mappings for Biomedical Visualization",
+            "Diagrammatic reasoning",
+            "Application security",
+            "Graphics processing unit"
           ],
-          "diversity": 0.841,
+          "diversity": 0.764,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-10T04:00:42.451877+00:00"
+        "updated_at": "2026-11-10T12:23:06.254465+00:00"
       }
     },
     "OWASP": {
@@ -6056,6 +6055,35 @@
           "has_h1": true
         },
         "updated_at": "2026-11-10T04:25:11.347353+00:00"
+      }
+    },
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-10T12:20:16.633324+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1911.04016v2"
+      ],
+      "updated_at": "2026-11-10T12:20:16.633330+00:00",
+      "quarantined_at": "2026-11-10T12:53:08.941909+00:00",
+      "reason": "junk",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 400,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Automated reasoning",
+            "Diagrams.net",
+            "Diagrammatic reasoning",
+            "Application security",
+            "Graphics processing unit"
+          ],
+          "diversity": 0.803,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-10T12:20:16.632750+00:00"
       }
     }
   },
@@ -7626,5 +7654,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-10T11:03:20.419172+00:00"
+  "updated_at": "2026-11-10T12:53:08.949055+00:00"
 }

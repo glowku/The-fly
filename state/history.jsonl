@@ -6703,3 +6703,6 @@
 {"ts": "2026-11-10T12:28:04.156923+00:00", "type": "plan", "title": "International Symposium on Graph Drawing", "action": "branch", "priority": 166.5, "reason": "leaf_no_children", "skill": "representation", "relevance": 1.0}
 {"ts": "2026-11-10T12:28:04.619245+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 2.61, "article": "International Symposium on Graph Drawing"}
 {"ts": "2026-11-10T12:28:04.619295+00:00", "type": "branch", "title": "International Symposium on Graph Drawing", "children_discovered": 0, "skill": "representation"}
+{"ts": "2026-11-10T12:53:08.907565+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-10T12:53:08.931519+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-10T12:53:08.952913+00:00", "type": "triage", "moved_to_quarantine": 2, "deduped": 0, "active_nodes": 139, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect", "reason": "low_rel=0.0"}, {"title": "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua", "reason": "junk"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
