@@ -5758,21 +5758,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 403,
-      "sections": 4,
+      "words": 447,
+      "sections": 6,
       "links": 5,
       "link_list": [
-        "Network theory",
+        "Automated reasoning",
+        "LMap Shape-Preserving Local Mappings for Biomedical Visualization",
         "Diagrammatic reasoning",
-        "Graphics processing unit",
-        "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots",
-        "Automated reasoning"
+        "Application security",
+        "Graphics processing unit"
       ],
-      "diversity": 0.745,
+      "diversity": 0.764,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T11:03:27.791058+00:00"
+    "updated_at": "2026-11-10T12:23:06.254465+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
