@@ -230,8 +230,7 @@
       "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit",
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
       "evor-evolving-retrieval-for-code-generation",
-      "Graph theory",
-      "challenges-for-inclusion-in-software-engineering-the-case-of-the-emerg"
+      "Graph theory"
     ],
     "last_reinforced": "2026-11-10T12:55:27.410570+00:00"
   },
@@ -282,7 +281,7 @@
     "last_reinforced": "2026-11-10T12:23:02.518908+00:00"
   },
   "securite_defensive": {
-    "level": 2.6,
+    "level": 2.75,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -299,7 +298,7 @@
       "Cross-origin resource sharing",
       "Application security"
     ],
-    "last_reinforced": "2026-11-10T12:22:12.888026+00:00"
+    "last_reinforced": "2026-11-10T12:57:40.551615+00:00"
   },
   "recherche_web": {
     "level": 2.65,
@@ -323,8 +322,7 @@
       "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
       "searching-scientific-literature-for-answers-on-covid-19-questions",
       "Search engine indexing",
-      "Query expansion",
-      "Citation"
+      "Query expansion"
     ],
     "last_reinforced": "2026-11-10T12:53:15.483233+00:00"
   },

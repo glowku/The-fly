@@ -6059,31 +6059,59 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-10T12:20:16.633324+00:00",
+      "created_at": "2026-11-10T12:55:28.982413+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-10T12:20:16.633330+00:00",
-      "quarantined_at": "2026-11-10T12:53:08.941909+00:00",
+      "updated_at": "2026-11-10T12:55:28.982418+00:00",
+      "quarantined_at": "2026-11-10T12:56:36.692313+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 400,
+          "words": 359,
           "sections": 4,
-          "links": 5,
+          "links": 4,
           "link_list": [
-            "Automated reasoning",
-            "Diagrams.net",
-            "Diagrammatic reasoning",
             "Application security",
-            "Graphics processing unit"
+            "Canvassing",
+            "Automated reasoning",
+            "Diagrammatic reasoning"
           ],
-          "diversity": 0.803,
+          "diversity": 0.819,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-10T12:20:16.632750+00:00"
+        "updated_at": "2026-11-10T12:55:28.981626+00:00"
+      }
+    },
+    "Citation": {
+      "depth": 3,
+      "created_at": "2026-11-10T12:53:15.475456+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Citation"
+      ],
+      "updated_at": "2026-11-10T12:53:15.475460+00:00",
+      "quarantined_at": "2026-11-10T12:56:36.692305+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 330,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Diagrammatic reasoning",
+            "Diagrams.net",
+            "Image",
+            "Application security",
+            "Automated reasoning"
+          ],
+          "diversity": 0.798,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-10T12:53:15.474943+00:00"
       }
     }
   },
@@ -7654,5 +7682,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-10T12:53:08.949055+00:00"
+  "updated_at": "2026-11-10T12:56:36.698386+00:00"
 }
