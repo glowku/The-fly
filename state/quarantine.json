@@ -5968,6 +5968,36 @@
         },
         "updated_at": "2026-11-09T21:04:39.037268+00:00"
       }
+    },
+    "Continuous integration": {
+      "depth": 4,
+      "created_at": "2026-11-10T04:04:09.975895+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Continuous_integration"
+      ],
+      "updated_at": "2026-11-10T04:04:09.975900+00:00",
+      "quarantined_at": "2026-11-10T04:06:36.567939+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 301,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Graph database",
+            "Application security",
+            "Graphics processing unit",
+            "Automated reasoning",
+            "Network theory",
+            "Diagrammatic reasoning"
+          ],
+          "diversity": 0.774,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-10T04:04:09.975387+00:00"
+      }
     }
   },
   "edges": [
@@ -7537,5 +7567,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-10T04:03:24.879305+00:00"
+  "updated_at": "2026-11-10T04:06:36.575962+00:00"
 }
