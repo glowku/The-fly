@@ -319,13 +319,12 @@
       "dynamic-information-retrieval-theoretical-framework-and-application",
       "a-case-driven-multi-agent-framework-for-e-commerce-search-relevance",
       "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
-      "searching-scientific-literature-for-answers-on-covid-19-questions",
-      "Information retrieval"
+      "searching-scientific-literature-for-answers-on-covid-19-questions"
     ],
     "last_reinforced": "2026-11-10T04:18:26.943035+00:00"
   },
   "recherche_image": {
-    "level": 2.27,
+    "level": 2.42,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -343,8 +342,9 @@
       "Diagrammatic reasoning",
       "Diagrams.net",
       "Image",
-      "Thorax"
+      "Thorax",
+      "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"
     ],
-    "last_reinforced": "2026-11-10T03:58:44.326837+00:00"
+    "last_reinforced": "2026-11-10T04:20:38.096481+00:00"
   }
 }
