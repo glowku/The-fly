@@ -3,7 +3,7 @@ skill: representation
 title: What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
 source: arxiv
 url: https://arxiv.org/abs/1710.04328v1
-created: 2026-11-10T12:18:46.070154+00:00
+created: 2026-11-10T12:59:54.569054+00:00
 ---
 
 # What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
