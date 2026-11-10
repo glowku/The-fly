@@ -6011,22 +6011,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 380,
+      "words": 374,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Firmware update",
-        "Computational RFID",
-        "Physical Unclonable Function (PUF)",
-        "Energy harvesting devices",
-        "Application security",
-        "ISO-18000-6C"
+        "Diagrammatic reasoning",
+        "Automated reasoning",
+        "EVOR Evolving Retrieval for Code Generation",
+        "Graph theory",
+        "Diagrams.net"
       ],
-      "diversity": 0.717,
+      "diversity": 0.798,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T12:57:42.750068+00:00"
+    "updated_at": "2026-11-10T21:45:07.237192+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
