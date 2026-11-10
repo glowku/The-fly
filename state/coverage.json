@@ -1120,6 +1120,14 @@
         "https://en.wikipedia.org/wiki/Citation"
       ],
       "updated_at": "2026-11-10T12:53:15.475460+00:00"
+    },
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-10T12:55:28.982413+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1911.04016v2"
+      ],
+      "updated_at": "2026-11-10T12:55:28.982418+00:00"
     }
   },
   "edges": [
