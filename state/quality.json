@@ -5759,22 +5759,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 333,
+      "words": 403,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Graph database",
-        "Application security",
-        "Graphics processing unit",
-        "Automated reasoning",
         "Network theory",
-        "Diagrammatic reasoning"
+        "Diagrammatic reasoning",
+        "Graphics processing unit",
+        "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots",
+        "Automated reasoning"
       ],
-      "diversity": 0.841,
+      "diversity": 0.745,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T04:00:42.451877+00:00"
+    "updated_at": "2026-11-10T11:03:27.791058+00:00"
   },
   "Technical drawing": {
     "score": 10.0,

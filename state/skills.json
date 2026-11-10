@@ -260,7 +260,7 @@
     "last_reinforced": "2026-11-10T04:05:44.059011+00:00"
   },
   "raisonnement": {
-    "level": 2.35,
+    "level": 2.5,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -278,7 +278,7 @@
       "Automated reasoning",
       "Thorax"
     ],
-    "last_reinforced": "2026-11-10T04:00:31.705871+00:00"
+    "last_reinforced": "2026-11-10T11:03:24.925914+00:00"
   },
   "securite_defensive": {
     "level": 2.45,
@@ -296,8 +296,7 @@
       "Technical drawing",
       "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo",
       "Cross-origin resource sharing",
-      "Application security",
-      "Dependency (project management)"
+      "Application security"
     ],
     "last_reinforced": "2026-11-10T04:25:11.352625+00:00"
   },
