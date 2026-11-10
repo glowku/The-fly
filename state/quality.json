@@ -6476,5 +6476,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-09T21:04:39.037268+00:00"
+  },
+  "Searching Scientific Literature for Answers on COVID-19 Questions": {
+    "score": 10.0,
+    "metrics": {
+      "words": 371,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Cross-origin resource sharing",
+        "Application security",
+        "Data and information visualization",
+        "Graph database",
+        "Graphics processing unit",
+        "Network theory"
+      ],
+      "diversity": 0.759,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T01:28:51.256595+00:00"
   }
 }

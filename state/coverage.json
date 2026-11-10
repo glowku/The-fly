@@ -1064,6 +1064,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "Searching Scientific Literature for Answers on COVID-19 Questions": {
+      "depth": 2,
+      "created_at": "2026-11-10T01:28:51.257060+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2007.02492v1"
+      ],
+      "updated_at": "2026-11-10T01:28:51.257064+00:00"
     }
   },
   "edges": [

@@ -6636,3 +6636,8 @@
 {"ts": "2026-11-09T21:33:57.593897+00:00", "type": "plan", "title": "Thorax", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "raisonnement", "relevance": 1.0}
 {"ts": "2026-11-09T21:33:57.798922+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 2.2, "article": "Thorax"}
 {"ts": "2026-11-09T21:33:57.798992+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "raisonnement"}
+{"ts": "2026-11-10T01:28:43.964821+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-10T01:28:43.988235+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-10T01:28:44.006955+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 133, "active_edges": 55, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-10T01:28:48.631145+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 2.25, "article": "searching-scientific-literature-for-answers-on-covid-19-questions"}
+{"ts": "2026-11-10T01:28:48.631186+00:00", "type": "skill_learn_arxiv", "skill": "recherche_web", "title": "Searching Scientific Literature for Answers on COVID-19 Questions", "url": "https://arxiv.org/abs/2007.02492v1"}

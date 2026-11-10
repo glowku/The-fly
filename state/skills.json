@@ -300,7 +300,7 @@
     "last_reinforced": "2026-11-09T21:00:12.160555+00:00"
   },
   "recherche_web": {
-    "level": 2.1,
+    "level": 2.25,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -318,9 +318,10 @@
       "scientific-literature-text-mining-and-the-case-for-open-access",
       "dynamic-information-retrieval-theoretical-framework-and-application",
       "a-case-driven-multi-agent-framework-for-e-commerce-search-relevance",
-      "multi-turn-agentic-scientific-literature-search-via-workflow-induction"
+      "multi-turn-agentic-scientific-literature-search-via-workflow-induction",
+      "searching-scientific-literature-for-answers-on-covid-19-questions"
     ],
-    "last_reinforced": "2026-11-09T20:35:45.217316+00:00"
+    "last_reinforced": "2026-11-10T01:28:48.630711+00:00"
   },
   "recherche_image": {
     "level": 2.17,
