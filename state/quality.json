@@ -6556,5 +6556,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T04:22:55.665491+00:00"
+  },
+  "Dependency (project management)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 276,
+      "sections": 3,
+      "links": 6,
+      "link_list": [
+        "Diagrammatic reasoning",
+        "Cross-origin resource sharing",
+        "Network theory",
+        "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots",
+        "Automated reasoning",
+        "Application security"
+      ],
+      "diversity": 0.787,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-10T04:25:11.347353+00:00"
   }
 }

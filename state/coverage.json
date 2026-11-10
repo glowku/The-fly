@@ -897,6 +897,14 @@
       ],
       "updated_at": "2026-11-10T01:28:51.257064+00:00"
     },
+    "Graph theory": {
+      "depth": 4,
+      "created_at": "2026-11-10T04:22:55.665989+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Graph_theory"
+      ],
+      "updated_at": "2026-11-10T04:22:55.665993+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1073,13 +1081,13 @@
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
     },
-    "Graph theory": {
-      "depth": 4,
-      "created_at": "2026-11-10T04:22:55.665989+00:00",
+    "Dependency (project management)": {
+      "depth": 5,
+      "created_at": "2026-11-10T04:25:11.347882+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Graph_theory"
+        "https://en.wikipedia.org/wiki/Dependency_(project_management)"
       ],
-      "updated_at": "2026-11-10T04:22:55.665993+00:00"
+      "updated_at": "2026-11-10T04:25:11.347886+00:00"
     }
   },
   "edges": [
