@@ -1,24 +1,26 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement logiciel devient un levier économique et social majeur. Ce document synthétise les résultats d’un atelier de génie logiciel mené dans le pays, qui a mobilisé des acteurs locaux et internationaux pour identifier les obstacles et les opportunités d’inclusion dans l’industrie mondiale du logiciel. La démarche repose sur une étude qualitative combinant des présentations, un questionnaire et un focus group, suivie d’une analyse thématique.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le secteur du logiciel peut devenir un moteur de développement économique et social. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et les opportunités pour une inclusion effective des acteurs locaux dans l’industrie mondiale du logiciel.
 
-## Méthodologie et résultats
+## Contexte et méthodologie
 
-L’atelier a réuni trois intervenants qui ont présenté les tendances actuelles du marché logiciel, suivi d’un questionnaire diffusé auprès de 52 participants. Un focus group approfondi avec cinq acteurs locaux a permis de recueillir des perspectives spécifiques à PNG. L’analyse thématique a mis en évidence deux catégories principales :  
-- **Barrières** : manque d’infrastructures numériques, déficit de compétences en ingénierie logicielle, contraintes linguistiques et culturelles, et un accès limité aux ressources éducatives.  
-- **Opportunités** : forte demande locale pour des solutions logicielles adaptées aux réalités rurales, potentiel de collaboration internationale, et intérêt croissant pour les technologies open‑source.
+L’atelier a réuni trois conférenciers, 52 participants ayant rempli un questionnaire, et a organisé un focus group approfondi avec cinq acteurs locaux. Les données ont été analysées thématiquement, permettant de distinguer les barrières structurelles, culturelles et techniques, ainsi que les leviers d’opportunité. Les thèmes émergents concernent notamment l’accès limité aux infrastructures numériques, la pénurie de compétences spécialisées, et la nécessité d’adapter les pratiques de développement aux réalités socio‑culturelles de PNG.
 
-Les pratiques actuelles montrent une adoption fragmentée des méthodes de développement, avec une préférence pour des approches agiles informelles. L’étude souligne la nécessité de promouvoir des standards inclusifs, de renforcer les programmes de formation et de faciliter l’accès aux outils de collaboration.
+## Défis identifiés et pistes d’action
 
-## Perspectives d’inclusion
+Les principaux défis se répartissent en deux catégories :
 
-Pour rendre le secteur logiciel de PNG plus inclusif, les auteurs recommandent :  
-1. **Renforcement des infrastructures** : investissement dans les réseaux et les centres de données locaux.  
-2. **Programmes de formation ciblés** : cours en langues locales et modules sur les principes d’ingénierie logicielle.  
-3. **Partenariats internationaux** : échanges de bonnes pratiques et accès à des plateformes de collaboration open‑source.  
-4. **Politiques de soutien** : incitations fiscales et subventions pour les startups technologiques locales.
+1. **Barrières**  
+   - *Infrastructure et connectivité* : la couverture Internet reste fragmentaire, limitant l’accès aux ressources de formation et aux plateformes de collaboration.  
+   - *Formation et rétention des talents* : l’écart entre les compétences requises par l’industrie et celles disponibles localement crée un déséquilibre.  
+   - *Normes et gouvernance* : l’absence de cadres réglementaires spécifiques au logiciel entrave la standardisation et la certification.
 
-Ces mesures visent à créer un écosystème où praticiens, chercheurs et éducateurs, tant locaux qu’internationaux, peuvent collaborer efficacement.
+2. **Opportunités**  
+   - *Éducation locale* : l’intégration de modules de génie logiciel dans les programmes universitaires peut créer un vivier de talents.  
+   - *Collaboration internationale* : les partenariats avec des institutions étrangères favorisent le transfert de connaissances et l’adoption de meilleures pratiques.  
+   - *Innovation contextuelle* : les besoins uniques de PNG (par exemple, la gestion des ressources naturelles) offrent des cas d’usage pertinents pour le développement de solutions logicielles adaptées.
+
+Les recommandations incluent la mise en place de programmes de formation ciblés, le développement d’infrastructures de cloud computing accessibles, et la création d’un cadre réglementaire encourageant l’innovation tout en protégeant les droits des utilisateurs.
 
 ## Voir aussi
-[[Graphics processing unit]], [[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagram of the Federal Government and American Union]], [[Query expansion]]
+[[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagrams.net]], [[Canvassing]]

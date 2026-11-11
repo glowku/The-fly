@@ -6619,22 +6619,21 @@
   "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
     "score": 10.0,
     "metrics": {
-      "words": 354,
+      "words": 344,
       "sections": 3,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Diagram of the Federal Government and American Union",
         "Automated reasoning",
-        "Query expansion",
+        "Diagrams.net",
+        "Canvassing",
         "Graph theory",
-        "Search engine indexing",
-        "Graphics processing unit"
+        "Search engine indexing"
       ],
-      "diversity": 0.802,
+      "diversity": 0.849,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-11T09:05:28.322637+00:00"
+    "updated_at": "2026-11-11T10:48:36.235256+00:00"
   },
   "Query expansion": {
     "score": 10.0,
