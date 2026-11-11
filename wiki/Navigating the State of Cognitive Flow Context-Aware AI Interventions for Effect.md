@@ -1,19 +1,24 @@
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 
-Ce travail introduit une extension de la théorie du flux à l’IA augmentée, visant à soutenir le raisonnement complexe sans perturber l’engagement profond. Il propose un cadre d’augmentation cognitive contextuelle qui adapte les interventions d’une IA en fonction de trois facteurs clés : le type, le timing et l’échelle. En exploitant des indices comportementaux multimodaux – tels que le comportement oculaire, les hésitations de frappe et la vitesse d’interaction – l’IA ajuste dynamiquement son soutien pour maintenir ou restaurer l’état de flux.
+Cette recherche explore comment les systèmes d’intelligence artificielle peuvent soutenir la prise de décision complexe sans perturber l’état de *flow* cognitif. Le *flow* désigne un état optimal de concentration et de motivation intrinsèque lorsque la difficulté d’une tâche correspond au niveau de compétence de l’individu. Les interventions statiques en IA peuvent rompre ce flux, tandis qu’une approche context‑aware ajuste les aides en fonction de la situation.
 
-## Théorie du flux et ses implications pour l’IA augmentée
-La théorie du flux décrit un état optimal où l’individu est pleinement concentré et motivé intrinsèquement lorsqu’il perçoit un équilibre entre la difficulté d’une tâche et ses compétences. Dans le contexte de l’IA augmentée, les interventions statiques ou mal synchronisées peuvent rompre cet équilibre, entravant la prise de décision. Le cadre proposé reconnaît que la perturbation du flux est plus dommageable que l’absence d’intervention, soulignant la nécessité d’une approche personnalisée et adaptative.
+## Concepts clés du *flow* cognitif en IA
 
-## Cadre d’augmentation cognitive contextuelle
-Le modèle se décompose en trois dimensions :
-1. **Type** : nature de l’intervention (information, rappel, suggestion).  
-2. **Timing** : moment de l’intervention, déterminé par des signaux en temps réel.  
-3. **Échelle** : intensité et granularité de l’aide fournie.  
-En combinant ces dimensions, l’IA peut moduler son assistance pour rester « non intrusif » tout en maximisant l’engagement cognitif. Les indices multimodaux permettent de détecter les signes de perte de concentration ou de surcharge, déclenchant des ajustements automatiques.
+Le *flow* est caractérisé par une immersion profonde, une perte de conscience du temps et une motivation auto‑suffisante. Dans le cadre de l’IA, maintenir ce niveau exige que les systèmes reconnaissent les signaux comportementaux multimodaux—regard, hésitation de frappe, vitesse d’interaction—qui indiquent l’état cognitif de l’utilisateur. L’article distingue trois dimensions de contextualisation : le type d’intervention (information, suggestion, correction), le timing (moment de l’interaction) et l’échelle (intensité de l’aide). En adaptant ces paramètres, l’IA peut offrir un soutien personnalisé et non intrusif.
 
-## Applications et perspectives futures
-Le cadre a été testé dans des scénarios de recherche scientifique et de prise de décision médicale, où les utilisateurs bénéficient d’une aide contextuelle sans perdre leur immersion. Les résultats suggèrent que les interventions adaptatives améliorent la précision des conclusions et réduisent la fatigue cognitive. Les auteurs envisagent d’étendre cette approche à des systèmes de recommandation, de tutorat intelligent et de collaboration homme-machine, en intégrant davantage de capteurs et de modèles prédictifs.
+## Cadre context‑aware d’augmentation cognitive
+
+Le cadre proposé intègre un pipeline de collecte de données multimodales, d’analyse en temps réel et de décision adaptative. Les capteurs de gaze tracking et les logs de saisie alimentent un modèle prédictif qui estime la probabilité de rupture du *flow*. Sur cette base, l’IA sélectionne l’intervention la plus appropriée, en ajustant son type, son timing et son échelle pour restaurer ou maintenir l’engagement. Cette approche contraste avec les interventions statiques courantes, qui imposent des aides sans tenir compte du contexte immédiat, souvent au détriment de la performance décisionnelle.
+
+## Implications pour la recherche et la pratique
+
+En appliquant ce cadre à des tâches de raisonnement automatisé, comme la recherche scientifique ou la génération de code, les systèmes peuvent soutenir l’utilisateur sans interrompre son immersion. Les applications potentielles incluent l’assistance à la rédaction de rapports scientifiques, l’optimisation de flux de travail dans les environnements de recherche, et la réduction de la surcharge cognitive lors de la navigation dans de vastes bases de données. Les résultats suggèrent que la personnalisation contextuelle améliore la qualité des décisions et la satisfaction de l’utilisateur, ouvrant la voie à des interfaces plus naturelles et efficaces.
 
 ## Voir aussi
-[[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagrams.net]], [[Query expansion]], [[EVOR Evolving Retrieval for Code Generation]]
+
+[[Automated reasoning]]  
+[[Multi-Turn Agentic Scientific Literature Search via Workflow Induction]]  
+[[Graph theory]]  
+[[Search engine indexing]]  
+[[Query expansion]]  
+[[Visual system]]
