@@ -6868,3 +6868,4 @@
 {"ts": "2026-11-11T15:55:28.718539+00:00", "type": "plan", "title": "Thorax", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "raisonnement", "relevance": 1.0}
 {"ts": "2026-11-11T15:55:29.135533+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 3.35, "article": "Thorax"}
 {"ts": "2026-11-11T15:55:29.135569+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "raisonnement"}
+{"ts": "2026-11-11T17:35:06.655999+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Thorax"}
