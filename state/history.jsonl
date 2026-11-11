@@ -6778,3 +6778,4 @@
 {"ts": "2026-11-10T21:48:51.199165+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-10T21:48:53.456366+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-10T21:48:53.502239+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 142, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-11T00:19:23.559544+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Thorax"}
