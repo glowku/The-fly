@@ -5360,21 +5360,22 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 331,
+      "words": 368,
       "sections": 4,
-      "links": 5,
+      "links": 6,
       "link_list": [
+        "Image",
+        "Graphics processing unit",
         "Diagrammatic reasoning",
         "Automated reasoning",
         "Graph theory",
-        "Image",
-        "Graphics processing unit"
+        "Diagrams.net"
       ],
-      "diversity": 0.791,
+      "diversity": 0.737,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T21:06:19.275461+00:00"
+    "updated_at": "2026-11-11T01:52:01.338573+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
