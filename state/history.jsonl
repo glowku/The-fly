@@ -6791,3 +6791,6 @@
 {"ts": "2026-11-11T01:47:27.697869+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 142, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-11T01:48:16.544299+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-11T01:49:43.772564+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-11T01:49:45.664295+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-11T01:49:45.696400+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 142, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-11T01:50:29.106608+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 2.95, "article": "Query language"}

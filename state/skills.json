@@ -302,7 +302,7 @@
     "last_reinforced": "2026-11-10T21:45:05.160243+00:00"
   },
   "recherche_web": {
-    "level": 2.85,
+    "level": 2.95,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -324,9 +324,10 @@
       "searching-scientific-literature-for-answers-on-covid-19-questions",
       "Search engine indexing",
       "Query expansion",
-      "ArXiv"
+      "ArXiv",
+      "Query language"
     ],
-    "last_reinforced": "2026-11-10T21:01:50.696900+00:00"
+    "last_reinforced": "2026-11-11T01:50:29.105981+00:00"
   },
   "recherche_image": {
     "level": 2.87,

@@ -6809,5 +6809,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-10T21:04:02.724723+00:00"
+  },
+  "Query language": {
+    "score": 10.0,
+    "metrics": {
+      "words": 344,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Graphics processing unit",
+        "Diagrammatic reasoning",
+        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+        "Automated reasoning",
+        "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance",
+        "EVOR Evolving Retrieval for Code Generation"
+      ],
+      "diversity": 0.771,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-11T01:50:29.098257+00:00"
   }
 }
