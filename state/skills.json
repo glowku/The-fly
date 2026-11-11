@@ -235,7 +235,7 @@
     "last_reinforced": "2026-11-10T21:43:28.530425+00:00"
   },
   "representation": {
-    "level": 2.91,
+    "level": 3.01,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -255,9 +255,10 @@
       "template-based-graph-clustering",
       "International Symposium on Graph Drawing",
       "Graphics processing unit",
-      "Canvassing"
+      "Canvassing",
+      "Network theory of aging"
     ],
-    "last_reinforced": "2026-11-10T21:06:14.587280+00:00"
+    "last_reinforced": "2026-11-11T02:08:53.438108+00:00"
   },
   "raisonnement": {
     "level": 2.95,

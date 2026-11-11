@@ -6830,5 +6830,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-11T01:50:29.098257+00:00"
+  },
+  "Network theory of aging": {
+    "score": 10.0,
+    "metrics": {
+      "words": 368,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Diagrams.net",
+        "Graph theory",
+        "Searching Scientific Literature for Answers on COVID-19 Questions",
+        "Canvassing",
+        "Automated reasoning"
+      ],
+      "diversity": 0.788,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-11T02:08:53.433048+00:00"
   }
 }
