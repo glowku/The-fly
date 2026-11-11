@@ -6873,5 +6873,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-11T09:10:08.575941+00:00"
+  },
+  "Arxivers sense Fronteres": {
+    "score": 10.0,
+    "metrics": {
+      "words": 341,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Graph theory",
+        "Image",
+        "Thorax",
+        "Canvassing",
+        "Diagrams.net",
+        "Search engine indexing"
+      ],
+      "diversity": 0.755,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-11T09:49:16.156697+00:00"
   }
 }

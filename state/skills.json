@@ -303,7 +303,7 @@
     "last_reinforced": "2026-11-11T09:07:00.529558+00:00"
   },
   "recherche_web": {
-    "level": 3.05,
+    "level": 3.15,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -327,9 +327,10 @@
       "Query expansion",
       "ArXiv",
       "Query language",
-      "Thorax"
+      "Thorax",
+      "Arxivers sense Fronteres"
     ],
-    "last_reinforced": "2026-11-11T07:33:28.147681+00:00"
+    "last_reinforced": "2026-11-11T09:49:16.161541+00:00"
   },
   "recherche_image": {
     "level": 3.12,
