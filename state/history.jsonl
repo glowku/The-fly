@@ -6779,3 +6779,6 @@
 {"ts": "2026-11-10T21:48:53.456366+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-10T21:48:53.502239+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 142, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-11T00:19:23.559544+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Thorax"}
+{"ts": "2026-11-11T00:32:08.613900+00:00", "type": "plan", "title": "Thorax", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "raisonnement", "relevance": 1.0}
+{"ts": "2026-11-11T00:32:09.122249+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 2.95, "article": "Thorax"}
+{"ts": "2026-11-11T00:32:09.122311+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "raisonnement"}
