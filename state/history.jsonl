@@ -6814,3 +6814,4 @@
 {"ts": "2026-11-11T02:14:23.601778+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-11T02:14:25.483288+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-11T02:14:25.502221+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 144, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-11T02:16:33.405787+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
