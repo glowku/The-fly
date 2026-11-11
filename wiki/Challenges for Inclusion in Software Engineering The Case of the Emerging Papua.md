@@ -1,18 +1,24 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un levier majeur de croissance économique et de changement social. Un article publié sur arXiv, intitulé *Skill code_et_outils*, analyse les obstacles et les opportunités que rencontre la société naissante de PNG pour s’intégrer à l’industrie mondiale du logiciel. À travers une approche qualitative, les auteurs ont identifié les barrières existantes tout en soulignant les pistes d’inclusion pour les praticiens, chercheurs et éducateurs locaux et internationaux.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement logiciel devient un levier économique et social majeur. Ce document synthétise les résultats d’un atelier de génie logiciel mené dans le pays, qui a mobilisé des acteurs locaux et internationaux pour identifier les obstacles et les opportunités d’inclusion dans l’industrie mondiale du logiciel. La démarche repose sur une étude qualitative combinant des présentations, un questionnaire et un focus group, suivie d’une analyse thématique.
 
-## Méthodologie de recherche
+## Méthodologie et résultats
 
-Les chercheurs ont organisé un atelier de génie logiciel, durant lequel ils ont enregistré trois présentations, distribué un questionnaire à 52 participants et mené un focus‑group approfondi avec cinq acteurs locaux. Cette triangulation de données a permis de recueillir des perspectives variées sur l’état actuel des pratiques de développement logiciel en PNG. Le traitement des données a été réalisé par analyse thématique, une méthode reconnue pour extraire des thèmes récurrents à partir de données qualitatives.
+L’atelier a réuni trois intervenants qui ont présenté les tendances actuelles du marché logiciel, suivi d’un questionnaire diffusé auprès de 52 participants. Un focus group approfondi avec cinq acteurs locaux a permis de recueillir des perspectives spécifiques à PNG. L’analyse thématique a mis en évidence deux catégories principales :  
+- **Barrières** : manque d’infrastructures numériques, déficit de compétences en ingénierie logicielle, contraintes linguistiques et culturelles, et un accès limité aux ressources éducatives.  
+- **Opportunités** : forte demande locale pour des solutions logicielles adaptées aux réalités rurales, potentiel de collaboration internationale, et intérêt croissant pour les technologies open‑source.
 
-## Enjeux et opportunités identifiés
-
-Les résultats montrent que les principaux défis sont liés à l’accès limité aux ressources technologiques, à la formation professionnelle et à l’infrastructure numérique. En parallèle, les opportunités émergent dans la forte créativité des communautés locales, la disponibilité de talents émergents et le potentiel de collaboration avec des partenaires internationaux. Les auteurs soulignent que la mise en place de programmes de formation adaptés, l’amélioration de l’accès à Internet et le soutien à des initiatives open‑source locales sont essentiels pour transformer ces barrières en leviers d’inclusion.
+Les pratiques actuelles montrent une adoption fragmentée des méthodes de développement, avec une préférence pour des approches agiles informelles. L’étude souligne la nécessité de promouvoir des standards inclusifs, de renforcer les programmes de formation et de faciliter l’accès aux outils de collaboration.
 
 ## Perspectives d’inclusion
 
-Pour rendre le secteur du logiciel plus inclusif, le papier propose une feuille de route qui intègre des actions concrètes : création de réseaux de mentors, financement de projets de recherche appliquée, et développement de plateformes de partage de connaissances. En favorisant la coopération entre les acteurs locaux et la communauté mondiale, PNG peut accélérer son intégration dans l’économie numérique globale tout en préservant son identité culturelle.
+Pour rendre le secteur logiciel de PNG plus inclusif, les auteurs recommandent :  
+1. **Renforcement des infrastructures** : investissement dans les réseaux et les centres de données locaux.  
+2. **Programmes de formation ciblés** : cours en langues locales et modules sur les principes d’ingénierie logicielle.  
+3. **Partenariats internationaux** : échanges de bonnes pratiques et accès à des plateformes de collaboration open‑source.  
+4. **Politiques de soutien** : incitations fiscales et subventions pour les startups technologiques locales.
+
+Ces mesures visent à créer un écosystème où praticiens, chercheurs et éducateurs, tant locaux qu’internationaux, peuvent collaborer efficacement.
 
 ## Voir aussi
-[[Canvassing]], [[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagrammatic reasoning]], [[Diagrams.net]]
+[[Graphics processing unit]], [[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagram of the Federal Government and American Union]], [[Query expansion]]

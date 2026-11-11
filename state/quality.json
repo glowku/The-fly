@@ -6620,21 +6620,21 @@
     "score": 10.0,
     "metrics": {
       "words": 354,
-      "sections": 4,
+      "sections": 3,
       "links": 6,
       "link_list": [
-        "Search engine indexing",
-        "Canvassing",
-        "Diagrammatic reasoning",
+        "Diagram of the Federal Government and American Union",
         "Automated reasoning",
+        "Query expansion",
         "Graph theory",
-        "Diagrams.net"
+        "Search engine indexing",
+        "Graphics processing unit"
       ],
-      "diversity": 0.834,
+      "diversity": 0.802,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-10T21:43:31.832874+00:00"
+    "updated_at": "2026-11-11T09:05:28.322637+00:00"
   },
   "Query expansion": {
     "score": 10.0,
