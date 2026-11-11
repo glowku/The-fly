@@ -6060,32 +6060,32 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-10T21:43:31.833588+00:00",
+      "created_at": "2026-11-11T09:05:28.323366+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-10T21:43:31.833597+00:00",
-      "quarantined_at": "2026-11-10T21:45:54.310723+00:00",
+      "updated_at": "2026-11-11T09:05:28.323373+00:00",
+      "quarantined_at": "2026-11-11T09:07:50.227028+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
           "words": 354,
-          "sections": 4,
+          "sections": 3,
           "links": 6,
           "link_list": [
-            "Search engine indexing",
-            "Canvassing",
-            "Diagrammatic reasoning",
+            "Diagram of the Federal Government and American Union",
             "Automated reasoning",
+            "Query expansion",
             "Graph theory",
-            "Diagrams.net"
+            "Search engine indexing",
+            "Graphics processing unit"
           ],
-          "diversity": 0.834,
+          "diversity": 0.802,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-10T21:43:31.832874+00:00"
+        "updated_at": "2026-11-11T09:05:28.322637+00:00"
       }
     },
     "Citation": {
@@ -7774,5 +7774,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-11T09:05:17.686452+00:00"
+  "updated_at": "2026-11-11T09:07:50.238672+00:00"
 }

@@ -230,13 +230,12 @@
       "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit",
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
       "evor-evolving-retrieval-for-code-generation",
-      "Graph theory",
-      "challenges-for-inclusion-in-software-engineering-the-case-of-the-emerg"
+      "Graph theory"
     ],
     "last_reinforced": "2026-11-11T09:05:25.704053+00:00"
   },
   "representation": {
-    "level": 3.01,
+    "level": 3.16,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -259,7 +258,7 @@
       "Canvassing",
       "Network theory of aging"
     ],
-    "last_reinforced": "2026-11-11T02:08:53.438108+00:00"
+    "last_reinforced": "2026-11-11T09:08:34.037932+00:00"
   },
   "raisonnement": {
     "level": 3.1,

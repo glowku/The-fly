@@ -763,11 +763,11 @@
     },
     "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
       "depth": 2,
-      "created_at": "2026-11-11T01:52:01.339663+00:00",
+      "created_at": "2026-11-11T09:08:37.625217+00:00",
       "sources": [
         "https://arxiv.org/abs/1710.04328v1"
       ],
-      "updated_at": "2026-11-11T01:52:01.339672+00:00"
+      "updated_at": "2026-11-11T09:08:37.625224+00:00"
     },
     "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
       "depth": 2,
@@ -1152,14 +1152,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
-      "depth": 2,
-      "created_at": "2026-11-11T09:05:28.323366+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1911.04016v2"
-      ],
-      "updated_at": "2026-11-11T09:05:28.323373+00:00"
     }
   },
   "edges": [
