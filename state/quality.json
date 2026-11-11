@@ -6893,5 +6893,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-11T09:49:16.156697+00:00"
+  },
+  "Web": {
+    "score": 10.0,
+    "metrics": {
+      "words": 332,
+      "sections": 5,
+      "links": 5,
+      "link_list": [
+        "Visual system",
+        "Graph theory",
+        "Search engine indexing",
+        "Query expansion",
+        "Image"
+      ],
+      "diversity": 0.828,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-11T11:45:26.805934+00:00"
   }
 }
