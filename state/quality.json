@@ -6849,5 +6849,29 @@
       "has_h1": true
     },
     "updated_at": "2026-11-11T02:08:53.433048+00:00"
+  },
+  "Motion capture": {
+    "score": 10.0,
+    "metrics": {
+      "words": 414,
+      "sections": 4,
+      "links": 10,
+      "link_list": [
+        "Diagrams.net",
+        "Automated reasoning",
+        "Query expansion",
+        "Graph theory",
+        "Search engine indexing",
+        "Graphics processing unit",
+        "Canvassing",
+        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+        "EVOR Evolving Retrieval for Code Generation",
+        "Image"
+      ],
+      "diversity": 0.808,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-11T09:10:08.575941+00:00"
   }
 }
