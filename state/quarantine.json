@@ -6205,6 +6205,40 @@
         },
         "updated_at": "2026-11-10T21:01:50.689420+00:00"
       }
+    },
+    "Motion capture": {
+      "depth": 7,
+      "created_at": "2026-11-11T09:10:08.576786+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Motion_capture"
+      ],
+      "updated_at": "2026-11-11T09:10:08.576795+00:00",
+      "quarantined_at": "2026-11-11T09:10:55.432748+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 414,
+          "sections": 4,
+          "links": 10,
+          "link_list": [
+            "Diagrams.net",
+            "Automated reasoning",
+            "Query expansion",
+            "Graph theory",
+            "Search engine indexing",
+            "Graphics processing unit",
+            "Canvassing",
+            "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+            "EVOR Evolving Retrieval for Code Generation",
+            "Image"
+          ],
+          "diversity": 0.808,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-11T09:10:08.575941+00:00"
+      }
     }
   },
   "edges": [
@@ -7774,5 +7808,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-11T09:07:50.238672+00:00"
+  "updated_at": "2026-11-11T09:10:55.444310+00:00"
 }
