@@ -6806,3 +6806,7 @@
 {"ts": "2026-11-11T02:07:32.282358+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-11T02:08:53.438411+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 3.01, "article": "Network theory of aging"}
 {"ts": "2026-11-11T02:09:58.881585+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-11T02:10:00.657249+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-11T02:10:00.677244+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 144, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-11T02:11:05.442458+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 3.1, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
+{"ts": "2026-11-11T02:11:05.442499+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}
