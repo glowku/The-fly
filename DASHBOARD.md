@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-10 22:54:24 UTC
+**Dernière mise à jour** : 2026-11-11 04:58:49 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **27.635** |
-| Concepts traités | 200 | **142** |
+| Score global | maximiser | **28.028** |
+| Concepts traités | 200 | **144** |
 | Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **142** |
+| Concepts traités (nœuds) | **144** |
 | Arêtes du graphe | 56 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **27.635** |
-| Actions dernières 24 h | 142 |
+| Score objectif (coverage × quality) | **28.028** |
+| Actions dernières 24 h | 134 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 333 |
+| Excellent (≥ 8) | 335 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-10T21:43:17  triage_restore  
-2026-11-10T21:43:17  triage_restore  
-2026-11-10T21:43:17  triage          
-2026-11-10T21:43:28  skill_reinforc  
-2026-11-10T21:43:28  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
-2026-11-10T21:44:17  auto_learn_cyc  
-2026-11-10T21:45:05  skill_reinforc  
-2026-11-10T21:45:05  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-10T21:45:52  auto_learn_cyc  
-2026-11-10T21:45:54  triage_restore  
-2026-11-10T21:45:54  triage          
-2026-11-10T21:47:22  auto_learn_cyc  
-2026-11-10T21:48:51  auto_learn_cyc  
-2026-11-10T21:48:53  triage_restore  
-2026-11-10T21:48:53  triage          
+2026-11-11T02:06:12  triage_restore  
+2026-11-11T02:06:12  triage_restore  
+2026-11-11T02:06:12  triage          
+2026-11-11T02:07:32  auto_learn_cyc  
+2026-11-11T02:08:53  skill_reinforc  
+2026-11-11T02:09:58  auto_learn_cyc  
+2026-11-11T02:10:00  triage_restore  
+2026-11-11T02:10:00  triage          
+2026-11-11T02:11:05  skill_reinforc  
+2026-11-11T02:11:05  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-11T02:12:12  auto_learn_cyc  
+2026-11-11T02:14:23  auto_learn_cyc  
+2026-11-11T02:14:25  triage_restore  
+2026-11-11T02:14:25  triage          
+2026-11-11T02:16:33  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
