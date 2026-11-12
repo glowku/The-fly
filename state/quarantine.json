@@ -5484,32 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-11T09:51:34.495220+00:00",
+      "created_at": "2026-11-12T12:21:54.129668+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-11T09:51:34.495225+00:00",
-      "quarantined_at": "2026-11-11T09:52:43.499401+00:00",
+      "updated_at": "2026-11-12T12:21:54.129672+00:00",
+      "quarantined_at": "2026-11-12T18:01:59.361188+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 411,
+          "words": 437,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-            "Automated reasoning",
-            "Graph theory",
-            "Visual system",
             "Search engine indexing",
-            "Query expansion"
+            "Diagrams.net",
+            "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+            "Graph theory",
+            "ArXiv",
+            "Canvassing"
           ],
-          "diversity": 0.776,
+          "diversity": 0.765,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-11T09:51:34.494436+00:00"
+        "updated_at": "2026-11-12T12:21:54.128995+00:00"
       }
     },
     "OWASP": {
@@ -6060,31 +6060,31 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-12T00:26:40.481650+00:00",
+      "created_at": "2026-11-12T12:20:24.469459+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-12T00:26:40.481665+00:00",
-      "quarantined_at": "2026-11-12T00:29:10.179858+00:00",
+      "updated_at": "2026-11-12T12:20:24.469464+00:00",
+      "quarantined_at": "2026-11-12T18:01:59.361175+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 362,
+          "words": 385,
           "sections": 4,
           "links": 5,
           "link_list": [
-            "Query expansion",
-            "Graph theory",
-            "Search engine indexing",
             "Diagrams.net",
+            "Visual system",
+            "Searching Scientific Literature for Answers on COVID-19 Questions",
+            "Graph theory",
             "Canvassing"
           ],
-          "diversity": 0.782,
+          "diversity": 0.842,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-12T00:26:40.421236+00:00"
+        "updated_at": "2026-11-12T12:20:24.468357+00:00"
       }
     },
     "Citation": {
@@ -7837,5 +7837,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-12T10:57:51.535070+00:00"
+  "updated_at": "2026-11-12T18:01:59.372328+00:00"
 }
