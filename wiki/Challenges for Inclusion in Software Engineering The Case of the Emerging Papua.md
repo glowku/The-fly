@@ -1,23 +1,18 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à l’aube d’une transition vers l’industrie mondiale du logiciel. Le pays possède un potentiel économique considérable et une volonté d’utiliser le logiciel comme levier de changement social. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, afin d’identifier les obstacles et les opportunités pour une communauté locale inclusive.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un moteur économique et un vecteur de changement social. Un article de recherche récent analyse les obstacles et les opportunités que rencontrent les acteurs locaux pour intégrer l’industrie mondiale du logiciel. En combinant un atelier de génie logiciel, des enregistrements de conférences, un questionnaire et un focus‑group, les auteurs ont identifié les principaux défis et pistes d’inclusion pour les praticiens, chercheurs et éducateurs, tant locaux que internationaux.
 
 ## Contexte et méthodologie
 
-L’étude a été organisée sous la forme d’un atelier de génie logiciel réunissant des acteurs locaux et internationaux. Trois conférences ont été enregistrées, 52 questionnaires ont été distribués, et une séance de focus group approfondie a impliqué cinq participants locaux. Les données ont été analysées thématiquement pour dégager les principaux défis et opportunités rencontrés par la communauté de PNG.
+L’étude s’appuie sur un atelier de génie logiciel organisé dans la région, durant lequel trois présentations ont été enregistrées. Un questionnaire a été diffusé auprès de 52 participants, couvrant divers niveaux d’expérience et de formation. Enfin, un focus‑group approfondi a réuni cinq acteurs clés de la communauté locale. La collecte de données a été suivie d’une analyse thématique, permettant de distinguer les barrières existantes et les opportunités émergentes pour le développement d’une pratique inclusive.
 
-## Défis et opportunités
+## Enjeux identifiés
 
-Les principaux défis identifiés se présentent comme des barrières à l’inclusion : un accès limité aux infrastructures numériques, un manque de formation spécialisée, et des disparités régionales qui entravent la participation des communautés rurales. En parallèle, l’étude a révélé des opportunités : un intérêt croissant pour le développement de logiciels locaux, la présence de talents émergents, et la possibilité de créer des partenariats entre le secteur académique et l’industrie. Ces éléments constituent un terrain fertile pour des initiatives visant à renforcer l’inclusion dans le domaine du génie logiciel.
+Les résultats mettent en lumière plusieurs obstacles majeurs : un accès limité aux ressources éducatives, des infrastructures numériques fragmentées, et un manque de reconnaissance des compétences locales par les acteurs internationaux. Parallèlement, l’étude révèle des opportunités telles que la forte créativité des développeurs locaux, la disponibilité de talents linguistiques diversifiés et la volonté de collaborer avec des partenaires étrangers. Ces facteurs peuvent servir de leviers pour créer des programmes de formation adaptés, des incubateurs locaux et des réseaux de mentorat transnational.
 
-## Pratiques inclusives et perspectives
+## Perspectives d’inclusion
 
-Pour rendre le domaine du génie logiciel plus accessible, l’étude propose d’adopter des pratiques inclusives, telles que la mise en place de programmes de formation adaptés aux réalités locales, l’utilisation d’outils de visualisation (par exemple [[Diagrams.net]]) pour faciliter la communication, et la promotion de méthodes de collecte de données participatives (ex. [[Canvassing]]). En outre, l’intégration de techniques d’indexation et d’expansion de requêtes ([[Search engine indexing]], [[Query expansion]]) peut aider les chercheurs et praticiens à accéder plus facilement aux ressources pertinentes. Ces recommandations visent à créer un écosystème où les praticiens, chercheurs et éducateurs locaux et globaux peuvent collaborer efficacement.
+Pour favoriser une participation équitable, les auteurs recommandent la mise en place de plateformes collaboratives, l’adoption de méthodologies agiles adaptées aux réalités locales, et l’intégration de principes de conception inclusive dès la phase de conception des logiciels. Le recours à des outils visuels, comme ceux proposés par [[Diagrams.net]] ou les concepts de [[Graph theory]], peut faciliter la compréhension et la collaboration entre parties prenantes. Enfin, le partage de connaissances à travers des revues ouvertes et des ateliers transversaux est essentiel pour aligner les pratiques locales sur les standards internationaux tout en respectant les spécificités culturelles de PNG.
 
 ## Voir aussi
-
-[[Diagrams.net]]  
-[[Canvassing]]  
-[[Graph theory]]  
-[[Search engine indexing]]  
-[[Query expansion]]
+[[Diagrams.net]] [[Graph theory]] [[Searching Scientific Literature for Answers on COVID-19 Questions]] [[Visual system]] [[Canvassing]]
