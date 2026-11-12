@@ -52,7 +52,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
 </div>
 <div id="hud">
   <h1>🪰 Cortex compétences</h1>
-  <p>Réseau nodal des skills de The-fly — niveaux, liens, densité d’articles.</p>
+  <p>Réseau nodal des skills appris — niveaux, liens, densité d’articles.</p>
   <div id="stats"></div>
   <div id="list"></div>
 </div>
@@ -106,13 +106,17 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
       data.raisonnement = {level:4.0, description:'Planifier, router intent, anti-dérive, Graph-RAG', articles:['skills','graph_rag'], keywords:['plan','rag','intent']};
     }
 
-    const names = Object.keys(data);
+    // Uniquement skills appris (level > 0 ou articles présents)
+    const names = Object.keys(data).filter(name=>{
+      const info = data[name] || {};
+      return (+info.level || 0) > 0 || (info.articles||[]).length > 0;
+    });
     const cx = 0, cy = 0;
     names.forEach((name,i)=>{
-      const ang = (i / names.length) * Math.PI * 2 - Math.PI/2;
+      const ang = (i / Math.max(1,names.length)) * Math.PI * 2 - Math.PI/2;
       const info = data[name];
       const lvl = +info.level || 0;
-      const r = 140 + (10 - Math.min(10,lvl)) * 8;
+      const r = 150 + (10 - Math.min(10,lvl)) * 10 + (i%3)*12;
       nodes.push({
         id: name,
         label: name.replace(/_/g,' '),
@@ -141,16 +145,18 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
   }
 
   function renderHud(data){
-    const vals = Object.values(data).map(s=>+s.level||0);
+    const learned = Object.entries(data).filter(([n,s])=>(+s.level||0)>0 || (s.articles||[]).length>0);
+    const vals = learned.map(([n,s])=>+s.level||0);
     const avg = vals.reduce((a,b)=>a+b,0)/(vals.length||1);
-    const arts = Object.values(data).reduce((a,s)=>a+(s.articles||[]).length,0);
+    const arts = learned.reduce((a,[n,s])=>a+(s.articles||[]).length,0);
     document.getElementById('stats').innerHTML =
-      `<div>skills<br><b>${Object.keys(data).length}</b></div>`+
+      `<div>skills appris<br><b>${learned.length}</b></div>`+
       `<div>niveau moy.<br><b>${avg.toFixed(2)}</b></div>`+
       `<div>articles liés<br><b>${arts}</b></div>`+
       `<div>mode<br><b>cortex live</b></div>`;
     const list = document.getElementById('list');
-    list.innerHTML = Object.entries(data).sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,s])=>{
+    list.innerHTML = learned
+      .sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,s])=>{
       const pct = Math.min(100, ((+s.level||0)/10)*100);
       return `<div class="skill"><span>${n.replace(/_/g,' ')}</span><div class="bar"><i style="width:${pct}%"></i></div><span>${(+s.level||0).toFixed(1)}</span></div>`;
     }).join('');
