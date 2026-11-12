@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-12 02:43:40 UTC
+**Dernière mise à jour** : 2026-11-12 12:15:19 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **28.426** |
-| Actions dernières 24 h | 119 |
+| Actions dernières 24 h | 100 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-12T00:56:38  skill_reinforc  
-2026-11-12T00:56:38  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-12T00:57:47  auto_learn_cyc  
-2026-11-12T00:59:55  auto_learn_cyc  
-2026-11-12T00:59:57  triage_restore  
-2026-11-12T00:59:57  triage          
-2026-11-12T01:02:05  auto_learn_cyc  
-2026-11-12T01:04:12  auto_learn_cyc  
-2026-11-12T01:04:14  triage_restore  
-2026-11-12T01:04:14  triage          
-2026-11-12T01:06:21  auto_learn_cyc  
-2026-11-12T02:14:13  triage_restore  
-2026-11-12T02:14:13  triage_restore  
-2026-11-12T02:14:13  triage          
-2026-11-12T02:14:19  auto_learn_cyc  
+2026-11-12T10:05:52  triage_restore  
+2026-11-12T10:05:52  triage          
+2026-11-12T10:06:59  auto_learn_cyc  
+2026-11-12T10:09:05  auto_learn_cyc  
+2026-11-12T10:09:06  triage_restore  
+2026-11-12T10:09:07  triage          
+2026-11-12T10:11:11  auto_learn_cyc  
+2026-11-12T10:13:16  auto_learn_cyc  
+2026-11-12T10:13:17  triage_restore  
+2026-11-12T10:13:17  triage          
+2026-11-12T10:15:22  auto_learn_cyc  
+2026-11-12T10:57:51  triage_restore  
+2026-11-12T10:57:51  triage_restore  
+2026-11-12T10:57:51  triage          
+2026-11-12T10:57:58  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
