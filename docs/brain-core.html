@@ -7,12 +7,17 @@
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
 <body style="margin:0;background:#040604;color:#5dba4a;font:12px monospace">
-<div id="b" style="padding:16px">chargement graphe neural…</div>
+<div id="b" style="padding:16px">chargement graphe neural (restore)…</div>
 <script>
 (function(){
+  // Charge depuis le commit connu bon pour contourner les fichiers corrompus sur main
+  var GOOD = "3cb6a98f9d587a7bb6d3b8080ba156b7b0497d19";
+  var BASE = "https://raw.githubusercontent.com/glowku/The-fly/" + GOOD + "/docs/";
   var n = 7;
   var fetches = [];
-  for (var i = 0; i < n; i++) fetches.push(fetch("bc" + i + ".txt?t=" + Date.now()).then(function(r){ return r.text(); }));
+  for (var i = 0; i < n; i++) {
+    fetches.push(fetch(BASE + "bc" + i + ".txt?t=" + Date.now()).then(function(r){ return r.text(); }));
+  }
   Promise.all(fetches).then(function(parts){
     var B64 = parts.join("");
     var bin = Uint8Array.from(atob(B64), function(c){ return c.charCodeAt(0); });
