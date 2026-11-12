@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-12 12:15:19 UTC
+**Dernière mise à jour** : 2026-11-12 21:19:20 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **28.426** |
-| Actions dernières 24 h | 100 |
+| Actions dernières 24 h | 111 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-12T10:05:52  triage_restore  
-2026-11-12T10:05:52  triage          
-2026-11-12T10:06:59  auto_learn_cyc  
-2026-11-12T10:09:05  auto_learn_cyc  
-2026-11-12T10:09:06  triage_restore  
-2026-11-12T10:09:07  triage          
-2026-11-12T10:11:11  auto_learn_cyc  
-2026-11-12T10:13:16  auto_learn_cyc  
-2026-11-12T10:13:17  triage_restore  
-2026-11-12T10:13:17  triage          
-2026-11-12T10:15:22  auto_learn_cyc  
-2026-11-12T10:57:51  triage_restore  
-2026-11-12T10:57:51  triage_restore  
-2026-11-12T10:57:51  triage          
-2026-11-12T10:57:58  auto_learn_cyc  
+2026-11-12T18:33:46  auto_learn_cyc  
+2026-11-12T18:33:48  triage_restore  
+2026-11-12T18:33:48  triage          
+2026-11-12T18:35:55  auto_learn_cyc  
+2026-11-12T18:38:04  auto_learn_cyc  
+2026-11-12T18:38:06  triage_restore  
+2026-11-12T18:38:06  triage          
+2026-11-12T18:40:14  auto_learn_cyc  
+2026-11-12T19:51:40  triage_restore  
+2026-11-12T19:51:40  triage_restore  
+2026-11-12T19:51:40  triage          
+2026-11-12T19:51:46  auto_learn_cyc  
+2026-11-12T20:16:19  plan            Thorax
+2026-11-12T20:16:20  skill_reinforc  
+2026-11-12T20:16:20  branch          Thorax
 ```
 
 ## Architecture de l'agent
