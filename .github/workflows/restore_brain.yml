@@ -1,0 +1,24 @@
+name: Restore brain visualization
+on:
+  workflow_dispatch:
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Restore files from good commit
+        run: |
+          GOOD=3cb6a98f9d587a7bb6d3b8080ba156b7b0497d19
+          git checkout $GOOD -- docs/bc0.txt docs/bc1.txt docs/bc2.txt docs/bc3.txt docs/bc4.txt docs/bc5.txt docs/bc6.txt state/coverage.json || true
+          # also keep densify and improved auto_learn
+          git status
+      - name: Commit restore
+        run: |
+          git config user.name "the-fly-restore"
+          git config user.email "restore@the-fly.local"
+          git add docs/bc*.txt state/coverage.json
+          git commit -m "fix: restore working brain viz + coverage from $GOOD" || echo "nothing to commit"
+          git push
