@@ -7,10 +7,10 @@
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 </head>
 <body style="margin:0;background:#040604;color:#5dba4a;font:12px monospace">
-<div id="b" style="padding:16px">chargement graphe neural (restore)…</div>
+<div id="b" style="padding:16px">chargement graphe neural…</div>
 <script>
 (function(){
-  // Charge depuis le commit connu bon pour contourner les fichiers corrompus sur main
+  // Charge les bc depuis le commit connu bon
   var GOOD = "3cb6a98f9d587a7bb6d3b8080ba156b7b0497d19";
   var BASE = "https://raw.githubusercontent.com/glowku/The-fly/" + GOOD + "/docs/";
   var n = 7;
@@ -22,6 +22,19 @@
     var B64 = parts.join("");
     var bin = Uint8Array.from(atob(B64), function(c){ return c.charCodeAt(0); });
     var html = pako.ungzip(bin, { to: "string" });
+
+    // Runtime patch anti-stacking : élargir l'anneau des skills + répulsion
+    html = html.replace(
+      /const dist=145; \/\/ anneau skills[\s\S]*?const lv=skillsData\[name\]\.level\|\|0;/, 
+      'const dist=195 + (i%3)*18 + ((skillsData[name].level||0)*3); // anti-stack\n    const lv=skillsData[name].level||0;'
+    );
+    // Élargir aussi spaceOut pour inclure les skills
+    html = html.replace(
+      'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier");',
+      'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier" || n.kind === "skill");'
+    );
+    html = html.replace('const minDist = 28;', 'const minDist = 40;');
+
     document.open();
     document.write(html);
     document.close();
