@@ -5364,18 +5364,18 @@
       "sections": 4,
       "links": 6,
       "link_list": [
+        "Graph theory",
         "Visual system",
         "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-        "ArXiv",
-        "Graph theory",
+        "EVOR Evolving Retrieval for Code Generation",
         "Image",
         "Diagrams.net"
       ],
-      "diversity": 0.739,
+      "diversity": 0.769,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-11T11:46:58.714497+00:00"
+    "updated_at": "2026-11-12T00:56:41.552273+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
