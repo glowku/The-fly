@@ -1,26 +1,23 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le secteur du logiciel peut devenir un moteur de développement économique et social. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et les opportunités pour une inclusion effective des acteurs locaux dans l’industrie mondiale du logiciel.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à l’aube d’une transition vers l’industrie mondiale du logiciel. Le pays possède un potentiel économique considérable et une volonté d’utiliser le logiciel comme levier de changement social. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, afin d’identifier les obstacles et les opportunités pour une communauté locale inclusive.
 
 ## Contexte et méthodologie
 
-L’atelier a réuni trois conférenciers, 52 participants ayant rempli un questionnaire, et a organisé un focus group approfondi avec cinq acteurs locaux. Les données ont été analysées thématiquement, permettant de distinguer les barrières structurelles, culturelles et techniques, ainsi que les leviers d’opportunité. Les thèmes émergents concernent notamment l’accès limité aux infrastructures numériques, la pénurie de compétences spécialisées, et la nécessité d’adapter les pratiques de développement aux réalités socio‑culturelles de PNG.
+L’étude a été organisée sous la forme d’un atelier de génie logiciel réunissant des acteurs locaux et internationaux. Trois conférences ont été enregistrées, 52 questionnaires ont été distribués, et une séance de focus group approfondie a impliqué cinq participants locaux. Les données ont été analysées thématiquement pour dégager les principaux défis et opportunités rencontrés par la communauté de PNG.
 
-## Défis identifiés et pistes d’action
+## Défis et opportunités
 
-Les principaux défis se répartissent en deux catégories :
+Les principaux défis identifiés se présentent comme des barrières à l’inclusion : un accès limité aux infrastructures numériques, un manque de formation spécialisée, et des disparités régionales qui entravent la participation des communautés rurales. En parallèle, l’étude a révélé des opportunités : un intérêt croissant pour le développement de logiciels locaux, la présence de talents émergents, et la possibilité de créer des partenariats entre le secteur académique et l’industrie. Ces éléments constituent un terrain fertile pour des initiatives visant à renforcer l’inclusion dans le domaine du génie logiciel.
 
-1. **Barrières**  
-   - *Infrastructure et connectivité* : la couverture Internet reste fragmentaire, limitant l’accès aux ressources de formation et aux plateformes de collaboration.  
-   - *Formation et rétention des talents* : l’écart entre les compétences requises par l’industrie et celles disponibles localement crée un déséquilibre.  
-   - *Normes et gouvernance* : l’absence de cadres réglementaires spécifiques au logiciel entrave la standardisation et la certification.
+## Pratiques inclusives et perspectives
 
-2. **Opportunités**  
-   - *Éducation locale* : l’intégration de modules de génie logiciel dans les programmes universitaires peut créer un vivier de talents.  
-   - *Collaboration internationale* : les partenariats avec des institutions étrangères favorisent le transfert de connaissances et l’adoption de meilleures pratiques.  
-   - *Innovation contextuelle* : les besoins uniques de PNG (par exemple, la gestion des ressources naturelles) offrent des cas d’usage pertinents pour le développement de solutions logicielles adaptées.
-
-Les recommandations incluent la mise en place de programmes de formation ciblés, le développement d’infrastructures de cloud computing accessibles, et la création d’un cadre réglementaire encourageant l’innovation tout en protégeant les droits des utilisateurs.
+Pour rendre le domaine du génie logiciel plus accessible, l’étude propose d’adopter des pratiques inclusives, telles que la mise en place de programmes de formation adaptés aux réalités locales, l’utilisation d’outils de visualisation (par exemple [[Diagrams.net]]) pour faciliter la communication, et la promotion de méthodes de collecte de données participatives (ex. [[Canvassing]]). En outre, l’intégration de techniques d’indexation et d’expansion de requêtes ([[Search engine indexing]], [[Query expansion]]) peut aider les chercheurs et praticiens à accéder plus facilement aux ressources pertinentes. Ces recommandations visent à créer un écosystème où les praticiens, chercheurs et éducateurs locaux et globaux peuvent collaborer efficacement.
 
 ## Voir aussi
-[[Automated reasoning]], [[Graph theory]], [[Search engine indexing]], [[Diagrams.net]], [[Canvassing]]
+
+[[Diagrams.net]]  
+[[Canvassing]]  
+[[Graph theory]]  
+[[Search engine indexing]]  
+[[Query expansion]]

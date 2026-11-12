@@ -6238,6 +6238,36 @@
         },
         "updated_at": "2026-11-11T09:10:08.575941+00:00"
       }
+    },
+    "Computer Vision Annotation Tool": {
+      "depth": 7,
+      "created_at": "2026-11-12T00:23:32.981372+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Computer_Vision_Annotation_Tool"
+      ],
+      "updated_at": "2026-11-12T00:23:32.981378+00:00",
+      "quarantined_at": "2026-11-12T00:25:09.172987+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 340,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Image",
+            "Visual system",
+            "Graph theory",
+            "Search engine indexing",
+            "Andy Diagram",
+            "Diagrams.net"
+          ],
+          "diversity": 0.721,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-12T00:23:32.980356+00:00"
+      }
     }
   },
   "edges": [
@@ -7807,5 +7837,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-12T00:20:27.501798+00:00"
+  "updated_at": "2026-11-12T00:25:09.202512+00:00"
 }

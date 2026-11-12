@@ -1169,13 +1169,13 @@
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
     },
-    "Computer Vision Annotation Tool": {
-      "depth": 7,
-      "created_at": "2026-11-12T00:23:32.981372+00:00",
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-12T00:26:40.481650+00:00",
       "sources": [
-        "https://en.wikipedia.org/wiki/Computer_Vision_Annotation_Tool"
+        "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-12T00:23:32.981378+00:00"
+      "updated_at": "2026-11-12T00:26:40.481665+00:00"
     }
   },
   "edges": [
