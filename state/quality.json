@@ -5360,22 +5360,22 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 370,
+      "words": 382,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Graph theory",
+        "Diagrams.net",
         "Visual system",
-        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-        "EVOR Evolving Retrieval for Code Generation",
+        "Searching Scientific Literature for Answers on COVID-19 Questions",
         "Image",
-        "Diagrams.net"
+        "Graph theory",
+        "Canvassing"
       ],
-      "diversity": 0.769,
+      "diversity": 0.761,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-12T00:56:41.552273+00:00"
+    "updated_at": "2026-11-12T12:19:32.468092+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,

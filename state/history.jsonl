@@ -6968,3 +6968,5 @@
 {"ts": "2026-11-12T12:18:01.772210+00:00", "type": "plan", "title": "Thorax", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-12T12:18:02.118308+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 3.45, "article": "Thorax"}
 {"ts": "2026-11-12T12:18:02.118346+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-12T12:19:28.961203+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 3.52, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
+{"ts": "2026-11-12T12:19:28.961253+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
