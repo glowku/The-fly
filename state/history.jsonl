@@ -6961,3 +6961,7 @@
 {"ts": "2026-11-12T10:13:17.949083+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-12T10:13:17.987122+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 146, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-12T10:15:22.376527+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-12T10:57:51.461677+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-12T10:57:51.504424+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-12T10:57:51.541477+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 146, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-12T10:57:58.317562+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
