@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-11 21:04:55 UTC
+**Dernière mise à jour** : 2026-11-12 02:43:40 UTC
 
 ## Objectif de l'agent
 
@@ -10,9 +10,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **28.424** |
+| Score global | maximiser | **28.426** |
 | Concepts traités | 200 | **146** |
-| Qualité moyenne | ≥ 7.5 | **9.73/10** |
+| Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
@@ -22,15 +22,15 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Arêtes du graphe | 56 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **28.424** |
-| Actions dernières 24 h | 139 |
+| Score qualité moyen | **9.74/10** |
+| Score objectif (coverage × quality) | **28.426** |
+| Actions dernières 24 h | 119 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 338 |
+| Excellent (≥ 8) | 339 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-11T17:59:44  triage_restore  
-2026-11-11T17:59:44  triage          
-2026-11-11T18:00:52  auto_learn_cyc  
-2026-11-11T18:02:59  auto_learn_cyc  
-2026-11-11T18:03:01  triage_restore  
-2026-11-11T18:03:01  triage          
-2026-11-11T18:05:07  auto_learn_cyc  
-2026-11-11T18:07:13  auto_learn_cyc  
-2026-11-11T18:07:15  triage_restore  
-2026-11-11T18:07:15  triage          
-2026-11-11T18:09:22  auto_learn_cyc  
-2026-11-11T19:33:00  triage_restore  
-2026-11-11T19:33:00  triage_restore  
-2026-11-11T19:33:00  triage          
-2026-11-11T19:33:09  auto_learn_cyc  
+2026-11-12T00:56:38  skill_reinforc  
+2026-11-12T00:56:38  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-12T00:57:47  auto_learn_cyc  
+2026-11-12T00:59:55  auto_learn_cyc  
+2026-11-12T00:59:57  triage_restore  
+2026-11-12T00:59:57  triage          
+2026-11-12T01:02:05  auto_learn_cyc  
+2026-11-12T01:04:12  auto_learn_cyc  
+2026-11-12T01:04:14  triage_restore  
+2026-11-12T01:04:14  triage          
+2026-11-12T01:06:21  auto_learn_cyc  
+2026-11-12T02:14:13  triage_restore  
+2026-11-12T02:14:13  triage_restore  
+2026-11-12T02:14:13  triage          
+2026-11-12T02:14:19  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
