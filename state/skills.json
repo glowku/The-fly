@@ -334,7 +334,7 @@
     "last_reinforced": "2026-11-11T22:31:59.471726+00:00"
   },
   "recherche_image": {
-    "level": 3.27,
+    "level": 3.37,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -356,8 +356,9 @@
       "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
       "Diagram of the Federal Government and American Union",
       "Visual system",
-      "Andy Diagram"
+      "Andy Diagram",
+      "Computer Vision Annotation Tool"
     ],
-    "last_reinforced": "2026-11-11T09:53:48.011074+00:00"
+    "last_reinforced": "2026-11-12T00:23:32.987152+00:00"
   }
 }

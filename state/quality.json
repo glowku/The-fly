@@ -6912,5 +6912,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-11T11:45:26.805934+00:00"
+  },
+  "Computer Vision Annotation Tool": {
+    "score": 10.0,
+    "metrics": {
+      "words": 340,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Image",
+        "Visual system",
+        "Graph theory",
+        "Search engine indexing",
+        "Andy Diagram",
+        "Diagrams.net"
+      ],
+      "diversity": 0.721,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-12T00:23:32.980356+00:00"
   }
 }
