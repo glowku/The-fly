@@ -5759,22 +5759,22 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 411,
+      "words": 437,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-        "Automated reasoning",
-        "Graph theory",
-        "Visual system",
         "Search engine indexing",
-        "Query expansion"
+        "Diagrams.net",
+        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+        "Graph theory",
+        "ArXiv",
+        "Canvassing"
       ],
-      "diversity": 0.776,
+      "diversity": 0.765,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-11T09:51:34.494436+00:00"
+    "updated_at": "2026-11-12T12:21:54.128995+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
