@@ -993,14 +993,6 @@
       ],
       "updated_at": "2026-11-13T09:20:58.964584+00:00"
     },
-    "Template-Based Graph Clustering": {
-      "depth": 2,
-      "created_at": "2026-11-09T09:35:10.898704+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2107.01994v1"
-      ],
-      "updated_at": "2026-11-09T09:35:10.898707+00:00"
-    },
     "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
       "depth": 2,
       "created_at": "2026-11-13T09:23:59.195356+00:00",
@@ -1008,6 +1000,14 @@
         "https://arxiv.org/abs/1807.10463v4"
       ],
       "updated_at": "2026-11-13T09:23:59.195362+00:00"
+    },
+    "Template-Based Graph Clustering": {
+      "depth": 2,
+      "created_at": "2026-11-09T09:35:10.898704+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2107.01994v1"
+      ],
+      "updated_at": "2026-11-09T09:35:10.898707+00:00"
     },
     "Insect flight": {
       "depth": 2,
@@ -1176,14 +1176,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-13T09:22:29.194487+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-13T09:22:29.194492+00:00"
     }
   },
   "edges": [
