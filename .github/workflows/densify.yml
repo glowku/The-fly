@@ -1,0 +1,59 @@
+name: densify_graph
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "45 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: the-fly-densify
+  cancel-in-progress: false
+
+jobs:
+  densify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "fly-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run densify_edges
+        run: |
+          python - <<'PY'
+          from agent.densify import densify_edges
+          from agent.memory import load_coverage
+          before = len(load_coverage().get("edges", []))
+          rep = densify_edges(max_new=120)
+          after = len(load_coverage().get("edges", []))
+          print("densify report:", rep)
+          print(f"edges: {before} -> {after}")
+          PY
+
+      - name: Commit densified coverage
+        run: |
+          set -e
+          git add state/coverage.json state/history.jsonl || true
+          if git diff --staged --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git commit -m "densify: connect orphans + create sub-branches"
+          git fetch origin main
+          git pull --rebase origin main || true
+          git push origin HEAD:main
