@@ -763,19 +763,11 @@
     },
     "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
       "depth": 2,
-      "created_at": "2026-11-13T00:59:50.188449+00:00",
+      "created_at": "2026-11-13T01:30:57.396293+00:00",
       "sources": [
         "https://arxiv.org/abs/1710.04328v1"
       ],
-      "updated_at": "2026-11-13T00:59:50.188453+00:00"
-    },
-    "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
-      "depth": 2,
-      "created_at": "2026-11-13T01:28:39.762003+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1807.10463v4"
-      ],
-      "updated_at": "2026-11-13T01:28:39.762010+00:00"
+      "updated_at": "2026-11-13T01:30:57.396299+00:00"
     },
     "Network theory": {
       "depth": 10,
@@ -1001,6 +993,14 @@
       ],
       "updated_at": "2026-11-09T09:35:10.898707+00:00"
     },
+    "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
+      "depth": 2,
+      "created_at": "2026-11-13T01:28:39.762003+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1807.10463v4"
+      ],
+      "updated_at": "2026-11-13T01:28:39.762010+00:00"
+    },
     "Insect flight": {
       "depth": 2,
       "created_at": "2026-09-16T13:55:50.280207+00:00",
@@ -1168,14 +1168,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-13T01:26:24.762110+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-13T01:26:24.762117+00:00"
     }
   },
   "edges": [

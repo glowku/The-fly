@@ -5484,32 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-12T12:21:54.129668+00:00",
+      "created_at": "2026-11-13T01:26:24.762110+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-12T12:21:54.129672+00:00",
-      "quarantined_at": "2026-11-12T18:01:59.361188+00:00",
+      "updated_at": "2026-11-13T01:26:24.762117+00:00",
+      "quarantined_at": "2026-11-13T01:29:47.204335+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 437,
+          "words": 391,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Search engine indexing",
-            "Diagrams.net",
-            "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
             "Graph theory",
-            "ArXiv",
-            "Canvassing"
+            "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+            "EVOR Evolving Retrieval for Code Generation",
+            "Visual system",
+            "Diagrams.net",
+            "Searching Scientific Literature for Answers on COVID-19 Questions"
           ],
-          "diversity": 0.765,
+          "diversity": 0.777,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-12T12:21:54.128995+00:00"
+        "updated_at": "2026-11-13T01:26:24.761350+00:00"
       }
     },
     "OWASP": {
@@ -7837,5 +7837,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-13T01:25:17.075803+00:00"
+  "updated_at": "2026-11-13T01:29:47.216118+00:00"
 }
