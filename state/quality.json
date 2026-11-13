@@ -6008,22 +6008,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 382,
+      "words": 383,
       "sections": 4,
       "links": 6,
       "link_list": [
+        "SRAM PUF",
+        "Wireless firmware updates",
+        "ISO-18000-6C protocol",
+        "Texas Instruments firmware update framework",
         "ArXiv",
-        "Supply chain security",
-        "ISO‑18000‑6C",
-        "Graph theory",
-        "Image",
-        "Canvassing"
+        "Supply chain security"
       ],
       "diversity": 0.729,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-13T09:23:59.194603+00:00"
+    "updated_at": "2026-11-13T23:26:54.839832+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
