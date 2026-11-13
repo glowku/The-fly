@@ -7043,3 +7043,7 @@
 {"ts": "2026-11-13T01:30:50.775748+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 3.76, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
 {"ts": "2026-11-13T01:30:50.775822+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
 {"ts": "2026-11-13T01:32:04.741067+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-13T01:47:37.399655+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T01:47:37.421192+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T01:47:37.443375+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 146, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-13T01:47:43.220085+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
