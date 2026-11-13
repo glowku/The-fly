@@ -6927,5 +6927,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-12T00:23:32.980356+00:00"
+  },
+  "Code": {
+    "score": 10.0,
+    "metrics": {
+      "words": 380,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "ArXiv",
+        "Graph theory",
+        "Visual system",
+        "Search engine indexing",
+        "Query expansion"
+      ],
+      "diversity": 0.753,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-13T09:20:58.963874+00:00"
   }
 }

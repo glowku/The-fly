@@ -210,7 +210,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 3.73,
+    "level": 3.83,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -230,9 +230,10 @@
       "designing-ai-systems-that-augment-human-performed-vs-demonstrated-crit",
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
       "evor-evolving-retrieval-for-code-generation",
-      "Graph theory"
+      "Graph theory",
+      "Code"
     ],
-    "last_reinforced": "2026-11-13T01:24:05.829184+00:00"
+    "last_reinforced": "2026-11-13T09:20:58.970451+00:00"
   },
   "representation": {
     "level": 3.76,
