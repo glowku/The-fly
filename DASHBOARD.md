@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-12 21:19:20 UTC
+**Dernière mise à jour** : 2026-11-13 02:26:05 UTC
 
 ## Objectif de l'agent
 
@@ -10,9 +10,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **28.426** |
+| Score global | maximiser | **28.418** |
 | Concepts traités | 200 | **146** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
@@ -22,9 +22,9 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Arêtes du graphe | 56 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **28.426** |
-| Actions dernières 24 h | 111 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **28.418** |
+| Actions dernières 24 h | 113 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-12T18:33:46  auto_learn_cyc  
-2026-11-12T18:33:48  triage_restore  
-2026-11-12T18:33:48  triage          
-2026-11-12T18:35:55  auto_learn_cyc  
-2026-11-12T18:38:04  auto_learn_cyc  
-2026-11-12T18:38:06  triage_restore  
-2026-11-12T18:38:06  triage          
-2026-11-12T18:40:14  auto_learn_cyc  
-2026-11-12T19:51:40  triage_restore  
-2026-11-12T19:51:40  triage_restore  
-2026-11-12T19:51:40  triage          
-2026-11-12T19:51:46  auto_learn_cyc  
-2026-11-12T20:16:19  plan            Thorax
-2026-11-12T20:16:20  skill_reinforc  
-2026-11-12T20:16:20  branch          Thorax
+2026-11-13T01:26:21  skill_reinforc  
+2026-11-13T01:26:21  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-13T01:27:30  auto_learn_cyc  
+2026-11-13T01:28:37  skill_reinforc  
+2026-11-13T01:28:37  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-13T01:29:45  auto_learn_cyc  
+2026-11-13T01:29:47  triage_restore  
+2026-11-13T01:29:47  triage          
+2026-11-13T01:30:50  skill_reinforc  
+2026-11-13T01:30:50  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-13T01:32:04  auto_learn_cyc  
+2026-11-13T01:47:37  triage_restore  
+2026-11-13T01:47:37  triage_restore  
+2026-11-13T01:47:37  triage          
+2026-11-13T01:47:43  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
