@@ -6011,23 +6011,20 @@
     "updated_at": "2026-11-09T01:37:45.792224+00:00"
   },
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
-    "score": 10.0,
+    "score": 9.0,
     "metrics": {
-      "words": 396,
+      "words": 331,
       "sections": 4,
-      "links": 5,
+      "links": 2,
       "link_list": [
-        "Diagrams.net",
-        "Searching Scientific Literature for Answers on COVID-19 Questions",
-        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-        "Graph theory",
+        "Image",
         "ArXiv"
       ],
-      "diversity": 0.765,
+      "diversity": 0.737,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-12T12:21:11.055540+00:00"
+    "updated_at": "2026-11-13T01:28:39.761227+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
