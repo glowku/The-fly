@@ -5757,23 +5757,19 @@
     "updated_at": "2026-11-08T17:54:02.658463+00:00"
   },
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-    "score": 10.0,
+    "score": 7.83,
     "metrics": {
-      "words": 348,
-      "sections": 4,
-      "links": 5,
+      "words": 232,
+      "sections": 2,
+      "links": 1,
       "link_list": [
-        "ArXiv",
-        "Diagrams.net",
-        "Visual system",
-        "Search engine indexing",
-        "Query expansion"
+        "ArXiv"
       ],
-      "diversity": 0.796,
+      "diversity": 0.825,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-13T09:22:29.193785+00:00"
+    "updated_at": "2026-11-13T23:25:23.827917+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
