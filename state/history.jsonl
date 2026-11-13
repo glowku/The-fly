@@ -7008,3 +7008,6 @@
 {"ts": "2026-11-12T20:16:20.403694+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 3.55, "article": "Thorax"}
 {"ts": "2026-11-12T20:16:20.403740+00:00", "type": "branch", "title": "Thorax", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-12T21:58:30.526987+00:00", "type": "parallel_learn", "skill": "representation", "learned": 0, "workers": 4, "parent": "Graph drawing"}
+{"ts": "2026-11-13T00:58:05.859860+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T00:58:05.885745+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T00:58:05.906125+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 146, "active_edges": 56, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
