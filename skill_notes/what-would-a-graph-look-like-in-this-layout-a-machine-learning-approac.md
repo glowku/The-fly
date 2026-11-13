@@ -1,9 +1,9 @@
 ---
-skill: representation
+skill: recherche_image
 title: What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
 source: arxiv
 url: https://arxiv.org/abs/1710.04328v1
-created: 2026-11-13T23:28:22.762413+00:00
+created: 2026-11-13T23:29:56.060450+00:00
 ---
 
 # What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
@@ -14,6 +14,6 @@ arXiv — https://arxiv.org/abs/1710.04328v1
 ## Abstract
 Using different methods for laying out a graph can lead to very different visual appearances, with which the viewer perceives different information. Selecting a "good" layout method is thus important for visualizing a graph. The selection can be highly subjective and dependent on the given task. A common approach to selecting a good layout is to use aesthetic criteria and visual inspection. However, fully calculating various layouts and their associated aesthetic metrics is computationally expensive. In this paper, we present a machine learning approach to large graph visualization based on computing the topological similarity of graphs using graph kernels. For a given graph, our approach can show what the graph would look like in different layouts and estimate their corresponding aesthetic metrics. An important contribution of our work is the development of a new framework to design graph kernels. Our experimental study shows that our estimation calculation is considerably faster than computing the actual layouts and their aesthetic metrics. Also, our graph kernels outperform the state-of-the-art ones in both time and accuracy. In addition, we conducted a user study to demonstrate that the topological similarity computed with our graph kernel matches perceptual similarity assessed by human users.
 
-## Extraction pour skill `representation`
+## Extraction pour skill `recherche_image`
 - Concepts à retenir pour l'agent The-fly (architecture, sécu, retrieval, graphe).
 - Ne pas traiter l'abstract comme un tutoriel offensif.

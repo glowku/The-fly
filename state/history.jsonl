@@ -7140,3 +7140,5 @@
 {"ts": "2026-11-13T23:28:22.763363+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 4.06, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
 {"ts": "2026-11-13T23:28:22.763404+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
 {"ts": "2026-11-13T23:29:12.669028+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-13T23:29:56.061384+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 4.07, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
+{"ts": "2026-11-13T23:29:56.061424+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
