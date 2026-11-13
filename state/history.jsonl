@@ -7126,3 +7126,6 @@
 {"ts": "2026-11-13T22:29:51.351514+00:00", "type": "plan", "title": "Graph drawing", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-13T22:29:51.441439+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 3.94, "article": "Graph drawing"}
 {"ts": "2026-11-13T22:29:51.441490+00:00", "type": "branch", "title": "Graph drawing", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-13T23:25:14.752749+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T23:25:14.776477+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-13T23:25:14.797547+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 147, "active_edges": 96, "archived_edges": 22, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}

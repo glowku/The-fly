@@ -7862,8 +7862,96 @@
     {
       "from": "Technical drawing",
       "to": "Assembly drawing"
+    },
+    {
+      "from": "Apterygota",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Insect",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Insecticide",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Damselfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Insects in ethics",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Bird flight",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-13T19:36:31.449246+00:00"
+  "updated_at": "2026-11-13T23:25:14.793673+00:00"
 }
