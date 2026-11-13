@@ -1402,6 +1402,254 @@
     {
       "from": "International Symposium on Graph Drawing",
       "to": "Graph drawing"
+    },
+    {
+      "from": "Arthropod eye",
+      "to": "Antenna (zoology)"
+    },
+    {
+      "from": "Ant mimicry",
+      "to": "Mimicry"
+    },
+    {
+      "from": "Arthropod leg",
+      "to": "Arthropod eye"
+    },
+    {
+      "from": "Graph theory",
+      "to": "Apterygota"
+    },
+    {
+      "from": "Arthropod exoskeleton",
+      "to": "Arthropod leg"
+    },
+    {
+      "from": "Cephalothorax",
+      "to": "Thorax"
+    },
+    {
+      "from": "Spiracle (vertebrates)",
+      "to": "Spiracle"
+    },
+    {
+      "from": "Aquatic insect",
+      "to": "Mosquito"
+    },
+    {
+      "from": "Mimicry",
+      "to": "Ant mimicry"
+    },
+    {
+      "from": "Arthropod mouthparts",
+      "to": "Arthropod exoskeleton"
+    },
+    {
+      "from": "Apex predator",
+      "to": "Ambush predator"
+    },
+    {
+      "from": "Distance matrices in phylogeny",
+      "to": "Bayesian inference in phylogeny"
+    },
+    {
+      "from": "Basal (phylogenetics)",
+      "to": "Computational phylogenetics"
+    },
+    {
+      "from": "Hover (EP)",
+      "to": "Hover Chamber Choir"
+    },
+    {
+      "from": "Apex Predator – Easy Meat",
+      "to": "Apex predator"
+    },
+    {
+      "from": "Apex Predator – Easy Meat",
+      "to": "Apex Predator (disambiguation)"
+    },
+    {
+      "from": "Chemical mimicry",
+      "to": "Batesian mimicry"
+    },
+    {
+      "from": "Batesian mimicry",
+      "to": "Chemical mimicry"
+    },
+    {
+      "from": "Insect mouthparts",
+      "to": "Arthropod mouthparts"
+    },
+    {
+      "from": "Arthropod head problem",
+      "to": "Cephalon (arthropod head)"
+    },
+    {
+      "from": "Cephalon (arthropod head)",
+      "to": "Arthropod head problem"
+    },
+    {
+      "from": "Thorax",
+      "to": "Cephalothorax"
+    },
+    {
+      "from": "Blue-tailed damselfly",
+      "to": "Damselfly"
+    },
+    {
+      "from": "Spiracle",
+      "to": "Spiracle (vertebrates)"
+    },
+    {
+      "from": "Devonian",
+      "to": "Adaptive compliant wing"
+    },
+    {
+      "from": "Blowfly",
+      "to": "Black fly"
+    },
+    {
+      "from": "Royal Entomological Society",
+      "to": "Amateur Entomologists' Society"
+    },
+    {
+      "from": "Chemical communication in insects",
+      "to": "Insects in ethics"
+    },
+    {
+      "from": "Cultural ecology",
+      "to": "Chemical ecology"
+    },
+    {
+      "from": "Anti-predator adaptation",
+      "to": "Theatrical adaptation"
+    },
+    {
+      "from": "Search engine indexing",
+      "to": "Tachinidae"
+    },
+    {
+      "from": "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+      "to": "EVOR Evolving Retrieval for Code Generation"
+    },
+    {
+      "from": "Hover Chamber Choir",
+      "to": "Hover (EP)"
+    },
+    {
+      "from": "Helicopter flight controls",
+      "to": "Bird flight"
+    },
+    {
+      "from": "Computational phylogenetics",
+      "to": "Basal (phylogenetics)"
+    },
+    {
+      "from": "Amateur Entomologists' Society",
+      "to": "Royal Entomological Society"
+    },
+    {
+      "from": "Evolution of insects",
+      "to": "Devonian"
+    },
+    {
+      "from": "Antenna (zoology)",
+      "to": "Compound eye"
+    },
+    {
+      "from": "Apterygota",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Insect",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Insecticide",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Bayesian inference in phylogeny",
+      "to": "Insect ecology"
+    },
+    {
+      "from": "Courtship",
+      "to": "Insect behaviour"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Damselfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Insects in ethics",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Bird flight",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
     }
   ],
   "frontier": [
