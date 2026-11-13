@@ -304,7 +304,7 @@
     "last_reinforced": "2026-11-13T09:23:56.858685+00:00"
   },
   "recherche_web": {
-    "level": 3.85,
+    "level": 3.94,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -330,9 +330,10 @@
       "Query language",
       "Thorax",
       "Arxivers sense Fronteres",
-      "Web"
+      "Web",
+      "Graph drawing"
     ],
-    "last_reinforced": "2026-11-13T16:59:34.273796+00:00"
+    "last_reinforced": "2026-11-13T22:29:51.441205+00:00"
   },
   "recherche_image": {
     "level": 3.92,
