@@ -5757,22 +5757,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 391,
+      "words": 348,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Graph theory",
-        "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
-        "EVOR Evolving Retrieval for Code Generation",
-        "Visual system",
+        "ArXiv",
         "Diagrams.net",
-        "Searching Scientific Literature for Answers on COVID-19 Questions"
+        "Visual system",
+        "Search engine indexing",
+        "Query expansion"
       ],
-      "diversity": 0.777,
+      "diversity": 0.796,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-13T01:26:24.761350+00:00"
+    "updated_at": "2026-11-13T09:22:29.193785+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
