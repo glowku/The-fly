@@ -5484,31 +5484,27 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-13T09:22:29.194487+00:00",
+      "created_at": "2026-11-13T23:25:23.828481+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-13T09:22:29.194492+00:00",
-      "quarantined_at": "2026-11-13T09:24:44.297301+00:00",
+      "updated_at": "2026-11-13T23:25:23.828485+00:00",
+      "quarantined_at": "2026-11-13T23:27:40.146330+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
-        "score": 10.0,
+        "score": 7.83,
         "metrics": {
-          "words": 348,
-          "sections": 4,
-          "links": 5,
+          "words": 232,
+          "sections": 2,
+          "links": 1,
           "link_list": [
-            "ArXiv",
-            "Diagrams.net",
-            "Visual system",
-            "Search engine indexing",
-            "Query expansion"
+            "ArXiv"
           ],
-          "diversity": 0.796,
+          "diversity": 0.825,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-13T09:22:29.193785+00:00"
+        "updated_at": "2026-11-13T23:25:23.827917+00:00"
       }
     },
     "OWASP": {
@@ -7953,5 +7949,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-13T23:25:14.793673+00:00"
+  "updated_at": "2026-11-13T23:27:40.152993+00:00"
 }

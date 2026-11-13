@@ -763,11 +763,11 @@
     },
     "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
       "depth": 2,
-      "created_at": "2026-11-13T17:36:29.222453+00:00",
+      "created_at": "2026-11-13T23:28:27.822409+00:00",
       "sources": [
         "https://arxiv.org/abs/1710.04328v1"
       ],
-      "updated_at": "2026-11-13T17:36:29.222460+00:00"
+      "updated_at": "2026-11-13T23:28:27.822413+00:00"
     },
     "Network theory": {
       "depth": 10,
@@ -1176,14 +1176,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-13T23:25:23.828481+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-13T23:25:23.828485+00:00"
     }
   },
   "edges": [
