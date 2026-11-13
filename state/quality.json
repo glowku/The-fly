@@ -6620,20 +6620,20 @@
     "score": 10.0,
     "metrics": {
       "words": 385,
-      "sections": 4,
+      "sections": 5,
       "links": 5,
       "link_list": [
-        "Diagrams.net",
-        "Visual system",
-        "Searching Scientific Literature for Answers on COVID-19 Questions",
         "Graph theory",
-        "Canvassing"
+        "EVOR Evolving Retrieval for Code Generation",
+        "Search engine indexing",
+        "Visual system",
+        "Diagrams.net"
       ],
-      "diversity": 0.842,
+      "diversity": 0.789,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-12T12:20:24.468357+00:00"
+    "updated_at": "2026-11-13T01:24:09.570689+00:00"
   },
   "Query expansion": {
     "score": 10.0,
