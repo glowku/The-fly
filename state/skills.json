@@ -210,7 +210,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 3.83,
+    "level": 3.98,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -231,9 +231,10 @@
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
       "evor-evolving-retrieval-for-code-generation",
       "Graph theory",
-      "Code"
+      "Code",
+      "challenges-for-inclusion-in-software-engineering-the-case-of-the-emerg"
     ],
-    "last_reinforced": "2026-11-13T09:20:58.970451+00:00"
+    "last_reinforced": "2026-11-13T17:39:42.600196+00:00"
   },
   "representation": {
     "level": 3.91,
@@ -357,8 +358,7 @@
       "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac",
       "Diagram of the Federal Government and American Union",
       "Visual system",
-      "Andy Diagram",
-      "Computer vision syndrome"
+      "Andy Diagram"
     ],
     "last_reinforced": "2026-11-13T17:38:03.991980+00:00"
   }

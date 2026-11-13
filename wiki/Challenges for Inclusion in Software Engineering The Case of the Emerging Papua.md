@@ -1,29 +1,18 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement logiciel peut devenir un levier majeur de croissance économique et de transformation sociale. Cette étude, publiée sur arXiv, analyse les obstacles et les opportunités pour l’intégration de la communauté locale dans l’industrie mondiale du logiciel. À travers un atelier de génie logiciel, des entretiens et une analyse thématique, les auteurs ont identifié les principaux défis et proposé des pistes d’inclusion pour les praticiens, chercheurs et éducateurs.
+Le logiciel occupe une place centrale dans les sociétés contemporaines, tant par sa valeur économique que par son potentiel de transformation sociale. Cette étude, publiée sur [[ArXiv]], examine les défis et opportunités auxquels est confrontée la Papouasie-Nouvelle-Guinée (PNG) alors qu’elle cherche à s’intégrer dans l’industrie mondiale du logiciel. À travers une approche qualitative, les auteurs ont organisé un atelier de génie logiciel, enregistré trois conférences, diffusé un questionnaire auprès de 52 participants et mené un focus‑group de cinq acteurs locaux. L’analyse thématique a permis de distinguer les barrières existantes et les pistes d’amélioration pour une communauté de praticiens, chercheurs et éducateurs, tant locaux qu’internationaux.
 
-## Contexte et méthodologie
+## Méthodologie de l’étude
 
-L’étude s’appuie sur trois interventions lors d’un atelier, un questionnaire adressé à 52 participants et un focus group approfondi avec cinq acteurs locaux. Les données ont été recueillies via des enregistrements audio/vidéo, des questionnaires structurés et une discussion guidée. La méthode d’analyse thématique a permis de dégager des thèmes récurrents liés aux barrières culturelles, aux infrastructures techniques et aux compétences professionnelles.
+L’atelier a servi de plateforme d’échange et de collecte de données. Les trois présentations ont été enregistrées afin de préserver la richesse des discussions. Le questionnaire, réalisé via un outil de [[Canvassing]], a recueilli des retours quantitatifs et qualitatifs de 52 participants issus de divers horizons professionnels. Enfin, un focus‑group approfondi a permis d’explorer les perceptions et attentes des acteurs locaux. L’ensemble des données a été soumis à une analyse thématique, une méthode couramment utilisée pour identifier des patterns récurrents dans les réponses.
 
-## Défis identifiés
+## Enjeux et opportunités identifiés
 
-Les principaux obstacles recensés sont :
-- **Infrastructure limitée** : accès internet intermittent, manque d’équipements informatiques adaptés et insuffisance de centres de formation.
-- **Écart de compétences** : lacunes en programmation, en gestion de projet logiciel et en méthodologies agiles, exacerbées par un système éducatif encore en phase de développement.
-- **Barrières culturelles et linguistiques** : diversité linguistique et manque de ressources pédagogiques dans les langues locales, ce qui freine l’accès à la formation et à la collaboration internationale.
+Les résultats soulignent plusieurs barrières structurelles : un accès limité aux infrastructures numériques, un manque de formation spécialisée et une faible représentation des communautés locales dans les réseaux de l’industrie. En parallèle, l’étude met en lumière des opportunités majeures : la présence d’une main‑d’œuvre jeune et motivée, le potentiel d’innovation dans les domaines de la santé et de l’agriculture, ainsi que la possibilité de créer des partenariats éducatifs transfrontaliers. Les auteurs suggèrent que la mise en place de programmes de formation ciblés et l’adoption de pratiques inclusives pourraient transformer ces obstacles en leviers de croissance.
 
-## Opportunités et pistes d’inclusion
+## Perspectives d’inclusion
 
-Les auteurs soulignent plusieurs leviers pour surmonter ces défis :
-- **Partenariats publics‑privés** visant à améliorer l’infrastructure numérique et à financer des programmes de formation.
-- **Programmes de mentorat et d’échanges** entre praticiens locaux et experts internationaux pour partager les bonnes pratiques et les outils modernes.
-- **Développement de contenus pédagogiques multilingues** et l’intégration de la culture PNG dans les curricula, afin de rendre la formation plus accessible et pertinente.
-
-## Conclusion
-
-La recherche met en lumière la nécessité d’une approche holistique pour intégrer la société naissante de PNG dans l’écosystème logiciel mondial. En combinant investissements technologiques, programmes éducatifs adaptés et collaboration interculturelle, il est possible de transformer les défis identifiés en opportunités durables pour l’inclusion et la croissance économique.
+Pour favoriser une participation équitable, l’article propose d’intégrer des outils de visualisation tels que [[Diagrams.net]] pour faciliter la communication des concepts complexes. Il recommande également l’utilisation de techniques de [[Query expansion]] afin d’améliorer la recherche d’information et de réduire les barrières linguistiques. Enfin, la collaboration avec des acteurs internationaux, tout en respectant les spécificités culturelles locales, est présentée comme un moyen de renforcer la résilience et la compétitivité de la PNG sur le marché mondial du logiciel.
 
 ## Voir aussi
-
-[[EVOR Evolving Retrieval for Code Generation]], [[Diagrams.net]], [[Graph theory]], [[Search engine indexing]], [[Visual system]]
+[[ArXiv]] [[Canvassing]] [[Diagrams.net]] [[Query expansion]] [[Supply chain security]]

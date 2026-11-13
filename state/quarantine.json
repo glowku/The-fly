@@ -6267,6 +6267,35 @@
         },
         "updated_at": "2026-11-12T00:23:32.980356+00:00"
       }
+    },
+    "Computer vision syndrome": {
+      "depth": 7,
+      "created_at": "2026-11-13T17:38:03.984712+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Computer_vision_syndrome"
+      ],
+      "updated_at": "2026-11-13T17:38:03.984720+00:00",
+      "quarantined_at": "2026-11-13T17:38:53.889536+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 383,
+          "sections": 4,
+          "links": 5,
+          "link_list": [
+            "Visual system",
+            "Diagrams.net",
+            "Graph theory",
+            "Andy Diagram",
+            "ArXiv"
+          ],
+          "diversity": 0.803,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-13T17:38:03.984030+00:00"
+      }
     }
   },
   "edges": [
@@ -7836,5 +7865,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-13T17:36:17.360901+00:00"
+  "updated_at": "2026-11-13T17:38:53.899181+00:00"
 }
