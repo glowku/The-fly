@@ -334,7 +334,7 @@
     "last_reinforced": "2026-11-12T20:16:20.403385+00:00"
   },
   "recherche_image": {
-    "level": 3.52,
+    "level": 3.67,
     "description": "Auto-track recherche_image",
     "keywords": [
       "image",
@@ -358,6 +358,6 @@
       "Visual system",
       "Andy Diagram"
     ],
-    "last_reinforced": "2026-11-12T12:19:28.960929+00:00"
+    "last_reinforced": "2026-11-13T00:59:48.808391+00:00"
   }
 }
