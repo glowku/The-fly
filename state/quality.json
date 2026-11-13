@@ -6008,20 +6008,24 @@
     "updated_at": "2026-11-09T01:37:45.792224+00:00"
   },
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
-    "score": 9.0,
+    "score": 10.0,
     "metrics": {
-      "words": 331,
+      "words": 382,
       "sections": 4,
-      "links": 2,
+      "links": 6,
       "link_list": [
+        "ArXiv",
+        "Supply chain security",
+        "ISO‑18000‑6C",
+        "Graph theory",
         "Image",
-        "ArXiv"
+        "Canvassing"
       ],
-      "diversity": 0.737,
+      "diversity": 0.729,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-13T01:28:39.761227+00:00"
+    "updated_at": "2026-11-13T09:23:59.194603+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
