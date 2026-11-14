@@ -7248,3 +7248,5 @@
 {"ts": "2026-11-14T19:04:43.959982+00:00", "type": "skill_reinforce", "skill": "code_et_outils", "new_level": 4.28, "article": "challenges-for-inclusion-in-software-engineering-the-case-of-the-emerg"}
 {"ts": "2026-11-14T19:04:43.960046+00:00", "type": "skill_learn_arxiv", "skill": "code_et_outils", "title": "Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society", "url": "https://arxiv.org/abs/1911.04016v2"}
 {"ts": "2026-11-14T19:05:34.132748+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-14T19:05:35.972025+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-14T19:05:35.995859+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 148, "active_edges": 100, "archived_edges": 0, "frontier": 15, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua", "reason": "junk"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
