@@ -1,23 +1,15 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Le logiciel occupe une place centrale dans les sociétés contemporaines, tant par sa valeur économique que par son potentiel de transformation sociale. Cette étude, publiée sur [[ArXiv]], analyse les obstacles et opportunités que rencontre le Papua New Guinea (PNG) dans sa quête d’intégration à l’industrie mondiale du logiciel. En s’appuyant sur une approche qualitative, les auteurs mettent en lumière les pratiques actuelles et proposent des pistes pour rendre le domaine plus inclusif pour les praticiens, chercheurs et éducateurs locaux et internationaux.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à l’aube d’une transition vers l’industrie mondiale du logiciel. Le rôle central du logiciel dans la valeur économique et le potentiel de changement sociétal motivent l’étude présentée dans ce papier arXiv. En organisant un atelier de génie logiciel, les auteurs ont mené une recherche qualitative afin d’identifier les barrières et opportunités pour la communauté locale. Les résultats soulignent l’importance de rendre la pratique, la recherche et l’enseignement du génie logiciel inclusifs pour les acteurs locaux et internationaux.
 
 ## Méthodologie de l’étude
+L’enquête a combiné plusieurs méthodes qualitatives : trois présentations lors de l’atelier, un questionnaire diffusé à 52 participants, et un focus‑group approfondi avec cinq acteurs locaux. Les données ont été analysées thématiquement, permettant de dégager des catégories de défis et d’opportunités. Cette approche triangulée assure une vue d’ensemble des réalités vécues par les praticiens, chercheurs et éducateurs de PNG.
 
-Les chercheurs ont organisé un atelier de génie logiciel au PNG, durant lequel ils ont enregistré trois présentations, distribué un questionnaire à 52 participants et animé un groupe de discussion approfondi avec cinq acteurs locaux. Les données ont été analysées par une méthode thématique, permettant d’identifier à la fois les barrières existantes et les opportunités émergentes pour la communauté du génie logiciel du pays.
+## Défis identifiés
+Les principaux obstacles recensés concernent l’accès limité aux ressources numériques, la pénurie de compétences spécialisées et les barrières linguistiques. Le manque d’infrastructures de télécommunication fiable entrave la participation aux formations en ligne et la collaboration internationale. De plus, l’écart de connaissances entre les zones urbaines et rurales accentue les inégalités d’accès aux opportunités de carrière dans le logiciel.
 
-## Enjeux identifiés
-
-Les résultats révèlent une série de défis structurels : manque d’infrastructures numériques, déficit de compétences spécialisées, et barrières linguistiques et culturelles. En parallèle, des opportunités se dessinent, notamment un fort potentiel de croissance économique et la possibilité de créer des solutions logicielles adaptées aux réalités locales. L’étude souligne également l’importance de la collaboration entre les acteurs locaux et les partenaires internationaux pour partager les meilleures pratiques et favoriser l’échange de connaissances.
-
-## Perspectives et recommandations
-
-Pour rendre le domaine plus inclusif, les auteurs suggèrent d’adopter des approches pédagogiques contextualisées, de promouvoir des programmes de formation continue et de soutenir des initiatives de recherche appliquée. Ils insistent sur la nécessité d’une gouvernance participative, où les décideurs, les entreprises et les communautés locales travaillent de concert pour développer des standards et des outils adaptés. En favorisant l’inclusion, le PNG pourrait non seulement renforcer son économie numérique mais aussi contribuer à la réduction des inégalités sociales et à la promotion de la souveraineté technologique.
+## Opportunités et pistes d’inclusion
+Les auteurs mettent en avant plusieurs leviers pour favoriser l’inclusion. Le renforcement des partenariats entre institutions académiques locales et entreprises internationales peut faciliter le transfert de compétences. L’adoption de modèles de formation hybrides, combinant apprentissage en présentiel et ressources numériques, permettrait de surmonter les contraintes d’infrastructure. Enfin, la création de plateformes de collaboration ouvertes, inspirées des pratiques de l’arXiv, favoriserait l’échange de connaissances et l’auto‑publication de travaux de recherche locaux.
 
 ## Voir aussi
-- [[ArXiv]]
-- [[Diagrams.net]]
-- [[Graph theory]]
-- [[Search engine indexing]]
-- [[Query expansion]]
-- [[Supply chain security]]
+[[ArXiv]], [[Graph theory]], [[Search engine indexing]], [[Query language]], [[Supply chain security]]
