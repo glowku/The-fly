@@ -7192,3 +7192,5 @@
 {"ts": "2026-11-14T07:03:02.186092+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-14T07:04:00.925968+00:00", "type": "densify_edges", "added": 24, "orphans_before": 30, "edges_after": 122}
 {"ts": "2026-11-14T08:19:39.947286+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Thorax"}
+{"ts": "2026-11-14T09:53:12.136493+00:00", "type": "plan", "title": "EVOR Evolving Retrieval for Code Generation", "action": "branch", "priority": 121.8, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.329}
+{"ts": "2026-11-14T09:53:17.037471+00:00", "type": "skip", "title": "EVOR Evolving Retrieval for Code Generation", "reason": "no_summary"}
