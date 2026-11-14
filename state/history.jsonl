@@ -7194,3 +7194,7 @@
 {"ts": "2026-11-14T08:19:39.947286+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Thorax"}
 {"ts": "2026-11-14T09:53:12.136493+00:00", "type": "plan", "title": "EVOR Evolving Retrieval for Code Generation", "action": "branch", "priority": 121.8, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.329}
 {"ts": "2026-11-14T09:53:17.037471+00:00", "type": "skip", "title": "EVOR Evolving Retrieval for Code Generation", "reason": "no_summary"}
+{"ts": "2026-11-14T10:14:54.356106+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-14T10:14:54.399424+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-14T10:14:54.437886+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 147, "active_edges": 98, "archived_edges": 24, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-14T10:14:58.563133+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
