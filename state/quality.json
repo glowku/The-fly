@@ -6969,5 +6969,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-13T17:38:03.984030+00:00"
+  },
+  "Technical drawing tool": {
+    "score": 10.0,
+    "metrics": {
+      "words": 321,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Andy Diagram",
+        "Graph theory",
+        "Visual system",
+        "Diagrams.net",
+        "Arxiv"
+      ],
+      "diversity": 0.756,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-14T19:03:08.025293+00:00"
   }
 }
