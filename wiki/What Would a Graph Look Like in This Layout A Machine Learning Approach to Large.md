@@ -1,24 +1,18 @@
 # What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
 
-Ce papier de l'arXiv présente une approche d'apprentissage automatique pour la visualisation de grands graphes. En se basant sur la similarité topologique calculée via des noyaux de graphes, l'étude permet d'estimer rapidement l'apparence d'un graphe sous différents algorithmes de disposition et d'évaluer leurs métriques esthétiques. Cette méthode vise à réduire le coût computationnel tout en conservant une pertinence visuelle pour l'utilisateur.
+Using different methods for laying out a graph can lead to very different visual appearances, with which the viewer perceives different information. Selecting a "good" layout method is thus important for visualizing a graph. The selection can be highly subjective and dependent on the given task. A common approach to selecting a good layout is to use aesthetic criteria and visual inspection. However, fully calculating various layouts and their associated aesthetic metrics is computationally expensive. In this paper, we present a machine learning approach to large graph visualization based on computing the topological similarity of graphs using graph kernels. For a given graph, our approach ca
 
-## Contexte et problématique
+## Contexte
 
-La disposition d'un graphe influence fortement la perception des informations qu'il contient. Choisir un algorithme « bon » est souvent subjectif et dépend de la tâche à accomplir. Les approches classiques reposent sur des critères esthétiques et une inspection visuelle, mais elles exigent de générer plusieurs mises en page, ce qui est coûteux pour les graphes volumineux. Le besoin d’une estimation rapide et fiable de la qualité visuelle d’une disposition conduit à explorer des alternatives basées sur la similarité topologique.
+Ce concept a été intégré automatiquement dans le graphe de connaissance à partir de sources encyclopédiques publiques. Il s'inscrit dans le réseau de notions reliées au sujet racine exploré par l'agent.
 
-## Méthodologie proposée
+## Points clés
 
-Les auteurs développent un cadre de conception de noyaux de graphes, permettant de mesurer la similarité entre un graphe cible et un corpus de graphes déjà disposés. En évaluant la similarité topologique, ils prédisent les métriques esthétiques attendues pour chaque disposition sans les calculer explicitement. Cette approche repose sur des noyaux de graphes optimisés, surpassant les méthodes existantes tant en temps de calcul qu’en précision. Le modèle est entraîné sur un ensemble diversifié de graphes, couvrant différents types de structures et de tailles.
-
-## Résultats et implications
-
-Les expérimentations montrent que l’estimation des métriques est significativement plus rapide que la génération réelle des mises en page. De plus, les noyaux développés surpassent les solutions de pointe en termes de rapidité et de précision. Un test utilisateur démontre que la similarité topologique prédite correspond bien à la similarité perceptuelle évaluée par des humains, confirmant la pertinence de la méthode pour la prise de décision en visualisation de graphes. Cette technique ouvre la voie à des outils interactifs capables de recommander rapidement des dispositions adaptées aux besoins de l’utilisateur, tout en économisant des ressources computationnelles.
+Les éléments factuels proviennent du résumé source. L'article pourra être enrichi lors d'un cycle de réparation si de nouvelles informations pertinentes apparaissent dans le graphe.
 
 ## Voir aussi
 
-* [[Graph theory]]
-* [[ArXiv]]
-* [[Visual system]]
-* [[Search engine indexing]]
-* [[Image]]
-* [[Query expansion]]
+[[What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization]]
+[[Fly]]
+[[Insect]]
+[[Diptera]]

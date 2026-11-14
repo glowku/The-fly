@@ -5360,22 +5360,20 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 371,
-      "sections": 4,
-      "links": 6,
+      "words": 208,
+      "sections": 3,
+      "links": 4,
       "link_list": [
-        "Query expansion",
-        "Image",
-        "Search engine indexing",
-        "Visual system",
-        "ArXiv",
-        "Graph theory"
+        "Diptera",
+        "Insect",
+        "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization",
+        "Fly"
       ],
-      "diversity": 0.768,
+      "diversity": 0.714,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-14T20:54:34.965689+00:00"
+    "updated_at": "2026-11-14T21:01:40.059933+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
