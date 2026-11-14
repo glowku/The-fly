@@ -7238,3 +7238,5 @@
 {"ts": "2026-11-14T18:59:53.868773+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 4.2, "article": "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo"}
 {"ts": "2026-11-14T18:59:53.868851+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices", "url": "https://arxiv.org/abs/1807.10463v4"}
 {"ts": "2026-11-14T19:00:42.931865+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-14T19:01:31.202344+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 4.21, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
+{"ts": "2026-11-14T19:01:31.202415+00:00", "type": "skill_learn_arxiv", "skill": "representation", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
