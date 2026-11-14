@@ -6011,22 +6011,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 383,
+      "words": 395,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "SRAM PUF",
-        "Wireless firmware updates",
-        "ISO-18000-6C protocol",
-        "Texas Instruments firmware update framework",
+        "Energy harvesting",
+        "Internet of Things (IoT)",
         "ArXiv",
-        "Supply chain security"
+        "Texas Instruments firmware update framework",
+        "ISO‑18000‑6C",
+        "Physical Unclonable Function (PUF)"
       ],
-      "diversity": 0.729,
+      "diversity": 0.725,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-13T23:26:54.839832+00:00"
+    "updated_at": "2026-11-14T18:59:55.638479+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
