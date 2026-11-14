@@ -5484,27 +5484,30 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-13T23:25:23.828481+00:00",
+      "created_at": "2026-11-14T17:58:06.861163+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-13T23:25:23.828485+00:00",
-      "quarantined_at": "2026-11-13T23:27:40.146330+00:00",
+      "updated_at": "2026-11-14T17:58:06.861169+00:00",
+      "quarantined_at": "2026-11-14T18:59:44.962222+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
-        "score": 7.83,
+        "score": 10.0,
         "metrics": {
-          "words": 232,
-          "sections": 2,
-          "links": 1,
+          "words": 362,
+          "sections": 4,
+          "links": 4,
           "link_list": [
-            "ArXiv"
+            "Image",
+            "ArXiv",
+            "Visual system",
+            "Diagrams.net"
           ],
-          "diversity": 0.825,
+          "diversity": 0.763,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-13T23:25:23.827917+00:00"
+        "updated_at": "2026-11-14T17:58:06.860332+00:00"
       }
     },
     "OWASP": {
@@ -8051,8 +8054,100 @@
     {
       "from": "Insect",
       "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Apterygota",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Damselfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Insects in ethics",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Bird flight",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Force-directed graph drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Graph drawing",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Architectural drawing",
+      "to": "Aquatic insects"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-14T17:57:26.158973+00:00"
+  "updated_at": "2026-11-14T18:59:44.969663+00:00"
 }
