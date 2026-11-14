@@ -7005,5 +7005,24 @@
       "has_h1": true
     },
     "updated_at": "2026-11-14T20:53:23.655240+00:00"
+  },
+  "Compass (drawing tool)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 380,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Network theory of aging",
+        "Supply chain security",
+        "Visual system",
+        "ArXiv",
+        "Graph theory"
+      ],
+      "diversity": 0.634,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-14T20:55:41.984144+00:00"
   }
 }
