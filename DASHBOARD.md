@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-13 19:17:18 UTC
+**Dernière mise à jour** : 2026-11-14 00:42:17 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **28.626** |
+| Score global | maximiser | **28.608** |
 | Concepts traités | 200 | **147** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **147** |
-| Arêtes du graphe | 56 |
+| Arêtes du graphe | 96 |
 | Frontière (à explorer) | 14 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **28.626** |
-| Actions dernières 24 h | 118 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **28.608** |
+| Actions dernières 24 h | 150 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 341 |
-| Bon (6 – 8) | 8 |
+| Excellent (≥ 8) | 340 |
+| Bon (6 – 8) | 9 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-13T17:42:07  triage_restore  
-2026-11-13T17:42:07  triage          
-2026-11-13T17:57:53  triage_restore  
-2026-11-13T17:57:53  triage_restore  
-2026-11-13T17:57:53  triage          
-2026-11-13T17:59:03  auto_learn_cyc  
-2026-11-13T18:01:12  auto_learn_cyc  
-2026-11-13T18:01:15  triage_restore  
-2026-11-13T18:01:15  triage          
-2026-11-13T18:03:22  auto_learn_cyc  
-2026-11-13T18:05:28  auto_learn_cyc  
-2026-11-13T18:05:30  triage_restore  
-2026-11-13T18:05:30  triage          
-2026-11-13T18:07:37  auto_learn_cyc  
-2026-11-13T18:58:02  parallel_learn  
+2026-11-13T23:30:43  triage_restore  
+2026-11-13T23:30:43  triage          
+2026-11-13T23:46:53  triage_restore  
+2026-11-13T23:46:53  triage_restore  
+2026-11-13T23:46:53  triage          
+2026-11-13T23:48:05  auto_learn_cyc  
+2026-11-13T23:50:14  auto_learn_cyc  
+2026-11-13T23:50:16  triage_restore  
+2026-11-13T23:50:16  triage          
+2026-11-13T23:52:25  auto_learn_cyc  
+2026-11-13T23:54:34  auto_learn_cyc  
+2026-11-13T23:54:37  triage_restore  
+2026-11-13T23:54:37  triage          
+2026-11-13T23:56:46  auto_learn_cyc  
+2026-11-14T00:34:02  parallel_learn  
 ```
 
 ## Architecture de l'agent
