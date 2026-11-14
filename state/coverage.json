@@ -1630,6 +1630,166 @@
     {
       "from": "Contour drawing",
       "to": "Architectural drawing"
+    },
+    {
+      "from": "LMap Shape-Preserving Local Mappings for Biomedical Visualization",
+      "to": "Data and information visualization"
+    },
+    {
+      "from": "Template-Based Graph Clustering",
+      "to": "Graph database"
+    },
+    {
+      "from": "Graph database",
+      "to": "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large"
+    },
+    {
+      "from": "Network theory of aging",
+      "to": "Network theory"
+    },
+    {
+      "from": "Visual system",
+      "to": "Beware of Validation by Eye Visual Validation of Linear Trends in Scatterplots"
+    },
+    {
+      "from": "Data and information visualization",
+      "to": "LMap Shape-Preserving Local Mappings for Biomedical Visualization"
+    },
+    {
+      "from": "Supply chain security",
+      "to": "Application security"
+    },
+    {
+      "from": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction",
+      "to": "A Case-Driven Multi-Agent Framework for E-Commerce Search Relevance"
+    },
+    {
+      "from": "Automated reasoning",
+      "to": "Diagrammatic reasoning"
+    },
+    {
+      "from": "Diagrammatic reasoning",
+      "to": "Graphics processing unit"
+    },
+    {
+      "from": "Diagrammatic reasoning",
+      "to": "Automated reasoning"
+    },
+    {
+      "from": "Searching Scientific Literature for Answers on COVID-19 Questions",
+      "to": "Multi-Turn Agentic Scientific Literature Search via Workflow Induction"
+    },
+    {
+      "from": "Query expansion",
+      "to": "Canvassing"
+    },
+    {
+      "from": "Image",
+      "to": "Visual system"
+    },
+    {
+      "from": "Application security",
+      "to": "Supply chain security"
+    },
+    {
+      "from": "Network theory",
+      "to": "Network theory of aging"
+    },
+    {
+      "from": "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
+      "to": "Template-Based Graph Clustering"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Damselfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Insects in ethics",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Technical drawing tool",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Compass (drawing tool)",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Blind contour drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Force-directed graph drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Architectural drawing",
+      "to": "Aquatic insects"
     }
   ],
   "frontier": [
