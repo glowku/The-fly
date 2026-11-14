@@ -1586,6 +1586,10 @@
     {
       "from": "Andy Diagram",
       "to": "Technical drawing tool"
+    },
+    {
+      "from": "Graph drawing",
+      "to": "Area (graph drawing)"
     }
   ],
   "frontier": [
