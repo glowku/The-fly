@@ -1562,6 +1562,14 @@
     {
       "from": "Courtship",
       "to": "Insect behaviour"
+    },
+    {
+      "from": "Insecticide",
+      "to": "Annual Review of Entomology"
+    },
+    {
+      "from": "Insecticide",
+      "to": "Arthropod"
     }
   ],
   "frontier": [

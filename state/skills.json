@@ -304,7 +304,7 @@
     "last_reinforced": "2026-11-13T23:26:52.965012+00:00"
   },
   "recherche_web": {
-    "level": 3.94,
+    "level": 4.04,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -331,9 +331,10 @@
       "Thorax",
       "Arxivers sense Fronteres",
       "Web",
-      "Graph drawing"
+      "Graph drawing",
+      "Insecticide"
     ],
-    "last_reinforced": "2026-11-13T22:29:51.441205+00:00"
+    "last_reinforced": "2026-11-14T02:39:13.292788+00:00"
   },
   "recherche_image": {
     "level": 4.07,
