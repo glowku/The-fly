@@ -1570,6 +1570,18 @@
     {
       "from": "Insecticide",
       "to": "Arthropod"
+    },
+    {
+      "from": "Insect",
+      "to": "Antenna (biology)"
+    },
+    {
+      "from": "Insect",
+      "to": "Annual Review of Entomology"
+    },
+    {
+      "from": "Insect",
+      "to": "Abdomen (insect anatomy)"
     }
   ],
   "frontier": [
@@ -1586,7 +1598,8 @@
     "Insects",
     "Evolutionary ecology",
     "Arthropoda",
-    "Assembly drawing"
+    "Assembly drawing",
+    "Antenna (biology)"
   ],
   "max_depth": 10
 }

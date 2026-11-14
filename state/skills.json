@@ -304,7 +304,7 @@
     "last_reinforced": "2026-11-13T23:26:52.965012+00:00"
   },
   "recherche_web": {
-    "level": 4.04,
+    "level": 4.14,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -332,9 +332,10 @@
       "Arxivers sense Fronteres",
       "Web",
       "Graph drawing",
-      "Insecticide"
+      "Insecticide",
+      "Insect"
     ],
-    "last_reinforced": "2026-11-14T02:39:13.292788+00:00"
+    "last_reinforced": "2026-11-14T16:25:08.674204+00:00"
   },
   "recherche_image": {
     "level": 4.07,

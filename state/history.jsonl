@@ -7222,3 +7222,6 @@
 {"ts": "2026-11-14T15:23:37.568291+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 147, "active_edges": 98, "archived_edges": 0, "frontier": 14, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-14T15:25:41.388528+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-14T16:15:31.505127+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Graph drawing"}
+{"ts": "2026-11-14T16:25:08.573396+00:00", "type": "plan", "title": "Insect", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
+{"ts": "2026-11-14T16:25:08.674389+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.14, "article": "Insect"}
+{"ts": "2026-11-14T16:25:08.674453+00:00", "type": "branch", "title": "Insect", "children_discovered": 1, "skill": "recherche_web"}
