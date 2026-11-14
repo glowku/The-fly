@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-14 16:23:57 UTC
+**Dernière mise à jour** : 2026-11-14 22:01:48 UTC
 
 ## Objectif de l'agent
 
@@ -10,28 +10,28 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **28.608** |
-| Concepts traités | 200 | **147** |
-| Qualité moyenne | ≥ 7.5 | **9.73/10** |
+| Score global | maximiser | **29.409** |
+| Concepts traités | 200 | **151** |
+| Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **147** |
-| Arêtes du graphe | 98 |
-| Frontière (à explorer) | 14 |
+| Concepts traités (nœuds) | **151** |
+| Arêtes du graphe | 105 |
+| Frontière (à explorer) | 15 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.73/10** |
-| Score objectif (coverage × quality) | **28.608** |
-| Actions dernières 24 h | 136 |
+| Score qualité moyen | **9.74/10** |
+| Score objectif (coverage × quality) | **29.409** |
+| Actions dernières 24 h | 154 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 340 |
-| Bon (6 – 8) | 9 |
+| Excellent (≥ 8) | 345 |
+| Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-14T13:22:15  triage_restore  
-2026-11-14T13:22:15  triage          
-2026-11-14T15:16:15  triage_restore  
-2026-11-14T15:16:15  triage_restore  
-2026-11-14T15:16:15  triage          
-2026-11-14T15:17:21  auto_learn_cyc  
-2026-11-14T15:19:26  auto_learn_cyc  
-2026-11-14T15:19:27  triage_restore  
-2026-11-14T15:19:27  triage          
-2026-11-14T15:21:31  auto_learn_cyc  
-2026-11-14T15:23:35  auto_learn_cyc  
-2026-11-14T15:23:37  triage_restore  
-2026-11-14T15:23:37  triage          
-2026-11-14T15:25:41  auto_learn_cyc  
-2026-11-14T16:15:31  parallel_learn  
+2026-11-14T20:55:46  triage          
+2026-11-14T20:56:51  skill_reinforc  
+2026-11-14T20:56:51  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-14T20:58:00  skill_reinforc  
+2026-11-14T20:58:02  auto_learn_exp  Contour drawing score=10.0
+2026-11-14T20:58:02  auto_learn_cyc  
+2026-11-14T20:59:09  skill_reinforc  
+2026-11-14T20:59:09  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-14T21:00:18  auto_learn_cyc  
+2026-11-14T21:00:20  triage_restore  
+2026-11-14T21:00:20  triage          
+2026-11-14T21:01:38  skill_reinforc  
+2026-11-14T21:01:38  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-14T21:02:45  auto_learn_cyc  
+2026-11-14T21:49:57  parallel_learn  
 ```
 
 ## Architecture de l'agent
