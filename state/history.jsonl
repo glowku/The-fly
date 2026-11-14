@@ -7250,3 +7250,6 @@
 {"ts": "2026-11-14T19:05:34.132748+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-14T19:05:35.972025+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-14T19:05:35.995859+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 148, "active_edges": 100, "archived_edges": 0, "frontier": 15, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua", "reason": "junk"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-14T20:52:13.000175+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-14T20:52:13.043798+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-14T20:52:13.081125+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 148, "active_edges": 100, "archived_edges": 0, "frontier": 15, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
