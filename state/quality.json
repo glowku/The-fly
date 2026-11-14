@@ -6987,5 +6987,22 @@
       "has_h1": true
     },
     "updated_at": "2026-11-14T19:03:08.025293+00:00"
+  },
+  "Blind contour drawing": {
+    "score": 9.5,
+    "metrics": {
+      "words": 410,
+      "sections": 4,
+      "links": 3,
+      "link_list": [
+        "Visual system",
+        "ArXiv",
+        "Image"
+      ],
+      "diversity": 0.728,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-14T20:53:23.655240+00:00"
   }
 }
