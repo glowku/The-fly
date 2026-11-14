@@ -1,6 +1,6 @@
 {
   "entomologie": {
-    "level": 9.32,
+    "level": 9.42,
     "description": "Connaissance générale des insectes",
     "keywords": [
       "insect",
@@ -25,9 +25,10 @@
       "Black fly",
       "Damselfly",
       "Anax (dragonfly)",
-      "Graph drawing"
+      "Graph drawing",
+      "Contour drawing"
     ],
-    "last_reinforced": "2026-11-08T16:55:18.855091+00:00"
+    "last_reinforced": "2026-11-14T20:58:00.666820+00:00"
   },
   "anatomie_insecte": {
     "level": 9.32,

@@ -7026,5 +7026,26 @@
       "has_h1": true
     },
     "updated_at": "2026-11-14T20:55:41.984144+00:00"
+  },
+  "Contour drawing": {
+    "score": 10.0,
+    "metrics": {
+      "words": 375,
+      "sections": 4,
+      "links": 7,
+      "link_list": [
+        "Diagram of the Federal Government and American Union",
+        "Network theory of aging",
+        "Query language",
+        "Graph drawing",
+        "Web",
+        "Visual system",
+        "Graph theory"
+      ],
+      "diversity": 0.737,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-14T20:58:00.535919+00:00"
   }
 }
