@@ -5759,22 +5759,22 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 388,
-      "sections": 4,
+      "words": 349,
+      "sections": 3,
       "links": 6,
       "link_list": [
-        "ArXiv",
-        "Code",
-        "Query expansion",
-        "Search engine indexing",
         "Network theory of aging",
-        "Visual system"
+        "Visual system",
+        "ArXiv",
+        "Supply chain security",
+        "Query expansion",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat"
       ],
-      "diversity": 0.775,
+      "diversity": 0.818,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-15T09:46:05.792571+00:00"
+    "updated_at": "2026-11-15T17:21:33.509003+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
