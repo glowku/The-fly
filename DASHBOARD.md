@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-15 05:08:34 UTC
+**Dernière mise à jour** : 2026-11-15 13:32:04 UTC
 
 ## Objectif de l'agent
 
@@ -10,29 +10,29 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **29.606** |
+| Score global | maximiser | **29.567** |
 | Concepts traités | 200 | **152** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Qualité moyenne | ≥ 7.5 | **9.73/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **152** |
-| Arêtes du graphe | 122 |
+| Arêtes du graphe | 127 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **29.606** |
-| Actions dernières 24 h | 147 |
+| Score qualité moyen | **9.73/10** |
+| Score objectif (coverage × quality) | **29.567** |
+| Actions dernières 24 h | 143 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 346 |
+| Excellent (≥ 8) | 345 |
 | Bon (6 – 8) | 8 |
-| Moyen (4 – 6) | 4 |
+| Moyen (4 – 6) | 5 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-15T02:03:56  triage_restore  
-2026-11-15T02:03:56  triage_restore  
-2026-11-15T02:03:56  triage          
-2026-11-15T02:04:01  skill_reinforc  
-2026-11-15T02:05:05  auto_learn_cyc  
-2026-11-15T02:06:09  skill_reinforc  
-2026-11-15T02:06:09  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-15T02:07:15  auto_learn_cyc  
-2026-11-15T02:07:17  triage_restore  
-2026-11-15T02:07:17  triage          
-2026-11-15T02:09:22  auto_learn_cyc  
-2026-11-15T02:11:26  auto_learn_cyc  
-2026-11-15T02:11:28  triage_restore  
-2026-11-15T02:11:28  triage          
-2026-11-15T02:13:32  auto_learn_cyc  
+2026-11-15T09:47:09  auto_learn_cyc  
+2026-11-15T09:48:15  skill_reinforc  
+2026-11-15T09:48:15  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-15T09:49:21  auto_learn_cyc  
+2026-11-15T09:49:23  triage_restore  
+2026-11-15T09:49:23  triage          
+2026-11-15T09:50:25  skill_reinforc  
+2026-11-15T09:50:25  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-15T09:51:33  auto_learn_cyc  
+2026-11-15T09:52:44  skill_reinforc  
+2026-11-15T09:52:44  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
+2026-11-15T09:53:55  auto_learn_cyc  
+2026-11-15T09:53:56  triage_restore  
+2026-11-15T09:53:56  triage          
+2026-11-15T09:56:02  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
