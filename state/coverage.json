@@ -1726,6 +1726,18 @@
     {
       "from": "Tachinidae",
       "to": "Arthropod"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Antenna (biology)"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Arthropod"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Ectoparasite"
     }
   ],
   "frontier": [
