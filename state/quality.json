@@ -5358,24 +5358,17 @@
     "updated_at": "2026-11-08T10:12:13.684587+00:00"
   },
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-    "score": 10.0,
+    "score": 5.37,
     "metrics": {
-      "words": 333,
-      "sections": 4,
-      "links": 6,
-      "link_list": [
-        "Supply chain security",
-        "Diagram of the Federal Government and American Union",
-        "Graph kernels",
-        "Query expansion",
-        "Visual system",
-        "ArXiv"
-      ],
-      "diversity": 0.771,
+      "words": 103,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.899,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-15T02:06:12.466366+00:00"
+    "updated_at": "2026-11-15T09:50:30.284369+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
