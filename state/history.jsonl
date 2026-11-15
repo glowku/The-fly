@@ -7328,3 +7328,6 @@
 {"ts": "2026-11-15T06:19:43.163273+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 152, "active_edges": 122, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-15T06:19:50.584238+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-15T07:14:15.762909+00:00", "type": "densify_edges", "added": 26, "orphans_before": 10, "edges_after": 148}
+{"ts": "2026-11-15T07:37:48.079165+00:00", "type": "plan", "title": "Tachinidae", "action": "branch", "priority": 117.4, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.297}
+{"ts": "2026-11-15T07:37:48.380506+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.43, "article": "Tachinidae"}
+{"ts": "2026-11-15T07:37:48.380551+00:00", "type": "branch", "title": "Tachinidae", "children_discovered": 0, "skill": "recherche_web"}

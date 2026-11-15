@@ -308,7 +308,7 @@
     "last_reinforced": "2026-11-14T20:59:09.040216+00:00"
   },
   "recherche_web": {
-    "level": 4.33,
+    "level": 4.43,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -338,9 +338,10 @@
       "Graph drawing",
       "Insecticide",
       "Insect",
-      "Common green bottle fly"
+      "Common green bottle fly",
+      "Tachinidae"
     ],
-    "last_reinforced": "2026-11-15T00:49:55.123286+00:00"
+    "last_reinforced": "2026-11-15T07:37:48.380235+00:00"
   },
   "recherche_image": {
     "level": 4.47,
