@@ -7296,3 +7296,4 @@
 {"ts": "2026-11-15T00:49:54.639425+00:00", "type": "plan", "title": "Common green bottle fly", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-15T00:49:55.123598+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.33, "article": "Common green bottle fly"}
 {"ts": "2026-11-15T00:49:55.123661+00:00", "type": "branch", "title": "Common green bottle fly", "children_discovered": 1, "skill": "recherche_web"}
+{"ts": "2026-11-15T01:26:37.032160+00:00", "type": "parallel_learn", "skill": "code_et_outils", "learned": 0, "workers": 4, "parent": "Thorax"}
