@@ -761,14 +761,6 @@
       ],
       "updated_at": "2026-11-08T22:31:01.723016+00:00"
     },
-    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-      "depth": 2,
-      "created_at": "2026-11-15T09:50:30.285157+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1710.04328v1"
-      ],
-      "updated_at": "2026-11-15T09:50:30.285163+00:00"
-    },
     "Network theory": {
       "depth": 10,
       "created_at": "2026-11-09T01:59:50.975723+00:00",
@@ -1209,6 +1201,14 @@
       ],
       "updated_at": "2026-11-09T01:33:30.801132+00:00"
     },
+    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
+      "depth": 2,
+      "created_at": "2026-11-15T09:50:30.285157+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1710.04328v1"
+      ],
+      "updated_at": "2026-11-15T09:50:30.285163+00:00"
+    },
     "Architectural drawing": {
       "depth": 4,
       "created_at": "2026-11-08T21:58:37.712165+00:00",
@@ -1216,14 +1216,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
-      "depth": 2,
-      "created_at": "2026-11-15T09:52:51.350322+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1911.04016v2"
-      ],
-      "updated_at": "2026-11-15T09:52:51.350328+00:00"
     }
   },
   "edges": [
