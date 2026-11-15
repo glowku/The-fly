@@ -5360,20 +5360,22 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 208,
-      "sections": 3,
-      "links": 4,
+      "words": 333,
+      "sections": 4,
+      "links": 6,
       "link_list": [
-        "Diptera",
-        "Insect",
-        "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization",
-        "Fly"
+        "Supply chain security",
+        "Diagram of the Federal Government and American Union",
+        "Graph kernels",
+        "Query expansion",
+        "Visual system",
+        "ArXiv"
       ],
-      "diversity": 0.714,
+      "diversity": 0.771,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-14T21:01:40.059933+00:00"
+    "updated_at": "2026-11-15T02:06:12.466366+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
