@@ -6013,21 +6013,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 406,
+      "words": 365,
       "sections": 4,
       "links": 5,
       "link_list": [
-        "Code",
-        "Supply chain security",
-        "Query language",
         "Web",
-        "ArXiv"
+        "ArXiv",
+        "Code",
+        "Query expansion",
+        "Supply chain security"
       ],
-      "diversity": 0.754,
+      "diversity": 0.757,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-14T20:59:10.992426+00:00"
+    "updated_at": "2026-11-15T09:48:17.689919+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
