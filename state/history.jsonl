@@ -7331,3 +7331,4 @@
 {"ts": "2026-11-15T07:37:48.079165+00:00", "type": "plan", "title": "Tachinidae", "action": "branch", "priority": 117.4, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.297}
 {"ts": "2026-11-15T07:37:48.380506+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.43, "article": "Tachinidae"}
 {"ts": "2026-11-15T07:37:48.380551+00:00", "type": "branch", "title": "Tachinidae", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-15T08:38:43.499876+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Larva"}
