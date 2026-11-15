@@ -213,7 +213,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 4.28,
+    "level": 4.38,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -234,9 +234,10 @@
       "automated-literature-review-using-nlp-techniques-and-llm-based-retriev",
       "evor-evolving-retrieval-for-code-generation",
       "Graph theory",
-      "Code"
+      "Code",
+      "Autonomous agent"
     ],
-    "last_reinforced": "2026-11-14T19:04:43.959732+00:00"
+    "last_reinforced": "2026-11-15T02:04:01.406387+00:00"
   },
   "representation": {
     "level": 4.36,
