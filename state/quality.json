@@ -5358,17 +5358,24 @@
     "updated_at": "2026-11-08T10:12:13.684587+00:00"
   },
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-    "score": 5.37,
+    "score": 10.0,
     "metrics": {
-      "words": 103,
-      "sections": 1,
-      "links": 0,
-      "link_list": [],
-      "diversity": 0.899,
+      "words": 380,
+      "sections": 5,
+      "links": 6,
+      "link_list": [
+        "Code",
+        "Query language",
+        "Web",
+        "Visual system",
+        "ArXiv",
+        "Supply chain security"
+      ],
+      "diversity": 0.738,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-15T09:50:30.284369+00:00"
+    "updated_at": "2026-11-15T16:18:22.850134+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,

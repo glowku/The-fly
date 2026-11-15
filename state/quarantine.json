@@ -8335,8 +8335,16 @@
     {
       "from": "Architectural drawing",
       "to": "Aquatic insects"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Antenna (biology)"
+    },
+    {
+      "from": "Common green bottle fly",
+      "to": "Ectoparasite"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-15T13:49:50.470372+00:00"
+  "updated_at": "2026-11-15T16:18:16.298106+00:00"
 }
