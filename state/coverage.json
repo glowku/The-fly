@@ -1025,6 +1025,14 @@
       ],
       "updated_at": "2026-11-14T20:58:00.537017+00:00"
     },
+    "Autonomous agent": {
+      "depth": 6,
+      "created_at": "2026-11-15T02:04:01.401399+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Autonomous_agent"
+      ],
+      "updated_at": "2026-11-15T02:04:01.401404+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1208,14 +1216,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Autonomous agent": {
-      "depth": 6,
-      "created_at": "2026-11-15T02:04:01.401399+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Autonomous_agent"
-      ],
-      "updated_at": "2026-11-15T02:04:01.401404+00:00"
     }
   },
   "edges": [
