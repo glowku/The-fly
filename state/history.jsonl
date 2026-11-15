@@ -7332,3 +7332,6 @@
 {"ts": "2026-11-15T07:37:48.380506+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.43, "article": "Tachinidae"}
 {"ts": "2026-11-15T07:37:48.380551+00:00", "type": "branch", "title": "Tachinidae", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-15T08:38:43.499876+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Larva"}
+{"ts": "2026-11-15T09:45:58.380633+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-15T09:45:58.425286+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-15T09:45:58.465308+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 152, "active_edges": 127, "archived_edges": 22, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
