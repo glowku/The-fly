@@ -1750,6 +1750,14 @@
     {
       "from": "Code",
       "to": "Web"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "Graph drawing"
+    },
+    {
+      "from": "Area (graph drawing)",
+      "to": "International Symposium on Graph Drawing"
     }
   ],
   "frontier": [
