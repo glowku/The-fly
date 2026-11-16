@@ -1,19 +1,15 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un levier économique et social majeur. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et opportunités pour l’inclusion de la communauté locale dans l’industrie mondiale du logiciel. Les données proviennent de trois présentations, d’un questionnaire adressé à 52 participants et d’un focus group approfondi avec cinq acteurs locaux.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un levier économique et social majeur. Cette étude, publiée sur arXiv, analyse les obstacles et les opportunités que rencontre la société naissante de PNG pour intégrer l’industrie mondiale du logiciel. À travers une approche qualitative, les auteurs ont identifié des barrières spécifiques tout en soulignant des pistes d’inclusion pour les praticiens, chercheurs et éducateurs locaux et internationaux.
 
 ## Méthodologie de l’étude
+L’enquête s’est déroulée lors d’un atelier de génie logiciel organisé à PNG. Les chercheurs ont enregistré trois conférences, distribué un questionnaire à 52 participants et mené un focus‑group approfondi avec cinq acteurs locaux. La collecte de données a été suivie d’une analyse thématique, permettant de distinguer les défis majeurs et les opportunités émergentes pour la communauté du génie logiciel de PNG.
 
-L’étude a adopté une approche mixte. Les intervenants ont présenté des cas d’usage et des défis spécifiques à PNG, tandis que les questionnaires ont permis de quantifier les perceptions des participants. La session de focus group a offert un espace d’échange direct, permettant d’explorer les nuances culturelles et économiques. L’analyse thématique a ensuite regroupé les réponses en catégories de barrières et d’opportunités, fournissant une base empirique pour les recommandations.
-
-## Défis identifiés
-
-Les principaux obstacles recensés concernent l’accès limité à l’infrastructure numérique, la pénurie de compétences locales en génie logiciel et les contraintes financières qui freinent l’investissement dans la formation. De plus, les différences linguistiques et culturelles créent des barrières à la collaboration internationale. Ces facteurs combinés limitent la participation active de PNG aux projets open‑source et aux partenariats académiques mondiaux.
+## Enjeux identifiés
+Les principaux obstacles recensés incluent un manque d’infrastructures numériques, des barrières linguistiques et culturelles, ainsi qu’une faible visibilité des pratiques de développement logiciel au niveau local. Ces facteurs créent des barrières à l’accès aux compétences, aux ressources pédagogiques et aux opportunités d’emploi dans le secteur. En parallèle, la diversité culturelle de PNG est perçue comme une source potentielle d’innovation, mais elle reste sous‑exploité en raison de l’isolement géographique et de l’accès limité aux réseaux professionnels mondiaux.
 
 ## Opportunités et pistes d’inclusion
-
-Malgré ces défis, l’étude met en lumière des leviers d’inclusion. Le développement de programmes de formation adaptés aux réalités locales, le soutien à des initiatives open‑source dirigées par des praticiens PNG et la création de réseaux de mentorat trans‑culturels sont cités comme des stratégies prometteuses. En outre, l’intégration de pratiques de sécurité logicielle, telles que la sécurisation des chaînes d’approvisionnement, peut renforcer la confiance des partenaires internationaux et ouvrir des marchés pour les talents locaux.
+Les auteurs soulignent plusieurs leviers pour favoriser l’inclusion. Le développement de programmes de formation adaptés aux langues locales, l’établissement de partenariats avec des institutions académiques internationales et la création de plateformes de collaboration en ligne peuvent réduire les écarts d’accès. De plus, la promotion de projets open source locaux permettrait de valoriser les compétences locales tout en intégrant la communauté PNG dans le réseau global du logiciel. Enfin, l’adoption de pratiques de sécurité et de gestion de la chaîne d’approvisionnement, telles que celles décrites dans le cadre de la sécurité de la chaîne d’approvisionnement logicielle, pourrait renforcer la confiance des investisseurs et des partenaires internationaux.
 
 ## Voir aussi
-
-[[ArXiv]], [[Code]], [[Web]], [[Supply chain security]], [[Query language]], [[Visual system]]
+[[ArXiv]], [[Code]], [[Supply chain security]], [[Visual system]], [[Query expansion]], [[Technical drawing tool]]
