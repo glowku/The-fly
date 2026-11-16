@@ -3,7 +3,7 @@ skill: securite_defensive
 title: SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
 source: arxiv
 url: https://arxiv.org/abs/1807.10463v4
-created: 2026-11-15T17:23:41.989523+00:00
+created: 2026-11-16T05:50:13.321759+00:00
 ---
 
 # SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices

@@ -6010,22 +6010,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 351,
+      "words": 374,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Network theory of aging",
-        "Code",
-        "Texas Instruments",
-        "ArXiv",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+        "Technical drawing tool",
         "Supply chain security",
-        "ISO‑18000‑6C"
+        "ArXiv",
+        "Code"
       ],
-      "diversity": 0.764,
+      "diversity": 0.72,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-15T17:23:43.805323+00:00"
+    "updated_at": "2026-11-16T05:50:15.259796+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,

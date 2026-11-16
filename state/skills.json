@@ -287,7 +287,7 @@
     "last_reinforced": "2026-11-16T05:48:35.040966+00:00"
   },
   "securite_defensive": {
-    "level": 4.65,
+    "level": 4.8,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -305,7 +305,7 @@
       "Application security",
       "Supply chain security"
     ],
-    "last_reinforced": "2026-11-15T17:23:41.989901+00:00"
+    "last_reinforced": "2026-11-16T05:50:13.322078+00:00"
   },
   "recherche_web": {
     "level": 4.73,
