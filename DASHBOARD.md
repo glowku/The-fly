@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-15 23:47:42 UTC
+**Dernière mise à jour** : 2026-11-16 05:05:54 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **152** |
-| Arêtes du graphe | 135 |
+| Arêtes du graphe | 137 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.606** |
-| Actions dernières 24 h | 141 |
+| Actions dernières 24 h | 130 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-15T22:45:54  skill_reinforc  
-2026-11-15T22:45:54  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-15T22:46:06  auto_learn_cyc  
-2026-11-15T23:03:32  triage_restore  
-2026-11-15T23:03:32  triage_restore  
-2026-11-15T23:03:32  triage          
-2026-11-15T23:04:44  auto_learn_cyc  
-2026-11-15T23:06:48  auto_learn_cyc  
-2026-11-15T23:06:50  triage_restore  
-2026-11-15T23:06:50  triage          
-2026-11-15T23:08:54  auto_learn_cyc  
-2026-11-15T23:10:58  auto_learn_cyc  
-2026-11-15T23:11:00  triage_restore  
-2026-11-15T23:11:00  triage          
-2026-11-15T23:13:04  auto_learn_cyc  
+2026-11-15T23:52:31  triage_restore  
+2026-11-15T23:52:31  triage_restore  
+2026-11-15T23:52:31  triage          
+2026-11-15T23:53:16  auto_learn_cyc  
+2026-11-15T23:54:41  auto_learn_cyc  
+2026-11-15T23:54:43  triage_restore  
+2026-11-15T23:54:43  triage          
+2026-11-15T23:56:07  auto_learn_cyc  
+2026-11-15T23:57:31  auto_learn_cyc  
+2026-11-15T23:57:33  triage_restore  
+2026-11-15T23:57:33  triage          
+2026-11-16T00:19:00  plan            Angular resolution (graph drawing)
+2026-11-16T00:19:01  skill_reinforc  
+2026-11-16T00:19:01  branch          Angular resolution (graph drawing)
+2026-11-16T03:55:43  parallel_learn  
 ```
 
 ## Architecture de l'agent
