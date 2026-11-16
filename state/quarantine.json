@@ -6059,32 +6059,32 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-15T17:28:07.234574+00:00",
+      "created_at": "2026-11-16T05:53:29.047686+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-15T17:28:07.234580+00:00",
-      "quarantined_at": "2026-11-15T17:29:12.091485+00:00",
+      "updated_at": "2026-11-16T05:53:29.047690+00:00",
+      "quarantined_at": "2026-11-16T05:54:16.821171+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 412,
+          "words": 336,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Network theory of aging",
-            "Code",
             "Visual system",
-            "ArXiv",
             "Supply chain security",
-            "Web"
+            "Web",
+            "ArXiv",
+            "Query language",
+            "Code"
           ],
-          "diversity": 0.822,
+          "diversity": 0.859,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-15T17:28:07.233977+00:00"
+        "updated_at": "2026-11-16T05:53:29.047111+00:00"
       }
     },
     "Citation": {
@@ -8426,5 +8426,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-16T05:51:04.548416+00:00"
+  "updated_at": "2026-11-16T05:54:16.829113+00:00"
 }
