@@ -7441,3 +7441,4 @@
 {"ts": "2026-11-16T00:19:00.893024+00:00", "type": "plan", "title": "Angular resolution (graph drawing)", "action": "branch", "priority": 150.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-16T00:19:01.591080+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 4.73, "article": "Angular resolution (graph drawing)"}
 {"ts": "2026-11-16T00:19:01.591127+00:00", "type": "branch", "title": "Angular resolution (graph drawing)", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-16T03:55:43.053266+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Larva"}
