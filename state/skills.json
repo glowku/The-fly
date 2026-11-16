@@ -308,7 +308,7 @@
     "last_reinforced": "2026-11-15T17:23:41.989901+00:00"
   },
   "recherche_web": {
-    "level": 4.63,
+    "level": 4.73,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -340,9 +340,10 @@
       "Insect",
       "Common green bottle fly",
       "Tachinidae",
-      "Area (graph drawing)"
+      "Area (graph drawing)",
+      "Angular resolution (graph drawing)"
     ],
-    "last_reinforced": "2026-11-15T20:30:12.088413+00:00"
+    "last_reinforced": "2026-11-16T00:19:01.590834+00:00"
   },
   "recherche_image": {
     "level": 4.77,

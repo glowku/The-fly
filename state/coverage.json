@@ -1758,6 +1758,14 @@
     {
       "from": "Area (graph drawing)",
       "to": "International Symposium on Graph Drawing"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "International Symposium on Graph Drawing"
+    },
+    {
+      "from": "Angular resolution (graph drawing)",
+      "to": "Area (graph drawing)"
     }
   ],
   "frontier": [
