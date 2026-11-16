@@ -5484,32 +5484,31 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-15T17:21:33.509658+00:00",
+      "created_at": "2026-11-16T05:48:37.506830+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-15T17:21:33.509664+00:00",
-      "quarantined_at": "2026-11-15T17:24:50.796335+00:00",
+      "updated_at": "2026-11-16T05:48:37.506854+00:00",
+      "quarantined_at": "2026-11-16T05:51:04.540612+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 349,
-          "sections": 3,
-          "links": 6,
+          "words": 351,
+          "sections": 4,
+          "links": 5,
           "link_list": [
-            "Network theory of aging",
             "Visual system",
-            "ArXiv",
-            "Supply chain security",
             "Query expansion",
-            "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat"
+            "Web",
+            "ArXiv",
+            "Code"
           ],
-          "diversity": 0.818,
+          "diversity": 0.802,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-15T17:21:33.509003+00:00"
+        "updated_at": "2026-11-16T05:48:37.506187+00:00"
       }
     },
     "OWASP": {
@@ -8427,5 +8426,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-16T05:48:26.128860+00:00"
+  "updated_at": "2026-11-16T05:51:04.548416+00:00"
 }
