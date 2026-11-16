@@ -287,7 +287,7 @@
     "last_reinforced": "2026-11-16T07:10:30.551694+00:00"
   },
   "securite_defensive": {
-    "level": 4.8,
+    "level": 4.9,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -303,9 +303,10 @@
       "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo",
       "Cross-origin resource sharing",
       "Application security",
-      "Supply chain security"
+      "Supply chain security",
+      "Secure coding"
     ],
-    "last_reinforced": "2026-11-16T05:50:13.322078+00:00"
+    "last_reinforced": "2026-11-16T07:12:40.866462+00:00"
   },
   "recherche_web": {
     "level": 4.82,

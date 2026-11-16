@@ -1224,6 +1224,14 @@
         "https://arxiv.org/abs/2504.16021v1"
       ],
       "updated_at": "2026-11-16T07:10:32.966848+00:00"
+    },
+    "Secure coding": {
+      "depth": 6,
+      "created_at": "2026-11-16T07:12:40.861421+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Secure_coding"
+      ],
+      "updated_at": "2026-11-16T07:12:40.861428+00:00"
     }
   },
   "edges": [

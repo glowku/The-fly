@@ -7068,5 +7068,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-15T02:04:01.400844+00:00"
+  },
+  "Secure coding": {
+    "score": 10.0,
+    "metrics": {
+      "words": 372,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Code",
+        "Web",
+        "ArXiv",
+        "Supply chain security",
+        "Query expansion",
+        "Technical drawing tool"
+      ],
+      "diversity": 0.816,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-16T07:12:40.860773+00:00"
   }
 }
