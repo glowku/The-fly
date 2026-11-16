@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-16 05:05:54 UTC
+**Dernière mise à jour** : 2026-11-16 14:59:07 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **29.606** |
-| Concepts traités | 200 | **152** |
+| Score global | maximiser | **29.803** |
+| Concepts traités | 200 | **153** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **152** |
-| Arêtes du graphe | 137 |
+| Concepts traités (nœuds) | **153** |
+| Arêtes du graphe | 156 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **29.606** |
-| Actions dernières 24 h | 130 |
+| Score objectif (coverage × quality) | **29.803** |
+| Actions dernières 24 h | 123 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 346 |
+| Excellent (≥ 8) | 347 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-15T23:52:31  triage_restore  
-2026-11-15T23:52:31  triage_restore  
-2026-11-15T23:52:31  triage          
-2026-11-15T23:53:16  auto_learn_cyc  
-2026-11-15T23:54:41  auto_learn_cyc  
-2026-11-15T23:54:43  triage_restore  
-2026-11-15T23:54:43  triage          
-2026-11-15T23:56:07  auto_learn_cyc  
-2026-11-15T23:57:31  auto_learn_cyc  
-2026-11-15T23:57:33  triage_restore  
-2026-11-15T23:57:33  triage          
-2026-11-16T00:19:00  plan            Angular resolution (graph drawing)
-2026-11-16T00:19:01  skill_reinforc  
-2026-11-16T00:19:01  branch          Angular resolution (graph drawing)
-2026-11-16T03:55:43  parallel_learn  
+2026-11-16T07:09:26  auto_learn_cyc  
+2026-11-16T07:09:28  triage_restore  
+2026-11-16T07:09:28  triage          
+2026-11-16T07:10:30  skill_reinforc  
+2026-11-16T07:10:30  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-16T07:11:36  auto_learn_cyc  
+2026-11-16T07:12:40  skill_reinforc  
+2026-11-16T07:13:44  auto_learn_cyc  
+2026-11-16T07:13:45  triage_restore  
+2026-11-16T07:13:45  triage          
+2026-11-16T07:14:48  skill_reinforc  
+2026-11-16T07:14:48  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-16T07:15:52  auto_learn_cyc  
+2026-11-16T07:19:55  densify_edges   
+2026-11-16T12:19:22  parallel_learn  
 ```
 
 ## Architecture de l'agent
