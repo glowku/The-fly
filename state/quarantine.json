@@ -5484,33 +5484,31 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-17T03:06:35.759208+00:00",
+      "created_at": "2026-11-17T10:30:50.475308+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-17T03:06:35.759214+00:00",
-      "quarantined_at": "2026-11-17T03:07:44.001193+00:00",
+      "updated_at": "2026-11-17T10:30:50.475314+00:00",
+      "quarantined_at": "2026-11-17T10:33:00.491346+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 368,
+          "words": 354,
           "sections": 4,
-          "links": 7,
+          "links": 5,
           "link_list": [
-            "Supply chain security",
-            "ArXiv",
-            "Query language",
-            "Web",
-            "Technical drawing tool",
+            "Query expansion",
             "Visual system",
-            "Query expansion"
+            "ArXiv",
+            "Andy Diagram",
+            "Supply chain security"
           ],
-          "diversity": 0.79,
+          "diversity": 0.772,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-17T03:06:35.758604+00:00"
+        "updated_at": "2026-11-17T10:30:50.474688+00:00"
       }
     },
     "OWASP": {
@@ -8650,5 +8648,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-17T10:29:47.035225+00:00"
+  "updated_at": "2026-11-17T10:33:00.499254+00:00"
 }
