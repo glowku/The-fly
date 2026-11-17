@@ -1,25 +1,19 @@
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 
-La théorie du flow décrit un état cognitif optimal où l’individu ressent une concentration profonde et une motivation intrinsèque lorsque la difficulté d’une tâche correspond à son niveau de compétence. Dans le cadre de l’IA‑augmentée, les interventions qui interrompent cet état peuvent nuire plutôt que favoriser la prise de décision. Ce papier, publié sur [[ArXiv]], propose un cadre d’augmentation cognitive context‑aware qui adapte les interventions en fonction de trois facteurs clés : le type, le timing et l’échelle. En exploitant des indices comportementaux multimodaux (comportement oculaire, hésitation de frappe, vitesse d’interaction), l’IA ajuste dynamiquement le soutien cognitif pour maintenir ou restaurer le flow.
+Ce travail, publié sur [[ArXiv]], explore l’application de la théorie du flux à la prise de décision assistée par intelligence artificielle. Il propose un cadre d’augmentation cognitive qui adapte les interventions en fonction du type, du moment et de l’échelle, afin de préserver l’état de concentration optimale. En exploitant des indices comportementaux multimodaux, l’IA peut ajuster son soutien sans perturber l’immersion cognitive.
 
-## Concept de la théorie du flow et son extension en IA
+## Concepts clés
 
-La théorie du flow, introduite par Mihaly Csikszentmihalyi, souligne l’importance de l’équilibre entre défi et compétence pour favoriser l’engagement. L’extension proposée intègre les systèmes d’IA comme agents de soutien, mais insiste sur la préservation de l’immersion cognitive. Ainsi, les interventions doivent être personnalisées, adaptatives et peu intrusives afin de ne pas perturber la dynamique de concentration.
+La théorie du flux décrit un état où la difficulté d’une tâche correspond au niveau de compétence de l’individu, favorisant une focalisation profonde et une motivation intrinsèque. Dans le contexte de l’IA, les interventions statiques peuvent rompre ce rythme, entravant la prise de décision. Le cadre présenté introduit le concept de *cognitive flow* adapté aux systèmes d’aide à la raison, où les interventions sont personnalisées, adaptatives et peu intrusives.
 
-## Cadre d’augmentation cognitive context‑aware
+## Méthodologie et cadre d’augmentation
 
-Le cadre se décompose en trois dimensions :
+Le modèle repose sur trois facteurs contextuels : le type d’intervention (information, rappel, guidage), le timing (préventif, réactif) et l’échelle (micro‑interventions, ajustements globaux). Les signaux multimodaux – comportement oculaire, hésitation dans la saisie, vitesse d’interaction – sont capturés via le [[Visual system]] et d’autres capteurs. En combinant ces données, l’IA ajuste dynamiquement son soutien pour maintenir ou restaurer le flux. Cette approche s’appuie sur des techniques d’expansion de requêtes [[Query expansion]] pour interpréter les intentions de l’utilisateur et sur des modèles de langage avancés pour générer des réponses contextuellement pertinentes.
 
-1. **Type** : nature de l’intervention (feedback visuel, suggestions textuelles, ajustement de la difficulté).  
-2. **Timing** : moment de l’intervention, déterminé par des signaux en temps réel (ex. pause de frappe, changement de rythme de navigation).  
-3. **Échelle** : intensité de l’intervention, modulée selon la profondeur de l’engagement.
+## Implications et perspectives
 
-Les indices multimodaux proviennent notamment du [[Visual system]] (comportement oculaire), de l’hésitation de frappe (analyse du texte) et de la vitesse d’interaction. En combinant ces signaux, l’IA peut anticiper les moments où le flow est menacé et intervenir de façon discrète pour le restaurer.
-
-## Implications pour la prise de décision complexe
-
-En remplaçant les interventions statiques par des ajustements context‑aware, le système soutient une immersion profonde dans des tâches décisionnelles complexes. Cela permet d’éviter les interruptions fréquentes qui compromettent la fluidité cognitive et d’améliorer la qualité des décisions. Les applications potentielles incluent l’aide à la planification stratégique, l’analyse de données volumineuses et la résolution de problèmes multi‑critères.
+En déplaçant le focus des interventions statiques vers une augmentation contextuelle, le cadre permet aux utilisateurs de rester profondément engagés dans des tâches complexes de décision et de raisonnement. Les applications potentielles s’étendent aux domaines de la sécurité des chaînes d’approvisionnement [[Supply chain security]], à la navigation sur le [[Web]] et à la conception de systèmes interactifs. Les futures recherches devront évaluer l’efficacité de ces interventions dans des scénarios réels et explorer l’intégration avec des outils de dessin technique [[Technical drawing tool]] et des langages de requête [[Query language]].
 
 ## Voir aussi
 
-[[ArXiv]] [[Visual system]] [[Query expansion]] [[Network theory of aging]] [[Web]] [[Code]]
+[[ArXiv]] • [[Visual system]] • [[Query expansion]] • [[Supply chain security]] • [[Technical drawing tool]] • [[Web]]

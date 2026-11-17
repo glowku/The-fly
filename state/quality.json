@@ -5758,22 +5758,23 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 389,
+      "words": 368,
       "sections": 4,
-      "links": 6,
+      "links": 7,
       "link_list": [
-        "Network theory of aging",
-        "Code",
-        "Web",
-        "Visual system",
+        "Supply chain security",
         "ArXiv",
+        "Query language",
+        "Web",
+        "Technical drawing tool",
+        "Visual system",
         "Query expansion"
       ],
-      "diversity": 0.731,
+      "diversity": 0.79,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-16T07:10:32.966241+00:00"
+    "updated_at": "2026-11-17T03:06:35.758604+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
