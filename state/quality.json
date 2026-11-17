@@ -6619,22 +6619,28 @@
   "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
     "score": 10.0,
     "metrics": {
-      "words": 373,
+      "words": 393,
       "sections": 4,
-      "links": 6,
+      "links": 12,
       "link_list": [
-        "Visual system",
-        "ArXiv",
         "Supply chain security",
+        "Arxivers sense Fronteres",
+        "ArXiv",
+        "Network theory of aging",
+        "Query language",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+        "Web",
         "Technical drawing tool",
-        "Query expansion",
-        "Code"
+        "Visual system",
+        "Andy Diagram",
+        "Code",
+        "Query expansion"
       ],
-      "diversity": 0.814,
+      "diversity": 0.82,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-16T18:47:30.186057+00:00"
+    "updated_at": "2026-11-17T03:11:10.116676+00:00"
   },
   "Query expansion": {
     "score": 10.0,
