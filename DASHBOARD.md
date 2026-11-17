@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-17 07:43:55 UTC
+**Dernière mise à jour** : 2026-11-17 17:25:31 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.803** |
-| Actions dernières 24 h | 76 |
+| Actions dernières 24 h | 99 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-17T03:07:44  triage          
-2026-11-17T03:08:49  skill_reinforc  
-2026-11-17T03:08:49  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-17T03:09:57  auto_learn_cyc  
-2026-11-17T03:11:07  skill_reinforc  
-2026-11-17T03:11:07  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
-2026-11-17T03:12:16  auto_learn_cyc  
-2026-11-17T03:12:18  triage_restore  
-2026-11-17T03:12:18  triage          
-2026-11-17T03:14:29  auto_learn_cyc  
-2026-11-17T03:46:59  triage_restore  
-2026-11-17T03:46:59  triage_restore  
-2026-11-17T03:46:59  triage          
-2026-11-17T03:47:07  auto_learn_cyc  
-2026-11-17T05:47:59  parallel_learn  
+2026-11-17T13:44:33  triage          
+2026-11-17T13:45:44  auto_learn_cyc  
+2026-11-17T13:47:54  auto_learn_cyc  
+2026-11-17T13:47:56  triage_restore  
+2026-11-17T13:47:56  triage          
+2026-11-17T13:50:05  auto_learn_cyc  
+2026-11-17T13:52:14  auto_learn_cyc  
+2026-11-17T13:52:16  triage_restore  
+2026-11-17T13:52:17  triage          
+2026-11-17T13:54:26  auto_learn_cyc  
+2026-11-17T15:13:07  parallel_learn  
+2026-11-17T15:54:33  triage_restore  
+2026-11-17T15:54:33  triage_restore  
+2026-11-17T15:54:33  triage          
+2026-11-17T15:54:37  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
