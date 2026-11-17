@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-16 23:59:33 UTC
+**Dernière mise à jour** : 2026-11-17 07:43:55 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **153** |
-| Arêtes du graphe | 156 |
+| Arêtes du graphe | 138 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.803** |
-| Actions dernières 24 h | 84 |
+| Actions dernières 24 h | 76 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-16T18:49:44  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-16T18:50:51  auto_learn_cyc  
-2026-11-16T18:50:52  triage_restore  
-2026-11-16T18:50:52  triage          
-2026-11-16T18:53:02  auto_learn_cyc  
-2026-11-16T18:55:07  auto_learn_cyc  
-2026-11-16T18:55:09  triage_restore  
-2026-11-16T18:55:09  triage          
-2026-11-16T18:57:13  auto_learn_cyc  
-2026-11-16T19:32:08  triage_restore  
-2026-11-16T19:32:08  triage_restore  
-2026-11-16T19:32:08  triage          
-2026-11-16T19:32:10  auto_learn_cyc  
-2026-11-16T22:32:38  densify_edges   
-2026-11-16T23:07:35  parallel_learn  
+2026-11-17T03:07:44  triage          
+2026-11-17T03:08:49  skill_reinforc  
+2026-11-17T03:08:49  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-17T03:09:57  auto_learn_cyc  
+2026-11-17T03:11:07  skill_reinforc  
+2026-11-17T03:11:07  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
+2026-11-17T03:12:16  auto_learn_cyc  
+2026-11-17T03:12:18  triage_restore  
+2026-11-17T03:12:18  triage          
+2026-11-17T03:14:29  auto_learn_cyc  
+2026-11-17T03:46:59  triage_restore  
+2026-11-17T03:46:59  triage_restore  
+2026-11-17T03:46:59  triage          
+2026-11-17T03:47:07  auto_learn_cyc  
+2026-11-17T05:47:59  parallel_learn  
 ```
 
 ## Architecture de l'agent
