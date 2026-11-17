@@ -7562,3 +7562,6 @@
 {"ts": "2026-11-17T03:47:07.378123+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-17T05:47:59.545457+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Saro Windhover"}
 {"ts": "2026-11-17T08:30:35.336404+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 156}
+{"ts": "2026-11-17T09:01:33.392279+00:00", "type": "plan", "title": "ArXiv", "action": "branch", "priority": 133.2, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.26}
+{"ts": "2026-11-17T09:01:33.432851+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 5.1, "article": "ArXiv"}
+{"ts": "2026-11-17T09:01:33.432905+00:00", "type": "branch", "title": "ArXiv", "children_discovered": 0, "skill": "recherche_web"}
