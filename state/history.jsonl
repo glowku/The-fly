@@ -7586,3 +7586,4 @@
 {"ts": "2026-11-17T13:44:33.704570+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-17T13:44:33.735168+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 153, "active_edges": 138, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-17T13:45:44.619989+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-17T13:47:54.289204+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
