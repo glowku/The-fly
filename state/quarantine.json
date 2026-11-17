@@ -6061,32 +6061,38 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-16T18:47:30.186734+00:00",
+      "created_at": "2026-11-17T03:11:10.117280+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-16T18:47:30.186739+00:00",
-      "quarantined_at": "2026-11-16T18:50:52.926217+00:00",
+      "updated_at": "2026-11-17T03:11:10.117285+00:00",
+      "quarantined_at": "2026-11-17T03:12:18.134623+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 373,
+          "words": 393,
           "sections": 4,
-          "links": 6,
+          "links": 12,
           "link_list": [
-            "Visual system",
-            "ArXiv",
             "Supply chain security",
+            "Arxivers sense Fronteres",
+            "ArXiv",
+            "Network theory of aging",
+            "Query language",
+            "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+            "Web",
             "Technical drawing tool",
-            "Query expansion",
-            "Code"
+            "Visual system",
+            "Andy Diagram",
+            "Code",
+            "Query expansion"
           ],
-          "diversity": 0.814,
+          "diversity": 0.82,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-16T18:47:30.186057+00:00"
+        "updated_at": "2026-11-17T03:11:10.116676+00:00"
       }
     },
     "Citation": {
@@ -8572,5 +8578,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-17T03:07:44.008959+00:00"
+  "updated_at": "2026-11-17T03:12:18.142637+00:00"
 }
