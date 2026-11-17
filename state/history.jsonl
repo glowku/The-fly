@@ -7539,3 +7539,5 @@
 {"ts": "2026-11-17T03:04:05.163022+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-17T03:04:05.190582+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-17T03:04:05.216180+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 153, "active_edges": 138, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-17T03:04:11.875244+00:00", "type": "skill_reinforce", "skill": "recherche_image", "new_level": 5.07, "article": "what-would-a-graph-look-like-in-this-layout-a-machine-learning-approac"}
+{"ts": "2026-11-17T03:04:11.875288+00:00", "type": "skill_learn_arxiv", "skill": "recherche_image", "title": "What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization", "url": "https://arxiv.org/abs/1710.04328v1"}
