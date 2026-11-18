@@ -287,7 +287,7 @@
     "last_reinforced": "2026-11-17T10:30:37.876085+00:00"
   },
   "securite_defensive": {
-    "level": 5.2,
+    "level": 5.29,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -304,9 +304,10 @@
       "Cross-origin resource sharing",
       "Application security",
       "Supply chain security",
-      "Secure coding"
+      "Secure coding",
+      "Data validation"
     ],
-    "last_reinforced": "2026-11-17T10:27:23.809711+00:00"
+    "last_reinforced": "2026-11-18T03:30:02.748866+00:00"
   },
   "recherche_web": {
     "level": 5.28,

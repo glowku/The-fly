@@ -1224,6 +1224,14 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "Data validation": {
+      "depth": 7,
+      "created_at": "2026-11-18T03:30:02.742382+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Data_validation"
+      ],
+      "updated_at": "2026-11-18T03:30:02.742389+00:00"
     }
   },
   "edges": [
