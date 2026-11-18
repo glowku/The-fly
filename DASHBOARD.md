@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-17 17:25:31 UTC
+**Dernière mise à jour** : 2026-11-18 00:37:49 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.803** |
-| Actions dernières 24 h | 99 |
+| Actions dernières 24 h | 98 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-17T13:44:33  triage          
-2026-11-17T13:45:44  auto_learn_cyc  
-2026-11-17T13:47:54  auto_learn_cyc  
-2026-11-17T13:47:56  triage_restore  
-2026-11-17T13:47:56  triage          
-2026-11-17T13:50:05  auto_learn_cyc  
-2026-11-17T13:52:14  auto_learn_cyc  
-2026-11-17T13:52:16  triage_restore  
-2026-11-17T13:52:17  triage          
-2026-11-17T13:54:26  auto_learn_cyc  
-2026-11-17T15:13:07  parallel_learn  
-2026-11-17T15:54:33  triage_restore  
-2026-11-17T15:54:33  triage_restore  
-2026-11-17T15:54:33  triage          
-2026-11-17T15:54:37  auto_learn_cyc  
+2026-11-17T20:46:56  triage          
+2026-11-17T21:21:41  densify_edges   
+2026-11-17T22:34:20  triage_restore  
+2026-11-17T22:34:20  triage_restore  
+2026-11-17T22:34:20  triage          
+2026-11-17T22:35:30  auto_learn_cyc  
+2026-11-17T22:37:34  auto_learn_cyc  
+2026-11-17T22:37:36  triage_restore  
+2026-11-17T22:37:36  triage          
+2026-11-17T22:39:41  auto_learn_cyc  
+2026-11-17T22:41:46  auto_learn_cyc  
+2026-11-17T22:41:47  triage_restore  
+2026-11-17T22:41:47  triage          
+2026-11-17T22:43:52  auto_learn_cyc  
+2026-11-17T23:15:01  parallel_learn  
 ```
 
 ## Architecture de l'agent
