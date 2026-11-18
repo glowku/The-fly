@@ -6012,21 +6012,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 396,
+      "words": 369,
       "sections": 4,
-      "links": 5,
+      "links": 6,
       "link_list": [
-        "Query language",
-        "Supply chain security",
-        "Visual system",
+        "Compass (drawing tool)",
+        "Web",
         "Arxivers sense Fronteres",
-        "Network theory of aging"
+        "Technical drawing tool",
+        "Supply chain security",
+        "Code"
       ],
-      "diversity": 0.737,
+      "diversity": 0.77,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-18T11:31:45.084339+00:00"
+    "updated_at": "2026-11-18T21:50:14.481201+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,

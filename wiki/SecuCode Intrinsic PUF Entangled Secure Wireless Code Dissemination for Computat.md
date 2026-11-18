@@ -1,19 +1,15 @@
 # SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
 
-SecuCode est un mécanisme de mise à jour logicielle sans fil sécurisé conçu spécifiquement pour les dispositifs RFID à calcul (CRFID). Il combine une fonction physique non clonable (PUF) intégrée à la mémoire SRAM d’un dispositif avec un protocole de mise à jour firmware, afin de surmonter les contraintes d’alimentation intermittente, de capacité de calcul limitée et l’absence de système d’exploitation supervisé. Le système est compatible avec le protocole ISO‑18000‑6C et s’appuie sur un cadre d’actualisation firmware fourni par Texas Instruments.
+SecuCode est un mécanisme de mise à jour logicielle sans fil sécurisé spécialement conçu pour les dispositifs RFID computationnels (CRFID). Il exploite la fonction physique non clonable (PUF) intégrée à la mémoire SRAM du dispositif afin de garantir l’authenticité et l’intégrité du firmware. Cette approche permet de surmonter les contraintes de puissance intermittente et de ressources limitées propres aux CRFID, tout en restant compatible avec les protocoles de communication existants, notamment ISO‑18000‑6C.
 
-## Contexte et enjeux
+## Contexte et motivation
+Les dispositifs CRFID tirent leur énergie de l’environnement, ce qui les rend autonomes mais aussi vulnérables aux attaques de mise à jour logicielle. L’absence d’un système d’exploitation supervisé et la puissance limitée rendent les méthodes classiques de mise à jour peu adaptées. SecuCode propose une solution qui s’appuie sur un élément matériel intrinsèque, la SRAM PUF, pour créer un lien unique et non reproductible entre le dispositif et le firmware qu’il reçoit.
 
-Les dispositifs CRFID représentent une nouvelle catégorie d’appareils IoT sans batterie, qui récupèrent toute leur énergie via l’harvesting radiofréquence. Cette approche offre une simplicité de déploiement et une exploitation continue, mais introduit des défis majeurs en matière de sécurité, notamment la mise à jour logicielle sans fil. Les interruptions d’alimentation, la faible puissance de calcul et l’absence d’un OS de supervision rendent les méthodes classiques de mise à jour vulnérables aux attaques de reprogrammation ou de falsification de firmware.
+## Architecture et principe de fonctionnement
+Le protocole SecuCode intègre la PUF SRAM dans la chaîne de mise à jour. Lors de la réception d’un paquet de firmware, le dispositif génère un challenge‑response à partir de sa PUF, qui est vérifié par le serveur d’authentification. Seuls les firmwares signés avec la clé dérivée de la PUF sont acceptés. Le mécanisme est entièrement compatible avec le cadre de mise à jour fourni par Texas Instruments, étendu pour fonctionner sans supervision et avec des cycles d’alimentation intermittents. La communication se fait via ISO‑18000‑6C, assurant ainsi une intégration transparente dans les infrastructures RFID existantes.
 
-## Principe de fonctionnement
-
-SecuCode intègre la PUF SRAM, un primitive de sécurité matérielle intrinsèque, dans le processus de mise à jour. La PUF génère un identifiant unique et difficilement clonable à partir de la mémoire volatile du dispositif. Ce défi est utilisé pour authentifier la source du firmware et garantir son intégrité avant l’installation. Le protocole de mise à jour, étendu à partir du cadre TI, utilise des signatures cryptographiques et un mécanisme de vérification basé sur la PUF, assurant que seule une mise à jour signée et authentifiée peut être acceptée, même en présence d’alimentation intermittente.
-
-## Implémentation et résultats
-
-Une implémentation complète de SecuCode a été réalisée et testée sur des dispositifs CRFID réels. Les expérimentations ont confirmé la conformité aux normes ISO‑18000‑6C, démontré la compatibilité avec les compilateurs et les outils de mise à jour existants, et évalué les performances en termes de temps de mise à jour et de consommation d’énergie. Les résultats montrent que SecuCode fournit un niveau de sécurité robuste tout en restant viable pour les ressources limitées des CRFID, ouvrant la voie à des déploiements sûrs d’appareils IoT sans batterie.
+## Évaluation et conformité
+Une implémentation complète a été réalisée et testée sur des plateformes CRFID réelles. Les expérimentations ont confirmé la conformité aux normes ISO‑18000‑6C, la robustesse contre les attaques par rejeu et la résilience face aux coupures d’alimentation fréquentes. Les performances montrent un temps de mise à jour acceptable pour les applications IoT, tout en conservant un faible coût énergétique grâce à l’utilisation de la PUF comme mécanisme d’authentification sans calcul supplémentaire.
 
 ## Voir aussi
-
-[[Visual system]] [[Supply chain security]] [[Query language]] [[Network theory of aging]] [[Arxivers sense Fronteres]]
+[[Supply chain security]] [[Code]] [[Arxivers sense Fronteres]] [[Web]] [[Technical drawing tool]] [[Compass (drawing tool)]]
