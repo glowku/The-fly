@@ -5358,22 +5358,17 @@
     "updated_at": "2026-11-08T10:12:13.684587+00:00"
   },
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-    "score": 10.0,
+    "score": 8.0,
     "metrics": {
-      "words": 325,
-      "sections": 4,
-      "links": 4,
-      "link_list": [
-        "Visual system",
-        "Code",
-        "Technical drawing tool",
-        "ArXiv"
-      ],
-      "diversity": 0.775,
+      "words": 364,
+      "sections": 3,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.773,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-17T20:41:35.457114+00:00"
+    "updated_at": "2026-11-18T03:31:41.577969+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
