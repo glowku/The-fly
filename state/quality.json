@@ -5358,17 +5358,23 @@
     "updated_at": "2026-11-08T10:12:13.684587+00:00"
   },
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-    "score": 8.0,
+    "score": 10.0,
     "metrics": {
-      "words": 335,
-      "sections": 3,
-      "links": 0,
-      "link_list": [],
-      "diversity": 0.782,
+      "words": 342,
+      "sections": 4,
+      "links": 5,
+      "link_list": [
+        "Compass (drawing tool)",
+        "Technical drawing tool",
+        "Andy Diagram",
+        "Contour drawing",
+        "ArXiv"
+      ],
+      "diversity": 0.736,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-18T20:25:55.655413+00:00"
+    "updated_at": "2026-11-18T21:47:05.377840+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
