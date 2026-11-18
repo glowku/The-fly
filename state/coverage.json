@@ -1033,6 +1033,14 @@
       ],
       "updated_at": "2026-11-16T07:12:40.861428+00:00"
     },
+    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
+      "depth": 2,
+      "created_at": "2026-11-18T03:34:50.391152+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1710.04328v1"
+      ],
+      "updated_at": "2026-11-18T03:34:50.391161+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1177,14 +1185,6 @@
       ],
       "updated_at": "2026-11-18T03:30:02.742389+00:00"
     },
-    "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
-      "depth": 2,
-      "created_at": "2026-11-18T03:34:50.391152+00:00",
-      "sources": [
-        "https://arxiv.org/abs/1710.04328v1"
-      ],
-      "updated_at": "2026-11-18T03:34:50.391161+00:00"
-    },
     "Arthropod": {
       "depth": 3,
       "created_at": "2026-09-16T22:28:22.360324+00:00",
@@ -1232,14 +1232,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-18T03:33:17.763470+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-18T03:33:17.763479+00:00"
     }
   },
   "edges": [
