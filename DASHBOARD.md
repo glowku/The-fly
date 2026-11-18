@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-18 09:48:02 UTC
+**Dernière mise à jour** : 2026-11-18 18:40:22 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.989** |
-| Actions dernières 24 h | 106 |
+| Actions dernières 24 h | 105 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-18T05:13:42  parallel_learn  
-2026-11-18T07:50:24  triage_restore  
-2026-11-18T07:50:24  triage_restore  
-2026-11-18T07:50:24  triage          
-2026-11-18T07:50:34  skill_reinforc  
-2026-11-18T07:50:34  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
-2026-11-18T07:51:44  auto_learn_cyc  
-2026-11-18T07:53:56  auto_learn_cyc  
-2026-11-18T07:53:58  triage_restore  
-2026-11-18T07:53:58  triage          
-2026-11-18T07:56:07  auto_learn_cyc  
-2026-11-18T07:58:16  auto_learn_cyc  
-2026-11-18T07:58:18  triage_restore  
-2026-11-18T07:58:18  triage          
-2026-11-18T08:00:27  auto_learn_cyc  
+2026-11-18T12:56:44  triage_restore  
+2026-11-18T12:56:44  triage          
+2026-11-18T14:49:57  parallel_learn  
+2026-11-18T17:27:31  triage_restore  
+2026-11-18T17:27:31  triage_restore  
+2026-11-18T17:27:31  triage          
+2026-11-18T17:28:37  auto_learn_cyc  
+2026-11-18T17:30:45  auto_learn_cyc  
+2026-11-18T17:30:55  triage_restore  
+2026-11-18T17:30:55  triage          
+2026-11-18T17:33:00  auto_learn_cyc  
+2026-11-18T17:35:04  auto_learn_cyc  
+2026-11-18T17:35:06  triage_restore  
+2026-11-18T17:35:06  triage          
+2026-11-18T17:37:11  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
