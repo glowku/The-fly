@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-18 00:37:49 UTC
+**Dernière mise à jour** : 2026-11-18 09:48:02 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **29.803** |
-| Concepts traités | 200 | **153** |
+| Score global | maximiser | **29.989** |
+| Concepts traités | 200 | **154** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **153** |
+| Concepts traités (nœuds) | **154** |
 | Arêtes du graphe | 138 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **29.803** |
-| Actions dernières 24 h | 98 |
+| Score objectif (coverage × quality) | **29.989** |
+| Actions dernières 24 h | 106 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 347 |
+| Excellent (≥ 8) | 348 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-17T20:46:56  triage          
-2026-11-17T21:21:41  densify_edges   
-2026-11-17T22:34:20  triage_restore  
-2026-11-17T22:34:20  triage_restore  
-2026-11-17T22:34:20  triage          
-2026-11-17T22:35:30  auto_learn_cyc  
-2026-11-17T22:37:34  auto_learn_cyc  
-2026-11-17T22:37:36  triage_restore  
-2026-11-17T22:37:36  triage          
-2026-11-17T22:39:41  auto_learn_cyc  
-2026-11-17T22:41:46  auto_learn_cyc  
-2026-11-17T22:41:47  triage_restore  
-2026-11-17T22:41:47  triage          
-2026-11-17T22:43:52  auto_learn_cyc  
-2026-11-17T23:15:01  parallel_learn  
+2026-11-18T05:13:42  parallel_learn  
+2026-11-18T07:50:24  triage_restore  
+2026-11-18T07:50:24  triage_restore  
+2026-11-18T07:50:24  triage          
+2026-11-18T07:50:34  skill_reinforc  
+2026-11-18T07:50:34  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
+2026-11-18T07:51:44  auto_learn_cyc  
+2026-11-18T07:53:56  auto_learn_cyc  
+2026-11-18T07:53:58  triage_restore  
+2026-11-18T07:53:58  triage          
+2026-11-18T07:56:07  auto_learn_cyc  
+2026-11-18T07:58:16  auto_learn_cyc  
+2026-11-18T07:58:18  triage_restore  
+2026-11-18T07:58:18  triage          
+2026-11-18T08:00:27  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
