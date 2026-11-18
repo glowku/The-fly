@@ -5484,31 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-18T03:33:17.763470+00:00",
+      "created_at": "2026-11-18T21:45:31.636757+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-18T03:33:17.763479+00:00",
-      "quarantined_at": "2026-11-18T03:35:37.237992+00:00",
+      "updated_at": "2026-11-18T21:45:31.636762+00:00",
+      "quarantined_at": "2026-11-18T21:47:52.112522+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 378,
+          "words": 377,
           "sections": 4,
-          "links": 5,
+          "links": 6,
           "link_list": [
             "Web",
             "Visual system",
-            "Network theory of aging",
             "ArXiv",
+            "Technical drawing tool",
+            "Andy Diagram",
             "Code"
           ],
           "diversity": 0.796,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-18T03:33:17.762478+00:00"
+        "updated_at": "2026-11-18T21:45:31.636161+00:00"
       }
     },
     "OWASP": {
@@ -8786,5 +8787,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-18T21:45:22.577676+00:00"
+  "updated_at": "2026-11-18T21:47:52.122304+00:00"
 }
