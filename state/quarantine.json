@@ -6060,32 +6060,32 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-18T21:48:39.660391+00:00",
+      "created_at": "2026-11-19T10:41:12.548850+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-18T21:48:39.660396+00:00",
-      "quarantined_at": "2026-11-18T21:51:01.346058+00:00",
+      "updated_at": "2026-11-19T10:41:12.548859+00:00",
+      "quarantined_at": "2026-11-19T10:42:18.827286+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 369,
+          "words": 380,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Query language",
-            "Web",
             "ArXiv",
-            "Technical drawing tool",
+            "Web",
+            "Query language",
+            "Code",
             "Supply chain security",
-            "Code"
+            "Visual system"
           ],
-          "diversity": 0.82,
+          "diversity": 0.791,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-18T21:48:39.659624+00:00"
+        "updated_at": "2026-11-19T10:41:12.547817+00:00"
       }
     },
     "Citation": {
@@ -8859,5 +8859,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-19T10:38:47.047558+00:00"
+  "updated_at": "2026-11-19T10:42:18.838083+00:00"
 }

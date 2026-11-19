@@ -235,8 +235,7 @@
       "evor-evolving-retrieval-for-code-generation",
       "Graph theory",
       "Code",
-      "Autonomous agent",
-      "challenges-for-inclusion-in-software-engineering-the-case-of-the-emerg"
+      "Autonomous agent"
     ],
     "last_reinforced": "2026-11-19T10:41:10.254969+00:00"
   },
@@ -288,7 +287,7 @@
     "last_reinforced": "2026-11-19T03:07:25.429293+00:00"
   },
   "securite_defensive": {
-    "level": 5.59,
+    "level": 5.74,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -308,7 +307,7 @@
       "Secure coding",
       "Data validation"
     ],
-    "last_reinforced": "2026-11-18T21:50:11.702145+00:00"
+    "last_reinforced": "2026-11-19T10:43:22.866654+00:00"
   },
   "recherche_web": {
     "level": 5.65,
