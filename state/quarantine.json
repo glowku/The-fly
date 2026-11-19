@@ -6298,6 +6298,36 @@
         },
         "updated_at": "2026-11-13T17:38:03.984030+00:00"
       }
+    },
+    "JSON streaming": {
+      "depth": 7,
+      "created_at": "2026-11-19T20:59:01.752306+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/JSON_streaming"
+      ],
+      "updated_at": "2026-11-19T20:59:01.752312+00:00",
+      "quarantined_at": "2026-11-19T21:02:31.981327+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 351,
+          "sections": 4,
+          "links": 6,
+          "link_list": [
+            "Web",
+            "Supply chain security",
+            "Query language",
+            "Code",
+            "ArXiv",
+            "Visual system"
+          ],
+          "diversity": 0.689,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-19T20:59:01.751705+00:00"
+      }
     }
   },
   "edges": [
@@ -8856,8 +8886,80 @@
     {
       "from": "Architectural drawing",
       "to": "Aquatic insects"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Technical drawing tool",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Compass (drawing tool)",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Blind contour drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Force-directed graph drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Architectural drawing",
+      "to": "Aquatic insects"
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-19T20:57:55.996308+00:00"
+  "updated_at": "2026-11-19T21:02:31.990862+00:00"
 }
