@@ -213,7 +213,7 @@
     "last_reinforced": "2026-11-08T16:53:04.870409+00:00"
   },
   "code_et_outils": {
-    "level": 5.73,
+    "level": 5.83,
     "description": "Coder HTML/JS/Python, scripts agent, APIs",
     "keywords": [
       "code",
@@ -235,9 +235,10 @@
       "evor-evolving-retrieval-for-code-generation",
       "Graph theory",
       "Code",
-      "Autonomous agent"
+      "Autonomous agent",
+      "JSON streaming"
     ],
-    "last_reinforced": "2026-11-19T10:41:10.254969+00:00"
+    "last_reinforced": "2026-11-19T20:59:01.758286+00:00"
   },
   "representation": {
     "level": 5.86,

@@ -7105,5 +7105,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-18T03:30:02.741705+00:00"
+  },
+  "JSON streaming": {
+    "score": 10.0,
+    "metrics": {
+      "words": 351,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Web",
+        "Supply chain security",
+        "Query language",
+        "Code",
+        "ArXiv",
+        "Visual system"
+      ],
+      "diversity": 0.689,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-19T20:59:01.751705+00:00"
   }
 }
