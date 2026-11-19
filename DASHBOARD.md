@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-19 09:56:37 UTC
+**Dernière mise à jour** : 2026-11-19 18:54:54 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **154** |
-| Arêtes du graphe | 157 |
+| Arêtes du graphe | 139 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.989** |
-| Actions dernières 24 h | 99 |
+| Actions dernières 24 h | 103 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-19T03:04:34  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-19T03:06:20  auto_learn_cyc  
-2026-11-19T03:06:21  triage_restore  
-2026-11-19T03:06:21  triage          
-2026-11-19T03:07:25  skill_reinforc  
-2026-11-19T03:07:25  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
-2026-11-19T03:08:36  auto_learn_cyc  
-2026-11-19T03:10:22  auto_learn_cyc  
-2026-11-19T03:10:24  triage_restore  
-2026-11-19T03:10:24  triage          
-2026-11-19T05:08:28  parallel_learn  
-2026-11-19T07:57:45  densify_edges   
-2026-11-19T08:38:54  plan            ArXiv
-2026-11-19T08:38:55  skill_reinforc  
-2026-11-19T08:38:55  branch          ArXiv
+2026-11-19T12:41:43  triage_restore  
+2026-11-19T12:41:43  triage_restore  
+2026-11-19T12:41:43  triage          
+2026-11-19T12:42:30  auto_learn_cyc  
+2026-11-19T12:43:55  auto_learn_cyc  
+2026-11-19T12:43:57  triage_restore  
+2026-11-19T12:43:57  triage          
+2026-11-19T12:45:23  auto_learn_cyc  
+2026-11-19T12:46:48  auto_learn_cyc  
+2026-11-19T12:46:49  triage_restore  
+2026-11-19T12:46:49  triage          
+2026-11-19T14:56:30  parallel_learn  
+2026-11-19T18:01:41  plan            Saro Windhover
+2026-11-19T18:01:42  skill_reinforc  
+2026-11-19T18:01:42  branch          Saro Windhover
 ```
 
 ## Architecture de l'agent
