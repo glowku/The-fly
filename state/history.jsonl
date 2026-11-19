@@ -7788,3 +7788,5 @@
 {"ts": "2026-11-19T10:43:22.867640+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices", "url": "https://arxiv.org/abs/1807.10463v4"}
 {"ts": "2026-11-19T10:44:29.498408+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-19T10:46:36.256623+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-19T10:46:38.150531+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-19T10:46:38.184283+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 154, "active_edges": 139, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
