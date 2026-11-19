@@ -7835,3 +7835,6 @@
 {"ts": "2026-11-19T21:02:31.966565+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-19T21:02:31.996093+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 154, "active_edges": 139, "archived_edges": 18, "frontier": 16, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "JSON streaming", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-19T21:04:42.743818+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-19T22:02:23.949177+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-19T22:02:23.977414+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-19T22:02:24.002643+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 154, "active_edges": 139, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
