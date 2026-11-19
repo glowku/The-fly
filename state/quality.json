@@ -5360,21 +5360,21 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 342,
+      "words": 395,
       "sections": 4,
       "links": 5,
       "link_list": [
-        "Compass (drawing tool)",
+        "ArXiv",
+        "Visual system",
+        "Code",
         "Technical drawing tool",
-        "Andy Diagram",
-        "Contour drawing",
-        "ArXiv"
+        "Compass (drawing tool)"
       ],
-      "diversity": 0.736,
+      "diversity": 0.752,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-18T21:47:05.377840+00:00"
+    "updated_at": "2026-11-19T03:05:36.379585+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
