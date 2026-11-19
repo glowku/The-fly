@@ -6012,21 +6012,22 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 355,
+      "words": 351,
       "sections": 4,
-      "links": 5,
+      "links": 6,
       "link_list": [
-        "ArXiv",
-        "Web",
-        "Code",
-        "Supply chain security",
-        "Visual system"
+        "Texas Instruments",
+        "ISO-18000-6C",
+        "Physical Unclonable Function",
+        "Computational RFID",
+        "Firmware update",
+        "ArXiv"
       ],
-      "diversity": 0.771,
+      "diversity": 0.763,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-19T10:43:24.877468+00:00"
+    "updated_at": "2026-11-19T21:01:23.088121+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,

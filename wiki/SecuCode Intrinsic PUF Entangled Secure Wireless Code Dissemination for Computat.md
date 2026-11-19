@@ -1,23 +1,15 @@
 # SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
 
-SecuCode est un mécanisme de mise à jour logicielle sans fil sécurisé spécialement conçu pour les dispositifs RFID computationnels (CRFID). Ces appareils, dépourvus de batterie, tirent leur énergie de l’environnement et disposent de capacités de calcul limitées. Le système intègre une fonction physique non clonable (PUF) basée sur la mémoire SRAM pour sécuriser la diffusion de firmware, tout en restant compatible avec les protocoles existants, notamment ISO‑18000‑6C.
+SecuCode est un mécanisme de mise à jour logicielle sans fil sécurisé conçu spécifiquement pour les dispositifs RFID computationnels (CRFID). Ces appareils, dépourvus de batterie, tirent toute leur énergie de la radiofréquence et disposent de capacités de calcul limitées. Le principal défi est de garantir l’intégrité et la confidentialité des firmwares transmis alors que l’alimentation est intermittente et qu’aucun système d’exploitation supervisé n’existe.
 
-## Contexte et problématique
+## Contexte et enjeux
+Les CRFID représentent une nouvelle classe d’objets connectés à l’Internet des objets, grâce à leur simplicité de déploiement et à leur fonctionnement continu grâce à la récupération d’énergie. Cependant, la mise à jour sans fil de leur firmware reste problématique : l’alimentation sporadique, les ressources de calcul restreintes et l’absence d’un OS de supervision rendent les protocoles classiques inadaptés. De plus, la sécurité de la chaîne d'approvisionnement est cruciale pour éviter la propagation de logiciels malveillants dans l’écosystème IoT.
 
-Les CRFID représentent une nouvelle génération d’appareils IoT à faible coût et à faible consommation, capables de fonctionner grâce à l’harvesting énergétique. Cependant, leur mise à jour logicielle reste problématique : l’alimentation intermittente, les ressources de calcul restreintes et l’absence d’un système d’exploitation supervisé rendent difficile l’authentification et la vérification d’intégrité des firmwares. SecuCode répond à ces contraintes en s’appuyant sur la PUF SRAM, un atout matériel intrinsèque qui fournit une identité unique et difficilement clonable.
+## Architecture et fonctionnement de SecuCode
+SecuCode intègre une fonction physique non clonable (PUF) basée sur la mémoire SRAM du dispositif. Cette PUF intrinsèque sert de clé d’authentification unique, liée à l’appareil, et est combinée à un protocole de mise à jour firmware. Le design repose sur un cadre d’actualisation fourni par Texas Instruments, étendu pour être compatible avec le protocole ISO‑18000‑6C largement utilisé par les CRFID. Ainsi, la mise à jour reste conforme aux normes industrielles tout en restant adaptée aux contraintes énergétiques et de calcul des appareils.
 
-## Architecture de SecuCode
-
-Le protocole de mise à jour combine la PUF SRAM avec un processus d’authentification basé sur des signatures numériques. Lorsqu’un firmware est proposé, le dispositif génère un challenge‑response à partir de sa PUF, que le serveur vérifie avant d’envoyer le code. La mise à jour est effectuée via le cadre d’actualisation fourni par Texas Instruments, étendu pour inclure la vérification PUF. Cette approche garantit que seul un dispositif authentique peut recevoir et exécuter le firmware, même en l’absence de supervision logicielle.
-
-## Implémentation et résultats expérimentaux
-
-Une implémentation complète de SecuCode a été réalisée et testée sur des plateformes CRFID réelles. Les expériences démontrent la conformité aux normes ISO‑18000‑6C, une faible latence de mise à jour (moins de 2 s pour un firmware de 256 kB) et une robustesse contre les attaques de re‑envoi ou de falsification. Les performances restent acceptables malgré l’alimentation intermittente, grâce à la gestion intelligente de l’énergie et à la réduction des cycles de calcul requis pour la PUF.
+## Évaluation et conformité
+Une implémentation complète de SecuCode a été réalisée et testée sur plusieurs dispositifs CRFID. Les expérimentations démontrent la conformité aux standards ISO‑18000‑6C, évaluent les performances (temps de mise à jour, consommation énergétique) et attestent de la robustesse contre les attaques classiques (replay, falsification de firmware). Les résultats indiquent que SecuCode offre une solution viable pour la sécurisation des mises à jour sans fil dans un environnement à ressources limitées.
 
 ## Voir aussi
-
-* [[ArXiv]]
-* [[Code]]
-* [[Supply chain security]]
-* [[Web]]
-* [[Visual system]]
+[[Computational RFID]], [[Physical Unclonable Function]], [[ISO-18000-6C]], [[Firmware update]], [[Texas Instruments]], [[ArXiv]]
