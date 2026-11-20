@@ -3,7 +3,7 @@ skill: code_et_outils
 title: Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 source: arxiv
 url: https://arxiv.org/abs/1911.04016v2
-created: 2026-11-20T03:39:26.955968+00:00
+created: 2026-11-20T23:55:23.816235+00:00
 ---
 
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
