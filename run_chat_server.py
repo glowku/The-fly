@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serveur local The-fly : chat + act (learn / triage / skill)."""
+"""Serveur local The-fly : chat + act (learn / triage / skill) + évolution."""
 from __future__ import annotations
 
 import json
@@ -18,6 +18,7 @@ from agent.skill_learn import run_skill_learn
 from agent.triage import run_triage
 from agent.identity import skill_boost_answer
 from agent.skills import get_skills_summary, load_skills
+from agent.evolution_engine import EvolutionEngine
 
 PORT = 8765
 
@@ -50,7 +51,7 @@ class Handler(BaseHTTPRequestHandler):
                 "ok": True,
                 "service": "the-fly-cortex",
                 "port": PORT,
-                "actions": ["chat", "learn", "skill", "triage", "act"],
+                "actions": ["chat", "learn", "skill", "triage", "act", "evolution"],
             })
         if path == "/api/skills":
             return self._json(200, {"skills": get_skills_summary(), "raw": {k: {"level": v.get("level"), "n": len(v.get("articles") or [])} for k, v in load_skills().items()}})
@@ -61,6 +62,12 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/arxiv":
             q = (qs.get("q") or ["insect flight"])[0]
             return self._json(200, {"papers": search_domain(q, max_results=6)})
+        if path == "/api/evolution/status":
+            try:
+                eng = EvolutionEngine()
+                return self._json(200, eng.status())
+            except Exception as e:
+                return self._json(500, {"error": str(e)})
         return self._json(404, {"error": "not found"})
 
     def do_POST(self):
@@ -117,6 +124,19 @@ class Handler(BaseHTTPRequestHandler):
                     "sources": [],
                     "mode": "skill_arch",
                 })
+            if any(x in low for x in ("évoluer", "evoluer", "evolution", "run evolution", "lance evolution")):
+                try:
+                    eng = EvolutionEngine()
+                    rec = eng.run_safe_cycle(mode=data.get("mode"))
+                    from dataclasses import asdict
+                    return self._json(200, {
+                        "answer": f"Évolution {rec.status} gen={rec.generation} reward={rec.reward} total={rec.total_reward}",
+                        "sources": [],
+                        "mode": "act_evolution",
+                        "report": asdict(rec),
+                    })
+                except Exception as e:
+                    return self._json(500, {"answer": f"Évolution erreur: {e}", "mode": "error"})
             res = answer(q, k=int(data.get("k") or 6), use_arxiv=bool(data.get("use_arxiv", True)))
             return self._json(200, res)
 
@@ -144,7 +164,30 @@ class Handler(BaseHTTPRequestHandler):
                 return self._json(200, {"ok": True, "report": run_skill_learn()})
             if action in ("learn", "auto_learn", "full"):
                 return self._json(200, {"ok": True, "report": run_auto_learn(mode=data.get("mode") or ("full" if action == "full" else None))})
-            return self._json(400, {"error": "action must be triage|skill|learn|full"})
+            if action in ("evolution", "evolve"):
+                eng = EvolutionEngine()
+                rec = eng.run_safe_cycle(mode=data.get("mode"))
+                from dataclasses import asdict
+                return self._json(200, {"ok": True, "report": asdict(rec)})
+            return self._json(400, {"error": "action must be triage|skill|learn|full|evolution"})
+
+        if path == "/api/evolution/step":
+            try:
+                eng = EvolutionEngine()
+                rec = eng.run_safe_cycle(mode=data.get("mode"))
+                from dataclasses import asdict
+                return self._json(200, {"ok": True, "record": asdict(rec), "status": eng.status()})
+            except Exception as e:
+                return self._json(500, {"ok": False, "error": str(e)})
+
+        if path == "/api/evolution/rollback":
+            try:
+                eng = EvolutionEngine()
+                ckpt = data.get("checkpoint_id") or eng.state.get("last_good_checkpoint")
+                ok = eng.rollback(ckpt)
+                return self._json(200, {"ok": ok, "checkpoint_id": ckpt, "status": eng.status()})
+            except Exception as e:
+                return self._json(500, {"ok": False, "error": str(e)})
 
         return self._json(404, {"error": "not found"})
 
@@ -157,6 +200,7 @@ def main():
     httpd = ThreadingHTTPServer((host, PORT), Handler)
     print(f"The-fly cortex → http://{host}:{PORT}", flush=True)
     print("  POST /api/chat | /api/learn | /api/skill | /api/triage | /api/act", flush=True)
+    print("  GET  /api/evolution/status | POST /api/evolution/step | POST /api/evolution/rollback", flush=True)
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
