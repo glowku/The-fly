@@ -29,6 +29,7 @@ Objectif mesurable : **maximiser `coverage × average_quality`**.
 | **Chat CLI** | `run_chat.py` |
 | **Chat UI** | `docs/fly-brain.html` + `run_chat_server.py` |
 | **Auto-learn** | voisinage graphe + Groq + **concepts arXiv** |
+| **Évolution testée** | `agent/evolution_engine.py` — snapshot → mutate → tests → commit/reward **ou** rollback |
 
 ---
 
@@ -39,7 +40,8 @@ PERCEIVE (Wikipedia + arXiv)
    → PLAN (anti-dérive)
    → ACT (Groq synthèse)
    → EVALUATE
-   → AUTO_LEARN / REPAIR
+   → AUTO_LEARN / REPAIR / DENSIFY
+   → ÉVOLUTION (tests + rollback + récompense)
    → Graph-RAG chat (wiki noyau + papers)
 ```
 
@@ -92,7 +94,7 @@ python run_chat.py --json "pollination by hoverflies"
 
 Sans `GROQ_API_KEY` → mode **extractif** (citations wiki uniquement).
 
-### 3) Chat HTML (graphe + panneau)
+### 3) Chat HTML (graphe + panneau + HUD évolution)
 
 Terminal A — API :
 
@@ -110,7 +112,8 @@ python -m http.server 8080
 # ouvre http://127.0.0.1:8080/docs/fly-brain.html
 ```
 
-Le panneau Chat utilise l’API locale si dispo, sinon mode extractif (GitHub Pages).
+Le panneau Chat utilise l’API locale si dispo, sinon mode extractif (GitHub Pages).  
+Le **HUD haut-gauche** affiche génération, récompense, composantes connexes, skills colorés, et permet **Évoluer + Tester** / **Rollback**.
 
 Pages live (extractif) : https://glowku.github.io/The-fly/docs/fly-brain.html
 
@@ -123,15 +126,29 @@ python -c "from agent.auto_learn import run_auto_learn; run_auto_learn()"
 python -m agent.evaluate_dashboard
 ```
 
-### 5) Endpoints API chat server
+### 5) Évolution testée (rollback automatique)
+
+```bash
+# un cycle protégé : densify + auto_learn sous tests
+python -c "from agent.evolution_engine import EvolutionEngine; print(EvolutionEngine().run_safe_cycle())"
+
+# tests d'invariants
+pytest -q tests/
+```
+
+Si les tests échouent ou qu’un symbole protégé disparaît → **rollback** vers le dernier checkpoint sain + pénalité de récompense.
+
+### 6) Endpoints API chat server
 
 | Méthode | Path | Body / query |
 |---------|------|----------------|
 | GET | `/health` | — |
 | POST | `/api/chat` | `{"question":"...","use_arxiv":true,"k":6}` |
-| POST | `/api/verify` | `{"claim":"..."}` |
 | GET | `/api/retrieve?q=...&k=6` | — |
 | GET | `/api/arxiv?q=insect+flight` | — |
+| GET | `/api/evolution/status` | état génération / rewards / metrics connexité |
+| POST | `/api/evolution/step` | `{"mode": null\|"skill"\|"wiki"}` — cycle testé |
+| POST | `/api/evolution/rollback` | `{"checkpoint_id": optional}` |
 
 Exemple curl :
 
@@ -139,6 +156,9 @@ Exemple curl :
 curl -s http://127.0.0.1:8765/api/chat \
   -H 'Content-Type: application/json' \
   -d '{"question":"rôle des haltères","use_arxiv":true}'
+
+curl -s http://127.0.0.1:8765/api/evolution/status
+curl -s -X POST http://127.0.0.1:8765/api/evolution/step -H 'Content-Type: application/json' -d '{}'
 ```
 
 ---
@@ -147,12 +167,16 @@ curl -s http://127.0.0.1:8765/api/chat \
 
 ```
 agent/
-  arxiv_source.py   # API arXiv Atom, concepts filtrés
-  graph_rag.py      # retrieve + answer + verify_claim
-  skills.py         # anti-dérive v1
-  auto_learn.py     # pool + arXiv concepts
-  synthesis.py      # Groq + contexte arXiv
-docs/fly-brain.html # graphe + chatbot
+  arxiv_source.py      # API arXiv Atom, concepts filtrés
+  graph_rag.py         # retrieve + answer + verify_claim
+  skills.py            # anti-dérive v1
+  auto_learn.py        # pool + arXiv concepts
+  skill_learn.py       # skills hybrides wiki+arxiv
+  densify.py           # orphelins → arêtes
+  evolution_engine.py  # snapshot / test / rollback / reward
+  synthesis.py         # Groq + contexte arXiv
+docs/fly-brain.html    # graphe + chatbot + HUD évolution
+tests/test_invariants.py
 run_chat.py
 run_chat_server.py
 run.py
