@@ -1232,14 +1232,6 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
-    },
-    "Semantic reasoner": {
-      "depth": 4,
-      "created_at": "2026-11-20T11:27:02.396769+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Semantic_reasoner"
-      ],
-      "updated_at": "2026-11-20T11:27:02.396775+00:00"
     }
   },
   "edges": [
