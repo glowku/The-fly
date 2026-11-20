@@ -5,6 +5,7 @@ from collections import defaultdict
 from difflib import SequenceMatcher
 from .memory import load_coverage, save_coverage, log_event
 from .skills import score_relevance, is_hard_junk
+from .skill_graph import inject_skill_nodes
 
 def _norm(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
@@ -72,9 +73,8 @@ def densify_edges(max_new: int = 90) -> dict:
             sc += len(ow & pw) * 2.1
             sc += _similar(orphan, p) * 4.5
             sc += min(2.5, len(children[p]) * 0.25)
-            # bonus si parent a déjà des enfants (hub) ou est feuille à ramifier
             if len(children[p]) == 0:
-                sc += 1.8  # favorise la création de sous-branche sur feuille
+                sc += 1.8
             if sc > best_sc:
                 best_sc, best_p = sc, p
         if best_p and best_sc >= 3.2 and (best_p, orphan) not in edge_set:
@@ -85,8 +85,6 @@ def densify_edges(max_new: int = 90) -> dict:
             if added >= max_new:
                 break
 
-    # Second pass: feuilles solides sans enfants → tenter 1-2 liens vers frontier/relevant
-    # (léger, pour créer des sous-branches)
     leaves = [n for n in nodes if len(children[n]) == 0 and score_relevance(n) >= 0.4]
     for leaf in leaves[:25]:
         if added >= max_new:
@@ -106,4 +104,5 @@ def densify_edges(max_new: int = 90) -> dict:
     cov["edges"] = edges
     save_coverage(cov)
     log_event("densify_edges", {"added": added, "orphans_before": len(orphans), "edges_after": len(edges)})
-    return {"added": added, "orphans_before": len(orphans), "edges_after": len(edges)}
+    sk = inject_skill_nodes()
+    return {"added": added, "orphans_before": len(orphans), "edges_after": len(edges), "skills": sk}
