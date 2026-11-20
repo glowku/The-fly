@@ -35,20 +35,20 @@
       'code_et_outils:["code","python","javascript","html","api","git","rest","software architecture","autonomous agent"], representation:["graph drawing","visualization","force-directed","network theory","canvas","diagram"], raisonnement:["knowledge graph","reasoning","ontology","inference","retrieval augmented","graph database"], securite_defensive:["secure coding","input validation","authorization","authentication","cors","owasp"], recherche_web:["information retrieval","search engine","arxiv","query expansion","citation"], recherche_image:["computer vision","image retrieval","scientific visualization","diagram"], _noise:["fly fishing","brewery","punk rock","bubblegum","tv series","football","nasdaq"]\n};'
     );
 
-    // Anneau skills anti-stack
+    // Anneau skills anti-stack (plus large)
     html = html.replace(
       /const dist=145; \/\/ anneau skills[\s\S]*?const lv=skillsData\[name\]\.level\|\|0;/,
-      'const dist=210+(i%3)*22+Math.min(40,(skillsData[name].level||0)*2);\n    const lv=skillsData[name].level||0;'
+      'const dist=230+(i%3)*28+Math.min(50,(skillsData[name].level||0)*2.2);\n    const lv=skillsData[name].level||0;'
     );
 
-    // Skills reliés au core + taille
+    // Skills reliés au core + taille plus visible
     html = html.replace(
       'kind:"skill",label:name,level:lv,phase:rnd(0,6),ang,skill:name}',
       'kind:"skill",label:name,level:lv,phase:rnd(0,6),ang,skill:name,parent:"core"}'
     );
-    html = html.replace('r:8+Math.min(7,lv*.55)', 'r:10+Math.min(9,lv*.65)');
+    html = html.replace('r:8+Math.min(7,lv*.55)', 'r:12+Math.min(11,lv*.7)');
 
-    // bySk: articles de skills.json d\'abord
+    // bySk: articles de skills.json d'abord (garanti edge skill→article)
     html = html.replace(
       'const bySk={};\n  articles.forEach(a=>{\n    const sk=assignSkill(a.title);\n    if(!bySk[sk])bySk[sk]=[];\n    bySk[sk].push(a);\n  });',
       'const bySk={},claimed=new Set(); skillNames.forEach(sk=>{ ((skillsData[sk]&&skillsData[sk].articles)||[]).forEach(title=>{ const a=articles.find(x=>x.title===title); if(!a||claimed.has(title))return; claimed.add(title); if(!bySk[sk])bySk[sk]=[]; bySk[sk].push(a); }); }); articles.forEach(a=>{ if(claimed.has(a.title))return; const sk=assignSkill(a.title); if(!bySk[sk])bySk[sk]=[]; bySk[sk].push(a); });'
@@ -60,25 +60,37 @@
       'list.forEach((a,i)=> placeArt(a, parent, 1, i, list.length));'
     );
 
-    // Espacement
+    // Espacement plus aéré
     html = html.replace(
       'const baseDist = 78 + depth * 58 + crowded * 22;   // beaucoup plus long',
-      'const baseDist = 115 + depth * 72 + crowded * 30;'
+      'const baseDist = 125 + depth * 80 + crowded * 34;'
     );
     html = html.replace(
       'const fan = Math.min(3.6, 0.65 + total * 0.38);     // éventail très ouvert',
-      'const fan = Math.min(4.8, 0.9 + total * 0.45);'
+      'const fan = Math.min(5.2, 1.0 + total * 0.48);'
     );
     html = html.replace(
       'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier");',
       'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier" || n.kind === "skill");'
     );
-    html = html.replace('const minDist = 28;', 'const minDist = 52;');
+    html = html.replace('const minDist = 28;', 'const minDist = 58;');
 
-    // Edges couleur du skill
+    // Edges couleur du skill (plus visibles)
     html = html.replace(
       'const alpha = n.ghost ? 0.09 : (isHot ? 0.75 : 0.28 + 0.05*Math.sin(t*1.6+(n.phase||0)));\n    ctx.beginPath();\n    ctx.strokeStyle=`rgba(93,186,74,${alpha})`;\n    ctx.lineWidth = isHot ? 2.2 : (n.kind==="skill"?1.5:0.95);\n    ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke();',
-      'const alpha = n.ghost ? 0.09 : (isHot ? 0.85 : 0.40 + 0.06*Math.sin(t*1.6+(n.phase||0))); const skCol = SKILL_COLORS[n.skill||(p&&p.skill)]||"#5dba4a"; ctx.beginPath(); if(p.kind==="skill"){ ctx.strokeStyle=skCol; ctx.globalAlpha=isHot?0.95:0.62; ctx.lineWidth=isHot?2.6:1.7; } else { ctx.strokeStyle=`rgba(93,186,74,${alpha})`; ctx.lineWidth=isHot?2.2:0.95; } ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke(); ctx.globalAlpha=1;'
+      'const alpha = n.ghost ? 0.09 : (isHot ? 0.9 : 0.48 + 0.07*Math.sin(t*1.6+(n.phase||0))); const skCol = SKILL_COLORS[n.skill||(p&&p.skill)]||"#5dba4a"; ctx.beginPath(); if(p && p.kind==="skill"){ ctx.strokeStyle=skCol; ctx.globalAlpha=isHot?0.98:0.72; ctx.lineWidth=isHot?2.8:1.9; } else { ctx.strokeStyle=`rgba(93,186,74,${alpha})`; ctx.lineWidth=isHot?2.2:1.05; } ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke(); ctx.globalAlpha=1;'
+    );
+
+    // === ZOOM QUASI-INFINI ===
+    html = html.replace(
+      'cam.s=Math.min(3.2,Math.max(0.25,cam.s*(e.deltaY>0?0.88:1.13)));',
+      'cam.s=Math.min(8.5,Math.max(0.035,cam.s*(e.deltaY>0?0.86:1.16)));'
+    );
+
+    // === GRILLE QUI REMPLIT TOUT (même en dézoom extrême) ===
+    html = html.replace(
+      '// soft grid\n  ctx.strokeStyle="rgba(93,186,74,0.022)";\n  ctx.lineWidth=1/cam.s;\n  for(let x=-1000;x<=1000;x+=55){ctx.beginPath();ctx.moveTo(x,-800);ctx.lineTo(x,800);ctx.stroke()}\n  for(let y=-800;y<=800;y+=55){ctx.beginPath();ctx.moveTo(-1000,y);ctx.lineTo(1000,y);ctx.stroke()}\n  const rg=ctx.createRadialGradient(0,0,30,0,0,460);\n  rg.addColorStop(0,"rgba(93,186,74,0.028)");\n  rg.addColorStop(1,"transparent");\n  ctx.fillStyle=rg;\n  ctx.beginPath();ctx.arc(0,0,460,0,Math.PI*2);ctx.fill();',
+      '// soft grid — couverture quasi-infinie (s’adapte au zoom)\n  const gStep = 55;\n  const gRange = Math.max(2200, Math.ceil(Math.max(canvas.width, canvas.height) / cam.s) + 800);\n  ctx.strokeStyle="rgba(93,186,74,0.028)";\n  ctx.lineWidth=1/cam.s;\n  for(let x=-gRange;x<=gRange;x+=gStep){ctx.beginPath();ctx.moveTo(x,-gRange);ctx.lineTo(x,gRange);ctx.stroke()}\n  for(let y=-gRange;y<=gRange;y+=gStep){ctx.beginPath();ctx.moveTo(-gRange,y);ctx.lineTo(gRange,y);ctx.stroke()}\n  const rg=ctx.createRadialGradient(0,0,40,0,0,Math.min(900,gRange*0.55));\n  rg.addColorStop(0,"rgba(93,186,74,0.032)");\n  rg.addColorStop(1,"transparent");\n  ctx.fillStyle=rg;\n  ctx.beginPath();ctx.arc(0,0,Math.min(900,gRange*0.55),0,Math.PI*2);ctx.fill();'
     );
 
     document.open();
