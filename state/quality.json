@@ -6620,22 +6620,22 @@
   "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
     "score": 10.0,
     "metrics": {
-      "words": 380,
+      "words": 373,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "ArXiv",
-        "Web",
-        "Query language",
         "Code",
+        "Web",
+        "ArXiv",
         "Supply chain security",
-        "Visual system"
+        "Andy Diagram",
+        "Query language"
       ],
-      "diversity": 0.791,
+      "diversity": 0.862,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-19T10:41:12.547817+00:00"
+    "updated_at": "2026-11-20T03:39:29.227600+00:00"
   },
   "Query expansion": {
     "score": 10.0,
