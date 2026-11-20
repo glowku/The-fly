@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-20 01:40:16 UTC
+**Dernière mise à jour** : 2026-11-20 09:44:25 UTC
 
 ## Objectif de l'agent
 
@@ -19,12 +19,12 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Métrique | Valeur |
 |----------|--------|
 | Concepts traités (nœuds) | **154** |
-| Arêtes du graphe | 139 |
+| Arêtes du graphe | 157 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **29.991** |
-| Actions dernières 24 h | 101 |
+| Actions dernières 24 h | 113 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-19T22:02:23  triage_restore  
-2026-11-19T22:02:23  triage_restore  
-2026-11-19T22:02:24  triage          
-2026-11-19T22:03:17  auto_learn_cyc  
-2026-11-19T22:04:42  auto_learn_cyc  
-2026-11-19T22:04:43  triage_restore  
-2026-11-19T22:04:43  triage          
-2026-11-19T22:06:08  auto_learn_cyc  
-2026-11-19T22:07:32  auto_learn_cyc  
-2026-11-19T22:07:33  triage_restore  
-2026-11-19T22:07:33  triage          
-2026-11-19T22:50:13  parallel_learn  
-2026-11-20T00:48:26  plan            Saro Windhover
-2026-11-20T00:48:26  skill_reinforc  
-2026-11-20T00:48:26  branch          Saro Windhover
+2026-11-20T06:40:30  triage_restore  
+2026-11-20T06:40:30  triage_restore  
+2026-11-20T06:40:30  triage          
+2026-11-20T06:41:19  auto_learn_cyc  
+2026-11-20T06:42:46  auto_learn_cyc  
+2026-11-20T06:42:48  triage_restore  
+2026-11-20T06:42:48  triage          
+2026-11-20T06:44:15  auto_learn_cyc  
+2026-11-20T06:45:41  auto_learn_cyc  
+2026-11-20T06:45:43  triage_restore  
+2026-11-20T06:45:43  triage          
+2026-11-20T07:47:00  densify_edges   
+2026-11-20T08:10:45  plan            ArXiv
+2026-11-20T08:10:46  skill_reinforc  
+2026-11-20T08:10:46  branch          ArXiv
 ```
 
 ## Architecture de l'agent
