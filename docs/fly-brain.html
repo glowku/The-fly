@@ -40,10 +40,78 @@
   #chatStatus { padding: 2px 10px 8px; font-size: 10px; color: #5a6a5a; }
   #chatStatus.ok { color: #5dba4a; }
   #chatStatus.warn { color: #c96; }
+
+  /* === HUD ÉVOLUTION & CONNEXITÉ === */
+  :root {
+    --fly-panel: rgba(17, 24, 39, 0.90);
+    --fly-border: rgba(148, 163, 184, 0.22);
+    --fly-ok: #22c55e;
+    --fly-warn: #f59e0b;
+    --fly-err: #ef4444;
+  }
+  #evolution-hud {
+    position: fixed; top: 12px; left: 12px; z-index: 50;
+    width: 320px; max-height: 88vh; overflow-y: auto;
+    background: var(--fly-panel); backdrop-filter: blur(10px);
+    border: 1px solid var(--fly-border); border-radius: 12px;
+    padding: 12px 14px; color: #e2e8f0; font-family: system-ui, sans-serif;
+    font-size: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  }
+  #evolution-hud.collapsed { max-height: 42px; overflow: hidden; }
+  .hud-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; cursor: pointer; }
+  .hud-badge { padding: 2px 8px; border-radius: 999px; font-weight: 700; font-size: 11px; }
+  .badge-pass { background: rgba(34,197,94,0.18); color: var(--fly-ok); border: 1px solid var(--fly-ok); }
+  .badge-rollback { background: rgba(239,68,68,0.18); color: var(--fly-err); border: 1px solid var(--fly-err); }
+  .badge-idle { background: rgba(148,163,184,0.15); color: #94a3b8; border: 1px solid #64748b; }
+  .hud-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 8px 0; }
+  .hud-stat { background: rgba(255,255,255,0.04); padding: 6px; border-radius: 8px; text-align: center; }
+  .hud-stat b { display: block; font-size: 14px; color: #f8fafc; }
+  .skill-chip {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 5px 8px; margin: 4px 0; border-radius: 8px; cursor: default;
+    background: rgba(255,255,255,0.03); border-left: 4px solid transparent;
+  }
+  .skill-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; flex-shrink: 0; }
+  .evo-actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .evo-btn {
+    flex: 1; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--fly-border);
+    background: #1e293b; color: #f8fafc; cursor: pointer; font-weight: 600; font-size: 11px;
+  }
+  .evo-btn:hover { background: #334155; }
+  .evo-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .evo-log { margin-top: 8px; max-height: 120px; overflow-y: auto; font-family: ui-monospace, monospace; font-size: 11px; }
+  .evo-log-item { padding: 3px 0; border-bottom: 1px dashed rgba(255,255,255,0.08); }
+  .evo-log-item.ok { color: #86efac; }
+  .evo-log-item.fail { color: #fca5a5; }
 </style>
 </head>
 <body>
 <iframe id="frame" title="The-fly neural graph" src="brain-core.html" allowfullscreen></iframe>
+
+<aside id="evolution-hud">
+  <div class="hud-header" id="hudToggle">
+    <strong>🪰 Cortex Évolutif</strong>
+    <span id="hud-test-badge" class="hud-badge badge-idle">…</span>
+  </div>
+  <div class="hud-grid">
+    <div class="hud-stat"><b id="stat-gen">G0</b><span>Génération</span></div>
+    <div class="hud-stat"><b id="stat-reward">+0.0</b><span>Récompense</span></div>
+    <div class="hud-stat"><b id="stat-comp">–</b><span>Composantes</span></div>
+  </div>
+  <div class="hud-grid">
+    <div class="hud-stat"><b id="stat-skills">0</b><span>Skills evo</span></div>
+    <div class="hud-stat"><b id="stat-bridges">–</b><span>Ponts</span></div>
+    <div class="hud-stat"><b id="stat-orphans">–</b><span>Isolés</span></div>
+  </div>
+  <div style="margin-top:6px; font-weight:600;">Skills (couleur déterministe) :</div>
+  <div id="skill-legend"></div>
+  <div class="evo-actions">
+    <button class="evo-btn" id="btn-run-evolution">⚡ Évoluer + Tester</button>
+    <button class="evo-btn" id="btn-rollback">↩ Rollback</button>
+  </div>
+  <div style="margin-top:8px; font-weight:600;">Journal :</div>
+  <div id="evo-log" class="evo-log"></div>
+</aside>
 
 <div id="chatHost">
   <header id="chatToggle">
@@ -60,9 +128,10 @@
     <a href="#" id="btnTriage">triage</a>
     <a href="#" id="btnSkill">skill_learn</a>
     <a href="#" id="btnLearn">auto_learn</a>
+    <a href="#" id="btnEvo">évolution</a>
   </div>
   <form id="chatForm">
-    <input id="chatQ" type="text" placeholder="triage · skill_learn · auto_learn · question…" autocomplete="off" />
+    <input id="chatQ" type="text" placeholder="triage · skill_learn · auto_learn · évolution · question…" autocomplete="off" />
     <button type="submit">→</button>
   </form>
   <div id="chatStatus">init…</div>
@@ -82,6 +151,135 @@
   var keyInput = document.getElementById("groqKey");
   var apiBase = null;
   var history = [];
+
+  /* --- couleur déterministe par skill (angle d'or) --- */
+  function getSkillColor(skillName, indexFallback) {
+    var hash = 0;
+    for (var i = 0; i < skillName.length; i++) {
+      hash = skillName.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    var hue = Math.abs((hash * 137.508 + (indexFallback || 0) * 47) % 360);
+    return "hsl(" + Math.round(hue) + ", 82%, 58%)";
+  }
+
+  function evoLog(msg, ok) {
+    var el = document.getElementById("evo-log");
+    var d = document.createElement("div");
+    d.className = "evo-log-item " + (ok === true ? "ok" : ok === false ? "fail" : "");
+    d.textContent = new Date().toLocaleTimeString() + " · " + msg;
+    el.insertBefore(d, el.firstChild);
+  }
+
+  function renderHud(data) {
+    if (!data) return;
+    var m = data.metrics || {};
+    document.getElementById("stat-gen").textContent = "G" + (data.generation || 0);
+    document.getElementById("stat-reward").textContent =
+      (data.total_reward >= 0 ? "+" : "") + (data.total_reward || 0).toFixed(1);
+    document.getElementById("stat-comp").textContent = m.connected_components != null ? Math.round(m.connected_components) : "–";
+    document.getElementById("stat-bridges").textContent = m.bridges != null ? Math.round(m.bridges) : "–";
+    document.getElementById("stat-orphans").textContent = m.orphans != null ? Math.round(m.orphans) : "–";
+
+    var skills = data.skills || {};
+    var keys = Object.keys(skills);
+    document.getElementById("stat-skills").textContent = keys.length;
+
+    var legend = document.getElementById("skill-legend");
+    legend.innerHTML = "";
+    keys.slice(0, 12).forEach(function (name, idx) {
+      var info = skills[name] || {};
+      var color = getSkillColor(name, idx);
+      var chip = document.createElement("div");
+      chip.className = "skill-chip";
+      chip.style.borderLeftColor = color;
+      chip.innerHTML =
+        '<span><span class="skill-dot" style="background:' + color + '"></span>' +
+        name + '</span><span>L' + (info.level || 1) + ' · ' + (info.reward || 0).toFixed(1) + '</span>';
+      legend.appendChild(chip);
+    });
+
+    var badge = document.getElementById("hud-test-badge");
+    var last = (data.history || []).slice(-1)[0];
+    if (last) {
+      if (last.status === "COMMITTED") {
+        badge.textContent = "OK";
+        badge.className = "hud-badge badge-pass";
+      } else {
+        badge.textContent = "ROLLBACK";
+        badge.className = "hud-badge badge-rollback";
+      }
+    } else {
+      badge.textContent = "IDLE";
+      badge.className = "hud-badge badge-idle";
+    }
+  }
+
+  async function loadEvolutionStatus() {
+    try {
+      if (!apiBase) await probeLocal();
+      if (apiBase) {
+        var r = await fetch(apiBase + "/api/evolution/status", { signal: AbortSignal.timeout(2000) });
+        if (r.ok) {
+          renderHud(await r.json());
+          return;
+        }
+      }
+    } catch (e) {}
+    // fallback statique GitHub Pages
+    try {
+      var r2 = await fetch(RAW + "/state/evolution_state.json?t=" + Date.now());
+      if (r2.ok) renderHud(await r2.json());
+    } catch (e2) {}
+  }
+
+  document.getElementById("hudToggle").onclick = function () {
+    document.getElementById("evolution-hud").classList.toggle("collapsed");
+  };
+
+  document.getElementById("btn-run-evolution").onclick = async function () {
+    var btn = this;
+    btn.disabled = true;
+    evoLog("Évolution en cours…");
+    try {
+      if (!apiBase) await probeLocal();
+      if (!apiBase) throw new Error("Serveur local requis");
+      var r = await fetch(apiBase + "/api/evolution/step", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({})
+      });
+      var j = await r.json();
+      if (!r.ok || j.ok === false) throw new Error(j.error || "HTTP " + r.status);
+      var rec = j.record || {};
+      evoLog(rec.status + " reward=" + rec.reward + " gen=" + rec.generation, rec.status === "COMMITTED");
+      if (j.status) renderHud(j.status);
+      else await loadEvolutionStatus();
+    } catch (e) {
+      evoLog("Erreur: " + e.message, false);
+    }
+    btn.disabled = false;
+  };
+
+  document.getElementById("btn-rollback").onclick = async function () {
+    var btn = this;
+    btn.disabled = true;
+    evoLog("Rollback…");
+    try {
+      if (!apiBase) await probeLocal();
+      if (!apiBase) throw new Error("Serveur local requis");
+      var r = await fetch(apiBase + "/api/evolution/rollback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({})
+      });
+      var j = await r.json();
+      evoLog(j.ok ? "Rollback OK → " + (j.checkpoint_id || "?") : "Rollback échoué", !!j.ok);
+      if (j.status) renderHud(j.status);
+    } catch (e) {
+      evoLog("Erreur: " + e.message, false);
+    }
+    btn.disabled = false;
+  };
 
   document.getElementById("chatToggle").onclick = function (e) {
     if (e.target.id === "chatMin") return;
@@ -132,8 +330,9 @@
       "1. skill_learn → skill_notes/ + levels",
       "2. auto_learn → nouveaux nœuds insecte filtrés",
       "3. triage → TRIE vers quarantine.json (ne supprime pas les wiki)",
-      "4. Avec python run_chat_server.py : boutons triage / skill_learn / auto_learn AGISSENT",
-      "5. Sans serveur local : description seulement (Pages ne peut pas écrire le repo)"
+      "4. évolution → densify + learn sous tests + rollback auto",
+      "5. Avec python run_chat_server.py : boutons AGISSENT",
+      "6. Sans serveur local : description seulement (Pages = lecture seule)"
     ].join("\n");
   }
 
@@ -143,6 +342,7 @@
     if (/(triage|purge|nettoie|trie les)/i.test(s)) return "act_triage";
     if (/^(skill_learn|lance skill|run skill)/i.test(s) || s === "skill_learn") return "act_skill";
     if (/^(auto_learn|apprend|lance learn|run learn)/i.test(s) || /auto_learn/i.test(s) && !/comment/.test(s)) return "act_learn";
+    if (/(évolu|evolu|evolution|run evolution)/i.test(s)) return "act_evolution";
     if (/(booster?|améliorer|ameliorer).*(skill|compétence)|comment booster/i.test(s)) return "skill";
     if (/(hack|attaque|exploit|ransomware)/i.test(s)) return "sec";
     if (/(code|coder|html|python|ascii|génère|page html)/i.test(s)) return "code";
@@ -165,9 +365,10 @@
   async function refreshStatus() {
     var local = await probeLocal();
     var key = !!(localStorage.getItem("THEFLY_GROQ_KEY") || "").trim();
-    if (local) { st.textContent = "ACTIF · cortex local " + apiBase + " (learn/triage OK)"; st.className = "ok"; }
+    if (local) { st.textContent = "ACTIF · cortex local " + apiBase + " (learn/triage/évolution OK)"; st.className = "ok"; }
     else if (key) { st.textContent = "cloud cortex · pas d'écriture repo sans local"; st.className = "warn"; }
     else { st.textContent = "lecture seule — lance run_chat_server.py pour AGIR"; st.className = "warn"; }
+    loadEvolutionStatus();
   }
 
   async function actLocal(path, body) {
@@ -185,15 +386,14 @@
   async function answer(q) {
     var mode = detectMode(q);
 
-    if (mode === "greet") return { answer: "Là. Avec serveur local je peux triage / skill_learn / auto_learn.", sources: [], mode: "greet" };
+    if (mode === "greet") return { answer: "Là. Avec serveur local: triage / skill_learn / auto_learn / évolution.", sources: [], mode: "greet" };
     if (mode === "skill") return { answer: skillBoost(), sources: [], mode: "skill_arch" };
     if (mode === "meta") return {
-      answer: "The-fly = graphe + auto_learn + skill_learn + triage (quarantine, pas delete) + Graph-RAG. Myst-AI = OS bare-metal séparé, pas le runtime web.",
+      answer: "The-fly = graphe + auto_learn + skill_learn + triage + évolution testée (rollback) + Graph-RAG.",
       sources: [], mode: "meta"
     };
 
-    // Actions réelles via local
-    if (mode === "act_triage" || mode === "act_skill" || mode === "act_learn") {
+    if (mode === "act_triage" || mode === "act_skill" || mode === "act_learn" || mode === "act_evolution") {
       try {
         if (!apiBase) await probeLocal();
         if (apiBase) {
@@ -201,7 +401,7 @@
           return { answer: scrub(j.answer || JSON.stringify(j.report || j)), sources: j.sources || [], mode: j.mode || mode };
         }
         return {
-          answer: "Action « " + mode + " » nécessite le cortex local:\n  python run_chat_server.py\nPuis réessaie triage / skill_learn / auto_learn.\n(Pages seul = lecture seule, ne peut pas écrire le graphe.)",
+          answer: "Action « " + mode + " » nécessite le cortex local:\n  python run_chat_server.py\nPuis réessaie.\n(Pages seul = lecture seule.)",
           sources: [], mode: "need_local"
         };
       } catch (e) {
@@ -223,7 +423,6 @@
     var key = (localStorage.getItem("THEFLY_GROQ_KEY") || "").trim();
     if (!key) return { answer: "Sans serveur local ni clé cortex: modes skill/meta seulement.", sources: [], mode: "locked" };
 
-    // cloud fallback (no act)
     var sys = "Tu es THE-FLY agent graphe. Interdit de te dire GPT/Groq. Housefly=labellum pas stylet. Mode=" + mode;
     var messages = [{ role: "system", content: sys }, { role: "user", content: q }];
     var rr = await fetch(API, {
@@ -247,12 +446,14 @@
       s.className = "src";
       s.textContent = "mode: " + res.mode;
       n.appendChild(s);
+      if (res.mode === "act_evolution") loadEvolutionStatus();
     } catch (e) { p.textContent = e.message; }
   }
 
   document.getElementById("btnTriage").onclick = function (e) { e.preventDefault(); runBtn("triage"); };
   document.getElementById("btnSkill").onclick = function (e) { e.preventDefault(); runBtn("skill_learn"); };
   document.getElementById("btnLearn").onclick = function (e) { e.preventDefault(); runBtn("auto_learn"); };
+  document.getElementById("btnEvo").onclick = function (e) { e.preventDefault(); runBtn("évolution"); };
 
   form.addEventListener("submit", async function (ev) {
     ev.preventDefault();
@@ -269,12 +470,13 @@
       s.className = "src";
       s.textContent = (res.sources && res.sources.length ? "nœuds: " + res.sources.join(" · ") + " · " : "") + "mode: " + res.mode;
       node.appendChild(s);
+      if (res.mode === "act_evolution") loadEvolutionStatus();
     } catch (e) { pending.textContent = "Erreur: " + e.message; }
   });
 
-  add("bot", "The-fly cortex.\n• Pages seul = parle\n• python run_chat_server.py = AGIT (triage / skill_learn / auto_learn)\nBoutons en bas du panneau.");
+  add("bot", "The-fly cortex.\n• Pages seul = parle\n• python run_chat_server.py = AGIT (triage / skill_learn / auto_learn / évolution)\nHUD haut-gauche = récompenses & connexité.");
   refreshStatus();
-  setInterval(refreshStatus, 8000);
+  setInterval(refreshStatus, 10000);
 })();
 </script>
 </body>
