@@ -7127,5 +7127,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-19T20:59:01.751705+00:00"
+  },
+  "Semantic reasoner": {
+    "score": 10.0,
+    "metrics": {
+      "words": 366,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Web",
+        "Query language",
+        "ArXiv",
+        "Code"
+      ],
+      "diversity": 0.698,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-20T11:27:02.396117+00:00"
   }
 }
