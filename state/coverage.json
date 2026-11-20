@@ -1232,6 +1232,78 @@
         "https://en.wikipedia.org/wiki/Architectural_drawing"
       ],
       "updated_at": "2026-11-08T21:58:37.712173+00:00"
+    },
+    "skill:entomologie": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "entomologie",
+      "level": 9.42
+    },
+    "skill:anatomie_insecte": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "anatomie_insecte",
+      "level": 9.32
+    },
+    "skill:vol_et_aerodynamique": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "vol_et_aerodynamique",
+      "level": 9.4
+    },
+    "skill:ecologie": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "ecologie",
+      "level": 9.34
+    },
+    "skill:evolution": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "evolution",
+      "level": 9.41
+    },
+    "skill:comportement": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "comportement",
+      "level": 9.32
+    },
+    "skill:code_et_outils": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "code_et_outils",
+      "level": 5.98
+    },
+    "skill:representation": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "representation",
+      "level": 6.01
+    },
+    "skill:raisonnement": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "raisonnement",
+      "level": 5.95
+    },
+    "skill:securite_defensive": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "securite_defensive",
+      "level": 6.04
+    },
+    "skill:recherche_web": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "recherche_web",
+      "level": 5.93
+    },
+    "skill:recherche_image": {
+      "depth": 0,
+      "kind": "skill",
+      "skill": "recherche_image",
+      "level": 5.97
     }
   },
   "edges": [
@@ -1790,6 +1862,1098 @@
     {
       "from": "Data and information visualization",
       "to": "Data validation"
+    },
+    {
+      "from": "Housefly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Mosquito",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Entomology",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Ambush predator",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Hoverfly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Apex Predator (disambiguation)",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Chewing",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Adaptive compliant wing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Black fly",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blacker's Art of Fly Making",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "Blue-winged Olive flies",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Aerodynamic force",
+      "to": "Predator (disambiguation)"
+    },
+    {
+      "from": "Technical drawing tool",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Compass (drawing tool)",
+      "to": "Amphibious insect"
+    },
+    {
+      "from": "Blind contour drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Saro Windhover",
+      "to": "Aerodynamic drag"
+    },
+    {
+      "from": "Force-directed graph drawing",
+      "to": "Abdomen (insect anatomy)"
+    },
+    {
+      "from": "Architectural drawing",
+      "to": "Aquatic insects"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Arthropod leg",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Housefly",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Mosquito",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Entomology",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Caddisfly",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Apex Predator – Easy Meat",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Batesian mimicry",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Cephalon (arthropod head)",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Blue-tailed damselfly",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Amateur Entomologists' Society",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Blue-winged Olive flies",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Black fly",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Damselfly",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Anax (dragonfly)",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Graph drawing",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:entomologie",
+      "to": "Contour drawing",
+      "kind": "skill_link",
+      "skill": "entomologie"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Halteres",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Compound eye",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Exoskeleton",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Antenna (zoology)",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Arthropod",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Arthropod eye",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Thorax",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Spiracle",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Bat wing development",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Caddisfly",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Arthropod exoskeleton",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Bird flight",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Basal (phylogenetics)",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Maggot",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Arthropod mouthparts",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Aquatic insect",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Spiracle (arthropods)",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Spiracle (vertebrates)",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Common green bottle fly",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Insect Festival",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Bonefish fly patterns",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Chewing",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Dragonfly",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:anatomie_insecte",
+      "to": "Angular resolution (graph drawing)",
+      "kind": "skill_link",
+      "skill": "anatomie_insecte"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Fly",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Insect flight",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Aerodynamics",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Hover",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Flight",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Alate",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Aerodynamic (disambiguation)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Automotive aerodynamics",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Bird wing",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Windhover",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Hover (EP)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Hover (behaviour)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Hover Chamber Choir",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Blowfly (musician)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Aerodynamic (instrumental)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Drafting (aerodynamics)",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Blacker's Art of Fly Making",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Royal Entomological Society",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Insects in ethics",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Black fly",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Damselfly",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Aerodynamic force",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:vol_et_aerodynamique",
+      "to": "Blind contour drawing",
+      "kind": "skill_link",
+      "skill": "vol_et_aerodynamique"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Fly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Insect ecology",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Pollination",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Parasitoid",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Annual Review of Entomology",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Evolution of insects",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Insect morphology",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Drafting (aerodynamics)",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Insect mouthparts",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Computational phylogenetics",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Chemical mimicry",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Cephalothorax",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Blue-tailed damselfly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Alderfly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Helicopter flight controls",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Insect Week",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Black fly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Insects in ethics",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Damselfly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Dragonfly",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Anax (dragonfly)",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:ecologie",
+      "to": "Architectural drawing",
+      "kind": "skill_link",
+      "skill": "ecologie"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Fly",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Neoptera",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Insect flight",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Apterygota",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Insect",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Insect wing",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Hoverfly",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Larva",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Allochronic speciation",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Apex predator",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Chemical communication in insects",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Chewing",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Damselfly",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Blowfly",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Adaptive compliant wing",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Anax (dragonfly)",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "International Symposium on Graph Drawing",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:evolution",
+      "to": "Compass (drawing tool)",
+      "kind": "skill_link",
+      "skill": "evolution"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Fly",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Wing",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Insect behaviour",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Swarm behaviour",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Mimicry",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Insect morphology",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Aggressive mimicry",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Ant mimicry",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Allopatric speciation",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Ambush predator",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Anti-predator adaptation",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Bayesian inference in phylogeny",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Distance matrices in phylogeny",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Courtship",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Apex Predator (disambiguation)",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Automimicry",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Arthropod head problem",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Foraging",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Black fly",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Saro Windhover",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:comportement",
+      "to": "Area (graph drawing)",
+      "kind": "skill_link",
+      "skill": "comportement"
+    },
+    {
+      "from": "skill:code_et_outils",
+      "to": "Thorax",
+      "kind": "skill_link",
+      "skill": "code_et_outils"
+    },
+    {
+      "from": "skill:code_et_outils",
+      "to": "Graph theory",
+      "kind": "skill_link",
+      "skill": "code_et_outils"
+    },
+    {
+      "from": "skill:code_et_outils",
+      "to": "Code",
+      "kind": "skill_link",
+      "skill": "code_et_outils"
+    },
+    {
+      "from": "skill:code_et_outils",
+      "to": "Autonomous agent",
+      "kind": "skill_link",
+      "skill": "code_et_outils"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Anax (dragonfly)",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Force-directed graph drawing",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Data and information visualization",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Network theory",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "International Symposium on Graph Drawing",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Graphics processing unit",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Canvassing",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:representation",
+      "to": "Network theory of aging",
+      "kind": "skill_link",
+      "skill": "representation"
+    },
+    {
+      "from": "skill:raisonnement",
+      "to": "Larva",
+      "kind": "skill_link",
+      "skill": "raisonnement"
+    },
+    {
+      "from": "skill:raisonnement",
+      "to": "Graph database",
+      "kind": "skill_link",
+      "skill": "raisonnement"
+    },
+    {
+      "from": "skill:raisonnement",
+      "to": "Automated reasoning",
+      "kind": "skill_link",
+      "skill": "raisonnement"
+    },
+    {
+      "from": "skill:raisonnement",
+      "to": "Thorax",
+      "kind": "skill_link",
+      "skill": "raisonnement"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Technical drawing",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Cross-origin resource sharing",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Application security",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Supply chain security",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Secure coding",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:securite_defensive",
+      "to": "Data validation",
+      "kind": "skill_link",
+      "skill": "securite_defensive"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Search engine indexing",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Query expansion",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "ArXiv",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Query language",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Thorax",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Arxivers sense Fronteres",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Web",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Graph drawing",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Insecticide",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Insect",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Common green bottle fly",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Tachinidae",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Area (graph drawing)",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Angular resolution (graph drawing)",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_web",
+      "to": "Saro Windhover",
+      "kind": "skill_link",
+      "skill": "recherche_web"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Technical drawing",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Diagrammatic reasoning",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Diagrams.net",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Image",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Thorax",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Diagram of the Federal Government and American Union",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Visual system",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Andy Diagram",
+      "kind": "skill_link",
+      "skill": "recherche_image"
+    },
+    {
+      "from": "skill:recherche_image",
+      "to": "Technical drawing tool",
+      "kind": "skill_link",
+      "skill": "recherche_image"
     }
   ],
   "frontier": [
