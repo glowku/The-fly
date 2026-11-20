@@ -10,8 +10,9 @@
 <div id="b" style="padding:16px">chargement graphe neural…</div>
 <script>
 (function(){
-  // Toujours le tip main pour bc*.txt (couleurs skills + edges)
-  var BASE = "https://raw.githubusercontent.com/glowku/The-fly/main/docs/";
+  // Core compressé connu bon (évite bc* corrompus sur main)
+  var GOOD = "3cb6a98f9d587a7bb6d3b8080ba156b7b0497d19";
+  var BASE = "https://raw.githubusercontent.com/glowku/The-fly/" + GOOD + "/docs/";
   var n = 7;
   var fetches = [];
   for (var i = 0; i < n; i++) {
@@ -21,6 +22,65 @@
     var B64 = parts.join("");
     var bin = Uint8Array.from(atob(B64), function(c){ return c.charCodeAt(0); });
     var html = pako.ungzip(bin, { to: "string" });
+
+    // Palette complète bio + tech
+    html = html.replace(
+      /const SKILL_COLORS=\{[\s\S]*?\};/,
+      'const SKILL_COLORS={ entomologie:"#5dba4a", anatomie_insecte:"#4ac9ba", vol_et_aerodynamique:"#7a9dff", ecologie:"#c9ba4a", evolution:"#ba4ac9", comportement:"#ff9d7a", code_et_outils:"#38bdf8", representation:"#a78bfa", raisonnement:"#f472b6", securite_defensive:"#fbbf24", recherche_web:"#34d399", recherche_image:"#fb7185" };'
+    );
+
+    // Keywords tech pour assignSkill
+    html = html.replace(
+      /_noise:\["computer security","cyber","security","software","network","encryption","password"\]\n\};/,
+      'code_et_outils:["code","python","javascript","html","api","git","rest","software architecture","autonomous agent"], representation:["graph drawing","visualization","force-directed","network theory","canvas","diagram"], raisonnement:["knowledge graph","reasoning","ontology","inference","retrieval augmented","graph database"], securite_defensive:["secure coding","input validation","authorization","authentication","cors","owasp"], recherche_web:["information retrieval","search engine","arxiv","query expansion","citation"], recherche_image:["computer vision","image retrieval","scientific visualization","diagram"], _noise:["fly fishing","brewery","punk rock","bubblegum","tv series","football","nasdaq"]\n};'
+    );
+
+    // Anneau skills anti-stack
+    html = html.replace(
+      /const dist=145; \/\/ anneau skills[\s\S]*?const lv=skillsData\[name\]\.level\|\|0;/,
+      'const dist=210+(i%3)*22+Math.min(40,(skillsData[name].level||0)*2);\n    const lv=skillsData[name].level||0;'
+    );
+
+    // Skills reliés au core + taille
+    html = html.replace(
+      'kind:"skill",label:name,level:lv,phase:rnd(0,6),ang,skill:name}',
+      'kind:"skill",label:name,level:lv,phase:rnd(0,6),ang,skill:name,parent:"core"}'
+    );
+    html = html.replace('r:8+Math.min(7,lv*.55)', 'r:10+Math.min(9,lv*.65)');
+
+    // bySk: articles de skills.json d\'abord
+    html = html.replace(
+      'const bySk={};\n  articles.forEach(a=>{\n    const sk=assignSkill(a.title);\n    if(!bySk[sk])bySk[sk]=[];\n    bySk[sk].push(a);\n  });',
+      'const bySk={},claimed=new Set(); skillNames.forEach(sk=>{ ((skillsData[sk]&&skillsData[sk].articles)||[]).forEach(title=>{ const a=articles.find(x=>x.title===title); if(!a||claimed.has(title))return; claimed.add(title); if(!bySk[sk])bySk[sk]=[]; bySk[sk].push(a); }); }); articles.forEach(a=>{ if(claimed.has(a.title))return; const sk=assignSkill(a.title); if(!bySk[sk])bySk[sk]=[]; bySk[sk].push(a); });'
+    );
+
+    // Toujours parent = skill (edge skill→article visible)
+    html = html.replace(
+      'list.forEach((a,i)=>{\n      const pTitle=parentOf[a.title];\n      const pNode=pTitle && map["art:"+pTitle];\n      if(pNode) placeArt(a, pNode, (pNode.depth||1)+1, 0, 1);\n      else placeArt(a, parent, 1, i, list.length);\n    });',
+      'list.forEach((a,i)=> placeArt(a, parent, 1, i, list.length));'
+    );
+
+    // Espacement
+    html = html.replace(
+      'const baseDist = 78 + depth * 58 + crowded * 22;   // beaucoup plus long',
+      'const baseDist = 115 + depth * 72 + crowded * 30;'
+    );
+    html = html.replace(
+      'const fan = Math.min(3.6, 0.65 + total * 0.38);     // éventail très ouvert',
+      'const fan = Math.min(4.8, 0.9 + total * 0.45);'
+    );
+    html = html.replace(
+      'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier");',
+      'const movable = nodes.filter(n => n.kind === "article" || n.kind === "frontier" || n.kind === "skill");'
+    );
+    html = html.replace('const minDist = 28;', 'const minDist = 52;');
+
+    // Edges couleur du skill
+    html = html.replace(
+      'const alpha = n.ghost ? 0.09 : (isHot ? 0.75 : 0.28 + 0.05*Math.sin(t*1.6+(n.phase||0)));\n    ctx.beginPath();\n    ctx.strokeStyle=`rgba(93,186,74,${alpha})`;\n    ctx.lineWidth = isHot ? 2.2 : (n.kind==="skill"?1.5:0.95);\n    ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke();',
+      'const alpha = n.ghost ? 0.09 : (isHot ? 0.85 : 0.40 + 0.06*Math.sin(t*1.6+(n.phase||0))); const skCol = SKILL_COLORS[n.skill||(p&&p.skill)]||"#5dba4a"; ctx.beginPath(); if(p.kind==="skill"){ ctx.strokeStyle=skCol; ctx.globalAlpha=isHot?0.95:0.62; ctx.lineWidth=isHot?2.6:1.7; } else { ctx.strokeStyle=`rgba(93,186,74,${alpha})`; ctx.lineWidth=isHot?2.2:0.95; } ctx.moveTo(p.x,p.y);ctx.lineTo(n.x,n.y);ctx.stroke(); ctx.globalAlpha=1;'
+    );
+
     document.open();
     document.write(html);
     document.close();
