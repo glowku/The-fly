@@ -7917,3 +7917,5 @@
 {"ts": "2026-11-20T16:53:38.872884+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 154, "active_edges": 139, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-20T16:55:06.245395+00:00", "type": "auto_learn_cycle", "cycle": 3, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-20T16:56:33.554543+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-20T16:56:35.400824+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-20T16:56:35.422278+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 154, "active_edges": 139, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
