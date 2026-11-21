@@ -48,6 +48,9 @@ def needs_live_web(query: str) -> bool:
     # questions purement d'actualité
     if re.search(r"\b(quels?|quelles?|what|which).{0,40}(incidents?|attaques?|breaches?)\b", q, re.I):
         return True
+    # sorties jeux / produits récents
+    if re.search(r"\b(gta\s*6|gta\s*vi|grand theft auto\s*v?i?|sorti|sortie|release\s*date|est[- ]?il\s+sorti|when\s+did|when\s+does|out\s+now)\b", q, re.I):
+        return True
     return False
 
 
