@@ -8044,3 +8044,4 @@
 {"ts": "2026-11-21T19:58:21.525963+00:00", "type": "plan", "title": "ArXiv", "action": "branch", "priority": 134.1, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.279}
 {"ts": "2026-11-21T19:58:22.004300+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.3, "article": "ArXiv"}
 {"ts": "2026-11-21T19:58:22.004368+00:00", "type": "branch", "title": "ArXiv", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-21T20:19:00.794237+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Larva"}
