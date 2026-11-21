@@ -1274,6 +1274,14 @@
       "kind": "skill",
       "skill": "recherche_image",
       "level": 6.12
+    },
+    "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
+      "depth": 2,
+      "created_at": "2026-11-21T12:59:13.806806+00:00",
+      "sources": [
+        "https://arxiv.org/abs/1911.04016v2"
+      ],
+      "updated_at": "2026-11-21T12:59:13.806810+00:00"
     }
   },
   "edges": [
