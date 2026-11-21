@@ -1,24 +1,24 @@
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 
-Cette étude propose un cadre d’augmentation cognitive contextuelle visant à soutenir le raisonnement humain dans des tâches complexes. En s’appuyant sur la théorie du flux, elle montre que les interventions d’IA doivent être personnalisées, adaptatives et peu intrusives pour préserver l’engagement profond. Le cadre introduit trois dimensions clés : le type, le timing et l’échelle des interventions, tout en exploitant des indices multimodaux tels que le regard, la hésitation à taper et la vitesse d’interaction.
+La théorie du flux décrit un état cognitif optimal où l’individu ressent une concentration profonde et une motivation intrinsèque lorsque la difficulté d’une tâche correspond à son niveau de compétence. Dans le cadre de l’IA augmentée, les interventions qui perturbent cet état peuvent nuire à la prise de décision. Cet article présente un cadre d’augmentation cognitive contextuelle qui adapte les interventions en fonction de trois facteurs clés : le type, le moment et l’échelle. En exploitant des indices comportementaux multimodaux (comportement oculaire, hésitation de frappe, vitesse d’interaction), l’IA ajuste dynamiquement le soutien cognitif afin de maintenir ou de restaurer le flux.
 
-## Concept de flux cognitif en IA-augmented reasoning
+## Concept de la théorie du flux et son extension en IA
 
-Le flux désigne l’état optimal où la difficulté d’une tâche correspond au niveau de compétence de l’individu, favorisant concentration et motivation intrinsèque. Dans le contexte de l’IA, perturber ce cadre peut nuire à la prise de décision. L’article élargit la théorie du flux en y intégrant des mécanismes d’IA qui détectent les signes de perte de concentration et ajustent les aides en conséquence, afin de maintenir ou restaurer l’immersion cognitive.
+Le flux, tel que défini par Csikszentmihalyi, se produit lorsque les exigences d’une tâche sont équilibrées avec les compétences de l’individu. L’extension « cognitive flow » introduite dans ce travail applique ce principe aux systèmes d’IA augmentée, où les interventions doivent être personnalisées, adaptatives et peu intrusives. Le but est de soutenir l’engagement profond dans des tâches de décision complexes sans rompre l’immersion cognitive.
 
-## Cadre d’augmentation contextuelle
+## Cadre contextuel d’augmentation cognitive
 
-Le modèle proposé repose sur trois facteurs contextuels :  
-1. **Type** : nature de l’intervention (feedback visuel, suggestion de stratégie, rappel de pause).  
-2. **Timing** : moment précis où l’intervention est délivrée, basé sur la détection en temps réel de la fatigue ou de l’inefficacité.  
-3. **Échelle** : intensité de l’intervention, modulée en fonction de la profondeur de l’engagement.  
+Le cadre proposé repose sur trois dimensions contextuelles :
 
-Les signaux multimodaux (gaze tracking, analyse de la frappe clavier, rythme d’interaction) alimentent un algorithme d’apprentissage automatique qui ajuste dynamiquement ces paramètres. Ainsi, l’IA devient un partenaire adaptatif plutôt qu’un intrus statique.
+1. **Type** – La nature de l’intervention (information supplémentaire, rappel de stratégie, ajustement de la difficulté).
+2. **Timing** – Le moment précis où l’intervention est délivrée, déterminé par des signaux en temps réel.
+3. **Scale** – L’intensité ou la portée de l’intervention, modulée en fonction de la réponse de l’utilisateur.
 
-## Implémentation et perspectives
+Les indices multimodaux, tels que le suivi oculaire, la pause de frappe et la vitesse d’interaction, servent de base pour estimer l’état de flux. L’IA utilise ces données pour décider si une intervention est nécessaire, quel type d’intervention privilégier et à quel niveau d’intensité la délivrer, afin de préserver l’état de concentration optimale.
 
-Les expérimentations démontrent que la personnalisation contextuelle réduit les interruptions inutiles et améliore la performance décisionnelle. Le cadre est compatible avec des systèmes existants de [[Secure coding]] et d’[[Autonomous agent]]s, offrant une intégration fluide dans des environnements de travail collaboratifs. Les auteurs suggèrent d’étendre la recherche à des domaines tels que la conception assistée par ordinateur, où le flux est crucial pour la créativité et la précision.
+## Implications et applications
+
+En déplaçant le focus des interventions statiques vers une approche contextuelle, le cadre garantit que les systèmes d’IA soutiennent efficacement la prise de décision et le raisonnement sans perturber l’engagement cognitif. Cette approche est particulièrement pertinente pour les domaines nécessitant une analyse approfondie, comme la médecine, la finance ou la recherche scientifique, où la perte de concentration peut entraîner des erreurs coûteuses. De plus, la personnalisation et l’adaptabilité offertes par le cadre permettent une intégration fluide dans des environnements collaboratifs, où plusieurs agents autonomes peuvent coopérer tout en maintenant un niveau de flux partagé.
 
 ## Voir aussi
-
-[[Web]], [[Code]], [[SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat]], [[Technical drawing tool]], [[Compass (drawing tool)]], [[Contour drawing]], [[Insect flight]]
+[[Autonomous agent]], [[Secure coding]], [[Technical drawing tool]], [[Contour drawing]], [[What Would a Graph Look Like in This Layout A Machine Learning Approach to Large]]
