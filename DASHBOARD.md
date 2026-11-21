@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-21 17:08:31 UTC
+**Dernière mise à jour** : 2026-11-21 22:49:55 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
 | Score objectif (coverage × quality) | **31.357** |
-| Actions dernières 24 h | 114 |
+| Actions dernières 24 h | 134 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-21T13:03:43  skill_reinforc  
-2026-11-21T13:03:43  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-21T13:04:51  auto_learn_cyc  
-2026-11-21T13:55:26  parallel_learn  
-2026-11-21T15:59:53  triage_restore  
-2026-11-21T15:59:53  triage_restore  
-2026-11-21T15:59:53  triage          
-2026-11-21T16:00:50  auto_learn_cyc  
-2026-11-21T16:02:20  auto_learn_cyc  
-2026-11-21T16:02:22  triage_restore  
-2026-11-21T16:02:22  triage          
-2026-11-21T16:03:52  auto_learn_cyc  
-2026-11-21T16:05:21  auto_learn_cyc  
-2026-11-21T16:05:23  triage_restore  
-2026-11-21T16:05:23  triage          
+2026-11-21T20:45:41  auto_learn_cyc  
+2026-11-21T20:45:42  triage_restore  
+2026-11-21T20:45:42  triage          
+2026-11-21T20:47:47  auto_learn_cyc  
+2026-11-21T21:37:06  triage_restore  
+2026-11-21T21:37:06  triage_restore  
+2026-11-21T21:37:06  triage          
+2026-11-21T21:37:52  auto_learn_cyc  
+2026-11-21T21:39:18  auto_learn_cyc  
+2026-11-21T21:39:20  triage_restore  
+2026-11-21T21:39:20  triage          
+2026-11-21T21:40:45  auto_learn_cyc  
+2026-11-21T21:42:10  auto_learn_cyc  
+2026-11-21T21:42:12  triage_restore  
+2026-11-21T21:42:12  triage          
 ```
 
 ## Architecture de l'agent
