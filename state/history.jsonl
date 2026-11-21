@@ -8041,3 +8041,6 @@
 {"ts": "2026-11-21T19:08:35.967265+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-21T19:49:00.302560+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 266}
 {"ts": "2026-11-21T19:49:00.304740+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 61}
+{"ts": "2026-11-21T19:58:21.525963+00:00", "type": "plan", "title": "ArXiv", "action": "branch", "priority": 134.1, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.279}
+{"ts": "2026-11-21T19:58:22.004300+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.3, "article": "ArXiv"}
+{"ts": "2026-11-21T19:58:22.004368+00:00", "type": "branch", "title": "ArXiv", "children_discovered": 0, "skill": "recherche_web"}
