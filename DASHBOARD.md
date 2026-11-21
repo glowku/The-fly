@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-21 09:17:15 UTC
+**Dernière mise à jour** : 2026-11-21 17:08:31 UTC
 
 ## Objectif de l'agent
 
@@ -10,21 +10,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **32.331** |
-| Concepts traités | 200 | **166** |
+| Score global | maximiser | **31.357** |
+| Concepts traités | 200 | **161** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **166** |
-| Arêtes du graphe | 327 |
+| Concepts traités (nœuds) | **161** |
+| Arêtes du graphe | 248 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **32.331** |
-| Actions dernières 24 h | 113 |
+| Score objectif (coverage × quality) | **31.357** |
+| Actions dernières 24 h | 114 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-21T06:32:50  triage          
-2026-11-21T06:32:56  skill_reinforc  
-2026-11-21T06:32:56  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-21T06:33:43  auto_learn_cyc  
-2026-11-21T06:34:28  skill_reinforc  
-2026-11-21T06:34:28  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
-2026-11-21T06:35:14  auto_learn_cyc  
-2026-11-21T06:35:16  triage_restore  
-2026-11-21T06:35:16  triage          
-2026-11-21T06:36:41  auto_learn_cyc  
-2026-11-21T06:38:07  auto_learn_cyc  
-2026-11-21T06:38:08  triage_restore  
-2026-11-21T06:38:08  triage          
-2026-11-21T07:44:13  densify_edges   
-2026-11-21T07:44:13  inject_skill_n  
+2026-11-21T13:03:43  skill_reinforc  
+2026-11-21T13:03:43  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-21T13:04:51  auto_learn_cyc  
+2026-11-21T13:55:26  parallel_learn  
+2026-11-21T15:59:53  triage_restore  
+2026-11-21T15:59:53  triage_restore  
+2026-11-21T15:59:53  triage          
+2026-11-21T16:00:50  auto_learn_cyc  
+2026-11-21T16:02:20  auto_learn_cyc  
+2026-11-21T16:02:22  triage_restore  
+2026-11-21T16:02:22  triage          
+2026-11-21T16:03:52  auto_learn_cyc  
+2026-11-21T16:05:21  auto_learn_cyc  
+2026-11-21T16:05:23  triage_restore  
+2026-11-21T16:05:23  triage          
 ```
 
 ## Architecture de l'agent
