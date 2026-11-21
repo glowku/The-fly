@@ -1,1 +1,361 @@
-PLACEHOLDER2
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>the-fly · skills cortex</title>
+<style>
+:root{
+  --bg:#020403;--fg:#b8e0b4;--mut:#3d5a3c;--acc:#5dba4a;--acc2:#7dff6a;
+  --panel:rgba(4,10,5,.94);--line:#0f1a10;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);
+  font:12.5px/1.4 ui-monospace,Consolas,monospace;overflow:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%}
+#hud{
+  position:fixed;left:12px;top:12px;z-index:5;width:min(320px,92vw);
+  background:var(--panel);border:1px solid #152515;border-radius:10px;
+  backdrop-filter:blur(8px);box-shadow:0 12px 40px rgba(0,0,0,.55)
+}
+#hud .hd{padding:12px 14px 8px;border-bottom:1px solid var(--line)}
+#hud h1{margin:0;font-size:12px;color:var(--acc);letter-spacing:.14em;text-transform:uppercase}
+#hud p{margin:4px 0 0;color:var(--mut);font-size:10.5px}
+#stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px 12px}
+#stats div{background:#060c07;border:1px solid #122012;padding:7px 8px;border-radius:6px}
+#stats b{display:block;color:var(--acc2);font-size:15px;margin-top:2px}
+#stats span{color:var(--mut);font-size:9.5px;text-transform:uppercase;letter-spacing:.04em}
+#list{padding:0 12px 12px;max-height:42vh;overflow:auto}
+.skill{
+  display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;
+  padding:7px 0;border-bottom:1px solid #0c140c;font-size:11px;cursor:pointer
+}
+.skill:hover{color:#e0ffe0}
+.dot{width:9px;height:9px;border-radius:50%;box-shadow:0 0 8px currentColor}
+.bar{height:3px;background:#0e180e;border-radius:2px;overflow:hidden}
+.bar>i{display:block;height:100%;border-radius:2px;
+  background:linear-gradient(90deg,#1a4a1a,var(--acc),var(--acc2))}
+.lvl{color:var(--mut);font-variant-numeric:tabular-nums;min-width:28px;text-align:right}
+#nav{position:fixed;right:12px;top:12px;z-index:5;display:flex;gap:8px}
+#nav a{
+  color:var(--acc);text-decoration:none;border:1px solid #243824;padding:7px 12px;
+  border-radius:8px;background:var(--panel);font-size:11px
+}
+#nav a:hover{border-color:var(--acc);box-shadow:0 0 12px rgba(93,186,74,.2)}
+#tip{
+  position:fixed;left:50%;bottom:18px;transform:translateX(-50%);
+  background:var(--panel);border:1px solid #1a2a1a;padding:9px 16px;border-radius:8px;
+  font-size:11px;color:var(--mut);z-index:5;max-width:92vw;text-align:center;
+  box-shadow:0 8px 28px rgba(0,0,0,.4)
+}
+#tip b{color:var(--acc2)}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="nav">
+  <a href="fly-brain.html">← brain</a>
+  <a href="fly-skills.html">skills</a>
+</div>
+<div id="hud">
+  <div class="hd">
+    <h1>🪰 Cortex compétences</h1>
+    <p>Réseau neuronal des skills — synapses pondérées, niveaux, densité.</p>
+  </div>
+  <div id="stats"></div>
+  <div id="list"></div>
+</div>
+<div id="tip">Survole un nœud · molette zoom · drag · clic pour isoler les synapses</div>
+<script>
+(function(){
+  const RAW = 'https://raw.githubusercontent.com/glowku/The-fly/main';
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  let W, H, nodes = [], edges = [], selected = null, pinned = null;
+  let cam = {x:0,y:0,s:1}, drag=false;
+  const particles = [];
+  const SKILL_HUE = {
+    entomologie:120, evolution:280, vol_et_aerodynamique:200, ecologie:70,
+    anatomie_insecte:160, comportement:30, securite_defensive:45,
+    representation:270, code_et_outils:195, recherche_image:340,
+    raisonnement:320, recherche_web:150
+  };
+
+  function resize(){ W=canvas.width=innerWidth; H=canvas.height=innerHeight; }
+  addEventListener('resize', resize); resize();
+
+  function hueOf(id){
+    if(SKILL_HUE[id]!=null) return SKILL_HUE[id];
+    let h=0; for(let i=0;i<id.length;i++) h=id.charCodeAt(i)+((h<<5)-h);
+    return Math.abs(h*37)%360;
+  }
+  function col(id, a=1){ return `hsla(${hueOf(id)},82%,58%,${a})`; }
+
+  async function load(){
+    let data;
+    try{
+      const r = await fetch(RAW + '/state/skills.json?t=' + Date.now());
+      data = await r.json();
+    }catch(e){
+      data = {
+        entomologie:{level:9.4,articles:[]}, evolution:{level:9.4,articles:[]},
+        vol_et_aerodynamique:{level:9.4,articles:[]}, ecologie:{level:9.3,articles:[]},
+        anatomie_insecte:{level:9.3,articles:[]}, comportement:{level:9.3,articles:[]},
+        securite_defensive:{level:6.3,articles:[]}, representation:{level:6.3,articles:[]},
+        code_et_outils:{level:6.3,articles:[]}, recherche_image:{level:6.3,articles:[]},
+        raisonnement:{level:6.3,articles:[]}, recherche_web:{level:6.2,articles:[]}
+      };
+    }
+
+    const names = Object.keys(data).filter(n=>{
+      const s=data[n]||{}; return (+s.level||0)>0 || (s.articles||[]).length>0;
+    }).sort((a,b)=>(+data[b].level||0)-(+data[a].level||0));
+
+    const FAMILY = {
+      entomologie:['insect','fly','mouche'], anatomie_insecte:['insect','morpho','body'],
+      vol_et_aerodynamique:['flight','wing','vol'], ecologie:['eco','habitat'],
+      evolution:['evo','phylogen'], comportement:['behavior','comport'],
+      code_et_outils:['code','python','api'], representation:['viz','graph','ascii'],
+      raisonnement:['plan','rag','reason'], securite_defensive:['secu','owasp','secure'],
+      recherche_web:['web','search','news'], recherche_image:['image','vision']
+    };
+
+    nodes = names.map((name,i)=>{
+      const info = data[name]||{};
+      const lvl = +info.level||0;
+      const ang = (i/names.length)*Math.PI*2 - Math.PI/2;
+      const ring = 130 + (10-Math.min(10,lvl))*8;
+      return {
+        id:name, label:name.replace(/_/g,' '), level:lvl,
+        desc:info.description||'', arts:(info.articles||[]).length,
+        keywords: FAMILY[name]||[name.split('_')[0]],
+        x:Math.cos(ang)*ring, y:Math.sin(ang)*ring,
+        vx:0, vy:0, r: 11 + Math.min(16, lvl*1.3),
+        pulse: Math.random()*Math.PI*2
+      };
+    });
+
+    edges = [];
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const a=nodes[i], b=nodes[j];
+        let score=0;
+        a.keywords.forEach(k=>{ if(b.keywords.some(kk=>kk===k||kk.includes(k)||k.includes(kk))) score+=1; });
+        const insectA=/entomo|anatom|vol|eco|evol|comport/.test(a.id);
+        const insectB=/entomo|anatom|vol|eco|evol|comport/.test(b.id);
+        const techA=/code|repres|raison|secur|recherche/.test(a.id);
+        const techB=/code|repres|raison|secur|recherche/.test(b.id);
+        if(insectA&&insectB) score+=1.2;
+        if(techA&&techB) score+=1.0;
+        if(score>0){
+          const w = Math.min(1.4, 0.25 + score*0.35 + Math.min(a.level,b.level)*0.02);
+          edges.push({a:i,b:j,w, activity:Math.random()});
+        }
+      }
+    }
+
+    nodes.push({id:'_core',label:'THE-FLY',level:10,desc:'noyau agent',arts:0,
+      keywords:[],x:0,y:0,vx:0,vy:0,r:26,hub:true,pulse:0});
+    const hub = nodes.length-1;
+    for(let i=0;i<nodes.length-1;i++){
+      edges.push({a:hub,b:i,w:0.85+nodes[i].level*0.02, activity:Math.random()});
+    }
+
+    edges.filter(e=>e.w>0.6).forEach(e=>{
+      for(let k=0;k<2;k++) particles.push({e, t:Math.random(), speed:0.004+Math.random()*0.008});
+    });
+
+    renderHud(data);
+    loop();
+  }
+
+  function renderHud(data){
+    const learned = Object.entries(data).filter(([n,s])=>(+s.level||0)>0||(s.articles||[]).length>0);
+    const vals = learned.map(([,s])=>+s.level||0);
+    const avg = vals.reduce((a,b)=>a+b,0)/(vals.length||1);
+    const arts = learned.reduce((a,[,s])=>a+(s.articles||[]).length,0);
+    const syn = edges.filter(e=>!nodes[e.a].hub && !nodes[e.b].hub).length;
+    document.getElementById('stats').innerHTML =
+      `<div><span>skills</span><b>${learned.length}</b></div>`+
+      `<div><span>niveau moy.</span><b>${avg.toFixed(2)}</b></div>`+
+      `<div><span>articles liés</span><b>${arts}</b></div>`+
+      `<div><span>synapses</span><b>${syn}</b></div>`;
+    const list = document.getElementById('list');
+    list.innerHTML = learned.sort((a,b)=>(b[1].level||0)-(a[1].level||0)).map(([n,s])=>{
+      const pct = Math.min(100, ((+s.level||0)/10)*100);
+      const c = col(n);
+      return `<div class="skill" data-id="${n}">
+        <span class="dot" style="background:${c};color:${c}"></span>
+        <div><div>${n.replace(/_/g,' ')}</div><div class="bar"><i style="width:${pct}%"></i></div></div>
+        <span class="lvl">${(+s.level||0).toFixed(1)}</span>
+      </div>`;
+    }).join('');
+    list.querySelectorAll('.skill').forEach(el=>{
+      el.onclick = ()=>{
+        const id = el.getAttribute('data-id');
+        pinned = pinned && pinned.id===id ? null : nodes.find(n=>n.id===id);
+        selected = pinned;
+      };
+    });
+  }
+
+  function step(){
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        let dx=nodes[j].x-nodes[i].x, dy=nodes[j].y-nodes[i].y;
+        let d=Math.hypot(dx,dy)||1;
+        if(d<100){
+          const f=(100-d)*0.002;
+          nodes[i].vx-=dx/d*f; nodes[i].vy-=dy/d*f;
+          nodes[j].vx+=dx/d*f; nodes[j].vy+=dy/d*f;
+        }
+      }
+    }
+    edges.forEach(e=>{
+      const a=nodes[e.a], b=nodes[e.b];
+      let dx=b.x-a.x, dy=b.y-a.y, d=Math.hypot(dx,dy)||1;
+      const rest = (a.hub||b.hub) ? 120 : 150;
+      const f=(d-rest)*0.00055*e.w;
+      a.vx+=dx/d*f; a.vy+=dy/d*f; b.vx-=dx/d*f; b.vy-=dy/d*f;
+      e.activity = (e.activity + 0.01*e.w) % 1;
+    });
+    nodes.forEach(n=>{
+      if(n.hub){ n.x*=0.85; n.y*=0.85; n.vx*=0.4; n.vy*=0.4; n.pulse+=0.06; return; }
+      n.vx*=0.88; n.vy*=0.88;
+      n.x+=n.vx; n.y+=n.vy;
+      n.pulse+=0.04+n.level*0.002;
+    });
+    particles.forEach(p=>{ p.t += p.speed; if(p.t>1) p.t=0; });
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    ctx.save();
+    ctx.translate(W/2+cam.x, H/2+cam.y);
+    ctx.scale(cam.s, cam.s);
+
+    const g = ctx.createRadialGradient(0,0,10,0,0,280);
+    g.addColorStop(0,'rgba(93,186,74,0.07)');
+    g.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=g; ctx.beginPath(); ctx.arc(0,0,280,0,Math.PI*2); ctx.fill();
+
+    edges.forEach(e=>{
+      const a=nodes[e.a], b=nodes[e.b];
+      const focus = !pinned || a===pinned || b===pinned || a.hub || b.hub;
+      if(pinned && !focus) return;
+      const alpha = (0.06 + e.w*0.18) * (focus?1:0.15);
+      const mx=(a.x+b.x)/2, my=(a.y+b.y)/2;
+      const dx=b.x-a.x, dy=b.y-a.y;
+      const nx=-dy*0.08, ny=dx*0.08;
+      ctx.beginPath();
+      ctx.moveTo(a.x,a.y);
+      ctx.quadraticCurveTo(mx+nx, my+ny, b.x, b.y);
+      if(a.hub||b.hub){
+        ctx.strokeStyle = `rgba(125,255,106,${alpha*1.3})`;
+        ctx.lineWidth = (1.2+e.w)/cam.s;
+      } else {
+        const h = hueOf(a.id);
+        ctx.strokeStyle = `hsla(${h},70%,50%,${alpha})`;
+        ctx.lineWidth = (0.7+e.w*0.8)/cam.s;
+      }
+      ctx.stroke();
+    });
+
+    particles.forEach(p=>{
+      const e=p.e, a=nodes[e.a], b=nodes[e.b];
+      if(pinned && a!==pinned && b!==pinned && !a.hub && !b.hub) return;
+      const t=p.t;
+      const mx=(a.x+b.x)/2, my=(a.y+b.y)/2;
+      const dx=b.x-a.x, dy=b.y-a.y;
+      const nx=-dy*0.08, ny=dx*0.08;
+      const u=1-t;
+      const x=u*u*a.x + 2*u*t*(mx+nx) + t*t*b.x;
+      const y=u*u*a.y + 2*u*t*(my+ny) + t*t*b.y;
+      ctx.beginPath();
+      ctx.arc(x,y,1.8/cam.s,0,Math.PI*2);
+      ctx.fillStyle=`rgba(180,255,160,${0.5+0.5*Math.sin(t*Math.PI)})`;
+      ctx.fill();
+    });
+
+    nodes.forEach(n=>{
+      const focus = !pinned || n===pinned || n.hub ||
+        edges.some(e=>(nodes[e.a]===pinned||nodes[e.b]===pinned)&&(nodes[e.a]===n||nodes[e.b]===n));
+      if(pinned && !focus && !n.hub) return;
+
+      const c = n.hub ? '#7dff6a' : col(n.id);
+      const pr = n.r + (n.hub ? 4+Math.sin(n.pulse)*3 : Math.sin(n.pulse)*1.5);
+
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,pr+8,0,Math.PI*2);
+      ctx.fillStyle = n.hub ? 'rgba(93,186,74,0.12)' : col(n.id,0.08);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,pr,0,Math.PI*2);
+      if(n.hub){
+        const hg=ctx.createRadialGradient(n.x,n.y,2,n.x,n.y,pr);
+        hg.addColorStop(0,'rgba(140,255,120,0.55)');
+        hg.addColorStop(1,'rgba(20,40,20,0.95)');
+        ctx.fillStyle=hg;
+      } else {
+        ctx.fillStyle='rgba(6,14,8,0.92)';
+      }
+      ctx.fill();
+      ctx.strokeStyle=c;
+      ctx.lineWidth=((n===selected||n===pinned)?2.8:1.3)/cam.s;
+      ctx.stroke();
+
+      if(!n.hub){
+        ctx.beginPath();
+        ctx.arc(n.x,n.y,pr+3, -Math.PI/2, -Math.PI/2 + (n.level/10)*Math.PI*2);
+        ctx.strokeStyle=col(n.id,0.7);
+        ctx.lineWidth=2/cam.s;
+        ctx.stroke();
+      }
+
+      ctx.fillStyle=c;
+      ctx.font=`${(n.hub?13:10.5)/cam.s}px ui-monospace,monospace`;
+      ctx.textAlign='center';
+      ctx.fillText(n.label, n.x, n.y + pr + 14/cam.s);
+      if(!n.hub && n.level){
+        ctx.fillStyle='rgba(160,200,160,0.55)';
+        ctx.font=`${9/cam.s}px ui-monospace,monospace`;
+        ctx.fillText('L'+n.level.toFixed(1), n.x, n.y + pr + 25/cam.s);
+      }
+    });
+
+    ctx.restore();
+
+    if(selected){
+      document.getElementById('tip').innerHTML =
+        `<b>${selected.label}</b> · lvl ${selected.level.toFixed(2)} · ${selected.arts} articles` +
+        (selected.desc?` · ${selected.desc}`:'') +
+        (pinned?' · <b>isolé</b> (reclic pour tout voir)':'');
+    }
+  }
+
+  function loop(){ step(); draw(); requestAnimationFrame(loop); }
+
+  canvas.addEventListener('mousemove', e=>{
+    if(drag){ cam.x+=e.movementX; cam.y+=e.movementY; }
+    const wx=(e.clientX-W/2-cam.x)/cam.s, wy=(e.clientY-H/2-cam.y)/cam.s;
+    selected=null;
+    for(const n of nodes){
+      if(Math.hypot(n.x-wx,n.y-wy)<n.r+6){ selected=n; break; }
+    }
+  });
+  canvas.addEventListener('mousedown', ()=> drag=true);
+  addEventListener('mouseup', ()=> drag=false);
+  canvas.addEventListener('click', ()=>{
+    if(selected && !selected.hub) pinned = pinned===selected ? null : selected;
+  });
+  canvas.addEventListener('wheel', e=>{
+    e.preventDefault();
+    cam.s=Math.min(2.8,Math.max(0.35,cam.s*(e.deltaY>0?0.92:1.08)));
+  },{passive:false});
+
+  load();
+})();
+</script>
+</body>
+</html>
