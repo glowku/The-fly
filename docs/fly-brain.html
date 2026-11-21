@@ -1,5 +1,112 @@
 <!DOCTYPE html>
-<!-- see repo for full; bootstrap loads patched logic -->
-<html lang="fr"><head><meta charset="UTF-8"><title>redirect</title>
-<meta http-equiv="refresh" content="0;url=https://glowku.github.io/The-fly/docs/fly-brain.html">
-</head><body>updating…</body></html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>the-fly · brain</title>
+<style>
+  html, body { margin: 0; height: 100%; width: 100%; overflow: hidden; background: #040604; }
+  #frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: #040604; }
+  #evolution-hud {
+    position: fixed; left: 12px; bottom: 12px; z-index: 50; width: 280px;
+    max-height: min(42vh, 380px); overflow-y: auto;
+    background: rgba(4, 8, 4, 0.94); border: 1px solid #1a261a; color: #c4d0c4;
+    font: 11.5px/1.4 ui-monospace, Consolas, monospace;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.55);
+  }
+  #evolution-hud.collapsed { max-height: 36px; overflow: hidden; }
+  .hud-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 7px 10px; border-bottom: 1px solid #1a261a;
+    color: #5dba4a; text-transform: uppercase; letter-spacing: .07em;
+    font-size: 11px; cursor: pointer; user-select: none;
+  }
+  .hud-badge { padding: 1px 7px; border-radius: 3px; font-weight: 700; font-size: 10px; text-transform: uppercase; }
+  .badge-pass { background: rgba(93,186,74,0.15); color: #5dba4a; border: 1px solid #3a5a3a; }
+  .badge-rollback { background: rgba(200,80,60,0.18); color: #e07a6a; border: 1px solid #5a3a3a; }
+  .badge-idle { background: rgba(90,106,90,0.2); color: #7a8a7a; border: 1px solid #2a3a2a; }
+  .hud-body { padding: 8px 10px 10px; }
+  .hud-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin-bottom: 8px; }
+  .hud-stat { background: #0a0e0a; border: 1px solid #1a261a; padding: 5px 4px; text-align: center; border-radius: 2px; }
+  .hud-stat b { display: block; font-size: 13px; color: #5dba4a; font-weight: 700; }
+  .hud-stat span { color: #5a6a5a; font-size: 9.5px; text-transform: uppercase; }
+  .hud-section-title { color: #5dba4a; font-size: 10px; text-transform: uppercase; letter-spacing: .06em; margin: 8px 0 4px; }
+  #skill-legend { max-height: 110px; overflow-y: auto; }
+  .skill-chip { display: flex; align-items: center; justify-content: space-between; padding: 3px 6px; margin: 2px 0; background: #0a0e0a; border: 1px solid #141a14; border-left: 3px solid transparent; font-size: 10.5px; }
+  .skill-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+  .evo-actions { display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap; }
+  .evo-btn { flex: 1; min-width: 0; padding: 5px 6px; border: 1px solid #3a5a3a; background: transparent; color: #5dba4a; cursor: pointer; font: inherit; font-size: 10.5px; }
+  .evo-btn:hover { background: #122012; }
+  .evo-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .evo-btn.secondary { border-color: #2a3a2a; color: #7a8a7a; }
+  .evo-log { margin-top: 6px; max-height: 72px; overflow-y: auto; font-size: 10px; color: #7a8a7a; border-top: 1px solid #141a14; padding-top: 4px; }
+  .evo-log-item { padding: 2px 0; border-bottom: 1px dashed #141a14; }
+  .evo-log-item.ok { color: #5dba4a; }
+  .evo-log-item.fail { color: #e07a6a; }
+  #chatHost { position: fixed; right: 12px; bottom: 12px; z-index: 99999; width: min(400px, calc(100vw - 24px)); max-height: min(58vh, 560px); display: flex; flex-direction: column; background: rgba(6,10,6,.98); border: 1px solid #1a261a; color: #c4d0c4; font: 12px/1.45 ui-monospace, Consolas, monospace; }
+  #chatHost header { display: flex; justify-content: space-between; align-items: center; padding: 8px 10px; border-bottom: 1px solid #1a261a; color: #5dba4a; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; cursor: pointer; }
+  #chatHost.collapsed { max-height: 40px; overflow: hidden; }
+  #chatLog { flex: 1; overflow: auto; padding: 10px; min-height: 140px; }
+  #chatLog .m { margin-bottom: 8px; padding: 8px 10px; border-radius: 4px; white-space: pre-wrap; font-size: 11.5px; }
+  #chatLog .u { background: #122012; border: 1px solid #1e2e1e; margin-left: 12%; }
+  #chatLog .b { background: #0a0e0a; border: 1px solid #1a261a; margin-right: 4%; }
+  #chatLog .src { margin-top: 6px; color: #5a6a5a; font-size: 10px; }
+  #chatLog pre { margin: 6px 0 0; padding: 8px; background: #050805; border: 1px solid #1a261a; overflow:auto; font-size: 10.5px; max-height: 200px; }
+  #chatForm { display: flex; gap: 6px; padding: 8px; border-top: 1px solid #1a261a; }
+  #chatForm input, #keyRow input { flex: 1; background: #060906; border: 1px solid #1a261a; color: #c4d0c4; font: inherit; padding: 7px 9px; }
+  #chatForm button, #keyRow button, #links a { border: 1px solid #3a5a3a; color: #5dba4a; background: transparent; padding: 6px 10px; cursor: pointer; font: inherit; text-decoration: none; }
+  #keyRow { display: flex; gap: 6px; padding: 6px 8px; border-top: 1px solid #141a14; }
+  #links { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 8px 6px; }
+  #chatStatus { padding: 2px 10px 8px; font-size: 10px; color: #5a6a5a; }
+  #chatStatus.ok { color: #5dba4a; }
+  #chatStatus.warn { color: #c96; }
+</style>
+</head>
+<body>
+<iframe id="frame" title="The-fly neural graph" src="brain-core.html" allowfullscreen></iframe>
+<aside id="evolution-hud">
+  <div class="hud-header" id="hudToggle"><span>🪰 Cortex Évolutif</span><span id="hud-test-badge" class="hud-badge badge-idle">IDLE</span></div>
+  <div class="hud-body">
+    <div class="hud-grid">
+      <div class="hud-stat"><b id="stat-gen">G0</b><span>Génération</span></div>
+      <div class="hud-stat"><b id="stat-reward">+0.0</b><span>Récompense</span></div>
+      <div class="hud-stat"><b id="stat-comp">–</b><span>Composantes</span></div>
+    </div>
+    <div class="hud-grid">
+      <div class="hud-stat"><b id="stat-skills">0</b><span>Skills evo</span></div>
+      <div class="hud-stat"><b id="stat-bridges">–</b><span>Ponts</span></div>
+      <div class="hud-stat"><b id="stat-orphans">–</b><span>Isolés</span></div>
+    </div>
+    <div class="hud-section-title">Skills (couleur déterministe)</div>
+    <div id="skill-legend"></div>
+    <div class="evo-actions">
+      <button class="evo-btn" id="btn-run-evolution">⚡ Évoluer + Tester</button>
+      <button class="evo-btn secondary" id="btn-rollback">↩ Rollback</button>
+    </div>
+    <div class="hud-section-title">Journal</div>
+    <div id="evo-log" class="evo-log"></div>
+  </div>
+</aside>
+<div id="chatHost">
+  <header id="chatToggle"><span>🪰 THE-FLY · cortex</span><span id="chatMin">–</span></header>
+  <div id="chatLog"></div>
+  <div id="keyRow">
+    <input id="groqKey" type="password" placeholder="clé cortex gsk_… (optionnel si local)" />
+    <button type="button" id="saveKey">OK</button>
+  </div>
+  <div id="links">
+    <a href="fly-skills.html" target="_blank">skills</a>
+    <a href="#" id="btnTriage">triage</a>
+    <a href="#" id="btnSkill">skill_learn</a>
+    <a href="#" id="btnLearn">auto_learn</a>
+    <a href="#" id="btnEvo">évolution</a>
+  </div>
+  <form id="chatForm">
+    <input id="chatQ" type="text" placeholder="GTA 6 · incidents cyber · triage · question…" autocomplete="off" />
+    <button type="submit">→</button>
+  </form>
+  <div id="chatStatus">init…</div>
+</div>
+<script src="js/chat-web.js"></script>
+</body>
+</html>
