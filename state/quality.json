@@ -6009,24 +6009,24 @@
     "updated_at": "2026-11-09T01:37:45.792224+00:00"
   },
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
-    "score": 10.0,
+    "score": 9.5,
     "metrics": {
-      "words": 406,
+      "words": 453,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Secure coding",
-        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
-        "Technical drawing tool",
-        "Web",
+        "Physical Unclonable Function (PUF)",
+        "ISO-18000-6C protocol",
         "Code",
-        "Autonomous agent"
+        "Texas Instruments firmware update framework",
+        "Web",
+        "Secure coding"
       ],
-      "diversity": 0.779,
+      "diversity": 0.705,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-22T02:01:30.571491+00:00"
+    "updated_at": "2026-11-22T17:42:14.531488+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
