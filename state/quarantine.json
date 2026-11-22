@@ -5484,31 +5484,31 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-21T20:38:11.364381+00:00",
+      "created_at": "2026-11-22T09:40:30.890829+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-21T20:38:11.364388+00:00",
-      "quarantined_at": "2026-11-21T20:41:27.924303+00:00",
+      "updated_at": "2026-11-22T09:40:30.890837+00:00",
+      "quarantined_at": "2026-11-22T09:42:56.147590+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 450,
+          "words": 372,
           "sections": 4,
           "links": 5,
           "link_list": [
-            "Contour drawing",
+            "Web",
             "Autonomous agent",
             "Technical drawing tool",
             "Secure coding",
-            "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large"
+            "Code"
           ],
-          "diversity": 0.743,
+          "diversity": 0.756,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-21T20:38:11.363647+00:00"
+        "updated_at": "2026-11-22T09:40:30.889921+00:00"
       }
     },
     "OWASP": {
@@ -10857,5 +10857,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-22T09:40:18.678952+00:00"
+  "updated_at": "2026-11-22T09:42:56.235325+00:00"
 }

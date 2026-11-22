@@ -6620,20 +6620,19 @@
     "metrics": {
       "words": 360,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
-        "Contour drawing",
-        "Compass (drawing tool)",
-        "Secure coding",
         "Technical drawing tool",
-        "Web",
+        "Compass (drawing tool)",
+        "Contour drawing",
+        "Secure coding",
         "Code"
       ],
-      "diversity": 0.852,
+      "diversity": 0.814,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-21T20:42:34.185308+00:00"
+    "updated_at": "2026-11-22T09:43:46.661298+00:00"
   },
   "Query expansion": {
     "score": 10.0,
