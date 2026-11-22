@@ -5360,7 +5360,7 @@
   "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
     "score": 10.0,
     "metrics": {
-      "words": 368,
+      "words": 332,
       "sections": 4,
       "links": 5,
       "link_list": [
@@ -5370,11 +5370,11 @@
         "Contour drawing",
         "Code"
       ],
-      "diversity": 0.757,
+      "diversity": 0.741,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-22T09:42:07.602614+00:00"
+    "updated_at": "2026-11-22T09:45:22.446361+00:00"
   },
   "Domain-specific information retrieval": {
     "score": 9.5,
