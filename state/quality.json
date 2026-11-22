@@ -5759,21 +5759,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 450,
+      "words": 372,
       "sections": 4,
       "links": 5,
       "link_list": [
-        "Contour drawing",
+        "Web",
         "Autonomous agent",
         "Technical drawing tool",
         "Secure coding",
-        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large"
+        "Code"
       ],
-      "diversity": 0.743,
+      "diversity": 0.756,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-21T20:38:11.363647+00:00"
+    "updated_at": "2026-11-22T09:40:30.889921+00:00"
   },
   "Technical drawing": {
     "score": 10.0,
