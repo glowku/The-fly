@@ -8190,3 +8190,4 @@
 {"ts": "2026-11-22T21:35:57.634526+00:00", "type": "plan", "title": "Saro Windhover", "action": "branch", "priority": 149.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-22T21:35:57.953225+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.66, "article": "Saro Windhover"}
 {"ts": "2026-11-22T21:35:57.953271+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-22T22:59:20.326876+00:00", "type": "parallel_learn", "skill": "recherche_image", "learned": 0, "workers": 4, "parent": "Technical drawing tool"}
