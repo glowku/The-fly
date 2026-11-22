@@ -8077,3 +8077,7 @@
 {"ts": "2026-11-22T00:14:56.043760+00:00", "type": "plan", "title": "Saro Windhover", "action": "branch", "priority": 149.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-22T00:14:56.268778+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.39, "article": "Saro Windhover"}
 {"ts": "2026-11-22T00:14:56.268834+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-22T01:13:08.833494+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-22T01:13:08.879182+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-22T01:13:08.920602+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 161, "active_edges": 248, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-22T01:13:43.864460+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
