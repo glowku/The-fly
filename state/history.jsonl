@@ -8112,3 +8112,5 @@
 {"ts": "2026-11-22T07:17:14.504659+00:00", "type": "plan", "title": "Saro Windhover", "action": "branch", "priority": 149.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
 {"ts": "2026-11-22T07:17:15.051772+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.48, "article": "Saro Windhover"}
 {"ts": "2026-11-22T07:17:15.051836+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
+{"ts": "2026-11-22T07:29:34.366788+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 266}
+{"ts": "2026-11-22T07:29:34.369805+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 61}
