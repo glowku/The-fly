@@ -8114,3 +8114,4 @@
 {"ts": "2026-11-22T07:17:15.051836+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-22T07:29:34.366788+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 266}
 {"ts": "2026-11-22T07:29:34.369805+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 61}
+{"ts": "2026-11-22T09:05:42.368654+00:00", "type": "parallel_learn", "skill": "raisonnement", "learned": 0, "workers": 4, "parent": "Larva"}
