@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-23 02:18:46 UTC
+**Dernière mise à jour** : 2026-11-23 14:05:37 UTC
 
 ## Objectif de l'agent
 
@@ -10,27 +10,27 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **31.357** |
-| Concepts traités | 200 | **161** |
+| Score global | maximiser | **31.554** |
+| Concepts traités | 200 | **162** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **161** |
+| Concepts traités (nœuds) | **162** |
 | Arêtes du graphe | 248 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **31.357** |
-| Actions dernières 24 h | 117 |
+| Score objectif (coverage × quality) | **31.554** |
+| Actions dernières 24 h | 107 |
 
 ## Répartition de la qualité
 
 | Niveau | Nombre d'articles |
 |--------|-------------------|
-| Excellent (≥ 8) | 350 |
+| Excellent (≥ 8) | 351 |
 | Bon (6 – 8) | 8 |
 | Moyen (4 – 6) | 4 |
 | Faible (< 4) | 0 |
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-22T23:29:58  auto_learn_cyc  
-2026-11-22T23:30:00  triage_restore  
-2026-11-22T23:30:00  triage          
-2026-11-22T23:30:55  skill_reinforc  
-2026-11-22T23:30:55  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
-2026-11-22T23:31:40  auto_learn_cyc  
-2026-11-22T23:32:44  skill_reinforc  
-2026-11-22T23:32:44  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-22T23:33:48  auto_learn_cyc  
-2026-11-22T23:33:49  triage_restore  
-2026-11-22T23:33:49  triage          
-2026-11-23T01:37:50  triage_restore  
-2026-11-23T01:37:50  triage_restore  
-2026-11-23T01:37:50  triage          
-2026-11-23T01:38:24  auto_learn_cyc  
+2026-11-23T06:55:40  triage          
+2026-11-23T06:57:07  auto_learn_cyc  
+2026-11-23T06:58:34  auto_learn_cyc  
+2026-11-23T06:58:36  triage_restore  
+2026-11-23T06:58:36  triage          
+2026-11-23T08:17:10  densify_edges   
+2026-11-23T08:17:10  inject_skill_n  
+2026-11-23T11:03:29  plan            ArXiv
+2026-11-23T11:03:29  skill_reinforc  
+2026-11-23T11:03:29  branch          ArXiv
+2026-11-23T12:22:18  triage_restore  
+2026-11-23T12:22:18  triage_restore  
+2026-11-23T12:22:18  triage          
+2026-11-23T12:22:54  skill_reinforc  
+2026-11-23T12:23:28  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
