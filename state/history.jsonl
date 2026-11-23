@@ -8263,3 +8263,4 @@
 {"ts": "2026-11-23T15:10:30.823927+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-23T15:10:30.870325+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-23T15:10:30.913361+00:00", "type": "triage", "moved_to_quarantine": 2, "deduped": 0, "active_nodes": 162, "active_edges": 248, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Privilege separation", "reason": "low_rel=0.0"}, {"title": "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-23T15:11:39.210550+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
