@@ -8249,3 +8249,6 @@
 {"ts": "2026-11-23T06:58:36.250485+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 161, "active_edges": 248, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-23T08:17:10.471702+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 266}
 {"ts": "2026-11-23T08:17:10.473854+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 61}
+{"ts": "2026-11-23T11:03:29.232567+00:00", "type": "plan", "title": "ArXiv", "action": "branch", "priority": 134.5, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.288}
+{"ts": "2026-11-23T11:03:29.542591+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 6.85, "article": "ArXiv"}
+{"ts": "2026-11-23T11:03:29.542628+00:00", "type": "branch", "title": "ArXiv", "children_discovered": 0, "skill": "recherche_web"}
