@@ -1,19 +1,19 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Le logiciel constitue aujourd’hui un pilier économique et un levier de changement sociétal. Dans ce contexte, la Papouasie-Nouvelle-Guinée (PNG) se trouve à l’aube d’une transition vers l’industrie mondiale du logiciel. Cette étude, présentée dans un article arXiv, analyse les obstacles et les opportunités qui se présentent à la communauté de l’ingénierie logicielle locale, tout en proposant des pistes pour une inclusion accrue des praticiens, chercheurs et éducateurs, tant locaux qu’internationaux.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un moteur économique et un vecteur de changement social. Ce document synthétise les obstacles et opportunités identifiés lors d’un atelier de génie logiciel organisé dans le pays, visant à intégrer la communauté locale dans l’industrie mondiale du logiciel. Les résultats proviennent d’une étude qualitative comprenant trois présentations, un questionnaire adressé à 52 participants et un groupe de discussion approfondi avec cinq acteurs locaux. L’analyse thématique a permis de dégager les principaux défis et pistes d’amélioration pour une pratique inclusive.
 
-## Méthodologie de recherche
+## 1. Méthodologie de l’étude et contexte local
 
-L’étude repose sur un atelier d’ingénierie logicielle organisé à la PNG. Les chercheurs ont enregistré trois présentations (n = 3), distribué un questionnaire à 52 participants (n = 52) et conduit un focus‑group approfondi avec cinq acteurs locaux (n = 5). Les données ont été analysées thématiquement, permettant d’identifier les barrières existantes ainsi que les leviers d’opportunité pour la communauté logicielle de la PNG.
+L’atelier a réuni des praticiens, chercheurs et éducateurs, tant locaux qu’internationaux, afin de partager leurs expériences et de co-construire des solutions adaptées à la réalité de PNG. Les trois talks ont abordé la situation actuelle du secteur, les compétences requises et les barrières culturelles. Le questionnaire a quantifié les perceptions de la communauté, tandis que le focus group a permis de recueillir des témoignages détaillés sur les contraintes techniques, économiques et sociales. Cette approche triangulaire garantit une vision holistique des enjeux.
 
-## Enjeux identifiés
+## 2. Barrières identifiées et opportunités émergentes
 
-Les résultats mettent en lumière plusieurs défis majeurs : un accès limité aux ressources éducatives, des infrastructures numériques insuffisantes, et un manque de reconnaissance des compétences locales sur la scène internationale. À l’inverse, l’étude souligne des opportunités telles que la forte créativité des développeurs locaux, l’intérêt croissant pour les solutions logicielles adaptées aux réalités culturelles de la PNG, et le potentiel de collaboration avec des partenaires académiques et industriels étrangers.
+Les principaux obstacles recensés sont la disponibilité limitée de ressources éducatives, l’accès restreint à l’infrastructure Internet et la faible représentation des groupes marginalisés dans les programmes de formation. En parallèle, des opportunités se présentent : l’adoption de modèles de formation à distance, la création de partenariats avec des universités internationales et l’exploitation de la diversité culturelle comme avantage compétitif. Les participants ont souligné l’importance de développer des outils locaux, adaptés aux langues et aux contextes socio‑économiques, afin de favoriser l’inclusion.
 
-## Stratégies d’inclusion
+## 3. Vers une pratique inclusive et durable
 
-Pour favoriser une participation équitable, l’article propose d’adopter des pratiques inclusives : promouvoir des programmes de formation accessibles, développer des plateformes de collaboration ouvertes, et soutenir la recherche interdisciplinaire qui relie le logiciel à des enjeux socio‑économiques locaux. En outre, il est recommandé de renforcer les réseaux entre praticiens, chercheurs et éducateurs, afin de créer un écosystème où les compétences locales sont valorisées et où les innovations peuvent être diffusées à l’échelle mondiale.
+Pour rendre la communauté de génie logiciel de PNG plus inclusive, il est essentiel de promouvoir des pratiques de codage sécurisé, d’encourager l’apprentissage continu et de soutenir les initiatives de mentorat. La collaboration entre acteurs locaux et globaux peut faciliter le transfert de compétences et l’accès à des financements. En outre, la mise en place de standards de documentation et de gestion de projet adaptés aux réalités locales contribuera à renforcer la confiance des parties prenantes et à attirer des investissements.
 
 ## Voir aussi
 
-[[Web]], [[Code]], [[Secure coding]], [[Template-Based Graph Clustering]], [[Technical drawing tool]], [[Compass (drawing tool)]].
+[[Code]] [[Secure coding]] [[Autonomous agent]] [[Web]] [[Template-Based Graph Clustering]]
