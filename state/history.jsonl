@@ -8258,3 +8258,5 @@
 {"ts": "2026-11-23T12:22:54.454367+00:00", "type": "skill_reinforce", "skill": "representation", "new_level": 6.86, "article": "Visual Studio"}
 {"ts": "2026-11-23T12:23:28.574013+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-23T14:14:35.603719+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 6.88, "article": "Privilege separation"}
+{"ts": "2026-11-23T14:16:00.345983+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 7.0, "article": "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-"}
+{"ts": "2026-11-23T14:16:00.346038+00:00", "type": "skill_learn_arxiv", "skill": "raisonnement", "title": "Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support", "url": "https://arxiv.org/abs/2504.16021v1"}

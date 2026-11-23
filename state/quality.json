@@ -5758,21 +5758,22 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 356,
+      "words": 365,
       "sections": 4,
-      "links": 5,
+      "links": 6,
       "link_list": [
         "Secure coding",
-        "Code",
-        "Autonomous agent",
+        "Contour drawing",
+        "Blind contour drawing",
         "Template-Based Graph Clustering",
-        "Web"
+        "Autonomous agent",
+        "Compass (drawing tool)"
       ],
-      "diversity": 0.778,
+      "diversity": 0.771,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-23T02:58:27.503210+00:00"
+    "updated_at": "2026-11-23T14:16:17.084403+00:00"
   },
   "Technical drawing": {
     "score": 10.0,

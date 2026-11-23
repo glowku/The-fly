@@ -267,7 +267,7 @@
     "last_reinforced": "2026-11-23T12:22:54.454076+00:00"
   },
   "raisonnement": {
-    "level": 6.85,
+    "level": 7.0,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -285,7 +285,7 @@
       "Automated reasoning",
       "Thorax"
     ],
-    "last_reinforced": "2026-11-23T02:58:24.971047+00:00"
+    "last_reinforced": "2026-11-23T14:16:00.345421+00:00"
   },
   "securite_defensive": {
     "level": 6.88,
