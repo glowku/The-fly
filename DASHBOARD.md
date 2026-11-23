@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-22 21:34:40 UTC
+**Dernière mise à jour** : 2026-11-23 02:18:46 UTC
 
 ## Objectif de l'agent
 
@@ -10,7 +10,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **31.352** |
+| Score global | maximiser | **31.357** |
 | Concepts traités | 200 | **161** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
@@ -23,8 +23,8 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **31.352** |
-| Actions dernières 24 h | 124 |
+| Score objectif (coverage × quality) | **31.357** |
+| Actions dernières 24 h | 117 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-22T19:31:04  auto_learn_cyc  
-2026-11-22T19:58:54  densify_edges   
-2026-11-22T19:58:54  inject_skill_n  
-2026-11-22T20:47:31  triage_restore  
-2026-11-22T20:47:31  triage_restore  
-2026-11-22T20:47:31  triage          
-2026-11-22T20:48:38  auto_learn_cyc  
-2026-11-22T20:50:43  auto_learn_cyc  
-2026-11-22T20:50:44  triage_restore  
-2026-11-22T20:50:44  triage          
-2026-11-22T20:52:49  auto_learn_cyc  
-2026-11-22T20:54:53  auto_learn_cyc  
-2026-11-22T20:54:55  triage_restore  
-2026-11-22T20:54:55  triage          
-2026-11-22T20:56:59  auto_learn_cyc  
+2026-11-22T23:29:58  auto_learn_cyc  
+2026-11-22T23:30:00  triage_restore  
+2026-11-22T23:30:00  triage          
+2026-11-22T23:30:55  skill_reinforc  
+2026-11-22T23:30:55  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-22T23:31:40  auto_learn_cyc  
+2026-11-22T23:32:44  skill_reinforc  
+2026-11-22T23:32:44  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-22T23:33:48  auto_learn_cyc  
+2026-11-22T23:33:49  triage_restore  
+2026-11-22T23:33:49  triage          
+2026-11-23T01:37:50  triage_restore  
+2026-11-23T01:37:50  triage_restore  
+2026-11-23T01:37:50  triage          
+2026-11-23T01:38:24  auto_learn_cyc  
 ```
 
 ## Architecture de l'agent
