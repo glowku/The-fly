@@ -1,19 +1,29 @@
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 
-Ce papier présente un cadre d’augmentation cognitive contextuelle destiné à soutenir le raisonnement humain en IA. Il s’appuie sur la théorie du flow, qui décrit un état de concentration optimale lorsque la difficulté d’une tâche correspond au niveau de compétence de l’individu. L’article montre que les interventions statiques peuvent rompre ce flux, tandis qu’une approche adaptative, basée sur le type, le timing et l’échelle de l’intervention, permet de préserver ou de restaurer l’engagement profond.
+La théorie du flow, introduite par Csikszentmihalyi, décrit un état cognitif optimal où l’individu est profondément concentré et motivé intrinsèquement lorsque la difficulté d’une tâche correspond à son niveau de compétence. Dans le contexte de l’IA augmentée, les interventions qui interrompent cet état peuvent nuire à la prise de décision plutôt que de l’améliorer. Cet article présente un cadre d’augmentation cognitive contextuelle qui adapte les interventions en fonction de trois facteurs clés : le type, le timing et l’échelle, en s’appuyant sur des indices comportementaux multimodaux (regard, hésitation de frappe, vitesse d’interaction).
 
-## Concept de flux cognitif et théorie du flow
+## Concept de la théorie du flow et son extension en IA
 
-La théorie du flow, introduite par Csikszentmihalyi, postule que la motivation intrinsèque et la performance maximale se produisent lorsque les défis d’une tâche sont équilibrés avec les compétences disponibles. Dans le contexte de l’IA-augmented reasoning, ce concept est étendu pour inclure des interventions numériques. Le « cognitive flow » proposé ici désigne un état où l’assistance IA est personnalisée, adaptative et peu intrusive, afin de ne pas perturber l’immersion cognitive de l’utilisateur.
+Le concept de « cognitive flow » introduit ici étend la théorie classique en intégrant les capacités d’une IA à détecter et à soutenir l’état de flow. Plutôt que d’appliquer des interventions statiques, l’IA personnalise son soutien en fonction des signaux comportementaux en temps réel, afin de préserver l’immersion cognitive et d’éviter les interruptions inutiles.
 
-## Cadre d’augmentation cognitive contextuelle
+## Cadre contextuel d’augmentation cognitive
 
-Le cadre proposé repose sur trois dimensions clés : le type d’intervention (par exemple, suggestions, feedback visuel, ajustement de la difficulté), le timing (moment d’intervention par rapport aux phases de travail) et l’échelle (intensité et fréquence). En combinant ces dimensions, le système peut moduler son soutien en fonction des besoins dynamiques de l’utilisateur, évitant ainsi les interruptions inutiles qui compromettent le flux.
+Le cadre proposé repose sur trois dimensions contextuelles :
 
-## Méthodes d’adaptation et indicateurs multimodaux
+1. **Type** : nature de l’intervention (feedback, suggestion, redirection).  
+2. **Timing** : moment d’intervention, synchronisé avec les fluctuations de l’attention.  
+3. **Échelle** : intensité de l’aide, modulée pour correspondre au niveau de compétence de l’utilisateur.
 
-Pour détecter l’état de flow, l’article décrit l’utilisation de signaux comportementaux multimodaux : comportement oculaire, hésitation de frappe, vitesse d’interaction, etc. Ces indicateurs sont analysés en temps réel afin d’ajuster les interventions. Par exemple, une baisse de la vitesse de frappe combinée à une augmentation de l’hésitation peut déclencher une suggestion de simplification de la tâche, tandis qu’une concentration soutenue peut permettre d’introduire des défis supplémentaires. Cette approche garantit que l’assistance reste alignée sur le niveau de compétence et le niveau de charge cognitive de l’utilisateur.
+En combinant ces dimensions, l’IA peut ajuster la fréquence et la forme des interventions pour maintenir un équilibre optimal entre défi et compétence.
+
+## Méthodes d’adaptation dynamiques et implications
+
+Les méthodes reposent sur l’analyse de signaux multimodaux : suivi oculaire, analyse de la cadence de frappe, mesure de la vitesse d’interaction. Ces données alimentent un modèle d’apprentissage qui prédit les moments où l’utilisateur est susceptible de sortir du flow. L’IA intervient alors de façon minimale, par exemple en fournissant un indice subtil ou en ajustant la difficulté d’une tâche. Cette approche minimise les perturbations cognitives tout en maximisant l’engagement profond dans des décisions complexes.
 
 ## Voir aussi
 
-[[Autonomous agent]]  [[Secure coding]]  [[Code]]  [[Web]]
+- [[Web]]
+- [[Code]]
+- [[Autonomous agent]]
+- [[Secure coding]]
+- [[Template-Based Graph Clustering]]
