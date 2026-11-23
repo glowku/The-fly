@@ -288,7 +288,7 @@
     "last_reinforced": "2026-11-23T02:58:24.971047+00:00"
   },
   "securite_defensive": {
-    "level": 6.79,
+    "level": 6.88,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -306,9 +306,10 @@
       "Application security",
       "Supply chain security",
       "Secure coding",
-      "Data validation"
+      "Data validation",
+      "Privilege separation"
     ],
-    "last_reinforced": "2026-11-22T23:32:44.777082+00:00"
+    "last_reinforced": "2026-11-23T14:14:35.603196+00:00"
   },
   "recherche_web": {
     "level": 6.85,

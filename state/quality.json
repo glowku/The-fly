@@ -7162,5 +7162,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-23T12:22:54.448955+00:00"
+  },
+  "Privilege separation": {
+    "score": 8.7,
+    "metrics": {
+      "words": 135,
+      "sections": 3,
+      "links": 4,
+      "link_list": [
+        "Insect",
+        "Fly",
+        "Diptera",
+        "Data validation"
+      ],
+      "diversity": 0.844,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-23T14:14:35.593721+00:00"
   }
 }
