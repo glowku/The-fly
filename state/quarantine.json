@@ -5484,31 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-23T02:58:27.503800+00:00",
+      "created_at": "2026-11-23T14:16:17.085712+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-23T02:58:27.503804+00:00",
-      "quarantined_at": "2026-11-23T03:01:53.564866+00:00",
+      "updated_at": "2026-11-23T14:16:17.085721+00:00",
+      "quarantined_at": "2026-11-23T15:10:30.892416+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 356,
+          "words": 365,
           "sections": 4,
-          "links": 5,
+          "links": 6,
           "link_list": [
             "Secure coding",
-            "Code",
-            "Autonomous agent",
+            "Contour drawing",
+            "Blind contour drawing",
             "Template-Based Graph Clustering",
-            "Web"
+            "Autonomous agent",
+            "Compass (drawing tool)"
           ],
-          "diversity": 0.778,
+          "diversity": 0.771,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-23T02:58:27.503210+00:00"
+        "updated_at": "2026-11-23T14:16:17.084403+00:00"
       }
     },
     "OWASP": {
@@ -6399,6 +6400,34 @@
       "quarantined_at": "2026-11-23T12:22:18.974979+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": null
+    },
+    "Privilege separation": {
+      "depth": 8,
+      "created_at": "2026-11-23T14:14:35.594995+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Privilege_separation"
+      ],
+      "updated_at": "2026-11-23T14:14:35.595004+00:00",
+      "quarantined_at": "2026-11-23T15:10:30.892408+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 8.7,
+        "metrics": {
+          "words": 135,
+          "sections": 3,
+          "links": 4,
+          "link_list": [
+            "Insect",
+            "Fly",
+            "Diptera",
+            "Data validation"
+          ],
+          "diversity": 0.844,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-23T14:14:35.593721+00:00"
+      }
     }
   },
   "edges": [
@@ -11732,5 +11761,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-23T12:22:18.982940+00:00"
+  "updated_at": "2026-11-23T15:10:30.905235+00:00"
 }
