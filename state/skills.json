@@ -240,7 +240,7 @@
     "last_reinforced": "2026-11-23T03:03:00.321677+00:00"
   },
   "representation": {
-    "level": 6.76,
+    "level": 6.86,
     "description": "Viz graphes, ASCII, pages, cortex skills",
     "keywords": [
       "graph",
@@ -261,9 +261,10 @@
       "International Symposium on Graph Drawing",
       "Graphics processing unit",
       "Canvassing",
-      "Network theory of aging"
+      "Network theory of aging",
+      "Visual Studio"
     ],
-    "last_reinforced": "2026-11-22T23:30:55.601935+00:00"
+    "last_reinforced": "2026-11-23T12:22:54.454076+00:00"
   },
   "raisonnement": {
     "level": 6.85,

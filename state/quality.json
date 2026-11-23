@@ -7142,5 +7142,25 @@
       "has_h1": true
     },
     "updated_at": "2026-11-20T11:27:02.396117+00:00"
+  },
+  "Visual Studio": {
+    "score": 10.0,
+    "metrics": {
+      "words": 348,
+      "sections": 4,
+      "links": 6,
+      "link_list": [
+        "Contour drawing",
+        "Secure coding",
+        "Web",
+        "Template-Based Graph Clustering",
+        "Autonomous agent",
+        "Code"
+      ],
+      "diversity": 0.721,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-23T12:22:54.448955+00:00"
   }
 }
