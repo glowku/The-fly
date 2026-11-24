@@ -5484,32 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-23T14:16:17.085712+00:00",
+      "created_at": "2026-11-24T14:39:28.889702+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-23T14:16:17.085721+00:00",
-      "quarantined_at": "2026-11-23T15:10:30.892416+00:00",
+      "updated_at": "2026-11-24T14:39:28.889709+00:00",
+      "quarantined_at": "2026-11-24T15:08:46.337838+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 365,
+          "words": 352,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Secure coding",
-            "Contour drawing",
-            "Blind contour drawing",
-            "Template-Based Graph Clustering",
             "Autonomous agent",
-            "Compass (drawing tool)"
+            "Code",
+            "Compass (drawing tool)",
+            "Technical drawing tool",
+            "Contour drawing",
+            "Secure coding"
           ],
-          "diversity": 0.771,
+          "diversity": 0.826,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-23T14:16:17.084403+00:00"
+        "updated_at": "2026-11-24T14:39:28.888826+00:00"
       }
     },
     "OWASP": {
@@ -6060,32 +6060,32 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-24T03:01:51.178972+00:00",
+      "created_at": "2026-11-24T14:41:45.884802+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-24T03:01:51.178977+00:00",
-      "quarantined_at": "2026-11-24T03:02:58.320422+00:00",
+      "updated_at": "2026-11-24T14:41:45.884808+00:00",
+      "quarantined_at": "2026-11-24T15:08:46.337859+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 374,
+          "words": 355,
           "sections": 4,
           "links": 6,
           "link_list": [
-            "Contour drawing",
-            "Technical drawing tool",
-            "Secure coding",
             "Autonomous agent",
             "Visual Studio",
-            "Code"
+            "Compass (drawing tool)",
+            "Template-Based Graph Clustering",
+            "Technical drawing tool",
+            "Secure coding"
           ],
-          "diversity": 0.822,
+          "diversity": 0.792,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-24T03:01:51.178176+00:00"
+        "updated_at": "2026-11-24T14:41:45.883742+00:00"
       }
     },
     "Citation": {
@@ -12650,5 +12650,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-24T13:34:36.987163+00:00"
+  "updated_at": "2026-11-24T15:08:46.351526+00:00"
 }
