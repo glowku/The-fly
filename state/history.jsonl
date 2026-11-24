@@ -8373,3 +8373,7 @@
 {"ts": "2026-11-24T18:41:54.571134+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-24T22:47:56.944145+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 267}
 {"ts": "2026-11-24T22:47:56.946326+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 62}
+{"ts": "2026-11-24T23:51:57.760999+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-24T23:51:57.808597+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-24T23:51:57.860347+00:00", "type": "triage", "moved_to_quarantine": 5, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 80, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "skill:ecologie", "reason": "low_rel=0.0"}, {"title": "skill:comportement", "reason": "low_rel=0.0"}, {"title": "skill:representation", "reason": "low_rel=0.0"}, {"title": "skill:raisonnement", "reason": "low_rel=0.0"}, {"title": "skill:securite_defensive", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-24T23:52:02.914506+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
