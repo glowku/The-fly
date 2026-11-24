@@ -6010,24 +6010,17 @@
     "updated_at": "2026-11-09T01:37:45.792224+00:00"
   },
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
-    "score": 10.0,
+    "score": 5.37,
     "metrics": {
-      "words": 397,
-      "sections": 4,
-      "links": 6,
-      "link_list": [
-        "Template-Based Graph Clustering",
-        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
-        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
-        "Secure coding",
-        "Code",
-        "Web"
-      ],
-      "diversity": 0.745,
+      "words": 88,
+      "sections": 1,
+      "links": 0,
+      "link_list": [],
+      "diversity": 0.86,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-22T23:33:04.012246+00:00"
+    "updated_at": "2026-11-24T03:04:06.638599+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
