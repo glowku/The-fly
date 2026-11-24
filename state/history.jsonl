@@ -8368,3 +8368,6 @@
 {"ts": "2026-11-24T17:25:13.415268+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-24T17:25:15.645090+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-24T17:25:15.688783+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-24T18:41:54.057928+00:00", "type": "plan", "title": "Saro Windhover", "action": "branch", "priority": 149.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
+{"ts": "2026-11-24T18:41:54.571073+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 7.12, "article": "Saro Windhover"}
+{"ts": "2026-11-24T18:41:54.571134+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}

@@ -311,7 +311,7 @@
     "last_reinforced": "2026-11-24T14:42:28.641390+00:00"
   },
   "recherche_web": {
-    "level": 7.03,
+    "level": 7.12,
     "description": "Auto-track recherche_web",
     "keywords": [
       "search",
@@ -347,7 +347,7 @@
       "Angular resolution (graph drawing)",
       "Saro Windhover"
     ],
-    "last_reinforced": "2026-11-24T06:49:07.182985+00:00"
+    "last_reinforced": "2026-11-24T18:41:54.570703+00:00"
   },
   "recherche_image": {
     "level": 7.17,
