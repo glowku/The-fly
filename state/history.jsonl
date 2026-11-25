@@ -8433,3 +8433,6 @@
 {"ts": "2026-11-25T11:43:40.216196+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-25T11:43:40.244561+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua", "reason": "junk"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-25T11:45:46.537909+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-25T12:31:05.173466+00:00", "type": "plan", "title": "Saro Windhover", "action": "branch", "priority": 149.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 1.0}
+{"ts": "2026-11-25T12:31:05.513245+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 7.3, "article": "Saro Windhover"}
+{"ts": "2026-11-25T12:31:05.513305+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
