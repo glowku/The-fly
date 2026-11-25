@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-25 10:55:44 UTC
+**Dernière mise à jour** : 2026-11-25 21:09:57 UTC
 
 ## Objectif de l'agent
 
@@ -10,21 +10,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **32.713** |
-| Concepts traités | 200 | **168** |
-| Qualité moyenne | ≥ 7.5 | **9.74/10** |
+| Score global | maximiser | **31.506** |
+| Concepts traités | 200 | **162** |
+| Qualité moyenne | ≥ 7.5 | **9.72/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **168** |
-| Arêtes du graphe | 329 |
+| Concepts traités (nœuds) | **162** |
+| Arêtes du graphe | 249 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
-| Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **32.713** |
-| Actions dernières 24 h | 83 |
+| Score qualité moyen | **9.72/10** |
+| Score objectif (coverage × quality) | **31.506** |
+| Actions dernières 24 h | 82 |
 
 ## Répartition de la qualité
 
@@ -32,7 +32,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 |--------|-------------------|
 | Excellent (≥ 8) | 352 |
 | Bon (6 – 8) | 8 |
-| Moyen (4 – 6) | 4 |
+| Moyen (4 – 6) | 5 |
 | Faible (< 4) | 0 |
 
 ## Top articles par qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-25T02:11:35  auto_learn_cyc  
-2026-11-25T02:11:37  triage_restore  
-2026-11-25T02:11:37  triage          
-2026-11-25T02:57:18  plan            Saro Windhover
-2026-11-25T02:57:18  skill_reinforc  
-2026-11-25T02:57:18  branch          Saro Windhover
-2026-11-25T08:22:23  triage_restore  
-2026-11-25T08:22:23  triage_restore  
-2026-11-25T08:22:23  triage          
-2026-11-25T08:22:26  skill_reinforc  
-2026-11-25T08:22:26  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
-2026-11-25T08:22:33  auto_learn_cyc  
-2026-11-25T09:12:46  densify_edges   
-2026-11-25T09:12:46  inject_skill_n  
-2026-11-25T10:42:32  parallel_learn  
+2026-11-25T14:03:09  triage_restore  
+2026-11-25T14:03:09  triage          
+2026-11-25T14:03:58  auto_learn_cyc  
+2026-11-25T14:05:25  auto_learn_cyc  
+2026-11-25T14:05:27  triage_restore  
+2026-11-25T14:05:27  triage          
+2026-11-25T14:06:54  auto_learn_cyc  
+2026-11-25T14:08:21  auto_learn_cyc  
+2026-11-25T14:08:23  triage_restore  
+2026-11-25T14:08:23  triage          
+2026-11-25T19:11:50  triage_restore  
+2026-11-25T19:11:50  triage_restore  
+2026-11-25T19:11:50  triage          
+2026-11-25T19:11:58  auto_learn_cyc  
+2026-11-25T20:52:21  parallel_learn  
 ```
 
 ## Architecture de l'agent
