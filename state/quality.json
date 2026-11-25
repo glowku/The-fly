@@ -7175,5 +7175,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-23T14:14:35.593721+00:00"
+  },
+  "Ontology (information science)": {
+    "score": 10.0,
+    "metrics": {
+      "words": 374,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Autonomous agent",
+        "Secure coding",
+        "Template-Based Graph Clustering",
+        "Code"
+      ],
+      "diversity": 0.751,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-25T13:59:13.897431+00:00"
   }
 }
