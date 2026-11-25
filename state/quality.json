@@ -6612,22 +6612,22 @@
   "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
     "score": 10.0,
     "metrics": {
-      "words": 355,
+      "words": 433,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Autonomous agent",
         "Visual Studio",
-        "Compass (drawing tool)",
+        "Autonomous agent",
+        "Contour drawing",
+        "Secure coding",
         "Template-Based Graph Clustering",
-        "Technical drawing tool",
-        "Secure coding"
+        "Code"
       ],
-      "diversity": 0.792,
+      "diversity": 0.771,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-24T14:41:45.883742+00:00"
+    "updated_at": "2026-11-25T11:40:24.580478+00:00"
   },
   "Query expansion": {
     "score": 10.0,

@@ -1,24 +1,18 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à l’aube d’une transition vers l’industrie mondiale du logiciel, où le logiciel joue un rôle central grâce à sa valeur économique et son potentiel de changement sociétal. Un article publié sur arXiv, dans le cadre du projet **skill code_et_outils**, analyse les obstacles et les opportunités que rencontre cette société émergente pour intégrer pleinement le secteur du génie logiciel.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement du secteur du logiciel peut devenir un moteur de croissance économique et de changement sociétal. Le pays, encore peu intégré à l’industrie mondiale du logiciel, fait face à des obstacles spécifiques tout en présentant des opportunités uniques pour une participation inclusive. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, afin de mettre en lumière les défis et les pistes d’amélioration pour la communauté locale et internationale.
 
 ## Étude qualitative et méthodologie
 
-Pour dresser un portrait fiable, les auteurs ont organisé un atelier de génie logiciel. L’étude a combiné trois approches qualitatives : l’enregistrement de trois conférences, l’administration d’un questionnaire à 52 participants, et une séance de focus group approfondie avec cinq acteurs locaux. Les données ont ensuite été soumises à une analyse thématique, permettant d’identifier les principaux défis comme des barrières structurelles et des opportunités de croissance.
+L’atelier a rassemblé des acteurs locaux et internationaux autour de trois présentations, d’un questionnaire adressé à 52 participants et d’un focus group approfondi avec cinq intervenants clés. Les données ont été analysées thématiquement, révélant à la fois des barrières structurelles (infrastructures limitées, accès à la formation) et des opportunités (richesse culturelle, potentiel de solutions adaptées aux réalités locales). Cette approche participative a permis de saisir les nuances du contexte PNG et d’identifier des leviers d’inclusion pour les praticiens, chercheurs et éducateurs.
 
-## État des pratiques et pistes d’inclusion
+## Enjeux d’inclusion et pratiques émergentes
 
-Le papier met en lumière l’état actuel des pratiques de développement logiciel en PNG, tout en proposant des stratégies pour rendre le domaine plus inclusif. Il souligne l’importance de la collaboration entre praticiens, chercheurs et éducateurs, tant locaux que internationaux, afin de partager des ressources, des normes de qualité (telles que le [[Secure coding]]) et des outils de développement (ex. [[Visual Studio]]). Les auteurs encouragent également l’adoption de méthodes de travail agiles et la mise en place de programmes de formation adaptés aux réalités culturelles et linguistiques du pays.
+Les principaux défis identifiés concernent l’accès aux outils de développement, la formation continue et la reconnaissance des compétences locales. Par exemple, l’utilisation d’outils open‑source tels que [[Visual Studio]] et la promotion de pratiques de [[Secure coding]] peuvent réduire les coûts et améliorer la qualité des logiciels produits. En parallèle, la mise en place de programmes de mentorat et de collaboration transnationale favorise l’échange de connaissances et l’intégration de la communauté PNG dans les réseaux globaux de génie logiciel. Les opportunités incluent la création de solutions logicielles adaptées aux besoins spécifiques de la société guinéenne, ainsi que l’exploitation de la diversité culturelle comme source d’innovation.
 
 ## Perspectives pour la communauté mondiale
 
-En identifiant les barrières et les opportunités, l’étude offre un cadre de référence pour les acteurs du génie logiciel souhaitant soutenir la montée en compétence de PNG. Elle suggère que l’inclusion passe par la création d’écosystèmes de collaboration, le transfert de connaissances et la valorisation des compétences locales, tout en s’appuyant sur des technologies émergentes comme les [[Autonomous agent]]s et les techniques d’analyse de données avancées (ex. [[Template-Based Graph Clustering]]).
+Pour que la participation de PNG soit réellement inclusive, il est essentiel de soutenir des initiatives de formation ciblées, de faciliter l’accès aux ressources numériques et de promouvoir des modèles de collaboration qui valorisent les compétences locales. Les chercheurs et éducateurs internationaux peuvent jouer un rôle clé en adaptant leurs programmes aux réalités de PNG, tout en encourageant les praticiens locaux à adopter des standards de qualité et de sécurité. En fin de compte, une approche collaborative et respectueuse des spécificités culturelles peut transformer les défis en catalyseurs d’innovation et d’inclusion durable dans le domaine du génie logiciel.
 
 ## Voir aussi
-
-* [[Secure coding]]
-* [[Visual Studio]]
-* [[Autonomous agent]]
-* [[Template-Based Graph Clustering]]
-* [[Technical drawing tool]]
-* [[Compass (drawing tool)]]
+[[Code]] [[Secure coding]] [[Visual Studio]] [[Template-Based Graph Clustering]] [[Autonomous agent]] [[Contour drawing]]
