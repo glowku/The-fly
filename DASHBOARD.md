@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-25 00:24:01 UTC
+**Dernière mise à jour** : 2026-11-25 10:55:44 UTC
 
 ## Objectif de l'agent
 
@@ -10,21 +10,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **31.545** |
-| Concepts traités | 200 | **162** |
+| Score global | maximiser | **32.713** |
+| Concepts traités | 200 | **168** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **162** |
-| Arêtes du graphe | 249 |
+| Concepts traités (nœuds) | **168** |
+| Arêtes du graphe | 329 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **31.545** |
-| Actions dernières 24 h | 89 |
+| Score objectif (coverage × quality) | **32.713** |
+| Actions dernières 24 h | 83 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-24T17:22:19  triage          
-2026-11-24T17:23:46  auto_learn_cyc  
-2026-11-24T17:25:13  auto_learn_cyc  
-2026-11-24T17:25:15  triage_restore  
-2026-11-24T17:25:15  triage          
-2026-11-24T18:41:54  plan            Saro Windhover
-2026-11-24T18:41:54  skill_reinforc  
-2026-11-24T18:41:54  branch          Saro Windhover
-2026-11-24T22:47:56  densify_edges   
-2026-11-24T22:47:56  inject_skill_n  
-2026-11-24T23:51:57  triage_restore  
-2026-11-24T23:51:57  triage_restore  
-2026-11-24T23:51:57  triage          
-2026-11-24T23:52:02  auto_learn_cyc  
-2026-11-25T00:15:04  parallel_learn  
+2026-11-25T02:11:35  auto_learn_cyc  
+2026-11-25T02:11:37  triage_restore  
+2026-11-25T02:11:37  triage          
+2026-11-25T02:57:18  plan            Saro Windhover
+2026-11-25T02:57:18  skill_reinforc  
+2026-11-25T02:57:18  branch          Saro Windhover
+2026-11-25T08:22:23  triage_restore  
+2026-11-25T08:22:23  triage_restore  
+2026-11-25T08:22:23  triage          
+2026-11-25T08:22:26  skill_reinforc  
+2026-11-25T08:22:26  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-25T08:22:33  auto_learn_cyc  
+2026-11-25T09:12:46  densify_edges   
+2026-11-25T09:12:46  inject_skill_n  
+2026-11-25T10:42:32  parallel_learn  
 ```
 
 ## Architecture de l'agent
