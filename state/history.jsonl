@@ -8430,3 +8430,5 @@
 {"ts": "2026-11-25T11:42:31.918075+00:00", "type": "skill_reinforce", "skill": "securite_defensive", "new_level": 7.33, "article": "secucode-intrinsic-puf-entangled-secure-wireless-code-dissemination-fo"}
 {"ts": "2026-11-25T11:42:31.918131+00:00", "type": "skill_learn_arxiv", "skill": "securite_defensive", "title": "SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices", "url": "https://arxiv.org/abs/1807.10463v4"}
 {"ts": "2026-11-25T11:43:38.488201+00:00", "type": "auto_learn_cycle", "cycle": 4, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-25T11:43:40.216196+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-25T11:43:40.244561+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua", "reason": "junk"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
