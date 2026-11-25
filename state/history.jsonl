@@ -8453,3 +8453,6 @@
 {"ts": "2026-11-25T19:11:50.085105+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-25T19:11:58.753212+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-25T20:52:21.506600+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Saro Windhover"}
+{"ts": "2026-11-25T21:55:40.122955+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-25T21:55:40.165455+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-25T21:55:40.201635+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
