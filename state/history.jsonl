@@ -8437,3 +8437,6 @@
 {"ts": "2026-11-25T12:31:05.513245+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 7.3, "article": "Saro Windhover"}
 {"ts": "2026-11-25T12:31:05.513305+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-25T13:59:13.906404+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 7.4, "article": "Ontology (information science)"}
+{"ts": "2026-11-25T14:03:09.626349+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-25T14:03:09.675478+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-25T14:03:09.721473+00:00", "type": "triage", "moved_to_quarantine": 1, "deduped": 0, "active_nodes": 162, "active_edges": 249, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 1, "pending_out_of_domain": 0, "sample_moved": [{"title": "Ontology (information science)", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}

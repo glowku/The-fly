@@ -6428,6 +6428,34 @@
         },
         "updated_at": "2026-11-23T14:14:35.593721+00:00"
       }
+    },
+    "Ontology (information science)": {
+      "depth": 4,
+      "created_at": "2026-11-25T13:59:13.898259+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ontology_(information_science)"
+      ],
+      "updated_at": "2026-11-25T13:59:13.898266+00:00",
+      "quarantined_at": "2026-11-25T14:03:09.697881+00:00",
+      "reason": "low_rel=0.0",
+      "prev_quality": {
+        "score": 10.0,
+        "metrics": {
+          "words": 374,
+          "sections": 4,
+          "links": 4,
+          "link_list": [
+            "Autonomous agent",
+            "Secure coding",
+            "Template-Based Graph Clustering",
+            "Code"
+          ],
+          "diversity": 0.751,
+          "has_placeholder": false,
+          "has_h1": true
+        },
+        "updated_at": "2026-11-25T13:59:13.897431+00:00"
+      }
     }
   },
   "edges": [
@@ -13537,5 +13565,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-25T11:43:40.238257+00:00"
+  "updated_at": "2026-11-25T14:03:09.710479+00:00"
 }
