@@ -6012,20 +6012,20 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 436,
+      "words": 408,
       "sections": 4,
       "links": 4,
       "link_list": [
-        "Autonomous agent",
-        "Secure coding",
         "Visual Studio",
-        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat"
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+        "Diagrammatology",
+        "Secure coding"
       ],
-      "diversity": 0.739,
+      "diversity": 0.754,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-26T00:11:51.834893+00:00"
+    "updated_at": "2026-11-26T10:39:40.142019+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
