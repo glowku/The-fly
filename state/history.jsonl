@@ -8559,3 +8559,6 @@
 {"ts": "2026-11-26T21:57:15.927873+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 269}
 {"ts": "2026-11-26T21:57:15.933886+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 62}
 {"ts": "2026-11-26T22:41:46.045776+00:00", "type": "parallel_learn", "skill": "recherche_web", "learned": 0, "workers": 4, "parent": "Thorax"}
+{"ts": "2026-11-26T23:11:36.608433+00:00", "type": "plan", "title": "ArXiv", "action": "branch", "priority": 135.0, "reason": "leaf_no_children", "skill": "recherche_web", "relevance": 0.301}
+{"ts": "2026-11-26T23:11:36.937622+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 7.67, "article": "ArXiv"}
+{"ts": "2026-11-26T23:11:36.937663+00:00", "type": "branch", "title": "ArXiv", "children_discovered": 0, "skill": "recherche_web"}
