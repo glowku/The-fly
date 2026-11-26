@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-25 21:09:57 UTC
+**Dernière mise à jour** : 2026-11-26 03:58:11 UTC
 
 ## Objectif de l'agent
 
@@ -24,7 +24,7 @@ Formule d'optimisation : `coverage_factor × average_quality`
 | Profondeur max | 10 |
 | Score qualité moyen | **9.72/10** |
 | Score objectif (coverage × quality) | **31.506** |
-| Actions dernières 24 h | 82 |
+| Actions dernières 24 h | 88 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-25T14:03:09  triage_restore  
-2026-11-25T14:03:09  triage          
-2026-11-25T14:03:58  auto_learn_cyc  
-2026-11-25T14:05:25  auto_learn_cyc  
-2026-11-25T14:05:27  triage_restore  
-2026-11-25T14:05:27  triage          
-2026-11-25T14:06:54  auto_learn_cyc  
-2026-11-25T14:08:21  auto_learn_cyc  
-2026-11-25T14:08:23  triage_restore  
-2026-11-25T14:08:23  triage          
-2026-11-25T19:11:50  triage_restore  
-2026-11-25T19:11:50  triage_restore  
-2026-11-25T19:11:50  triage          
-2026-11-25T19:11:58  auto_learn_cyc  
-2026-11-25T20:52:21  parallel_learn  
+2026-11-26T00:09:23  triage_restore  
+2026-11-26T00:09:23  triage          
+2026-11-26T00:10:11  skill_reinforc  
+2026-11-26T00:10:11  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
+2026-11-26T00:11:01  auto_learn_cyc  
+2026-11-26T00:11:49  skill_reinforc  
+2026-11-26T00:11:49  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-26T00:12:38  auto_learn_cyc  
+2026-11-26T00:12:40  triage_restore  
+2026-11-26T00:12:40  triage          
+2026-11-26T03:30:52  triage_restore  
+2026-11-26T03:30:52  triage_restore  
+2026-11-26T03:30:52  triage          
+2026-11-26T03:31:03  auto_learn_cyc  
+2026-11-26T03:51:32  parallel_learn  
 ```
 
 ## Architecture de l'agent
