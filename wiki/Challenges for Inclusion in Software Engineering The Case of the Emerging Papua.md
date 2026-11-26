@@ -1,23 +1,15 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement logiciel devient un levier économique et social. Ce document synthétise les résultats d’un atelier de génie logiciel qui a mobilisé des acteurs locaux pour identifier les obstacles et les opportunités d’inclusion dans la communauté logicielle nationale. La démarche qualitative, combinant trois présentations, un questionnaire auprès de 52 participants et un focus group de cinq experts, a permis de cartographier les pratiques actuelles et de proposer des pistes d’amélioration.
+Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un moteur économique et un levier de changement social. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et les opportunités pour une participation inclusive de la communauté locale dans l’industrie mondiale du logiciel.
 
-## 1. Obstacles structurels et culturels
+## Contexte et méthodologie de l’étude
+L’atelier a rassemblé des acteurs locaux et internationaux autour de trois présentations, d’un questionnaire diffusé auprès de 52 participants et d’un groupe de discussion approfondi avec cinq intervenants locaux. Les données ont été analysées thématiquement, permettant de distinguer les barrières structurelles, culturelles et techniques qui freinent l’engagement de PNG dans le secteur logiciel, ainsi que les leviers potentiels pour y remédier.
 
-Les participants ont souligné un manque d’infrastructures numériques, notamment l’accès limité à des environnements de développement intégrés tels que [[Visual Studio]] et à des outils de gestion de version. Le déficit de compétences en matière de [[Secure coding]] est aggravé par une méconnaissance des normes internationales, ce qui entrave la participation de PNG aux projets globaux. Sur le plan socioculturel, la diversité linguistique et les disparités régionales créent des barrières à la collaboration intercommunautaire, rendant difficile la construction d’une communauté de pratique unifiée.
+## Défis identifiés et opportunités
+Les principaux défis recensés sont la pénurie de compétences spécialisées, l’accès limité aux outils de développement modernes (tels que [[Visual Studio]]), et l’absence de normes de sécurité adaptées, notamment en matière de [[Secure coding]]. À l’inverse, les opportunités émergent de la richesse culturelle locale, de la disponibilité de ressources naturelles pour la recherche en [[Diagrammatology]], et de la volonté croissante des institutions éducatives à intégrer des programmes de génie logiciel. La collaboration entre praticiens, chercheurs et éducateurs, tant locaux qu’internationaux, apparaît comme un facteur clé pour transformer ces défis en atouts.
 
-## 2. Opportunités d’inclusion et de coopération
-
-L’atelier a mis en lumière des initiatives locales, comme l’utilisation de [[Autonomous agent]] pour automatiser des tâches répétitives, qui peuvent servir de base à des projets open source. Les participants ont également identifié la possibilité de développer des outils de modélisation visuelle, inspirés de la [[Diagrammatology]], afin de faciliter la communication entre développeurs et parties prenantes non techniques. Enfin, la création de programmes de formation ciblés, intégrant des modules de [[Secure coding]] et de gestion de projet, est considérée comme un levier essentiel pour renforcer la compétitivité de PNG sur la scène mondiale.
-
-## 3. Recommandations pour une communauté inclusive
-
-Pour favoriser l’inclusion, il est recommandé d’établir des partenariats avec des universités internationales, de promouvoir des plateformes de collaboration en ligne et de soutenir le développement d’outils adaptés aux contraintes locales, tels que des environnements de développement légers. La mise en place de programmes de mentorat, combinée à l’utilisation de techniques de clustering de graphes [[Template-Based Graph Clustering]], pourrait également accélérer l’intégration des nouveaux talents.
+## Pratiques actuelles et pistes d’inclusion
+Actuellement, les pratiques de développement à PNG sont souvent informelles, avec un manque d’infrastructure pour la gestion de projet et la sécurisation des logiciels. Les recommandations incluent l’instauration de standards de codage sécurisés, la formation continue des développeurs via des plateformes collaboratives, et la création de réseaux de mentors internationaux. En favorisant l’accès à des outils open‑source et en promouvant des initiatives de co‑création, la communauté peut progresser vers une inclusion réelle et durable dans l’industrie mondiale du logiciel.
 
 ## Voir aussi
-
-* [[Secure coding]]
-* [[Visual Studio]]
-* [[Diagrammatology]]
-* [[Autonomous agent]]
-* [[Template-Based Graph Clustering]]
+[[Secure coding]], [[Visual Studio]], [[Diagrammatology]], [[Compass (drawing tool)]], [[Contour drawing]], [[Autonomous agent]]
