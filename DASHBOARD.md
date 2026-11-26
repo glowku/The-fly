@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-26 13:44:20 UTC
+**Dernière mise à jour** : 2026-11-26 22:50:04 UTC
 
 ## Objectif de l'agent
 
@@ -10,20 +10,20 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **31.744** |
-| Concepts traités | 200 | **163** |
+| Score global | maximiser | **32.718** |
+| Concepts traités | 200 | **168** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **163** |
-| Arêtes du graphe | 251 |
+| Concepts traités (nœuds) | **168** |
+| Arêtes du graphe | 331 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **31.744** |
+| Score objectif (coverage × quality) | **32.718** |
 | Actions dernières 24 h | 91 |
 
 ## Répartition de la qualité
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-26T08:55:40  inject_skill_n  
-2026-11-26T10:39:30  triage_restore  
-2026-11-26T10:39:30  triage_restore  
-2026-11-26T10:39:30  triage          
-2026-11-26T10:39:38  skill_reinforc  
-2026-11-26T10:39:38  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
-2026-11-26T10:40:26  auto_learn_cyc  
-2026-11-26T10:41:55  auto_learn_cyc  
-2026-11-26T10:41:57  triage_restore  
-2026-11-26T10:41:57  triage          
-2026-11-26T10:43:26  auto_learn_cyc  
-2026-11-26T10:44:52  auto_learn_cyc  
-2026-11-26T10:44:54  triage_restore  
-2026-11-26T10:44:54  triage          
-2026-11-26T13:22:25  parallel_learn  
+2026-11-26T16:47:54  auto_learn_cyc  
+2026-11-26T21:14:32  triage_restore  
+2026-11-26T21:14:32  triage_restore  
+2026-11-26T21:14:32  triage          
+2026-11-26T21:15:19  auto_learn_cyc  
+2026-11-26T21:16:43  auto_learn_cyc  
+2026-11-26T21:16:45  triage_restore  
+2026-11-26T21:16:45  triage          
+2026-11-26T21:18:09  auto_learn_cyc  
+2026-11-26T21:19:33  auto_learn_cyc  
+2026-11-26T21:19:35  triage_restore  
+2026-11-26T21:19:35  triage          
+2026-11-26T21:57:15  densify_edges   
+2026-11-26T21:57:15  inject_skill_n  
+2026-11-26T22:41:46  parallel_learn  
 ```
 
 ## Architecture de l'agent
