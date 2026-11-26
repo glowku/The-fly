@@ -289,7 +289,7 @@
     "last_reinforced": "2026-11-25T13:59:13.906078+00:00"
   },
   "securite_defensive": {
-    "level": 7.33,
+    "level": 7.48,
     "description": "Auto-track securite_defensive",
     "keywords": [
       "security",
@@ -309,7 +309,7 @@
       "Secure coding",
       "Data validation"
     ],
-    "last_reinforced": "2026-11-25T11:42:31.917848+00:00"
+    "last_reinforced": "2026-11-26T00:11:49.447974+00:00"
   },
   "recherche_web": {
     "level": 7.39,

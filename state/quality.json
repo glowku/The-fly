@@ -6010,22 +6010,20 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 344,
-      "sections": 3,
-      "links": 6,
+      "words": 436,
+      "sections": 4,
+      "links": 4,
       "link_list": [
-        "ISO-18000-6C protocol",
-        "Texas Instruments",
-        "Computational RFID",
-        "Energy harvesting",
-        "Physical Unclonable Function",
-        "Secure coding"
+        "Autonomous agent",
+        "Secure coding",
+        "Visual Studio",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat"
       ],
-      "diversity": 0.784,
+      "diversity": 0.739,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-24T14:42:30.887143+00:00"
+    "updated_at": "2026-11-26T00:11:51.834893+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
