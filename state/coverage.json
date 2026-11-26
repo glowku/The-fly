@@ -1282,6 +1282,14 @@
       "kind": "skill",
       "skill": "recherche_image",
       "level": 7.32
+    },
+    "Diagrammatology": {
+      "depth": 8,
+      "created_at": "2026-11-26T04:23:31.535122+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Diagrammatology"
+      ],
+      "updated_at": "2026-11-26T04:23:31.535128+00:00"
     }
   },
   "edges": [
