@@ -6012,20 +6012,21 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 408,
+      "words": 426,
       "sections": 4,
-      "links": 4,
+      "links": 5,
       "link_list": [
+        "Compass (drawing tool)",
+        "Contour drawing",
         "Visual Studio",
-        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
-        "Diagrammatology",
+        "Insect flight",
         "Secure coding"
       ],
-      "diversity": 0.754,
+      "diversity": 0.76,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-26T10:39:40.142019+00:00"
+    "updated_at": "2026-11-26T23:18:33.253887+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
