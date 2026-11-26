@@ -3,7 +3,7 @@ skill: raisonnement
 title: Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
 source: arxiv
 url: https://arxiv.org/abs/2504.16021v1
-created: 2026-11-25T08:22:26.777672+00:00
+created: 2026-11-26T04:18:56.429519+00:00
 ---
 
 # Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
