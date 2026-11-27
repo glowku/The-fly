@@ -5484,31 +5484,32 @@
     },
     "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
       "depth": 2,
-      "created_at": "2026-11-27T08:56:16.768195+00:00",
+      "created_at": "2026-11-27T19:40:28.391360+00:00",
       "sources": [
         "https://arxiv.org/abs/2504.16021v1"
       ],
-      "updated_at": "2026-11-27T08:56:16.768200+00:00",
-      "quarantined_at": "2026-11-27T08:59:34.420612+00:00",
+      "updated_at": "2026-11-27T19:40:28.391368+00:00",
+      "quarantined_at": "2026-11-27T19:43:43.207993+00:00",
       "reason": "low_rel=0.0",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 423,
+          "words": 333,
           "sections": 4,
-          "links": 5,
+          "links": 6,
           "link_list": [
-            "Template-Based Graph Clustering",
+            "Diagrammatology",
             "Secure coding",
             "Autonomous agent",
-            "Diagrammatology",
-            "Visual Studio"
+            "Technical drawing tool",
+            "Visual Studio",
+            "Compass (drawing tool)"
           ],
-          "diversity": 0.785,
+          "diversity": 0.753,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-27T08:56:16.767485+00:00"
+        "updated_at": "2026-11-27T19:40:28.390249+00:00"
       }
     },
     "OWASP": {
@@ -15341,5 +15342,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-27T19:39:19.309935+00:00"
+  "updated_at": "2026-11-27T19:43:43.218988+00:00"
 }
