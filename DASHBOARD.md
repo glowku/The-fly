@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-26 22:50:04 UTC
+**Dernière mise à jour** : 2026-11-27 07:01:39 UTC
 
 ## Objectif de l'agent
 
@@ -10,21 +10,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **32.718** |
-| Concepts traités | 200 | **168** |
+| Score global | maximiser | **31.744** |
+| Concepts traités | 200 | **163** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **168** |
-| Arêtes du graphe | 331 |
+| Concepts traités (nœuds) | **163** |
+| Arêtes du graphe | 251 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **32.718** |
-| Actions dernières 24 h | 91 |
+| Score objectif (coverage × quality) | **31.744** |
+| Actions dernières 24 h | 87 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-26T16:47:54  auto_learn_cyc  
-2026-11-26T21:14:32  triage_restore  
-2026-11-26T21:14:32  triage_restore  
-2026-11-26T21:14:32  triage          
-2026-11-26T21:15:19  auto_learn_cyc  
-2026-11-26T21:16:43  auto_learn_cyc  
-2026-11-26T21:16:45  triage_restore  
-2026-11-26T21:16:45  triage          
-2026-11-26T21:18:09  auto_learn_cyc  
-2026-11-26T21:19:33  auto_learn_cyc  
-2026-11-26T21:19:35  triage_restore  
-2026-11-26T21:19:35  triage          
-2026-11-26T21:57:15  densify_edges   
-2026-11-26T21:57:15  inject_skill_n  
-2026-11-26T22:41:46  parallel_learn  
+2026-11-27T04:00:05  triage_restore  
+2026-11-27T04:00:05  triage_restore  
+2026-11-27T04:00:05  triage          
+2026-11-27T04:01:05  auto_learn_cyc  
+2026-11-27T04:02:34  auto_learn_cyc  
+2026-11-27T04:02:36  triage_restore  
+2026-11-27T04:02:36  triage          
+2026-11-27T04:04:05  auto_learn_cyc  
+2026-11-27T04:05:33  auto_learn_cyc  
+2026-11-27T04:05:36  triage_restore  
+2026-11-27T04:05:36  triage          
+2026-11-27T05:14:58  plan            Saro Windhover
+2026-11-27T05:14:58  skill_reinforc  
+2026-11-27T05:14:58  branch          Saro Windhover
+2026-11-27T05:55:11  parallel_learn  
 ```
 
 ## Architecture de l'agent
