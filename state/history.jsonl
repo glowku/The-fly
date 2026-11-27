@@ -8618,3 +8618,7 @@
 {"ts": "2026-11-27T09:05:52.561982+00:00", "type": "auto_learn_cycle", "cycle": 5, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-27T09:07:37.275107+00:00", "type": "densify_edges", "added": 18, "orphans_before": 1, "edges_after": 269}
 {"ts": "2026-11-27T09:07:37.278276+00:00", "type": "inject_skill_nodes", "nodes": 5, "edges": 62}
+{"ts": "2026-11-27T12:06:18.920569+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-27T12:06:18.975693+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-27T12:06:19.023826+00:00", "type": "triage", "moved_to_quarantine": 5, "deduped": 0, "active_nodes": 163, "active_edges": 251, "archived_edges": 80, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [{"title": "skill:ecologie", "reason": "low_rel=0.0"}, {"title": "skill:comportement", "reason": "low_rel=0.0"}, {"title": "skill:representation", "reason": "low_rel=0.0"}, {"title": "skill:raisonnement", "reason": "low_rel=0.0"}, {"title": "skill:securite_defensive", "reason": "low_rel=0.0"}], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
+{"ts": "2026-11-27T12:06:29.324179+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
