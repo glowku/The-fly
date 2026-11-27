@@ -1043,11 +1043,11 @@
     },
     "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large": {
       "depth": 2,
-      "created_at": "2026-11-27T08:58:29.615342+00:00",
+      "created_at": "2026-11-27T09:00:37.767136+00:00",
       "sources": [
         "https://arxiv.org/abs/1710.04328v1"
       ],
-      "updated_at": "2026-11-27T08:58:29.615348+00:00"
+      "updated_at": "2026-11-27T09:00:37.767141+00:00"
     },
     "Diagrammatology": {
       "depth": 8,
@@ -1290,14 +1290,6 @@
       "kind": "skill",
       "skill": "recherche_image",
       "level": 7.57
-    },
-    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
-      "depth": 2,
-      "created_at": "2026-11-27T08:56:16.768195+00:00",
-      "sources": [
-        "https://arxiv.org/abs/2504.16021v1"
-      ],
-      "updated_at": "2026-11-27T08:56:16.768200+00:00"
     }
   },
   "edges": [
