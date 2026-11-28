@@ -6013,22 +6013,20 @@
   "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat": {
     "score": 10.0,
     "metrics": {
-      "words": 339,
+      "words": 368,
       "sections": 4,
-      "links": 6,
+      "links": 4,
       "link_list": [
-        "Computational RFID (CRFID)",
-        "Texas Instruments firmware update framework",
-        "Secure coding",
-        "Physical Unclonable Function (PUF)",
-        "Energy harvesting devices",
-        "ISO-18000-6C protocol"
+        "Visual Studio",
+        "Contour drawing",
+        "Compass (drawing tool)",
+        "Secure coding"
       ],
-      "diversity": 0.766,
+      "diversity": 0.767,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-27T19:38:12.434755+00:00"
+    "updated_at": "2026-11-28T03:00:24.766487+00:00"
   },
   "Neural ranking models for document retrieval": {
     "score": 10.0,
