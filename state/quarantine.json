@@ -6060,32 +6060,31 @@
     },
     "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
       "depth": 2,
-      "created_at": "2026-11-28T02:58:12.968607+00:00",
+      "created_at": "2026-11-28T16:46:19.436129+00:00",
       "sources": [
         "https://arxiv.org/abs/1911.04016v2"
       ],
-      "updated_at": "2026-11-28T02:58:12.968613+00:00",
-      "quarantined_at": "2026-11-28T03:01:30.301183+00:00",
+      "updated_at": "2026-11-28T16:46:19.436134+00:00",
+      "quarantined_at": "2026-11-28T16:47:07.992452+00:00",
       "reason": "junk",
       "prev_quality": {
         "score": 10.0,
         "metrics": {
-          "words": 372,
+          "words": 356,
           "sections": 4,
-          "links": 6,
+          "links": 5,
           "link_list": [
-            "Visual Studio",
-            "Template-Based Graph Clustering",
+            "Semantic network",
+            "Diagrammatology",
             "Secure coding",
-            "Autonomous agent",
-            "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
-            "Diagrammatology"
+            "Visual Studio",
+            "Autonomous agent"
           ],
-          "diversity": 0.797,
+          "diversity": 0.821,
           "has_placeholder": false,
           "has_h1": true
         },
-        "updated_at": "2026-11-28T02:58:12.967713+00:00"
+        "updated_at": "2026-11-28T16:46:19.435422+00:00"
       }
     },
     "Citation": {
@@ -16236,5 +16235,5 @@
     }
   ],
   "dedup_map": {},
-  "updated_at": "2026-11-28T16:44:28.184501+00:00"
+  "updated_at": "2026-11-28T16:47:08.000712+00:00"
 }
