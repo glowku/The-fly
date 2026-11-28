@@ -8676,3 +8676,6 @@
 {"ts": "2026-11-27T23:40:12.045582+00:00", "type": "skill_reinforce", "skill": "recherche_web", "new_level": 7.94, "article": "Saro Windhover"}
 {"ts": "2026-11-27T23:40:12.045618+00:00", "type": "branch", "title": "Saro Windhover", "children_discovered": 0, "skill": "recherche_web"}
 {"ts": "2026-11-27T23:50:37.359804+00:00", "type": "parallel_learn", "skill": "recherche_image", "learned": 0, "workers": 4, "parent": "Technical drawing tool"}
+{"ts": "2026-11-28T02:53:37.804817+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-28T02:53:37.842466+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-28T02:53:37.877799+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 163, "active_edges": 251, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
