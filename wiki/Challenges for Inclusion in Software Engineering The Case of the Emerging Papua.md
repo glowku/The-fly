@@ -1,19 +1,19 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-La société de Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un moteur économique majeur et un levier de changement sociétal. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et les opportunités pour l’inclusion de la communauté locale dans l’industrie mondiale du logiciel.
+Le logiciel constitue un pilier économique et un levier de changement social dans les sociétés contemporaines. Cette entrée en matière s’appuie sur une étude qualitative menée dans la Papouasie-Nouvelle-Guinée (PNG) afin d’identifier les obstacles et les opportunités pour l’inclusion dans le secteur de l’ingénierie logicielle. Les résultats, issus d’un atelier, de questionnaires et de groupes de discussion, éclairent les pratiques actuelles et proposent des pistes pour rapprocher les acteurs locaux et mondiaux.
 
-## Méthodologie et résultats
+## Contexte et méthodologie
 
-L’étude a combiné trois approches complémentaires : l’enregistrement de trois conférences, l’administration d’un questionnaire à 52 participants et une séance de focus group approfondie avec cinq acteurs locaux. L’analyse thématique a révélé un ensemble de barrières, notamment le manque d’infrastructures numériques, la pénurie de compétences spécialisées et les disparités d’accès à la formation. En parallèle, des opportunités ont émergé, telles que la forte créativité des développeurs locaux, l’intérêt croissant pour les solutions open source et la possibilité de créer des partenariats internationaux.
+Un atelier dédié à l’ingénierie logicielle a été organisé en PNG, réunissant trois conférenciers, 52 participants ayant rempli un questionnaire et cinq acteurs locaux lors d’une séance de focus group. Les données ont été analysées thématiquement pour dégager les principaux défis et opportunités rencontrés par la communauté locale. Cette approche mixte a permis de saisir à la fois les perceptions individuelles et les dynamiques collectives.
 
-## Enjeux et opportunités
+## Enjeux identifiés
 
-Les défis identifiés se traduisent par des besoins pressants en matière de **[[Secure coding]]**, de gestion de projets collaboratifs et d’accès aux outils de développement modernes comme **[[Visual Studio]]**. Les opportunités, quant à elles, reposent sur l’exploitation de méthodes de modélisation avancées, notamment la **[[Diagrammatology]]** et le **[[Template-Based Graph Clustering]]**, qui peuvent faciliter la compréhension des systèmes complexes et favoriser l’apprentissage collaboratif. L’étude souligne également le potentiel des **[[Autonomous agent]]** pour automatiser des tâches répétitives et réduire les coûts de développement, tout en créant des emplois spécialisés.
+Les résultats mettent en évidence des barrières structurelles (infrastructures limitées, accès restreint aux outils de développement) et des obstacles culturels (manque de modèles de rôle, préjugés liés aux compétences techniques). Parallèlement, des opportunités émergent : l’intérêt croissant pour les technologies locales, la disponibilité de talents jeunes et la volonté d’adopter des pratiques de sécurité. Les participants soulignent l’importance de promouvoir des pratiques inclusives, notamment en matière de sécurisation du code et d’outils collaboratifs, afin de favoriser la participation des praticiens, chercheurs et éducateurs tant locaux qu’internationaux.
 
-## Perspectives d’inclusion
+## Perspectives et recommandations
 
-Pour rendre le secteur du logiciel plus inclusif, le papier propose plusieurs pistes : développer des programmes de formation ciblés, soutenir les initiatives de recherche locale, et créer des plateformes d’échange entre praticiens, chercheurs et éducateurs tant locaux qu’internationaux. La mise en œuvre d’une architecture de diffusion sécurisée, telle que décrite dans **[[SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat]]**, est également évoquée comme moyen de protéger les actifs intellectuels tout en favorisant la collaboration transfrontalière.
+Pour rendre l’ingénierie logicielle plus inclusive, il est proposé de renforcer les infrastructures numériques, de soutenir la formation en sécurité logicielle et d’encourager l’utilisation d’outils accessibles tels que Visual Studio. La création de réseaux de connaissances (semantic network) et l’adoption de méthodologies de modélisation (diagrammatology) peuvent faciliter la collaboration transversale. Enfin, l’intégration d’agents autonomes pour automatiser certaines tâches de développement pourrait réduire les barrières techniques et ouvrir de nouvelles voies d’innovation pour la société émergente de la PNG.
 
 ## Voir aussi
 
-[[Secure coding]], [[Visual Studio]], [[Diagrammatology]], [[Template-Based Graph Clustering]], [[Autonomous agent]], [[SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat]]
+[[Secure coding]] – [[Visual Studio]] – [[Diagrammatology]] – [[Semantic network]] – [[Autonomous agent]]
