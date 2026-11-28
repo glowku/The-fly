@@ -6620,22 +6620,22 @@
   "Challenges for Inclusion in Software Engineering The Case of the Emerging Papua": {
     "score": 10.0,
     "metrics": {
-      "words": 338,
+      "words": 372,
       "sections": 4,
       "links": 6,
       "link_list": [
-        "Diagrammatology",
-        "Secure coding",
-        "Template-Based Graph Clustering",
         "Visual Studio",
-        "Contour drawing",
-        "Compass (drawing tool)"
+        "Template-Based Graph Clustering",
+        "Secure coding",
+        "Autonomous agent",
+        "SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat",
+        "Diagrammatology"
       ],
-      "diversity": 0.843,
+      "diversity": 0.797,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-27T19:35:56.250935+00:00"
+    "updated_at": "2026-11-28T02:58:12.967713+00:00"
   },
   "Query expansion": {
     "score": 10.0,

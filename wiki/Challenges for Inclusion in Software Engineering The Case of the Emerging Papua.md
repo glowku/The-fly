@@ -1,15 +1,19 @@
 # Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
 
-Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le développement logiciel devient un levier économique majeur. Ce contexte, combiné à une diversité culturelle et linguistique, pose des défis uniques pour l’inclusion dans le domaine de l’ingénierie logicielle. Le présent article synthétise les résultats d’une étude qualitative menée lors d’un atelier dédié à la programmation, afin d’identifier les obstacles et les opportunités pour la communauté locale.
+La société de Papouasie-Nouvelle-Guinée (PNG) se trouve à un tournant où le logiciel devient un moteur économique majeur et un levier de changement sociétal. Ce document synthétise les résultats d’une étude qualitative menée lors d’un atelier de génie logiciel, visant à identifier les obstacles et les opportunités pour l’inclusion de la communauté locale dans l’industrie mondiale du logiciel.
 
-## Contexte et méthodologie
-L’étude s’appuie sur trois sources principales : l’enregistrement de trois conférences, un questionnaire diffusé auprès de 52 participants, et un focus‑group approfondi avec cinq acteurs locaux. Les données ont été analysées thématiquement, permettant de distinguer les barrières existantes et les leviers potentiels pour renforcer la participation de la société PNG dans l’industrie mondiale du logiciel.
+## Méthodologie et résultats
 
-## Défis identifiés
-Les principaux obstacles recensés concernent l’accès limité aux infrastructures numériques, la pénurie de ressources éducatives adaptées aux langues locales, et la faible visibilité des pratiques de sécurisation du code, telles que le [[Secure coding]]. De plus, l’absorption de technologies comme [[Visual Studio]] reste entravée par des contraintes de formation et de support technique. Ces facteurs créent un fossé entre les praticiens locaux et les standards internationaux, freinant l’inclusion de PNG dans les chaînes de valeur globales.
+L’étude a combiné trois approches complémentaires : l’enregistrement de trois conférences, l’administration d’un questionnaire à 52 participants et une séance de focus group approfondie avec cinq acteurs locaux. L’analyse thématique a révélé un ensemble de barrières, notamment le manque d’infrastructures numériques, la pénurie de compétences spécialisées et les disparités d’accès à la formation. En parallèle, des opportunités ont émergé, telles que la forte créativité des développeurs locaux, l’intérêt croissant pour les solutions open source et la possibilité de créer des partenariats internationaux.
 
-## Opportunités et pistes d’inclusion
-L’étude souligne plusieurs pistes d’action : développer des programmes de formation bilingues, promouvoir des outils de modélisation visuelle tels que la [[Diagrammatology]], et encourager la collaboration transfrontalière via des plateformes open‑source. En favorisant l’adoption de méthodes de clustering graphique [[Template-Based Graph Clustering]], les développeurs PNG peuvent mieux structurer leurs projets et partager leurs connaissances. Enfin, la création d’un réseau de mentors internationaux pourrait faciliter l’intégration des talents locaux dans des équipes globales, tout en valorisant les spécificités culturelles de la région.
+## Enjeux et opportunités
+
+Les défis identifiés se traduisent par des besoins pressants en matière de **[[Secure coding]]**, de gestion de projets collaboratifs et d’accès aux outils de développement modernes comme **[[Visual Studio]]**. Les opportunités, quant à elles, reposent sur l’exploitation de méthodes de modélisation avancées, notamment la **[[Diagrammatology]]** et le **[[Template-Based Graph Clustering]]**, qui peuvent faciliter la compréhension des systèmes complexes et favoriser l’apprentissage collaboratif. L’étude souligne également le potentiel des **[[Autonomous agent]]** pour automatiser des tâches répétitives et réduire les coûts de développement, tout en créant des emplois spécialisés.
+
+## Perspectives d’inclusion
+
+Pour rendre le secteur du logiciel plus inclusif, le papier propose plusieurs pistes : développer des programmes de formation ciblés, soutenir les initiatives de recherche locale, et créer des plateformes d’échange entre praticiens, chercheurs et éducateurs tant locaux qu’internationaux. La mise en œuvre d’une architecture de diffusion sécurisée, telle que décrite dans **[[SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat]]**, est également évoquée comme moyen de protéger les actifs intellectuels tout en favorisant la collaboration transfrontalière.
 
 ## Voir aussi
-[[Secure coding]], [[Visual Studio]], [[Diagrammatology]], [[Template-Based Graph Clustering]], [[Compass (drawing tool)]], [[Contour drawing]]
+
+[[Secure coding]], [[Visual Studio]], [[Diagrammatology]], [[Template-Based Graph Clustering]], [[Autonomous agent]], [[SecuCode Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computat]]
