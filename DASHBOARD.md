@@ -1,6 +1,6 @@
 # 🪰 The Fly — Agent Dashboard
 
-**Dernière mise à jour** : 2026-11-28 09:52:00 UTC
+**Dernière mise à jour** : 2026-11-28 17:58:33 UTC
 
 ## Objectif de l'agent
 
@@ -10,21 +10,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 
 | Objectif | Cible | Actuel |
 |----------|-------|--------|
-| Score global | maximiser | **32.915** |
-| Concepts traités | 200 | **169** |
+| Score global | maximiser | **31.941** |
+| Concepts traités | 200 | **164** |
 | Qualité moyenne | ≥ 7.5 | **9.74/10** |
 
 ## Métriques actuelles
 
 | Métrique | Valeur |
 |----------|--------|
-| Concepts traités (nœuds) | **169** |
-| Arêtes du graphe | 333 |
+| Concepts traités (nœuds) | **164** |
+| Arêtes du graphe | 252 |
 | Frontière (à explorer) | 16 |
 | Profondeur max | 10 |
 | Score qualité moyen | **9.74/10** |
-| Score objectif (coverage × quality) | **32.915** |
-| Actions dernières 24 h | 100 |
+| Score objectif (coverage × quality) | **31.941** |
+| Actions dernières 24 h | 122 |
 
 ## Répartition de la qualité
 
@@ -55,21 +55,21 @@ Formule d'optimisation : `coverage_factor × average_quality`
 ## Derniers événements de l'agent
 
 ```
-2026-11-28T06:48:16  branch          Saro Windhover
-2026-11-28T07:12:02  triage_restore  
-2026-11-28T07:12:02  triage_restore  
-2026-11-28T07:12:02  triage          
-2026-11-28T07:14:03  auto_learn_cyc  
-2026-11-28T07:15:17  skill_reinforc  
-2026-11-28T07:17:00  auto_learn_cyc  
-2026-11-28T07:17:02  triage_restore  
-2026-11-28T07:17:02  triage          
-2026-11-28T07:18:56  auto_learn_cyc  
-2026-11-28T07:22:05  auto_learn_cyc  
-2026-11-28T07:22:07  triage_restore  
-2026-11-28T07:22:07  triage          
-2026-11-28T08:29:16  densify_edges   
-2026-11-28T08:29:16  inject_skill_n  
+2026-11-28T16:44:35  skill_learn_ar  What Would a Graph Look Like in This Layout? A Machine Learning Approach to Large Graph Visualization
+2026-11-28T16:45:25  auto_learn_cyc  
+2026-11-28T16:46:16  skill_reinforc  
+2026-11-28T16:46:16  skill_learn_ar  Challenges for Inclusion in Software Engineering: The Case of the Emerging Papua New Guinean Society
+2026-11-28T16:47:06  auto_learn_cyc  
+2026-11-28T16:47:07  triage_restore  
+2026-11-28T16:47:08  triage          
+2026-11-28T16:47:53  skill_reinforc  
+2026-11-28T16:47:53  skill_learn_ar  SecuCode: Intrinsic PUF Entangled Secure Wireless Code Dissemination for Computational RFID Devices
+2026-11-28T16:48:42  auto_learn_cyc  
+2026-11-28T16:49:30  skill_reinforc  
+2026-11-28T16:49:30  skill_learn_ar  Navigating the State of Cognitive Flow: Context-Aware AI Interventions for Effective Reasoning Support
+2026-11-28T16:50:19  auto_learn_cyc  
+2026-11-28T16:50:21  triage_restore  
+2026-11-28T16:50:21  triage          
 ```
 
 ## Architecture de l'agent
