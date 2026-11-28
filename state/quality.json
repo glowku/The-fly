@@ -7224,5 +7224,23 @@
       "has_h1": true
     },
     "updated_at": "2026-11-26T04:23:31.534287+00:00"
+  },
+  "Semantic network": {
+    "score": 10.0,
+    "metrics": {
+      "words": 360,
+      "sections": 4,
+      "links": 4,
+      "link_list": [
+        "Diagrammatology",
+        "What Would a Graph Look Like in This Layout A Machine Learning Approach to Large",
+        "Template-Based Graph Clustering",
+        "Autonomous agent"
+      ],
+      "diversity": 0.739,
+      "has_placeholder": false,
+      "has_h1": true
+    },
+    "updated_at": "2026-11-28T07:15:17.273520+00:00"
   }
 }

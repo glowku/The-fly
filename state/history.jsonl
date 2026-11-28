@@ -8708,3 +8708,4 @@
 {"ts": "2026-11-28T07:12:02.348545+00:00", "type": "triage_restore", "restored": 0, "sample": []}
 {"ts": "2026-11-28T07:12:02.378345+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 163, "active_edges": 251, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}
 {"ts": "2026-11-28T07:14:03.125196+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-28T07:15:17.279864+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 8.1, "article": "Semantic network"}

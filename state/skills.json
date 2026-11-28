@@ -267,7 +267,7 @@
     "last_reinforced": "2026-11-28T02:55:59.278471+00:00"
   },
   "raisonnement": {
-    "level": 8.0,
+    "level": 8.1,
     "description": "Planifier, router intent, anti-dérive, Graph-RAG",
     "keywords": [
       "plan",
@@ -283,9 +283,10 @@
       "navigating-the-state-of-cognitive-flow-context-aware-ai-interventions-",
       "Graph database",
       "Automated reasoning",
-      "Thorax"
+      "Thorax",
+      "Semantic network"
     ],
-    "last_reinforced": "2026-11-27T19:40:24.348722+00:00"
+    "last_reinforced": "2026-11-28T07:15:17.279642+00:00"
   },
   "securite_defensive": {
     "level": 8.08,
