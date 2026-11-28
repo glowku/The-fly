@@ -5758,22 +5758,21 @@
   "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
     "score": 10.0,
     "metrics": {
-      "words": 333,
+      "words": 343,
       "sections": 4,
-      "links": 6,
+      "links": 5,
       "link_list": [
+        "Semantic network",
         "Diagrammatology",
-        "Secure coding",
-        "Autonomous agent",
-        "Technical drawing tool",
+        "Template-Based Graph Clustering",
         "Visual Studio",
-        "Compass (drawing tool)"
+        "Autonomous agent"
       ],
-      "diversity": 0.753,
+      "diversity": 0.824,
       "has_placeholder": false,
       "has_h1": true
     },
-    "updated_at": "2026-11-27T19:40:28.390249+00:00"
+    "updated_at": "2026-11-28T16:49:32.961376+00:00"
   },
   "Technical drawing": {
     "score": 10.0,

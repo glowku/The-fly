@@ -1298,6 +1298,14 @@
       "kind": "skill",
       "skill": "recherche_image",
       "level": 8.02
+    },
+    "Navigating the State of Cognitive Flow Context-Aware AI Interventions for Effect": {
+      "depth": 2,
+      "created_at": "2026-11-28T16:49:32.962117+00:00",
+      "sources": [
+        "https://arxiv.org/abs/2504.16021v1"
+      ],
+      "updated_at": "2026-11-28T16:49:32.962123+00:00"
     }
   },
   "edges": [
