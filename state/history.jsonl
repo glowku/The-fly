@@ -8710,3 +8710,5 @@
 {"ts": "2026-11-28T07:14:03.125196+00:00", "type": "auto_learn_cycle", "cycle": 1, "actions": [{"wiki_learn": false}]}
 {"ts": "2026-11-28T07:15:17.279864+00:00", "type": "skill_reinforce", "skill": "raisonnement", "new_level": 8.1, "article": "Semantic network"}
 {"ts": "2026-11-28T07:17:00.497464+00:00", "type": "auto_learn_cycle", "cycle": 2, "actions": [{"wiki_learn": false}]}
+{"ts": "2026-11-28T07:17:02.116502+00:00", "type": "triage_restore", "restored": 0, "sample": []}
+{"ts": "2026-11-28T07:17:02.146878+00:00", "type": "triage", "moved_to_quarantine": 0, "deduped": 0, "active_nodes": 164, "active_edges": 251, "archived_edges": 0, "frontier": 16, "skill_articles_removed": 0, "pending_out_of_domain": 0, "sample_moved": [], "note": "Aucun fichier wiki supprimé — triage seulement; protected nodes kept"}

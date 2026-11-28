@@ -1057,6 +1057,14 @@
       ],
       "updated_at": "2026-11-26T04:23:31.535128+00:00"
     },
+    "Semantic network": {
+      "depth": 4,
+      "created_at": "2026-11-28T07:15:17.274411+00:00",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Semantic_network"
+      ],
+      "updated_at": "2026-11-28T07:15:17.274418+00:00"
+    },
     "Template-Based Graph Clustering": {
       "depth": 2,
       "created_at": "2026-11-09T09:35:10.898704+00:00",
@@ -1290,14 +1298,6 @@
       "kind": "skill",
       "skill": "recherche_image",
       "level": 7.87
-    },
-    "Semantic network": {
-      "depth": 4,
-      "created_at": "2026-11-28T07:15:17.274411+00:00",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Semantic_network"
-      ],
-      "updated_at": "2026-11-28T07:15:17.274418+00:00"
     }
   },
   "edges": [
